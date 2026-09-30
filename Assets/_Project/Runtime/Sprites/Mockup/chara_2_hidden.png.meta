@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 3847cd995396cec46a1f9c517ca161d4
+guid: 011a1af4de1bd8a42b252258182564b5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4377457236013195470
-    second: dec_menu_0
-  - first:
-      213: 3838532051507843220
-    second: dec_menu_1
-  - first:
-      213: 5996647229388225947
-    second: dec_menu_2
+      213: -4739858879258652052
+    second: chara_2_hidden_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dec_menu_0
+      name: chara_2_hidden_0
       rect:
         serializedVersion: 2
-        x: 33
-        y: 50
-        width: 207
-        height: 176
+        x: 101
+        y: 99
+        width: 518
+        height: 1210
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 23f58fb26d52043c0800000000000000
-      internalID: -4377457236013195470
+      spriteID: c629e405673a83eb0800000000000000
+      internalID: -4739858879258652052
       vertices: []
       indices: 
       edges: []
@@ -131,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: cbd3907eddd31b24aa6df96c8d51ea5e
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -141,9 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      dec_menu_0: -4377457236013195470
-      dec_menu_1: 3838532051507843220
-      dec_menu_2: 5996647229388225947
+      chara_2_hidden_0: -4739858879258652052
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
