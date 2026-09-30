@@ -2,6 +2,10 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+/// <summary>
+/// Lit <see cref="InputActionAsset"/>, active sa map et relaie les actions sous forme d'événements C#, pour que
+/// les autres scripts n'accèdent jamais directement à l'Input System.
+/// </summary>
 public class InputReader : MonoBehaviour
 {
     [SerializeField] InputActionAsset _inputActionAsset;

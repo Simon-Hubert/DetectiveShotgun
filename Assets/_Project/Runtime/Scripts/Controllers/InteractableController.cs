@@ -1,6 +1,11 @@
 using System;
 using UnityEngine;
 
+/// <summary>
+/// /// Écoute l'<see cref="InputReader"/> et ne décide rien lui-même : les conditions et les priorités
+/// sont gérées par le manager de l'objet touché.
+/// Détecte l'objet interactif visé par le joueur et déclenche son <see cref="InteractableManager"/>.
+/// </summary>
 public class InteractableController : MonoBehaviour
 {
     [SerializeField] private Camera _camera;
