@@ -517,7 +517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b27c9abdee6dac41a4bfc66fc137af8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SwitchState
-  _state: 0
+  _state: 1
   _UIIdle: {fileID: 1168423894}
   _UIMove: {fileID: 895231753}
   _UIDialogue: {fileID: 1299198550}
@@ -2165,7 +2165,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!1 &1254202731
 GameObject:
@@ -2321,7 +2321,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1280344212
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2395,7 +2395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1299198551
 Transform:
   m_ObjectHideFlags: 0
