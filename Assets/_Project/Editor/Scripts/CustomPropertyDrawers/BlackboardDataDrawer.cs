@@ -1,9 +1,8 @@
 using System;
-using DetectiveShotgun.Conditions;
 using UnityEditor;
 using UnityEngine;
 
-namespace DetectiveShotgun.Editor
+namespace DShotgun.Editor
 {
 
     [CustomPropertyDrawer(typeof(BlackboardData))]

@@ -1,8 +1,7 @@
 using System.Linq;
-using DetectiveShotgun.Conditions;
 using UnityEditor;
 
-namespace DetectiveShotgun.Editor
+namespace DShotgun.Editor
 {
     internal static class BlackboardEditorUtility
     {

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DetectiveShotgun.Conditions
+namespace DShotgun
 {
     [CreateAssetMenu(menuName = "DetectiveShotgun/BlackboardData")]
     public class BlackboardData : ScriptableObject

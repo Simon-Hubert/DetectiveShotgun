@@ -2,7 +2,9 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-/// <summary>
+namespace DShotgun
+{
+    /// <summary>
 /// Lit <see cref="InputActionAsset"/>, active sa map et relaie les actions sous forme d'événements C#, pour que
 /// les autres scripts n'accèdent jamais directement à l'Input System.
 /// </summary>
@@ -59,4 +61,5 @@ public class InputReader : MonoBehaviour
         _scroll.performed -= OnScrollPerformed;
         _actionMap.Disable();
     }
+}
 }

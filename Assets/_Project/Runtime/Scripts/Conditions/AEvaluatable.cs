@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace DetectiveShotgun.Conditions
+namespace DShotgun
 {
     public abstract class AEvaluatable : MonoBehaviour
     {
