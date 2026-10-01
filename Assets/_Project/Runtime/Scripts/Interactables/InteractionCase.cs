@@ -1,6 +1,7 @@
 using System;
 using DetectiveShotgun.Conditions;
 using UnityEngine;
+using UnityEngine.Events;
 
 /// <summary>
 /// Un cas d'interaction d'un <see cref="InteractableManager"/> : une condition sur les flags du
@@ -12,11 +13,18 @@ using UnityEngine;
 public class InteractionCase
 {
     [SerializeReference, ConditionSelector] private ICondition _condition;
+    [SerializeField] private UnityEvent _action;
     
     /// <summary>Indique si la condition de ce cas est vraie d'après l'état courant du <see cref="Blackboard"/>.</summary>
     /// <param name="blackboard">Le blackboard sur lequel évaluer la condition.</param>
     public bool Evaluate(Blackboard blackboard)
     {
-        return _condition.Evaluate(blackboard);
+        if (_condition.Evaluate(blackboard))
+        {
+            _action?.Invoke();
+            return true;
+        }
+
+        return false;
     }
 }
