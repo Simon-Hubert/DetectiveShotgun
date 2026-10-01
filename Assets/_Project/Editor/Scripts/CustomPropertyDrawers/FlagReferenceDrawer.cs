@@ -14,7 +14,9 @@ namespace DShotgun.Editor
 
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label) {
             SerializedProperty nameProperty = property.FindPropertyRelative(NAME_FIELD);
-            BlackboardData data = BlackboardEditorUtility.FindData(property.serializedObject);
+            Blackboard blackboard = (Blackboard)Object.FindAnyObjectByType(typeof(Blackboard));
+            
+            BlackboardData data = BlackboardEditorUtility.GetData(blackboard);
 
             EditorGUI.BeginProperty(position, label, property);
 

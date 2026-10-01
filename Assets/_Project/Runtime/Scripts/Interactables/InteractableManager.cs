@@ -11,13 +11,7 @@ namespace DShotgun
     [RequireComponent(typeof(Collider2D))]
     public class InteractableManager : MonoBehaviour
     {
-        [SerializeField] private Blackboard _blackboard;
         [SerializeField] private List<InteractionCase> _interactionCases = new List<InteractionCase>();
-    
-        private void Start()
-        {
-            if(_blackboard == null) _blackboard = FindObjectOfType<Blackboard>();   
-        }
 
         /// <summary>
         /// Traite une interaction du joueur avec cet objet.
@@ -29,7 +23,7 @@ namespace DShotgun
         {
             foreach (var interactionCase in _interactionCases)
             {
-                if(interactionCase.Evaluate(_blackboard))
+                if(interactionCase.Evaluate(Blackboard.Instance))
                 {
                     return true;
                 }
