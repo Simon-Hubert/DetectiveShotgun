@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace DetectiveShotgun.Conditions
+namespace DShotgun
 {
     /// <summary>
     /// Référence vers un <see cref="Flag"/> par son nom. C'est ce que les conditions et les séquences

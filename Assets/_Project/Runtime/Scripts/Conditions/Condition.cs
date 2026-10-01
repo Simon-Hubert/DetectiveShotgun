@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace DetectiveShotgun.Conditions
+namespace DShotgun
 {
     public interface ICondition
     {

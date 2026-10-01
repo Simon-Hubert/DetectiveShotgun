@@ -1,11 +1,10 @@
 using System.Collections.Generic;
 using System.Linq;
-using DetectiveShotgun.Conditions;
 using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
 
-namespace DetectiveShotgun.Editor
+namespace DShotgun.Editor
 {
     [CustomEditor(typeof(InteractableManager))]
     public class InteractableManagerEditor : UnityEditor.Editor

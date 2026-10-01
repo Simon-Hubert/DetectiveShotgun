@@ -336,17 +336,20 @@ MonoBehaviour:
   _blackboard: {fileID: 1745045009}
   _interactionCases:
   - _condition:
-      rid: 849209591630397563
+      rid: 6016392418279030862
+    _action:
+      m_PersistentCalls:
+        m_Calls: []
   references:
     version: 2
     RefIds:
-    - rid: 849209591630397563
-      type: {class: Not, ns: DetectiveShotgun.Conditions, asm: Assembly-CSharp}
+    - rid: 6016392418279030862
+      type: {class: Not, ns: DShotgun, asm: DShotgun}
       data:
         _a:
-          rid: 849209591630397564
-    - rid: 849209591630397564
-      type: {class: FlagCondition, ns: DetectiveShotgun.Conditions, asm: Assembly-CSharp}
+          rid: 6016392418279030863
+    - rid: 6016392418279030863
+      type: {class: FlagCondition, ns: DShotgun, asm: DShotgun}
       data:
         _flag:
           _flagName: Test_1
@@ -707,12 +710,15 @@ MonoBehaviour:
   _blackboard: {fileID: 1745045009}
   _interactionCases:
   - _condition:
-      rid: 849209591630397545
+      rid: 6016392418279030860
+    _action:
+      m_PersistentCalls:
+        m_Calls: []
   references:
     version: 2
     RefIds:
-    - rid: 849209591630397545
-      type: {class: FlagCondition, ns: DetectiveShotgun.Conditions, asm: Assembly-CSharp}
+    - rid: 6016392418279030860
+      type: {class: FlagCondition, ns: DShotgun, asm: DShotgun}
       data:
         _flag:
           _flagName: Test_2
