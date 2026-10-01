@@ -13,5 +13,19 @@ MonoBehaviour:
   m_Name: Characters
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CharactersDatabase
   _characters:
-  - <Name>k__BackingField: 
-    _spriteList: []
+  - <Name>k__BackingField: Aelys
+    _spriteList:
+    - <Name>k__BackingField: Idle
+      <Sprite>k__BackingField: {fileID: 0}
+    - <Name>k__BackingField: Happy
+      <Sprite>k__BackingField: {fileID: 0}
+    - <Name>k__BackingField: Sad
+      <Sprite>k__BackingField: {fileID: 0}
+  - <Name>k__BackingField: Vacances
+    _spriteList:
+    - <Name>k__BackingField: Idle
+      <Sprite>k__BackingField: {fileID: 0}
+    - <Name>k__BackingField: Balth
+      <Sprite>k__BackingField: {fileID: 0}
+    - <Name>k__BackingField: Ferdi
+      <Sprite>k__BackingField: {fileID: 0}

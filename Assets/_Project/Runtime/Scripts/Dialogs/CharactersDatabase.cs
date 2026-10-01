@@ -6,9 +6,9 @@ using UnityEngine;
 namespace DShotgun.Dialogs
 {
     [Serializable]
-    public struct NamedSprites
+    public struct NamedSprite
     {
-        public NamedSprites(string name, Sprite sprite) {
+        public NamedSprite(string name, Sprite sprite) {
             Name = name;
             Sprite = sprite;
         }
@@ -20,13 +20,13 @@ namespace DShotgun.Dialogs
     public struct CharacterData
     {
         [field: SerializeField] public string Name { get; private set; }
-        [SerializeField] private List<NamedSprites> _spriteList;
+        [SerializeField] private List<NamedSprite> _spriteList;
         
-        public CharacterData(string name, List<NamedSprites> spriteList) {
+        public CharacterData(string name, List<NamedSprite> spriteList) {
             Name = name;
             _spriteList = spriteList;
         }
-        public IReadOnlyList<NamedSprites> SpriteList => _spriteList;
+        public IReadOnlyList<NamedSprite> SpriteList => _spriteList;
     }
     
     [CreateAssetMenu(fileName = "CharactersDatabase", menuName = "Databases/CharactersDatabase")]
@@ -39,7 +39,7 @@ namespace DShotgun.Dialogs
             foreach (CharacterData characterData in _characters.Where(characterData => characterData.Name == name)) {
                 return characterData;
             }
-            return new CharacterData("MissingCharaceter", null);
+            return new CharacterData("MissingCharacter", null);
         }
     }
 }
