@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: SO_DialogProfile_Default
+  m_EditorClassIdentifier: DShotgun.Dialogs:DShotgun.Dialogs:SOCharacterDialogProfile
+  _typingProfile: 0
+  _typingSpeed: 20
+  _typingSound: {fileID: 0}
+  _soundPitch: 1
+  _hasPersonalisedColor: 0
+  _defaultTextColor: {r: 1, g: 1, b: 1, a: 1}
+  _defaultFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  _caseStyle: 0
+  _hasPersonalisedSpacing: 0
+  _defaultSpacingCharacter: 0
+  _defaultSpacingWord: 0
+  _defaultSpacingLine: 0
+  _defaultSpacingParagraph: 0
