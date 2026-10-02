@@ -20,9 +20,6 @@ namespace DShotgun.Dialogs
         [field: SerializeField] public (string, string) MiddleRef { get; set; }
         [field: SerializeField] public (string, string) RightRef { get; set; }
         
-        [field: SerializeField] public bool customName { get; set; }
-        [field: SerializeField] public int speakingCharacterID { get; set; }
-        
         public Sprite Left
         {
             get => _left;
@@ -53,6 +50,9 @@ namespace DShotgun.Dialogs
             set => _name = value;
         }
 #endif
+        
+        [field: SerializeField] public bool customName { get; set; }
+        [field: SerializeField] public int speakingCharacterID { get; set; }
         
         [SerializeField] private Sprite _left;
         [SerializeField] private Sprite _middle;

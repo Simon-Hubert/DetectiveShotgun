@@ -57,14 +57,18 @@ namespace DShotgun.Editor
                 _dialogFrame.Right= rightSprite;
                 GUILayout.Space(10);
                 bool noOneSpeaking = GUILayout.Toggle(_dialogFrame.speakingCharacterID == -1, "Don't Show Speaker");
-                if (noOneSpeaking) {
-                    _dialogFrame.speakingCharacterID = -1;
-                    _dialogFrame.Name = "???";
-                }
+                
 
                 _dialogFrame.customName = GUILayout.Toggle(_dialogFrame.customName, "Use Custom Name");
                 if (_dialogFrame.customName) {
                     _dialogFrame.Name = GUILayout.TextField(_dialogFrame.Name);
+                }
+                
+                if (noOneSpeaking) {
+                    _dialogFrame.speakingCharacterID = -1;
+                    if (!_dialogFrame.customName) {
+                        _dialogFrame.Name = "";
+                    }
                 }
                 
                 GUILayout.Space(10);
@@ -111,7 +115,7 @@ namespace DShotgun.Editor
 
             if (GUILayout.Toggle(characterID == _dialogFrame.speakingCharacterID, "Speaking")) {
                 _dialogFrame.speakingCharacterID = characterID;
-                _dialogFrame.Name = _names[selectedName];
+                if(!_dialogFrame.customName) _dialogFrame.Name = _names[selectedName];
             }
             GUILayout.EndVertical();
         }

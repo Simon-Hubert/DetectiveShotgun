@@ -533,7 +533,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -808,7 +808,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  _testButton: {fileID: 1956071504}
+  <customName>k__BackingField: 0
+  <speakingCharacterID>k__BackingField: 0
+  _left: {fileID: 0}
+  _middle: {fileID: 0}
+  _right: {fileID: 0}
 --- !u!1 &1956071502
 GameObject:
   m_ObjectHideFlags: 0

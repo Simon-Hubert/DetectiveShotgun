@@ -39,7 +39,7 @@ namespace DShotgun.Dialogs
             foreach (CharacterData characterData in _characters.Where(characterData => characterData.Name == name)) {
                 return characterData;
             }
-            return new CharacterData("MissingCharacter", null);
+            return new CharacterData("", null);
         }
     }
 }
