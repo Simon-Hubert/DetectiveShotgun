@@ -27,9 +27,16 @@ namespace DShotgun.Dialogs
     public class DialogFrame : ASequencable
     {
         #if UNITY_EDITOR
-        [field: SerializeField] public (string, string) LeftRef { get; set; }
-        [field: SerializeField] public (string, string) MiddleRef { get; set; }
-        [field: SerializeField] public (string, string) RightRef { get; set; }
+        [Serializable]
+        public struct SpriteRef
+        {
+            [SerializeField] public string characterName;
+            [SerializeField] public string spriteName;
+        }
+        
+        [field: SerializeField] public SpriteRef LeftRef { get; set; }
+        [field: SerializeField] public SpriteRef MiddleRef { get; set; }
+        [field: SerializeField] public SpriteRef RightRef { get; set; }
         
         public Sprite Left
         {
