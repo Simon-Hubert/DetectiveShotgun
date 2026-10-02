@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 using System.Threading;
 using NaughtyAttributes;
 using TMPro;
@@ -44,7 +45,7 @@ namespace DShotgun.Dialogs
 
         [Header("Format Data")]
         [SerializeField, ReadOnly] private CharacterDialogProfile _currentProfile;
-        [SerializeField] private bool _autoContinue;
+        [SerializeField] private bool _autoContinue = false;
         public bool AutoContinue { get => _autoContinue; }
 
         public void DisplaySprite(Sprite a_left, Sprite a_middle, Sprite a_right) {
@@ -57,22 +58,26 @@ namespace DShotgun.Dialogs
             ChangeSpeakersSprite(a_posing);
         }
         public async Awaitable DisplayTextAsync(CancellationToken a_cancel, SOCharacterDialogProfile a_profile, string a_text) {
-            try {
+            try
+            {
                 ContinueButtonState(false);
-                
+
                 await ComputeCharByCharAsync(a_cancel, a_text);
 
                 if (!_autoContinue) ContinueButtonState(true);
             }
-            catch (OperationCanceledException) {
-                Debug.LogWarning($"'{name}' : Display Text Async was cancelled", gameObject);
+            catch (Exception e)
+            {
+                Debug.LogWarning($"'{name}' : Display Text Async was cancelled - {e}", gameObject);
             }
         }
         private async Awaitable ComputeCharByCharAsync(CancellationToken a_cancel, string a_text) {
             try
             {
                 float delay = Time.deltaTime;
-            
+                _dialog.text = "";
+                StringBuilder a = new StringBuilder(_dialog.text);
+                
                 for (int i = 0; i < a_text.Length; i++) {
                     if (_currentProfile.typingDelay > delay) {
                         await Awaitable.NextFrameAsync(a_cancel);
@@ -80,12 +85,13 @@ namespace DShotgun.Dialogs
                     }
 
                     delay -= _currentProfile.typingDelay;
-
-                    _dialog.text = _dialog.text + a_text[i];
+                    
+                    a.Append(a_text[i]);
+                    _dialog.text = a.ToString();
                 }
             }
-            catch (OperationCanceledException) {
-                Debug.LogWarning($"'{name}' : Display Text Async was cancelled", gameObject);
+            catch (Exception e) {
+                Debug.LogWarning($"'{name}' : Display Text Async was cancelled - {e}", gameObject);
             }
         }
         

@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 
 namespace DShotgun.Dialogs
 {
@@ -134,7 +135,7 @@ namespace DShotgun.Dialogs
         private T _default;
         public List<T> queue;
         
-        public T GetLastValue { get => queue[^1]; }
+        public T GetLastValue { get => queue.Count == 0 ? default : queue[^1]; }
         public void ResetValues() {
             queue = new List<T>();
             queue.Add(_default);
@@ -145,6 +146,8 @@ namespace DShotgun.Dialogs
             
             queue = new List<T>();
             queue.Add(default);
+            
+            Debug.Log($"Queue count : {queue.Count}");
         }
     }
 }

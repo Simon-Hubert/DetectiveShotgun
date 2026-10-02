@@ -12,6 +12,11 @@ namespace DShotgun.Dialogs
         [SerializeField] private DialogsDisplaying _dialogsDisplayer;
         [SerializeField, ReadOnly] private DialogState _dialogState;
         public DialogState GetDialogState { get => _dialogState; }
+
+        [Space(7)]
+        public SOCharacterDialogProfile _defaultProfile;
+        private CancellationTokenSource _tokenSource;
+        
         
         private void Awake() {
             if (instance != null) {
@@ -24,6 +29,7 @@ namespace DShotgun.Dialogs
         }
         
         public void CaptureDialogsInfo(CharacterDialogData a_dialogData) {
+            Debug.Log("Capture Debug Info");
             _ = ComputeDialogsInfoAsync(CancellationToken.None, a_dialogData);
         }
 
@@ -34,7 +40,9 @@ namespace DShotgun.Dialogs
                 _dialogsDisplayer.DisplaySpeaker(a_dialogData.Name, (CharaPos)a_dialogData.SpeakingCharacterID);
 
                 _dialogState = DialogState.Writing;
-                await _dialogsDisplayer.DisplayTextAsync(a_cancel, a_dialogData.DialogProfile, a_dialogData.Text);
+
+                SOCharacterDialogProfile profile = a_dialogData.DialogProfile == null ? _defaultProfile : a_dialogData.DialogProfile;
+                await _dialogsDisplayer.DisplayTextAsync(a_cancel, profile, a_dialogData.Text);
                 _dialogState = _dialogsDisplayer.AutoContinue ? DialogState.Idle : DialogState.Waiting;
 
                 while (_dialogState == DialogState.Waiting)
@@ -42,8 +50,8 @@ namespace DShotgun.Dialogs
                     await Awaitable.NextFrameAsync();
                 }
             }
-            catch (OperationCanceledException) {
-                Debug.LogWarning($"'{name}' : Compute Dialog Async was cancelled", gameObject);
+            catch (Exception e) {
+                Debug.LogWarning($"'{name}' : Compute Dialog Async was cancelled - {e}", gameObject);
             }
             finally {
                 a_dialogData.Callback();

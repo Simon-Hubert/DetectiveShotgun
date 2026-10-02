@@ -77,21 +77,20 @@ namespace DShotgun.Dialogs
         [SerializeField] private Sprite _left;
         [SerializeField] private Sprite _middle;
         [SerializeField] private Sprite _right;
-
-        [SerializeField] private DialogsManager _dialogManager;
         
         
-        private string _text;
-        private string _name;
+        [SerializeField] private string _text;
+        [SerializeField] private string _name;
         
-        private bool _moveNextAutomatically;
+        [SerializeField] private bool _moveNextAutomatically;
 
         private CancellationTokenSource _requestedSkipCancellationTokenSource = new CancellationTokenSource();
         
         protected override async Awaitable OnPlay() {
             try {
+                TransferData();
+                
                 while (true) {
-                    TransferData();
                     await Awaitable.NextFrameAsync(_requestedSkipCancellationTokenSource.Token);
                 }
             }
@@ -117,7 +116,7 @@ namespace DShotgun.Dialogs
                 Callback = OnRequestedSkip
             };
             
-            _dialogManager.CaptureDialogsInfo(dialogData);
+            DialogsManager.instance.CaptureDialogsInfo(dialogData);
         }
 
         private void OnRequestedSkip() {
