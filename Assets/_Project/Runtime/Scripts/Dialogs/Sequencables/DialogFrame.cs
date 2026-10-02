@@ -8,9 +8,19 @@ namespace DShotgun.Dialogs
 {
     public struct CharacterDialogData
     {
-        public string Name;
-        public string SpriteName;
-        public bool isSpeaking;
+        public delegate void SkipCallback();
+        /// <summary>
+        /// Ca sera remplacé par des AnimatedSprite a terme
+        /// </summary>
+        public Sprite Left, Middle, Right; //TODO Remplacer par des AnimatedSprite
+        public string Text, Name;
+        public SOCharacterDialogProfile DialogProfile;
+        /// <summary>
+        /// -1 = None, 0,1,2 Left Middle Right
+        /// </summary>
+        public int SpeakingCharacterID;
+        
+        public SkipCallback Callback;
     }
     
     public class DialogFrame : ASequencable
@@ -53,10 +63,12 @@ namespace DShotgun.Dialogs
         
         [field: SerializeField] public bool customName { get; set; }
         [field: SerializeField] public int speakingCharacterID { get; set; }
+        [field: SerializeField] public SOCharacterDialogProfile CharacterDialogProfile { get; set; }
         
         [SerializeField] private Sprite _left;
         [SerializeField] private Sprite _middle;
         [SerializeField] private Sprite _right;
+        
         
         private string _text;
         private string _name;
@@ -78,7 +90,7 @@ namespace DShotgun.Dialogs
         }
 
         private void TransferData() {
-            
+            //TODO mettre une balise a la fin du texte si _should move next 
         }
 
         private void OnRequestedSkip() {
