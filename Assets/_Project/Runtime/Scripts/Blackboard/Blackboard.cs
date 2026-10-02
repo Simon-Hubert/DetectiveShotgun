@@ -14,9 +14,18 @@ namespace DShotgun
         private Dictionary<string, bool> _flags = new Dictionary<string, bool>();
 
         public Dictionary<string, bool> Flags => _flags;
+        
+        public static Blackboard Instance { get; private set; }
 
         private void Awake()
         {
+            if(Instance != null && Instance != this)
+            {
+                Debug.LogError("Multiple instances of Blackboard detected. There should only be one instance in the scene.");
+                Destroy(this);
+                return;
+            }
+            Instance = this;
             if (_blackboardData == null)
             {
                 Debug.LogError("BlackboardData is not assigned in the inspector.");
