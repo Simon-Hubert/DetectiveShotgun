@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using NaughtyAttributes;
 using UnityEngine;
 
 namespace DShotgun.Dialogs
@@ -20,12 +21,16 @@ namespace DShotgun.Dialogs
     public struct CharacterData
     {
         [field: SerializeField] public string Name { get; private set; }
+        [field: SerializeField, Expandable] public SOCharacterDialogProfile DialogProfile { get; private set; }
+        
         [SerializeField] private List<NamedSprite> _spriteList;
         
-        public CharacterData(string name, List<NamedSprite> spriteList) {
+        public CharacterData(string name, List<NamedSprite> spriteList, SOCharacterDialogProfile dialogProfile) {
             Name = name;
             _spriteList = spriteList;
+            DialogProfile = dialogProfile;
         }
+        
         public IReadOnlyList<NamedSprite> SpriteList => _spriteList;
     }
     
@@ -39,7 +44,7 @@ namespace DShotgun.Dialogs
             foreach (CharacterData characterData in _characters.Where(characterData => characterData.Name == name)) {
                 return characterData;
             }
-            return new CharacterData("", null);
+            return new CharacterData("", null, null);
         }
     }
 }

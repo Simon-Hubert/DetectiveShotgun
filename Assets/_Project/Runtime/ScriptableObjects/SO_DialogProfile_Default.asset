@@ -9,16 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: f58764cb435beee4da51f68d75b169c5, type: 3}
   m_Name: SO_DialogProfile_Default
-  m_EditorClassIdentifier: DShotgun.Dialogs:DShotgun.Dialogs:SOCharacterDialogProfile
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.SOCharacterDialogProfile
   _typingProfile: 0
   _typingSpeed: 20
   _typingSound: {fileID: 0}
   _soundPitch: 1
   _hasPersonalisedColor: 0
   _defaultTextColor: {r: 1, g: 1, b: 1, a: 1}
-  _defaultFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  _defaultFont: {fileID: 0}
   _caseStyle: 0
   _hasPersonalisedSpacing: 0
   _defaultSpacingCharacter: 0
