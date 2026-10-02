@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CharactersDatabase
   _characters:
   - <Name>k__BackingField: Aelys
+    <DialogProfile>k__BackingField: {fileID: 11400000, guid: 5dd286a3468651d4e99a26f58517b7be, type: 2}
     _spriteList:
     - <Name>k__BackingField: Idle
       <Sprite>k__BackingField: {fileID: 0}
@@ -22,6 +23,7 @@ MonoBehaviour:
     - <Name>k__BackingField: Sad
       <Sprite>k__BackingField: {fileID: 0}
   - <Name>k__BackingField: Vacances
+    <DialogProfile>k__BackingField: {fileID: 0}
     _spriteList:
     - <Name>k__BackingField: Idle
       <Sprite>k__BackingField: {fileID: 0}

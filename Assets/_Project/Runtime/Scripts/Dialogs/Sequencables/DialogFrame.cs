@@ -2,6 +2,7 @@ using System;
 using System.Threading;
 using HierarchySequences;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace DShotgun.Dialogs
@@ -59,15 +60,25 @@ namespace DShotgun.Dialogs
             get => _name;
             set => _name = value;
         }
+        
+        public bool MoveNextAutomatically
+        {
+            get => _moveNextAutomatically;
+            set => _moveNextAutomatically = value;
+        }
+        
+        [field: SerializeField] public bool UseCustomName { get; set; }
+        [field: SerializeField] public bool UseCustomDialogProfile { get; set; }
 #endif
         
-        [field: SerializeField] public bool customName { get; set; }
         [field: SerializeField] public int speakingCharacterID { get; set; }
         [field: SerializeField] public SOCharacterDialogProfile CharacterDialogProfile { get; set; }
         
         [SerializeField] private Sprite _left;
         [SerializeField] private Sprite _middle;
         [SerializeField] private Sprite _right;
+
+        [SerializeField] private DialogsManager _dialogManager;
         
         
         private string _text;
@@ -90,7 +101,23 @@ namespace DShotgun.Dialogs
         }
 
         private void TransferData() {
-            //TODO mettre une balise a la fin du texte si _should move next 
+            if (MoveNextAutomatically) {
+                _text += "[UneBaliseDeFin]"; //TODO mettre la bonne Balise
+            }
+            
+            CharacterDialogData dialogData = new CharacterDialogData()
+            {
+                Left = _left,
+                Middle = _middle,
+                Right = _right,
+                DialogProfile = CharacterDialogProfile,
+                Name = _name,
+                SpeakingCharacterID = speakingCharacterID,
+                Text = _text,
+                Callback = OnRequestedSkip
+            };
+            
+            _dialogManager.CaptureDialogsInfo(dialogData);
         }
 
         private void OnRequestedSkip() {

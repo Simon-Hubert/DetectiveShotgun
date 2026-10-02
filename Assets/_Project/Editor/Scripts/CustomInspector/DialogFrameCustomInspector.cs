@@ -27,6 +27,8 @@ namespace DShotgun.Editor
         private DialogFrame _dialogFrame;
         private CharactersDatabase _charactersDatabase;
         private string[] _names;
+
+        public bool _showAdditionalSettings = false;
         
         public override void OnInspectorGUI() {
             _charactersDatabase ??= Resources.Load<CharactersDatabase>("Characters");
@@ -56,25 +58,34 @@ namespace DShotgun.Editor
                 _dialogFrame.RightRef = rightFrame;
                 _dialogFrame.Right= rightSprite;
                 GUILayout.Space(10);
-                bool noOneSpeaking = GUILayout.Toggle(_dialogFrame.speakingCharacterID == -1, "Don't Show Speaker");
-                
 
-                _dialogFrame.customName = GUILayout.Toggle(_dialogFrame.customName, "Use Custom Name");
-                if (_dialogFrame.customName) {
-                    _dialogFrame.Name = GUILayout.TextField(_dialogFrame.Name);
-                }
+                _dialogFrame.MoveNextAutomatically = GUILayout.Toggle(
+                    _dialogFrame.MoveNextAutomatically, "Move to next Frame immediately after");
+
+                _showAdditionalSettings = EditorGUILayout.Foldout(_showAdditionalSettings, "Show Additional Settings");
+                if (_showAdditionalSettings) {
+                    bool noOneSpeaking = GUILayout.Toggle(_dialogFrame.speakingCharacterID == -1, "Don't Show Speaker");
+                    _dialogFrame.UseCustomName = GUILayout.Toggle(_dialogFrame.UseCustomName, "Use Custom Name");
+                    if (_dialogFrame.UseCustomName) {
+                        _dialogFrame.Name = GUILayout.TextField(_dialogFrame.Name);
+                    }
                 
-                if (noOneSpeaking) {
-                    _dialogFrame.speakingCharacterID = -1;
-                    if (!_dialogFrame.customName) {
-                        _dialogFrame.Name = "";
+                    _dialogFrame.UseCustomDialogProfile = GUILayout.Toggle(_dialogFrame.UseCustomDialogProfile, "Use Custom Dialog Profile");
+                    if (_dialogFrame.UseCustomDialogProfile) {
+                        _dialogFrame.CharacterDialogProfile = (SOCharacterDialogProfile)EditorGUILayout.ObjectField(_dialogFrame.CharacterDialogProfile, typeof(SOCharacterDialogProfile));
+                    }
+                
+                    if (noOneSpeaking) {
+                        _dialogFrame.speakingCharacterID = -1;
+                        if (!_dialogFrame.UseCustomName) {
+                            _dialogFrame.Name = "";
+                        }
                     }
                 }
                 
                 GUILayout.Space(10);
                 _dialogFrame.Text = GUILayout.TextArea(_dialogFrame.Text, GUILayout.Height(100));
             }
-
         }
         
         private void GetCharacterNames() {
@@ -115,7 +126,8 @@ namespace DShotgun.Editor
 
             if (GUILayout.Toggle(characterID == _dialogFrame.speakingCharacterID, "Speaking")) {
                 _dialogFrame.speakingCharacterID = characterID;
-                if(!_dialogFrame.customName) _dialogFrame.Name = _names[selectedName];
+                if(!_dialogFrame.UseCustomDialogProfile) _dialogFrame.CharacterDialogProfile = _charactersDatabase.GetCharacter(_names[selectedName]).DialogProfile;
+                if(!_dialogFrame.UseCustomName) _dialogFrame.Name = _names[selectedName];
             }
             GUILayout.EndVertical();
         }
