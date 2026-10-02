@@ -14,16 +14,32 @@ namespace DShotgun.Editor
 
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label) {
             SerializedProperty nameProperty = property.FindPropertyRelative(NAME_FIELD);
-            Blackboard blackboard = (Blackboard)Object.FindAnyObjectByType(typeof(Blackboard));
+            Blackboard[] blackboards = (Blackboard[])Object.FindObjectsByType<Blackboard>(FindObjectsSortMode.None);
             
-            BlackboardData data = BlackboardEditorUtility.GetData(blackboard);
+            if(blackboards.Length <= 0) {
+                GUIContent fallbackLabel = new(label.text + " (aucun Blackboard dans la scène)",
+                    "Tu dois avoir 1 blackboard dans ta scène");
+
+                EditorGUI.DrawRect(position, new Color(1f, 0.4f, 0.4f));
+                EditorGUI.LabelField(position, fallbackLabel);
+                return;
+            }
+            if(blackboards.Length > 1) {
+                GUIContent fallbackLabel = new(label.text + " (plusieurs Blackboards dans la scène)",
+                    "Tu dois avoir 1 seul blackboard dans ta scène");
+
+                EditorGUI.DrawRect(position, new Color(1f, 0.7f, 0.3f));
+                EditorGUI.LabelField(position, fallbackLabel);
+                return;
+            }
+            BlackboardData data = BlackboardEditorUtility.GetData(blackboards[0]);
 
             EditorGUI.BeginProperty(position, label, property);
 
             if (data == null) {
-                GUIContent fallbackLabel = new(label.text + " (aucun Blackboard)",
-                    "Renseigne le champ Blackboard de l'objet, et le BlackboardData de ce Blackboard, pour choisir dans une liste.");
-                EditorGUI.PropertyField(position, nameProperty, fallbackLabel);
+                GUIContent fallbackLabel = new(label.text + " (aucune Data trouvée)",
+                    "Renseigne le champ BlackboardData de ce Blackboard, pour choisir dans une liste.");
+                EditorGUI.LabelField(position, fallbackLabel);
                 EditorGUI.EndProperty();
                 return;
             }
