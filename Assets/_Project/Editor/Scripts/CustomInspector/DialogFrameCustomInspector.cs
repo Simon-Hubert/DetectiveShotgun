@@ -44,9 +44,9 @@ namespace DShotgun.Editor
 
                 GUILayout.BeginHorizontal();
                 //Change via Editor
-                CharacterPopup(ref _leftSelectedName, ref _leftSelectedSprite, _leftSprites, out (string, string) leftFrame, out Sprite leftSprite,0);
-                CharacterPopup(ref _middleSelectedName, ref _middleSelectedSprite, _middleSprites, out (string, string) middleFrame, out Sprite middleSprite,1);
-                CharacterPopup(ref _rightSelectedName, ref _rightSelectedSprite, _rightSprites, out (string, string) rightFrame, out Sprite rightSprite,2);
+                CharacterPopup(ref _leftSelectedName, ref _leftSelectedSprite, _leftSprites, out DialogFrame.SpriteRef leftFrame, out Sprite leftSprite,0);
+                CharacterPopup(ref _middleSelectedName, ref _middleSelectedSprite, _middleSprites, out DialogFrame.SpriteRef middleFrame, out Sprite middleSprite,1);
+                CharacterPopup(ref _rightSelectedName, ref _rightSelectedSprite, _rightSprites, out DialogFrame.SpriteRef rightFrame, out Sprite rightSprite,2);
                 
                 GUILayout.EndHorizontal();
 
@@ -90,37 +90,37 @@ namespace DShotgun.Editor
         
         private void GetCharacterNames() {
             for (int i = 0; i < _names.Length; i++) {
-                if (_dialogFrame.LeftRef.Item1 == _names[i]) _leftSelectedName = i;
-                if (_dialogFrame.MiddleRef.Item1 == _names[i]) _middleSelectedName = i;
-                if (_dialogFrame.RightRef.Item1 == _names[i]) _rightSelectedName = i;
+                if (_dialogFrame.LeftRef.characterName == _names[i]) _leftSelectedName = i;
+                if (_dialogFrame.MiddleRef.characterName == _names[i]) _middleSelectedName = i;
+                if (_dialogFrame.RightRef.characterName == _names[i]) _rightSelectedName = i;
             }
         }
         
-        private int GetSprite(out IReadOnlyList<NamedSprite> sprites, int characterNameID, (string, string) refTuple) {
+        private int GetSprite(out IReadOnlyList<NamedSprite> sprites, int characterNameID, DialogFrame.SpriteRef refTuple) {
             if (characterNameID == 0) {
                 sprites = null;
                 return 0;
             }
             sprites = _charactersDatabase.GetCharacter(_names[characterNameID]).SpriteList;
             for (int i = 0; i < sprites.Count; i++) {
-                if (sprites[i].Name == refTuple.Item2) return i;
+                if (sprites[i].Name == refTuple.spriteName) return i;
             }
             return 0;
         }
 
-        private void CharacterPopup(ref int selectedName, ref int selectedSprite, IReadOnlyList<NamedSprite> sprites, out (string, string) frame, out Sprite sprite, int characterID) {
+        private void CharacterPopup(ref int selectedName, ref int selectedSprite, IReadOnlyList<NamedSprite> sprites, out DialogFrame.SpriteRef frame, out Sprite sprite, int characterID) {
             GUILayout.BeginVertical();
             selectedName = EditorGUILayout.Popup(selectedName, _names);
             selectedSprite = sprites == null ? 0 : EditorGUILayout.Popup(selectedSprite, sprites.Select(e => e.Name).ToArray());
             
-            frame = _dialogFrame.LeftRef;
-            frame.Item1 = _names[selectedName];
+            frame = new DialogFrame.SpriteRef();
+            frame.characterName = _names[selectedName];
             if (sprites == null) {
-                frame.Item2 = "None";
+                frame.spriteName = "None";
                 sprite = null;
             }
             else {
-                frame.Item2 = sprites[selectedSprite].Name;
+                frame.spriteName = sprites[selectedSprite].Name;
                 sprite = sprites[selectedSprite].Sprite;
             }
 
