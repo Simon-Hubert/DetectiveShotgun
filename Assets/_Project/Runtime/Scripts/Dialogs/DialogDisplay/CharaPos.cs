@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace DShotgun.Dialogs
 {
-    public enum CharacterPositioning {
+    public enum CharaPos {
         NONE = -1,
         LEFT = 0,
         MIDDLE = 1,

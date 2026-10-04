@@ -2,6 +2,8 @@ using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
+using System.Collections.Generic;
+using JetBrains.Annotations;
 
 namespace DShotgun.Dialogs
 {
@@ -98,49 +100,54 @@ namespace DShotgun.Dialogs
         }
     }
 
+    [Serializable]
     public struct CharacterDialogProfile
     {
         private SOCharacterDialogProfile _defaultDialogProfile;
-
-        public WritingProfile _typingProfile;
-        public void ResetTypingProfile() {
-            _typingProfile = _defaultDialogProfile.TypingProfile;
-        }
+        public SOCharacterDialogProfile DefaultDialogProfile { get => _defaultDialogProfile; }
         
-        public float _typingSpeed;
-        public void ResetTypingSpeed() {
-            _typingSpeed = _defaultDialogProfile.TypingSpeed;
-        }
-
-        public AudioClip _typingSound;
-        public void ResetTypingSound() {
-            _typingSound = _defaultDialogProfile.TypingSound;
-        }
-        
-        public float _soundPitch;
-        public float soundPitch
-        {
-            set => _soundPitch = Mathf.Clamp(value, -3.0f, 3.0f);
-            get => _soundPitch;
-        }
-        public void ResetSoundPitch() {
-            soundPitch = _defaultDialogProfile.SoundPitch;
-        }
+        public ProfileValues<WritingProfile> typingProfile;
+        public ProfileValues<float> typingSpeed;
+        public float typingDelay { get => typingSpeed.GetLastValue > 0.0f ? 1.0f / typingSpeed.GetLastValue : 0.0f; }
+        public ProfileValues<AudioClip> typingSound;
+        public ProfileValues<float> soundPitch;
 
         public void ResetAll() {
-            ResetSoundPitch();
-            ResetTypingSound();
-            ResetTypingProfile();
-            ResetTypingSpeed();
+            typingProfile.ResetValues();
+            typingSpeed.ResetValues();
+            typingSound.ResetValues();
+            soundPitch.ResetValues();
         }
 
         public CharacterDialogProfile(SOCharacterDialogProfile a_profile) {
             _defaultDialogProfile = a_profile;
             
-            _typingProfile = _defaultDialogProfile.TypingProfile;
-            _typingSpeed = _defaultDialogProfile.TypingSpeed;
-            _typingSound = _defaultDialogProfile.TypingSound;
-            _soundPitch = _defaultDialogProfile.SoundPitch;
+            typingProfile = new ProfileValues<WritingProfile>(_defaultDialogProfile.TypingProfile);
+            typingSpeed = new ProfileValues<float>(_defaultDialogProfile.TypingSpeed);
+            typingSound = new ProfileValues<AudioClip>(_defaultDialogProfile.TypingSound);
+            soundPitch = new ProfileValues<float>(_defaultDialogProfile.SoundPitch);
+        }
+    }
+
+    [Serializable]
+    public struct ProfileValues<T>
+    {
+        private T _default;
+        public List<T> queue;
+        
+        public T GetLastValue { get => queue.Count == 0 ? default : queue[^1]; }
+        public void ResetValues() {
+            queue = new List<T>();
+            queue.Add(_default);
+        }
+
+        public ProfileValues(T a_type) {
+            _default = a_type;
+            
+            queue = new List<T>();
+            queue.Add(default);
+            
+            Debug.Log($"Queue count : {queue.Count}");
         }
     }
 }

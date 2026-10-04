@@ -27,6 +27,8 @@ namespace DShotgun.Editor
         private DialogFrame _dialogFrame;
         private CharactersDatabase _charactersDatabase;
         private string[] _names;
+
+        public bool _showAdditionalSettings = false;
         
         public override void OnInspectorGUI() {
             _charactersDatabase ??= Resources.Load<CharactersDatabase>("Characters");
@@ -42,9 +44,9 @@ namespace DShotgun.Editor
 
                 GUILayout.BeginHorizontal();
                 //Change via Editor
-                CharacterPopup(ref _leftSelectedName, ref _leftSelectedSprite, _leftSprites, out (string, string) leftFrame, out Sprite leftSprite,0);
-                CharacterPopup(ref _middleSelectedName, ref _middleSelectedSprite, _middleSprites, out (string, string) middleFrame, out Sprite middleSprite,1);
-                CharacterPopup(ref _rightSelectedName, ref _rightSelectedSprite, _rightSprites, out (string, string) rightFrame, out Sprite rightSprite,2);
+                CharacterPopup(ref _leftSelectedName, ref _leftSelectedSprite, _leftSprites, out DialogFrame.SpriteRef leftFrame, out Sprite leftSprite,0);
+                CharacterPopup(ref _middleSelectedName, ref _middleSelectedSprite, _middleSprites, out DialogFrame.SpriteRef middleFrame, out Sprite middleSprite,1);
+                CharacterPopup(ref _rightSelectedName, ref _rightSelectedSprite, _rightSprites, out DialogFrame.SpriteRef rightFrame, out Sprite rightSprite,2);
                 
                 GUILayout.EndHorizontal();
 
@@ -56,66 +58,76 @@ namespace DShotgun.Editor
                 _dialogFrame.RightRef = rightFrame;
                 _dialogFrame.Right= rightSprite;
                 GUILayout.Space(10);
-                bool noOneSpeaking = GUILayout.Toggle(_dialogFrame.speakingCharacterID == -1, "Don't Show Speaker");
-                
 
-                _dialogFrame.customName = GUILayout.Toggle(_dialogFrame.customName, "Use Custom Name");
-                if (_dialogFrame.customName) {
-                    _dialogFrame.Name = GUILayout.TextField(_dialogFrame.Name);
-                }
+                _dialogFrame.MoveNextAutomatically = GUILayout.Toggle(
+                    _dialogFrame.MoveNextAutomatically, "Move to next Frame immediately after");
+
+                _showAdditionalSettings = EditorGUILayout.Foldout(_showAdditionalSettings, "Show Additional Settings");
+                if (_showAdditionalSettings) {
+                    bool noOneSpeaking = GUILayout.Toggle(_dialogFrame.speakingCharacterID == -1, "Don't Show Speaker");
+                    _dialogFrame.UseCustomName = GUILayout.Toggle(_dialogFrame.UseCustomName, "Use Custom Name");
+                    if (_dialogFrame.UseCustomName) {
+                        _dialogFrame.Name = GUILayout.TextField(_dialogFrame.Name);
+                    }
                 
-                if (noOneSpeaking) {
-                    _dialogFrame.speakingCharacterID = -1;
-                    if (!_dialogFrame.customName) {
-                        _dialogFrame.Name = "";
+                    _dialogFrame.UseCustomDialogProfile = GUILayout.Toggle(_dialogFrame.UseCustomDialogProfile, "Use Custom Dialog Profile");
+                    if (_dialogFrame.UseCustomDialogProfile) {
+                        _dialogFrame.CharacterDialogProfile = (SOCharacterDialogProfile)EditorGUILayout.ObjectField(_dialogFrame.CharacterDialogProfile, typeof(SOCharacterDialogProfile));
+                    }
+                
+                    if (noOneSpeaking) {
+                        _dialogFrame.speakingCharacterID = -1;
+                        if (!_dialogFrame.UseCustomName) {
+                            _dialogFrame.Name = "";
+                        }
                     }
                 }
                 
                 GUILayout.Space(10);
                 _dialogFrame.Text = GUILayout.TextArea(_dialogFrame.Text, GUILayout.Height(100));
             }
-
         }
         
         private void GetCharacterNames() {
             for (int i = 0; i < _names.Length; i++) {
-                if (_dialogFrame.LeftRef.Item1 == _names[i]) _leftSelectedName = i;
-                if (_dialogFrame.MiddleRef.Item1 == _names[i]) _middleSelectedName = i;
-                if (_dialogFrame.RightRef.Item1 == _names[i]) _rightSelectedName = i;
+                if (_dialogFrame.LeftRef.characterName == _names[i]) _leftSelectedName = i;
+                if (_dialogFrame.MiddleRef.characterName == _names[i]) _middleSelectedName = i;
+                if (_dialogFrame.RightRef.characterName == _names[i]) _rightSelectedName = i;
             }
         }
         
-        private int GetSprite(out IReadOnlyList<NamedSprite> sprites, int characterNameID, (string, string) refTuple) {
+        private int GetSprite(out IReadOnlyList<NamedSprite> sprites, int characterNameID, DialogFrame.SpriteRef refTuple) {
             if (characterNameID == 0) {
                 sprites = null;
                 return 0;
             }
             sprites = _charactersDatabase.GetCharacter(_names[characterNameID]).SpriteList;
             for (int i = 0; i < sprites.Count; i++) {
-                if (sprites[i].Name == refTuple.Item2) return i;
+                if (sprites[i].Name == refTuple.spriteName) return i;
             }
             return 0;
         }
 
-        private void CharacterPopup(ref int selectedName, ref int selectedSprite, IReadOnlyList<NamedSprite> sprites, out (string, string) frame, out Sprite sprite, int characterID) {
+        private void CharacterPopup(ref int selectedName, ref int selectedSprite, IReadOnlyList<NamedSprite> sprites, out DialogFrame.SpriteRef frame, out Sprite sprite, int characterID) {
             GUILayout.BeginVertical();
             selectedName = EditorGUILayout.Popup(selectedName, _names);
             selectedSprite = sprites == null ? 0 : EditorGUILayout.Popup(selectedSprite, sprites.Select(e => e.Name).ToArray());
             
-            frame = _dialogFrame.LeftRef;
-            frame.Item1 = _names[selectedName];
+            frame = new DialogFrame.SpriteRef();
+            frame.characterName = _names[selectedName];
             if (sprites == null) {
-                frame.Item2 = "None";
+                frame.spriteName = "None";
                 sprite = null;
             }
             else {
-                frame.Item2 = sprites[selectedSprite].Name;
+                frame.spriteName = sprites[selectedSprite].Name;
                 sprite = sprites[selectedSprite].Sprite;
             }
 
             if (GUILayout.Toggle(characterID == _dialogFrame.speakingCharacterID, "Speaking")) {
                 _dialogFrame.speakingCharacterID = characterID;
-                if(!_dialogFrame.customName) _dialogFrame.Name = _names[selectedName];
+                if(!_dialogFrame.UseCustomDialogProfile) _dialogFrame.CharacterDialogProfile = _charactersDatabase.GetCharacter(_names[selectedName]).DialogProfile;
+                if(!_dialogFrame.UseCustomName) _dialogFrame.Name = _names[selectedName];
             }
             GUILayout.EndVertical();
         }

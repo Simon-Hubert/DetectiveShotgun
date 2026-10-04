@@ -44,7 +44,7 @@ namespace DShotgun.Dialogs
             foreach (CharacterData characterData in _characters.Where(characterData => characterData.Name == name)) {
                 return characterData;
             }
-            return new CharacterData("", null, null);
+            return new CharacterData("", null, CreateInstance<SOCharacterDialogProfile>());
         }
     }
 }
