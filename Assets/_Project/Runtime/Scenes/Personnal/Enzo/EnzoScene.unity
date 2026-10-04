@@ -333,7 +333,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ba8adc89f54b814d974909c13324ec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableManager
-  _blackboard: {fileID: 1745045009}
   _interactionCases:
   - _condition:
       rid: 6016392418279030862
@@ -522,6 +521,7 @@ GameObject:
   - component: {fileID: 655989323}
   - component: {fileID: 655989322}
   - component: {fileID: 655989321}
+  - component: {fileID: 655989324}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -543,6 +543,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractableController
   _camera: {fileID: 0}
   _inputs: {fileID: 655989322}
+  _interactText:
+    _text: efsdfsdgfdgsfgrfzeefkjazedjazpdkazpdkapzlpkdpalzzkfpazkfpoazkfpoazkfdpokaezpfkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkefsdfsdgfdgsfgrfzeefkjazedjazpdkazpdkapzlpkdpalzzkfpazkfpoazkfpoazkfdpokaezpfkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    _styles:
+    - _startIndex: 24
+      _length: 14
+      _isBold: 0
+      _isItalic: 0
+      _colorHex: '#FFDA00FF'
+    - _startIndex: 23
+      _length: 7
+      _isBold: 1
+      _isItalic: 0
+      _colorHex: 
+    - _startIndex: 5
+      _length: 5
+      _isBold: 0
+      _isItalic: 1
+      _colorHex: 
+    - _startIndex: 0
+      _length: 15
+      _isBold: 0
+      _isItalic: 0
+      _colorHex: 
+    - _startIndex: 138
+      _length: 661
+      _isBold: 1
+      _isItalic: 0
+      _colorHex: 
+    - _startIndex: 87
+      _length: 67
+      _isBold: 0
+      _isItalic: 0
+      _colorHex: '#FFF500FF'
 --- !u!114 &655989322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -571,6 +604,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &655989324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655989320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5696e57ee803a640bfd8354fc734ac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.Blackboard
+  _blackboardData: {fileID: 0}
 --- !u!1 &1621158647
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,7 +753,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ba8adc89f54b814d974909c13324ec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableManager
-  _blackboard: {fileID: 1745045009}
   _interactionCases:
   - _condition:
       rid: 6016392418279030860
