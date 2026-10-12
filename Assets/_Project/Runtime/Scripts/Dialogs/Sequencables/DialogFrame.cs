@@ -56,12 +56,6 @@ namespace DShotgun.Dialogs
             set => _right = value;
         }
 
-        public string Text
-        {
-            get => _text;
-            set => _text = value;
-        }
-
         public string Name
         {
             get => _name;
@@ -86,7 +80,7 @@ namespace DShotgun.Dialogs
         [SerializeField] private Sprite _right;
         
         
-        [SerializeField] private string _text;
+        [SerializeField] private RichTextData _text;
         [SerializeField] private string _name;
         
         [SerializeField] private bool _moveNextAutomatically;
@@ -108,7 +102,7 @@ namespace DShotgun.Dialogs
 
         private void TransferData() {
             if (MoveNextAutomatically) {
-                _text += "[UneBaliseDeFin]"; //TODO mettre la bonne Balise
+                _text.Text += "[UneBaliseDeFin]"; //TODO mettre la bonne Balise
             }
             
             CharacterDialogData dialogData = new CharacterDialogData()
@@ -119,7 +113,7 @@ namespace DShotgun.Dialogs
                 DialogProfile = CharacterDialogProfile,
                 Name = _name,
                 SpeakingCharacterID = speakingCharacterID,
-                Text = _text,
+                Text = _text.Text,
                 Callback = OnRequestedSkip
             };
             

@@ -84,7 +84,7 @@ namespace DShotgun.Editor
                 }
                 
                 GUILayout.Space(10);
-                _dialogFrame.Text = GUILayout.TextArea(_dialogFrame.Text, GUILayout.Height(100));
+                EditorGUILayout.PropertyField(serializedObject.FindProperty("_text"));
             }
         }
         

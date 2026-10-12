@@ -718,6 +718,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: HierarchySequences::HierarchySequences.PlaySequenceAtStart
   _sequence: {fileID: 1033153897}
+--- !u!114 &1051453094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f58764cb435beee4da51f68d75b169c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.SOCharacterDialogProfile
+  _typingProfile: 0
+  _typingSpeed: 20
+  _typingSound: {fileID: 0}
+  _soundPitch: 1
+  _hasPersonalisedColor: 0
+  _defaultTextColor: {r: 1, g: 1, b: 1, a: 1}
+  _defaultFont: {fileID: 0}
+  _caseStyle: 0
+  _hasPersonalisedSpacing: 0
+  _defaultSpacingCharacter: 0
+  _defaultSpacingWord: 0
+  _defaultSpacingLine: 0
+  _defaultSpacingParagraph: 0
 --- !u!1 &1127422842
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,11 +833,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <customName>k__BackingField: 0
+  <LeftRef>k__BackingField:
+    characterName: None
+    spriteName: None
+  <MiddleRef>k__BackingField:
+    characterName: None
+    spriteName: None
+  <RightRef>k__BackingField:
+    characterName: None
+    spriteName: None
+  <UseCustomName>k__BackingField: 0
+  <UseCustomDialogProfile>k__BackingField: 0
   <speakingCharacterID>k__BackingField: 0
+  <CharacterDialogProfile>k__BackingField: {fileID: 1051453094}
   _left: {fileID: 0}
   _middle: {fileID: 0}
   _right: {fileID: 0}
+  _text:
+    _text: 
+    _styles:
+    - _startIndex: 1
+      _length: 14
+      _isBold: 0
+      _isItalic: 0
+      _colorHex: '#5B5B5BFF'
+  _name: None
+  _moveNextAutomatically: 0
 --- !u!1 &1956071502
 GameObject:
   m_ObjectHideFlags: 0
