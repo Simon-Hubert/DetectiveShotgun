@@ -2,8 +2,6 @@ using System;
 using System.Threading;
 using HierarchySequences;
 using UnityEngine;
-using UnityEngine.Serialization;
-using UnityEngine.UI;
 
 namespace DShotgun.Dialogs
 {
@@ -26,12 +24,12 @@ namespace DShotgun.Dialogs
     
     public class DialogFrame : ASequencable
     {
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         [Serializable]
         public struct SpriteRef
         {
-            [SerializeField] public string characterName;
-            [SerializeField] public string spriteName;
+            [SerializeField] public string _characterName;
+            [SerializeField] public string _spriteName;
         }
         
         [field: SerializeField] public SpriteRef LeftRef { get; set; }
@@ -72,20 +70,19 @@ namespace DShotgun.Dialogs
         [field: SerializeField] public bool UseCustomDialogProfile { get; set; }
 #endif
         
-        [field: SerializeField] public int speakingCharacterID { get; set; }
+        [field: SerializeField] public int SpeakingCharacterID { get; set; }
         [field: SerializeField] public SOCharacterDialogProfile CharacterDialogProfile { get; set; }
         
         [SerializeField] private Sprite _left;
         [SerializeField] private Sprite _middle;
         [SerializeField] private Sprite _right;
         
-        
         [SerializeField] private RichTextData _text;
         [SerializeField] private string _name;
         
         [SerializeField] private bool _moveNextAutomatically;
 
-        private CancellationTokenSource _requestedSkipCancellationTokenSource = new CancellationTokenSource();
+        private readonly CancellationTokenSource _requestedSkipCancellationTokenSource = new CancellationTokenSource();
         
         protected override async Awaitable OnPlay() {
             try {
@@ -95,8 +92,9 @@ namespace DShotgun.Dialogs
                     await Awaitable.NextFrameAsync(_requestedSkipCancellationTokenSource.Token);
                 }
             }
-            catch (OperationCanceledException oce) {
-                //CleanupSiBesoing
+            catch (OperationCanceledException)
+            {
+                throw new NotImplementedException();
             }
         }
 
@@ -112,7 +110,7 @@ namespace DShotgun.Dialogs
                 Right = _right,
                 DialogProfile = CharacterDialogProfile,
                 Name = _name,
-                SpeakingCharacterID = speakingCharacterID,
+                SpeakingCharacterID = SpeakingCharacterID,
                 Text = _text.Text,
                 Callback = OnRequestedSkip
             };

@@ -64,7 +64,7 @@ namespace DShotgun.Editor
 
                 _showAdditionalSettings = EditorGUILayout.Foldout(_showAdditionalSettings, "Show Additional Settings");
                 if (_showAdditionalSettings) {
-                    bool noOneSpeaking = GUILayout.Toggle(_dialogFrame.speakingCharacterID == -1, "Don't Show Speaker");
+                    bool noOneSpeaking = GUILayout.Toggle(_dialogFrame.SpeakingCharacterID == -1, "Don't Show Speaker");
                     _dialogFrame.UseCustomName = GUILayout.Toggle(_dialogFrame.UseCustomName, "Use Custom Name");
                     if (_dialogFrame.UseCustomName) {
                         _dialogFrame.Name = GUILayout.TextField(_dialogFrame.Name);
@@ -76,7 +76,7 @@ namespace DShotgun.Editor
                     }
                 
                     if (noOneSpeaking) {
-                        _dialogFrame.speakingCharacterID = -1;
+                        _dialogFrame.SpeakingCharacterID = -1;
                         if (!_dialogFrame.UseCustomName) {
                             _dialogFrame.Name = "";
                         }
@@ -90,9 +90,9 @@ namespace DShotgun.Editor
         
         private void GetCharacterNames() {
             for (int i = 0; i < _names.Length; i++) {
-                if (_dialogFrame.LeftRef.characterName == _names[i]) _leftSelectedName = i;
-                if (_dialogFrame.MiddleRef.characterName == _names[i]) _middleSelectedName = i;
-                if (_dialogFrame.RightRef.characterName == _names[i]) _rightSelectedName = i;
+                if (_dialogFrame.LeftRef._characterName == _names[i]) _leftSelectedName = i;
+                if (_dialogFrame.MiddleRef._characterName == _names[i]) _middleSelectedName = i;
+                if (_dialogFrame.RightRef._characterName == _names[i]) _rightSelectedName = i;
             }
         }
         
@@ -103,7 +103,7 @@ namespace DShotgun.Editor
             }
             sprites = _charactersDatabase.GetCharacter(_names[characterNameID]).SpriteList;
             for (int i = 0; i < sprites.Count; i++) {
-                if (sprites[i].Name == refTuple.spriteName) return i;
+                if (sprites[i].Name == refTuple._spriteName) return i;
             }
             return 0;
         }
@@ -114,18 +114,18 @@ namespace DShotgun.Editor
             selectedSprite = sprites == null ? 0 : EditorGUILayout.Popup(selectedSprite, sprites.Select(e => e.Name).ToArray());
             
             frame = new DialogFrame.SpriteRef();
-            frame.characterName = _names[selectedName];
+            frame._characterName = _names[selectedName];
             if (sprites == null) {
-                frame.spriteName = "None";
+                frame._spriteName = "None";
                 sprite = null;
             }
             else {
-                frame.spriteName = sprites[selectedSprite].Name;
+                frame._spriteName = sprites[selectedSprite].Name;
                 sprite = sprites[selectedSprite].Sprite;
             }
 
-            if (GUILayout.Toggle(characterID == _dialogFrame.speakingCharacterID, "Speaking")) {
-                _dialogFrame.speakingCharacterID = characterID;
+            if (GUILayout.Toggle(characterID == _dialogFrame.SpeakingCharacterID, "Speaking")) {
+                _dialogFrame.SpeakingCharacterID = characterID;
                 if(!_dialogFrame.UseCustomDialogProfile) _dialogFrame.CharacterDialogProfile = _charactersDatabase.GetCharacter(_names[selectedName]).DialogProfile;
                 if(!_dialogFrame.UseCustomName) _dialogFrame.Name = _names[selectedName];
             }
