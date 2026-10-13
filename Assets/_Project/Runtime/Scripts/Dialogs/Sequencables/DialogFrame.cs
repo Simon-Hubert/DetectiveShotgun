@@ -94,7 +94,7 @@ namespace DShotgun.Dialogs
             }
             catch (OperationCanceledException)
             {
-                throw new NotImplementedException();
+                //throw new NotImplementedException();
             }
         }
 
