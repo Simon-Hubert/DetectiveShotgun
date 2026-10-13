@@ -1,5 +1,6 @@
 using System;
 using System.Threading;
+using DShotgun.RichText;
 using HierarchySequences;
 using UnityEngine;
 
@@ -99,8 +100,9 @@ namespace DShotgun.Dialogs
         }
 
         private void TransferData() {
+            string text = RichTextCompiler.Compile(_text.Text, RichTextTarget.Tmp, RichTextTagRegistry.Default).Output;
             if (MoveNextAutomatically) {
-                _text.Text += "[UneBaliseDeFin]"; //TODO mettre la bonne Balise
+                text += "[UneBaliseDeFin]"; //TODO mettre la bonne Balise
             }
             
             CharacterDialogData dialogData = new CharacterDialogData()
@@ -111,7 +113,7 @@ namespace DShotgun.Dialogs
                 DialogProfile = CharacterDialogProfile,
                 Name = _name,
                 SpeakingCharacterID = SpeakingCharacterID,
-                Text = _text.Text,
+                Text = text,
                 Callback = OnRequestedSkip
             };
             
