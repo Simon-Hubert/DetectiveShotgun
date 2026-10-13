@@ -31,6 +31,9 @@ namespace DShotgun.Editor
         public bool _showAdditionalSettings = false;
         
         public override void OnInspectorGUI() {
+            
+            serializedObject.Update();
+            
             _charactersDatabase ??= Resources.Load<CharactersDatabase>("Characters");
             _dialogFrame = target as DialogFrame;
             _names = _charactersDatabase.Characters.Select(e => e.Name).Prepend("None").ToArray();
@@ -85,6 +88,8 @@ namespace DShotgun.Editor
                 
                 GUILayout.Space(10);
                 EditorGUILayout.PropertyField(serializedObject.FindProperty("_text"));
+                
+                serializedObject.ApplyModifiedProperties();
             }
         }
         
