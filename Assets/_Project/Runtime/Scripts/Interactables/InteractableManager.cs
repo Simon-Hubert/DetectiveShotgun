@@ -1,6 +1,7 @@
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
+using HierarchySequences;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace DShotgun
 {
@@ -13,6 +14,9 @@ namespace DShotgun
     {
         [SerializeField] private List<InteractionCase> _interactionCases = new List<InteractionCase>();
 
+        [SerializeField] private Sequence _aimSequence;
+        [SerializeField] private UnityEvent _onAimed;
+
         /// <summary>
         /// Traite une interaction du joueur avec cet objet.
         /// Parcourt les cas dans l'ordre de la liste (l'ordre fait la priorité) et s'arrête au premier
@@ -21,12 +25,9 @@ namespace DShotgun
         /// <returns>true si un cas a été validé, false si aucun ne l'est.</returns>
         public bool Interact()
         {
-            foreach (var interactionCase in _interactionCases)
+            foreach (InteractionCase interactionCase in _interactionCases)
             {
-                if(interactionCase.Evaluate(Blackboard.Instance))
-                {
-                    return true;
-                }
+                if (interactionCase.Evaluate(Blackboard.Instance)) return true;
             }
 
             return false;
@@ -35,10 +36,10 @@ namespace DShotgun
         /// <summary>
         /// Traite le fait que le joueur vise cet objet.
         /// </summary>
-        public void OnAimed()
+        public async Awaitable AimAsync()
         {
-            
+            _onAimed?.Invoke();
+            if (_aimSequence != null) await _aimSequence.ExecuteAsync();
         }
-    
-    }   
+    }
 }

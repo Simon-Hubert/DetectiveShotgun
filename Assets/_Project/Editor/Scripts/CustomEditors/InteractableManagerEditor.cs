@@ -17,6 +17,8 @@ namespace DShotgun.Editor
 
         private SerializedProperty _interactionCases;
         private ReorderableList _list;
+        private SerializedProperty _aimSequence;
+        private SerializedProperty _onAimed;
 
         private void OnEnable() {
             _interactionCases = serializedObject.FindProperty(INTERACTION_CASES_FIELD);
@@ -25,6 +27,9 @@ namespace DShotgun.Editor
                 drawElementCallback = DrawFlag,
                 elementHeightCallback = GetElementHeight,
             };
+            
+            _aimSequence = serializedObject.FindProperty("_aimSequence");
+            _onAimed = serializedObject.FindProperty("_onAimed");
         }
 
         private float GetElementHeight(int index)
@@ -69,6 +74,8 @@ namespace DShotgun.Editor
         public override void OnInspectorGUI() {
             serializedObject.Update();
             _list.DoLayoutList();
+            EditorGUILayout.PropertyField(_aimSequence);
+            EditorGUILayout.PropertyField(_onAimed);
             serializedObject.ApplyModifiedProperties();
         }
 
