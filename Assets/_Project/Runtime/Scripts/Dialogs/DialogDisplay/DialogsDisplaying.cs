@@ -63,6 +63,7 @@ namespace DShotgun.Dialogs
                 ChangeDialogProfile(a_profile);
                 ContinueButtonState(false);
 
+                Debug.Log(a_text);
                 await ComputeCharByCharAsync(a_cancel, a_text);
 
                 if (!_autoContinue) ContinueButtonState(true);
@@ -80,15 +81,20 @@ namespace DShotgun.Dialogs
                 StringBuilder a = new StringBuilder(_dialog.text);
                 
                 for (int i = 0; i < a_text.Length; i++) {
-                    if (_currentProfile.typingDelay > delay) {
-                        await Awaitable.NextFrameAsync(a_cancel);
-                        delay += Time.deltaTime;
+                    if (a_text[i] == '<') a.Append(TagsTraitement(a_text, ref i));
+                    if (string.IsNullOrWhiteSpace(a_text[i].ToString())) a.Append(a_text[i]);
+                    else {
+                        while (_currentProfile.typingDelay > delay) {
+                            await Awaitable.NextFrameAsync(a_cancel);
+                            delay += Time.deltaTime;
+                        }
+                        
+                        delay -= _currentProfile.typingDelay;
+                        
+                        a.Append(a_text[i]);
+                        _dialog.text = a.ToString();
                     }
-
-                    delay -= _currentProfile.typingDelay;
                     
-                    a.Append(a_text[i]);
-                    _dialog.text = a.ToString();
                 }
             }
             catch (Exception e) {
@@ -120,6 +126,30 @@ namespace DShotgun.Dialogs
             }
             catch (OperationCanceledException) {
                 Debug.LogWarning($"'{name}' : Change Speaker Sprite '{a_sprite.name}' Async was cancelled", gameObject);
+            }
+        }
+
+        private string TagsTraitement(string a_text, ref int r_index) {
+            StringBuilder tagSB = new StringBuilder("<");
+            
+            for (r_index = r_index + 1; r_index < a_text.Length; r_index++) {
+                tagSB.Append(a_text[r_index]);
+
+                if (a_text[r_index] == '>') {
+                    r_index++;
+                    break;
+                }
+            }
+
+            string tag = tagSB.ToString();
+
+            if (tag[^1] == '>') {
+                //Check custom tag
+
+                return tag;
+            }
+            else {
+                return "";
             }
         }
     }

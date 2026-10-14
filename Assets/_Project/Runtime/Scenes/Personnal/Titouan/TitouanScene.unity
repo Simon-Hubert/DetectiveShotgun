@@ -119,6 +119,31 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &184771504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f58764cb435beee4da51f68d75b169c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.SOCharacterDialogProfile
+  _typingProfile: 0
+  _typingSpeed: 20
+  _typingSound: {fileID: 0}
+  _soundPitch: 1
+  _hasPersonalisedColor: 0
+  _defaultTextColor: {r: 1, g: 1, b: 1, a: 1}
+  _defaultFont: {fileID: 0}
+  _caseStyle: 0
+  _hasPersonalisedSpacing: 0
+  _defaultSpacingCharacter: 0
+  _defaultSpacingWord: 0
+  _defaultSpacingLine: 0
+  _defaultSpacingParagraph: 0
 --- !u!1 &243745401
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,31 +334,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: HierarchySequences::HierarchySequences.PlaySequenceAtStart
   _sequence: {fileID: 258136309}
---- !u!114 &280327089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f58764cb435beee4da51f68d75b169c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.SOCharacterDialogProfile
-  _typingProfile: 0
-  _typingSpeed: 20
-  _typingSound: {fileID: 0}
-  _soundPitch: 1
-  _hasPersonalisedColor: 0
-  _defaultTextColor: {r: 1, g: 1, b: 1, a: 1}
-  _defaultFont: {fileID: 0}
-  _caseStyle: 0
-  _hasPersonalisedSpacing: 0
-  _defaultSpacingCharacter: 0
-  _defaultSpacingWord: 0
-  _defaultSpacingLine: 0
-  _defaultSpacingParagraph: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,14 +525,14 @@ MonoBehaviour:
     _characterName: None
     _spriteName: None
   <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
+  <UseCustomDialogProfile>k__BackingField: 1
   <SpeakingCharacterID>k__BackingField: -1
-  <CharacterDialogProfile>k__BackingField: {fileID: 280327089}
+  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
   _left: {fileID: 0}
   _middle: {fileID: 0}
   _right: {fileID: 0}
   _text:
-    _text: ycfhuyqgvfyj <color=blue>red</color>
+    _text: ycfhuyqgvfyj <color=#0034FFFF>red</color>
     _styles: []
   _name: 
   _moveNextAutomatically: 0
@@ -620,31 +620,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &972590160
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f58764cb435beee4da51f68d75b169c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.SOCharacterDialogProfile
-  _typingProfile: 0
-  _typingSpeed: 20
-  _typingSound: {fileID: 0}
-  _soundPitch: 1
-  _hasPersonalisedColor: 0
-  _defaultTextColor: {r: 1, g: 1, b: 1, a: 1}
-  _defaultFont: {fileID: 0}
-  _caseStyle: 0
-  _hasPersonalisedSpacing: 0
-  _defaultSpacingCharacter: 0
-  _defaultSpacingWord: 0
-  _defaultSpacingLine: 0
-  _defaultSpacingParagraph: 0
 --- !u!1 &1107571802
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,31 +699,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1317296095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f58764cb435beee4da51f68d75b169c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.SOCharacterDialogProfile
-  _typingProfile: 0
-  _typingSpeed: 20
-  _typingSound: {fileID: 0}
-  _soundPitch: 1
-  _hasPersonalisedColor: 0
-  _defaultTextColor: {r: 1, g: 1, b: 1, a: 1}
-  _defaultFont: {fileID: 0}
-  _caseStyle: 0
-  _hasPersonalisedSpacing: 0
-  _defaultSpacingCharacter: 0
-  _defaultSpacingWord: 0
-  _defaultSpacingLine: 0
-  _defaultSpacingParagraph: 0
 --- !u!1 &1417347560
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,7 +755,7 @@ MonoBehaviour:
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
   <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 972590160}
+  <CharacterDialogProfile>k__BackingField: {fileID: 184771504}
   _left: {fileID: 0}
   _middle: {fileID: 0}
   _right: {fileID: 0}
@@ -870,7 +820,7 @@ MonoBehaviour:
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
   <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 1317296095}
+  <CharacterDialogProfile>k__BackingField: {fileID: 0}
   _left: {fileID: 0}
   _middle: {fileID: 0}
   _right: {fileID: 0}
