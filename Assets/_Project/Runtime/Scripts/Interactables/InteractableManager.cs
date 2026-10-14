@@ -31,6 +31,14 @@ namespace DShotgun
 
             return false;
         }
+
+        /// <summary>
+        /// Traite le fait que le joueur vise cet objet.
+        /// </summary>
+        public void OnAimed()
+        {
+            
+        }
     
     }   
 }
