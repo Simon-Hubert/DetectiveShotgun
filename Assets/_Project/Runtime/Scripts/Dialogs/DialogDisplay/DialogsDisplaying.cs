@@ -60,6 +60,7 @@ namespace DShotgun.Dialogs
         public async Awaitable DisplayTextAsync(CancellationToken a_cancel, SOCharacterDialogProfile a_profile, string a_text) {
             try
             {
+                ChangeDialogProfile(a_profile);
                 ContinueButtonState(false);
 
                 await ComputeCharByCharAsync(a_cancel, a_text);

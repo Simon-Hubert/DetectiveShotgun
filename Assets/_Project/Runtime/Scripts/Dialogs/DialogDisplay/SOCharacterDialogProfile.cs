@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 using System.Collections.Generic;
 using JetBrains.Annotations;
+using NaughtyAttributes;
 
 namespace DShotgun.Dialogs
 {
@@ -132,21 +133,18 @@ namespace DShotgun.Dialogs
     [Serializable]
     public struct ProfileValues<T>
     {
-        private T _default;
+        [SerializeField, ReadOnly] private T _default;
         public List<T> queue;
         
         public T GetLastValue { get => queue.Count <= 0 ? _default : queue[^1]; }
         public void ResetValues() {
-            queue = new List<T>();
+            queue.Clear();
         }
 
         public ProfileValues(T a_type) {
             _default = a_type;
             
             queue = new List<T>();
-            queue.Add(default);
-            
-            Debug.Log($"Queue count : {queue.Count}");
         }
     }
 }
