@@ -11,7 +11,13 @@ namespace DShotgun.Dialogs
 {
     public class DialogsDisplaying : MonoBehaviour
     {
-        [SerializeField] private Image _leftCharaRdr, _middleCharaRdr, _rightCharaRdr;
+        [Header("Dialog Display")]
+        [SerializeField] private Canvas _dialogCanvas;
+        public void DisplayDialogCanvas(bool a_state) => _dialogCanvas.enabled = a_state;
+
+        [Space(7)]
+        [SerializeField] private Image _leftCharaRdr;
+        [SerializeField] private Image _middleCharaRdr, _rightCharaRdr;
         private Image GetCharaRdr(CharaPos a_posing) {
             switch (a_posing) {
                 case CharaPos.LEFT:
@@ -37,48 +43,65 @@ namespace DShotgun.Dialogs
                     return Vector3.zero;
             }
         }
-
-        [Header("TextBox Display")]
-        [SerializeField] private Image _textBox;
-        [SerializeField] private TextMeshProUGUI _speakersName, _dialog;
-        [SerializeField] private Image _continueIcon;
+        
+        [Space(7)]
+        [SerializeField] private Image _displayTextBox;
+        [SerializeField] private TextMeshProUGUI _dialogSpeakersName, _dialogText;
+        [SerializeField] private Image _dialogContinueIcon;
+        
+        [Header("Comment Display")]
+        [SerializeField] private Canvas _commentCanvas;
+        public void DisplayCommentCanvas(bool a_state) => _commentCanvas.enabled = a_state;
+        
+        [Space(7)]
+        [SerializeField] private Image _commentTextBox;
+        [SerializeField] private TextMeshProUGUI _commentSpeakersName, _commentText;
 
         [Header("Format Data")]
         [SerializeField, ReadOnly] private CharacterDialogProfile _currentProfile;
-        [SerializeField] private bool _autoContinue = false;
-        public bool AutoContinue { get => _autoContinue; }
-
-        public void DisplaySprite(Sprite a_left, Sprite a_middle, Sprite a_right) {
+        [SerializeField] private bool dialogDialogAutoContinue = false;
+        public bool DialogAutoContinue { get => dialogDialogAutoContinue; }
+        
+        public void DisplayDialogSprite(Sprite a_left, Sprite a_middle, Sprite a_right) {
             GetCharaRdr(CharaPos.LEFT).sprite = a_left;
             GetCharaRdr(CharaPos.LEFT).sprite = a_middle;
             GetCharaRdr(CharaPos.LEFT).sprite = a_right;
         }
-        public void DisplaySpeaker(string a_name, CharaPos a_posing) {
-            _speakersName.text = a_name;
+        public void DisplayDialogSpeaker(string a_name, CharaPos a_posing) {
+            _dialogSpeakersName.text = a_name;
             ChangeSpeakersSprite(a_posing);
         }
-        public async Awaitable DisplayTextAsync(CancellationToken a_cancel, SOCharacterDialogProfile a_profile, string a_text) {
-            try
-            {
+        public async Awaitable DisplayDialogAsync(CancellationToken a_cancel, SOCharacterDialogProfile a_profile, string a_text) {
+            try {
                 ChangeDialogProfile(a_profile);
                 ContinueButtonState(false);
-
-                Debug.Log(a_text);
-                await ComputeCharByCharAsync(a_cancel, a_text);
-
-                if (!_autoContinue) ContinueButtonState(true);
+                
+                await ComputeCharByCharAsync(a_cancel, _dialogText, a_text);
+                
+                if (!dialogDialogAutoContinue) ContinueButtonState(true);
             }
-            catch (Exception e)
-            {
+            catch (Exception e) {
                 Debug.LogWarning($"'{name}' : Display Text Async was cancelled - {e}", gameObject);
             }
         }
-        private async Awaitable ComputeCharByCharAsync(CancellationToken a_cancel, string a_text) {
+
+        public async Awaitable DisplayCommentAsync(CancellationToken a_cancel, string a_name, SOCharacterDialogProfile a_profile, string a_text) {
+            try {
+                ChangeDialogProfile(a_profile);
+                
+                await ComputeCharByCharAsync(a_cancel, _commentText, a_text);
+            }
+            catch (Exception e) {
+                Debug.LogWarning($"'{name}' : Display Text Async was cancelled - {e}", gameObject);
+            }
+        }
+        
+        private async Awaitable ComputeCharByCharAsync(CancellationToken a_cancel, TextMeshProUGUI a_textBox, string a_text) {
             try
             {
                 float delay = Time.deltaTime;
-                _dialog.text = "";
-                StringBuilder a = new StringBuilder(_dialog.text);
+                a_textBox.text = "";
+                StringBuilder a = new StringBuilder(a_textBox.text);
                 
                 for (int i = 0; i < a_text.Length; i++) {
                     if (a_text[i] == '<') a.Append(TagsTraitement(a_text, ref i));
@@ -92,7 +115,7 @@ namespace DShotgun.Dialogs
                         delay -= _currentProfile.typingDelay;
                         
                         a.Append(a_text[i]);
-                        _dialog.text = a.ToString();
+                        a_textBox.text = a.ToString();
                     }
                     
                 }
@@ -106,13 +129,13 @@ namespace DShotgun.Dialogs
             _currentProfile = new CharacterDialogProfile(a_profile);
         }
         private void ContinueButtonState(bool a_show) {
-            _continueIcon.enabled = a_show;
+            _dialogContinueIcon.enabled = a_show;
         }
-
+        
         private void ChangeSpeakersSprite(CharaPos a_posing) {
-            TransitionSpeakerSprite(GetCharaRdr(CharaPos.LEFT), a_posing == CharaPos.LEFT ? true : false);
-            TransitionSpeakerSprite(GetCharaRdr(CharaPos.MIDDLE), a_posing == CharaPos.MIDDLE ? true : false);
-            TransitionSpeakerSprite(GetCharaRdr(CharaPos.RIGHT), a_posing == CharaPos.RIGHT ? true : false);
+            _ = TransitionSpeakerSprite(GetCharaRdr(CharaPos.LEFT), a_posing == CharaPos.LEFT ? true : false);
+            _ = TransitionSpeakerSprite(GetCharaRdr(CharaPos.MIDDLE), a_posing == CharaPos.MIDDLE ? true : false);
+            _ = TransitionSpeakerSprite(GetCharaRdr(CharaPos.RIGHT), a_posing == CharaPos.RIGHT ? true : false);
         }
 
         private async Awaitable TransitionSpeakerSprite(Image a_sprite, bool a_isSpeaker) {
