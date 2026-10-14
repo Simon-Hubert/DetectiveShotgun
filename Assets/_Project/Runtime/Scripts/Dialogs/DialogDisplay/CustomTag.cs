@@ -22,11 +22,6 @@ namespace DShotgun.Dialogs
 
         public abstract void UpdateTag(float a_delta, float a_time);
     }
-
-    public class Test : CustomTag
-    {
-        protected override string Name { get => "bite"; }
-    }
     
     public struct TagId
     {
