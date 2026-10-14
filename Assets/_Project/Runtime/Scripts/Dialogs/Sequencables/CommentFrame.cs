@@ -28,7 +28,7 @@ namespace DShotgun.Dialogs
             };
             
             //TODO Remettre quand c'est bon TITOUAN
-            //DialogsManager.instance.CaptureCommentInfo(dialogData); 
+            DialogsManager.instance.CaptureCommentInfo(dialogData); 
         }
     }
 }
