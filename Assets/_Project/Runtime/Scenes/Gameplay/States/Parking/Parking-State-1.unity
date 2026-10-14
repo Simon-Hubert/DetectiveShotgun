@@ -796,7 +796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: DShotgun::DShotgun.InteractableManager
   _interactionCases:
   - _condition:
-      rid: -2
+      rid: 1236845351942488064
     _action:
       m_PersistentCalls:
         m_Calls:
@@ -815,8 +815,9 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
+    - rid: 1236845351942488064
+      type: {class: Always, ns: DShotgun, asm: DShotgun}
+      data: 
 --- !u!1001 &1125999894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -999,7 +1000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5696e57ee803a640bfd8354fc734ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.Blackboard
-  _blackboardData: {fileID: 11400000, guid: a74718ad378a44f40889717e0f085302, type: 2}
+  _blackboardData: {fileID: 0}
 --- !u!4 &1511319327
 Transform:
   m_ObjectHideFlags: 0

@@ -8,7 +8,6 @@ namespace DShotgun
     {
         [SerializeField] private FlagReference _flag;
         public event Action RaiseFlagEnded;
-
         protected override async Awaitable OnPlay()
         {
             try {
@@ -16,11 +15,13 @@ namespace DShotgun
 
             }
             catch (OperationCanceledException oce) {
-
+                
             }
             finally {
                 RaiseFlagEnded?.Invoke();
             }
         }
+        
+        
     }
 }
