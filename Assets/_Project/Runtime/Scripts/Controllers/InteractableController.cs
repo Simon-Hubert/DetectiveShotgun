@@ -12,8 +12,6 @@ namespace DShotgun
     {
         [SerializeField] private Camera _camera;
         [SerializeField] private InputReader _inputs;
-        
-        [SerializeField] private RichTextData _interactText;
 
         private void Start()
         {

@@ -82,10 +82,12 @@ namespace DShotgun.Dialogs
         
         [SerializeField] private bool _moveNextAutomatically;
 
-        private readonly CancellationTokenSource _requestedSkipCancellationTokenSource = new CancellationTokenSource();
+        private CancellationTokenSource _requestedSkipCancellationTokenSource;
         
         protected override async Awaitable OnPlay() {
-            try {
+            try
+            {
+                _requestedSkipCancellationTokenSource = new CancellationTokenSource();
                 TransferData();
                 
                 while (true) {
@@ -94,7 +96,7 @@ namespace DShotgun.Dialogs
             }
             catch (OperationCanceledException)
             {
-                throw new NotImplementedException();
+                //throw new NotImplementedException();
             }
         }
 
