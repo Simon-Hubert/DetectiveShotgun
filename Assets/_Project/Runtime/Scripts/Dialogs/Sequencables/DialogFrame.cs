@@ -122,7 +122,7 @@ namespace DShotgun.Dialogs
             DialogsManager.instance.CaptureDialogsInfo(dialogData);
         }
 
-        private void OnRequestedSkip() {
+        public void OnRequestedSkip() {
             _requestedSkipCancellationTokenSource.Cancel();
         }
     }
