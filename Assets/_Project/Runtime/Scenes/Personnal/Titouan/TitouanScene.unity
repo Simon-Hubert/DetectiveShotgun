@@ -772,7 +772,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Text <color=blue>TEST <color=green>MINECRAFdT</color> sam\xE8re"
+  m_text: "Text <color=blue>TEST\n<color=green><size=150%>MINECRAFdT</size></color>
+    sam\xE8re"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1175,14 +1176,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  <LeftRef>k__BackingField:
+    _characterName: 
+    _spriteName: 
+  <MiddleRef>k__BackingField:
+    _characterName: 
+    _spriteName: 
+  <RightRef>k__BackingField:
+    _characterName: 
+    _spriteName: 
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <speakingCharacterID>k__BackingField: 1
+  <SpeakingCharacterID>k__BackingField: 0
   <CharacterDialogProfile>k__BackingField: {fileID: 1620449312}
   _left: {fileID: -6770372879056521866, guid: f39c0735c139a48419b8e3494eed5fd1, type: 3}
   _middle: {fileID: 0}
   _right: {fileID: 7760134029682071248, guid: a6eba96c7277cc946a2c33e8ca325333, type: 3}
-  _text: <color=green>Test Color</color>
+  _text:
+    _text: 
+    _styles: []
   _name: None
   _moveNextAutomatically: 0
 --- !u!1 &619394800
@@ -1595,14 +1607,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  <LeftRef>k__BackingField:
+    _characterName: 
+    _spriteName: 
+  <MiddleRef>k__BackingField:
+    _characterName: 
+    _spriteName: 
+  <RightRef>k__BackingField:
+    _characterName: 
+    _spriteName: 
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <speakingCharacterID>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 0
   <CharacterDialogProfile>k__BackingField: {fileID: 1315577411}
   _left: {fileID: 0}
   _middle: {fileID: 0}
   _right: {fileID: 0}
-  _text: qsdgfnbsdqfqgsfd
+  _text:
+    _text: 
+    _styles: []
   _name: None
   _moveNextAutomatically: 0
 --- !u!114 &1620449312
@@ -1751,14 +1774,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  <LeftRef>k__BackingField:
+    _characterName: 
+    _spriteName: 
+  <MiddleRef>k__BackingField:
+    _characterName: 
+    _spriteName: 
+  <RightRef>k__BackingField:
+    _characterName: 
+    _spriteName: 
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <speakingCharacterID>k__BackingField: 2
+  <SpeakingCharacterID>k__BackingField: 0
   <CharacterDialogProfile>k__BackingField: {fileID: 407679465}
   _left: {fileID: 0}
   _middle: {fileID: 0}
   _right: {fileID: 0}
-  _text: djhythyujhgtj
+  _text:
+    _text: 
+    _styles: []
   _name: None
   _moveNextAutomatically: 0
 --- !u!1 &1859294649
