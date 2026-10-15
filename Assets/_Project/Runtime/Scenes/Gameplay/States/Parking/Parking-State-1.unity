@@ -446,7 +446,6 @@ Transform:
   m_Children:
   - {fileID: 815811141}
   - {fileID: 578086838}
-  - {fileID: 1362657217}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &486588566
@@ -1889,6 +1888,7 @@ Transform:
   m_Children:
   - {fileID: 1647394692}
   - {fileID: 2046266067}
+  - {fileID: 534144469}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2083050791
@@ -2502,7 +2502,9 @@ PrefabInstance:
       value: Poubelle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1287621839145096839, guid: b3a6b10d344c3f842b4199c0ffc5a6af, type: 3}
+    - {fileID: 9043628577763308269, guid: b3a6b10d344c3f842b4199c0ffc5a6af, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3a6b10d344c3f842b4199c0ffc5a6af, type: 3}
