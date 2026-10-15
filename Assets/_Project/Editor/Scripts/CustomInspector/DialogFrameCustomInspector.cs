@@ -89,8 +89,8 @@ namespace DShotgun.Editor
                 GUILayout.Space(10);
                 EditorGUILayout.PropertyField(serializedObject.FindProperty("_text"));
                 
-                serializedObject.ApplyModifiedProperties();
             }
+            serializedObject.ApplyModifiedProperties();
         }
         
         private void GetCharacterNames() {
