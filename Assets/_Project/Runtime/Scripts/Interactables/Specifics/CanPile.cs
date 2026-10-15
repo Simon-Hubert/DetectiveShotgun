@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 
 namespace DShotgun
@@ -27,7 +28,7 @@ namespace DShotgun
                 Vector2 dir = can.transform.position - transform.position;
                 dir.Normalize();
                 can.simulated = true;
-                can.AddForceAtPosition(dir * _force, transform.position);
+                can.AddForceAtPosition(dir * _force, Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()));
                 Destroy(can.gameObject, 5f);
             }
         }
