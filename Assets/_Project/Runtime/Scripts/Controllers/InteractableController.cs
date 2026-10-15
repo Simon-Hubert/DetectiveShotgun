@@ -38,6 +38,7 @@ namespace DShotgun
         private bool _isBusy;
         private InteractableManager _aimed;
         private Vector3 _defaultPosition;
+        public Vector3 SetDefaultCamPos { set => _defaultPosition = value; }
         private float _zoomProgress;
         private SecondOrderDynamics<Vector2> _moveDynamics;
 
