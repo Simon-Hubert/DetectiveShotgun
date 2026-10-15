@@ -1,5 +1,49 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2330866701576276109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6186461312637628121}
+  - component: {fileID: 4287070653712769545}
+  m_Layer: 0
+  m_Name: EndOfDialogSequence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6186461312637628121
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2330866701576276109}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.5384616, y: 1.5384616, z: 1.5384616}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6842126442602959935}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4287070653712769545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2330866701576276109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24a4099385ff88d93a50a4d1d04fc9ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.EndOfDialogSequence
 --- !u!1 &2524993149154213663
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,7 +235,7 @@ Transform:
   - {fileID: 3248905555274844953}
   - {fileID: 1298349716328582224}
   - {fileID: 3106429687254304821}
-  - {fileID: 2328050989950316412}
+  - {fileID: 6186461312637628121}
   m_Father: {fileID: 8867969535691336594}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4383123929833705441
@@ -272,65 +316,6 @@ MonoBehaviour:
     _styles: []
   _name: Shotgun
   _moveNextAutomatically: 0
---- !u!1 &5644507996382265090
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2328050989950316412}
-  - component: {fileID: 1647576963025595442}
-  m_Layer: 0
-  m_Name: Invoke Event with 1 binds
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2328050989950316412
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5644507996382265090}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5384616, y: 1.5384616, z: 1.5384616}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6842126442602959935}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1647576963025595442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5644507996382265090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69bcb5ae2dda1d84585899ae21a338d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.UnityEventSequence
-  _event:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DShotgun.Dialogs.DialogsManager, DShotgun.Dialogs
-        m_MethodName: ShowDialogUI
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &6604370857780262418
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,10 +479,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: DShotgun::DShotgun.InteractableManager
   _interactionCases:
   - _condition:
-      rid: 1236845357157318732
+      rid: 6016392735534350342
     _action:
       m_PersistentCalls:
         m_Calls:
+        - m_Target: {fileID: 6544509907294103544}
+          m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
+          m_MethodName: Execute
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 1783759558443860047}
           m_TargetAssemblyTypeName: DShotgun.SpriteSwitcher, DShotgun
           m_MethodName: SwitchTo
@@ -511,17 +508,17 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   - _condition:
-      rid: 6016392735534350342
+      rid: 1236845357157318732
     _action:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 6544509907294103544}
-          m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
-          m_MethodName: Execute
-          m_Mode: 1
+        - m_Target: {fileID: 1783759558443860047}
+          m_TargetAssemblyTypeName: DShotgun.SpriteSwitcher, DShotgun
+          m_MethodName: SwitchTo
+          m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_ObjectArgument: {fileID: -8593086790094188785, guid: 0836aa9e43620cb49b749a8c1393868d, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -667,7 +664,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 3084492294577847915, guid: edab3d1ae2531cc4fb1d258e9c1ba514, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &144863261135466237
+--- !u!1 &122311990831394814
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,90 +8,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 330204649950464663}
-  - component: {fileID: 4048128579247692416}
+  - component: {fileID: 8556260529798938777}
+  - component: {fileID: 8731139764740834527}
   m_Layer: 0
-  m_Name: Activate DIALOGS
+  m_Name: EndOfDialogSequence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &330204649950464663
+--- !u!4 &8556260529798938777
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 144863261135466237}
+  m_GameObject: {fileID: 122311990831394814}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.87, y: 1.27, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4461134943919520010}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4048128579247692416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 144863261135466237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06887433ba2fc1247a29057828736437, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.ActivateObject
-  _object: {fileID: 0}
-  _active: 1
---- !u!1 &266665042478731073
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 547708576393485729}
-  - component: {fileID: 8675651630219070715}
-  m_Layer: 0
-  m_Name: Deactivate DIALOGS
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &547708576393485729
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 266665042478731073}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.87, y: 1.27, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.3333334, y: 1.3333334, z: 1.3333334}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5661116546779465390}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8675651630219070715
+--- !u!114 &8731139764740834527
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 266665042478731073}
+  m_GameObject: {fileID: 122311990831394814}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06887433ba2fc1247a29057828736437, type: 3}
+  m_Script: {fileID: 11500000, guid: 24a4099385ff88d93a50a4d1d04fc9ca, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.ActivateObject
-  _object: {fileID: 0}
-  _active: 0
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.EndOfDialogSequence
 --- !u!1 &1567408710281231972
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,7 +368,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  _aimSequence: {fileID: 8292381761532045797}
+  _aimCases: []
   _onAimed:
     m_PersistentCalls:
       m_Calls: []
@@ -543,52 +495,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d2895122bcfbdf6aa81ac559e2c0e2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.SpriteSwitcher
---- !u!1 &6623903456301759996
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6747846793393552602}
-  - component: {fileID: 1405791594892101968}
-  m_Layer: 0
-  m_Name: Activate DIALOGS
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6747846793393552602
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6623903456301759996}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.87, y: 1.27, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5661116546779465390}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1405791594892101968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6623903456301759996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06887433ba2fc1247a29057828736437, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.ActivateObject
-  _object: {fileID: 0}
-  _active: 1
 --- !u!1 &6675091453060406796
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,11 +525,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6747846793393552602}
   - {fileID: 7109081855495082436}
   - {fileID: 6309936236552125705}
   - {fileID: 8582059177338958484}
-  - {fileID: 547708576393485729}
+  - {fileID: 8556260529798938777}
   m_Father: {fileID: 511830593685930467}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3101188444352450598
@@ -668,7 +573,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 330204649950464663}
   - {fileID: 3494730732383790528}
   m_Father: {fileID: 511830593685930467}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

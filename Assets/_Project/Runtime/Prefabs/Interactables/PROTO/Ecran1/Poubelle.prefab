@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2093459981274246602
+--- !u!1 &1287621839145096839
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,90 +8,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5079981111674694109}
-  - component: {fileID: 963114028539519431}
+  - component: {fileID: 7533148139828029018}
+  - component: {fileID: 5119168195434145105}
   m_Layer: 0
-  m_Name: Deactivate DIALOGS
+  m_Name: EndOfDialogSequence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5079981111674694109
+--- !u!4 &7533148139828029018
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2093459981274246602}
+  m_GameObject: {fileID: 1287621839145096839}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.87, y: 1.27, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6345556993295376870}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &963114028539519431
+--- !u!114 &5119168195434145105
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2093459981274246602}
+  m_GameObject: {fileID: 1287621839145096839}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06887433ba2fc1247a29057828736437, type: 3}
+  m_Script: {fileID: 11500000, guid: 24a4099385ff88d93a50a4d1d04fc9ca, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.ActivateObject
-  _object: {fileID: 0}
-  _active: 0
---- !u!1 &2951131588741435554
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1266802800363600059}
-  - component: {fileID: 7559408981405580501}
-  m_Layer: 0
-  m_Name: Activate DIALOGS
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1266802800363600059
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2951131588741435554}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.87, y: 1.27, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6345556993295376870}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7559408981405580501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2951131588741435554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06887433ba2fc1247a29057828736437, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.ActivateObject
-  _object: {fileID: 0}
-  _active: 1
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.EndOfDialogSequence
 --- !u!1 &8298572400262798513
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,7 +108,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  _aimSequence: {fileID: 0}
+  _aimCases: []
   _onAimed:
     m_PersistentCalls:
       m_Calls: []
@@ -307,9 +259,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1266802800363600059}
   - {fileID: 1276670412034922254}
-  - {fileID: 5079981111674694109}
+  - {fileID: 7533148139828029018}
   m_Father: {fileID: 7960297338575317800}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5580398925028737375

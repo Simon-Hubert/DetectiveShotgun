@@ -54,10 +54,13 @@ namespace DShotgun.Editor
                 GUILayout.EndHorizontal();
 
                 // Set New State by name
+                serializedObject.FindProperty("_left").objectReferenceValue = leftSprite;
                 _dialogFrame.LeftRef = leftFrame;
                 _dialogFrame.Left = leftSprite;
+                serializedObject.FindProperty("_middle").objectReferenceValue = middleSprite;
                 _dialogFrame.MiddleRef = middleFrame;
                 _dialogFrame.Middle = middleSprite;
+                serializedObject.FindProperty("_right").objectReferenceValue = rightSprite;
                 _dialogFrame.RightRef = rightFrame;
                 _dialogFrame.Right= rightSprite;
                 GUILayout.Space(10);
