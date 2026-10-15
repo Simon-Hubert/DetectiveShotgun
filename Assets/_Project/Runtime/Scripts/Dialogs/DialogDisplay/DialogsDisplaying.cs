@@ -149,7 +149,10 @@ namespace DShotgun.Dialogs
 
         private async Awaitable TransitionSpeakerSprite(Image a_sprite, bool a_isSpeaker) {
             try {
-                if (a_isSpeaker) {
+                if (a_sprite.sprite == null) {
+                    a_sprite.color = new Color(0.0f, 0.0f, 0.0f, 0.0f);
+                }
+                else if (a_isSpeaker) {
                     a_sprite.color = Color.white;
                 }
                 else {
