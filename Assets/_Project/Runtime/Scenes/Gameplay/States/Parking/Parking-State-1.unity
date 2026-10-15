@@ -195,7 +195,7 @@ Transform:
   m_LocalScale: {x: 2.0833335, y: 2.0833335, z: 2.0833335}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1501812627}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &63499213
 MonoBehaviour:
@@ -530,6 +530,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9090274170124719579, guid: 306f13300eaf00b4185d1d25527226b1, type: 3}
   m_PrefabInstance: {fileID: 4168623363443712830}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &190597060 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6553082802432051563, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+  m_PrefabInstance: {fileID: 1410184442215516020}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8a3882457b01e438e4a1d24cc811e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.Sequence
 --- !u!1 &194012797
 GameObject:
   m_ObjectHideFlags: 0
@@ -2176,7 +2187,7 @@ Transform:
   m_LocalScale: {x: 2.0833335, y: 2.0833335, z: 2.0833335}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1501812627}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &773731379
 MonoBehaviour:
@@ -2213,11 +2224,6 @@ MonoBehaviour:
     _styles: []
   _name: Shotgun
   _moveNextAutomatically: 0
---- !u!4 &796374343 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7253882750931403738, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
-  m_PrefabInstance: {fileID: 1410184442215516020}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &815811140
 GameObject:
   m_ObjectHideFlags: 0
@@ -4473,7 +4479,7 @@ PrefabInstance:
     - target: {fileID: 5080356131477652276, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
       propertyPath: _interactionCases.Array.data[1]._action.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1501812628}
+      objectReference: {fileID: 190597060}
     - target: {fileID: 5080356131477652276, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
       propertyPath: _interactionCases.Array.data[2]._action.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -4500,10 +4506,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 7253882750931403738, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 1501812627}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
 --- !u!1001 &1634924340104836748
@@ -5093,3 +5096,5 @@ SceneRoots:
   - {fileID: 1582624460}
   - {fileID: 1410184442215516020}
   - {fileID: 546582287128634560}
+  - {fileID: 63499212}
+  - {fileID: 773731378}
