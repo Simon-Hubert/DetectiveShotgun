@@ -349,6 +349,7 @@ GameObject:
   - component: {fileID: 4486506891421401990}
   - component: {fileID: 2113343071386537155}
   - component: {fileID: 3950169326708435133}
+  - component: {fileID: 2437967531460178496}
   m_Layer: 0
   m_Name: Rubalise
   m_TagString: Untagged
@@ -403,6 +404,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 2437967531460178496}
+          m_TargetAssemblyTypeName: DShotgun.SpriteSwitcher, DShotgun
+          m_MethodName: SwitchTo
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 21300000, guid: 6a52dd8f6d6ed58408c143a9e1343a9f, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   _aimSequence: {fileID: 8292381761532045797}
   _onAimed:
     m_PersistentCalls:
@@ -451,8 +464,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.47, y: 10.51}
-    newSize: {x: 9, y: 9}
+    oldSize: {x: 6.52, y: 10.6}
+    newSize: {x: 6.52, y: 10.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -508,16 +521,28 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1107405417784302411, guid: bf95a2d1d74a05c47bd891876baf7484, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bf95a2d1d74a05c47bd891876baf7484, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 9, y: 9}
+  m_Size: {x: 6.52, y: 10.6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &2437967531460178496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4714646815362585924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d2895122bcfbdf6aa81ac559e2c0e2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.SpriteSwitcher
 --- !u!1 &6623903456301759996
 GameObject:
   m_ObjectHideFlags: 0
