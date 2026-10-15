@@ -151,6 +151,7 @@ GameObject:
   - component: {fileID: 4234639468362589306}
   - component: {fileID: 291243400821455893}
   - component: {fileID: 6976067190461393521}
+  - component: {fileID: 7485826115795937034}
   m_Layer: 3
   m_Name: Can
   m_TagString: Untagged
@@ -305,6 +306,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &7485826115795937034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2678765745332247910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d2895122bcfbdf6aa81ac559e2c0e2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.SpriteSwitcher
 --- !u!1 &3064311503321539607
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,6 +441,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 7485826115795937034}
+          m_TargetAssemblyTypeName: DShotgun.SpriteSwitcher, DShotgun
+          m_MethodName: SwitchTo
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 

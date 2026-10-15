@@ -187,6 +187,7 @@ MonoBehaviour:
   _dialogsDisplayer: {fileID: 3751194115611832212}
   _dialogState: 0
   _commentState: 0
+  _timeToHide: 3
   _defaultProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
 --- !u!114 &3751194115611832212
 MonoBehaviour:
@@ -392,8 +393,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -515, y: 39}
-  m_SizeDelta: {x: 212.7177, y: 559.1184}
+  m_AnchoredPosition: {x: -600, y: 100}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1281521191988973619
 CanvasRenderer:
@@ -467,8 +468,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2, y: 39}
-  m_SizeDelta: {x: 212.7177, y: 559.1184}
+  m_AnchoredPosition: {x: 0, y: 100}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &284405122527068769
 CanvasRenderer:
@@ -542,8 +543,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 560, y: 39}
-  m_SizeDelta: {x: 212.7177, y: 559.1184}
+  m_AnchoredPosition: {x: 600, y: 100}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3247784294441503928
 CanvasRenderer:

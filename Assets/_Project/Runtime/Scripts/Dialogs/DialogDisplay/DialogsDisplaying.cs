@@ -13,7 +13,11 @@ namespace DShotgun.Dialogs
     {
         [Header("Dialog Display")]
         [SerializeField] private Canvas _dialogCanvas;
-        public void DisplayDialogCanvas(bool a_state) => _dialogCanvas.enabled = a_state;
+        public bool DisplayDialogCanvas
+        {
+            get => _dialogCanvas.enabled;
+            set => _dialogCanvas.enabled = value;
+        }
 
         [Space(7)]
         [SerializeField] private Image _leftCharaRdr;
@@ -51,7 +55,11 @@ namespace DShotgun.Dialogs
         
         [Header("Comment Display")]
         [SerializeField] private Canvas _commentCanvas;
-        public void DisplayCommentCanvas(bool a_state) => _commentCanvas.enabled = a_state;
+
+        public bool DisplayCommentCanvas {
+            get => _commentCanvas.enabled;
+            set => _commentCanvas.enabled = value;
+        }
         
         [Space(7)]
         [SerializeField] private Image _commentTextBox;
@@ -64,8 +72,12 @@ namespace DShotgun.Dialogs
         
         public void DisplayDialogSprite(Sprite a_left, Sprite a_middle, Sprite a_right) {
             GetCharaRdr(CharaPos.LEFT).sprite = a_left;
-            GetCharaRdr(CharaPos.LEFT).sprite = a_middle;
-            GetCharaRdr(CharaPos.LEFT).sprite = a_right;
+            GetCharaRdr(CharaPos.MIDDLE).sprite = a_middle;
+            GetCharaRdr(CharaPos.RIGHT).sprite = a_right;
+
+            GetCharaRdr(CharaPos.LEFT).enabled = GetCharaRdr(CharaPos.LEFT).sprite != null;
+            GetCharaRdr(CharaPos.MIDDLE).enabled = GetCharaRdr(CharaPos.MIDDLE).sprite != null;
+            GetCharaRdr(CharaPos.RIGHT).enabled = GetCharaRdr(CharaPos.RIGHT).sprite != null;
         }
         public void DisplayDialogSpeaker(string a_name, CharaPos a_posing) {
             _dialogSpeakersName.text = a_name;
@@ -87,6 +99,7 @@ namespace DShotgun.Dialogs
 
         public async Awaitable DisplayCommentAsync(CancellationToken a_cancel, string a_name, SOCharacterDialogProfile a_profile, string a_text) {
             try {
+                _commentSpeakersName.text = a_name;
                 ChangeDialogProfile(a_profile);
                 
                 await ComputeCharByCharAsync(a_cancel, _commentText, a_text);
