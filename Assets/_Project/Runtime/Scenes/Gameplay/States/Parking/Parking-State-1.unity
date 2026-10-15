@@ -165,6 +165,72 @@ MonoBehaviour:
   m_EditorClassIdentifier: HierarchySequences::HierarchySequences.ActivateObject
   _object: {fileID: 2135676963}
   _active: 1
+--- !u!1 &63499211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 63499212}
+  - component: {fileID: 63499213}
+  m_Layer: 0
+  m_Name: DialogFrame (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &63499212
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63499211}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.0833335, y: 2.0833335, z: 2.0833335}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1501812627}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &63499213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63499211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  <LeftRef>k__BackingField:
+    _characterName: Detective
+    _spriteName: Idle
+  <MiddleRef>k__BackingField:
+    _characterName: None
+    _spriteName: None
+  <RightRef>k__BackingField:
+    _characterName: Shotgun
+    _spriteName: Idle
+  <UseCustomName>k__BackingField: 0
+  <UseCustomDialogProfile>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 0
+  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+  _left: {fileID: 21300000, guid: a0991abc4060ea142bfd5ec87ca84109, type: 3}
+  _middle: {fileID: 0}
+  _right: {fileID: 21300000, guid: 9e25dd3b319cc634eab37128aaa6a0e9, type: 3}
+  _text:
+    _text: "Il aurait tir\xE9 si peu de cartouches en une nuit enti\xE8re ? On m\u2019envoie
+      enqu\xEAter sur des amateurs maintenant ?"
+    _styles: []
+  _name: Detective
+  _moveNextAutomatically: 0
 --- !u!1001 &94606105
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2080,6 +2146,78 @@ Transform:
   - {fileID: 1445311613}
   m_Father: {fileID: 603681411}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &773731377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 773731378}
+  - component: {fileID: 773731379}
+  m_Layer: 0
+  m_Name: DialogFrame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &773731378
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773731377}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.0833335, y: 2.0833335, z: 2.0833335}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1501812627}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &773731379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773731377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  <LeftRef>k__BackingField:
+    _characterName: Detective
+    _spriteName: Idle
+  <MiddleRef>k__BackingField:
+    _characterName: None
+    _spriteName: None
+  <RightRef>k__BackingField:
+    _characterName: Shotgun
+    _spriteName: Idle
+  <UseCustomName>k__BackingField: 0
+  <UseCustomDialogProfile>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 2
+  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+  _left: {fileID: 21300000, guid: a0991abc4060ea142bfd5ec87ca84109, type: 3}
+  _middle: {fileID: 0}
+  _right: {fileID: 21300000, guid: 9e25dd3b319cc634eab37128aaa6a0e9, type: 3}
+  _text:
+    _text: "Il nous a laiss\xE9 un mot. Poli, le type. J\u2019aurais pr\xE9f\xE9r\xE9
+      qu\u2019il \xE9crive son num\xE9ro de t\xE9l\xE9phone... Imagine si c\u2019\xE9tait
+      une belle blonde... On comdamne pas les belles blondes non ?"
+    _styles: []
+  _name: Shotgun
+  _moveNextAutomatically: 0
+--- !u!4 &796374343 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7253882750931403738, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+  m_PrefabInstance: {fileID: 1410184442215516020}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &815811140
 GameObject:
   m_ObjectHideFlags: 0
@@ -2976,6 +3114,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1567680456 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5263965697814446888, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+  m_PrefabInstance: {fileID: 1410184442215516020}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8a3882457b01e438e4a1d24cc811e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.Sequence
 --- !u!1 &1572648360
 GameObject:
   m_ObjectHideFlags: 0
@@ -4209,6 +4358,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 441115207389959881, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 500280724277626200, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
       propertyPath: m_Name
       value: INTERACTABLES_Ecran_2
@@ -4253,9 +4406,104 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4543847872141498410, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: m_Name
+      value: OnInteractMessageSeen-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080356131477652276, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: 'managedReferences[-2]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080356131477652276, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _interactionCases.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080356131477652276, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: 'managedReferences[1236845380642799708]'
+      value: DShotgun DShotgun.And
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080356131477652276, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: 'managedReferences[1236845380642799709]'
+      value: DShotgun DShotgun.ConditionOnce
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080356131477652276, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: 'managedReferences[1236845380642799710]'
+      value: DShotgun DShotgun.FlagCondition
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080356131477652276, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: 'managedReferences[1236845380642799711]'
+      value: DShotgun DShotgun.FlagCondition
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080356131477652276, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: managedReferences[1236845380642799708]._a
+      value: 1236845380642799709
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080356131477652276, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: managedReferences[1236845380642799708]._b
+      value: 1236845380642799710
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080356131477652276, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _interactionCases.Array.data[0]._condition
+      value: 1236845380642799708
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080356131477652276, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _interactionCases.Array.data[1]._condition
+      value: 1236845380642799711
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080356131477652276, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _interactionCases.Array.data[2]._condition
+      value: 1236845380642799705
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080356131477652276, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: managedReferences[1236845380642799710]._flag._flagName
+      value: PillarSeen
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080356131477652276, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: managedReferences[1236845380642799711]._flag._flagName
+      value: PillarSeen
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080356131477652276, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _interactionCases.Array.data[2]._action.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080356131477652276, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _interactionCases.Array.data[2]._action.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080356131477652276, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _interactionCases.Array.data[1]._action.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1501812628}
+    - target: {fileID: 5080356131477652276, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _interactionCases.Array.data[2]._action.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1567680456}
+    - target: {fileID: 5080356131477652276, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _interactionCases.Array.data[2]._action.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080356131477652276, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _interactionCases.Array.data[1]._action.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Execute
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080356131477652276, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _interactionCases.Array.data[2]._action.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Execute
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080356131477652276, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _interactionCases.Array.data[2]._action.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: HierarchySequences.Sequence, HierarchySequences
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080356131477652276, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _interactionCases.Array.data[2]._action.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 7253882750931403738, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 1501812627}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
 --- !u!1001 &1634924340104836748
