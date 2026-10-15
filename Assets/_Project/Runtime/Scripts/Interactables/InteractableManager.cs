@@ -13,8 +13,8 @@ namespace DShotgun
     public class InteractableManager : MonoBehaviour
     {
         [SerializeField] private List<InteractionCase> _interactionCases = new List<InteractionCase>();
-
-        [SerializeField] private Sequence _aimSequence;
+        [SerializeField] private List<InteractionCase> _aimCases = new List<InteractionCase>();
+        
         [SerializeField] private UnityEvent _onAimed;
 
         /// <summary>
@@ -36,10 +36,15 @@ namespace DShotgun
         /// <summary>
         /// Traite le fait que le joueur vise cet objet.
         /// </summary>
-        public async Awaitable AimAsync()
+        public bool  Aim()
         {
             _onAimed?.Invoke();
-            if (_aimSequence != null) await _aimSequence.ExecuteAsync();
+            foreach (InteractionCase aimCase in _aimCases)
+            {
+                if (aimCase.Evaluate(Blackboard.Instance)) return true;
+            }
+
+            return false;
         }
     }
 }

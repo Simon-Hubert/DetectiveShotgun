@@ -80,7 +80,7 @@ namespace DShotgun
             if (target == _aimed) return;
 
             _aimed = target;
-            if (target != null && !_isBusy) _ = AimAsync(target);
+            if (target != null && !_isBusy) Aim(target);
         }
 
         private void LateUpdate()
@@ -115,18 +115,10 @@ namespace DShotgun
             if (target != null) target.Interact();
         }
 
-        private async Awaitable AimAsync(InteractableManager target)
+        private void Aim(InteractableManager target)
         {
             _isBusy = true;
-            try
-            {
-                await target.AimAsync();
-            }
-            catch (Exception exception)
-            {
-                Debug.LogException(exception, target);
-            }
-            finally
+            if (target != null) target.Aim();
             {
                 _isBusy = false;
             }
