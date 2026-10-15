@@ -11,13 +11,15 @@ namespace DShotgun.Editor
 
     {
         private const string INTERACTION_CASES_FIELD = "_interactionCases";
+        private const string AIM_CASES_FIELD = "_aimCases";
         private const string CONDITION_FIELD = "_condition";
         private const string ACTION_FIELD = "_action";
         private const float VALUE_WIDTH = 18f;
 
         private SerializedProperty _interactionCases;
         private ReorderableList _list;
-        private SerializedProperty _aimSequence;
+        private SerializedProperty _aimCases;
+        private ReorderableList _aimList;
         private SerializedProperty _onAimed;
 
         private void OnEnable() {
@@ -28,7 +30,13 @@ namespace DShotgun.Editor
                 elementHeightCallback = GetElementHeight,
             };
             
-            _aimSequence = serializedObject.FindProperty("_aimSequence");
+            _aimCases = serializedObject.FindProperty(AIM_CASES_FIELD);
+            _aimList = new ReorderableList(serializedObject, _aimCases, true, true, true, true) {
+                drawHeaderCallback = DrawAimHeader,
+                drawElementCallback = DrawAimFlag,
+                elementHeightCallback = GetAimElementHeight,
+            };
+
             _onAimed = serializedObject.FindProperty("_onAimed");
         }
 
@@ -74,13 +82,59 @@ namespace DShotgun.Editor
         public override void OnInspectorGUI() {
             serializedObject.Update();
             _list.DoLayoutList();
-            EditorGUILayout.PropertyField(_aimSequence);
+            _aimList.DoLayoutList();
             EditorGUILayout.PropertyField(_onAimed);
             serializedObject.ApplyModifiedProperties();
         }
 
         private void DrawHeader(Rect rect) {
             EditorGUI.LabelField(rect, "Flags");
+            Rect valueRect = new(rect.xMax - 80f, rect.y, 80f, rect.height);
+            EditorGUI.LabelField(valueRect, "Valeur initiale", EditorStyles.miniLabel);
+        }
+
+        private float GetAimElementHeight(int index)
+        {
+            SerializedProperty flag = _aimCases.GetArrayElementAtIndex(index);
+            SerializedProperty condition = flag.FindPropertyRelative(CONDITION_FIELD);
+            SerializedProperty action = flag.FindPropertyRelative(ACTION_FIELD);
+
+            float conditionHeight = EditorGUI.GetPropertyHeight(condition, GUIContent.none);
+            float actionHeight = EditorGUI.GetPropertyHeight(action, GUIContent.none);
+            float maxHeight = Mathf.Max(conditionHeight, actionHeight);
+
+            return maxHeight + 8f;
+        }
+
+        private void DrawAimFlag(Rect rect, int index, bool isActive, bool isFocused)
+        {
+            SerializedProperty flag = _aimCases.GetArrayElementAtIndex(index);
+            SerializedProperty condition = flag.FindPropertyRelative(CONDITION_FIELD);
+            SerializedProperty action = flag.FindPropertyRelative(ACTION_FIELD);
+
+            rect.y += 2f;
+            rect.height -= 4f;
+
+            GUI.Box(rect, "");
+
+            Rect boxRect = new(rect.x + 2f, rect.y + 2f, rect.width - 4f, rect.height - 4f);
+
+            float conditionHeight = EditorGUI.GetPropertyHeight(condition, GUIContent.none);
+            float actionHeight = EditorGUI.GetPropertyHeight(action, GUIContent.none);
+            float maxHeight = Mathf.Max(conditionHeight, actionHeight);
+
+            float conditionWidth = boxRect.width * 0.6f - 4f;
+            float actionWidth = boxRect.width * 0.4f - 4f;
+
+            Rect conditionRect = new(boxRect.x, boxRect.y, conditionWidth, conditionHeight);
+            Rect actionRect = new(boxRect.xMax - actionWidth, boxRect.y, actionWidth, actionHeight);
+
+            EditorGUI.PropertyField(conditionRect, condition, GUIContent.none);
+            EditorGUI.PropertyField(actionRect, action, GUIContent.none);
+        }
+
+        private void DrawAimHeader(Rect rect) {
+            EditorGUI.LabelField(rect, "Aim Flags");
             Rect valueRect = new(rect.xMax - 80f, rect.y, 80f, rect.height);
             EditorGUI.LabelField(valueRect, "Valeur initiale", EditorStyles.miniLabel);
         }
