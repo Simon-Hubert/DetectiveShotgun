@@ -23,7 +23,7 @@ namespace DShotgun
         /// dont la condition est vraie sur le <see cref="Blackboard"/> : les cas suivants ne sont pas évalués.
         /// </summary>
         /// <returns>true si un cas a été validé, false si aucun ne l'est.</returns>
-        public bool Interact()
+        virtual public bool Interact()
         {
             foreach (InteractionCase interactionCase in _interactionCases)
             {
@@ -36,7 +36,7 @@ namespace DShotgun
         /// <summary>
         /// Traite le fait que le joueur vise cet objet.
         /// </summary>
-        public bool  Aim()
+        virtual public bool  Aim()
         {
             _onAimed?.Invoke();
             foreach (InteractionCase aimCase in _aimCases)

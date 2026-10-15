@@ -37,7 +37,7 @@ namespace DShotgun
         private bool _isAiming;
         private bool _isPointerOverUI;
         private bool _isBusy;
-        //private InteractableManager _aimed;
+        private InteractableManager[] _aimed;
         private Vector3 _defaultPosition;
         private float _zoomProgress;
         private SecondOrderDynamics<Vector2> _moveDynamics;
@@ -77,17 +77,16 @@ namespace DShotgun
             _isPointerOverUI = EventSystem.current != null && EventSystem.current.IsPointerOverGameObject();
             if (!_toggleAimOnRightClick) _isAiming = _inputs.IsRightHeld;
 
-            InteractableManager[] targets = _isAiming ? GetInteractableUnderPointer() : null;
-            //if (targets == _aimed) return;
-
-            //_aimed = targets;
+            InteractableManager[] targets = _isAiming ? GetInteractableUnderPointer() : Array.Empty<InteractableManager>();
+            
             if (targets != null && !_isBusy)
             {
                 foreach (InteractableManager target in targets)
                 {
-                    Aim(target);
+                    if(!_aimed.Contains(target)) Aim(target);
                 }
             }
+            _aimed = targets;
         }
 
         private void LateUpdate()
