@@ -74,10 +74,6 @@ namespace DShotgun.Dialogs
             GetCharaRdr(CharaPos.LEFT).sprite = a_left;
             GetCharaRdr(CharaPos.MIDDLE).sprite = a_middle;
             GetCharaRdr(CharaPos.RIGHT).sprite = a_right;
-
-            GetCharaRdr(CharaPos.LEFT).enabled = GetCharaRdr(CharaPos.LEFT).sprite != null;
-            GetCharaRdr(CharaPos.MIDDLE).enabled = GetCharaRdr(CharaPos.MIDDLE).sprite != null;
-            GetCharaRdr(CharaPos.RIGHT).enabled = GetCharaRdr(CharaPos.RIGHT).sprite != null;
         }
         public void DisplayDialogSpeaker(string a_name, CharaPos a_posing) {
             _dialogSpeakersName.text = a_name;

@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using SMath;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -36,7 +37,7 @@ namespace DShotgun
         private bool _isAiming;
         private bool _isPointerOverUI;
         private bool _isBusy;
-        private InteractableManager _aimed;
+        private InteractableManager[] _aimed;
         private Vector3 _defaultPosition;
         public Vector3 SetDefaultCamPos { set => _defaultPosition = value; }
         private float _zoomProgress;
@@ -77,11 +78,16 @@ namespace DShotgun
             _isPointerOverUI = EventSystem.current != null && EventSystem.current.IsPointerOverGameObject();
             if (!_toggleAimOnRightClick) _isAiming = _inputs.IsRightHeld;
 
-            InteractableManager target = _isAiming ? GetInteractableUnderPointer() : null;
-            if (target == _aimed) return;
-
-            _aimed = target;
-            if (target != null && !_isBusy) Aim(target);
+            InteractableManager[] targets = _isAiming ? GetInteractableUnderPointer() : Array.Empty<InteractableManager>();
+            
+            if (targets != null && !_isBusy)
+            {
+                foreach (InteractableManager target in targets)
+                {
+                    if(!_aimed.Contains(target)) Aim(target);
+                }
+            }
+            _aimed = targets;
         }
 
         private void LateUpdate()
@@ -112,8 +118,11 @@ namespace DShotgun
         {
             if (_isBusy) return;
 
-            InteractableManager target = GetInteractableUnderPointer();
-            if (target != null) target.Interact();
+            InteractableManager[] target = GetInteractableUnderPointer();
+            foreach (InteractableManager interactable in target)
+            {
+                interactable.Interact();
+            }
         }
 
         private void Aim(InteractableManager target)
@@ -125,13 +134,17 @@ namespace DShotgun
             }
         }
 
-        private InteractableManager GetInteractableUnderPointer()
+        private InteractableManager[] GetInteractableUnderPointer()
         {
             if (_isPointerOverUI) return null;
 
             Vector2 worldPoint = _camera.ScreenToWorldPoint(_inputs.PointerPosition);
-            Collider2D hit = Physics2D.OverlapPoint(worldPoint);
-            if (hit != null && hit.TryGetComponent(out InteractableManager interactable)) return interactable;
+            Collider2D[] hit = Physics2D.OverlapPointAll(worldPoint);
+            if (hit != null && hit.Length > 0)
+            {
+                return hit.Where(e => e.TryGetComponent<InteractableManager>(out InteractableManager im))
+                    .Select(e => e.GetComponent<InteractableManager>()).ToArray();
+            }
             return null;
         }
 

@@ -372,10 +372,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: DShotgun::DShotgun.InteractableManager
   _interactionCases:
   - _condition:
-      rid: 1236845357157318732
+      rid: 6016392735534350346
     _action:
       m_PersistentCalls:
         m_Calls:
+        - m_Target: {fileID: 8697463354155760594}
+          m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
+          m_MethodName: Execute
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 6916437969691716400}
           m_TargetAssemblyTypeName: DShotgun.SpriteSwitcher, DShotgun
           m_MethodName: SwitchTo
@@ -389,17 +401,17 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   - _condition:
-      rid: 6016392735534350346
+      rid: 1236845357157318732
     _action:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 8697463354155760594}
-          m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
-          m_MethodName: Execute
-          m_Mode: 1
+        - m_Target: {fileID: 6916437969691716400}
+          m_TargetAssemblyTypeName: DShotgun.SpriteSwitcher, DShotgun
+          m_MethodName: SwitchTo
+          m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_ObjectArgument: {fileID: -1975250463083113330, guid: 0836aa9e43620cb49b749a8c1393868d, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
