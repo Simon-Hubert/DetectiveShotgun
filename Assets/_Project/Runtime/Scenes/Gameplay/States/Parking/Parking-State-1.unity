@@ -177,8 +177,8 @@ MonoBehaviour:
   <SpeakingCharacterID>k__BackingField: 1
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
   _left: {fileID: 21300000, guid: a0991abc4060ea142bfd5ec87ca84109, type: 3}
-  _middle: {fileID: 21300000, guid: 9e25dd3b319cc634eab37128aaa6a0e9, type: 3}
-  _right: {fileID: 5432073412714708773, guid: 5150f1c1f637aeb43a1784f39c319a99, type: 3}
+  _middle: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+  _right: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
   _text:
     _text: "C\u2019est \xE0 nous qu\u2019elle parle ? Eh, tu tra\xEEnes souvent par
       ici poup\xE9e ? "
@@ -231,72 +231,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: HierarchySequences::HierarchySequences.ActivateObject
   _object: {fileID: 2135676963}
   _active: 1
---- !u!1 &63499211
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 63499212}
-  - component: {fileID: 63499213}
-  m_Layer: 0
-  m_Name: DialogFrame (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &63499212
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 63499211}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.0833335, y: 2.0833335, z: 2.0833335}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &63499213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 63499211}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Shotgun
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: a0991abc4060ea142bfd5ec87ca84109, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 9e25dd3b319cc634eab37128aaa6a0e9, type: 3}
-  _text:
-    _text: "Il aurait tir\xE9 si peu de cartouches en une nuit enti\xE8re ? On m\u2019envoie
-      enqu\xEAter sur des amateurs maintenant ?"
-    _styles: []
-  _name: Detective
-  _moveNextAutomatically: 0
 --- !u!1001 &94606105
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -649,8 +583,8 @@ MonoBehaviour:
   <SpeakingCharacterID>k__BackingField: 0
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
   _left: {fileID: 21300000, guid: a0991abc4060ea142bfd5ec87ca84109, type: 3}
-  _middle: {fileID: 21300000, guid: 9e25dd3b319cc634eab37128aaa6a0e9, type: 3}
-  _right: {fileID: 5432073412714708773, guid: 5150f1c1f637aeb43a1784f39c319a99, type: 3}
+  _middle: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+  _right: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
   _text:
     _text: "Crime au couteau ? Mais c\u2019est ridicule, elle a pas vu les impacts
       de balles sur les murs ou bien ?"
@@ -1127,8 +1061,8 @@ MonoBehaviour:
   <SpeakingCharacterID>k__BackingField: 2
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
   _left: {fileID: 21300000, guid: a0991abc4060ea142bfd5ec87ca84109, type: 3}
-  _middle: {fileID: 21300000, guid: 9e25dd3b319cc634eab37128aaa6a0e9, type: 3}
-  _right: {fileID: 5432073412714708773, guid: 5150f1c1f637aeb43a1784f39c319a99, type: 3}
+  _middle: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+  _right: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
   _text:
     _text: "Je tra\xEEne surtout l\xE0 o\xF9 y\u2019a des scoops, mon m\xE9tier c\u2019est
       de transformer les clich\xE9s en billets."
@@ -1193,8 +1127,8 @@ MonoBehaviour:
   <SpeakingCharacterID>k__BackingField: 2
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
   _left: {fileID: 21300000, guid: a0991abc4060ea142bfd5ec87ca84109, type: 3}
-  _middle: {fileID: 21300000, guid: 9e25dd3b319cc634eab37128aaa6a0e9, type: 3}
-  _right: {fileID: 5432073412714708773, guid: 5150f1c1f637aeb43a1784f39c319a99, type: 3}
+  _middle: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+  _right: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
   _text:
     _text: Si tu trouves un truc, je suis au [nom du bar] tous les soirs.
     _styles: []
@@ -2566,73 +2500,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a8a3882457b01e438e4a1d24cc811e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: HierarchySequences::HierarchySequences.Sequence
---- !u!1 &773731377
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 773731378}
-  - component: {fileID: 773731379}
-  m_Layer: 0
-  m_Name: DialogFrame
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &773731378
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 773731377}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.0833335, y: 2.0833335, z: 2.0833335}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &773731379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 773731377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Shotgun
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: a0991abc4060ea142bfd5ec87ca84109, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 9e25dd3b319cc634eab37128aaa6a0e9, type: 3}
-  _text:
-    _text: "Il nous a laiss\xE9 un mot. Poli, le type. J\u2019aurais pr\xE9f\xE9r\xE9
-      qu\u2019il \xE9crive son num\xE9ro de t\xE9l\xE9phone... Imagine si c\u2019\xE9tait
-      une belle blonde... On comdamne pas les belles blondes non ?"
-    _styles: []
-  _name: Shotgun
-  _moveNextAutomatically: 0
 --- !u!1 &815811140
 GameObject:
   m_ObjectHideFlags: 0
@@ -3029,8 +2896,8 @@ MonoBehaviour:
   <SpeakingCharacterID>k__BackingField: 2
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
   _left: {fileID: 21300000, guid: a0991abc4060ea142bfd5ec87ca84109, type: 3}
-  _middle: {fileID: 21300000, guid: 9e25dd3b319cc634eab37128aaa6a0e9, type: 3}
-  _right: {fileID: 5432073412714708773, guid: 5150f1c1f637aeb43a1784f39c319a99, type: 3}
+  _middle: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+  _right: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
   _text:
     _text: "Ce n\u2019est pas comme si j\u2019en avais grand chose \xE0 faire du
       regard des hommes. Par contre ce qui m\u2019int\xE9resse c\u2019est les infos
@@ -3201,7 +3068,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1128193861
 Transform:
   m_ObjectHideFlags: 0
@@ -3211,9 +3078,9 @@ Transform:
   m_GameObject: {fileID: 1128193860}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.98, y: -0.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 2.07, y: -1.15, z: 0}
+  m_LocalScale: {x: 0.45, y: 0.45, z: 0.45}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 284504094}
   - {fileID: 737114433}
@@ -3257,7 +3124,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5, y: 6.91}
+    oldSize: {x: 11.32, y: 13.31}
     newSize: {x: 5, y: 6.91}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3312,9 +3179,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 5432073412714708773, guid: 5150f1c1f637aeb43a1784f39c319a99, type: 3}
+  m_Sprite: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3914,8 +3781,8 @@ MonoBehaviour:
   <SpeakingCharacterID>k__BackingField: 2
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
   _left: {fileID: 21300000, guid: a0991abc4060ea142bfd5ec87ca84109, type: 3}
-  _middle: {fileID: 21300000, guid: 9e25dd3b319cc634eab37128aaa6a0e9, type: 3}
-  _right: {fileID: 5432073412714708773, guid: 5150f1c1f637aeb43a1784f39c319a99, type: 3}
+  _middle: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+  _right: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
   _text:
     _text: "C\u2019est \xE9crit pour \xEAtre lu dans une glace, D\xE9tective Shotgun. "
     _styles: []
@@ -4106,8 +3973,8 @@ MonoBehaviour:
   <SpeakingCharacterID>k__BackingField: 0
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
   _left: {fileID: 21300000, guid: a0991abc4060ea142bfd5ec87ca84109, type: 3}
-  _middle: {fileID: 21300000, guid: 9e25dd3b319cc634eab37128aaa6a0e9, type: 3}
-  _right: {fileID: 5432073412714708773, guid: 5150f1c1f637aeb43a1784f39c319a99, type: 3}
+  _middle: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+  _right: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
   _text:
     _text: "Excuse-nous, Shotgun a vraiment un probl\xE8me avec le respect vis \xE0
       vis de la gente f\xE9minine, pour ne pas dire que c\u2019est un gros misogyne."
@@ -4238,8 +4105,8 @@ MonoBehaviour:
   <SpeakingCharacterID>k__BackingField: 1
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
   _left: {fileID: 21300000, guid: a0991abc4060ea142bfd5ec87ca84109, type: 3}
-  _middle: {fileID: 21300000, guid: 9e25dd3b319cc634eab37128aaa6a0e9, type: 3}
-  _right: {fileID: 5432073412714708773, guid: 5150f1c1f637aeb43a1784f39c319a99, type: 3}
+  _middle: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+  _right: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
   _text:
     _text: Elle me drague. Classique.
     _styles: []
@@ -5072,6 +4939,10 @@ PrefabInstance:
       propertyPath: _aimCases.Array.data[0]._action.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1983255163685834564, guid: 8efd61a2bf3b3b4429c49d5535c4ee73, type: 3}
+      propertyPath: _right
+      value: 
+      objectReference: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
     - target: {fileID: 2327393483561163257, guid: 8efd61a2bf3b3b4429c49d5535c4ee73, type: 3}
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -5212,6 +5083,10 @@ PrefabInstance:
       propertyPath: _interactionCases.Array.data[1]._action.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5036903217098647057, guid: 8efd61a2bf3b3b4429c49d5535c4ee73, type: 3}
+      propertyPath: _right
+      value: 
+      objectReference: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
     - target: {fileID: 5204518429710835852, guid: 8efd61a2bf3b3b4429c49d5535c4ee73, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.71999997
@@ -5493,6 +5368,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: INTERACTABLES_Ecran_2
       objectReference: {fileID: 0}
+    - target: {fileID: 660892563931598466, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _right
+      value: 
+      objectReference: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+    - target: {fileID: 660892563931598466, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _middle
+      value: 
+      objectReference: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
     - target: {fileID: 1647346100979030853, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5533,10 +5416,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1818898991064943187, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _right
+      value: 
+      objectReference: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+    - target: {fileID: 2375251601624628010, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _right
+      value: 
+      objectReference: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
     - target: {fileID: 4543847872141498410, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
       propertyPath: m_Name
       value: OnInteractMessageSeen-1
       objectReference: {fileID: 0}
+    - target: {fileID: 4808858694937777080, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _right
+      value: 
+      objectReference: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+    - target: {fileID: 4808858694937777080, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _middle
+      value: 
+      objectReference: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+    - target: {fileID: 4820529920438216864, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _right
+      value: 
+      objectReference: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+    - target: {fileID: 4820529920438216864, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _middle
+      value: 
+      objectReference: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
     - target: {fileID: 5080356131477652276, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
       propertyPath: 'managedReferences[-2]'
       value: 
@@ -5653,6 +5560,30 @@ PrefabInstance:
       propertyPath: _interactionCases.Array.data[2]._action.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7120714679544387726, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _right
+      value: 
+      objectReference: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+    - target: {fileID: 7120714679544387726, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _middle
+      value: 
+      objectReference: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+    - target: {fileID: 7676196968840219027, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _right
+      value: 
+      objectReference: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+    - target: {fileID: 7676196968840219027, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _middle
+      value: 
+      objectReference: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+    - target: {fileID: 8141195548813303561, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _right
+      value: 
+      objectReference: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+    - target: {fileID: 9052409765703672288, guid: bdf415331eb3dc5af990d4f035b64f75, type: 3}
+      propertyPath: _right
+      value: 
+      objectReference: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -5685,14 +5616,34 @@ PrefabInstance:
       propertyPath: _interactionCases.Array.data[0]._condition
       value: 2759813023689605126
       objectReference: {fileID: 0}
+    - target: {fileID: 3461150491262102967, guid: 7581d3f089b23cb469c0b922a8ed10ce, type: 3}
+      propertyPath: _right
+      value: 
+      objectReference: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+    - target: {fileID: 3461150491262102967, guid: 7581d3f089b23cb469c0b922a8ed10ce, type: 3}
+      propertyPath: _middle
+      value: 
+      objectReference: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
     - target: {fileID: 3654458240100888001, guid: 7581d3f089b23cb469c0b922a8ed10ce, type: 3}
       propertyPath: _object
       value: 
       objectReference: {fileID: 94606107}
+    - target: {fileID: 4104541369311701547, guid: 7581d3f089b23cb469c0b922a8ed10ce, type: 3}
+      propertyPath: _right
+      value: 
+      objectReference: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+    - target: {fileID: 4104541369311701547, guid: 7581d3f089b23cb469c0b922a8ed10ce, type: 3}
+      propertyPath: _middle
+      value: 
+      objectReference: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
     - target: {fileID: 5521308943705311679, guid: 7581d3f089b23cb469c0b922a8ed10ce, type: 3}
       propertyPath: _right
       value: 
-      objectReference: {fileID: 21300000, guid: 9e25dd3b319cc634eab37128aaa6a0e9, type: 3}
+      objectReference: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+    - target: {fileID: 5521308943705311679, guid: 7581d3f089b23cb469c0b922a8ed10ce, type: 3}
+      propertyPath: _middle
+      value: 
+      objectReference: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
     - target: {fileID: 5521308943705311679, guid: 7581d3f089b23cb469c0b922a8ed10ce, type: 3}
       propertyPath: _text._text
       value: "Oh, excusez-moi, je n\u2019avais pas reconnu votre chevrotine ! Allez-y
@@ -5711,9 +5662,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: a0991abc4060ea142bfd5ec87ca84109, type: 3}
     - target: {fileID: 6411229268597782652, guid: 7581d3f089b23cb469c0b922a8ed10ce, type: 3}
+      propertyPath: _name
+      value: Recrue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6411229268597782652, guid: 7581d3f089b23cb469c0b922a8ed10ce, type: 3}
       propertyPath: _right
       value: 
-      objectReference: {fileID: 21300000, guid: 9e25dd3b319cc634eab37128aaa6a0e9, type: 3}
+      objectReference: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+    - target: {fileID: 6411229268597782652, guid: 7581d3f089b23cb469c0b922a8ed10ce, type: 3}
+      propertyPath: _middle
+      value: 
+      objectReference: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
     - target: {fileID: 6411229268597782652, guid: 7581d3f089b23cb469c0b922a8ed10ce, type: 3}
       propertyPath: _text._text
       value: 'Personne ne passe la rubalise, ordre du Commissaire. '
@@ -5733,6 +5692,10 @@ PrefabInstance:
     - target: {fileID: 6411229268597782652, guid: 7581d3f089b23cb469c0b922a8ed10ce, type: 3}
       propertyPath: <RightRef>k__BackingField._characterName
       value: Shotgun
+      objectReference: {fileID: 0}
+    - target: {fileID: 6411229268597782652, guid: 7581d3f089b23cb469c0b922a8ed10ce, type: 3}
+      propertyPath: <MiddleRef>k__BackingField._characterName
+      value: Recrue
       objectReference: {fileID: 0}
     - target: {fileID: 6677044503125259303, guid: 7581d3f089b23cb469c0b922a8ed10ce, type: 3}
       propertyPath: m_Size.x
@@ -5757,14 +5720,18 @@ PrefabInstance:
     - target: {fileID: 6828258377105584860, guid: 7581d3f089b23cb469c0b922a8ed10ce, type: 3}
       propertyPath: _right
       value: 
-      objectReference: {fileID: 21300000, guid: 9e25dd3b319cc634eab37128aaa6a0e9, type: 3}
+      objectReference: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+    - target: {fileID: 6828258377105584860, guid: 7581d3f089b23cb469c0b922a8ed10ce, type: 3}
+      propertyPath: _middle
+      value: 
+      objectReference: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
     - target: {fileID: 6828258377105584860, guid: 7581d3f089b23cb469c0b922a8ed10ce, type: 3}
       propertyPath: _text._text
       value: "Je suis D\xE9tective Shotgun, laissez-nous passer. "
       objectReference: {fileID: 0}
     - target: {fileID: 6828258377105584860, guid: 7581d3f089b23cb469c0b922a8ed10ce, type: 3}
       propertyPath: <LeftRef>k__BackingField._spriteName
-      value: None
+      value: Idle
       objectReference: {fileID: 0}
     - target: {fileID: 6828258377105584860, guid: 7581d3f089b23cb469c0b922a8ed10ce, type: 3}
       propertyPath: <RightRef>k__BackingField._spriteName
@@ -5782,6 +5749,14 @@ PrefabInstance:
       propertyPath: <RightRef>k__BackingField._characterName
       value: Shotgun
       objectReference: {fileID: 0}
+    - target: {fileID: 7897694041309948685, guid: 7581d3f089b23cb469c0b922a8ed10ce, type: 3}
+      propertyPath: _right
+      value: 
+      objectReference: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+    - target: {fileID: 7897694041309948685, guid: 7581d3f089b23cb469c0b922a8ed10ce, type: 3}
+      propertyPath: _middle
+      value: 
+      objectReference: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
     - target: {fileID: 8016174462330656142, guid: 7581d3f089b23cb469c0b922a8ed10ce, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.34
@@ -5822,6 +5797,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8450002205878088156, guid: 7581d3f089b23cb469c0b922a8ed10ce, type: 3}
+      propertyPath: _right
+      value: 
+      objectReference: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+    - target: {fileID: 8450002205878088156, guid: 7581d3f089b23cb469c0b922a8ed10ce, type: 3}
+      propertyPath: _middle
+      value: 
+      objectReference: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5951,7 +5934,19 @@ PrefabInstance:
     - target: {fileID: 2800076264145035414, guid: 58e2889f7a0a9464eb4cebb370317b98, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f67d604f01bd8ce4cb299da737da8b51, type: 3}
+      objectReference: {fileID: -4654686656331902699, guid: d35572c60d619374cb1b70158d9ccac8, type: 3}
+    - target: {fileID: 2800076264145035414, guid: 58e2889f7a0a9464eb4cebb370317b98, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9472457
+      objectReference: {fileID: 0}
+    - target: {fileID: 2800076264145035414, guid: 58e2889f7a0a9464eb4cebb370317b98, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2800076264145035414, guid: 58e2889f7a0a9464eb4cebb370317b98, type: 3}
+      propertyPath: m_Color.r
+      value: 0.759434
+      objectReference: {fileID: 0}
     - target: {fileID: 2800076264145035414, guid: 58e2889f7a0a9464eb4cebb370317b98, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
@@ -6181,7 +6176,11 @@ PrefabInstance:
     - target: {fileID: 1197305992563817007, guid: d2959300db398d74e82097fc17dcad3f, type: 3}
       propertyPath: _right
       value: 
-      objectReference: {fileID: 21300000, guid: 9e25dd3b319cc634eab37128aaa6a0e9, type: 3}
+      objectReference: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+    - target: {fileID: 1197305992563817007, guid: d2959300db398d74e82097fc17dcad3f, type: 3}
+      propertyPath: _middle
+      value: 
+      objectReference: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
     - target: {fileID: 1197305992563817007, guid: d2959300db398d74e82097fc17dcad3f, type: 3}
       propertyPath: _text._text
       value: "J\u2019ai mes m\xE9thodes, et elles sont radicales. "
@@ -6198,6 +6197,14 @@ PrefabInstance:
       propertyPath: _object
       value: 
       objectReference: {fileID: 94606107}
+    - target: {fileID: 2399164439679725433, guid: d2959300db398d74e82097fc17dcad3f, type: 3}
+      propertyPath: _right
+      value: 
+      objectReference: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+    - target: {fileID: 2399164439679725433, guid: d2959300db398d74e82097fc17dcad3f, type: 3}
+      propertyPath: _middle
+      value: 
+      objectReference: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
     - target: {fileID: 2471321216764569342, guid: d2959300db398d74e82097fc17dcad3f, type: 3}
       propertyPath: _left
       value: 
@@ -6205,7 +6212,11 @@ PrefabInstance:
     - target: {fileID: 2471321216764569342, guid: d2959300db398d74e82097fc17dcad3f, type: 3}
       propertyPath: _right
       value: 
-      objectReference: {fileID: 21300000, guid: 9e25dd3b319cc634eab37128aaa6a0e9, type: 3}
+      objectReference: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+    - target: {fileID: 2471321216764569342, guid: d2959300db398d74e82097fc17dcad3f, type: 3}
+      propertyPath: _middle
+      value: 
+      objectReference: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
     - target: {fileID: 2471321216764569342, guid: d2959300db398d74e82097fc17dcad3f, type: 3}
       propertyPath: _text._text
       value: "\u2026 Le Commissaire avait dit que vous feriez \xE7a.  "
@@ -6264,5 +6275,3 @@ SceneRoots:
   - {fileID: 1582624460}
   - {fileID: 1410184442215516020}
   - {fileID: 546582287128634560}
-  - {fileID: 63499212}
-  - {fileID: 773731378}
