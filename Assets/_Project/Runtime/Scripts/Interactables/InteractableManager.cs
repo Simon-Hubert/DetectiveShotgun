@@ -36,7 +36,7 @@ namespace DShotgun
                 }
             }
             
-            _onFinallyInteract?.Invoke();
+            _onInteracted?.Invoke();
             return result;
         }
 
