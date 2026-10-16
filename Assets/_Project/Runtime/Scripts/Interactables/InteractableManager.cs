@@ -15,6 +15,7 @@ namespace DShotgun
         [SerializeField] private List<InteractionCase> _interactionCases = new List<InteractionCase>();
         [SerializeField] private List<InteractionCase> _aimCases = new List<InteractionCase>();
         
+        [SerializeField] private UnityEvent _onInteracted;
         [SerializeField] private UnityEvent _onAimed;
 
         /// <summary>
@@ -25,12 +26,18 @@ namespace DShotgun
         /// <returns>true si un cas a été validé, false si aucun ne l'est.</returns>
         virtual public bool Interact()
         {
+            bool result = false;
             foreach (InteractionCase interactionCase in _interactionCases)
             {
-                if (interactionCase.Evaluate(Blackboard.Instance)) return true;
+                if (interactionCase.Evaluate(Blackboard.Instance))
+                {
+                    result = true;
+                    break;
+                }
             }
-
-            return false;
+            
+            _onInteracted?.Invoke();
+            return result;
         }
 
         /// <summary>
@@ -38,13 +45,18 @@ namespace DShotgun
         /// </summary>
         virtual public bool  Aim()
         {
-            _onAimed?.Invoke();
+            bool result = false;
             foreach (InteractionCase aimCase in _aimCases)
             {
-                if (aimCase.Evaluate(Blackboard.Instance)) return true;
+                if (aimCase.Evaluate(Blackboard.Instance))
+                {
+                    result = true;
+                    break;
+                }
             }
 
-            return false;
+            _onAimed?.Invoke();
+            return result;
         }
     }
 }
