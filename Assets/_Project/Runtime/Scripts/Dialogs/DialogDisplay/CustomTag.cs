@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using NaughtyAttributes;
 using UnityEngine;
 
 namespace DShotgun.Dialogs
@@ -7,7 +8,7 @@ namespace DShotgun.Dialogs
     [Serializable]
     public abstract class CustomTag
     {
-        protected abstract string Name { get; }
+        public abstract string Name { get; }
         public TagId Id { get; private set; }
 
         public CustomTag() {
@@ -15,17 +16,19 @@ namespace DShotgun.Dialogs
         }
     }
 
+    [Serializable]
     public abstract class CustomMeshTag : CustomTag
     {
-        protected List<Vector3[]> charactersVertices;
+        private protected List<Vector3[]> charactersVertices;
         public void AddCharacter(Vector3[] a_vertices) => charactersVertices.Add(a_vertices);
 
         public abstract void UpdateTag(float a_delta, float a_time);
     }
     
+    [Serializable]
     public struct TagId
     {
-        private string _tagTextId;
+        [SerializeField, ReadOnly] private string _tagTextId;
 
         public TagId(string a_textId) {
             if (string.IsNullOrEmpty(a_textId) ||
@@ -76,6 +79,21 @@ namespace DShotgun.Dialogs
         
         private void TrimTagSymbols(ref string a_text) {
             a_text = a_text.Trim().Trim('<', '>').TrimStart('/');
+        }
+    }
+
+    [CreateAssetMenu(fileName = "CustomTagDatabase", menuName = "Databases/CustomTagDatabase")]
+    public class SOCustomTagDatabase : ScriptableObject
+    {
+        [SerializeField] private List<CustomTag> _customTags = new List<CustomTag>();
+        public CustomTag GetCustomTag(string a_name) {
+            foreach (CustomTag tag in _customTags) {
+                if (tag != null && tag.Id.IsTag(a_name)) {
+                    return tag;
+                }
+            }
+
+            return null;
         }
     }
 }
