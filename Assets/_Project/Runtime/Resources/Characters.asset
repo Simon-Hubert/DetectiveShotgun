@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d583ea9353f847d41957bd57c34233e7, type: 3}
+  m_Name: Characters
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CharactersDatabase
+  _characters:
+  - <Name>k__BackingField: Aelys
+    <DialogProfile>k__BackingField: {fileID: 11400000, guid: 007f0aeef1be8e64e93b32559c768301, type: 2}
+    _spriteList:
+    - <Name>k__BackingField: Idle
+      <Sprite>k__BackingField: {fileID: -6770372879056521866, guid: f39c0735c139a48419b8e3494eed5fd1, type: 3}
+    - <Name>k__BackingField: Happy
+      <Sprite>k__BackingField: {fileID: 0}
+    - <Name>k__BackingField: Sad
+      <Sprite>k__BackingField: {fileID: 0}
+  - <Name>k__BackingField: Vacances
+    <DialogProfile>k__BackingField: {fileID: 0}
+    _spriteList:
+    - <Name>k__BackingField: Idle
+      <Sprite>k__BackingField: {fileID: 7760134029682071248, guid: a6eba96c7277cc946a2c33e8ca325333, type: 3}
+    - <Name>k__BackingField: Balth
+      <Sprite>k__BackingField: {fileID: 0}
+    - <Name>k__BackingField: Ferdi
+      <Sprite>k__BackingField: {fileID: 0}
+  - <Name>k__BackingField: Detective
+    <DialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+    _spriteList:
+    - <Name>k__BackingField: Idle
+      <Sprite>k__BackingField: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+    - <Name>k__BackingField: Ferdi
+      <Sprite>k__BackingField: {fileID: 0}
+  - <Name>k__BackingField: Shotgun
+    <DialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+    _spriteList:
+    - <Name>k__BackingField: Idle
+      <Sprite>k__BackingField: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+    - <Name>k__BackingField: Balth
+      <Sprite>k__BackingField: {fileID: 0}
+    - <Name>k__BackingField: Ferdi
+      <Sprite>k__BackingField: {fileID: 0}
+  - <Name>k__BackingField: Recrue
+    <DialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+    _spriteList:
+    - <Name>k__BackingField: Idle
+      <Sprite>k__BackingField: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
+    - <Name>k__BackingField: Balth
+      <Sprite>k__BackingField: {fileID: 0}
+    - <Name>k__BackingField: Ferdi
+      <Sprite>k__BackingField: {fileID: 0}
+  - <Name>k__BackingField: "M\xE9decin l\xE9giste"
+    <DialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+    _spriteList:
+    - <Name>k__BackingField: Idle
+      <Sprite>k__BackingField: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+    - <Name>k__BackingField: Balth
+      <Sprite>k__BackingField: {fileID: 0}
+    - <Name>k__BackingField: Ferdi
+      <Sprite>k__BackingField: {fileID: 0}
+  - <Name>k__BackingField: Sally
+    <DialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+    _spriteList:
+    - <Name>k__BackingField: Idle
+      <Sprite>k__BackingField: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
+    - <Name>k__BackingField: Balth
+      <Sprite>k__BackingField: {fileID: 0}
+    - <Name>k__BackingField: Ferdi
+      <Sprite>k__BackingField: {fileID: 0}
