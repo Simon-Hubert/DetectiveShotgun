@@ -1,28 +1,69 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using NaughtyAttributes;
+using Unity.VisualScripting.YamlDotNet.Core;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 namespace DShotgun.Dialogs
 {
     [Serializable]
-    public abstract class CustomTag
+    public abstract class CustomTag<T>
     {
         public abstract string Name { get; }
-        public TagId Id { get; private set; }
+        protected TagId Id { get; private set; }
+        public bool IsTag(string a_tag) => Id.IsTag(a_tag);
+        public virtual bool TryGetValue(string a_tag, out T o_type) 
+        {
+            string value = Id.GetTagValueRaw(a_tag);
+            o_type = default;
+            
+            if (value == String.Empty) return false;
+            Type type = typeof(T);
 
-        public CustomTag() {
+            if (type == typeof(string)) {
+                o_type = (T)(object)value;
+                return true;
+            }
+            else if (type == typeof(int)) {
+                if (int.TryParse(value, out int result)) {
+                    o_type = (T)(object)result;
+                    return true;
+                }
+            }
+            else if (type == typeof(float)) {
+                if (float.TryParse(value, out float result)) {
+                    o_type = (T)(object)result;
+                    return true;
+                }
+            }
+            else if (type == typeof(bool)) {
+                if (bool.TryParse(value, out bool result)) {
+                    o_type = (T)(object)result;
+                    return true;
+                }
+            }
+            else {
+                Debug.Log($"Cannot parse value, as it is {type} and not float, int, bool, string");
+                return false;
+            }
+        }
+
+        public virtual void UpdateTag(float a_delta, float a_time) {
+            
+        }
+
+        protected CustomTag() {
             Id = new TagId(Name);
         }
     }
 
     [Serializable]
-    public abstract class CustomMeshTag : CustomTag
+    public abstract class CustomMeshTag<T> : CustomTag<T>
     {
-        private protected List<Vector3[]> charactersVertices;
+        protected List<Vector3[]> charactersVertices;
         public void AddCharacter(Vector3[] a_vertices) => charactersVertices.Add(a_vertices);
-
-        public abstract void UpdateTag(float a_delta, float a_time);
     }
     
     [Serializable]
@@ -79,21 +120,6 @@ namespace DShotgun.Dialogs
         
         private void TrimTagSymbols(ref string a_text) {
             a_text = a_text.Trim().Trim('<', '>').TrimStart('/');
-        }
-    }
-
-    [CreateAssetMenu(fileName = "CustomTagDatabase", menuName = "Databases/CustomTagDatabase")]
-    public class SOCustomTagDatabase : ScriptableObject
-    {
-        [SerializeField] private List<CustomTag> _customTags = new List<CustomTag>();
-        public CustomTag GetCustomTag(string a_name) {
-            foreach (CustomTag tag in _customTags) {
-                if (tag != null && tag.Id.IsTag(a_name)) {
-                    return tag;
-                }
-            }
-
-            return null;
         }
     }
 }
