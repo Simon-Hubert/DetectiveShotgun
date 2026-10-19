@@ -1,9 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using Codice.CM.SEIDInfo;
 using NaughtyAttributes;
 using Unity.VisualScripting.YamlDotNet.Core;
 using UnityEngine;
+using UnityEngine.Android;
 using Debug = UnityEngine.Debug;
 
 namespace DShotgun.Dialogs
@@ -11,6 +13,18 @@ namespace DShotgun.Dialogs
     [Serializable]
     public abstract class CustomTag<T>
     {
+        private delegate void Parser(string value, out T toParse);
+
+        private Dictionary<Type, Parser> parsers = new Dictionary<Type, Parser>()
+        {
+            { typeof(bool), BoolParser },
+        };
+
+        private static void BoolParser(string value, out bool toParse)
+        {
+            bool.TryParse(value, out toParse);
+        }
+
         public abstract string Name { get; }
         protected TagId Id { get; private set; }
         public bool IsTag(string a_tag) => Id.IsTag(a_tag);
@@ -20,7 +34,7 @@ namespace DShotgun.Dialogs
             o_type = default;
             
             if (value == String.Empty) return false;
-            Type type = typeof(T);
+            parsers[typeof(T)](a_tag, out o_type);
 
             if (type == typeof(string)) {
                 o_type = (T)(object)value;
@@ -45,9 +59,10 @@ namespace DShotgun.Dialogs
                 }
             }
             else {
-                Debug.Log($"Cannot parse value, as it is {type} and not float, int, bool, string");
-                return false;
+                Debug.LogError($"Cannot parse value, as it is {type} and not float, int, bool, string");
             }
+            
+            return false;
         }
 
         public virtual void UpdateTag(float a_delta, float a_time) {
