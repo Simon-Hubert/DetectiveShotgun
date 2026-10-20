@@ -13,63 +13,28 @@ namespace DShotgun.Dialogs
     [Serializable]
     public abstract class CustomTag<T>
     {
-        private delegate void Parser(string value, out T toParse);
-
-        private Dictionary<Type, Parser> parsers = new Dictionary<Type, Parser>()
-        {
-            { typeof(bool), BoolParser },
-        };
-
-        private static void BoolParser(string value, out bool toParse)
-        {
-            bool.TryParse(value, out toParse);
-        }
+        private IDSParser<T> _parser;
 
         public abstract string Name { get; }
+        
         protected TagId Id { get; private set; }
         public bool IsTag(string a_tag) => Id.IsTag(a_tag);
-        public virtual bool TryGetValue(string a_tag, out T o_type) 
+        public bool TryGetValue(string a_tag, out T o_type) 
         {
             string value = Id.GetTagValueRaw(a_tag);
             o_type = default;
             
             if (value == String.Empty) return false;
-            parsers[typeof(T)](a_tag, out o_type);
-
-            if (type == typeof(string)) {
-                o_type = (T)(object)value;
-                return true;
-            }
-            else if (type == typeof(int)) {
-                if (int.TryParse(value, out int result)) {
-                    o_type = (T)(object)result;
-                    return true;
-                }
-            }
-            else if (type == typeof(float)) {
-                if (float.TryParse(value, out float result)) {
-                    o_type = (T)(object)result;
-                    return true;
-                }
-            }
-            else if (type == typeof(bool)) {
-                if (bool.TryParse(value, out bool result)) {
-                    o_type = (T)(object)result;
-                    return true;
-                }
-            }
-            else {
-                Debug.LogError($"Cannot parse value, as it is {type} and not float, int, bool, string");
-            }
-            
-            return false;
+            return _parser.TryParse(a_tag, out o_type);
         }
 
         public virtual void UpdateTag(float a_delta, float a_time) {
             
         }
 
-        protected CustomTag() {
+        protected CustomTag()
+        {
+           _parser = (IDSParser<T>)DSParser.GetParser(typeof(T));
             Id = new TagId(Name);
         }
     }
@@ -92,14 +57,13 @@ namespace DShotgun.Dialogs
                 a_textId.Contains('<') ||
                 a_textId.Contains('>') ||
                 a_textId.Contains('=') ||
-                a_textId.Contains(' '))
+                a_textId.Contains(' ')) 
             {
                 _tagTextId = string.Empty;
                 Debug.LogError($"Tag ID {a_textId} is invalid. May contain '/', '<', '>', '=',or ' '");
             }
-            else
-            {
-                _tagTextId =  a_textId;
+            else {
+                _tagTextId = a_textId.ToLower();
             }
         }
 
