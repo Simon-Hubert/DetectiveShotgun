@@ -19,7 +19,20 @@ namespace DShotgun
             { typeof(float), new FloatDSParser() }
         };
 
-        public static object GetParser(Type a_type) => Parsers[a_type];
+        public static bool TryGetParser<T>(out IDSParser<T> o_parser)
+        {
+            if (Parsers.TryGetValue(typeof(T), out object o))
+            {
+                o_parser = (IDSParser<T>)o;
+                return true;
+            }
+            else
+            {
+                Debug.LogError($"Parsing error : couldn't find parser for {typeof(T)}");
+                o_parser = null;
+                return false;
+            }
+        }
     }
     
     #region Parsers

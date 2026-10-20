@@ -2,8 +2,8 @@ using UnityEngine;
 
 namespace DShotgun.Dialogs
 {
-    public class PitchTag: CustomTag<float>
+    public class PitchTag: CustomTag
     {
-        public override string Name { get => "pitch"; }
+        protected override string Name { get => "pitch"; }
     }
 }

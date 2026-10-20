@@ -1,31 +1,32 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using Codice.CM.SEIDInfo;
 using NaughtyAttributes;
-using Unity.VisualScripting.YamlDotNet.Core;
 using UnityEngine;
-using UnityEngine.Android;
 using Debug = UnityEngine.Debug;
 
 namespace DShotgun.Dialogs
 {
     [Serializable]
-    public abstract class CustomTag<T>
+    public abstract class CustomTag
     {
-        private IDSParser<T> _parser;
-
-        public abstract string Name { get; }
+        protected abstract string Name { get; }
         
         protected TagId Id { get; private set; }
         public bool IsTag(string a_tag) => Id.IsTag(a_tag);
-        public bool TryGetValue(string a_tag, out T o_type) 
+        public virtual bool TryGetValue<T>(string a_tag, out T o_type)
         {
             string value = Id.GetTagValueRaw(a_tag);
             o_type = default;
             
             if (value == String.Empty) return false;
-            return _parser.TryParse(a_tag, out o_type);
+            if (DSParser.TryGetParser<T>(out IDSParser<T> parser)) {
+                if (!parser.TryParse(a_tag, out o_type)) {
+                    Debug.LogError($"Parsing error : value '{value}' couldn't be parsed as {typeof(T)}");
+                    return false;
+                }
+                return true;
+            }
+            return false;
         }
 
         public virtual void UpdateTag(float a_delta, float a_time) {
@@ -34,13 +35,12 @@ namespace DShotgun.Dialogs
 
         protected CustomTag()
         {
-           _parser = (IDSParser<T>)DSParser.GetParser(typeof(T));
             Id = new TagId(Name);
         }
     }
 
     [Serializable]
-    public abstract class CustomMeshTag<T> : CustomTag<T>
+    public abstract class CustomMeshTag : CustomTag
     {
         protected List<Vector3[]> charactersVertices;
         public void AddCharacter(Vector3[] a_vertices) => charactersVertices.Add(a_vertices);
