@@ -99,6 +99,9 @@ namespace DShotgun.Dialogs
                 return false;
             }
         }
+        
+        
+        public CharacterDialogProfile ToStruct { get => new CharacterDialogProfile(this); }
     }
 
     [Serializable]
