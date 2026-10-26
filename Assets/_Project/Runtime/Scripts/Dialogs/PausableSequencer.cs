@@ -8,7 +8,6 @@ namespace DShotgun.Dialogs
 {
     public class PausableSequencer : MonoBehaviour
     {
-        [SerializeField] private GameObject _dialogsUI;
         [SerializeField] private DialogFrame _whenGetBack;
         
         private DialogFrame[] _dialogFrames;
@@ -31,12 +30,12 @@ namespace DShotgun.Dialogs
         public void StopExecution()
         {
             _cancellationTokenSource.Cancel();
-            _dialogsUI.SetActive(false);
+            DialogsManager.instance.ShowDialogUI(false);
         }
 
         public void StartExecution()
         {
-            _dialogsUI.SetActive(true);
+            DialogsManager.instance.ShowDialogUI(true);
             _ = ExecuteAsync();
         }
 
@@ -57,7 +56,7 @@ namespace DShotgun.Dialogs
                 {
                     await PlayNext(_cancellationTokenSource.Token);
                 }
-                _dialogsUI.SetActive(false);
+                DialogsManager.instance.ShowDialogUI(false);
             }
             catch (OperationCanceledException oce)
             {
