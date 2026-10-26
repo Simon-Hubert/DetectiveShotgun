@@ -187,7 +187,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -61, y: 6}
+  m_AnchoredPosition: {x: -394, y: 6}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &360854576
@@ -298,8 +298,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: DShotgun::DShotgun.PhoneClick
   _force: 500
   _gravityScale: 50
-  _maxSpeed: 150
-  _sideForceOffset: {x: 0, y: 0}
+  _maxSpeed: 250
+  _sideForceOffset: {x: 50, y: 200}
+  _maxSideForceRandom: 400
 --- !u!1 &369212660
 GameObject:
   m_ObjectHideFlags: 0
