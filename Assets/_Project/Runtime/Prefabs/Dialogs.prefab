@@ -147,7 +147,6 @@ GameObject:
   m_Component:
   - component: {fileID: 938533314751626413}
   - component: {fileID: 2274339681981143953}
-  - component: {fileID: 3751194115611832212}
   m_Layer: 0
   m_Name: Dialogs
   m_TagString: Untagged
@@ -184,49 +183,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73678fb5927fca340b8f30beeddd780d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogsManager
-  _dialogsDisplayer: {fileID: 3751194115611832212}
-  _dialogState: 0
+  _dialogsDisplayer: {fileID: 7483757245574741058}
+  _commentDisplayer: {fileID: 971192026684041669}
+  textDisplayState: 0
   _commentState: 0
-  _timeToHide: 3
-  _defaultProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
---- !u!114 &3751194115611832212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 714577717051992087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be6085492dc5ed940815d8298f9e5bbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogsDisplaying
-  _dialogCanvas: {fileID: 6752182786956980261}
-  _leftCharaRdr: {fileID: 7679523260879848951}
-  _middleCharaRdr: {fileID: 1857020896861223815}
-  _rightCharaRdr: {fileID: 964141773054210132}
-  _displayTextBox: {fileID: 8140088400061540380}
-  _dialogSpeakersName: {fileID: 5677710987979088421}
-  _dialogText: {fileID: 990098066583686018}
-  _dialogContinueIcon: {fileID: 5367045194898038674}
-  _commentCanvas: {fileID: 6723171029256268036}
-  _commentTextBox: {fileID: 4843978936750307115}
-  _commentSpeakersName: {fileID: 2372428456854573704}
-  _commentText: {fileID: 8579560300717568911}
-  _currentProfile:
-    typingProfile:
-      _default: 0
-      queue: 
-    typingSpeed:
-      _default: 0
-      queue: []
-    typingSound:
-      _default: {fileID: 0}
-      queue: []
-    soundPitch:
-      _default: 0
-      queue: []
-  dialogDialogAutoContinue: 0
 --- !u!1 &1313940533200922403
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,8 +307,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2274339681981143953}
-        m_TargetAssemblyTypeName: DShotgun.Dialogs.DialogsManager, DShotgun.Dialogs
+      - m_Target: {fileID: 7483757245574741058}
+        m_TargetAssemblyTypeName: DShotgun.Dialogs.DialogsDisplayer, DShotgun.Dialogs
         m_MethodName: ContinueDialog
         m_Mode: 1
         m_Arguments:
@@ -446,7 +406,7 @@ GameObject:
   - component: {fileID: 1281521191988973619}
   - component: {fileID: 7679523260879848951}
   m_Layer: 5
-  m_Name: Perso1
+  m_Name: PersoL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -509,81 +469,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &2237208568430903372
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 758289599344326789}
-  - component: {fileID: 284405122527068769}
-  - component: {fileID: 1857020896861223815}
-  m_Layer: 5
-  m_Name: Perso2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &758289599344326789
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2237208568430903372}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4814083861352565643}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 100}
-  m_SizeDelta: {x: 300, y: 300}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &284405122527068769
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2237208568430903372}
-  m_CullTransparentMesh: 1
---- !u!114 &1857020896861223815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2237208568430903372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &2433818159650058987
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,7 +481,7 @@ GameObject:
   - component: {fileID: 3247784294441503928}
   - component: {fileID: 964141773054210132}
   m_Layer: 5
-  m_Name: Perso3
+  m_Name: PersoR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -671,6 +556,7 @@ GameObject:
   - component: {fileID: 6723171029256268036}
   - component: {fileID: 1906862412327868276}
   - component: {fileID: 7180835267868850840}
+  - component: {fileID: 971192026684041669}
   m_Layer: 5
   m_Name: CommentCanvas
   m_TagString: Untagged
@@ -761,6 +647,25 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &971192026684041669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2790770952430646662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c796bffafd43e364baa6100b1a155e3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CommentDisplayer
+  _canvas: {fileID: 6723171029256268036}
+  _defaultProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+  _displayState: 0
+  _textBox: {fileID: 4843978936750307115}
+  _speakersName: {fileID: 2372428456854573704}
+  _mainText: {fileID: 8579560300717568911}
+  _defaultTimeToHide: 3
 --- !u!1 &3002463744957566353
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,7 +695,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1711417182534044376}
-  - {fileID: 758289599344326789}
   - {fileID: 1663078260009176699}
   m_Father: {fileID: 4878538040422003693}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1376,6 +1280,7 @@ GameObject:
   - component: {fileID: 6752182786956980261}
   - component: {fileID: 4080305017797161257}
   - component: {fileID: 6977579003981009349}
+  - component: {fileID: 7483757245574741058}
   m_Layer: 5
   m_Name: DialogCanvas
   m_TagString: Untagged
@@ -1469,3 +1374,25 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &7483757245574741058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8612041720682565667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be6085492dc5ed940815d8298f9e5bbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogsDisplaying
+  _canvas: {fileID: 6752182786956980261}
+  _defaultProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+  _displayState: 0
+  _textBox: {fileID: 8140088400061540380}
+  _speakersName: {fileID: 5677710987979088421}
+  _mainText: {fileID: 990098066583686018}
+  _leftCharaRdr: {fileID: 7679523260879848951}
+  _rightCharaRdr: {fileID: 964141773054210132}
+  _dialogContinueIcon: {fileID: 5367045194898038674}
+  dialogDialogAutoContinue: 0

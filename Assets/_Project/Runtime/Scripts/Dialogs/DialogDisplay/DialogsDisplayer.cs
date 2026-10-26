@@ -1,7 +1,6 @@
 using System;
 using System.Threading;
 using NaughtyAttributes;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
