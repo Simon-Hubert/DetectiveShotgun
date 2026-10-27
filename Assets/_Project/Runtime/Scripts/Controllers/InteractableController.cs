@@ -121,7 +121,7 @@ namespace DShotgun
             InteractableManager[] target = GetInteractableUnderPointer();
             foreach (InteractableManager interactable in target)
             {
-                interactable.Interact();
+                interactable?.Interact();
             }
         }
 
