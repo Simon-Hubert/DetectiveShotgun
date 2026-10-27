@@ -103,7 +103,7 @@ namespace DShotgun.Dialogs
 
         private void TransferData() {
             string text = RichTextCompiler.Correct(_text.Text, RichTextTagRegistry.Default);
-            if (MoveNextAutomatically) {
+            if (_moveNextAutomatically) {
                 text += "[UneBaliseDeFin]"; //TODO mettre la bonne Balise
             }
             

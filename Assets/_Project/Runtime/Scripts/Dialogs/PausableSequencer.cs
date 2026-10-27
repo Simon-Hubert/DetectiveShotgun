@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Threading;
 using HierarchySequences;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace DShotgun.Dialogs
 {
     public class PausableSequencer : MonoBehaviour
     {
         [SerializeField] private DialogFrame _whenGetBack;
+        [SerializeField] private UnityEvent _OnEnded;
         
         private DialogFrame[] _dialogFrames;
 
@@ -63,6 +65,7 @@ namespace DShotgun.Dialogs
                 _wasCancelled = true;
                 Debug.Log($"Cancelled at index {_currentIndex}");
             }
+            _OnEnded?.Invoke();
         }
 
         private async Awaitable PlayNext(CancellationToken token)

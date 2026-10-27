@@ -22,6 +22,7 @@ namespace DShotgun
 
         private bool _firstClick = true;
         private bool _simulated = false;
+        private bool _stopped = false;
         private Vector3 _originalPos;
 
         [SerializeField] private UnityEvent _onFirstClicked;
@@ -35,10 +36,9 @@ namespace DShotgun
 
         private void FixedUpdate()
         {
-            
-            if(transform.position.x < 0) ReStart();
-            if(transform.position.x > 1920) ReStart();
-            if(transform.position.y < 0) ReStart();
+            if(transform.position.x < 0) _ = ReStartAsync();
+            if(transform.position.x > 1920) _ = ReStartAsync();
+            if(transform.position.y < 0) _ = ReStartAsync();
             
             if (!_simulated) return;
             _accel = Vector2.down * (9.81f * _gravityScale);
@@ -53,6 +53,7 @@ namespace DShotgun
 
         public void OnClick()
         {
+            if (_stopped) return;
             CheckFirstClick();
             float p = (Mathf.InverseLerp(0, 1920, transform.position.x) - 0.5f)*2f;
             float randomUpForceFactor = Random.Range(_upForceRandomFactor.x, _upForceRandomFactor.y);
@@ -77,12 +78,26 @@ namespace DShotgun
             _onFirstClicked?.Invoke();
         }
 
-        public void ReStart()
+        public void Stop()
         {
-            _firstClick = true;
-            _simulated = false;
-            transform.position = _originalPos;
-            _onRestart?.Invoke();
+            _stopped = true;
+        }
+
+        private async Awaitable ReStartAsync()
+        {
+            if(_stopped) return;
+            try
+            {
+                _onRestart?.Invoke();
+                await Awaitable.WaitForSecondsAsync(1f);
+                _firstClick = true;
+                _simulated = false;
+                transform.position = _originalPos;
+            }
+            catch(Exception e)
+            {
+                Debug.Log(e.Message);
+            }
         }
     }
 }
