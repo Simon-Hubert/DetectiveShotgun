@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using NaughtyAttributes;
+using UnityEditor.XR;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 
@@ -13,6 +14,10 @@ namespace DShotgun.Dialogs
         
         protected TagId Id { get; private set; }
         public bool IsTag(string a_tag) => Id.IsTag(a_tag);
+
+        public virtual void ChangeProfileValue(string a_tag, ref CharacterDialogProfile a_profile) {
+            
+        }
         public virtual bool TryGetValue<T>(string a_tag, out T o_type)
         {
             string value = Id.GetTagValueRaw(a_tag);
@@ -81,6 +86,11 @@ namespace DShotgun.Dialogs
                 return false;
             }
         }
+
+        public bool IsEndTag(string a_text) {
+            return a_text[1] == '/';
+        }
+        
         public string GetTagValueRaw(string a_text) {
             if (string.IsNullOrEmpty(a_text)) return string.Empty;
             TrimTagSymbols(ref a_text);

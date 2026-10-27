@@ -24,7 +24,7 @@ namespace DShotgun.Dialogs
                 _speakersName.text = a_dialogData.Name;
                 
                 _displayState = TextDisplayState.Writing;
-                await _dumbReader.ComputeCharByCharAsync(a_dialogData.Text, GetProfile(a_dialogData), a_cancel);
+                await _dumbReader.ComputeTextAsync(a_dialogData.Text, GetProfile(a_dialogData), a_cancel);
 
                 _displayState = TextDisplayState.Idle;
                 await Awaitable.WaitForSecondsAsync(_defaultTimeToHide, a_cancel);

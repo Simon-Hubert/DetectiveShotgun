@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System;
+using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 
@@ -8,9 +9,20 @@ namespace DShotgun.Dialogs
 {
     public class TextDumbReader
     {
-        private TextMeshProUGUI _textBox;
+        #region TagList
         
-        public async Awaitable ComputeCharByCharAsync(string a_text, SOCharacterDialogProfile a_profile, CancellationToken a_cancel) {
+        private CustomTag[] _customTags = {
+            new PitchTag(),
+            new SpeedTag(),
+            new SoundTag()
+        };
+        #endregion
+            
+        private TextMeshProUGUI _textBox;
+
+        private float _waitTime = 0;
+            
+        public async Awaitable ComputeTextAsync(string a_text, SOCharacterDialogProfile a_profile, CancellationToken a_cancel) {
             CharacterDialogProfile profileStruct = a_profile.ToStruct;
 
             try {
@@ -41,11 +53,12 @@ namespace DShotgun.Dialogs
                 
             }
         }
-        
-        private string TagsTreatment(string a_text, ref CharacterDialogProfile a_profile, ref int r_index) {
-            StringBuilder tagSB = new StringBuilder("<");
             
-            for (r_index = r_index + 1; r_index < a_text.Length; r_index++) {
+        private string TagsTreatment(string a_text, ref CharacterDialogProfile a_profile, ref int r_index){
+            int startIndex = r_index;
+            StringBuilder tagSB = new StringBuilder();
+                
+            for (r_index = r_index; r_index < a_text.Length; r_index++) {
                 tagSB.Append(a_text[r_index]);
 
                 if (a_text[r_index] == '>') {
@@ -57,12 +70,25 @@ namespace DShotgun.Dialogs
             string tag = tagSB.ToString();
 
             if (tag[^1] == '>') {
-                //Check custom tag
+                CustomTag custom = null;
+                foreach (CustomTag check in _customTags) {
+                    if (check.IsTag(tag)) {
+                        custom = check;
+                        break;
+                    }
+                }
 
-                return tag;
+                if (custom != null) {
+                    custom.ChangeProfileValue(tag, ref a_profile);
+                    return "";
+                }
+                else {
+                    return tag;
+                }
             }
             else {
-                return "";
+                r_index = startIndex;
+                return "<";
             }
         }
 

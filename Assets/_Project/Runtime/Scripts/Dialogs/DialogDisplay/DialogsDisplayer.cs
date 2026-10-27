@@ -59,7 +59,7 @@ namespace DShotgun.Dialogs
                 ContinueButtonState(false);
 
                 _displayState = TextDisplayState.Writing;
-                await _dumbReader.ComputeCharByCharAsync(a_dialogData.Text,  GetProfile(a_dialogData), a_cancel);
+                await _dumbReader.ComputeTextAsync(a_dialogData.Text,  GetProfile(a_dialogData), a_cancel);
 
                 if (!dialogDialogAutoContinue) {
                     ContinueButtonState(true);

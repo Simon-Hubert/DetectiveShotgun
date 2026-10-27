@@ -137,7 +137,11 @@ namespace DShotgun.Dialogs
     public struct ProfileValues<T>
     {
         [SerializeField, ReadOnly] private T _default;
-        public List<T> queue;
+        private List<T> queue;
+        public void AddValue(T a_value) => queue.Add(a_value);
+        public void RemoveValue() {
+            if(queue.Count > 0) queue.RemoveAt(queue.Count - 1);
+        } 
         
         public T GetLastValue { get => queue.Count <= 0 ? _default : queue[^1]; }
         public void ResetValues() {
