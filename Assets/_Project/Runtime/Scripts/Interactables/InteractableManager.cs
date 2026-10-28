@@ -12,11 +12,14 @@ namespace DShotgun
     [RequireComponent(typeof(Collider2D))]
     public class InteractableManager : MonoBehaviour
     {
+        [SerializeField] private int _priority;
         [SerializeField] private List<InteractionCase> _interactionCases = new List<InteractionCase>();
         [SerializeField] private List<InteractionCase> _aimCases = new List<InteractionCase>();
         
         [SerializeField] private UnityEvent _onInteracted;
         [SerializeField] private UnityEvent _onAimed;
+
+        public int Priority => _priority;
 
         /// <summary>
         /// Traite une interaction du joueur avec cet objet.

@@ -37,7 +37,7 @@ namespace DShotgun
         private bool _isAiming;
         private bool _isPointerOverUI;
         private bool _isBusy;
-        private InteractableManager[] _aimed;
+        private InteractableManager[] _aimed = Array.Empty<InteractableManager>();
         private Vector3 _defaultPosition;
         public Vector3 SetDefaultCamPos { set => _defaultPosition = value; }
         private float _zoomProgress;
@@ -80,11 +80,11 @@ namespace DShotgun
 
             InteractableManager[] targets = _isAiming ? GetInteractableUnderPointer() : Array.Empty<InteractableManager>();
             
-            if (targets != null && !_isBusy)
+            if (!_isBusy)
             {
                 foreach (InteractableManager target in targets)
                 {
-                    if(!_aimed.Contains(target)) Aim(target);
+                    if (!_aimed.Contains(target) && target.Aim()) break;
                 }
             }
             _aimed = targets;
@@ -118,34 +118,22 @@ namespace DShotgun
         {
             if (_isBusy) return;
 
-            InteractableManager[] target = GetInteractableUnderPointer();
-            foreach (InteractableManager interactable in target)
+            foreach (InteractableManager interactable in GetInteractableUnderPointer())
             {
-                interactable.Interact();
-            }
-        }
-
-        private void Aim(InteractableManager target)
-        {
-            _isBusy = true;
-            if (target != null) target.Aim();
-            {
-                _isBusy = false;
+                if (interactable.Interact()) break;
             }
         }
 
         private InteractableManager[] GetInteractableUnderPointer()
         {
-            if (_isPointerOverUI) return null;
+            if (_isPointerOverUI) return Array.Empty<InteractableManager>();
 
             Vector2 worldPoint = _camera.ScreenToWorldPoint(_inputs.PointerPosition);
-            Collider2D[] hit = Physics2D.OverlapPointAll(worldPoint);
-            if (hit != null && hit.Length > 0)
-            {
-                return hit.Where(e => e.TryGetComponent<InteractableManager>(out InteractableManager im))
-                    .Select(e => e.GetComponent<InteractableManager>()).ToArray();
-            }
-            return null;
+            return Physics2D.OverlapPointAll(worldPoint)
+                .Select(hit => hit.GetComponent<InteractableManager>())
+                .Where(interactable => interactable != null)
+                .OrderByDescending(interactable => interactable.Priority)
+                .ToArray();
         }
 
         private void CreateDynamics()
