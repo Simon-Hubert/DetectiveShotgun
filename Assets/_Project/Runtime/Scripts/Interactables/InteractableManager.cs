@@ -29,18 +29,18 @@ namespace DShotgun
         /// <returns>true si un cas a été validé, false si aucun ne l'est.</returns>
         virtual public bool Interact()
         {
-            bool result = false;
-            foreach (InteractionCase interactionCase in _interactionCases)
+            try
             {
-                if (interactionCase.Evaluate(Blackboard.Instance))
+                foreach (InteractionCase interactionCase in _interactionCases)
                 {
-                    result = true;
-                    break;
+                    if (interactionCase.Evaluate(Blackboard.Instance)) return true;
                 }
+                return false;
             }
-            
-            _onInteracted?.Invoke();
-            return result;
+            finally
+            {
+                _onInteracted?.Invoke();
+            }
         }
 
         /// <summary>
