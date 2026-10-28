@@ -5,7 +5,8 @@ namespace DShotgun.Dialogs
     public class SpeedTag : CustomTag
     {
         protected override string Name { get => "speed"; }
-        
+        protected override CustomTagsType Type { get => CustomTagsType.ProfileTag; }
+
         public override void ChangeProfileValue(string a_tag, ref CharacterDialogProfile a_profile) {
             if (Id.IsEndTag(a_tag)) {
                 a_profile.typingSpeed.RemoveValue();

@@ -36,9 +36,9 @@ namespace DShotgun.Dialogs
         [Header("Textbox")]
         [SerializeField] private Image _dialogContinueIcon;
 
-        [Header("Data")]
-        [SerializeField, ReadOnly] private bool dialogDialogAutoContinue = false;
-        public bool DialogAutoContinue { get => dialogDialogAutoContinue; }
+        // [Header("Data")]
+        // [SerializeField, ReadOnly] private bool dialogDialogAutoContinue = false;
+        // public bool DialogAutoContinue { get => dialogDialogAutoContinue; }
         
         public void DisplayDialogSprite(Sprite a_left, Sprite a_right) {
             GetCharaRdr(CharaPos.LEFT).sprite = a_left;
@@ -61,7 +61,7 @@ namespace DShotgun.Dialogs
                 _displayState = TextDisplayState.Writing;
                 await _dumbReader.ComputeTextAsync(a_dialogData.Text,  GetProfile(a_dialogData), a_cancel);
 
-                if (!dialogDialogAutoContinue) {
+                if (!_dumbReader.HasAutoPassed) {
                     ContinueButtonState(true);
                     _displayState = TextDisplayState.Waiting;
                 }

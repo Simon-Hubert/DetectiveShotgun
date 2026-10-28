@@ -10,17 +10,19 @@ namespace DShotgun.Dialogs
     public class TextDumbReader
     {
         #region TagList
-        
         private CustomTag[] _customTags = {
             new PitchTag(),
             new SpeedTag(),
-            new SoundTag()
+            new SoundTag(),
+            new WaitTag(),
+            new PassTag()
         };
         #endregion
             
         private TextMeshProUGUI _textBox;
 
-        private float _waitTime = 0;
+        private TextInstruction _instruction;
+        public bool HasAutoPassed { get => _instruction.pass; }
             
         public async Awaitable ComputeTextAsync(string a_text, SOCharacterDialogProfile a_profile, CancellationToken a_cancel) {
             CharacterDialogProfile profileStruct = a_profile.ToStruct;
@@ -31,8 +33,10 @@ namespace DShotgun.Dialogs
                 StringBuilder a = new StringBuilder(_textBox.text);
 
                 for (int i = 0; i < a_text.Length; i++) {
+                    _instruction = new TextInstruction();
+                    
                     if (a_text[i] == '<') a.Append(TagsTreatment(a_text, ref profileStruct, ref i));
-                    if (string.IsNullOrWhiteSpace(a_text[i].ToString())) a.Append(a_text[i]);
+                    else if (string.IsNullOrWhiteSpace(a_text[i].ToString())) a.Append(a_text[i]);
                     else {
                         while (profileStruct.typingDelay > delay) {
                             await Awaitable.NextFrameAsync(a_cancel);
@@ -44,6 +48,9 @@ namespace DShotgun.Dialogs
                         a.Append(a_text[i]);
                         _textBox.text = a.ToString();
                     }
+
+                    if (_instruction.wait > 0.0f) await Awaitable.WaitForSecondsAsync(_instruction.wait, a_cancel);
+                    if (_instruction.pass) break;
                 }
             }
             catch (Exception e) {
@@ -62,7 +69,6 @@ namespace DShotgun.Dialogs
                 tagSB.Append(a_text[r_index]);
 
                 if (a_text[r_index] == '>') {
-                    r_index++;
                     break;
                 }
             }
@@ -72,15 +78,27 @@ namespace DShotgun.Dialogs
             if (tag[^1] == '>') {
                 CustomTag custom = null;
                 foreach (CustomTag check in _customTags) {
-                    if (check.IsTag(tag)) {
+                    if (check != null && check.IsTag(tag)) {
                         custom = check;
                         break;
                     }
                 }
 
                 if (custom != null) {
-                    custom.ChangeProfileValue(tag, ref a_profile);
-                    return "";
+                    switch (custom.GetType) {
+                        case CustomTagsType.ProfileTag :
+                            custom.ChangeProfileValue(tag, ref a_profile);
+                            return "";
+                        case CustomTagsType.InstructionTag :
+                            custom.ChangeInstructionValue(tag, ref _instruction);
+                            return "";
+                        
+                        
+                        case CustomTagsType.None :
+                        default :
+                            r_index = startIndex;
+                            return "<";
+                    }
                 }
                 else {
                     return tag;
@@ -98,5 +116,12 @@ namespace DShotgun.Dialogs
         public TextDumbReader(TextMeshProUGUI a_textBox) {
             _textBox = a_textBox;
         }
+    }
+
+    [Serializable]
+    public struct TextInstruction
+    {
+        public bool pass;
+        public float wait;
     }
 }
