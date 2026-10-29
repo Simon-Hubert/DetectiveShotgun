@@ -58,6 +58,7 @@ namespace DShotgun.Dialogs
                 {
                     await PlayNext(_cancellationTokenSource.Token);
                 }
+                _OnEnded?.Invoke();
                 DialogsManager.instance.ShowDialogUI(false);
             }
             catch (OperationCanceledException oce)
@@ -65,7 +66,6 @@ namespace DShotgun.Dialogs
                 _wasCancelled = true;
                 Debug.Log($"Cancelled at index {_currentIndex}");
             }
-            _OnEnded?.Invoke();
         }
 
         private async Awaitable PlayNext(CancellationToken token)
