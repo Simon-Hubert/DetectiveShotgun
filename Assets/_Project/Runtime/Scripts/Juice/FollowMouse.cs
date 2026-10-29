@@ -12,10 +12,12 @@ public class FollowMouse : MonoBehaviour
     [SerializeField, ReadOnly] private Sprite[] _spriteList;
     [SerializeField] private SpriteRenderer _spriteRenderer;
     
-    [Space(10)]
-    // [SerializeField] private float[] _rotationThreshold = { -30, -24, -18, -12, -6, 0, 6, 12, 18, 24, 30 };
+    [Header("FollowThershold")]
     [SerializeField] private int _widthThreshold = 11;
+    [SerializeField, Range(0, 1)] private float _wPadding = 0.00f;
+    [Space(7)]
     [SerializeField, Min(1)] private int _heightThreshold = 11;
+    [SerializeField, Range(0, 1)] private float _hPadding = 0.00f;
     
     void Update()
     {
