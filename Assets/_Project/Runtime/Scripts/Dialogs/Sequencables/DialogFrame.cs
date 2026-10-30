@@ -104,7 +104,7 @@ namespace DShotgun.Dialogs
         private void TransferData() {
             string text = RichTextCompiler.Correct(_text.Text, RichTextTagRegistry.Default);
             if (_moveNextAutomatically) {
-                text += "[UneBaliseDeFin]"; //TODO mettre la bonne Balise
+                text += "<pass>"; //TODO mettre la bonne Balise
             }
             
             CharacterDialogData dialogData = new CharacterDialogData()
