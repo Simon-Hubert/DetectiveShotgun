@@ -6,6 +6,7 @@ Shader "CustomRenderTexture/CRTEffect"
         _Distortion ("Distortion", Range(0, 1)) = 0.06
         _Zoom ("Zoom", Range(1, 1.5)) = 1.04
         _Vignette ("Vignette", Range(0, 1)) = 0.2
+        _Background ("Background", Int) = 0
     }
 
     SubShader
@@ -36,6 +37,7 @@ Shader "CustomRenderTexture/CRTEffect"
                 float _Distortion;
                 float _Zoom;
                 float _Vignette;
+                int _Background;
             CBUFFER_END
 
             struct Attributes
@@ -71,16 +73,19 @@ Shader "CustomRenderTexture/CRTEffect"
 
                 // Black outside the valid UV region
                 if (uv.x < 0.0 || uv.x > 1.0 || uv.y < 0.0 || uv.y > 1.0)
-                    return half4(0, 0, 0, 1);
+                    return half4(0, 0, 0, 0);
 
                 half4 col = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, uv);
+                if (_Background <= 0 && col[3] == 0)
+                    return half4(0, 0, 0, 0);
 
                 // Vignette - edge darkening
                 float vignette = 1.0 - _Vignette * smoothstep(0.25, 1.0, r2);
 
                 col.rgb *= vignette;
                 col *= input.color;
-
+                
+                col.a = 1.0;
                 return col;
             }
             ENDHLSL
