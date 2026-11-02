@@ -265,7 +265,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &258136309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -326,7 +326,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &437322813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -926,6 +926,10 @@ PrefabInstance:
     - target: {fileID: 2026003710433988182, guid: 0bcb9e13c15e49e4cbc84ac0efc4fec4, type: 3}
       propertyPath: m_Name
       value: GunParent
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654558753059114749, guid: 0bcb9e13c15e49e4cbc84ac0efc4fec4, type: 3}
+      propertyPath: _invertWidth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7762598663268524467, guid: 0bcb9e13c15e49e4cbc84ac0efc4fec4, type: 3}
       propertyPath: m_LocalPosition.x

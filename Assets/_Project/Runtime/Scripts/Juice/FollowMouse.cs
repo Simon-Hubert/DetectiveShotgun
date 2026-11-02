@@ -13,9 +13,11 @@ public class FollowMouse : MonoBehaviour
     [SerializeField] private SpriteRenderer _spriteRenderer;
     
     [Space(10)]
-    // [SerializeField] private float[] _rotationThreshold = { -30, -24, -18, -12, -6, 0, 6, 12, 18, 24, 30 };
-    [SerializeField] private int _widthThreshold = 11;
+    [SerializeField, Min(1)] private int _widthThreshold = 11;
+    [SerializeField] private bool _invertWidth = false;
+    [Space(7)]
     [SerializeField, Min(1)] private int _heightThreshold = 11;
+    [SerializeField] private bool _invertHeight = false;
     
     void Update()
     {
@@ -29,16 +31,19 @@ public class FollowMouse : MonoBehaviour
         int i;
         float _heightLevel = Screen.height / _heightThreshold;
         for (i = 1; i < _heightThreshold; i++) {
-            if (Screen.height - mousePos.y < i * _heightLevel) {
+            float height = _invertHeight ? mousePos.y : Screen.height - mousePos.y;
+            if (height < i * _heightLevel) {
                 break;
             }
         }
+
         spriteIndex = _heightThreshold * (i - 1);
 
         int j;
         float _widthLevel = Screen.width / _widthThreshold;
         for (j = 1; j < _widthThreshold; j++) {
-            if (mousePos.x < j * _widthLevel) {
+            float width = _invertWidth ? Screen.width - mousePos.x : mousePos.x;
+            if (width < j * _widthLevel) {
                 break;
             }
         }
