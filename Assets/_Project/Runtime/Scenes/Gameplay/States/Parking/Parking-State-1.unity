@@ -119,6 +119,71 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &91770843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 91770844}
+  - component: {fileID: 91770845}
+  m_Layer: 0
+  m_Name: DialogFrame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &91770844
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91770843}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4688224764354385327}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &91770845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91770843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  <LeftRef>k__BackingField:
+    _characterName: Detective
+    _spriteName: Idle
+  <MiddleRef>k__BackingField:
+    _characterName: None
+    _spriteName: None
+  <RightRef>k__BackingField:
+    _characterName: "M\xE9decin l\xE9giste"
+    _spriteName: Idle
+  <UseCustomName>k__BackingField: 0
+  <UseCustomDialogProfile>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 0
+  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+  _left: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _middle: {fileID: 0}
+  _right: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+  _text:
+    _text: "Tiens ? Qui aurait \xE9gar\xE9 \xE7a dans quelqu\u2019un ?"
+    _styles: []
+  _name: Detective
+  _moveNextAutomatically: 0
 --- !u!1001 &94606105
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -406,6 +471,72 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 714577717051992087, guid: 2d92838bb98c93873821a235284eb6ac, type: 3}
   m_PrefabInstance: {fileID: 94606105}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &104128610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 104128611}
+  - component: {fileID: 104128612}
+  m_Layer: 0
+  m_Name: DialogFrame (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &104128611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104128610}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4688224764354385327}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &104128612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104128610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  <LeftRef>k__BackingField:
+    _characterName: Detective
+    _spriteName: Idle
+  <MiddleRef>k__BackingField:
+    _characterName: None
+    _spriteName: None
+  <RightRef>k__BackingField:
+    _characterName: "M\xE9decin l\xE9giste"
+    _spriteName: Idle
+  <UseCustomName>k__BackingField: 0
+  <UseCustomDialogProfile>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 0
+  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+  _left: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _middle: {fileID: 0}
+  _right: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+  _text:
+    _text: "On dirait qu\u2019il y a quelque chose au bout du manche, comme une sorte
+      de gravure ?"
+    _styles: []
+  _name: Detective
+  _moveNextAutomatically: 0
 --- !u!1 &194012797
 GameObject:
   m_ObjectHideFlags: 0
@@ -1911,7 +2042,9 @@ MonoBehaviour:
   _spriteList: []
   _spriteRenderer: {fileID: 0}
   _widthThreshold: 11
+  _invertWidth: 0
   _heightThreshold: 11
+  _invertHeight: 0
 --- !u!4 &701058839
 Transform:
   m_ObjectHideFlags: 0
@@ -2965,6 +3098,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700108817}
   m_CullTransparentMesh: 1
+--- !u!1 &1768629865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1768629866}
+  - component: {fileID: 1768629867}
+  m_Layer: 0
+  m_Name: DialogFrame (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1768629866
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768629865}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4688224764354385327}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1768629867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768629865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  <LeftRef>k__BackingField:
+    _characterName: Detective
+    _spriteName: Idle
+  <MiddleRef>k__BackingField:
+    _characterName: None
+    _spriteName: None
+  <RightRef>k__BackingField:
+    _characterName: "M\xE9decin l\xE9giste"
+    _spriteName: Idle
+  <UseCustomName>k__BackingField: 0
+  <UseCustomDialogProfile>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 2
+  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+  _left: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _middle: {fileID: 0}
+  _right: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+  _text:
+    _text: "Un poi\xE7on d\u2019of\xE8vre grav\xE9. Tout \xE0 fait. Ce n\u2019est
+      pas n\u2019importe quelle lame"
+    _styles: []
+  _name: "M\xE9decin l\xE9giste"
+  _moveNextAutomatically: 0
 --- !u!1 &1794638647
 GameObject:
   m_ObjectHideFlags: 0
@@ -3484,10 +3683,25 @@ PrefabInstance:
       value: INTERACTABLES-TAB2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 550450277762752319, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8570281203878322762, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 91770844}
+    - targetCorrespondingSourceObject: {fileID: 8570281203878322762, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 104128611}
+    - targetCorrespondingSourceObject: {fileID: 8570281203878322762, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1768629866}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
+--- !u!4 &4688224764354385327 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8570281203878322762, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
+  m_PrefabInstance: {fileID: 4688224764354385326}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4957500155546340382
 PrefabInstance:
   m_ObjectHideFlags: 0
