@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 6067384247419542780}
   - component: {fileID: 6608258961006754970}
   - component: {fileID: 3610882217580910498}
+  - component: {fileID: 8836601799099958187}
   m_Layer: 0
-  m_Name: Player
+  m_Name: PLAYER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60,11 +61,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableController
   _camera: {fileID: 0}
+  _pixelPerfectCamera: {fileID: 0}
   _inputs: {fileID: 6067384247419542780}
-  _aimAnimTime: 1
-  _defaultFov: 10
-  _aimFov: 15
   _toggleAimOnRightClick: 0
+  _defaultPpu: 100
+  _aimPpu: 150
+  _zoomDuration: 0.3
+  _zoomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _aimMaxOffset: {x: 3, y: 2}
+  _frequency: 2
+  _damping: 1
+  _response: 0
 --- !u!114 &3610882217580910498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,3 +107,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85f7f914ea3c5f851a43a56c8f9ccd80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpact
+  _shotImpactPrefab: {fileID: 5856876785614950826, guid: b04655bc7fa66ef71bf0e490ad41f545, type: 3}
+--- !u!114 &8836601799099958187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8219939717306436932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d52afe4aa63f45647a2ed5e8466a7677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.PlayerInventory
