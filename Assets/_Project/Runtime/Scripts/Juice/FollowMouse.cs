@@ -23,7 +23,6 @@ public class FollowMouse : MonoBehaviour
     {
         Vector2 mousePos = Mouse.current.position.ReadValue();
         Vector2 dir = -((Vector2)transform.position - (Vector2)Camera.main.ScreenToWorldPoint(mousePos)).normalized;
-        //float angle = -Vector2.SignedAngle(transform.up, dir);
 
         
         int spriteIndex = 0;
@@ -49,7 +48,6 @@ public class FollowMouse : MonoBehaviour
         }
         spriteIndex += j - 1;
         
-        // Debug.Log($"angle: {angle} | middle angle: {_rotationThreshold[Mathf.FloorToInt(_rotationThreshold.Length / 2)]}");
         Debug.Log($"Sprite List Position (x: {j} | y: {i} | Index: {spriteIndex:D3})");
         if (spriteIndex > 0 && spriteIndex < _spriteList.Length) _spriteRenderer.sprite = _spriteList[spriteIndex];
     }
