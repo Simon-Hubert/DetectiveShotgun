@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace DShotgun
@@ -5,24 +6,29 @@ namespace DShotgun
     public static class ShotgunManager
     {
         private static bool _isLoaded = false;
-        private static ItemData _loadedItem;
+        private static ItemSlot _loadedItem;
         
         public static bool IsLoaded => _isLoaded;
-        public static ItemData LoadedItem => _loadedItem;
+        public static ItemSlot LoadedItem => _loadedItem;
+        
+        public static event Action OnShotgunLoaded;
+        public static event Action OnShotgunUnloaded;
 
-        public static void LoadItem(ItemData item)
+        public static void LoadItem(ItemSlot item)
         {
             _isLoaded = true;
             _loadedItem = item;
             Debug.Log($"[ShotgunManager] Loaded item: {item.Name}");
+            OnShotgunLoaded?.Invoke();
         }
         
         public static void UnloadItem()
         {
             if(!_isLoaded) return;
             _isLoaded = false;
-            _loadedItem = new ItemData();
+            _loadedItem = new ItemSlot();
             Debug.Log("[ShotgunManager] Unloaded item");
+            OnShotgunUnloaded?.Invoke();
         }
     }
 }

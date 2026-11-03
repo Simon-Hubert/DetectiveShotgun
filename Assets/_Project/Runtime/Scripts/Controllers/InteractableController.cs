@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using SMath;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.Rendering.Universal;
 
@@ -33,6 +34,9 @@ namespace DShotgun
         [SerializeField, Min(0.01f)] private float _frequency = 2f;
         [SerializeField, Min(0f)] private float _damping = 1f;
         [SerializeField] private float _response = 0f;
+        
+        [Header("Unity Events")]
+        [SerializeField] private UnityEvent<ItemSlot> UnityOnShootItemFailed;
 
         private bool _isAiming;
         private bool _isPointerOverUI;
@@ -117,12 +121,17 @@ namespace DShotgun
         private void HandleLeftClickPressed()
         {
             if (_isBusy) return;
-
+            
             InteractableManager[] interactables = GetInteractableUnderPointer();
             if (interactables.Length > 0)
             {
                 interactables[0].Interact();
             }
+            else if (ShotgunManager.IsLoaded)
+            {
+                UnityOnShootItemFailed?.Invoke(ShotgunManager.LoadedItem);
+            }
+            ShotgunManager.UnloadItem();
         }
 
         private InteractableManager[] GetInteractableUnderPointer()

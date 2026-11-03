@@ -16,7 +16,8 @@ namespace DShotgun
             if(eventData.pointerDrag == null) return;
             UIItem uiItem = eventData.pointerDrag.GetComponent<UIItem>();
             if(uiItem == null) return;
-            
+
+            uiItem.LockPosition();
             uiItem.RectTransform.anchoredPosition = _rectTransform.anchoredPosition;
             uiItem.DroppedInShotgun();
         }
