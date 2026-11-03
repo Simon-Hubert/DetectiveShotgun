@@ -41,7 +41,11 @@ namespace DShotgun
 
         private void Initialize(int capacity)
         {
-            _inventory = new ItemSlot[Mathf.Max(1, capacity)];
+            _inventory = new ItemSlot[capacity];
+            for(int i = 0; i < capacity; i++)
+            {
+                _inventory[i] = new ItemSlot();
+            }
             Debug.Log($"[Storage] {name} initialized with {capacity} slots.");
         }
         private void Start()
@@ -53,13 +57,14 @@ namespace DShotgun
         
         public void AddItem(ItemData item)
         {
+
             for (int i = 0; i < _inventory.Length; i++)
             {
-                if (_inventory[i].Name == null)
+                if (string.IsNullOrEmpty(_inventory[i]?.Name))
                 {
                     _inventory[i] = new ItemSlot(item);
-                    Debug.Log($"[PlayerInventory] Added {item.Name} to slot {i}");
                     OnSlotChanged?.Invoke(i, item);
+                    Debug.Log($"[Storage] Added {item.Name} to slot {i}.");
                     return;
                 }
             }
@@ -67,14 +72,24 @@ namespace DShotgun
             OnInventoryFull?.Invoke();
         }
         
-        public bool Remove(int index)
+        public void ConsumeItem(ItemSlot item)
         {
-            if (!IsValidIndex(index)) return false;
-            
-            _inventory[index].Clear();
+            for (int i = 0; i < _inventory.Length; i++)
+            {
+                if (_inventory[i].Name == item.Name)
+                {
+                    _inventory[i] = new ItemSlot();
+                    OnSlotChanged?.Invoke(i, null);
+                    Debug.Log($"[Storage] Consumed {item.Name} from slot {i}.");
+                    return;
+                }
+            }
+            Debug.LogWarning("[PlayerInventory] Item not found in inventory: " + item.Name);
+        }
 
-            OnSlotChanged?.Invoke(index, null);
-            return true;
+        public void ConsumeItemLoaded()
+        {
+            ConsumeItem(ShotgunManager.LoadedItem);
         }
         
         public void Clear()
