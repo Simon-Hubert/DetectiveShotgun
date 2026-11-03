@@ -23,7 +23,6 @@ public class FollowMouse : MonoBehaviour
     {
         Vector2 mousePos = Mouse.current.position.ReadValue();
         Vector2 dir = -((Vector2)transform.position - (Vector2)Camera.main.ScreenToWorldPoint(mousePos)).normalized;
-        //float angle = -Vector2.SignedAngle(transform.up, dir);
 
         
         int spriteIndex = 0;
