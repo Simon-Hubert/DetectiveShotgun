@@ -135,11 +135,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4188269116662787392, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
   m_PrefabInstance: {fileID: 6797390045275155990}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &124079475 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 333163316296359920, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
-  m_PrefabInstance: {fileID: 4688224764354385326}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &272224262
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,65 +198,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 260fb2b5022e6cb45a51f744a92af1d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableController
---- !u!1 &347064425
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 347064426}
-  - component: {fileID: 347064427}
-  m_Layer: 0
-  m_Name: Invoke Event with 1 binds
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &347064426
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 347064425}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 124079475}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &347064427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 347064425}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69bcb5ae2dda1d84585899ae21a338d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.UnityEventSequence
-  _event:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1438674408}
-        m_TargetAssemblyTypeName: UnityEngine.BoxCollider2D, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &377249581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1393,6 +1329,40 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2988849964206204305, guid: f64e95f2609198f8796394ea5127e712, type: 3}
   m_PrefabInstance: {fileID: 440701707371106557}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1057606852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057606848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72e943eb5f67a06478c6222aa53729ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.PendingItem
+  _condition:
+    rid: 2493796905598845089
+  references:
+    version: 2
+    RefIds:
+    - rid: 2493796905598845089
+      type: {class: And, ns: DShotgun, asm: DShotgun}
+      data:
+        _a:
+          rid: 2493796905598845090
+        _b:
+          rid: 2493796905598845091
+    - rid: 2493796905598845090
+      type: {class: FlagCondition, ns: DShotgun, asm: DShotgun}
+      data:
+        _flag:
+          _flagName: MessageDiscovered
+    - rid: 2493796905598845091
+      type: {class: FlagCondition, ns: DShotgun, asm: DShotgun}
+      data:
+        _flag:
+          _flagName: StyletDiscovered
 --- !u!114 &1107526588 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2063828776030686872, guid: f64e95f2609198f8796394ea5127e712, type: 3}
@@ -1511,6 +1481,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 272224263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1183709330 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2929095549766790448, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
+  m_PrefabInstance: {fileID: 6797390045275155990}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b37a83ae8cc6d4b83e63ed7042e37b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.UIItem
 --- !u!114 &1225783917 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6389851905280764911, guid: ab778f9076274a1f3b6108be248a96a8, type: 3}
@@ -1527,11 +1508,33 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5163736768412431243, guid: f64e95f2609198f8796394ea5127e712, type: 3}
   m_PrefabInstance: {fileID: 440701707371106557}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &1438674408 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 4080246050121816595, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
-  m_PrefabInstance: {fileID: 4688224764354385326}
+--- !u!1 &1370355574 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1463910943440986387, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
+  m_PrefabInstance: {fileID: 6797390045275155990}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1395262007 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7929733891689337396, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
+  m_PrefabInstance: {fileID: 6797390045275155990}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b37a83ae8cc6d4b83e63ed7042e37b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.UIItem
+--- !u!114 &1458918389 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3022352932357709240, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
+  m_PrefabInstance: {fileID: 6797390045275155990}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b37a83ae8cc6d4b83e63ed7042e37b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.UIItem
 --- !u!1 &1572648360
 GameObject:
   m_ObjectHideFlags: 0
@@ -1640,6 +1643,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14ed97eedb9dfccddb2419ce39cca489, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.SpriteDSAnimator
+--- !u!114 &1957613492 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6972208152632386997, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
+  m_PrefabInstance: {fileID: 6797390045275155990}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b37a83ae8cc6d4b83e63ed7042e37b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.UIItem
 --- !u!114 &1984841289 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4279642015588151051, guid: ab778f9076274a1f3b6108be248a96a8, type: 3}
@@ -1767,6 +1781,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: HierarchySequences::HierarchySequences.PlaySequenceAtStart
   _sequence: {fileID: 2083050789}
+--- !u!114 &2140508216 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5157899771358264459, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
+  m_PrefabInstance: {fileID: 6797390045275155990}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b37a83ae8cc6d4b83e63ed7042e37b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.UIItem
 --- !u!1001 &440701707371106557
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1801,7 +1826,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2988849964206204305, guid: f64e95f2609198f8796394ea5127e712, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3722075331776619981, guid: f64e95f2609198f8796394ea5127e712, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2028,7 +2053,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7226090722712083514, guid: f64e95f2609198f8796394ea5127e712, type: 3}
       insertIndex: 1
       addedObject: {fileID: 922775055}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2988849964206204305, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1057606852}
   m_SourcePrefab: {fileID: 100100000, guid: f64e95f2609198f8796394ea5127e712, type: 3}
 --- !u!1001 &4688224764354385326
 PrefabInstance:
@@ -2181,6 +2209,14 @@ PrefabInstance:
     - target: {fileID: 4080246050121816595, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
       propertyPath: m_Offset.y
       value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160000710819255246, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1125999896}
+    - target: {fileID: 4160000710819255246, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ConsumeItemLoaded
       objectReference: {fileID: 0}
     - target: {fileID: 4223408006257285356, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2493,10 +2529,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 379016212759715866, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 333163316296359920, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 347064426}
+    - {fileID: 487094767885788443, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
+    m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 678632634110732673, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
       insertIndex: 2
@@ -3017,8 +3051,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1463910943440986387, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6797390045275155992}
   m_SourcePrefab: {fileID: 100100000, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
+--- !u!114 &6797390045275155992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370355574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41b7f2e8a9b39f343bfec034747254b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.UIInventory
+  _inventorySlots:
+  - {fileID: 2140508216}
+  - {fileID: 1458918389}
+  - {fileID: 1957613492}
+  - {fileID: 1395262007}
+  - {fileID: 1183709330}
+  _playerInventory: {fileID: 1125999896}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
