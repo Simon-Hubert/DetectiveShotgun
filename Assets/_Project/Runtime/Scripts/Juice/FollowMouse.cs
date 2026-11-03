@@ -50,7 +50,7 @@ public class FollowMouse : MonoBehaviour
         spriteIndex += j - 1;
         
         // Debug.Log($"angle: {angle} | middle angle: {_rotationThreshold[Mathf.FloorToInt(_rotationThreshold.Length / 2)]}");
-        Debug.Log($"Sprite List Position (x: {j} | y: {i} | Index: {spriteIndex:D3})");
+        //Debug.Log($"Sprite List Position (x: {j} | y: {i} | Index: {spriteIndex:D3})");
         if (spriteIndex > 0 && spriteIndex < _spriteList.Length) _spriteRenderer.sprite = _spriteList[spriteIndex];
     }
 

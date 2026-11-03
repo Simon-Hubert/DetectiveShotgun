@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6383161685120494402}
   - component: {fileID: 6799130678459867175}
-  - component: {fileID: 7742614568614952213}
+  - component: {fileID: 4265740501008160572}
   m_Layer: 0
   m_Name: Visuals
   m_TagString: Untagged
@@ -82,17 +82,17 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -5092725161734868758, guid: cc48d1f5289a63640a0169d90fc7a2dc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 825e049422bf4436fb77f0d8483d7965, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.05, y: 0.92}
+  m_Size: {x: 0.76, y: 0.96}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &7742614568614952213
+--- !u!114 &4265740501008160572
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -101,9 +101,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1367324190372867535}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d2895122bcfbdf6aa81ac559e2c0e2f, type: 3}
+  m_Script: {fileID: 11500000, guid: 14ed97eedb9dfccddb2419ce39cca489, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: DShotgun::DShotgun.SpriteSwitcher
+  m_EditorClassIdentifier: DShotgun::DShotgun.SpriteDSAnimator
+  _spriteFolderPath: AnimatedProps/Canette_1/
+  _fileName: Parking_Exterieur_canette_1-
+  _fileSuffix: 
+  _nbOfElements: 5
+  _startAtIndex: 1
+  _spriteList:
+  - {fileID: 21300000, guid: 825e049422bf4436fb77f0d8483d7965, type: 3}
+  - {fileID: 21300000, guid: bd510b81400696c59b2592aab0fbac24, type: 3}
+  - {fileID: 21300000, guid: 4446c4ad946523dcc8d6a6d2d0dbf4a3, type: 3}
+  - {fileID: 21300000, guid: 4409893806e174cd9a80932a63e69d5e, type: 3}
+  - {fileID: 21300000, guid: 978d482a75664d644a252cc241124420, type: 3}
+  _index: 0
+  _spriteRenderer: {fileID: 6799130678459867175}
+  _loop: 0
+  _fps: 7
+  isPlaying: 0
+  _playOnAwake: 0
 --- !u!1 &1909771778384085134
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,13 +361,13 @@ MonoBehaviour:
   _onInteracted:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7742614568614952213}
-        m_TargetAssemblyTypeName: DShotgun.SpriteSwitcher, DShotgun
-        m_MethodName: SwitchTo
-        m_Mode: 2
+      - m_Target: {fileID: 4217283255551768147}
+        m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
+        m_MethodName: Execute
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 6320549088073481751, guid: f7115c3fcca431e48a34fdd78304ba62, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -435,7 +452,7 @@ GameObject:
   - component: {fileID: 2652340485602647965}
   - component: {fileID: 352133046143292860}
   m_Layer: 0
-  m_Name: Invoke Event with 1 binds
+  m_Name: Invoke Event with 2 binds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -475,6 +492,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.BoxCollider2D, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4265740501008160572}
+        m_TargetAssemblyTypeName: DShotgun.SpriteDSAnimator, DShotgun
+        m_MethodName: PlayAnim
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
