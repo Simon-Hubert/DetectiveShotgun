@@ -9,6 +9,16 @@ namespace DShotgun
     }
 
     [Serializable]
+    public class ItemCondition : ICondition
+    {
+        [SerializeField] private ItemData _item;
+
+        public bool Evaluate(Blackboard blackboard) {
+            return ShotgunManager.IsLoaded && ShotgunManager.LoadedItem.Name == _item.Name;
+        }
+    }
+    
+    [Serializable]
     public class FlagCondition : ICondition
     {
         [SerializeField] private FlagReference _flag;
