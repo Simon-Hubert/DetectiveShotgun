@@ -118,9 +118,10 @@ namespace DShotgun
         {
             if (_isBusy) return;
 
-            foreach (InteractableManager interactable in GetInteractableUnderPointer())
+            InteractableManager[] interactables = GetInteractableUnderPointer();
+            if (interactables.Length > 0)
             {
-                if (interactable.Interact()) break;
+                interactables[0].Interact();
             }
         }
 
