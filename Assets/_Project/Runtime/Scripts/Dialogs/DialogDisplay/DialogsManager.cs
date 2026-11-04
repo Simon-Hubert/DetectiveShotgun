@@ -90,7 +90,7 @@ namespace DShotgun.Dialogs
                     _commentCancellationTokenSource.Cancel();
             }
         }
-        public void CaptureCommentInfo(CharacterDialogData a_dialogData) {
+        public void CaptureCommentInfo(CharacterDialogData a_dialogData, int id) {
             Debug.Log("Capture Comment Info");
 
             if (textDisplayState != TextDisplayState.Closed) {
