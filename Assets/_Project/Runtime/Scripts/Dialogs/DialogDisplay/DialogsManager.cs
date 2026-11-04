@@ -68,10 +68,10 @@ namespace DShotgun.Dialogs
             }
         }
         public void CaptureDialogsInfo(CharacterDialogData a_dialogData) {
-            Debug.Log("Capture Dialog Info");
+            //Debug.Log("Capture Dialog Info");
             
             if (_commentState != TextDisplayState.Closed) {
-                Debug.Log($"'{name}' : Comment was cancelled due to Dialog being called - Current Comment state '{_commentState.ToString()}'", gameObject);
+                Debug.LogWarning($"'{name}' : Comment was cancelled due to Dialog being called - Current Comment state '{_commentState.ToString()}'", gameObject);
                 ShowCommentUI(false);
             }
             
@@ -90,19 +90,43 @@ namespace DShotgun.Dialogs
                     _commentCancellationTokenSource.Cancel();
             }
         }
-        public void CaptureCommentInfo(CharacterDialogData a_dialogData, int id) {
-            Debug.Log("Capture Comment Info");
+        
+        public void CaptureCommentInfo(CharacterDialogData a_dialogData, CommentID a_IDs) {
+            //Debug.Log("Capture Comment Info");
 
             if (textDisplayState != TextDisplayState.Closed) {
                 Debug.LogError($"'{name}' : Comment was cancelled, Dialog state is not 'Closed' - Current Dialog state '{textDisplayState.ToString()}'", gameObject);
                 return;
             }
-            
-            if (!_commentCancellationTokenSource.IsCancellationRequested)
-                _commentCancellationTokenSource.Cancel();
-            _commentCancellationTokenSource = new CancellationTokenSource();
-            
-            _ = _commentDisplayer.DisplayAsync(a_dialogData, _commentCancellationTokenSource.Token);
+
+            if (a_IDs.groupID != _commentDisplayer.GroupID) {
+                if (!_commentCancellationTokenSource.IsCancellationRequested)
+                    _commentCancellationTokenSource.Cancel();
+                _commentCancellationTokenSource = new CancellationTokenSource();
+
+                _commentDisplayer.GroupID = a_IDs.groupID;
+                _commentDisplayer.AddNewComment(a_dialogData, a_IDs.textID);
+                
+                _ = _commentDisplayer.DisplayAsync(a_dialogData, _commentCancellationTokenSource.Token);
+            }
+            else {
+                _commentDisplayer.AddNewComment(a_dialogData, a_IDs.textID);
+            }
+        }
+    }
+    
+    /// <summary>
+    /// Used to identify comments when they're sent to the dialog manager
+    /// </summary>
+    public struct CommentID {
+        public int groupID { get; private set; }
+        public int textID { get; private set; }
+        
+        /// <param name="a_groupID">ID of the comment group (parent Instance ID)</param>
+        /// <param name="a_textID">ID of comment text (Instance ID)</param>
+        public CommentID(int a_groupID, int a_textID) {
+            groupID = a_groupID;
+            textID = a_textID;
         }
     }
 }
