@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5796817143243082977}
   - component: {fileID: 7203625495867065106}
   m_Layer: 0
-  m_Name: DialogFrame (14)
+  m_Name: ' Speaking'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 4384931117992184697}
   - component: {fileID: 9018808156567536310}
   m_Layer: 0
-  m_Name: DialogFrame
+  m_Name: Sally Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 6178787230460566030}
   - component: {fileID: 8329986838772230457}
   m_Layer: 0
-  m_Name: DialogFrame (5)
+  m_Name: Detective Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 1254048583464150902}
   - component: {fileID: 8258051924843336977}
   m_Layer: 0
-  m_Name: DialogFrame (11)
+  m_Name: ' Speaking'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -276,7 +276,7 @@ GameObject:
   - component: {fileID: 829533733024320378}
   - component: {fileID: 2254185816516144803}
   m_Layer: 0
-  m_Name: DialogFrame (13)
+  m_Name: ' Speaking'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -387,7 +387,7 @@ GameObject:
   - component: {fileID: 8209732154660330869}
   - component: {fileID: 1052255104834931531}
   m_Layer: 0
-  m_Name: DialogFrame (3)
+  m_Name: Detective Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -454,7 +454,7 @@ GameObject:
   - component: {fileID: 2196003761205203319}
   - component: {fileID: 5203273714527465450}
   m_Layer: 0
-  m_Name: DialogFrame (9)
+  m_Name: Detective Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -657,7 +657,7 @@ GameObject:
   - component: {fileID: 2318274037137315829}
   - component: {fileID: 3968682776976733759}
   m_Layer: 0
-  m_Name: DialogFrame (8)
+  m_Name: Sally Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -725,7 +725,7 @@ GameObject:
   - component: {fileID: 1771761484156845488}
   - component: {fileID: 8202892234274236968}
   m_Layer: 0
-  m_Name: DialogFrame (12)
+  m_Name: ' Speaking'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -878,7 +878,7 @@ GameObject:
   - component: {fileID: 8967291126100844959}
   - component: {fileID: 1352793566772299567}
   m_Layer: 0
-  m_Name: DialogFrame (10)
+  m_Name: Sally Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -946,7 +946,7 @@ GameObject:
   - component: {fileID: 4943052817622664914}
   - component: {fileID: 8598642661963886790}
   m_Layer: 0
-  m_Name: DialogFrame (4)
+  m_Name: Sally Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1014,7 +1014,7 @@ GameObject:
   - component: {fileID: 977925848838492554}
   - component: {fileID: 2869085239150654980}
   m_Layer: 0
-  m_Name: DialogFrame (6)
+  m_Name: Sally Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1131,7 +1131,7 @@ GameObject:
   - component: {fileID: 7197421179639227870}
   - component: {fileID: 4902874455885051160}
   m_Layer: 0
-  m_Name: DialogFrame (2)
+  m_Name: Sally Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1198,7 +1198,7 @@ GameObject:
   - component: {fileID: 1109030786125550177}
   - component: {fileID: 7270433489020772749}
   m_Layer: 0
-  m_Name: DialogFrame (7)
+  m_Name: Detective Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1268,7 +1268,7 @@ GameObject:
   - component: {fileID: 185524830783512591}
   - component: {fileID: 2784124974854413300}
   m_Layer: 0
-  m_Name: DialogFrame (1)
+  m_Name: Detective Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2106,6 +2106,10 @@ PrefabInstance:
       propertyPath: <RightRef>k__BackingField._characterName
       value: Detective
       objectReference: {fileID: 0}
+    - target: {fileID: 895256436189159154, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: m_Name
+      value: Detective Speaking
+      objectReference: {fileID: 0}
     - target: {fileID: 1156043316470077000, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _right
       value: 
@@ -2113,6 +2117,10 @@ PrefabInstance:
     - target: {fileID: 1156043316470077000, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <RightRef>k__BackingField._characterName
       value: Detective
+      objectReference: {fileID: 0}
+    - target: {fileID: 1618169182906117614, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: m_Name
+      value: Detective Speaking
       objectReference: {fileID: 0}
     - target: {fileID: 2940887473705208822, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _right
@@ -2150,6 +2158,10 @@ PrefabInstance:
       propertyPath: <RightRef>k__BackingField._characterName
       value: Detective
       objectReference: {fileID: 0}
+    - target: {fileID: 4180834770840715969, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: m_Name
+      value: Detective Speaking
+      objectReference: {fileID: 0}
     - target: {fileID: 6557361163770288419, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _right
       value: 
@@ -2177,6 +2189,10 @@ PrefabInstance:
     - target: {fileID: 7022439413155090770, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <RightRef>k__BackingField._characterName
       value: Detective
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304080123318615382, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: m_Name
+      value: Detective Speaking
       objectReference: {fileID: 0}
     - target: {fileID: 8570635131466859891, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: m_LocalPosition.x
