@@ -13,7 +13,7 @@ namespace DShotgun.Dialogs
     public abstract class ATextDisplayer : MonoBehaviour
     {
         [SerializeField] protected Canvas _canvas;
-        public bool ShowCanvas
+        public virtual bool ShowCanvas
         {
             get => _canvas.enabled;
             set {
