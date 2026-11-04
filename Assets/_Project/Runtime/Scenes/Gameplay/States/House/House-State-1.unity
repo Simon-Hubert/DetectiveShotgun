@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 223006364}
   - component: {fileID: 223006365}
   m_Layer: 0
-  m_Name: DialogFrame (8)
+  m_Name: ' Speaking'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -530,6 +530,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
+--- !u!114 &425370222 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8836601799099958187, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
+  m_PrefabInstance: {fileID: 425370221}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d52afe4aa63f45647a2ed5e8466a7677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.PlayerInventory
 --- !u!1 &679007149
 GameObject:
   m_ObjectHideFlags: 0
@@ -694,7 +705,7 @@ GameObject:
   - component: {fileID: 798784208}
   - component: {fileID: 798784209}
   m_Layer: 0
-  m_Name: DialogFrame
+  m_Name: ' Speaking'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -759,7 +770,7 @@ GameObject:
   - component: {fileID: 1178777125}
   - component: {fileID: 1178777126}
   m_Layer: 0
-  m_Name: DialogFrame (7)
+  m_Name: ' Speaking'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1001,7 +1012,7 @@ GameObject:
   - component: {fileID: 1252705428}
   - component: {fileID: 1252705429}
   m_Layer: 0
-  m_Name: DialogFrame (4)
+  m_Name: ' Speaking'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1067,7 +1078,7 @@ GameObject:
   - component: {fileID: 1300856843}
   - component: {fileID: 1300856844}
   m_Layer: 0
-  m_Name: DialogFrame (2)
+  m_Name: ' Speaking'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1279,7 +1290,7 @@ GameObject:
   - component: {fileID: 1749837324}
   - component: {fileID: 1749837325}
   m_Layer: 0
-  m_Name: DialogFrame (6)
+  m_Name: ' Speaking'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1344,7 +1355,7 @@ GameObject:
   - component: {fileID: 1783289441}
   - component: {fileID: 1783289442}
   m_Layer: 0
-  m_Name: DialogFrame (1)
+  m_Name: ' Speaking'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1409,7 +1420,7 @@ GameObject:
   - component: {fileID: 1807095960}
   - component: {fileID: 1807095961}
   m_Layer: 0
-  m_Name: DialogFrame (5)
+  m_Name: ' Speaking'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1474,7 +1485,7 @@ GameObject:
   - component: {fileID: 1854661496}
   - component: {fileID: 1854661497}
   m_Layer: 0
-  m_Name: DialogFrame (3)
+  m_Name: ' Speaking'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1539,7 +1550,7 @@ GameObject:
   - component: {fileID: 1934636060}
   - component: {fileID: 1934636059}
   m_Layer: 0
-  m_Name: Cancelled
+  m_Name: ' Speaking'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1744,6 +1755,10 @@ PrefabInstance:
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 382021773}
+    - target: {fileID: 4850090338773827691, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 425370222}
     - target: {fileID: 5306945967338398399, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1787,6 +1802,14 @@ PrefabInstance:
     - target: {fileID: 7680937904036636248, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       propertyPath: m_Name
       value: INTERACTABLES
+      objectReference: {fileID: 0}
+    - target: {fileID: 8970604608617626174, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: m_Size.y
+      value: 8.79571
+      objectReference: {fileID: 0}
+    - target: {fileID: 8970604608617626174, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: m_Offset.y
+      value: 1.1625042
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

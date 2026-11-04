@@ -345,23 +345,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.InteractableManager
   _priority: 0
-  _interactionCases: []
+  _interactionCases:
+  - _condition:
+      rid: 3407072178556633094
+    _action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3644179002857290962}
+          m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
+          m_MethodName: Execute
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   _aimCases: []
   _onInteracted:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3644179002857290962}
-        m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
-        m_MethodName: Execute
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _onAimed:
     m_PersistentCalls:
       m_Calls:
@@ -379,7 +384,10 @@ MonoBehaviour:
         m_CallState: 2
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 3407072178556633094
+      type: {class: ConditionOnce, ns: DShotgun, asm: DShotgun}
+      data: 
 --- !u!1 &6517775378006339292
 GameObject:
   m_ObjectHideFlags: 0
