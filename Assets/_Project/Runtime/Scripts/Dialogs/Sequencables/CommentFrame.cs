@@ -25,9 +25,9 @@ namespace DShotgun.Dialogs
                 Name = _name,
                 Text = text,
             };
+            CommentID IDs = new CommentID(transform.parent.GetInstanceID(), transform.GetInstanceID());
             
-            //TODO Remettre quand c'est bon TITOUAN
-            DialogsManager.instance.CaptureCommentInfo(dialogData, transform.parent.GetInstanceID()); 
+            DialogsManager.instance.CaptureCommentInfo(dialogData, IDs); 
         }
     }
 }
