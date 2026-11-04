@@ -20,11 +20,17 @@ namespace DShotgun
     public static class GameManager
     {
         private static GameState _currentState = GameState.Title;
+        private static GameState _previousState;
         
         /// <summary>
         /// Indique l'état courant du jeu, peut etre changer via l'appelle de la fonction <see cref="SwitchState"/> 
         /// </summary>
         public static GameState CurrentState => _currentState;
+        
+        /// <summary>
+        /// Indique l'état précédent du jeu, est changé via l'appelle de la fonction <see cref="SwitchState"/> si elle retourne true
+        /// </summary>
+        public static GameState PreviousState => _previousState;
         
         /// <summary>
         /// Event déclenché lorsqu'un changement de <see cref="CurrentState"/> est effectué
@@ -91,6 +97,7 @@ namespace DShotgun
                     break;
             }
 
+            _previousState = previousState;
             return true;
         }
     }
