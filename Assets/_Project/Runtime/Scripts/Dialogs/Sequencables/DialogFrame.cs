@@ -125,5 +125,12 @@ namespace DShotgun.Dialogs
         public void OnRequestedSkip() {
             _requestedSkipCancellationTokenSource.Cancel();
         }
+
+        protected override string GetName()
+        {
+            return _name + " Speaking";
+        }
+
+        protected override float Hue => Animator.StringToHash(_name);
     }
 }
