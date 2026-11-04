@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2151876770612653722}
+  - component: {fileID: 2134402879468906793}
   m_Layer: 0
   m_Name: UI
   m_TagString: Untagged
@@ -33,6 +34,25 @@ Transform:
   - {fileID: 6707908000322551665}
   m_Father: {fileID: 2264849956926330540}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2134402879468906793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463910943440986387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41b7f2e8a9b39f343bfec034747254b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.UIInventory
+  _inventorySlots:
+  - {fileID: 5157899771358264459}
+  - {fileID: 3022352932357709240}
+  - {fileID: 6972208152632386997}
+  - {fileID: 7929733891689337396}
+  - {fileID: 2929095549766790448}
+  _playerInventory: {fileID: 0}
 --- !u!1 &4027087350679835347
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,11 +394,66 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5b411db2353bff47b51ae679c1a07c0, type: 3}
+--- !u!114 &2929095549766790448 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3313053462677315527, guid: c5b411db2353bff47b51ae679c1a07c0, type: 3}
+  m_PrefabInstance: {fileID: 386298498322313975}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b37a83ae8cc6d4b83e63ed7042e37b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.UIItem
+--- !u!114 &3022352932357709240 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3219481692038115151, guid: c5b411db2353bff47b51ae679c1a07c0, type: 3}
+  m_PrefabInstance: {fileID: 386298498322313975}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b37a83ae8cc6d4b83e63ed7042e37b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.UIItem
+--- !u!114 &5157899771358264459 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4812345738021572220, guid: c5b411db2353bff47b51ae679c1a07c0, type: 3}
+  m_PrefabInstance: {fileID: 386298498322313975}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b37a83ae8cc6d4b83e63ed7042e37b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.UIItem
 --- !u!224 &6707908000322551665 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6362230271919345030, guid: c5b411db2353bff47b51ae679c1a07c0, type: 3}
   m_PrefabInstance: {fileID: 386298498322313975}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6972208152632386997 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7322336429201741634, guid: c5b411db2353bff47b51ae679c1a07c0, type: 3}
+  m_PrefabInstance: {fileID: 386298498322313975}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b37a83ae8cc6d4b83e63ed7042e37b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.UIItem
+--- !u!114 &7929733891689337396 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7732815276143567043, guid: c5b411db2353bff47b51ae679c1a07c0, type: 3}
+  m_PrefabInstance: {fileID: 386298498322313975}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b37a83ae8cc6d4b83e63ed7042e37b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.UIItem
 --- !u!1001 &3743907701691221335
 PrefabInstance:
   m_ObjectHideFlags: 0
