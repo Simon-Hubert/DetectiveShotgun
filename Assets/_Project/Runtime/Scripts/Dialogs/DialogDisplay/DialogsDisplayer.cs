@@ -43,7 +43,7 @@ namespace DShotgun.Dialogs
                 _canvas.enabled = value;
                 _displayState = value ? TextDisplayState.Idle : TextDisplayState.Closed;
                 
-                // TODO : ENZO l'integration de ton changement de State se fait ici
+                GameManager.SwitchState(value ? GameState.Dialogue : GameState.Playing);
             }
         }
         

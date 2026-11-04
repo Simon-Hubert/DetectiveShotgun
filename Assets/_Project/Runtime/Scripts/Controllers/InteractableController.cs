@@ -39,7 +39,6 @@ namespace DShotgun
         [SerializeField] private UnityEvent<ItemSlot> UnityOnShootItemFailed;
 
         private bool _isAiming;
-        private bool _isPointerOverUI;
         private bool _isBusy;
         private InteractableManager[] _aimed = Array.Empty<InteractableManager>();
         private Vector3 _defaultPosition;
@@ -79,7 +78,6 @@ namespace DShotgun
 
         private void Update()
         {
-            _isPointerOverUI = EventSystem.current != null && EventSystem.current.IsPointerOverGameObject();
             if (!_toggleAimOnRightClick) _isAiming = _inputs.IsRightHeld;
 
             InteractableManager[] targets = _isAiming ? GetInteractableUnderPointer() : Array.Empty<InteractableManager>();
@@ -136,8 +134,6 @@ namespace DShotgun
 
         private InteractableManager[] GetInteractableUnderPointer()
         {
-            if (_isPointerOverUI) return Array.Empty<InteractableManager>();
-
             Vector2 worldPoint = _camera.ScreenToWorldPoint(_inputs.PointerPosition);
             return Physics2D.OverlapPointAll(worldPoint)
                 .Select(hit => hit.GetComponent<InteractableManager>())
