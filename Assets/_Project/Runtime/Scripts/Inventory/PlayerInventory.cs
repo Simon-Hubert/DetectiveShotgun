@@ -30,6 +30,7 @@ namespace DShotgun
     
     public class PlayerInventory : MonoBehaviour
     {
+        [SerializeField] private ItemData[] _startingItems = new ItemData[5];
         private int _maxCapacity = 5;
 
         private ItemSlot[] _inventory;
@@ -44,7 +45,16 @@ namespace DShotgun
             _inventory = new ItemSlot[capacity];
             for(int i = 0; i < capacity; i++)
             {
-                _inventory[i] = new ItemSlot();
+                if(_startingItems[i])
+                {
+                    _inventory[i] = new ItemSlot(_startingItems[i]);
+                }
+                else
+                {
+                    _inventory[i] = new ItemSlot();
+                }
+                
+                OnSlotChanged?.Invoke(i, _startingItems[i]);
             }
             Debug.Log($"[Storage] {name} initialized with {capacity} slots.");
         }

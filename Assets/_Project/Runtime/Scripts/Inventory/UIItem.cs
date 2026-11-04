@@ -19,7 +19,7 @@ namespace DShotgun
         
         public RectTransform RectTransform => _rectTransform;
         public event Action<int> OnDropInShotgun;
-        private void Start()
+        private void OnEnable()
         {
             _canvasGroup = GetComponent<CanvasGroup>();
             _rectTransform = GetComponent<RectTransform>();
@@ -38,8 +38,16 @@ namespace DShotgun
 
         public void ChangeSprite(Sprite sprite)
         {
-            if(sprite == null) _canvasGroup.alpha = 0f;
-            else _canvasGroup.alpha = 1f;
+            if (sprite == null)
+            {
+                _canvasGroup.alpha = 0f;
+                _canvasGroup.blocksRaycasts = false;
+            }
+            else
+            {
+                _canvasGroup.alpha = 1f;
+                _canvasGroup.blocksRaycasts = true;
+            }
             _img.sprite = sprite;
             UnityOnSpriteChanged?.Invoke();
         }
