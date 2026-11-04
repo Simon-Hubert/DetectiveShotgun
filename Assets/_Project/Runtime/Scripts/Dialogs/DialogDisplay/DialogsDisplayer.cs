@@ -36,9 +36,16 @@ namespace DShotgun.Dialogs
         [Header("Textbox")]
         [SerializeField] private Image _dialogContinueIcon;
 
-        // [Header("Data")]
-        // [SerializeField, ReadOnly] private bool dialogDialogAutoContinue = false;
-        // public bool DialogAutoContinue { get => dialogDialogAutoContinue; }
+        public override bool ShowCanvas
+        {
+            get => _canvas.enabled;
+            set {
+                _canvas.enabled = value;
+                _displayState = value ? TextDisplayState.Idle : TextDisplayState.Closed;
+                
+                // TODO : ENZO l'integration de ton changement de State se fait ici
+            }
+        }
         
         public void DisplayDialogSprite(Sprite a_left, Sprite a_right) {
             GetCharaRdr(CharaPos.LEFT).sprite = a_left;
