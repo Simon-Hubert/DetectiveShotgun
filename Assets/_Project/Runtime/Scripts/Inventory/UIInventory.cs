@@ -10,7 +10,7 @@ namespace DShotgun
         
         private int _loadedSlot;
 
-        private void Start()
+        private void OnEnable()
         {
             for (int i = 0; i < _inventorySlots.Length; i++)
             {
@@ -30,7 +30,15 @@ namespace DShotgun
 
         private void UpdateSlot(int i, ItemData itemSlot)
         {
-            _inventorySlots[i].ChangeSprite(itemSlot?.Sprite);
+            if (itemSlot == null)
+            {
+                _inventorySlots[i].ChangeSprite(null);
+            }
+            else
+            {
+                _inventorySlots[i].ChangeSprite(itemSlot.Sprite);
+            }
+            
         }
         
         private void UnloadItem()
