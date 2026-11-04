@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.luca3317.tmpeffects": "0.3.2",
     "com.showmielle.colors": "https://github.com/Simon-Hubert/UnityColors.git",
     "com.showmielle.hierarchysequences": "https://github.com/Simon-Hubert/HierarchySequences.git",
     "com.showmielle.maths": "https://github.com/Simon-Hubert/UnityMaths.git",
@@ -57,5 +58,14 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
-  }
+  },
+  "scopedRegistries": [
+    {
+      "name": "package.openupm.com",
+      "url": "https://package.openupm.com",
+      "scopes": [
+        "com.luca3317.tmpeffects"
+      ]
+    }
+  ]
 }

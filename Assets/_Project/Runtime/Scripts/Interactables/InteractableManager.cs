@@ -12,11 +12,17 @@ namespace DShotgun
     [RequireComponent(typeof(Collider2D))]
     public class InteractableManager : MonoBehaviour
     {
+        [SerializeField] private int _priority;
         [SerializeField] private List<InteractionCase> _interactionCases = new List<InteractionCase>();
         [SerializeField] private List<InteractionCase> _aimCases = new List<InteractionCase>();
         
         [SerializeField] private UnityEvent _onInteracted;
         [SerializeField] private UnityEvent _onAimed;
+
+        public int Priority => _priority;
+
+        private bool _canBeAimed = true;
+        private bool _canBeShot = true;
 
         /// <summary>
         /// Traite une interaction du joueur avec cet objet.
@@ -26,25 +32,27 @@ namespace DShotgun
         /// <returns>true si un cas a été validé, false si aucun ne l'est.</returns>
         virtual public bool Interact()
         {
-            bool result = false;
-            foreach (InteractionCase interactionCase in _interactionCases)
+            if (!_canBeShot) return false;
+            try
             {
-                if (interactionCase.Evaluate(Blackboard.Instance))
+                foreach (InteractionCase interactionCase in _interactionCases)
                 {
-                    result = true;
-                    break;
+                    if (interactionCase.Evaluate(Blackboard.Instance)) return true;
                 }
+                return false;
             }
-            
-            _onInteracted?.Invoke();
-            return result;
+            finally
+            {
+                _onInteracted?.Invoke();
+            }
         }
 
         /// <summary>
         /// Traite le fait que le joueur vise cet objet.
         /// </summary>
-        virtual public bool  Aim()
+        virtual public bool Aim()
         {
+            if (!_canBeAimed) return false;
             bool result = false;
             foreach (InteractionCase aimCase in _aimCases)
             {
@@ -57,6 +65,38 @@ namespace DShotgun
 
             _onAimed?.Invoke();
             return result;
+        }
+        
+        /// <summary>
+        /// Empeche les intéractions de Aim
+        /// </summary>
+        public void DisableAim()
+        {
+            _canBeAimed = false;
+        }
+        
+        /// <summary>
+        /// Rends possible les intéractions de Aim
+        /// </summary>
+        public void EnableAim()
+        {
+            _canBeAimed = true;
+        }
+        
+        /// <summary>
+        /// Empeche les intéractions de Shoot
+        /// </summary>
+        public void DisableShoot()
+        {
+            _canBeShot = false;
+        }
+        
+        /// <summary>
+        /// Rends possible les intéractions de Shoot
+        /// </summary>
+        public void EnableShoot()
+        {
+            _canBeShot = true;
         }
     }
 }

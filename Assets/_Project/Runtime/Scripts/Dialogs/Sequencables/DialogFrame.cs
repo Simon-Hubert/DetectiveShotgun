@@ -103,8 +103,8 @@ namespace DShotgun.Dialogs
 
         private void TransferData() {
             string text = RichTextCompiler.Correct(_text.Text, RichTextTagRegistry.Default);
-            if (MoveNextAutomatically) {
-                text += "[UneBaliseDeFin]"; //TODO mettre la bonne Balise
+            if (_moveNextAutomatically) {
+                text += "<pass>"; //TODO mettre la bonne Balise
             }
             
             CharacterDialogData dialogData = new CharacterDialogData()
@@ -125,5 +125,12 @@ namespace DShotgun.Dialogs
         public void OnRequestedSkip() {
             _requestedSkipCancellationTokenSource.Cancel();
         }
+
+        protected override string GetName()
+        {
+            return _name + " Speaking";
+        }
+
+        protected override float Hue => Animator.StringToHash(_name);
     }
 }

@@ -50,9 +50,17 @@ public class InputReader : MonoBehaviour
         OnScrolled?.Invoke(y > 0f ? 1 : -1);
     }
 
-    private void OnRightClickPerformed(InputAction.CallbackContext obj) => OnRightClickPressed?.Invoke();
-    
-    private void OnLeftClickPerformed(InputAction.CallbackContext obj) => OnLeftClickPressed?.Invoke();
+    private void OnRightClickPerformed(InputAction.CallbackContext obj)
+    {
+        if(GameManager.CurrentState != GameState.Playing) return;
+        OnRightClickPressed?.Invoke();
+    }
+
+    private void OnLeftClickPerformed(InputAction.CallbackContext obj)
+    {
+        if(GameManager.CurrentState != GameState.Playing) return;
+        OnLeftClickPressed?.Invoke();
+    }
 
     private void OnDisable()
     {

@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using SMath;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.Rendering.Universal;
 
@@ -33,11 +34,13 @@ namespace DShotgun
         [SerializeField, Min(0.01f)] private float _frequency = 2f;
         [SerializeField, Min(0f)] private float _damping = 1f;
         [SerializeField] private float _response = 0f;
+        
+        [Header("Unity Events")]
+        [SerializeField] private UnityEvent<ItemSlot> UnityOnShootItemFailed;
 
         private bool _isAiming;
-        private bool _isPointerOverUI;
         private bool _isBusy;
-        private InteractableManager[] _aimed;
+        private InteractableManager[] _aimed = Array.Empty<InteractableManager>();
         private Vector3 _defaultPosition;
         public Vector3 SetDefaultCamPos { set => _defaultPosition = value; }
         private float _zoomProgress;
@@ -75,16 +78,15 @@ namespace DShotgun
 
         private void Update()
         {
-            _isPointerOverUI = EventSystem.current != null && EventSystem.current.IsPointerOverGameObject();
             if (!_toggleAimOnRightClick) _isAiming = _inputs.IsRightHeld;
 
             InteractableManager[] targets = _isAiming ? GetInteractableUnderPointer() : Array.Empty<InteractableManager>();
             
-            if (targets != null && !_isBusy)
+            if (!_isBusy)
             {
                 foreach (InteractableManager target in targets)
                 {
-                    if(!_aimed.Contains(target)) Aim(target);
+                    if (!_aimed.Contains(target) && target.Aim()) break;
                 }
             }
             _aimed = targets;
@@ -117,35 +119,27 @@ namespace DShotgun
         private void HandleLeftClickPressed()
         {
             if (_isBusy) return;
-
-            InteractableManager[] target = GetInteractableUnderPointer();
-            foreach (InteractableManager interactable in target)
+            
+            InteractableManager[] interactables = GetInteractableUnderPointer();
+            if (interactables.Length > 0)
             {
-                interactable.Interact();
+                interactables[0].Interact();
             }
-        }
-
-        private void Aim(InteractableManager target)
-        {
-            _isBusy = true;
-            if (target != null) target.Aim();
+            else if (ShotgunManager.IsLoaded)
             {
-                _isBusy = false;
+                UnityOnShootItemFailed?.Invoke(ShotgunManager.LoadedItem);
             }
+            ShotgunManager.UnloadItem();
         }
 
         private InteractableManager[] GetInteractableUnderPointer()
         {
-            if (_isPointerOverUI) return null;
-
             Vector2 worldPoint = _camera.ScreenToWorldPoint(_inputs.PointerPosition);
-            Collider2D[] hit = Physics2D.OverlapPointAll(worldPoint);
-            if (hit != null && hit.Length > 0)
-            {
-                return hit.Where(e => e.TryGetComponent<InteractableManager>(out InteractableManager im))
-                    .Select(e => e.GetComponent<InteractableManager>()).ToArray();
-            }
-            return null;
+            return Physics2D.OverlapPointAll(worldPoint)
+                .Select(hit => hit.GetComponent<InteractableManager>())
+                .Where(interactable => interactable != null)
+                .OrderByDescending(interactable => interactable.Priority)
+                .ToArray();
         }
 
         private void CreateDynamics()
