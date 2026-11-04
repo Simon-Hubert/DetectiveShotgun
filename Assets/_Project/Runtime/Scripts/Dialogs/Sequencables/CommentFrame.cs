@@ -12,7 +12,6 @@ namespace DShotgun.Dialogs
         [SerializeField] private RichTextData _text;
         [SerializeField] private SOCharacterDialogProfile _dialogProfile;
         
-        
         protected override async Awaitable OnPlay() {
             TransferData();
         }
@@ -28,7 +27,7 @@ namespace DShotgun.Dialogs
             };
             
             //TODO Remettre quand c'est bon TITOUAN
-            DialogsManager.instance.CaptureCommentInfo(dialogData); 
+            DialogsManager.instance.CaptureCommentInfo(dialogData, transform.parent.GetInstanceID()); 
         }
     }
 }

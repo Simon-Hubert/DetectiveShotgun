@@ -400,7 +400,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ededc4abd453ed0995c54366c885153, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.PhoneAnimation
-  _horizontalScale: 100
+  _horizontalScale: 20
+  _frequency: 50
 --- !u!1 &369212660
 GameObject:
   m_ObjectHideFlags: 0
