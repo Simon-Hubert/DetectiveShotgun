@@ -198,6 +198,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 260fb2b5022e6cb45a51f744a92af1d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableController
+--- !u!1 &341929775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 341929776}
+  - component: {fileID: 341929777}
+  m_Layer: 0
+  m_Name: ChangeSceneSequence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &341929776
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341929775}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 440701707371106558}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &341929777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341929775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b15965115f7b55a10a0df6a3317da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ChangeSceneSequence
+  _tableau: 5
+  _state: 6
 --- !u!1001 &377249581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1497,6 +1543,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5163736768412431243, guid: f64e95f2609198f8796394ea5127e712, type: 3}
   m_PrefabInstance: {fileID: 440701707371106557}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1555321267
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1555321268}
+  - component: {fileID: 1555321269}
+  m_Layer: 0
+  m_Name: Wait for 3 sec
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1555321268
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555321267}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 440701707371106558}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1555321269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555321267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1129c48e53f61f24889a822b21214186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.WaitForDuration
+  _duration: 3
 --- !u!1 &1572648360
 GameObject:
   m_ObjectHideFlags: 0
@@ -2013,11 +2104,22 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7226090722712083514, guid: f64e95f2609198f8796394ea5127e712, type: 3}
       insertIndex: 1
       addedObject: {fileID: 922775055}
+    - targetCorrespondingSourceObject: {fileID: 5302891540809660488, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1555321268}
+    - targetCorrespondingSourceObject: {fileID: 5302891540809660488, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 341929776}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2988849964206204305, guid: f64e95f2609198f8796394ea5127e712, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1057606852}
   m_SourcePrefab: {fileID: 100100000, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+--- !u!4 &440701707371106558 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5302891540809660488, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+  m_PrefabInstance: {fileID: 440701707371106557}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4688224764354385326
 PrefabInstance:
   m_ObjectHideFlags: 0

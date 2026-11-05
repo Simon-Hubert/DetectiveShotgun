@@ -5,6 +5,14 @@ namespace DShotgun
 {
     public static class TableauManager
     {
+        public static bool IsLoading { get; private set; }
+
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        private static void ResetStatics()
+        {
+            IsLoading = false;
+        }
+
         public static void LoadTableau(int buildIndexTableau, int buildIndexState)
         {
             _ = SwitchTableau(buildIndexTableau, buildIndexState);
@@ -12,8 +20,16 @@ namespace DShotgun
 
         private static async Awaitable SwitchTableau(int buildIndexTableau, int buildIndexState)
         {
-            await SceneManager.LoadSceneAsync(buildIndexTableau, LoadSceneMode.Single);
-            await SceneManager.LoadSceneAsync(buildIndexState, LoadSceneMode.Additive);
+            IsLoading = true;
+            try
+            {
+                await SceneManager.LoadSceneAsync(buildIndexTableau, LoadSceneMode.Single);
+                await SceneManager.LoadSceneAsync(buildIndexState, LoadSceneMode.Additive);
+            }
+            finally
+            {
+                IsLoading = false;
+            }
         }
     }
 }
