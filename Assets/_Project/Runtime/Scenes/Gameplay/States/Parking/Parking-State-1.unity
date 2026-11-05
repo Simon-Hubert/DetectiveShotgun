@@ -1967,6 +1967,34 @@ PrefabInstance:
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: UnityEngine.BoxCollider2D, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6459273588478538205, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: _onAimed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459273588478538205, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: _onAimed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459273588478538205, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: _onAimed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 440701707371106559}
+    - target: {fileID: 6459273588478538205, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: _onAimed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459273588478538205, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: _onAimed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Execute
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459273588478538205, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: _onAimed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: HierarchySequences.Sequence, HierarchySequences
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459273588478538205, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: _onAimed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6478759496601660990, guid: f64e95f2609198f8796394ea5127e712, type: 3}
       propertyPath: m_Name
       value: INTERACTABLES-TAB1
@@ -2120,6 +2148,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5302891540809660488, guid: f64e95f2609198f8796394ea5127e712, type: 3}
   m_PrefabInstance: {fileID: 440701707371106557}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &440701707371106559 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4425417230303401292, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+  m_PrefabInstance: {fileID: 440701707371106557}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8a3882457b01e438e4a1d24cc811e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.Sequence
 --- !u!1001 &4688224764354385326
 PrefabInstance:
   m_ObjectHideFlags: 0
