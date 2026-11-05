@@ -178,6 +178,72 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &197416273
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 197416274}
+  - component: {fileID: 197416275}
+  m_Layer: 0
+  m_Name: Detective Speaking
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &197416274
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197416273}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1773453597}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &197416275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197416273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  <LeftRef>k__BackingField:
+    _characterName: Detective
+    _spriteName: Idle
+  <MiddleRef>k__BackingField:
+    _characterName: None
+    _spriteName: None
+  <RightRef>k__BackingField:
+    _characterName: None
+    _spriteName: None
+  <UseCustomName>k__BackingField: 0
+  <UseCustomDialogProfile>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 0
+  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _middle: {fileID: 0}
+  _right: {fileID: 0}
+  _text:
+    _text: "Crois moi que j\u2019ai pas int\xE9r\xEAt \xE0 g\xE2cher de ce pr\xE9cieux
+      nectar."
+    _styles: []
+  _name: Detective
+  _moveNextAutomatically: 0
 --- !u!1 &360854574
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,6 +889,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: HierarchySequences::HierarchySequences.WaitForDuration
   _duration: 1.5
+--- !u!4 &1773453597 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7311554144785826917, guid: dd84cfdf9b7e6d79594f93310c467d40, type: 3}
+  m_PrefabInstance: {fileID: 6960905266300830364}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2083050788
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,6 +1112,19 @@ PrefabInstance:
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: DShotgun.ItemData, DShotgun
       objectReference: {fileID: 0}
+    - target: {fileID: 3471419506689659844, guid: dd84cfdf9b7e6d79594f93310c467d40, type: 3}
+      propertyPath: _onAimed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6960905266300830367}
+    - target: {fileID: 3471419506689659844, guid: dd84cfdf9b7e6d79594f93310c467d40, type: 3}
+      propertyPath: _onAimed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Execute
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015939115943755428, guid: dd84cfdf9b7e6d79594f93310c467d40, type: 3}
+      propertyPath: _text._text
+      value: "Je sais bien que j\u2019ai sauv\xE9 la mise mais avec tout ce qu\u2019on
+        me ponctionne sur ma fiche de paie."
+      objectReference: {fileID: 0}
     - target: {fileID: 4463137781477543355, guid: dd84cfdf9b7e6d79594f93310c467d40, type: 3}
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1067,6 +1151,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2898499070701066681, guid: dd84cfdf9b7e6d79594f93310c467d40, type: 3}
       insertIndex: 0
       addedObject: {fileID: 1277213249}
+    - targetCorrespondingSourceObject: {fileID: 7311554144785826917, guid: dd84cfdf9b7e6d79594f93310c467d40, type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 197416274}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd84cfdf9b7e6d79594f93310c467d40, type: 3}
 --- !u!114 &6960905266300830365 stripped
@@ -1085,6 +1172,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2898499070701066681, guid: dd84cfdf9b7e6d79594f93310c467d40, type: 3}
   m_PrefabInstance: {fileID: 6960905266300830364}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6960905266300830367 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2905413603411365571, guid: dd84cfdf9b7e6d79594f93310c467d40, type: 3}
+  m_PrefabInstance: {fileID: 6960905266300830364}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8a3882457b01e438e4a1d24cc811e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.Sequence
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
