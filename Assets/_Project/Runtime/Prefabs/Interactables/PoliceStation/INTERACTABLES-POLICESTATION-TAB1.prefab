@@ -610,7 +610,7 @@ Transform:
   m_GameObject: {fileID: 1079439914630418936}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.3, y: 4.61, z: 0}
+  m_LocalPosition: {x: -1.2100005, y: 0.21000004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -678,23 +678,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.InteractableManager
   _priority: 0
-  _interactionCases: []
+  _interactionCases:
+  - _condition:
+      rid: 1945543066696024069
+    _action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1547803046056855951}
+          m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
+          m_MethodName: Execute
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   _aimCases: []
   _onInteracted:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1547803046056855951}
-        m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
-        m_MethodName: Execute
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _onAimed:
     m_PersistentCalls:
       m_Calls:
@@ -712,7 +717,29 @@ MonoBehaviour:
         m_CallState: 2
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 1945543066696024069
+      type: {class: Or, ns: DShotgun, asm: DShotgun}
+      data:
+        _a:
+          rid: 1945543066696024070
+        _b:
+          rid: 1945543066696024072
+    - rid: 1945543066696024070
+      type: {class: Not, ns: DShotgun, asm: DShotgun}
+      data:
+        _a:
+          rid: 1945543066696024071
+    - rid: 1945543066696024071
+      type: {class: FlagCondition, ns: DShotgun, asm: DShotgun}
+      data:
+        _flag:
+          _flagName: RecruitChoking
+    - rid: 1945543066696024072
+      type: {class: FlagCondition, ns: DShotgun, asm: DShotgun}
+      data:
+        _flag:
+          _flagName: CupGiven
 --- !u!1 &1155793251588120844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1106,6 +1133,65 @@ MonoBehaviour:
     _styles: []
   _name: Detective
   _moveNextAutomatically: 0
+--- !u!1 &1294833442658779328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7088772908250730084}
+  - component: {fileID: 2448583125008967326}
+  m_Layer: 0
+  m_Name: Invoke Event with 1 binds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7088772908250730084
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294833442658779328}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1093837072583766505}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2448583125008967326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294833442658779328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69bcb5ae2dda1d84585899ae21a338d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.UnityEventSequence
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DShotgun.PlayerInventory, DShotgun
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 454895221df405e8088dc7b4bb1b2bee, type: 2}
+          m_ObjectArgumentAssemblyTypeName: DShotgun.ItemData, DShotgun
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1796174039558725165
 GameObject:
   m_ObjectHideFlags: 0
@@ -1357,6 +1443,65 @@ MonoBehaviour:
     _text: "J\u2019en ai la larme au canon."
     _styles: []
   _dialogProfile: {fileID: 0}
+--- !u!1 &2141800211341200615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7836825627746388335}
+  - component: {fileID: 5220472093867377704}
+  m_Layer: 0
+  m_Name: Invoke Event with 1 binds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7836825627746388335
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141800211341200615}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1093837072583766505}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5220472093867377704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141800211341200615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69bcb5ae2dda1d84585899ae21a338d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.UnityEventSequence
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DShotgun.PlayerInventory, DShotgun
+        m_MethodName: ConsumeItemLoaded
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2322702092299535709
 GameObject:
   m_ObjectHideFlags: 0
@@ -1433,7 +1578,7 @@ Transform:
   m_GameObject: {fileID: 2356130629767474258}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.03441876, w: 0.99940753}
-  m_LocalPosition: {x: -11.668, y: 2.059, z: 0}
+  m_LocalPosition: {x: -5.5780005, y: -2.341, z: 0}
   m_LocalScale: {x: 5.553549, y: 4.05875, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1570,7 +1715,7 @@ Transform:
   m_GameObject: {fileID: 2409001096991520371}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.351, y: 4.39, z: 0}
+  m_LocalPosition: {x: -4.261, y: -0.010000229, z: 0}
   m_LocalScale: {x: 0.59, y: 0.59, z: 0.59}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -1723,7 +1868,7 @@ Transform:
   m_GameObject: {fileID: 2625989689757617274}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.021893328, w: 0.9997603}
-  m_LocalPosition: {x: -1.64, y: 7.22, z: 0}
+  m_LocalPosition: {x: 4.45, y: 2.8199997, z: 0}
   m_LocalScale: {x: 0.3268735, y: 0.42631036, z: 0.322838}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2130,6 +2275,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a4099385ff88d93a50a4d1d04fc9ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.EndOfDialogSequence
+--- !u!1 &2961047439454388105
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7589561236841705469}
+  - component: {fileID: 4936311330624310382}
+  m_Layer: 0
+  m_Name: Invoke Event with 1 binds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7589561236841705469
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2961047439454388105}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.3157896, y: 1.3157896, z: 1.3157896}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4180724877436715015}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4936311330624310382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2961047439454388105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69bcb5ae2dda1d84585899ae21a338d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.UnityEventSequence
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DShotgun.PlayerInventory, DShotgun
+        m_MethodName: ConsumeItemLoaded
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3148601187311557748
 GameObject:
   m_ObjectHideFlags: 0
@@ -2343,7 +2547,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1914609989821618213}
-  - {fileID: 247416193011304370}
   - {fileID: 6163920214082302888}
   m_Father: {fileID: 2191663399926686786}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2687,7 +2890,7 @@ Transform:
   m_GameObject: {fileID: 3709327758353802084}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.16, y: 2.23, z: 0}
+  m_LocalPosition: {x: 5.93, y: -2.17, z: 0}
   m_LocalScale: {x: 0.5880601, y: 0.5880601, z: 0.5880601}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2765,7 +2968,7 @@ MonoBehaviour:
   _priority: 0
   _interactionCases:
   - _condition:
-      rid: 2429804230472106080
+      rid: 1945543066696024073
     _action:
       m_PersistentCalls:
         m_Calls:
@@ -2815,28 +3018,10 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 2429804230472106080
-      type: {class: And, ns: DShotgun, asm: DShotgun}
+    - rid: 1945543066696024073
+      type: {class: ItemCondition, ns: DShotgun, asm: DShotgun}
       data:
-        _a:
-          rid: 2429804230472106081
-        _b:
-          rid: 2429804230472106083
-    - rid: 2429804230472106081
-      type: {class: Not, ns: DShotgun, asm: DShotgun}
-      data:
-        _a:
-          rid: 2429804230472106082
-    - rid: 2429804230472106082
-      type: {class: FlagCondition, ns: DShotgun, asm: DShotgun}
-      data:
-        _flag:
-          _flagName: CupGiven
-    - rid: 2429804230472106083
-      type: {class: FlagCondition, ns: DShotgun, asm: DShotgun}
-      data:
-        _flag:
-          _flagName: CupWithWater
+        _item: {fileID: 11400000, guid: 454895221df405e8088dc7b4bb1b2bee, type: 2}
 --- !u!1 &3770234914078861306
 GameObject:
   m_ObjectHideFlags: 0
@@ -3367,51 +3552,6 @@ MonoBehaviour:
     _styles: []
   _name: Recrue
   _moveNextAutomatically: 0
---- !u!1 &4540946222497005722
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9192556035562692051}
-  - component: {fileID: 1115953108180429525}
-  m_Layer: 0
-  m_Name: Wait for 5 sec
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &9192556035562692051
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4540946222497005722}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.1728387, y: 0.1700505, z: 0}
-  m_LocalScale: {x: 1.7005066, y: 1.7005066, z: 1.7005066}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3812602054307367511}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1115953108180429525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4540946222497005722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1129c48e53f61f24889a822b21214186, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.WaitForDuration
-  _duration: 5
 --- !u!1 &4679500062652304250
 GameObject:
   m_ObjectHideFlags: 0
@@ -3509,7 +3649,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4809866964866749473}
-  - {fileID: 9192556035562692051}
   - {fileID: 5856346392754222139}
   m_Father: {fileID: 5110582819394345356}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3987,7 +4126,7 @@ Transform:
   m_GameObject: {fileID: 5383798630552480316}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.79, y: 2.33, z: 0}
+  m_LocalPosition: {x: 2.2999997, y: -2.0700002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4064,7 +4203,7 @@ MonoBehaviour:
   _priority: 0
   _interactionCases:
   - _condition:
-      rid: 2429804230472106079
+      rid: 1945543066696024064
     _action:
       m_PersistentCalls:
         m_Calls:
@@ -4114,11 +4253,10 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 2429804230472106079
-      type: {class: FlagCondition, ns: DShotgun, asm: DShotgun}
+    - rid: 1945543066696024064
+      type: {class: ItemCondition, ns: DShotgun, asm: DShotgun}
       data:
-        _flag:
-          _flagName: CupTaken
+        _item: {fileID: 11400000, guid: b8a679bf7ec54f3e69b2de55ab3c7819, type: 2}
 --- !u!1 &5422650175969190318
 GameObject:
   m_ObjectHideFlags: 0
@@ -4390,6 +4528,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 7589561236841705469}
   - {fileID: 8427808003072295192}
   - {fileID: 639790932687132987}
   - {fileID: 4550402707744457690}
@@ -4936,51 +5075,6 @@ MonoBehaviour:
     _styles: []
   _name: Cadavre
   _moveNextAutomatically: 0
---- !u!1 &6534918060599844953
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 247416193011304370}
-  - component: {fileID: 2844889076612213588}
-  m_Layer: 0
-  m_Name: Wait for 5 sec
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &247416193011304370
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6534918060599844953}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 476227045510039102}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2844889076612213588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6534918060599844953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1129c48e53f61f24889a822b21214186, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.WaitForDuration
-  _duration: 5
 --- !u!1 &6726980586865773947
 GameObject:
   m_ObjectHideFlags: 0
@@ -5602,12 +5696,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -3144347633208981357, guid: 74f3191f12ff8bf468b70071abe186a9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 74f3191f12ff8bf468b70071abe186a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.11, y: 3.55}
+  m_Size: {x: 7.71, y: 10}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -5678,6 +5772,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a8a3882457b01e438e4a1d24cc811e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: HierarchySequences::HierarchySequences.Sequence
+--- !u!1 &7540958221809397586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8425033712573201299}
+  - component: {fileID: 4902537567433986077}
+  m_Layer: 0
+  m_Name: Invoke Event with 1 binds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8425033712573201299
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7540958221809397586}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.6949153, y: 1.6949153, z: 1.6949153}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2460829463555776328}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4902537567433986077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7540958221809397586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69bcb5ae2dda1d84585899ae21a338d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.UnityEventSequence
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DShotgun.PlayerInventory, DShotgun
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: b8a679bf7ec54f3e69b2de55ab3c7819, type: 2}
+          m_ObjectArgumentAssemblyTypeName: DShotgun.ItemData, DShotgun
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7561832882693087502
 GameObject:
   m_ObjectHideFlags: 0
@@ -5816,7 +5969,7 @@ Transform:
   m_GameObject: {fileID: 7696480899347173395}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.9, y: 3.36, z: 0}
+  m_LocalPosition: {x: -5.81, y: -1.0400002, z: 0}
   m_LocalScale: {x: 0.76, y: 0.76, z: 0.76}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -5916,7 +6069,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - _condition:
-      rid: 2429804230472106075
+      rid: 1945543066696024065
     _action:
       m_PersistentCalls:
         m_Calls:
@@ -5971,6 +6124,10 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 1945543066696024065
+      type: {class: ItemCondition, ns: DShotgun, asm: DShotgun}
+      data:
+        _item: {fileID: 11400000, guid: 454895221df405e8088dc7b4bb1b2bee, type: 2}
     - rid: 2429804230472106071
       type: {class: ConditionOnce, ns: DShotgun, asm: DShotgun}
       data: 
@@ -5979,11 +6136,6 @@ MonoBehaviour:
       data:
         _flag:
           _flagName: CupGiven
-    - rid: 2429804230472106075
-      type: {class: FlagCondition, ns: DShotgun, asm: DShotgun}
-      data:
-        _flag:
-          _flagName: CupWithWater
     - rid: 2429804230472106089
       type: {class: FlagCondition, ns: DShotgun, asm: DShotgun}
       data:
@@ -6082,7 +6234,7 @@ Transform:
   m_GameObject: {fileID: 7814152423455587581}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.64, z: 0}
+  m_LocalPosition: {x: 6.0899997, y: -3.7600002, z: 0}
   m_LocalScale: {x: 1.1357998, y: 1.1357998, z: 1.1357998}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6104,23 +6256,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.InteractableManager
   _priority: 0
-  _interactionCases: []
+  _interactionCases:
+  - _condition:
+      rid: 1945543066696024079
+    _action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1191370904761859730}
+          m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
+          m_MethodName: Execute
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   _aimCases: []
   _onInteracted:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1191370904761859730}
-        m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
-        m_MethodName: Execute
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _onAimed:
     m_PersistentCalls:
       m_Calls:
@@ -6138,7 +6295,29 @@ MonoBehaviour:
         m_CallState: 2
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 1945543066696024079
+      type: {class: Or, ns: DShotgun, asm: DShotgun}
+      data:
+        _a:
+          rid: 1945543066696024081
+        _b:
+          rid: 1945543066696024083
+    - rid: 1945543066696024081
+      type: {class: Not, ns: DShotgun, asm: DShotgun}
+      data:
+        _a:
+          rid: 1945543066696024082
+    - rid: 1945543066696024082
+      type: {class: FlagCondition, ns: DShotgun, asm: DShotgun}
+      data:
+        _flag:
+          _flagName: RecruitChoking
+    - rid: 1945543066696024083
+      type: {class: FlagCondition, ns: DShotgun, asm: DShotgun}
+      data:
+        _flag:
+          _flagName: CupGiven
 --- !u!60 &2501214654024971760
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6709,6 +6888,7 @@ Transform:
   - {fileID: 3496830452411339054}
   - {fileID: 2326040827632768643}
   - {fileID: 1603456237098406543}
+  - {fileID: 8425033712573201299}
   - {fileID: 3469866342008298969}
   - {fileID: 1482366570297047295}
   m_Father: {fileID: 4192085681338930405}
@@ -7135,7 +7315,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 7836825627746388335}
   - {fileID: 6138714440872392352}
+  - {fileID: 7088772908250730084}
   - {fileID: 6294157795125224440}
   m_Father: {fileID: 2191663399926686786}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

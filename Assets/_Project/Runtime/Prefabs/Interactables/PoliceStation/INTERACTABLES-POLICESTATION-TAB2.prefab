@@ -32,6 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1512581849367764214}
+  - {fileID: 5227762998543785179}
   - {fileID: 3205748004582177532}
   - {fileID: 556876395341035838}
   m_Father: {fileID: 797525691951851208}
@@ -49,23 +50,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.InteractableManager
   _priority: 0
-  _interactionCases: []
+  _interactionCases:
+  - _condition:
+      rid: 1945543066696024084
+    _action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4544874662382995099}
+          m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
+          m_MethodName: Execute
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - _condition:
+      rid: 1945543066696024087
+    _action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3983658454549982828}
+          m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
+          m_MethodName: Execute
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   _aimCases: []
   _onInteracted:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3983658454549982828}
-        m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
-        m_MethodName: Execute
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _onAimed:
     m_PersistentCalls:
       m_Calls:
@@ -83,7 +106,21 @@ MonoBehaviour:
         m_CallState: 2
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 1945543066696024084
+      type: {class: ItemCondition, ns: DShotgun, asm: DShotgun}
+      data:
+        _item: {fileID: 11400000, guid: 5ae1ea7747bb7ae33a6766d586633fe8, type: 2}
+    - rid: 1945543066696024087
+      type: {class: Not, ns: DShotgun, asm: DShotgun}
+      data:
+        _a:
+          rid: 1945543066696024088
+    - rid: 1945543066696024088
+      type: {class: FlagCondition, ns: DShotgun, asm: DShotgun}
+      data:
+        _flag:
+          _flagName: BillsSigned
 --- !u!60 &5993033115571273571
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -590,6 +627,73 @@ MonoBehaviour:
     _styles: []
   _name: Detective
   _moveNextAutomatically: 1
+--- !u!1 &394277626006173037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3428736783136746995}
+  - component: {fileID: 6926135415378661893}
+  m_Layer: 0
+  m_Name: Detective Speaking
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3428736783136746995
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394277626006173037}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5227762998543785179}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6926135415378661893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394277626006173037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  <LeftRef>k__BackingField:
+    _characterName: Detective
+    _spriteName: Idle
+  <MiddleRef>k__BackingField:
+    _characterName: None
+    _spriteName: None
+  <RightRef>k__BackingField:
+    _characterName: Commissaire
+    _spriteName: Idle
+  <UseCustomName>k__BackingField: 0
+  <UseCustomDialogProfile>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 0
+  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _middle: {fileID: 0}
+  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _text:
+    _text: 'Il va vraiment me rester trois francs six sous pour finir le mois...
+
+'
+    _styles: []
+  _name: Detective
+  _moveNextAutomatically: 0
 --- !u!1 &453481624543429453
 GameObject:
   m_ObjectHideFlags: 0
@@ -1614,6 +1718,52 @@ PolygonCollider2D:
       - {x: 1.8100586, y: -0.9333693}
       - {x: 1.2298651, y: 1.5422077}
   m_UseDelaunayMesh: 1
+--- !u!1 &2074033954128408414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8884646335313830257}
+  - component: {fileID: 4385222546787876534}
+  m_Layer: 0
+  m_Name: RaiseFlagSequence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8884646335313830257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074033954128408414}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5227762998543785179}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4385222546787876534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074033954128408414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b896da633a456f64fb9d8b0e0f07ab8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.RaiseFlagSequence
+  _flag:
+    _flagName: BillsSigned
 --- !u!1 &2196168446615356540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1770,7 +1920,7 @@ MonoBehaviour:
     _text: MA FIERTEEE SHOTGUN, MA FIERTEEEE !
     _styles: []
   _name: Commissaire
-  _moveNextAutomatically: 1
+  _moveNextAutomatically: 0
 --- !u!1 &2501342364868514921
 GameObject:
   m_ObjectHideFlags: 0
@@ -1940,6 +2090,56 @@ MonoBehaviour:
     _styles: []
   _name: Commissaire
   _moveNextAutomatically: 0
+--- !u!1 &2655189238499605601
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5227762998543785179}
+  - component: {fileID: 4544874662382995099}
+  m_Layer: 0
+  m_Name: OnStylo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5227762998543785179
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2655189238499605601}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4427870295279606393}
+  - {fileID: 3428736783136746995}
+  - {fileID: 754942316349392569}
+  - {fileID: 4886041510061726122}
+  - {fileID: 8884646335313830257}
+  - {fileID: 7099901361383984835}
+  m_Father: {fileID: 5843109054209913338}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4544874662382995099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2655189238499605601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8a3882457b01e438e4a1d24cc811e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.Sequence
 --- !u!1 &2988361927143072601
 GameObject:
   m_ObjectHideFlags: 0
@@ -2632,6 +2832,7 @@ Transform:
   m_Children:
   - {fileID: 5858993633855004630}
   - {fileID: 3792282191902502212}
+  - {fileID: 2791331669653623949}
   - {fileID: 7954210184283006958}
   m_Father: {fileID: 1692888808645011105}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2713,6 +2914,50 @@ MonoBehaviour:
     _styles: []
   _name: Detective
   _moveNextAutomatically: 0
+--- !u!1 &4419749232194270384
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7099901361383984835}
+  - component: {fileID: 6058851646442498174}
+  m_Layer: 0
+  m_Name: EndOfDialogSequence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7099901361383984835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4419749232194270384}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5227762998543785179}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6058851646442498174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4419749232194270384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24a4099385ff88d93a50a4d1d04fc9ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.EndOfDialogSequence
 --- !u!1 &4626397012238454439
 GameObject:
   m_ObjectHideFlags: 0
@@ -2882,7 +3127,7 @@ MonoBehaviour:
       moins autant qu\u2019\xE0 mes enfants !"
     _styles: []
   _name: Commissaire
-  _moveNextAutomatically: 1
+  _moveNextAutomatically: 0
 --- !u!1 &4765775819076536700
 GameObject:
   m_ObjectHideFlags: 0
@@ -3250,6 +3495,89 @@ MonoBehaviour:
     _styles: []
   _name: Detective
   _moveNextAutomatically: 1
+--- !u!1 &4934848107807068795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2791331669653623949}
+  - component: {fileID: 7496666585634955130}
+  m_Layer: 0
+  m_Name: Invoke Event with 3 binds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2791331669653623949
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4934848107807068795}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6440822239461057599}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7496666585634955130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4934848107807068795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69bcb5ae2dda1d84585899ae21a338d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.UnityEventSequence
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DShotgun.PlayerInventory, DShotgun
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 5ae1ea7747bb7ae33a6766d586633fe8, type: 2}
+          m_ObjectArgumentAssemblyTypeName: DShotgun.ItemData, DShotgun
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5088697378305230682}
+        m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1300751531370856046}
+        m_TargetAssemblyTypeName: UnityEngine.PolygonCollider2D, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4985474551463811201
 GameObject:
   m_ObjectHideFlags: 0
@@ -3474,6 +3802,72 @@ MonoBehaviour:
     _styles: []
   _name: Detective
   _moveNextAutomatically: 0
+--- !u!1 &5654832660584578449
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 754942316349392569}
+  - component: {fileID: 8145942848991698777}
+  m_Layer: 0
+  m_Name: Commissaire Speaking
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &754942316349392569
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5654832660584578449}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5227762998543785179}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8145942848991698777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5654832660584578449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  <LeftRef>k__BackingField:
+    _characterName: Detective
+    _spriteName: Idle
+  <MiddleRef>k__BackingField:
+    _characterName: None
+    _spriteName: None
+  <RightRef>k__BackingField:
+    _characterName: Commissaire
+    _spriteName: Idle
+  <UseCustomName>k__BackingField: 0
+  <UseCustomDialogProfile>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 2
+  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _middle: {fileID: 0}
+  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _text:
+    _text: "Shotgun vous savez bien que j\u2019approuve vos m\xE9thodes car elles
+      portent leur fruits mais quelqu\u2019un doit bien payer."
+    _styles: []
+  _name: Commissaire
+  _moveNextAutomatically: 0
 --- !u!1 &5705446983237917864
 GameObject:
   m_ObjectHideFlags: 0
@@ -3511,6 +3905,65 @@ Transform:
   - {fileID: 5653399427520003715}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6185454818112384199
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4427870295279606393}
+  - component: {fileID: 3579749933701691007}
+  m_Layer: 0
+  m_Name: Invoke Event with 1 binds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4427870295279606393
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6185454818112384199}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5227762998543785179}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3579749933701691007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6185454818112384199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69bcb5ae2dda1d84585899ae21a338d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.UnityEventSequence
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DShotgun.PlayerInventory, DShotgun
+        m_MethodName: ConsumeItemLoaded
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6225018535149334997
 GameObject:
   m_ObjectHideFlags: 0
@@ -4119,6 +4572,71 @@ MonoBehaviour:
     _styles: []
   _name: Commissaire
   _moveNextAutomatically: 0
+--- !u!1 &7505358016469594027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4886041510061726122}
+  - component: {fileID: 2203200273023128375}
+  m_Layer: 0
+  m_Name: Detective Speaking
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4886041510061726122
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7505358016469594027}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5227762998543785179}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2203200273023128375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7505358016469594027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  <LeftRef>k__BackingField:
+    _characterName: Detective
+    _spriteName: Idle
+  <MiddleRef>k__BackingField:
+    _characterName: None
+    _spriteName: None
+  <RightRef>k__BackingField:
+    _characterName: Commissaire
+    _spriteName: Idle
+  <UseCustomName>k__BackingField: 0
+  <UseCustomDialogProfile>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 0
+  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _middle: {fileID: 0}
+  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _text:
+    _text: "C\u2019est pas \xE0 \xE7a que sert l\u2019argent du contribuable ?"
+    _styles: []
+  _name: Detective
+  _moveNextAutomatically: 0
 --- !u!1 &7593229012617864975
 GameObject:
   m_ObjectHideFlags: 0
@@ -4130,7 +4648,7 @@ GameObject:
   - component: {fileID: 3198363713672003732}
   - component: {fileID: 8820949708022702107}
   m_Layer: 0
-  m_Name: Commissaire Speaking
+  m_Name: Detective Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4174,7 +4692,7 @@ MonoBehaviour:
     _spriteName: Idle
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
+  <SpeakingCharacterID>k__BackingField: 0
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
   _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
@@ -4183,7 +4701,7 @@ MonoBehaviour:
     _text: "Je ne fais que regarder...<wait=0,5> Vous savez moi et la technologie
       \xE7a fait quinze."
     _styles: []
-  _name: Commissaire
+  _name: Detective
   _moveNextAutomatically: 0
 --- !u!1 &7764370484024854323
 GameObject:
