@@ -58,7 +58,7 @@ public class InputReader : MonoBehaviour
 
     private void OnLeftClickPerformed(InputAction.CallbackContext obj)
     {
-        if(GameManager.CurrentState != GameState.Playing) return;
+        if(GameManager.CurrentState != GameState.Playing && GameManager.CurrentState != GameState.MiniGame) return;
         OnLeftClickPressed?.Invoke();
     }
 
