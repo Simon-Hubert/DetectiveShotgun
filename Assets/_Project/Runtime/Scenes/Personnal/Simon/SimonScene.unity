@@ -361,9 +361,67 @@ MonoBehaviour:
   m_EditorClassIdentifier: DShotgun::DShotgun.ChangeSceneSequence
   _tableau: 1
   _state: 2
+--- !u!1 &1964055683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1964055685}
+  - component: {fileID: 1964055684}
+  m_Layer: 0
+  m_Name: HotKeyTableau
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1964055684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964055683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd4bfb2f84a56547bb229fa429e5dfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.TableauHotkeys
+  _tableaux:
+  - Lieu: House
+    State: 1
+  - Lieu: Parking
+    State: 1
+  - Lieu: Damas
+    State: 1
+  - Lieu: PoliceStation
+    State: 1
+  - Lieu: House
+    State: 2
+  - Lieu: House
+    State: 3
+--- !u!4 &1964055685
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964055683}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.37137, y: 2.74553, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 1127779104}
+  - {fileID: 1964055685}

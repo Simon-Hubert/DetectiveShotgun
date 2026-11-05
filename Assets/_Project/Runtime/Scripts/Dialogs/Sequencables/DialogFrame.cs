@@ -131,6 +131,8 @@ namespace DShotgun.Dialogs
             return _name + " Speaking";
         }
 
+#if UNITY_EDITOR
         protected override float Hue => Animator.StringToHash(_name);
+#endif
     }
 }
