@@ -1725,6 +1725,17 @@ MonoBehaviour:
     _styles: []
   _name: Detective
   _moveNextAutomatically: 0
+--- !u!114 &1421282487 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4122557574379735557, guid: f66e56db04f3d83be9e1c5a1d4eda56f, type: 3}
+  m_PrefabInstance: {fileID: 366510734133969045}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8a3882457b01e438e4a1d24cc811e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.Sequence
 --- !u!1 &1443614064
 GameObject:
   m_ObjectHideFlags: 0
@@ -2298,7 +2309,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4651685725852837230, guid: f66e56db04f3d83be9e1c5a1d4eda56f, type: 3}
       propertyPath: _interactionCases.Array.size
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651685725852837230, guid: f66e56db04f3d83be9e1c5a1d4eda56f, type: 3}
+      propertyPath: 'managedReferences[2493796951750606933]'
+      value: DShotgun DShotgun.Always
       objectReference: {fileID: 0}
     - target: {fileID: 4651685725852837230, guid: f66e56db04f3d83be9e1c5a1d4eda56f, type: 3}
       propertyPath: 'managedReferences[3407072178556633091]'
@@ -2309,11 +2324,23 @@ PrefabInstance:
       value: 3407072178556633091
       objectReference: {fileID: 0}
     - target: {fileID: 4651685725852837230, guid: f66e56db04f3d83be9e1c5a1d4eda56f, type: 3}
+      propertyPath: _interactionCases.Array.data[1]._condition
+      value: 2493796951750606933
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651685725852837230, guid: f66e56db04f3d83be9e1c5a1d4eda56f, type: 3}
       propertyPath: managedReferences[3407072178556633091]._item
       value: 
       objectReference: {fileID: 11400000, guid: 05727213ee50da5f09ba41903003817d, type: 2}
     - target: {fileID: 4651685725852837230, guid: f66e56db04f3d83be9e1c5a1d4eda56f, type: 3}
+      propertyPath: _onInteracted.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651685725852837230, guid: f66e56db04f3d83be9e1c5a1d4eda56f, type: 3}
       propertyPath: _interactionCases.Array.data[0]._action.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651685725852837230, guid: f66e56db04f3d83be9e1c5a1d4eda56f, type: 3}
+      propertyPath: _interactionCases.Array.data[1]._action.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4651685725852837230, guid: f66e56db04f3d83be9e1c5a1d4eda56f, type: 3}
@@ -2321,11 +2348,23 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4651685725852837230, guid: f66e56db04f3d83be9e1c5a1d4eda56f, type: 3}
+      propertyPath: _interactionCases.Array.data[1]._action.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651685725852837230, guid: f66e56db04f3d83be9e1c5a1d4eda56f, type: 3}
       propertyPath: _interactionCases.Array.data[0]._action.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 366510734133969050}
     - target: {fileID: 4651685725852837230, guid: f66e56db04f3d83be9e1c5a1d4eda56f, type: 3}
+      propertyPath: _interactionCases.Array.data[1]._action.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1421282487}
+    - target: {fileID: 4651685725852837230, guid: f66e56db04f3d83be9e1c5a1d4eda56f, type: 3}
       propertyPath: _interactionCases.Array.data[0]._action.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651685725852837230, guid: f66e56db04f3d83be9e1c5a1d4eda56f, type: 3}
+      propertyPath: _interactionCases.Array.data[1]._action.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4651685725852837230, guid: f66e56db04f3d83be9e1c5a1d4eda56f, type: 3}
@@ -2333,11 +2372,23 @@ PrefabInstance:
       value: Execute
       objectReference: {fileID: 0}
     - target: {fileID: 4651685725852837230, guid: f66e56db04f3d83be9e1c5a1d4eda56f, type: 3}
+      propertyPath: _interactionCases.Array.data[1]._action.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Execute
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651685725852837230, guid: f66e56db04f3d83be9e1c5a1d4eda56f, type: 3}
       propertyPath: _interactionCases.Array.data[0]._action.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: HierarchySequences.Sequence, HierarchySequences
       objectReference: {fileID: 0}
     - target: {fileID: 4651685725852837230, guid: f66e56db04f3d83be9e1c5a1d4eda56f, type: 3}
+      propertyPath: _interactionCases.Array.data[1]._action.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: HierarchySequences.Sequence, HierarchySequences
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651685725852837230, guid: f66e56db04f3d83be9e1c5a1d4eda56f, type: 3}
       propertyPath: _interactionCases.Array.data[0]._action.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651685725852837230, guid: f66e56db04f3d83be9e1c5a1d4eda56f, type: 3}
+      propertyPath: _interactionCases.Array.data[1]._action.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6416910145146839896, guid: f66e56db04f3d83be9e1c5a1d4eda56f, type: 3}

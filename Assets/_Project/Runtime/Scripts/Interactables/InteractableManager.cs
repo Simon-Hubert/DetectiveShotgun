@@ -28,20 +28,23 @@ namespace DShotgun
         /// Traite une interaction du joueur avec cet objet.
         /// Parcourt les cas dans l'ordre de la liste (l'ordre fait la priorité) et s'arrête au premier
         /// dont la condition est vraie sur le <see cref="Blackboard"/> : les cas suivants ne sont pas évalués.
-        /// Si aucun cas n'est validé, joue l'événement par défaut <c>_onInteracted</c> ; si un cas est validé, lui seul est joué.
         /// </summary>
         /// <returns>true si un cas a été validé, false si aucun ne l'est.</returns>
         virtual public bool Interact()
         {
             if (!_canBeShot) return false;
-
-            foreach (InteractionCase interactionCase in _interactionCases)
+            try
             {
-                if (interactionCase.Evaluate(Blackboard.Instance)) return true;
+                foreach (InteractionCase interactionCase in _interactionCases)
+                {
+                    if (interactionCase.Evaluate(Blackboard.Instance)) return true;
+                }
+                return false;
             }
-
-            _onInteracted?.Invoke();
-            return false;
+            finally
+            {
+                _onInteracted?.Invoke();
+            }
         }
 
         /// <summary>

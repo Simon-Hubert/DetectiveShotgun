@@ -22,16 +22,6 @@ namespace DShotgun
             ShotgunManager.OnShotgunUnloaded += UnloadItem;
         }
 
-        private void OnDisable()
-        {
-            for (int i = 0; i < _inventorySlots.Length; i++)
-            {
-                if (_inventorySlots[i] != null) _inventorySlots[i].OnDropInShotgun -= LoadItem;
-            }
-            if (_playerInventory != null) _playerInventory.OnSlotChanged -= UpdateSlot;
-            ShotgunManager.OnShotgunUnloaded -= UnloadItem;
-        }
-
         private void LoadItem(int id)
         {
             ShotgunManager.LoadItem(_playerInventory.Inventory[id]);
