@@ -34,7 +34,6 @@ namespace DShotgun.Dialogs
             }
             
             instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         private void Start() {
             ShowDialogUI(false);
