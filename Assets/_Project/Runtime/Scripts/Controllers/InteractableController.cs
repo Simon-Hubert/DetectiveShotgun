@@ -134,7 +134,7 @@ namespace DShotgun
 
         private InteractableManager[] GetInteractableUnderPointer()
         {
-            Vector2 worldPoint = _camera.ScreenToWorldPoint(_inputs.PointerPosition);
+            Vector2 worldPoint = _camera.ScreenToWorldPoint(InputReader.PointerPosition);
             return Physics2D.OverlapPointAll(worldPoint)
                 .Select(hit => hit.GetComponent<InteractableManager>())
                 .Where(interactable => interactable != null)
@@ -149,7 +149,7 @@ namespace DShotgun
 
         private Vector2 GetCursorOffset()
         {
-            Vector2 viewport = _camera.ScreenToViewportPoint(_inputs.PointerPosition);
+            Vector2 viewport = _camera.ScreenToViewportPoint(InputReader.PointerPosition);
             Vector2 centered = new Vector2(Mathf.Clamp(viewport.x * 2f - 1f, -1f, 1f), Mathf.Clamp(viewport.y * 2f - 1f, -1f, 1f));
             return Vector2.Scale(centered, _aimMaxOffset);
         }
