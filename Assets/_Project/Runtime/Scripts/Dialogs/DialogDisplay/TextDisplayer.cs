@@ -4,6 +4,7 @@ using TMPro;
 using System;
 using System.Threading;
 using NaughtyAttributes;
+using UnityEngine.Serialization;
 
 namespace DShotgun.Dialogs
 {
@@ -12,13 +13,13 @@ namespace DShotgun.Dialogs
     /// </summary>
     public abstract class ATextDisplayer : MonoBehaviour
     {
-        [SerializeField] protected Canvas _canvas;
+        [SerializeField] protected GameObject _displayParent;
         public virtual bool ShowCanvas
         {
-            get => _canvas.enabled;
+            get => _displayParent.activeSelf;
             set {
-                _canvas.enabled = value;
                 _displayState = value ? TextDisplayState.Idle : TextDisplayState.Closed;
+                _displayParent.SetActive(value);
             }
         }
         /// <summary>
