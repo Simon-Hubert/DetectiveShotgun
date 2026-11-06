@@ -12,14 +12,20 @@ namespace DShotgun
         private void Awake()
         {
             gameObject.SetActive(false);
-            Blackboard.OnFlagRaised += Check;
+            Condition.Subscribe(_condition, Check);
+        }
+
+        private void OnDestroy()
+        {
+            Condition.Unsubscribe(_condition, Check);
         }
 
         void Check()
         {
-            if (_condition.Evaluate(Blackboard.Instance))
+            if (Condition.Evaluate(_condition, Blackboard.Instance))
             {
                 gameObject.SetActive(true);
+                Condition.Unsubscribe(_condition, Check);
             }
         }
     }

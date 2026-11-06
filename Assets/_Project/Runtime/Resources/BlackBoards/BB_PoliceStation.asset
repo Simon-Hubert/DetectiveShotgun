@@ -13,13 +13,11 @@ MonoBehaviour:
   m_Name: BB_PoliceStation
   m_EditorClassIdentifier: DShotgun::DShotgun.BlackboardData
   _flags:
-  - _name: CupTaken
-    _initializedValue: 0
-  - _name: CupWithWater
-    _initializedValue: 0
   - _name: CupGiven
     _initializedValue: 0
   - _name: TVDestroyed
     _initializedValue: 0
   - _name: RecruitChoking
+    _initializedValue: 0
+  - _name: BillsSigned
     _initializedValue: 0

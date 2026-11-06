@@ -11,7 +11,8 @@ namespace DShotgun
         Playing,
         Paused,
         Dialogue,
-        Title
+        Title,
+        MiniGame
     }
     
     /// <summary>
@@ -21,6 +22,14 @@ namespace DShotgun
     {
         private static GameState _currentState = GameState.Title;
         private static GameState _previousState;
+
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)] //trickshot réalisé par des professionnels (à ne pas reproduire)
+        private static void ResetStatics()
+        {
+            _currentState = GameState.Title;
+            _previousState = GameState.Title;
+            OnStateChange = null;
+        }
         
         /// <summary>
         /// Indique l'état courant du jeu, peut etre changer via l'appelle de la fonction <see cref="SwitchState"/> 
@@ -69,6 +78,9 @@ namespace DShotgun
                 case GameState.Title:
                     
                     break;
+                case GameState.MiniGame:
+                    
+                    break;
                 default:
                     Debug.LogWarning($"Unhandled game state: {nextState}");
                     break;
@@ -89,6 +101,9 @@ namespace DShotgun
                     
                     break;
                 case GameState.Title:
+                    
+                    break;
+                case GameState.MiniGame:
                     
                     break;
                 default:
