@@ -130,11 +130,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d2895122bcfbdf6aa81ac559e2c0e2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.SpriteSwitcher
---- !u!1 &94606107 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4188269116662787392, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
-  m_PrefabInstance: {fileID: 6797390045275155990}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &101988260
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,7 +849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06887433ba2fc1247a29057828736437, type: 3}
   m_Name: 
   m_EditorClassIdentifier: HierarchySequences::HierarchySequences.ActivateObject
-  _object: {fileID: 94606107}
+  _object: {fileID: 0}
   _active: 1
 --- !u!1 &578086837
 GameObject:
@@ -3327,6 +3322,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 5382973514388866313, guid: ab778f9076274a1f3b6108be248a96a8, type: 3}
+      propertyPath: _text._text
+      value: "Mais aucun pilier n\u2019est porteur ici ?"
+      objectReference: {fileID: 0}
     - target: {fileID: 5386802225851168435, guid: ab778f9076274a1f3b6108be248a96a8, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -3402,6 +3401,10 @@ PrefabInstance:
     - target: {fileID: 8296397564513015297, guid: ab778f9076274a1f3b6108be248a96a8, type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311204347147888059, guid: ab778f9076274a1f3b6108be248a96a8, type: 3}
+      propertyPath: _text._text
+      value: "Ah ouais ouais, c\u2019est pas porteur du tout."
       objectReference: {fileID: 0}
     - target: {fileID: 8384091030426164406, guid: ab778f9076274a1f3b6108be248a96a8, type: 3}
       propertyPath: m_LocalPosition.x
