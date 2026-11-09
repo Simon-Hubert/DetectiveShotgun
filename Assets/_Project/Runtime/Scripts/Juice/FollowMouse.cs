@@ -1,6 +1,7 @@
 using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class FollowMouse : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class FollowMouse : MonoBehaviour
     
     [Space(7)]
     [SerializeField, ReadOnly] private Sprite[] _spriteList;
-    [SerializeField] private SpriteRenderer _spriteRenderer;
+    [SerializeField] private Image _spriteRenderer;
     
     [Space(10)]
     [SerializeField, Min(1)] private int _widthThreshold = 11;
