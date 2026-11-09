@@ -9,6 +9,8 @@ namespace DShotgun
         
         protected abstract Awaitable DoTransitionAsync(Camera cam, AView to);
 
+        
+
         public async Awaitable TransitionAsync(Camera cam, AView to, OnEndCallback onEndCallback = null) {
             try
             {
@@ -19,6 +21,7 @@ namespace DShotgun
             {
                 throw e;
             }
+            
         }
 
         public void Transition(Camera cam, AView to, OnEndCallback onEndCallback = null) {
