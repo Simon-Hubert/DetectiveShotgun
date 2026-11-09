@@ -1,9 +1,9 @@
+#define PHONE_STOP
+
 using System;
 using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.PlayerLoop;
-using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 namespace DShotgun
@@ -27,6 +27,11 @@ namespace DShotgun
 
         [SerializeField] private UnityEvent _onFirstClicked;
         [SerializeField] private UnityEvent _onRestart;
+
+#if PHONE_STOP
+        private bool _wasOverDialogFrame = false;
+        private const float _dialogFrameTop = 513;
+#endif
         
 
         private void Start()
@@ -39,6 +44,15 @@ namespace DShotgun
             if(transform.position.x < 0) _ = ReStartAsync();
             if(transform.position.x > 1920) _ = ReStartAsync();
             if(transform.position.y < 0) _ = ReStartAsync();
+
+#if PHONE_STOP
+            if (!_stopped) {
+                if (!_wasOverDialogFrame && transform.position.y > _dialogFrameTop) _wasOverDialogFrame = true;
+                if (_wasOverDialogFrame) {
+                    if (transform.position.y < _dialogFrameTop && _speed.y < 0) return;
+                }
+            }
+#endif
             
             if (!_simulated) return;
             _accel = Vector2.down * (9.81f * _gravityScale);
