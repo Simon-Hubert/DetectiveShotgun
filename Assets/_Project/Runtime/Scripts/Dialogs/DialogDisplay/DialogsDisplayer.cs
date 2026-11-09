@@ -38,10 +38,11 @@ namespace DShotgun.Dialogs
 
         public override bool ShowCanvas
         {
-            get => _canvas.enabled;
+            get => _displayParent.activeSelf;
             set {
-                _canvas.enabled = value;
                 _displayState = value ? TextDisplayState.Idle : TextDisplayState.Closed;
+                _displayParent.SetActive(value);
+                
                 
                 GameManager.SwitchState(value ? GameState.Dialogue : GameState.Playing);
             }
