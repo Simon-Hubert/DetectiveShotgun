@@ -17,7 +17,7 @@ namespace DShotgun
     {
         [Header("References")]
         [SerializeField] private Camera _camera;
-        [SerializeField] private PixelPerfectCamera _pixelPerfectCamera;
+        //[SerializeField] private PixelPerfectCamera _pixelPerfectCamera;
         [SerializeField] private InputReader _inputs;
 
         [Header("Aim Params")]
@@ -46,10 +46,13 @@ namespace DShotgun
         private float _zoomProgress;
         private SecondOrderDynamics<Vector2> _moveDynamics;
 
+        public event Action OnAimStarted;
+        public event Action OnAimStopped;
+
         private void Start()
         {
             if (_camera == null) _camera = Camera.main;
-            if (_pixelPerfectCamera == null) _pixelPerfectCamera = _camera.GetComponent<PixelPerfectCamera>();
+            //if (_pixelPerfectCamera == null) _pixelPerfectCamera = _camera.GetComponent<PixelPerfectCamera>();
 
             _defaultPosition = _camera.transform.position;
             CreateDynamics();
@@ -78,7 +81,16 @@ namespace DShotgun
 
         private void Update()
         {
-            if (!_toggleAimOnRightClick) _isAiming = _inputs.IsRightHeld;
+            if (!_toggleAimOnRightClick)
+            {
+                if (_isAiming != _inputs.IsRightHeld)
+                {
+                    if (_inputs.IsRightHeld) OnAimStarted?.Invoke();
+                    else OnAimStopped?.Invoke();
+                    
+                    _isAiming = _inputs.IsRightHeld;
+                }
+            }
 
             InteractableManager[] targets = _isAiming ? GetInteractableUnderPointer() : Array.Empty<InteractableManager>();
             
@@ -96,14 +108,14 @@ namespace DShotgun
         {
             float deltaTime = Time.deltaTime;
             if (deltaTime <= 0f) return;
-
+            
             _zoomProgress = Mathf.MoveTowards(_zoomProgress, _isAiming ? 1f : 0f, deltaTime / _zoomDuration);
             float zoom = _zoomCurve.Evaluate(_zoomProgress);
-            _pixelPerfectCamera.assetsPPU = Mathf.Max(1, Mathf.RoundToInt(Mathf.LerpUnclamped(_defaultPpu, _aimPpu, zoom)));
+            //_pixelPerfectCamera.assetsPPU = Mathf.Max(1, Mathf.RoundToInt(Mathf.LerpUnclamped(_defaultPpu, _aimPpu, zoom)));
 
             Vector2 targetPosition = (Vector2)_defaultPosition + (_isAiming ? GetCursorOffset() : Vector2.zero);
             Vector2 position = _moveDynamics.Update(deltaTime, targetPosition);
-            _camera.transform.position = new Vector3(position.x, position.y, _defaultPosition.z);
+            //_camera.transform.position = new Vector3(position.x, position.y, _defaultPosition.z);
         }
 
         private void HandleScrolled(int obj)
