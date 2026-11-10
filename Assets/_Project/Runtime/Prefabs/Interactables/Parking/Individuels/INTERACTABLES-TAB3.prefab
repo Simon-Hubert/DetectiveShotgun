@@ -685,7 +685,7 @@ PrefabInstance:
     - target: {fileID: 1918434533408432127, guid: 3426a62755bb2c4798d95d113436090c, type: 3}
       propertyPath: _onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 6394569978398465451}
+      objectReference: {fileID: 8685403171716906093}
     - target: {fileID: 1918434533408432127, guid: 3426a62755bb2c4798d95d113436090c, type: 3}
       propertyPath: _onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -849,14 +849,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5004016701535585613, guid: 3426a62755bb2c4798d95d113436090c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6394569978398465451}
+      addedObject: {fileID: 8685403171716906093}
   m_SourcePrefab: {fileID: 100100000, guid: 3426a62755bb2c4798d95d113436090c, type: 3}
 --- !u!1 &2046657923927164420 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5004016701535585613, guid: 3426a62755bb2c4798d95d113436090c, type: 3}
   m_PrefabInstance: {fileID: 6419571364332323657}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &6394569978398465451
+--- !u!95 &8685403171716906093
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -916,6 +916,11 @@ PrefabInstance:
     - target: {fileID: 2382731930227914610, guid: c8767f96f25ab15788061dc0f892a7d0, type: 3}
       propertyPath: m_Name
       value: Gravures
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548919711272570198, guid: c8767f96f25ab15788061dc0f892a7d0, type: 3}
+      propertyPath: _text._text
+      value: "On dirait que le mur \xE0 \xE9t\xE9 effrit\xE9 ici, <wait=0,25>probablement
+        avec un pistolet particuli\xE8rement pointu..."
       objectReference: {fileID: 0}
     - target: {fileID: 3914695361071613009, guid: c8767f96f25ab15788061dc0f892a7d0, type: 3}
       propertyPath: _priority
