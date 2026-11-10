@@ -24,7 +24,11 @@ namespace DShotgun.RichText
                 Instruction instruction = instructions.Dequeue();
                 switch (instruction.Type) {
                     case InstructionType.Text:
-                        output.Append(Escape(instruction.Text, target));
+                        string text = instruction.Text;
+                        if (target == RichTextTarget.Preview) {
+                            foreach ((Instruction open, int _) in openTags) text = open.Tag.TransformText(text);   // <uppercase>… : l'IMGUI ne sait pas le faire
+                        }
+                        output.Append(Escape(text, target));
                         visibleLength += instruction.Text.Length;   // longueur d'origine : l'échappement n'ajoute aucun caractère visible
                         break;
                     case InstructionType.Push:
