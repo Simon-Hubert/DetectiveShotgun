@@ -328,7 +328,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -525, y: -86}
+  m_AnchoredPosition: {x: -429.4, y: -86}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &360854576
@@ -829,7 +829,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2264849956926330540, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.94
       objectReference: {fileID: 0}
     - target: {fileID: 2264849956926330540, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -875,6 +875,10 @@ PrefabInstance:
       propertyPath: m_BlockingMask.m_Bits
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8500823768316584892, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
+      propertyPath: _playerInventory
+      value: 
+      objectReference: {fileID: 975937701}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1005,6 +1009,17 @@ MonoBehaviour:
     _styles: []
   _name: 
   _moveNextAutomatically: 0
+--- !u!114 &975937701 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8836601799099958187, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
+  m_PrefabInstance: {fileID: 425370221}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d52afe4aa63f45647a2ed5e8466a7677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.PlayerInventory
 --- !u!1 &1035281196
 GameObject:
   m_ObjectHideFlags: 0
@@ -2179,6 +2194,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -1.61
       objectReference: {fileID: 0}
+    - target: {fileID: 4442728774220462550, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: m_Name
+      value: Invoke Event with 2 binds
+      objectReference: {fileID: 0}
     - target: {fileID: 5306945967338398399, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2222,6 +2241,38 @@ PrefabInstance:
     - target: {fileID: 7680937904036636248, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       propertyPath: m_Name
       value: INTERACTABLES
+      objectReference: {fileID: 0}
+    - target: {fileID: 8943560706215735501, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8943560706215735501, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8943560706215735501, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 975937701}
+    - target: {fileID: 8943560706215735501, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8943560706215735501, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 8943560706215735501, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: DShotgun.PlayerInventory, DShotgun
+      objectReference: {fileID: 0}
+    - target: {fileID: 8943560706215735501, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 05727213ee50da5f09ba41903003817d, type: 2}
+    - target: {fileID: 8943560706215735501, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: DShotgun.ItemData, DShotgun
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
