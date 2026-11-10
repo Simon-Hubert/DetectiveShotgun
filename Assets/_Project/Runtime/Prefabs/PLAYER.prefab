@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85f7f914ea3c5f851a43a56c8f9ccd80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpact
-  _pool: {fileID: 0}
+  _pool: {fileID: 7990210057746630820}
 --- !u!114 &8836601799099958187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,4 +157,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.ImpactPool
   _shotImpactPrefab: {fileID: 5856876785614950826, guid: b04655bc7fa66ef71bf0e490ad41f545, type: 3}
-  _maxImpact: 10
+  _maxImpact: 20
