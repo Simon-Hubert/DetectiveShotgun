@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: BB_Parking
   m_EditorClassIdentifier: DShotgun::DShotgun.BlackboardData
   _flags:
-  - _name: CanetteShot
-    _initializedValue: 0
   - _name: HasSpokenToRodolphe
     _initializedValue: 0
   - _name: Pillar0Shot
@@ -30,4 +28,18 @@ MonoBehaviour:
   - _name: MessageDiscovered
     _initializedValue: 0
   - _name: StyletDiscovered
+    _initializedValue: 0
+  - _name: FirstCanAimed
+    _initializedValue: 0
+  - _name: Can1_Aimed
+    _initializedValue: 0
+  - _name: Can2_Aimed
+    _initializedValue: 0
+  - _name: Can3_Aimed
+    _initializedValue: 0
+  - _name: AllCans_Aimed
+    _initializedValue: 0
+  - _name: AllCans_Shot
+    _initializedValue: 0
+  - _name: Rubalise_Destroyed
     _initializedValue: 0

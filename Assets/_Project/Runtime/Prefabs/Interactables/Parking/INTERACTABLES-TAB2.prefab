@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7397030736800855748}
   - component: {fileID: 4235042982058198533}
   m_Layer: 0
-  m_Name: "M\xE9decin l\xE9giste Speaking"
+  m_Name: Detective Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,26 +45,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: "M\xE9decin l\xE9giste"
+    _characterName: Detective
     _spriteName: Idle
   <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <RightRef>k__BackingField:
-    _characterName: Detective
+    _characterName: "M\xE9decin l\xE9giste"
     _spriteName: Idle
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
   <SpeakingCharacterID>k__BackingField: 0
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
-  _right: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _right: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
   _text:
-    _text: "Euh.. oui il me semble, j\u2019ai retrouv\xE9 un paquet de Gauloises
-      sur lui, pourquoi ?"
+    _text: "Il devait attendre quelqu\u2019un, donc."
     _styles: []
-  _name: "M\xE9decin l\xE9giste"
+  _name: Detective
   _moveNextAutomatically: 0
 --- !u!1 &184318026069401483
 GameObject:
@@ -111,24 +110,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: "M\xE9decin l\xE9giste"
+    _characterName: Detective
     _spriteName: Idle
   <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <RightRef>k__BackingField:
-    _characterName: Detective
+    _characterName: "M\xE9decin l\xE9giste"
     _spriteName: Idle
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 2
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
-  _right: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _right: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
   _text:
-    _text: "En tout cas on a retrouv\xE9 tout ses effets personnels sur lui, ce n\u2019\xE9tait
-      d\xE9finitivement pas un crime motiv\xE9 par le vol."
+    _text: "Euh...<wait=0,5> oui il me semble, j\u2019ai retrouv\xE9 un paquet de
+      Gauloises sur lui, <wait=0,25>pourquoi ?"
     _styles: []
   _name: "M\xE9decin l\xE9giste"
   _moveNextAutomatically: 0
@@ -177,72 +176,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: Cadavre
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
+  <MiddleRef>k__BackingField:
+    _characterName: Cadavre
+    _spriteName: Idle
   <RightRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 1
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2633962258975872332, guid: 7a98daeae56781241a31d527dc05a666, type: 3}
-  _middle: {fileID: 0}
+  _left: {fileID: 0}
+  _middle: {fileID: 2633962258975872332, guid: 7a98daeae56781241a31d527dc05a666, type: 3}
   _right: {fileID: 0}
   _text:
     _text: "VOUS NON PLUS VOUS N\u2019ALLEZ PAS VOUS Y METTRE HEIN !"
     _styles: []
   _name: Cadavre
   _moveNextAutomatically: 0
---- !u!1 &487094767885788443
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3130587676357782350}
-  - component: {fileID: 2397548054488237070}
-  m_Layer: 0
-  m_Name: Activate Sally
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3130587676357782350
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 487094767885788443}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7993506189229936972}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2397548054488237070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 487094767885788443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06887433ba2fc1247a29057828736437, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.ActivateObject
-  _object: {fileID: 0}
-  _active: 1
 --- !u!1 &532274234240175821
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,21 +241,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: "M\xE9decin l\xE9giste"
+    _characterName: Detective
     _spriteName: Idle
   <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <RightRef>k__BackingField:
-    _characterName: Detective
+    _characterName: "M\xE9decin l\xE9giste"
     _spriteName: Idle
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
+  <SpeakingCharacterID>k__BackingField: 0
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
-  _right: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _right: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
   _text:
     _text: "Vous ne pensez pas que ce meurtre ait r\xE9\xE9llement \xE9t\xE9 effectu\xE9
       \xE0 l\u2019aide d\u2019une lame n\u2019est-ce pas ?"
@@ -403,23 +356,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: "M\xE9decin l\xE9giste"
+    _characterName: Detective
     _spriteName: Idle
   <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <RightRef>k__BackingField:
-    _characterName: Detective
+    _characterName: "M\xE9decin l\xE9giste"
     _spriteName: Idle
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 2
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
-  _right: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _right: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
   _text:
-    _text: "Mort vers 5h. Il a pass\xE9 la nuit l\xE0, D\xE9tective. Toute la nuit."
+    _text: "Mort vers 5h. <wait=0,25>Il a pass\xE9 la nuit l\xE0, D\xE9tective. <wait=0,5>Toute
+      la nuit."
     _styles: []
   _name: "M\xE9decin l\xE9giste"
   _moveNextAutomatically: 0
@@ -504,7 +458,7 @@ Transform:
   - {fileID: 3201733522023771824}
   - {fileID: 2699552829175875530}
   - {fileID: 770982237181722791}
-  - {fileID: 3130587676357782350}
+  - {fileID: 1447084596554086401}
   m_Father: {fileID: 1247680531005587768}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7141459493576044103
@@ -564,20 +518,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: Cadavre
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
+  <MiddleRef>k__BackingField:
+    _characterName: Cadavre
+    _spriteName: Idle
   <RightRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 1
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2633962258975872332, guid: 7a98daeae56781241a31d527dc05a666, type: 3}
-  _middle: {fileID: 0}
+  _left: {fileID: 0}
+  _middle: {fileID: 2633962258975872332, guid: 7a98daeae56781241a31d527dc05a666, type: 3}
   _right: {fileID: 0}
   _text:
     _text: "EH ! Mais vous allez arr\xEAter ?"
@@ -629,25 +583,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: "M\xE9decin l\xE9giste"
+    _characterName: Detective
     _spriteName: Idle
   <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <RightRef>k__BackingField:
-    _characterName: Detective
+    _characterName: "M\xE9decin l\xE9giste"
     _spriteName: Idle
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
+  <SpeakingCharacterID>k__BackingField: 0
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
-  _right: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _right: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
   _text:
-    _text: "Ahem... je me devais bien d\u2019essayer. J\u2019ai horreur de ce, vous
-      savez, ce d\xE9rangeant sentiment de ne pas tout avoir fait ni essay\xE9 d\u2019int\xE9ragir
-      avec tout dans un jeu vid-"
+    _text: "Ahem... <wait=0,5>je me devais bien d\u2019essayer. J\u2019ai horreur
+      de ce, <wait=0,25>vous savez, <wait=0,25>ce d\xE9rangeant sentiment de ne pas
+      tout avoir fait ni essay\xE9 d\u2019int\xE9ragir avec tout le d\xE9cor..."
     _styles: []
   _name: Detective
   _moveNextAutomatically: 1
@@ -798,7 +752,7 @@ MonoBehaviour:
   <UseCustomDialogProfile>k__BackingField: 0
   <SpeakingCharacterID>k__BackingField: 0
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
   _right: {fileID: 2633962258975872332, guid: 7a98daeae56781241a31d527dc05a666, type: 3}
   _text:
@@ -861,7 +815,7 @@ GameObject:
   - component: {fileID: 2078756340897742678}
   - component: {fileID: 2645302328260936197}
   m_Layer: 0
-  m_Name: "M\xE9decin l\xE9giste Speaking"
+  m_Name: Detective Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -895,26 +849,72 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: "M\xE9decin l\xE9giste"
+    _characterName: Detective
     _spriteName: Idle
   <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <RightRef>k__BackingField:
-    _characterName: Detective
+    _characterName: "M\xE9decin l\xE9giste"
     _spriteName: Idle
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
   <SpeakingCharacterID>k__BackingField: 0
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
-  _right: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _right: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
   _text:
     _text: "Monsieur Shotgun, veuillez ne pas jouer avec les pi\xE8ces \xE0 conviction."
     _styles: []
-  _name: "M\xE9decin l\xE9giste"
+  _name: Detective
   _moveNextAutomatically: 0
+--- !u!1 &1881331644553831776
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1447084596554086401}
+  - component: {fileID: 5583784608267289710}
+  m_Layer: 0
+  m_Name: Deactivate Sprite Mask
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1447084596554086401
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881331644553831776}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7993506189229936972}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5583784608267289710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881331644553831776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06887433ba2fc1247a29057828736437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.ActivateObject
+  _object: {fileID: 0}
+  _active: 0
 --- !u!1 &2005194511299996010
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,21 +1004,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: "M\xE9decin l\xE9giste"
+    _characterName: Detective
     _spriteName: Idle
   <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <RightRef>k__BackingField:
-    _characterName: Detective
+    _characterName: "M\xE9decin l\xE9giste"
     _spriteName: Idle
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
+  <SpeakingCharacterID>k__BackingField: 0
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
-  _right: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _right: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
   _text:
     _text: "Pourtant, un flingue, \xE7a ne tire que des balles non ?"
     _styles: []
@@ -1084,7 +1084,7 @@ GameObject:
   - component: {fileID: 3695548436703431808}
   - component: {fileID: 5070363804503090573}
   m_Layer: 0
-  m_Name: Cadavre Speaking
+  m_Name: None Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1118,25 +1118,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: Cadavre
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
+  <MiddleRef>k__BackingField:
+    _characterName: Cadavre
+    _spriteName: Idle
   <RightRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
   <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2633962258975872332, guid: 7a98daeae56781241a31d527dc05a666, type: 3}
-  _middle: {fileID: 0}
+  <CharacterDialogProfile>k__BackingField: {fileID: 0}
+  _left: {fileID: 0}
+  _middle: {fileID: 2633962258975872332, guid: 7a98daeae56781241a31d527dc05a666, type: 3}
   _right: {fileID: 0}
   _text:
     _text: ...
     _styles: []
-  _name: Cadavre
+  _name: None
   _moveNextAutomatically: 0
 --- !u!1 &2277018031850016987
 GameObject:
@@ -1197,7 +1197,7 @@ MonoBehaviour:
   <CharacterDialogProfile>k__BackingField: {fileID: 0}
   _left: {fileID: 0}
   _middle: {fileID: 0}
-  _right: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _text:
     _text: "Bonsoir D\xE9tective. Une balle, c\u2019est l\u2019affaire d\u2019une
       seconde, moi, je me suis amus\xE9 toute la nuit."
@@ -1308,25 +1308,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: "M\xE9decin l\xE9giste"
+    _characterName: Detective
     _spriteName: Idle
   <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <RightRef>k__BackingField:
-    _characterName: Detective
+    _characterName: "M\xE9decin l\xE9giste"
     _spriteName: Idle
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
+  <SpeakingCharacterID>k__BackingField: 0
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
-  _right: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _right: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
   _text:
     _text: "Le mec de la t\xE9l\xE9vision qu\u2019on voit le soir sur Antenne 3 ?
-      C\u2019est vrai qu\u2019il a l\u2019air d\u2019avoir des connaissances aiguis\xE9es
-      sur le sujet."
+      <wait=0,25>C\u2019est vrai qu\u2019il a l\u2019air d\u2019avoir des connaissances
+      aiguis\xE9es sur le sujet."
     _styles: []
   _name: Detective
   _moveNextAutomatically: 0
@@ -1387,9 +1387,9 @@ MonoBehaviour:
   <UseCustomDialogProfile>k__BackingField: 0
   <SpeakingCharacterID>k__BackingField: 0
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
-  _right: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+  _right: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
   _text:
     _text: "Bang ! Et pourquoi c\u2019est que les tueurs qui auraient le droit de
       signer les sc\xE8nes de crime ?"
@@ -1529,24 +1529,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: "M\xE9decin l\xE9giste"
+    _characterName: Detective
     _spriteName: Idle
   <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <RightRef>k__BackingField:
-    _characterName: Detective
+    _characterName: "M\xE9decin l\xE9giste"
     _spriteName: Idle
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
+  <SpeakingCharacterID>k__BackingField: 0
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
-  _right: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _right: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
   _text:
-    _text: "On est s\xFBr que ce n\u2019est pas la cigarette qui l\u2019a tu\xE9
-      ? C\u2019est dangeureux pour la sant\xE9 cette merde."
+    _text: "Il fumait n\u2019est-ce pas ? <wait=0,5>Je sens comme une odeur de tabac
+      plus que de poudre \xE0 canon."
     _styles: []
   _name: Detective
   _moveNextAutomatically: 0
@@ -1721,23 +1721,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: "M\xE9decin l\xE9giste"
+    _characterName: Detective
     _spriteName: Idle
   <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <RightRef>k__BackingField:
-    _characterName: Detective
+    _characterName: "M\xE9decin l\xE9giste"
     _spriteName: Idle
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 2
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
-  _right: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _right: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
   _text:
-    _text: "C\u2019\xE9tait notre seul t\xE9moin Shotgun !"
+    _text: "<b>C\u2019\xE9tait notre seul t\xE9moin Shotgun !</b>"
     _styles: []
   _name: "M\xE9decin l\xE9giste"
   _moveNextAutomatically: 0
@@ -1786,21 +1786,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: "M\xE9decin l\xE9giste"
+    _characterName: Detective
     _spriteName: Idle
   <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <RightRef>k__BackingField:
-    _characterName: Detective
+    _characterName: "M\xE9decin l\xE9giste"
     _spriteName: Idle
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
+  <SpeakingCharacterID>k__BackingField: 0
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
-  _right: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _right: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
   _text:
     _text: "Il faut que je coince ce tar\xE9 pour le bien de cette ville et de cette
       fin de mois compliqu\xE9."
@@ -1900,21 +1900,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: "M\xE9decin l\xE9giste"
+    _characterName: Detective
     _spriteName: Idle
   <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <RightRef>k__BackingField:
-    _characterName: Detective
+    _characterName: "M\xE9decin l\xE9giste"
     _spriteName: Idle
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
+  <SpeakingCharacterID>k__BackingField: 0
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
-  _right: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _right: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
   _text:
     _text: "Je suis trop mal coiff\xE9, imaginez si on m\u2019avait vu comme \xE7a
       !"
@@ -1978,7 +1978,7 @@ GameObject:
   - component: {fileID: 5293432592760783935}
   - component: {fileID: 8624452353423379959}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "M\xE9decin l\xE9giste Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2012,25 +2012,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: "M\xE9decin l\xE9giste"
+    _characterName: Detective
     _spriteName: Idle
   <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <RightRef>k__BackingField:
-    _characterName: Detective
+    _characterName: "M\xE9decin l\xE9giste"
     _spriteName: Idle
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
   <SpeakingCharacterID>k__BackingField: 2
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
-  _right: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _right: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
   _text:
-    _text: "Si on s\u2019en prend m\xEAme aux \xE9piciers maintenant !"
+    _text: "En tout cas on a retrouv\xE9 tout ses effets personnels sur lui, ce n\u2019\xE9tait
+      d\xE9finitivement pas un crime motiv\xE9 par le vol."
     _styles: []
-  _name: Detective
+  _name: "M\xE9decin l\xE9giste"
   _moveNextAutomatically: 0
 --- !u!1 &4275766189113856697
 GameObject:
@@ -2077,21 +2078,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: "M\xE9decin l\xE9giste"
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
+  <MiddleRef>k__BackingField:
+    _characterName: "M\xE9decin l\xE9giste"
     _spriteName: Idle
+  <RightRef>k__BackingField:
+    _characterName: None
+    _spriteName: None
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 1
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _left: {fileID: 0}
+  _middle: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
+  _right: {fileID: 0}
   _text:
     _text: "Pi\xE8ce \xE0 conviction ! \u2026 Mettez-le au moins sous scell\xE9."
     _styles: []
@@ -2476,21 +2477,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: "M\xE9decin l\xE9giste"
+    _characterName: Detective
     _spriteName: Idle
   <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <RightRef>k__BackingField:
-    _characterName: Detective
+    _characterName: "M\xE9decin l\xE9giste"
     _spriteName: Idle
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 2
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
-  _right: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _right: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
   _text:
     _text: "Bon sang ! Mais vous le faites expr\xE8s ?"
     _styles: []
@@ -2553,7 +2554,7 @@ MonoBehaviour:
   <UseCustomDialogProfile>k__BackingField: 0
   <SpeakingCharacterID>k__BackingField: 2
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
   _right: {fileID: 2633962258975872332, guid: 7a98daeae56781241a31d527dc05a666, type: 3}
   _text:
@@ -2620,6 +2621,72 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &5283896827142311445
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 494715531748892084}
+  - component: {fileID: 5088936958386857683}
+  m_Layer: 0
+  m_Name: "M\xE9decin l\xE9giste Speaking"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &494715531748892084
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5283896827142311445}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4302838059380834459}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5088936958386857683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5283896827142311445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  <LeftRef>k__BackingField:
+    _characterName: Detective
+    _spriteName: Idle
+  <MiddleRef>k__BackingField:
+    _characterName: None
+    _spriteName: None
+  <RightRef>k__BackingField:
+    _characterName: "M\xE9decin l\xE9giste"
+    _spriteName: Idle
+  <UseCustomName>k__BackingField: 0
+  <UseCustomDialogProfile>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 2
+  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _middle: {fileID: 0}
+  _right: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
+  _text:
+    _text: "Armand Armurier, de son nom, l\u2019armurier de Puteaux, qui travaillait
+      dans sa boutique juste au dessus, aux 4 Temps."
+    _styles: []
+  _name: "M\xE9decin l\xE9giste"
+  _moveNextAutomatically: 0
 --- !u!1 &5548323841756416778
 GameObject:
   m_ObjectHideFlags: 0
@@ -2779,7 +2846,7 @@ GameObject:
   - component: {fileID: 1507472364136694806}
   - component: {fileID: 7538253750632679818}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "M\xE9decin l\xE9giste Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2813,26 +2880,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: "M\xE9decin l\xE9giste"
+    _characterName: Detective
     _spriteName: Idle
   <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <RightRef>k__BackingField:
-    _characterName: Detective
+    _characterName: "M\xE9decin l\xE9giste"
     _spriteName: Idle
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
   <SpeakingCharacterID>k__BackingField: 2
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
-  _right: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _right: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
   _text:
-    _text: "Il fumait n\u2019est-ce pas ? Je sens comme une odeur de tabac plus que
-      de poudre \xE0 canon."
+    _text: "Pas le temps pour les formalit\xE9s Shotgun. <wait=0,25>On est sur un
+      potentiel crime encore jamais vu."
     _styles: []
-  _name: Detective
+  _name: "M\xE9decin l\xE9giste"
   _moveNextAutomatically: 0
 --- !u!1 &5988052377646207558
 GameObject:
@@ -2879,20 +2946,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: Cadavre
+    _characterName: None
     _spriteName: Idle
   <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
+    _characterName: Cadavre
+    _spriteName: Idle
   <RightRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 1
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2633962258975872332, guid: 7a98daeae56781241a31d527dc05a666, type: 3}
-  _middle: {fileID: 0}
+  _left: {fileID: 0}
+  _middle: {fileID: 2633962258975872332, guid: 7a98daeae56781241a31d527dc05a666, type: 3}
   _right: {fileID: 0}
   _text:
     _text: ...
@@ -3195,25 +3262,91 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: "M\xE9decin l\xE9giste"
+    _characterName: Detective
     _spriteName: Idle
   <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <RightRef>k__BackingField:
-    _characterName: Detective
+    _characterName: "M\xE9decin l\xE9giste"
     _spriteName: Idle
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 2
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _right: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
   _text:
     _text: "Stylet, XVIIIe si\xE8cle. Je ne pourrais pas en dire plus, il vous faudrait
       un expert\u2026 Ce Damas, \xE0 la t\xE9l\xE9. Vous savez, celui qui anime son
       animation de peinture au couteau et de culture autour des armes blanches."
+    _styles: []
+  _name: "M\xE9decin l\xE9giste"
+  _moveNextAutomatically: 0
+--- !u!1 &6567419851077679690
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4442248577851868781}
+  - component: {fileID: 6686274692916239761}
+  m_Layer: 0
+  m_Name: "M\xE9decin l\xE9giste Speaking"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4442248577851868781
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6567419851077679690}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4067037136506839019}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6686274692916239761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6567419851077679690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  <LeftRef>k__BackingField:
+    _characterName: None
+    _spriteName: None
+  <MiddleRef>k__BackingField:
+    _characterName: "M\xE9decin l\xE9giste"
+    _spriteName: Idle
+  <RightRef>k__BackingField:
+    _characterName: None
+    _spriteName: None
+  <UseCustomName>k__BackingField: 0
+  <UseCustomDialogProfile>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 1
+  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+  _left: {fileID: 0}
+  _middle: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
+  _right: {fileID: 0}
+  _text:
+    _text: "Vraiment ? Apr\xE8s leurs jambes vous voulez leur prendre \xE7a aussi
+      ?"
     _styles: []
   _name: "M\xE9decin l\xE9giste"
   _moveNextAutomatically: 0
@@ -3308,24 +3441,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: "M\xE9decin l\xE9giste"
+    _characterName: Detective
     _spriteName: Idle
   <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <RightRef>k__BackingField:
-    _characterName: Detective
+    _characterName: "M\xE9decin l\xE9giste"
     _spriteName: Idle
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 2
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
-  _right: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _right: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
   _text:
-    _text: "A en croire les plaies sur le cadavre... c\u2019est s\xFBr qu\u2019il
-      s\u2019agit d\u2019un objet coupant ou tranchant. Il a d\xFB souffrir, et longuement..."
+    _text: "A en croire les plaies sur le cadavre... <wait=0,25>c\u2019est s\xFBr
+      qu\u2019il s\u2019agit d\u2019un objet coupant ou tranchant. Il a d\xFB souffrir,
+      et longuement..."
     _styles: []
   _name: "M\xE9decin l\xE9giste"
   _moveNextAutomatically: 0
@@ -3374,20 +3508,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: Cadavre
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
+  <MiddleRef>k__BackingField:
+    _characterName: Cadavre
+    _spriteName: Idle
   <RightRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 1
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2633962258975872332, guid: 7a98daeae56781241a31d527dc05a666, type: 3}
-  _middle: {fileID: 0}
+  _left: {fileID: 0}
+  _middle: {fileID: 2633962258975872332, guid: 7a98daeae56781241a31d527dc05a666, type: 3}
   _right: {fileID: 0}
   _text:
     _text: ...
@@ -3484,6 +3618,71 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a8a3882457b01e438e4a1d24cc811e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: HierarchySequences::HierarchySequences.Sequence
+--- !u!1 &7142619370282868947
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7017783051439696257}
+  - component: {fileID: 9053361034440546043}
+  m_Layer: 0
+  m_Name: Detective Speaking
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7017783051439696257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7142619370282868947}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4302838059380834459}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9053361034440546043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7142619370282868947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  <LeftRef>k__BackingField:
+    _characterName: Detective
+    _spriteName: Idle
+  <MiddleRef>k__BackingField:
+    _characterName: None
+    _spriteName: None
+  <RightRef>k__BackingField:
+    _characterName: "M\xE9decin l\xE9giste"
+    _spriteName: Idle
+  <UseCustomName>k__BackingField: 0
+  <UseCustomDialogProfile>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 0
+  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _middle: {fileID: 0}
+  _right: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
+  _text:
+    _text: "<b>Si on s\u2019en prend m\xEAme aux \xE9piciers maintenant !</b>"
+    _styles: []
+  _name: Detective
+  _moveNextAutomatically: 0
 --- !u!1 &7254883342433031764
 GameObject:
   m_ObjectHideFlags: 0
@@ -3529,21 +3728,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: "M\xE9decin l\xE9giste"
+    _characterName: Detective
     _spriteName: Idle
   <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <RightRef>k__BackingField:
-    _characterName: Detective
+    _characterName: "M\xE9decin l\xE9giste"
     _spriteName: Idle
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
+  <SpeakingCharacterID>k__BackingField: 0
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
-  _right: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _right: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
   _text:
     _text: "On a affaire \xE0 un sacr\xE9 d\xE9traqu\xE9... qui peut bien utiliser
       un couteau de nos jours ? C\u2019est tellement barbare et archa\xEFque.. \xE7a
@@ -3640,6 +3839,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: HierarchySequences::HierarchySequences.WaitForDuration
   _duration: 5
+--- !u!1 &7499455405213131444
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 252792447453185232}
+  - component: {fileID: 3742151456871831335}
+  m_Layer: 0
+  m_Name: EndOfDialogSequence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &252792447453185232
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7499455405213131444}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4067037136506839019}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3742151456871831335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7499455405213131444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24a4099385ff88d93a50a4d1d04fc9ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.EndOfDialogSequence
 --- !u!1 &7656957386938814077
 GameObject:
   m_ObjectHideFlags: 0
@@ -3651,7 +3894,7 @@ GameObject:
   - component: {fileID: 4678036116086704893}
   - component: {fileID: 875349184492606445}
   m_Layer: 0
-  m_Name: "M\xE9decin l\xE9giste Speaking"
+  m_Name: Detective Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3685,27 +3928,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: "M\xE9decin l\xE9giste"
+    _characterName: Detective
     _spriteName: Idle
   <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <RightRef>k__BackingField:
-    _characterName: Detective
+    _characterName: "M\xE9decin l\xE9giste"
     _spriteName: Idle
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
   <SpeakingCharacterID>k__BackingField: 0
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
-  _right: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _right: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
   _text:
     _text: "Dois-je vous rappeler ce qu\u2019il s\u2019est pass\xE9 la derni\xE8re
       fois que vous-avez propuls\xE9 le poisson rouge dans le micro-onde sur l\u2019affaire
       du Poin\xE7onneur fou des Lilas ?"
     _styles: []
-  _name: "M\xE9decin l\xE9giste"
+  _name: Detective
   _moveNextAutomatically: 0
 --- !u!1 &7911603145959515119
 GameObject:
@@ -3771,7 +4014,7 @@ GameObject:
   - component: {fileID: 6863593645150813718}
   - component: {fileID: 4515965335978049620}
   m_Layer: 0
-  m_Name: "M\xE9decin l\xE9giste Speaking"
+  m_Name: Detective Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3805,26 +4048,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: "M\xE9decin l\xE9giste"
+    _characterName: Detective
     _spriteName: Idle
   <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <RightRef>k__BackingField:
-    _characterName: Detective
+    _characterName: "M\xE9decin l\xE9giste"
     _spriteName: Idle
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
   <SpeakingCharacterID>k__BackingField: 0
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
-  _right: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _right: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
   _text:
-    _text: "Armand Armurier, de son nom, l\u2019armurier de Puteaux, qui travaillait
-      dans sa boutique juste au dessus, aux 4 Temps."
+    _text: "On est s\xFBr que ce n\u2019est pas la cigarette qui l\u2019a tu\xE9
+      ? <wait=0,5>C\u2019est dangeureux pour la sant\xE9 cette merde."
     _styles: []
-  _name: "M\xE9decin l\xE9giste"
+  _name: Detective
   _moveNextAutomatically: 0
 --- !u!1 &8011749042725626651
 GameObject:
@@ -3883,7 +4126,7 @@ MonoBehaviour:
   <UseCustomDialogProfile>k__BackingField: 0
   <SpeakingCharacterID>k__BackingField: 0
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
   _right: {fileID: 2633962258975872332, guid: 7a98daeae56781241a31d527dc05a666, type: 3}
   _text:
@@ -3936,20 +4179,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: Cadavre
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
+  <MiddleRef>k__BackingField:
+    _characterName: Cadavre
+    _spriteName: Idle
   <RightRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 1
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2633962258975872332, guid: 7a98daeae56781241a31d527dc05a666, type: 3}
-  _middle: {fileID: 0}
+  _left: {fileID: 0}
+  _middle: {fileID: 2633962258975872332, guid: 7a98daeae56781241a31d527dc05a666, type: 3}
   _right: {fileID: 0}
   _text:
     _text: ...
@@ -4013,9 +4256,9 @@ MonoBehaviour:
   <UseCustomDialogProfile>k__BackingField: 0
   <SpeakingCharacterID>k__BackingField: 2
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
-  _right: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+  _right: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
   _text:
     _text: "Shotgun ! C\u2019est vraiment pas s\xE9rieux !"
     _styles: []
@@ -4066,23 +4309,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: "M\xE9decin l\xE9giste"
+    _characterName: Detective
     _spriteName: Idle
   <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <RightRef>k__BackingField:
-    _characterName: Detective
+    _characterName: "M\xE9decin l\xE9giste"
     _spriteName: Idle
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
+  <SpeakingCharacterID>k__BackingField: 0
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2140685809589319160, guid: 64fdae47b73ec3144b96596a09c15498, type: 3}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
-  _right: {fileID: 265408830610322189, guid: 5e4444e6ef77d80dda56a6604ae8a1f3, type: 3}
+  _right: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
   _text:
-    _text: "Il devait attendre quelqu\u2019un, donc."
+    _text: "Un plaisir de vous retrouver une fois de plus sur le terrain ma ch\xE8re
+      L\xE9onie."
     _styles: []
   _name: Detective
   _moveNextAutomatically: 0
@@ -4131,20 +4375,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: Cadavre
+    _characterName: None
     _spriteName: Idle
   <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
+    _characterName: Cadavre
+    _spriteName: Idle
   <RightRef>k__BackingField:
     _characterName: None
     _spriteName: None
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: 1
   <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 2633962258975872332, guid: 7a98daeae56781241a31d527dc05a666, type: 3}
-  _middle: {fileID: 0}
+  _left: {fileID: 0}
+  _middle: {fileID: 2633962258975872332, guid: 7a98daeae56781241a31d527dc05a666, type: 3}
   _right: {fileID: 0}
   _text:
     _text: AIE !
@@ -4161,31 +4405,51 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 481654794589713792, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.4742059
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 481654794589713792, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.4742059
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 481654794589713792, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.4742059
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 481654794589713792, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.24
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 481654794589713792, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 481654794589713792, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 481654794589713792, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2177007334513368621, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 2177007334513368621, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 2177007334513368621, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.46
       objectReference: {fileID: 0}
     - target: {fileID: 2177007334513368621, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.47
+      value: 16.81
       objectReference: {fileID: 0}
     - target: {fileID: 2177007334513368621, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.85
+      value: -0.26
       objectReference: {fileID: 0}
     - target: {fileID: 2177007334513368621, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4219,45 +4483,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2177007334513368621, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3999601062607310338, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
       propertyPath: m_Name
       value: Camera
       objectReference: {fileID: 0}
     - target: {fileID: 4482804587078372516, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
       propertyPath: m_Size.x
-      value: 6.61
+      value: 31.180225
       objectReference: {fileID: 0}
     - target: {fileID: 4482804587078372516, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
       propertyPath: m_Size.y
-      value: 21.251617
+      value: 21.68
       objectReference: {fileID: 0}
     - target: {fileID: 4482804587078372516, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a28b9c199f7a0b7d9874350c0ec42d24, type: 3}
+      objectReference: {fileID: 21300000, guid: 55b7ac84af7ee864f996b3a2cea33ff0, type: 3}
     - target: {fileID: 4482804587078372516, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6004594152074036519, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
       propertyPath: m_Size.x
-      value: 2.12
+      value: 3.3786564
       objectReference: {fileID: 0}
     - target: {fileID: 6004594152074036519, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
       propertyPath: m_Size.y
-      value: 1.67
+      value: 4.3852005
       objectReference: {fileID: 0}
     - target: {fileID: 6004594152074036519, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
       propertyPath: m_Offset.x
-      value: -0.48
+      value: 13.878455
       objectReference: {fileID: 0}
     - target: {fileID: 6004594152074036519, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
       propertyPath: m_Offset.y
-      value: 4.64
+      value: 8.656097
       objectReference: {fileID: 0}
     - target: {fileID: 7106089796713560781, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
       propertyPath: _priority
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7106089796713560781, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
       propertyPath: _interactionCases.Array.size
@@ -4326,7 +4594,7 @@ PrefabInstance:
     - target: {fileID: 7106089796713560781, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
       propertyPath: _onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 21300000, guid: 874a60e9e275bdcc3be2ee69245cb864, type: 3}
+      objectReference: {fileID: 21300000, guid: 1ba7464aa3a433242b94136bdd0e1067, type: 3}
     - target: {fileID: 7106089796713560781, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
       propertyPath: _interactionCases.Array.data[0]._action.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
@@ -4514,7 +4782,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7757913927654397825, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
       propertyPath: _priority
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7757913927654397825, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
       propertyPath: _aimCases.Array.size
@@ -4857,7 +5125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: _priority
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: _interactionCases.Array.size
@@ -5007,6 +5275,12 @@ PrefabInstance:
       addedObject: {fileID: 5293432592760783935}
     - targetCorrespondingSourceObject: {fileID: 2060822910918891104, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 494715531748892084}
+    - targetCorrespondingSourceObject: {fileID: 2060822910918891104, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7017783051439696257}
+    - targetCorrespondingSourceObject: {fileID: 2060822910918891104, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 8945178605351954506}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
@@ -5098,7 +5372,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2244819810223527754, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
       propertyPath: _priority
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2244819810223527754, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
       propertyPath: _interactionCases.Array.size
@@ -5408,6 +5682,9 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3698831819559654177, guid: 58a5a073a5aa4b412b24b055389c9eec, type: 3}
       insertIndex: 2
+      addedObject: {fileID: 3806482468707779327}
+    - targetCorrespondingSourceObject: {fileID: 3698831819559654177, guid: 58a5a073a5aa4b412b24b055389c9eec, type: 3}
+      insertIndex: 3
       addedObject: {fileID: 2808295523539516744}
   m_SourcePrefab: {fileID: 100100000, guid: 58a5a073a5aa4b412b24b055389c9eec, type: 3}
 --- !u!4 &13968708090206491 stripped
@@ -5425,6 +5702,52 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3698831819559654177, guid: 58a5a073a5aa4b412b24b055389c9eec, type: 3}
   m_PrefabInstance: {fileID: 4196826229508913824}
   m_PrefabAsset: {fileID: 0}
+--- !u!61 &3806482468707779327
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678632634110732673}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.21912849, y: 0.9684901}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.168257, y: 5.12698}
+  m_EdgeRadius: 0
 --- !u!61 &2808295523539516744
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5512,23 +5835,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1994467089896702246, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.54108614
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1994467089896702246, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.54108614
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1994467089896702246, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.54108614
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1994467089896702246, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: 1994467089896702246, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994467089896702246, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5021448272863235803, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
       propertyPath: m_Size.x
@@ -5541,7 +5868,7 @@ PrefabInstance:
     - target: {fileID: 5021448272863235803, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7fed981fc8f63b626998bf7a3a386ad9, type: 3}
+      objectReference: {fileID: 211409488664277087, guid: f2cae91e5a38bac4482d4d6ce6f50d82, type: 3}
     - target: {fileID: 5021448272863235803, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
       propertyPath: m_SortingOrder
       value: -1
@@ -5550,13 +5877,41 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5982918082367446013, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
+      propertyPath: m_Size.x
+      value: 39.582806
+      objectReference: {fileID: 0}
+    - target: {fileID: 5982918082367446013, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
+      propertyPath: m_Size.y
+      value: 9.054967
+      objectReference: {fileID: 0}
+    - target: {fileID: 5982918082367446013, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.046102524
+      objectReference: {fileID: 0}
+    - target: {fileID: 5982918082367446013, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
+      propertyPath: m_Offset.y
+      value: -1.099546
+      objectReference: {fileID: 0}
+    - target: {fileID: 7403264112128920472, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.476
+      objectReference: {fileID: 0}
+    - target: {fileID: 7403264112128920472, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.476
+      objectReference: {fileID: 0}
+    - target: {fileID: 7403264112128920472, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.476
+      objectReference: {fileID: 0}
     - target: {fileID: 7403264112128920472, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.47
+      value: 19.12
       objectReference: {fileID: 0}
     - target: {fileID: 7403264112128920472, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.06
+      value: -3.89
       objectReference: {fileID: 0}
     - target: {fileID: 7403264112128920472, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5590,18 +5945,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7403264112128920472, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8534046591760651154, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
       propertyPath: m_Name
       value: PlacesDeParking
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 7579832784965643425, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4442248577851868781}
+    - targetCorrespondingSourceObject: {fileID: 7579832784965643425, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 252792447453185232}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
 --- !u!4 &4034187344338024658 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7403264112128920472, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
+  m_PrefabInstance: {fileID: 5855239683964105546}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4067037136506839019 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7579832784965643425, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
   m_PrefabInstance: {fileID: 5855239683964105546}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6923789207073519350
@@ -5686,7 +6056,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9021677503746836299, guid: 9f2015ec4f3bc5cd5b83f3f15e3c243e, type: 3}
       propertyPath: _priority
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9021677503746836299, guid: 9f2015ec4f3bc5cd5b83f3f15e3c243e, type: 3}
       propertyPath: _aimCases.Array.size

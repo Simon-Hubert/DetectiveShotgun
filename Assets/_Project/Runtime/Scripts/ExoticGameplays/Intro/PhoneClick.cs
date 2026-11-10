@@ -1,9 +1,9 @@
+#define PHONE_STOP
+
 using System;
 using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.PlayerLoop;
-using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 namespace DShotgun
@@ -16,6 +16,9 @@ namespace DShotgun
         [SerializeField, MinMaxSlider(50, 300)] private Vector2 _sideForceOffset;
         [SerializeField, MinMaxSlider(0, 100)] private Vector2 _upForceRandomFactor;
         [SerializeField] private float _maxSideForceRandom;
+        [SerializeField] private float _maxAngularSpeed = 30;
+        
+        private float _angularSpeed;
 
         private Vector2 _accel;
         private Vector2 _speed;
@@ -27,6 +30,11 @@ namespace DShotgun
 
         [SerializeField] private UnityEvent _onFirstClicked;
         [SerializeField] private UnityEvent _onRestart;
+
+#if PHONE_STOP
+        private bool _wasOverDialogFrame = false;
+        private const float _dialogFrameTop = 513;
+#endif
         
 
         private void Start()
@@ -39,6 +47,15 @@ namespace DShotgun
             if(transform.position.x < 0) _ = ReStartAsync();
             if(transform.position.x > 1920) _ = ReStartAsync();
             if(transform.position.y < 0) _ = ReStartAsync();
+
+#if PHONE_STOP
+            if (!_stopped) {
+                if (!_wasOverDialogFrame && transform.position.y > _dialogFrameTop) _wasOverDialogFrame = true;
+                if (_wasOverDialogFrame) {
+                    if (transform.position.y < _dialogFrameTop && _speed.y < 0) return;
+                }
+            }
+#endif
             
             if (!_simulated) return;
             _accel = Vector2.down * (9.81f * _gravityScale);
@@ -48,6 +65,7 @@ namespace DShotgun
                 _speed.y = Mathf.Clamp(_speed.y, -_maxSpeed, 0f);
             }
             transform.position += (Vector3)_speed * Time.fixedDeltaTime;
+            transform.Rotate(0,0,_angularSpeed*Time.fixedDeltaTime);
         }
 
 
@@ -61,6 +79,7 @@ namespace DShotgun
             float sideForceRandom = Random.Range(-_maxSideForceRandom, _maxSideForceRandom)*(1-Mathf.Abs(p));
             float sideForce = sideForceSet + sideForceRandom;
             _speed = Vector2.up * (_force+randomUpForceFactor)+ Vector2.right * sideForce;
+            _angularSpeed = sideForce;
         }
 
         private void CheckFirstClick()

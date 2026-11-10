@@ -12,15 +12,8 @@ namespace DShotgun.Dialogs
         [SerializeField] private DialogsDisplayer _dialogsDisplayer;
         [SerializeField] private CommentDisplayer _commentDisplayer;
         
-        [FormerlySerializedAs("textDisplayerState")]
-        [FormerlySerializedAs("_dialogState")]
         [Space(7)]
-        [SerializeField, ReadOnly] private TextDisplayState textDisplayState;
-        public TextDisplayState GetTextDisplayState { get => textDisplayState; }
         private CancellationTokenSource _dialogCancellationTokenSource = new CancellationTokenSource();
-        
-        [SerializeField, ReadOnly, Tooltip("Cannot be waiting state")] private TextDisplayState _commentState;
-        public TextDisplayState GetCommentState { get => _commentState; }
         private CancellationTokenSource _commentCancellationTokenSource = new CancellationTokenSource();
 
         [Space(7)]
@@ -69,8 +62,8 @@ namespace DShotgun.Dialogs
         public void CaptureDialogsInfo(CharacterDialogData a_dialogData) {
             //Debug.Log("Capture Dialog Info");
             
-            if (_commentState != TextDisplayState.Closed) {
-                Debug.LogWarning($"'{name}' : Comment was cancelled due to Dialog being called - Current Comment state '{_commentState.ToString()}'", gameObject);
+            if (_commentDisplayer.GetDisplayState != TextDisplayState.Closed) {
+                Debug.LogWarning($"'{name}' : Comment was cancelled due to Dialog being called - Current Comment state '{_commentDisplayer.GetDisplayState.ToString()}'", gameObject);
                 ShowCommentUI(false);
             }
             
@@ -93,8 +86,8 @@ namespace DShotgun.Dialogs
         public void CaptureCommentInfo(CharacterDialogData a_dialogData, CommentID a_IDs) {
             //Debug.Log("Capture Comment Info");
 
-            if (textDisplayState != TextDisplayState.Closed) {
-                Debug.LogError($"'{name}' : Comment was cancelled, Dialog state is not 'Closed' - Current Dialog state '{textDisplayState.ToString()}'", gameObject);
+            if (_dialogsDisplayer.GetDisplayState != TextDisplayState.Closed) {
+                Debug.LogError($"'{name}' : Comment was cancelled, Dialog state is not 'Closed' - Current Dialog state '{_dialogsDisplayer.GetDisplayState.ToString()}'", gameObject);
                 return;
             }
 

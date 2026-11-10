@@ -12,7 +12,8 @@ namespace DShotgun
         Paused,
         Dialogue,
         Title,
-        MiniGame
+        MiniGame,
+        Transition
     }
     
     /// <summary>
@@ -81,6 +82,9 @@ namespace DShotgun
                 case GameState.MiniGame:
                     
                     break;
+                case GameState.Transition:
+                    
+                    break;
                 default:
                     Debug.LogWarning($"Unhandled game state: {nextState}");
                     break;
@@ -104,6 +108,9 @@ namespace DShotgun
                     
                     break;
                 case GameState.MiniGame:
+                    
+                    break;
+                case GameState.Transition:
                     
                     break;
                 default:
