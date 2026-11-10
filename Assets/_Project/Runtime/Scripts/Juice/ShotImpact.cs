@@ -6,7 +6,7 @@ namespace DShotgun
     public class ShotImpact : MonoBehaviour
     {
         private InputReader _ir;
-        [SerializeField] private GameObject _shotImpactPrefab;
+        [SerializeField] private ImpactPool _pool;
 
         private void Start()
         {
@@ -31,8 +31,7 @@ namespace DShotgun
 
         private void Shoot()
         {
-            Debug.Log("Shooted the gun");
-            GameObject go = Instantiate(_shotImpactPrefab);
+            GameObject go = _pool.GetShotImpact();
             go.transform.position = Camera.main.ScreenToWorldPoint(InputReader.PointerPosition);
             Vector3 vector3 = go.transform.position;
             vector3.z = 0;

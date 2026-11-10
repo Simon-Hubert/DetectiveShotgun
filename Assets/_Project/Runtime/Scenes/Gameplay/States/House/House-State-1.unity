@@ -670,6 +670,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3610882217580910498, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
+      propertyPath: _pool
+      value: 
+      objectReference: {fileID: 2098232029}
+    - target: {fileID: 7990210057746630820, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
+      propertyPath: _maxImpact
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8219939717306436932, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
       propertyPath: m_Name
       value: PLAYER
@@ -2268,6 +2276,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: HierarchySequences::HierarchySequences.PlaySequenceAtStart
   _sequence: {fileID: 2083050789}
+--- !u!114 &2098232029 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7990210057746630820, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
+  m_PrefabInstance: {fileID: 425370221}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccf95aa28579a84c28ce2cf7e30225e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ImpactPool
 --- !u!1 &2136929848
 GameObject:
   m_ObjectHideFlags: 0
