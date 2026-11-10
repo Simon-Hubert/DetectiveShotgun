@@ -1,5 +1,115 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7118501911398606671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Test-PlaceHolder/Machines, Mechanism, Mechanical Transition, Building
+    Up, Movement SND113052
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Test-PlaceHolder/Machines, Mechanism, Mechanical Transition, Building
+    Up, Movement SND113052
+  Guid:
+    Data1: 647341796
+    Data2: 1180494535
+    Data3: 2052517774
+    Data4: -1792990670
+  Banks:
+  - {fileID: 5249210330089907727}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3018
+--- !u!114 &-5244696636603557560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Gun/SFO_GunCock_OS
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Gun/SFO_GunCock_OS
+  Guid:
+    Data1: -1932164789
+    Data2: 1292415102
+    Data3: 1149769118
+    Data4: 421194731
+  Banks:
+  - {fileID: 5249210330089907727}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4784333496010733214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Shoot/Props/SFX_ShootWindow_OS
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Shoot/Props/SFX_ShootWindow_OS
+  Guid:
+    Data1: 1066728881
+    Data2: 1165725057
+    Data3: 692809911
+    Data4: -2074116530
+  Banks:
+  - {fileID: 5249210330089907727}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1966515143967157609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Shoot/Props/SFX_ShootHuman_OS
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Shoot/Props/SFX_ShootHuman_OS
+  Guid:
+    Data1: 375722591
+    Data2: 1168719625
+    Data3: -2078305609
+    Data4: -1653022154
+  Banks:
+  - {fileID: 5249210330089907727}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16,18 +126,39 @@ MonoBehaviour:
   - {fileID: 423755967197646914}
   - {fileID: 5249210330089907727}
   EditorEvents:
-  - {fileID: 5891652272392277784}
+  - {fileID: -5244696636603557560}
+  - {fileID: -1966515143967157609}
+  - {fileID: 7941657841860953162}
+  - {fileID: 6876361765104620388}
+  - {fileID: 4429310614407128686}
+  - {fileID: -4784333496010733214}
+  - {fileID: 5739690231749955476}
+  - {fileID: -7118501911398606671}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5249210330089907727}
   StringsBanks:
   - {fileID: 423755967197646914}
   cacheVersion: 131861
-  cacheTime: 639299223695919030
+  cacheTime: 639299297934704175
   SerializableEventsDict:
-  - key: event:/Machines, Mechanism, Mechanical Transition, Building Up, Movement
-      SND113052
+  - key: event:/Gun/SFO_GunCock_OS
     index: 0
+  - key: event:/Shoot/Props/SFX_ShootHuman_OS
+    index: 1
+  - key: event:/Gun/SFO_GunShoot_OS
+    index: 2
+  - key: event:/Gun/SFO_GunLoad_OS
+    index: 3
+  - key: event:/Props/SceneHouse/SFX_PhoneRing_LP
+    index: 4
+  - key: event:/Shoot/Props/SFX_ShootWindow_OS
+    index: 5
+  - key: event:/Shoot/SFX_ShootSurface_OS
+    index: 6
+  - key: event:/Test-PlaceHolder/Machines, Mechanism, Mechanical Transition, Building
+      Up, Movement SND113052
+    index: 7
 --- !u!114 &423755967197646914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43,11 +174,62 @@ MonoBehaviour:
   Path: FMODDetectiveShotgun/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639299223695919030
+  lastModified: 639299297934704175
   FileSizes:
   - Name: Desktop
-    Value: 836
+    Value: 1290
   Exists: 1
+--- !u!114 &3305992349969153943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SFX_ShootSurface_OS/Surface
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: Surface
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 3056652889
+    data2: 144711378
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &4429310614407128686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props/SceneHouse/SFX_PhoneRing_LP
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Props/SceneHouse/SFX_PhoneRing_LP
+  Guid:
+    Data1: 642961838
+    Data2: 1283964946
+    Data3: 1626885025
+    Data4: 1834261482
+  Banks:
+  - {fileID: 5249210330089907727}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &5249210330089907727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,12 +245,12 @@ MonoBehaviour:
   Path: FMODDetectiveShotgun/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639299223695919030
+  lastModified: 639299297934694163
   FileSizes:
   - Name: Desktop
-    Value: 43264
+    Value: 148192
   Exists: 1
---- !u!114 &5891652272392277784
+--- !u!114 &5739690231749955476
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -78,16 +260,42 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Machines, Mechanism, Mechanical Transition, Building Up, Movement
-    SND113052
+  m_Name: event:/Shoot/SFX_ShootSurface_OS
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/Machines, Mechanism, Mechanical Transition, Building Up, Movement
-    SND113052
+  Path: event:/Shoot/SFX_ShootSurface_OS
   Guid:
-    Data1: 647341796
-    Data2: 1180494535
-    Data3: 2052517774
-    Data4: -1792990670
+    Data1: 576698053
+    Data2: 1327816549
+    Data3: 1499304852
+    Data4: 2116608937
+  Banks:
+  - {fileID: 5249210330089907727}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 3305992349969153943}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6876361765104620388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Gun/SFO_GunLoad_OS
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Gun/SFO_GunLoad_OS
+  Guid:
+    Data1: -1425933658
+    Data2: 1196096620
+    Data3: -1970752332
+    Data4: -525239647
   Banks:
   - {fileID: 5249210330089907727}
   IsStream: 0
@@ -96,4 +304,31 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3018
+  Length: 0
+--- !u!114 &7941657841860953162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Gun/SFO_GunShoot_OS
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Gun/SFO_GunShoot_OS
+  Guid:
+    Data1: 802799782
+    Data2: 1246776622
+    Data3: -639797326
+    Data4: 971370201
+  Banks:
+  - {fileID: 5249210330089907727}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
