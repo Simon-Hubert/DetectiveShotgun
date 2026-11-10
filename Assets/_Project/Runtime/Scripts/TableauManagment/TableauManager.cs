@@ -15,7 +15,7 @@ namespace DShotgun
 
         public static void LoadTableauWithTransition(int buildIndexTableau, int buildIndexState, TransitionSceneData data)
         {
-            _ = SwitchTableau(buildIndexTableau, buildIndexState);
+            _ = SwitchTableauWithTransition(buildIndexTableau, buildIndexState, data);
         }
 
         public static void LoadTableau(int buildIndexTableau, int buildIndexState)
@@ -26,18 +26,22 @@ namespace DShotgun
         private static async Awaitable SwitchTableauWithTransition(int buildIndexTableau, int buildIndexState, TransitionSceneData data)
         {
             IsLoading = true;
-            try
-            {
-                //await transi fade to black
-                //await SceneManager.LoadSceneAsync(buildIndexTableau, LoadSceneMode.Single);
-                //Mettre les bonnes Infos
-                //await transi fade to white
-                
-                //await fini l'affichage
-                //await transi fade to black
+            try {
+                await OverlaySingleton.instance.FadeToBlackTransitionAsync(2);
                 await SceneManager.LoadSceneAsync(buildIndexTableau, LoadSceneMode.Single);
                 await SceneManager.LoadSceneAsync(buildIndexState, LoadSceneMode.Additive);
-                //await transi fade to white
+                TransitionSingleton.SetImage(data.Background);
+                TransitionSingleton.Show();
+                
+                await OverlaySingleton.instance.FadeInTransitionAsync(2);
+
+                await TransitionSingleton.ShowTextAsync("Hello, I'm your Neighbor");
+                await Awaitable.WaitForSecondsAsync(2);
+                
+                await OverlaySingleton.instance.FadeToBlackTransitionAsync(2);
+                TransitionSingleton.Hide();
+                
+                await OverlaySingleton.instance.FadeInTransitionAsync(2);
             }
             finally
             {

@@ -23,7 +23,7 @@ namespace DShotgun
         
         protected override async Awaitable OnPlay()
         {
-            TableauManager.LoadTableau(_tableau, _state);
+            TableauManager.LoadTableauWithTransition(_tableau, _state, _data);
         }
     }
 }
