@@ -300,6 +300,17 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &822022277 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 614797124378996059, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
+  m_PrefabInstance: {fileID: 847062401}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be6085492dc5ed940815d8298f9e5bbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogsDisplayer
 --- !u!1001 &847062401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -352,9 +363,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MAIN-CAMERA
       objectReference: {fileID: 0}
-    - target: {fileID: 4320592394887338242, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
-      propertyPath: m_RaycastTarget
+    - target: {fileID: 7898930288695808628, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7898930288695808628, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ActionTextBox
       objectReference: {fileID: 0}
     - target: {fileID: 8500823768316584892, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
       propertyPath: _playerInventory
@@ -363,7 +378,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7378929400223318253, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1652838807}
   m_SourcePrefab: {fileID: 100100000, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
 --- !u!1 &864879732
 GameObject:
@@ -790,6 +808,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1190547790}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1652838802 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7378929400223318253, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
+  m_PrefabInstance: {fileID: 847062401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1652838807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652838802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 822022277}
+          m_TargetAssemblyTypeName: DShotgun.Dialogs.DialogsDisplayer, DShotgun.Dialogs
+          m_MethodName: ActionTextBox
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2067647508
 GameObject:
   m_ObjectHideFlags: 0
