@@ -16,6 +16,9 @@ namespace DShotgun
         [SerializeField, MinMaxSlider(50, 300)] private Vector2 _sideForceOffset;
         [SerializeField, MinMaxSlider(0, 100)] private Vector2 _upForceRandomFactor;
         [SerializeField] private float _maxSideForceRandom;
+        [SerializeField] private float _maxAngularSpeed = 30;
+        
+        private float _angularSpeed;
 
         private Vector2 _accel;
         private Vector2 _speed;
@@ -62,6 +65,7 @@ namespace DShotgun
                 _speed.y = Mathf.Clamp(_speed.y, -_maxSpeed, 0f);
             }
             transform.position += (Vector3)_speed * Time.fixedDeltaTime;
+            transform.Rotate(0,0,_angularSpeed*Time.fixedDeltaTime);
         }
 
 
@@ -75,6 +79,7 @@ namespace DShotgun
             float sideForceRandom = Random.Range(-_maxSideForceRandom, _maxSideForceRandom)*(1-Mathf.Abs(p));
             float sideForce = sideForceSet + sideForceRandom;
             _speed = Vector2.up * (_force+randomUpForceFactor)+ Vector2.right * sideForce;
+            _angularSpeed = sideForce;
         }
 
         private void CheckFirstClick()
