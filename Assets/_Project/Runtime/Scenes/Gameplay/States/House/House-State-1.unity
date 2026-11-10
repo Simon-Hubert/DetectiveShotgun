@@ -397,6 +397,7 @@ MonoBehaviour:
   _sideForceOffset: {x: 50, y: 200}
   _upForceRandomFactor: {x: 0, y: 100}
   _maxSideForceRandom: 350
+  _maxAngularSpeed: 4000
   _onFirstClicked:
     m_PersistentCalls:
       m_Calls:
