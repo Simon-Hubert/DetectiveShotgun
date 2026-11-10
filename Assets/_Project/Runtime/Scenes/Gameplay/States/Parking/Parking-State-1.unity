@@ -513,52 +513,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &534144468
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 534144469}
-  - component: {fileID: 534144470}
-  m_Layer: 0
-  m_Name: Activate DIALOGS
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &534144469
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534144468}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2083050790}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &534144470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534144468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06887433ba2fc1247a29057828736437, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.ActivateObject
-  _object: {fileID: 0}
-  _active: 1
 --- !u!1 &578086837
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,6 +1025,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PLAYER
       objectReference: {fileID: 0}
+    - target: {fileID: 8382831752766758780, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
+      propertyPath: _camera
+      value: 
+      objectReference: {fileID: 603681412}
     - target: {fileID: 8836601799099958187, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
       propertyPath: _startingItems.Array.size
       value: 5
@@ -1175,7 +1133,7 @@ GameObject:
   - component: {fileID: 1647394692}
   - component: {fileID: 1647394693}
   m_Layer: 0
-  m_Name: None Speaking
+  m_Name: Detective Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1209,8 +1167,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
+    _characterName: Detective
+    _spriteName: Idle
   <MiddleRef>k__BackingField:
     _characterName: None
     _spriteName: None
@@ -1220,15 +1178,15 @@ MonoBehaviour:
   <UseCustomName>k__BackingField: 0
   <UseCustomDialogProfile>k__BackingField: 0
   <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 0}
-  _left: {fileID: 0}
+  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
   _middle: {fileID: 0}
   _right: {fileID: 0}
   _text:
-    _text: "Jour d'un mois, Lieu d'un endroit, Lieu pr\xE9cis d'un endroit encore
-      plus pr\xE9cis"
+    _text: "Parking de la Dalle, niveau -3. Une rubalise, et un bleu qui la garde.
+      Rien qu\u2019une cartouche ne puisse r\xE9gler."
     _styles: []
-  _name: None
+  _name: Detective
   _moveNextAutomatically: 0
 --- !u!1 &1943936211
 GameObject:
@@ -1412,7 +1370,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2083050788}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a8a3882457b01e438e4a1d24cc811e9, type: 3}
   m_Name: 
@@ -1432,7 +1390,6 @@ Transform:
   m_Children:
   - {fileID: 1647394692}
   - {fileID: 2046266067}
-  - {fileID: 534144469}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2083050791
@@ -1442,7 +1399,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2083050788}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 447ff752794f23443b5c66b22e577850, type: 3}
   m_Name: 
@@ -1456,18 +1413,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 314597584148447447, guid: f64e95f2609198f8796394ea5127e712, type: 3}
-      propertyPath: m_Name
-      value: Sally Speaking
-      objectReference: {fileID: 0}
-    - target: {fileID: 3047337429800210620, guid: f64e95f2609198f8796394ea5127e712, type: 3}
-      propertyPath: m_Name
-      value: Detective Speaking
-      objectReference: {fileID: 0}
-    - target: {fileID: 3944208710347705763, guid: f64e95f2609198f8796394ea5127e712, type: 3}
-      propertyPath: m_Name
-      value: Recrue Speaking
-      objectReference: {fileID: 0}
     - target: {fileID: 5163736768412431243, guid: f64e95f2609198f8796394ea5127e712, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1508,21 +1453,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5252664511694137184, guid: f64e95f2609198f8796394ea5127e712, type: 3}
-      propertyPath: m_Name
-      value: Recrue Speaking
-      objectReference: {fileID: 0}
     - target: {fileID: 6478759496601660990, guid: f64e95f2609198f8796394ea5127e712, type: 3}
       propertyPath: m_Name
       value: INTERACTABLES-TAB1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6958507227928241055, guid: f64e95f2609198f8796394ea5127e712, type: 3}
-      propertyPath: m_Name
-      value: Detective Speaking
-      objectReference: {fileID: 0}
-    - target: {fileID: 7990753849348273148, guid: f64e95f2609198f8796394ea5127e712, type: 3}
-      propertyPath: m_Name
-      value: Detective Speaking
       objectReference: {fileID: 0}
     - target: {fileID: 8270262319912829568, guid: f64e95f2609198f8796394ea5127e712, type: 3}
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2060,6 +1993,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1322998183546254669, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
+      propertyPath: _playerInventory
+      value: 
+      objectReference: {fileID: 1125999896}
     - target: {fileID: 2134402879468906793, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
       propertyPath: _playerInventory
       value: 
