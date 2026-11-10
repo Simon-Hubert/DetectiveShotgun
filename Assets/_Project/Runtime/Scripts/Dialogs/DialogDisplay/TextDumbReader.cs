@@ -20,12 +20,14 @@ namespace DShotgun.Dialogs
         #endregion
             
         private TextMeshProUGUI _textBox;
+        private CancellationTokenSource _internInstructionTokenSource = new CancellationTokenSource();
 
-        private TextInstruction _instruction;
+        private TextInstruction _instruction = new TextInstruction();
         public bool HasAutoPassed { get => _instruction.pass; }
             
         public async Awaitable ComputeTextAsync(string a_text, SOCharacterDialogProfile a_profile, CancellationToken a_cancel) {
             CharacterDialogProfile profileStruct = a_profile.ToStruct;
+            _instruction.Reset();
 
             try {
                 float delay = Time.deltaTime;
@@ -33,7 +35,7 @@ namespace DShotgun.Dialogs
                 StringBuilder a = new StringBuilder(_textBox.text);
 
                 for (int i = 0; i < a_text.Length; i++) {
-                    _instruction = new TextInstruction();
+                    _instruction.ResetLoop();
                     
                     if (a_text[i] == '<') a.Append(TagsTreatment(a_text, ref profileStruct, ref i));
                     else if (string.IsNullOrWhiteSpace(a_text[i].ToString())) a.Append(a_text[i]);
@@ -49,8 +51,14 @@ namespace DShotgun.Dialogs
                         _textBox.text = a.ToString();
                     }
 
-                    if (_instruction.wait > 0.0f) await Awaitable.WaitForSecondsAsync(_instruction.wait, a_cancel);
+                    if (_instruction.wait > 0.0f) {
+                        await Awaitable.WaitForSecondsAsync(_instruction.wait, _instruction.internCancelTokenSource.Token);
+                    }
                     if (_instruction.pass) break;
+                    if (_instruction.instantDisplay && profileStruct.typingSpeed.GetLastValue != 0) {
+                        profileStruct.typingSpeed.ResetValues();
+                        profileStruct.typingSpeed.AddValue(0);
+                    }
                 }
             }
             catch (Exception e) {
@@ -116,12 +124,33 @@ namespace DShotgun.Dialogs
         public TextDumbReader(TextMeshProUGUI a_textBox) {
             _textBox = a_textBox;
         }
+
+        public void InstantDisplayAll() {
+            _instruction.instantDisplay = true;
+            _instruction.internCancelTokenSource.Cancel();
+        }
     }
 
     [Serializable]
     public struct TextInstruction
     {
+        // Loop Reset values
         public bool pass;
         public float wait;
+        
+        // Complete Reset values
+        public bool instantDisplay;
+        public CancellationTokenSource internCancelTokenSource;
+
+        public void ResetLoop() {
+            pass = false;
+            wait = 0;
+        }
+        public void Reset() {
+            ResetLoop();
+            
+            instantDisplay = false;
+            internCancelTokenSource = new CancellationTokenSource();
+        }
     }
 }
