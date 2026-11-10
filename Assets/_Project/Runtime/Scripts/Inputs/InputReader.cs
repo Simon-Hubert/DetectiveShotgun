@@ -13,7 +13,7 @@ public class InputReader : MonoBehaviour
     [SerializeField] InputActionAsset _inputActionAsset;
 
     private InputActionMap _actionMap;
-    private InputAction _point;
+    private static InputAction _point;
     private InputAction _leftClick;
     private InputAction _rightClick;
     private InputAction _scroll;
@@ -21,8 +21,20 @@ public class InputReader : MonoBehaviour
     public event Action OnLeftClickPressed;
     public event Action OnRightClickPressed;
     public event Action<int> OnScrolled;
-    
-    public Vector2 PointerPosition => _point.ReadValue<Vector2>();
+
+    public static Vector2 PointerPosition
+    {
+        get
+        {
+            if (_point == null)
+            {
+                return Vector2.zero;
+            }
+
+            return _point.ReadValue<Vector2>();
+        }
+    }
+
     public bool IsLeftHeld => _leftClick.IsPressed();
     public bool IsRightHeld => _rightClick.IsPressed();
     
@@ -50,9 +62,17 @@ public class InputReader : MonoBehaviour
         OnScrolled?.Invoke(y > 0f ? 1 : -1);
     }
 
-    private void OnRightClickPerformed(InputAction.CallbackContext obj) => OnRightClickPressed?.Invoke();
-    
-    private void OnLeftClickPerformed(InputAction.CallbackContext obj) => OnLeftClickPressed?.Invoke();
+    private void OnRightClickPerformed(InputAction.CallbackContext obj)
+    {
+        if(GameManager.CurrentState != GameState.Playing) return;
+        OnRightClickPressed?.Invoke();
+    }
+
+    private void OnLeftClickPerformed(InputAction.CallbackContext obj)
+    {
+        if(GameManager.CurrentState != GameState.Playing && GameManager.CurrentState != GameState.MiniGame) return;
+        OnLeftClickPressed?.Invoke();
+    }
 
     private void OnDisable()
     {

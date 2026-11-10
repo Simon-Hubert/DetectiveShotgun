@@ -11,7 +11,10 @@ namespace DShotgun
         private void Start()
         {
             _ir = GetComponent<InputReader>();
-            _ir.OnLeftClickPressed += Shoot;
+            if (_ir != null)
+            {
+                _ir.OnLeftClickPressed += Shoot;
+            }
         }
 
         private void OnEnable()
@@ -19,7 +22,7 @@ namespace DShotgun
             if (!_ir) return;
             _ir.OnLeftClickPressed += Shoot;
         }
-        
+
         private void OnDisable()
         {
             if (!_ir) return;
@@ -30,7 +33,7 @@ namespace DShotgun
         {
             Debug.Log("Shooted the gun");
             GameObject go = Instantiate(_shotImpactPrefab);
-            go.transform.position = Camera.main.ScreenToWorldPoint(_ir.PointerPosition);
+            go.transform.position = Camera.main.ScreenToWorldPoint(InputReader.PointerPosition);
             Vector3 vector3 = go.transform.position;
             vector3.z = 0;
             go.transform.position = vector3;

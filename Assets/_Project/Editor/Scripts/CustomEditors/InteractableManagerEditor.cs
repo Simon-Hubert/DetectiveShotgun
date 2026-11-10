@@ -20,6 +20,8 @@ namespace DShotgun.Editor
         private ReorderableList _list;
         private SerializedProperty _aimCases;
         private ReorderableList _aimList;
+        private SerializedProperty _priority;
+        private SerializedProperty _onInteracted;
         private SerializedProperty _onAimed;
 
         private void OnEnable() {
@@ -37,6 +39,8 @@ namespace DShotgun.Editor
                 elementHeightCallback = GetAimElementHeight,
             };
 
+            _priority = serializedObject.FindProperty("_priority");
+            _onInteracted = serializedObject.FindProperty("_onInteracted");
             _onAimed = serializedObject.FindProperty("_onAimed");
         }
 
@@ -81,7 +85,9 @@ namespace DShotgun.Editor
         }
         public override void OnInspectorGUI() {
             serializedObject.Update();
+            EditorGUILayout.PropertyField(_priority);
             _list.DoLayoutList();
+            EditorGUILayout.PropertyField(_onInteracted);
             _aimList.DoLayoutList();
             EditorGUILayout.PropertyField(_onAimed);
             serializedObject.ApplyModifiedProperties();

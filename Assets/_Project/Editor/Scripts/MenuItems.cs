@@ -20,11 +20,18 @@ namespace DShotgun.Editor
             go.AddComponent<BoxCollider2D>();
             go.AddComponent<InteractableManager>();
             GameObject onInteract = new GameObject("OnInteract");
+            onInteract.transform.position = createPos;
             onInteract.transform.SetParent(go.transform);
             onInteract.AddComponent<Sequence>();
             GameObject onAim = new GameObject("OnAim");
+            onAim.transform.position = createPos;
             onAim.transform.SetParent(go.transform);
             onAim.AddComponent<Sequence>();
+            GameObject visuals = new GameObject("Visuals");
+            visuals.transform.position = createPos;
+            visuals.transform.SetParent(go.transform);
+            visuals.AddComponent<SpriteRenderer>();
+            visuals.AddComponent<SpriteSwitcher>();
             Selection.activeObject = go;
             Undo.RegisterCreatedObjectUndo( go, $"created New Interactable" );
             Place( go, menuCommand.context );
