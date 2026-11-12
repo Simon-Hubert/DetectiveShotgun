@@ -130,31 +130,33 @@ namespace DShotgun.Dialogs
         }
         
         public void DisplaySpeaker(CharacterDialogData a_dialogData) {
+            SOCharacterDialogProfile profile = GetProfile(a_dialogData);
+            
             _rightNameText.text = "";
             _leftNameText.text = "";
             
             switch ((CharaPos)a_dialogData.SpeakingCharacterID) { 
                 case CharaPos.RIGHT :
-                    _rightNameSprite.sprite = a_dialogData.DialogProfile.CharaNameSprite;
+                    _rightNameSprite.sprite =profile.CharaNameSprite;
                     _leftNameSprite.sprite = a_dialogData.Left != null ? _blankNameSprite : null;
                     
                     _rightNameSprite.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
                     _leftNameSprite.color = new Color(0.4f, 0.4f, 0.4f, 1.0f);
                     
-                    _rightNameText.text = a_dialogData.DialogProfile.NameDisplayedAsTMP ? a_dialogData.Name : "";
+                    _rightNameText.text =profile.NameDisplayedAsTMP ? a_dialogData.Name : "";
 
                     _leftNameSprite.transform.position = _leftNamePos + _nameSpriteOffset;
                     _rightNameSprite.transform.position = _rightNamePos;
                     break;
                 
                 default :
-                    _leftNameSprite.sprite = a_dialogData.DialogProfile.CharaNameSprite;
+                    _leftNameSprite.sprite =profile.CharaNameSprite;
                     _rightNameSprite.sprite = a_dialogData.Right != null ? _blankNameSprite : null;
 
                     _leftNameSprite.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
                     _rightNameSprite.color = new Color(0.4f, 0.4f, 0.4f, 1.0f);
 
-                    _leftNameText.text = a_dialogData.DialogProfile.NameDisplayedAsTMP ? a_dialogData.Name : "";
+                    _leftNameText.text = profile.NameDisplayedAsTMP ? a_dialogData.Name : "";
                     
                     _rightNameSprite.transform.position = _rightNamePos + _nameSpriteOffset;
                     _leftNameSprite.transform.position = _leftNamePos;
