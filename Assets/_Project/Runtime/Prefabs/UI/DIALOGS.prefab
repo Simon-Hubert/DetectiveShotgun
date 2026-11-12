@@ -279,8 +279,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 99d182a797aa63a4ebb811649e8eb8df, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 8030758928755761091, guid: 3991d55efb9125f4d874dabe1d3b336c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -630,7 +630,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2640996419605326592
 RectTransform:
   m_ObjectHideFlags: 0
@@ -666,7 +666,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2874589587974396667
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1382,8 +1382,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.8971863, y: -12.661}
-  m_SizeDelta: {x: 522.9083, y: 123.72}
+  m_AnchoredPosition: {x: 35.8423, y: -21.2373}
+  m_SizeDelta: {x: 507.8997, y: 140.8727}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6981056010031944792
 CanvasRenderer:
@@ -1479,7 +1479,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 0.0000076293945}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1860,8 +1860,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogsDisplayer
   _displayParent: {fileID: 3475262293581952735}
   _defaultProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _displayState: 0
-  _textBox: {fileID: 0}
+  _displayState: -1
+  _textBox: {fileID: 2787145283054274849}
   _speakersName: {fileID: 9160929377226790323}
   _mainText: {fileID: 376828687830534905}
   _leftCharaRdr: {fileID: 7326724769331344316}
