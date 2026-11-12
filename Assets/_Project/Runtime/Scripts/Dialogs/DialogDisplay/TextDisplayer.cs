@@ -26,8 +26,7 @@ namespace DShotgun.Dialogs
         /// Default Text customization profile
         /// </summary>
         [SerializeField] protected SOCharacterDialogProfile _defaultProfile;
-        protected SOCharacterDialogProfile GetProfile(CharacterDialogData a_dialogData) => a_dialogData.DialogProfile == null ? _defaultProfile : a_dialogData.DialogProfile;
-
+        protected SOCharacterDialogProfile GetProfile(CharacterDialogData a_dialogData) => a_dialogData.DialogProfile == null ? _defaultProfile : a_dialogData.DialogProfile.CompleteDefaultProfile = _defaultProfile;
         /// <summary>
         /// Current status of the displayer
         /// </summary>
