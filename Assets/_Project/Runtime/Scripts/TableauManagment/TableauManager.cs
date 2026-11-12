@@ -36,7 +36,7 @@ namespace DShotgun
                 
                 await OverlaySingleton.instance.FadeInTransitionAsync(2);
 
-                await TransitionSingleton.ShowTextAsync($"{data.Date}\n{data.Heure}\n{data.Lieu}");
+                await TransitionSingleton.ShowTextAsync($"{data.Date}\n{data.Heure}\n{data.Lieu}\n{data.Ville}");
                 await Awaitable.WaitForSecondsAsync(2);
                 
                 await OverlaySingleton.instance.FadeToBlackTransitionAsync(2);
