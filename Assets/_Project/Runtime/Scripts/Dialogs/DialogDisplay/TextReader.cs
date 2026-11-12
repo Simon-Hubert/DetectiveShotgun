@@ -9,6 +9,7 @@ namespace DShotgun.Dialogs
     {
         [SerializeField] private TextMeshProUGUI _textUI;
         [SerializeField] private SOCharacterDialogProfile _dialogProfile;
+        
         private TextDumbReader _dumbReader;
         
         private void Start()

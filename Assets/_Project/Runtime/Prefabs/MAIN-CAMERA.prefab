@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 7854930759163978196}
   - component: {fileID: 6677530776334457868}
   - component: {fileID: 798041190397448554}
+  - component: {fileID: 6844442741577620714}
   m_Layer: 0
   m_Name: MAIN-CAMERA
   m_TagString: MainCamera
@@ -202,6 +203,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioListener
   nonRigidbodyVelocity: 0
   attenuationObject: {fileID: 0}
+--- !u!114 &6844442741577620714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4027087350679835347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56666c5a40171f54783dd416a44f42bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.Physics2DRaycaster
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!1 &6004940362723562062
 GameObject:
   m_ObjectHideFlags: 0
