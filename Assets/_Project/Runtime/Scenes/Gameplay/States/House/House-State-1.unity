@@ -860,6 +860,10 @@ PrefabInstance:
       propertyPath: _camera
       value: 
       objectReference: {fileID: 1257743763}
+    - target: {fileID: 8382831752766758780, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1626,7 +1630,7 @@ GameObject:
   - component: {fileID: 1224276624}
   - component: {fileID: 1224276625}
   m_Layer: 0
-  m_Name: Invoke Event with 3 binds
+  m_Name: Invoke Event with 4 binds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1695,6 +1699,18 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1813317010}
+        m_TargetAssemblyTypeName: DShotgun.AimController, DShotgun
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -2362,6 +2378,17 @@ MonoBehaviour:
     _styles: []
   _name: Commissaire Thompson
   _moveNextAutomatically: 0
+--- !u!114 &1813317010 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8382831752766758780, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
+  m_PrefabInstance: {fileID: 425370221}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74e4c00c0a615e4939289984354997b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.AimController
 --- !u!4 &1819693606 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 351913942047388147, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
