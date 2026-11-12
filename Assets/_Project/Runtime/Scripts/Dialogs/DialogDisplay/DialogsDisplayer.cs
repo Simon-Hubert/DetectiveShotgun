@@ -1,6 +1,7 @@
 using System;
 using System.Threading;
 using NaughtyAttributes;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -53,8 +54,20 @@ namespace DShotgun.Dialogs
         [Header("Textbox")]
         [SerializeField] private Image _dialogContinueIcon;
 
+        [Space(7)]
+        [SerializeField] private Image _leftNameSprite, _rightNameSprite;
+        [SerializeField] private Sprite _blankNameSprite;
+        [SerializeField] private TextMeshProUGUI _leftNameText, _rightNameText;
+        private Vector2 _leftNamePos, _rightNamePos;
+        [SerializeField] private Vector2 _nameSpriteOffset = new Vector2(0, -20.0f);
+
         private bool _skipShotCharacter = false;
-        
+
+        private void Start() {
+            _leftNamePos = _leftNameSprite.transform.position;
+            _rightNamePos = _rightNameSprite.transform.position;
+        }
+
         public override bool ShowCanvas
         {
             get => _displayParent.activeSelf;
@@ -119,8 +132,38 @@ namespace DShotgun.Dialogs
         }
         
         public void DisplaySpeaker(CharacterDialogData a_dialogData) {
-            _speakersName.text = a_dialogData.Name;
-            Debug.Log($"'{name}' : Change Speaker Sprite '{GetCharaImg(CharaPos.LEFT)}' - '{GetCharaImg(CharaPos.MIDDLE)}' - '{GetCharaImg(CharaPos.RIGHT)}'");
+            _rightNameText.text = "";
+            _leftNameText.text = "";
+            
+            switch ((CharaPos)a_dialogData.SpeakingCharacterID) { 
+                case CharaPos.RIGHT :
+                    _rightNameSprite.sprite = a_dialogData.DialogProfile.CharaNameSprite;
+                    _leftNameSprite.sprite = a_dialogData.Left != null ? _blankNameSprite : null;
+                    
+                    _rightNameSprite.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+                    _leftNameSprite.color = new Color(0.4f, 0.4f, 0.4f, 1.0f);
+                    
+                    _speakersName = a_dialogData.DialogProfile.NameDisplayedAsTMP ? _rightNameText : null;
+                    
+                    _leftNameSprite.transform.position = _leftNamePos + _nameSpriteOffset;
+                    _rightNameSprite.transform.position = _rightNamePos;
+                    break;
+                
+                default :
+                    _leftNameSprite.sprite = a_dialogData.DialogProfile.CharaNameSprite;
+                    _rightNameSprite.sprite = a_dialogData.Right != null ? _blankNameSprite : null;
+
+                    _leftNameSprite.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+                    _rightNameSprite.color = new Color(0.4f, 0.4f, 0.4f, 1.0f);
+
+                    _speakersName = a_dialogData.DialogProfile.NameDisplayedAsTMP ? _leftNameText : null;
+                    
+                    _rightNameSprite.transform.position = _rightNamePos + _nameSpriteOffset;
+                    _leftNameSprite.transform.position = _leftNamePos;
+                    break;
+            }
+            
+            if (_speakersName != null) _speakersName.text = a_dialogData.Name;
             
             _ = TransitionSpeakerSprite(GetCharaImg(CharaPos.LEFT), a_dialogData.Left, a_dialogData.SpeakingCharacterID == (int)CharaPos.LEFT ? true : false);
             _ = TransitionSpeakerSprite(GetCharaImg(CharaPos.MIDDLE), a_dialogData.Middle, a_dialogData.SpeakingCharacterID == (int)CharaPos.MIDDLE ? true : false);
