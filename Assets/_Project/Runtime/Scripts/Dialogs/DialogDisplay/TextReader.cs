@@ -17,6 +17,11 @@ namespace DShotgun.Dialogs
             _dumbReader = new TextDumbReader(_textUI);
         }
 
+        public override void Clear()
+        {
+            _textUI.text = "";
+        }
+
         public override async Awaitable ComputeTextAsync(string text, CancellationToken cancel)
         {
             await _dumbReader.ComputeTextAsync(text, _dialogProfile, cancel);

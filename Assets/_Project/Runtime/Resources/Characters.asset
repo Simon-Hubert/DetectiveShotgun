@@ -13,127 +13,184 @@ MonoBehaviour:
   m_Name: Characters
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CharactersDatabase
   _characters:
-  - <Name>k__BackingField: Aelys
+  - <Id>k__BackingField: 1
+    <Name>k__BackingField: Aelys
     <DialogProfile>k__BackingField: {fileID: 11400000, guid: 007f0aeef1be8e64e93b32559c768301, type: 2}
     _spriteList:
-    - <Name>k__BackingField: Idle
+    - <Id>k__BackingField: 1
+      <Name>k__BackingField: Idle
       <Sprite>k__BackingField: {fileID: -6770372879056521866, guid: f39c0735c139a48419b8e3494eed5fd1, type: 3}
-    - <Name>k__BackingField: Happy
+    - <Id>k__BackingField: 2
+      <Name>k__BackingField: Happy
       <Sprite>k__BackingField: {fileID: 0}
-    - <Name>k__BackingField: Sad
+    - <Id>k__BackingField: 3
+      <Name>k__BackingField: Sad
       <Sprite>k__BackingField: {fileID: 0}
-  - <Name>k__BackingField: Vacances
+  - <Id>k__BackingField: 2
+    <Name>k__BackingField: Vacances
     <DialogProfile>k__BackingField: {fileID: 0}
     _spriteList:
-    - <Name>k__BackingField: Idle
+    - <Id>k__BackingField: 4
+      <Name>k__BackingField: Idle
       <Sprite>k__BackingField: {fileID: 7760134029682071248, guid: a6eba96c7277cc946a2c33e8ca325333, type: 3}
-    - <Name>k__BackingField: Balth
+    - <Id>k__BackingField: 5
+      <Name>k__BackingField: Balth
       <Sprite>k__BackingField: {fileID: 0}
-    - <Name>k__BackingField: Ferdi
+    - <Id>k__BackingField: 6
+      <Name>k__BackingField: Ferdi
       <Sprite>k__BackingField: {fileID: 0}
-  - <Name>k__BackingField: "D\xE9tective Shotgun"
+  - <Id>k__BackingField: 3
+    <Name>k__BackingField: "D\xE9tective Shotgun"
     <DialogProfile>k__BackingField: {fileID: 11400000, guid: 698687acc1768674ebd2dad705082048, type: 2}
     _spriteList:
-    - <Name>k__BackingField: Idle
+    - <Id>k__BackingField: 7
+      <Name>k__BackingField: Idle
       <Sprite>k__BackingField: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-    - <Name>k__BackingField: Ferdi
+    - <Id>k__BackingField: 8
+      <Name>k__BackingField: Ferdi
       <Sprite>k__BackingField: {fileID: 0}
-  - <Name>k__BackingField: Shotgun
+  - <Id>k__BackingField: 4
+    <Name>k__BackingField: Shotgun
     <DialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
     _spriteList:
-    - <Name>k__BackingField: Idle
+    - <Id>k__BackingField: 9
+      <Name>k__BackingField: Idle
       <Sprite>k__BackingField: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
-    - <Name>k__BackingField: Balth
+    - <Id>k__BackingField: 10
+      <Name>k__BackingField: Balth
       <Sprite>k__BackingField: {fileID: 0}
-    - <Name>k__BackingField: Ferdi
+    - <Id>k__BackingField: 11
+      <Name>k__BackingField: Ferdi
       <Sprite>k__BackingField: {fileID: 0}
-  - <Name>k__BackingField: Recrue Rodolphe
+  - <Id>k__BackingField: 5
+    <Name>k__BackingField: Recrue Rodolphe
     <DialogProfile>k__BackingField: {fileID: 11400000, guid: 02418f7430f8b7441b621008c82c3a7a, type: 2}
     _spriteList:
-    - <Name>k__BackingField: Idle
+    - <Id>k__BackingField: 12
+      <Name>k__BackingField: Idle
       <Sprite>k__BackingField: {fileID: 21300000, guid: fc281687a8d52e14584e40b1ff704d1d, type: 3}
-    - <Name>k__BackingField: Balth
+    - <Id>k__BackingField: 13
+      <Name>k__BackingField: Balth
       <Sprite>k__BackingField: {fileID: 0}
-    - <Name>k__BackingField: Ferdi
+    - <Id>k__BackingField: 14
+      <Name>k__BackingField: Ferdi
       <Sprite>k__BackingField: {fileID: 0}
-  - <Name>k__BackingField: "L\xE9giste L\xE9onie"
+  - <Id>k__BackingField: 6
+    <Name>k__BackingField: "L\xE9giste L\xE9onie"
     <DialogProfile>k__BackingField: {fileID: 11400000, guid: d7ae995116de06643b2a12a41b8ac6b6, type: 2}
     _spriteList:
-    - <Name>k__BackingField: Idle
+    - <Id>k__BackingField: 15
+      <Name>k__BackingField: Idle
       <Sprite>k__BackingField: {fileID: 21300000, guid: 3db734608d0f9b451bcde1480810f11a, type: 3}
-    - <Name>k__BackingField: Balth
+    - <Id>k__BackingField: 16
+      <Name>k__BackingField: Balth
       <Sprite>k__BackingField: {fileID: 0}
-    - <Name>k__BackingField: Ferdi
+    - <Id>k__BackingField: 17
+      <Name>k__BackingField: Ferdi
       <Sprite>k__BackingField: {fileID: 0}
-  - <Name>k__BackingField: Sniper Sally
+  - <Id>k__BackingField: 7
+    <Name>k__BackingField: Sniper Sally
     <DialogProfile>k__BackingField: {fileID: 11400000, guid: 811287b29e13a8c4192191a56c17d452, type: 2}
     _spriteList:
-    - <Name>k__BackingField: Idle
+    - <Id>k__BackingField: 18
+      <Name>k__BackingField: Idle
       <Sprite>k__BackingField: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
-    - <Name>k__BackingField: Balth
+    - <Id>k__BackingField: 19
+      <Name>k__BackingField: Balth
       <Sprite>k__BackingField: {fileID: 0}
-    - <Name>k__BackingField: Ferdi
+    - <Id>k__BackingField: 20
+      <Name>k__BackingField: Ferdi
       <Sprite>k__BackingField: {fileID: 0}
-  - <Name>k__BackingField: Cadavre
+  - <Id>k__BackingField: 8
+    <Name>k__BackingField: Cadavre
     <DialogProfile>k__BackingField: {fileID: 11400000, guid: 106a251b99c17bc4cab9b01d16805cc6, type: 2}
     _spriteList:
-    - <Name>k__BackingField: Idle
+    - <Id>k__BackingField: 21
+      <Name>k__BackingField: Idle
       <Sprite>k__BackingField: {fileID: 2633962258975872332, guid: 7a98daeae56781241a31d527dc05a666, type: 3}
-    - <Name>k__BackingField: Balth
+    - <Id>k__BackingField: 22
+      <Name>k__BackingField: Balth
       <Sprite>k__BackingField: {fileID: 0}
-    - <Name>k__BackingField: Ferdi
+    - <Id>k__BackingField: 23
+      <Name>k__BackingField: Ferdi
       <Sprite>k__BackingField: {fileID: 0}
-  - <Name>k__BackingField: Poisson
+  - <Id>k__BackingField: 9
+    <Name>k__BackingField: Poisson
     <DialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
     _spriteList:
-    - <Name>k__BackingField: Idle
+    - <Id>k__BackingField: 24
+      <Name>k__BackingField: Idle
       <Sprite>k__BackingField: {fileID: 6731459215516431972, guid: 99c0106f148b5044f98c36ec15f1bff9, type: 3}
-    - <Name>k__BackingField: Balth
+    - <Id>k__BackingField: 25
+      <Name>k__BackingField: Balth
       <Sprite>k__BackingField: {fileID: 0}
-    - <Name>k__BackingField: Ferdi
+    - <Id>k__BackingField: 26
+      <Name>k__BackingField: Ferdi
       <Sprite>k__BackingField: {fileID: 0}
-  - <Name>k__BackingField: Lucie
+  - <Id>k__BackingField: 10
+    <Name>k__BackingField: Lucie
     <DialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
     _spriteList:
-    - <Name>k__BackingField: Idle
+    - <Id>k__BackingField: 27
+      <Name>k__BackingField: Idle
       <Sprite>k__BackingField: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-    - <Name>k__BackingField: Balth
+    - <Id>k__BackingField: 28
+      <Name>k__BackingField: Balth
       <Sprite>k__BackingField: {fileID: 0}
-    - <Name>k__BackingField: Ferdi
+    - <Id>k__BackingField: 29
+      <Name>k__BackingField: Ferdi
       <Sprite>k__BackingField: {fileID: 0}
-  - <Name>k__BackingField: "Pr\xE9sentateur Patrice"
+  - <Id>k__BackingField: 11
+    <Name>k__BackingField: "Pr\xE9sentateur Patrice"
     <DialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
     _spriteList:
-    - <Name>k__BackingField: Idle
+    - <Id>k__BackingField: 30
+      <Name>k__BackingField: Idle
       <Sprite>k__BackingField: {fileID: 9163280600616525432, guid: 9bae2f6ec5462c64b888057f48dbd833, type: 3}
-    - <Name>k__BackingField: Balth
+    - <Id>k__BackingField: 31
+      <Name>k__BackingField: Balth
       <Sprite>k__BackingField: {fileID: 0}
-    - <Name>k__BackingField: Ferdi
+    - <Id>k__BackingField: 32
+      <Name>k__BackingField: Ferdi
       <Sprite>k__BackingField: {fileID: 0}
-  - <Name>k__BackingField: Valentin Damas
+  - <Id>k__BackingField: 12
+    <Name>k__BackingField: Valentin Damas
     <DialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
     _spriteList:
-    - <Name>k__BackingField: Idle
+    - <Id>k__BackingField: 33
+      <Name>k__BackingField: Idle
       <Sprite>k__BackingField: {fileID: -3593096494950662801, guid: 060bdc81261a8584489f0054ff01d863, type: 3}
-    - <Name>k__BackingField: Balth
+    - <Id>k__BackingField: 34
+      <Name>k__BackingField: Balth
       <Sprite>k__BackingField: {fileID: 0}
-    - <Name>k__BackingField: Ferdi
+    - <Id>k__BackingField: 35
+      <Name>k__BackingField: Ferdi
       <Sprite>k__BackingField: {fileID: 0}
-  - <Name>k__BackingField: Commissaire Thompson
+  - <Id>k__BackingField: 13
+    <Name>k__BackingField: Commissaire Thompson
     <DialogProfile>k__BackingField: {fileID: 11400000, guid: b958293a76609cc4daee4c9aba98d8dd, type: 2}
     _spriteList:
-    - <Name>k__BackingField: Idle
+    - <Id>k__BackingField: 36
+      <Name>k__BackingField: Idle
       <Sprite>k__BackingField: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
-    - <Name>k__BackingField: Balth
+    - <Id>k__BackingField: 37
+      <Name>k__BackingField: Balth
       <Sprite>k__BackingField: {fileID: 0}
-    - <Name>k__BackingField: Ferdi
+    - <Id>k__BackingField: 38
+      <Name>k__BackingField: Ferdi
       <Sprite>k__BackingField: {fileID: 0}
-  - <Name>k__BackingField: Barman Bodolphe
+  - <Id>k__BackingField: 14
+    <Name>k__BackingField: Barman Bodolphe
     <DialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
     _spriteList:
-    - <Name>k__BackingField: Idle
+    - <Id>k__BackingField: 39
+      <Name>k__BackingField: Idle
       <Sprite>k__BackingField: {fileID: -3497540652011493120, guid: 56b74ccd779d364419582e2ba34c798e, type: 3}
-    - <Name>k__BackingField: Balth
+    - <Id>k__BackingField: 40
+      <Name>k__BackingField: Balth
       <Sprite>k__BackingField: {fileID: 0}
-    - <Name>k__BackingField: Ferdi
+    - <Id>k__BackingField: 41
+      <Name>k__BackingField: Ferdi
       <Sprite>k__BackingField: {fileID: 0}
+  _nextId: 15
+  _nextSpriteId: 42
