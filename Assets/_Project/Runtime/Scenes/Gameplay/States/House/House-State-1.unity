@@ -775,6 +775,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6608258961006754970, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
+      propertyPath: _camera
+      value: 
+      objectReference: {fileID: 1257743768}
     - target: {fileID: 8219939717306436932, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
       propertyPath: m_Name
       value: PLAYER
@@ -1827,6 +1831,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c88f5cead0c0b2a4eb05b5900433f8d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.PixelPerfectCamera
+--- !u!20 &1257743768 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 8061311382671375327, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
+  m_PrefabInstance: {fileID: 687592835}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1275067103 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1904918300718249547, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
@@ -2753,6 +2762,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 351913942047388147, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.72
+      objectReference: {fileID: 0}
     - target: {fileID: 1443797836910971329, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.68
@@ -2873,6 +2886,10 @@ PrefabInstance:
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 975937701}
+    - target: {fileID: 5666349069394809631, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6857617630851091116, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       propertyPath: m_Size.x
       value: 9.07
@@ -2892,6 +2909,10 @@ PrefabInstance:
     - target: {fileID: 6857617630851091116, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7094749098533478056, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.89
       objectReference: {fileID: 0}
     - target: {fileID: 7370399497104013497, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       propertyPath: _text._text
