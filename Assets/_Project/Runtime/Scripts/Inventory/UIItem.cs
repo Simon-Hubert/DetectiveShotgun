@@ -16,6 +16,9 @@ namespace DShotgun
         private int _id;
         private bool _isLocked;
         private Vector3 _startDragPos;
+
+        public static event Action OnUIItemBeginDrag;
+        public static event Action OnUIItemEndDrag;
         
         public RectTransform RectTransform => _rectTransform;
         public event Action<int> OnDropInShotgun;
@@ -65,12 +68,14 @@ namespace DShotgun
             _canvasGroup.alpha = 0.5f;
             _canvasGroup.blocksRaycasts = false;
             _startDragPos = _rectTransform.anchoredPosition;
+            OnUIItemBeginDrag?.Invoke();
         }
 
         public void OnEndDrag(PointerEventData eventData)
         {
             _canvasGroup.alpha = 1f;
             _canvasGroup.blocksRaycasts = true;
+            OnUIItemEndDrag?.Invoke();
 
             if (_isLocked) return;
             _rectTransform.anchoredPosition = _startDragPos;

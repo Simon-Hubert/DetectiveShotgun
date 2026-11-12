@@ -314,6 +314,23 @@ MonoBehaviour:
     _styles: []
   _name: Commissaire Thompson
   _moveNextAutomatically: 0
+--- !u!1 &304308874 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1763222606715319520, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
+  m_PrefabInstance: {fileID: 687592835}
+  m_PrefabAsset: {fileID: 0}
+--- !u!225 &304308879
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304308874}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &306350817 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8432430916201754468, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
@@ -869,6 +886,71 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a8a3882457b01e438e4a1d24cc811e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: HierarchySequences::HierarchySequences.Sequence
+--- !u!1 &641016091
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 641016092}
+  - component: {fileID: 641016093}
+  m_Layer: 0
+  m_Name: Commissaire Thompson Speaking
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &641016092
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641016091}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2068244362}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &641016093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641016091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  <LeftRef>k__BackingField:
+    _characterName: None
+    _spriteName: None
+  <MiddleRef>k__BackingField:
+    _characterName: None
+    _spriteName: None
+  <RightRef>k__BackingField:
+    _characterName: None
+    _spriteName: None
+  <UseCustomName>k__BackingField: 1
+  <UseCustomDialogProfile>k__BackingField: 0
+  <SpeakingCharacterID>k__BackingField: -1
+  <CharacterDialogProfile>k__BackingField: {fileID: 0}
+  _left: {fileID: 0}
+  _middle: {fileID: 0}
+  _right: {fileID: 0}
+  _text:
+    _text: C'EST MOI COMMISSAIRE THOMPSON !!!
+    _styles: []
+  _name: Commissaire Thompson
+  _moveNextAutomatically: 0
 --- !u!1 &654750996 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4027087350679835347, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
@@ -1044,10 +1126,21 @@ PrefabInstance:
       propertyPath: _playerInventory
       value: 
       objectReference: {fileID: 975937701}
+    - target: {fileID: 8672331904141879682, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672331904141879682, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1763222606715319520, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 304308879}
   m_SourcePrefab: {fileID: 100100000, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
 --- !u!1 &731407884
 GameObject:
@@ -1312,65 +1405,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: HierarchySequences::HierarchySequences.ParallelSequence
   _duration: 2.75
---- !u!1 &934601345
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 934601346}
-  - component: {fileID: 934601347}
-  m_Layer: 0
-  m_Name: Invoke Event with 1 binds
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &934601346
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 934601345}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2083050790}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &934601347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 934601345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69bcb5ae2dda1d84585899ae21a338d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.UnityEventSequence
-  _event:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 382021773}
-        m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
-        m_MethodName: Execute
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &975937701 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8836601799099958187, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
@@ -2357,8 +2391,7 @@ MonoBehaviour:
   _name: Detective Shotgun
   _text:
     _text: "La justice n\u2019a donc m\xEAme pas le droit de se siffler quelques
-      bouteilles de scotch tranquillement de temps en temps...<wait=0,5> Ce monde
-      est d\xE9finitivement devenu fou..."
+      bouteilles de whisky tranquillement de temps en temps..."
     _styles: []
   _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
 --- !u!1 &1904947866
@@ -2598,6 +2631,7 @@ Transform:
   m_Children:
   - {fileID: 798784208}
   - {fileID: 1807095960}
+  - {fileID: 641016092}
   - {fileID: 1783289441}
   - {fileID: 1300856843}
   - {fileID: 1854661496}
@@ -2648,8 +2682,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 934601346}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2083050791
@@ -2760,6 +2793,10 @@ PrefabInstance:
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SwitchTo
       objectReference: {fileID: 0}
+    - target: {fileID: 3018930214797527413, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: _text._text
+      value: "Rien de mieux pour noyer les journ\xE9es de merde."
+      objectReference: {fileID: 0}
     - target: {fileID: 3610218969600040459, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       propertyPath: m_fontColor.b
       value: 1
@@ -2856,6 +2893,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7370399497104013497, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: _text._text
+      value: "Oh c\u2019est canon !"
+      objectReference: {fileID: 0}
     - target: {fileID: 7680937904036636248, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       propertyPath: m_Name
       value: INTERACTABLES
@@ -2887,7 +2928,9 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 672507355117521415, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
     - {fileID: 2180303469512643276, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1882110437979061167, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+    - {fileID: 8127914011715616238, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7061268942554603136, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       insertIndex: 0
