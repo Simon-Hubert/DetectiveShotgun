@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using HierarchySequences;
 using UnityEngine;
 using UnityEngine.Events;
@@ -12,8 +13,14 @@ namespace DShotgun
         [SerializeField] private UnityEvent _onCountReached;
         private int _count = 0;
         private bool _reached = false;
-        public void Trigger()
+        private List<int> _ids = new List<int>();
+        public void Trigger(int id = 0)
         {
+            if (id != 0)
+            {
+                if(_ids.Contains(id)) return;
+                _ids.Add(id);
+            }
             if(_sequences.Length > 0)
             {
                 _sequences[_count].Execute();
