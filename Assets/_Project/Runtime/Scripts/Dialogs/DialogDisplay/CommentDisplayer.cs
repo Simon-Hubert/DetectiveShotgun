@@ -34,7 +34,7 @@ namespace DShotgun.Dialogs
                 
                 for (_index = 0; _index < _listOfTextID.Count; _index++) {
                     a_dialogData = _listOfTextID[_index].dialogData;
-                    _speakersName.text = a_dialogData.Name;
+                    _speakersName.text = "Détective Shotgun";
                 
                     _displayState = TextDisplayState.Writing;
                     await _dumbReader.ComputeTextAsync(a_dialogData.Text, GetProfile(a_dialogData), a_cancel);

@@ -170,8 +170,8 @@ MonoBehaviour:
       Data2: 1180494535
       Data3: 2052517774
       Data4: -1792990670
-    Path: event:/Machines, Mechanism, Mechanical Transition, Building Up, Movement
-      SND113052
+    Path: event:/Test-PlaceHolder/Machines, Mechanism, Mechanical Transition, Building
+      Up, Movement SND113052
   Event: 
   EventPlayTrigger: 0
   EventStopTrigger: 0
@@ -457,7 +457,7 @@ GameObject:
   - component: {fileID: 575469224}
   - component: {fileID: 575469225}
   m_Layer: 0
-  m_Name: sousobjet (2)
+  m_Name: ' Speaking'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -682,7 +682,7 @@ GameObject:
   - component: {fileID: 1417347561}
   - component: {fileID: 1417347562}
   m_Layer: 0
-  m_Name: sousobjet
+  m_Name: None Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -796,7 +796,7 @@ GameObject:
   - component: {fileID: 1689123238}
   - component: {fileID: 1689123239}
   m_Layer: 0
-  m_Name: sousobjet (1)
+  m_Name: None Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

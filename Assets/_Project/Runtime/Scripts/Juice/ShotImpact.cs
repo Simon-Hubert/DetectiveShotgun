@@ -34,7 +34,7 @@ namespace DShotgun
 
         private void Shoot()
         {
-            _shootEmitter.Play();
+            _shootEmitter?.Play();
             
             GameObject go = _pool.GetShotImpact();
             go.transform.position = Camera.main.ScreenToWorldPoint(InputReader.PointerPosition);
@@ -42,7 +42,7 @@ namespace DShotgun
             vector3.z = 0;
             go.transform.position = vector3;
 
-            _soundOnSurface.CallSound(Camera.main.ScreenToWorldPoint(InputReader.PointerPosition));
+            _soundOnSurface?.CallSound(Camera.main.ScreenToWorldPoint(InputReader.PointerPosition));
         }
     }
 }

@@ -37,7 +37,10 @@ namespace DShotgun
 
         private void Update()
         {
-            if (!IsControllingCamera) return;
+            if (!IsControllingCamera) {
+                _camera.transform.position = new Vector3(_origin.x, _origin.y, -10);
+                return;
+            }
             float x = Mouse.current.position.ReadValue().x / 1920;
             float y = Mouse.current.position.ReadValue().y / 1080;
             Debug.Log(_origin);
@@ -115,6 +118,8 @@ namespace DShotgun
                     _currentPPU = Mathf.FloorToInt(Mathf.Lerp(currentPPU, zoomedPPU, p));
                     _camera.assetsPPU = _currentPPU;
                 }
+
+                _camera.assetsPPU = zoomedPPU;
             }
             catch (Exception e) {
                 //Ignored
@@ -133,6 +138,8 @@ namespace DShotgun
                     _currentPPU = Mathf.FloorToInt(Mathf.Lerp(currentPPU, defaultPPU, p));
                     _camera.assetsPPU = _currentPPU;
                 }
+
+                _camera.assetsPPU = defaultPPU;
             }
             catch (Exception e) {
                 //Ignored
