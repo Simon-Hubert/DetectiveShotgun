@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f58764cb435beee4da51f68d75b169c5, type: 3}
+  m_Name: SO_DialogProfile_Detective
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.SOCharacterDialogProfile
+  _textBoxBackground: {fileID: 21300000, guid: b7f1b5151296f3a4dbf2f621648b98b6, type: 3}
+  _nameDisplayedAsTMP: 0
+  _charaNameSprite: {fileID: 21300000, guid: 19ea9ca8c2128ec4b911a4423dedc7c4, type: 3}
+  _typingProfile: 0
+  _typingSpeed: 40
+  _defasultTypingSound: {fileID: 0}
+  _soundPitch: 1
+  _hasPersonalisedColor: 1
+  _defaultTextColor: {r: 0, g: 0, b: 0, a: 1}
+  _defaultFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  _hasFontStyle: 1
+  _fontStyle: 0
+  _hasPersonalisedSpacing: 1
+  _textSpacing:
+    character: 0
+    word: 0
+    line: 0
+    paragraph: 0

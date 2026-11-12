@@ -30,10 +30,24 @@ namespace DShotgun.Dialogs
             _instruction.Reset();
 
             try {
+                #region Init profile & TMP
                 float delay = Time.deltaTime;
                 _textBox.text = "";
                 StringBuilder a = new StringBuilder(_textBox.text);
-
+                
+                _textBox.color = profileStruct.DefaultProfile.DefaultTextColor(_textBox.color);
+                _textBox.font = profileStruct.DefaultProfile.DefaultFont;
+                _textBox.fontStyle = profileStruct.DefaultProfile.DefaultFontStyle(_textBox.fontStyle);
+                
+                TextSpacing spacing = new TextSpacing();
+                spacing = profileStruct.DefaultProfile.DefaultSpacing(spacing);
+                _textBox.characterSpacing = spacing.character;
+                _textBox.wordSpacing = spacing.word;
+                _textBox.lineSpacing = spacing.line;
+                _textBox.lineSpacing = spacing.paragraph;
+                #endregion
+                
+                // Text Reading Loop
                 for (int i = 0; i < a_text.Length; i++) {
                     _instruction.ResetLoop();
                     
