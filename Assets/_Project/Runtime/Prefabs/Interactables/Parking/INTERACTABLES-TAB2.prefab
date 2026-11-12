@@ -1215,7 +1215,7 @@ GameObject:
   - component: {fileID: 7845466762022157213}
   - component: {fileID: 4706316553649970686}
   m_Layer: 0
-  m_Name: Invoke Event with 1 binds
+  m_Name: Invoke Event with 2 binds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1258,6 +1258,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 6f7e31ba21a6efe409a556c0f8baa30d, type: 2}
           m_ObjectArgumentAssemblyTypeName: DShotgun.ItemData, DShotgun
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5599038063306959853}
+        m_TargetAssemblyTypeName: DShotgun.SpriteSwitcher, DShotgun
+        m_MethodName: SwitchTo
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: -4437922891788029898, guid: cbc99bc4a271c534a99260c4707095bf, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1618,7 +1630,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.4451456, y: 0.0000009536743}
+  m_Offset: {x: 1.0439563, y: 0.0000009536743}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1628,7 +1640,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 17.576372, y: 11.259544}
+  m_Size: {x: 11.966466, y: 11.259544}
   m_EdgeRadius: 0
 --- !u!114 &1143506390167049979
 MonoBehaviour:
@@ -4768,6 +4780,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -6196251675710892429, guid: d3ec470a528689547977fb5d847f69e6, type: 3}
+    - target: {fileID: 4433494949971468211, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4795944890235906396, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
       propertyPath: m_Size.x
       value: 1.35
@@ -5026,6 +5042,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2957156480883875936, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
   m_PrefabInstance: {fileID: 889592354290260915}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5599038063306959853 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4750084830234062942, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
+  m_PrefabInstance: {fileID: 889592354290260915}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d2895122bcfbdf6aa81ac559e2c0e2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.SpriteSwitcher
 --- !u!4 &7536953025299154085 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7260037140533010198, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
@@ -5320,11 +5347,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 340283167603968103, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.38
+      value: 18.52
       objectReference: {fileID: 0}
     - target: {fileID: 340283167603968103, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.19
+      value: 0.33
       objectReference: {fileID: 0}
     - target: {fileID: 340283167603968103, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5364,11 +5391,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1823741006331371678, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
       propertyPath: m_Size.y
-      value: 1.64
+      value: 0.5629986
       objectReference: {fileID: 0}
     - target: {fileID: 1823741006331371678, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
       propertyPath: m_Offset.x
-      value: 0.34
+      value: 0.33999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1823741006331371678, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.05475229
       objectReference: {fileID: 0}
     - target: {fileID: 2244819810223527754, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
       propertyPath: _priority
@@ -5442,11 +5473,20 @@ PrefabInstance:
       propertyPath: _interactionCases.Array.data[0]._action.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5870829929902911625, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5870829929902911625, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7170089541920590365, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
       propertyPath: m_Name
       value: Stylet
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2387727015294240384, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6350361332682115061, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
