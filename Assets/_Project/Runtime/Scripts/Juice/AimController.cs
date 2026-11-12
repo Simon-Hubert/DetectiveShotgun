@@ -55,6 +55,7 @@ namespace DShotgun
             controller.OnAimStarted += AimStarted;
             controller.OnAimStopped += AimStopped;
             TransitionSequence.OnCamTargetChanged += SetOrigin;
+            GameManager.OnStateChange += OnGameStateChanged;
         }
 
         private void OnDisable()
@@ -74,11 +75,21 @@ namespace DShotgun
         private void AimStopped()
         {
             if (GameManager.CurrentState != GameState.Playing) return;
+            Enzoom();
+        }
+
+        private void Enzoom()
+        {
             int currentPPU = _currentPPU;
             _cancel?.Cancel();
             _cancel = new CancellationTokenSource();
             _ = AimStopped(currentPPU,
                 CancellationTokenSource.CreateLinkedTokenSource(_cancel.Token, destroyCancellationToken).Token);
+        }
+        
+        private void OnGameStateChanged(GameState newGameState)
+        {
+            if (newGameState == GameState.Dialogue || newGameState == GameState.Paused) Enzoom();
         }
 
         private void AimStarted()
