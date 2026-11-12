@@ -78,7 +78,15 @@ public struct CameraConfiguration
         Gizmos.DrawSphere(Pivot, 0.25f);
         Gizmos.DrawLine(Pivot, GetPosition());
         Gizmos.matrix = Matrix4x4.TRS(GetPosition(), GetRotation(), Vector3.one);
-        Gizmos.DrawFrustum(Vector3.zero, Fov, 10f, 0.8f, Camera.main.aspect);
+        if (Camera.main != null)
+        {
+            //Gizmos.DrawFrustum(Vector3.zero, Fov, 10f, 0.8f, Camera.main.aspect);
+            float spread = Camera.main.farClipPlane - Camera.main.nearClipPlane;
+            float center = (Camera.main.farClipPlane + Camera.main.nearClipPlane) * 0.5f;
+            Gizmos.DrawWireCube(new Vector3(0, 0, center),
+                new Vector3(Camera.main.orthographicSize * 2 * Camera.main.aspect, Camera.main.orthographicSize * 2,
+                    spread));
+        }
     }
     
 }

@@ -38,7 +38,7 @@ namespace DShotgun
         private void Update()
         {
             if (!IsControllingCamera) {
-                _camera.transform.position = new Vector3(_origin.x, _origin.y, -10);
+                
                 return;
             }
             float x = Mouse.current.position.ReadValue().x / 1920;
@@ -146,6 +146,7 @@ namespace DShotgun
             }
             finally {
                 IsControllingCamera = false;
+                _camera.transform.position = new Vector3(_origin.x, _origin.y, -10);
             }
         }
     }
