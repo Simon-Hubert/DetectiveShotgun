@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8994739619877894783}
   - component: {fileID: 5701103549180308857}
   m_Layer: 0
-  m_Name: Recrue Speaking
+  m_Name: Recrue Rodolphe Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,27 +44,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <MiddleRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 1
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 0}
-  _middle: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 5
+    _spriteId: 12
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 1
   _text:
     _text: "<whisper>Non non non, d\u2019abord on vise !"
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &71814696670789096
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,27 +106,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Sally
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 1
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 7
+    _spriteId: 18
+  _speakingCharacterID: 2
   _text:
     _text: "J\u2019en doute pas Shotgun, je la sens d\u2019ici ta m\xE9ditation..."
     _styles: []
-  _name: 
   _moveNextAutomatically: 0
+  _useCustomName: 1
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &175968429316050844
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,7 +290,7 @@ GameObject:
   - component: {fileID: 4384931117992184697}
   - component: {fileID: 9018808156567536310}
   m_Layer: 0
-  m_Name: Sally Speaking
+  m_Name: Sniper Sally Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -329,29 +323,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Sally
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 7
+    _spriteId: 18
+  _speakingCharacterID: 2
   _text:
     _text: "Shotgun, tu pourrais faire un effort, tu n\u2019y es pas all\xE9 de main
       morte sur la sc\xE8ne de crime, qu\u2019est-ce qu\u2019il me reste \xE0 photographier
       pour le journal et la t\xE9l\xE9vision ?"
     _styles: []
-  _name: Sally
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &350143508783505503
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,7 +504,7 @@ GameObject:
   - component: {fileID: 6178787230460566030}
   - component: {fileID: 8329986838772230457}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -546,29 +537,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Sally
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 7
+    _spriteId: 18
+  _speakingCharacterID: 0
   _text:
     _text: "Comment \xE7a ? Bien s\xFBr que non attends, on parle bien d\u2019un
       meurtre au couteau. C\u2019est quelque chose de compl\xE8tement <b>INCONCEVABLE</b>
       et tu penses que trouver le coupable sera aussi simple ?"
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &596696454200588475
 GameObject:
   m_ObjectHideFlags: 0
@@ -657,27 +645,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Sally
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 1
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 1
-  <CharacterDialogProfile>k__BackingField: {fileID: 0}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 7
+    _spriteId: 18
+  _speakingCharacterID: 1
   _text:
     _text: "Sally lui remet la [Bo\xEEte d\u2019allumettes]"
     _styles: []
-  _name: 
   _moveNextAutomatically: 0
+  _useCustomName: 1
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &931665434143181742
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,7 +777,7 @@ GameObject:
   - component: {fileID: 8084769420583123025}
   - component: {fileID: 8978445467843145934}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -825,27 +810,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 5
+    _spriteId: 12
+  _speakingCharacterID: 0
   _text:
     _text: "\xC7a s\u2019appelle le charisme, petit."
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &1274216053759084783
 GameObject:
   m_ObjectHideFlags: 0
@@ -890,27 +872,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <MiddleRef>k__BackingField:
-    _characterName: Recrue Rodolphe
-    _spriteName: Idle
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 1
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 0}
-  _middle: {fileID: 21300000, guid: fc281687a8d52e14584e40b1ff704d1d, type: 3}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 5
+    _spriteId: 12
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 1
   _text:
     _text: "D\xE9tective ? Accordez moi votre attention s'il vous pla\xEEt !"
     _styles: []
-  _name: Recrue Rodolphe
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &1289454413661749138
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,7 +950,7 @@ GameObject:
   - component: {fileID: 3419257241948325823}
   - component: {fileID: 3592670600442627813}
   m_Layer: 0
-  m_Name: Recrue Speaking
+  m_Name: Recrue Rodolphe Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1004,28 +983,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 5
+    _spriteId: 12
+  _speakingCharacterID: 2
   _text:
     _text: "D\xE9tective... c\u2019est ma derni\xE8re rubalise. Mais pour vous, ce
       serait un <gold>honneur</gold>."
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &1341764599224474373
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,29 +1195,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Sally
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 1
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 7
+    _spriteId: 18
+  _speakingCharacterID: 0
   _text:
     _text: "D'accord, <wait=0,25>faisons comme \xE7a, <wait=0,25>en attendant, je
       vais rentrer et r\xE9fl\xE9chir \xE0 tout \xE7a. <wait=0,25>J\u2019\xE9tais
       en pleine m\xE9ditation avant de me rendre ici tu sais."
     _styles: []
-  _name: 
   _moveNextAutomatically: 0
+  _useCustomName: 1
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &1786398826747979075
 GameObject:
   m_ObjectHideFlags: 0
@@ -1253,7 +1226,7 @@ GameObject:
   - component: {fileID: 3101838059656767889}
   - component: {fileID: 4369634520701514587}
   m_Layer: 0
-  m_Name: Recrue Speaking
+  m_Name: Recrue Rodolphe Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1286,28 +1259,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 5
+    _spriteId: 12
+  _speakingCharacterID: 2
   _text:
     _text: "<shake>J\u2019ai \xE9t\xE9 manipul\xE9. Mais en m\xEAme temps, pourquoi
       je me plaindrais ? Il est si cool !"
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &1847228814758390335
 GameObject:
   m_ObjectHideFlags: 0
@@ -1319,7 +1289,7 @@ GameObject:
   - component: {fileID: 283993381407766655}
   - component: {fileID: 4978660814584529134}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1352,28 +1322,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 0
   _text:
     _text: "Celle-l\xE0 est encore pleine. <wait=0,25>On boit pendant le service,
       petit ?"
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &1890077894683034839
 GameObject:
   m_ObjectHideFlags: 0
@@ -1385,7 +1352,7 @@ GameObject:
   - component: {fileID: 8126430372311175014}
   - component: {fileID: 8990533701690898871}
   m_Layer: 0
-  m_Name: Recrue Speaking
+  m_Name: Recrue Rodolphe Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1418,27 +1385,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <MiddleRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 1
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 0}
-  _middle: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 5
+    _spriteId: 12
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 1
   _text:
     _text: <huge>TROIS !!!
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &1894573705311181914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,7 +1460,7 @@ GameObject:
   - component: {fileID: 3256324515330333151}
   - component: {fileID: 5403650964822694248}
   m_Layer: 0
-  m_Name: Recrue Speaking
+  m_Name: Recrue Rodolphe Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1529,28 +1493,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 5
+    _spriteId: 12
+  _speakingCharacterID: 2
   _text:
     _text: "\xC0 personne !<wait=0,25> Aux canettes !<wait=0,25> Y\u2019en a trois,
       trouvez-les !"
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &1958901687428136374
 GameObject:
   m_ObjectHideFlags: 0
@@ -1606,7 +1567,7 @@ GameObject:
   - component: {fileID: 2734373298907543393}
   - component: {fileID: 1667311596489063898}
   m_Layer: 0
-  m_Name: Recrue Speaking
+  m_Name: Recrue Rodolphe Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1639,28 +1600,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 5
+    _spriteId: 12
+  _speakingCharacterID: 2
   _text:
     _text: "Attendez... Thompson m\u2019avait dit : <i><whisper>\u201CQuoi qu\u2019il
       arrive, ne laisse pas Shotgun tirer sur la rubalise.\u201D"
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &2006397432760607051
 GameObject:
   m_ObjectHideFlags: 0
@@ -1749,27 +1707,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 1
-  <CharacterDialogProfile>k__BackingField: {fileID: 0}
-  _left: {fileID: 0}
-  _middle: {fileID: 0}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 1
   _text:
     _text: "C\u2019est ma <fear>DERNI\xC8RE</fear> rubalise ! Thompson va me <whisper>tuer..."
     _styles: []
-  _name: None
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &2082985886332462505
 GameObject:
   m_ObjectHideFlags: 0
@@ -1884,7 +1839,7 @@ GameObject:
   - component: {fileID: 1838373081903987588}
   - component: {fileID: 8109882476153592683}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1917,28 +1872,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 0
   _text:
     _text: "Celle-l\xE0 est encore pleine. <wait=0,25>On boit pendant le service,
       petit ?"
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &2228252781004158590
 GameObject:
   m_ObjectHideFlags: 0
@@ -1996,7 +1948,7 @@ GameObject:
   - component: {fileID: 8209732154660330869}
   - component: {fileID: 1052255104834931531}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2029,29 +1981,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Sally
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 7
+    _spriteId: 18
+  _speakingCharacterID: 0
   _text:
     _text: "On parle de quelle copine ? <wait=0,25>La m\xEAme que lors de la derni\xE8re
       affaire que tu as couverte ? C\u2019\xE9tait quoi son nom d\xE9j\xE0...? <wait=0,25>Lola
       ?<wait=0,25> Brigitte ? <wait=0,25>Ah non je confonds avec A\xEFsha je crois."
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &2441762396108565602
 GameObject:
   m_ObjectHideFlags: 0
@@ -2096,27 +2045,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <MiddleRef>k__BackingField:
-    _characterName: Recrue Rodolphe
-    _spriteName: Idle
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 1
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 0}
-  _middle: {fileID: 21300000, guid: fc281687a8d52e14584e40b1ff704d1d, type: 3}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 5
+    _spriteId: 12
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 1
   _text:
     _text: "D\xE9tective ? Accordez moi votre attention s'il vous pla\xEEt !"
     _styles: []
-  _name: Recrue Rodolphe
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &2620410417178170284
 GameObject:
   m_ObjectHideFlags: 0
@@ -2172,7 +2118,7 @@ GameObject:
   - component: {fileID: 4559617689321695599}
   - component: {fileID: 1862576191796636222}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2205,27 +2151,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 5
+    _spriteId: 12
+  _speakingCharacterID: 0
   _text:
     _text: "Hum hum. Je d\xE9clare cette sc\xE8ne de crime... "
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &2680371162480408233
 GameObject:
   m_ObjectHideFlags: 0
@@ -2237,7 +2180,7 @@ GameObject:
   - component: {fileID: 6660923725296014507}
   - component: {fileID: 8900365023916273202}
   m_Layer: 0
-  m_Name: Recrue Speaking
+  m_Name: Recrue Rodolphe Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2270,27 +2213,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <MiddleRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 1
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 0}
-  _middle: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 5
+    _spriteId: 12
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 1
   _text:
     _text: "<whisper>Non non non, d\u2019abord on vise !"
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &2820082419002094774
 GameObject:
   m_ObjectHideFlags: 0
@@ -2302,7 +2242,7 @@ GameObject:
   - component: {fileID: 4990272730714978349}
   - component: {fileID: 6239671489630281289}
   m_Layer: 0
-  m_Name: Recrue Speaking
+  m_Name: Recrue Rodolphe Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2335,27 +2275,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 5
+    _spriteId: 12
+  _speakingCharacterID: 2
   _text:
     _text: "Cette posture...<wait=0,25> j\u2019en ai des <fear>frissons</fear>."
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &2994343504705798398
 GameObject:
   m_ObjectHideFlags: 0
@@ -2411,7 +2348,7 @@ GameObject:
   - component: {fileID: 2196003761205203319}
   - component: {fileID: 5203273714527465450}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2444,28 +2381,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Sally
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 7
+    _spriteId: 18
+  _speakingCharacterID: 0
   _text:
     _text: "Ca me para\xEEt tir\xE9 par les cartouches tout \xE7a. <wait=0,5>J\u2019irais
       voir sa boutique demain et me faire mon propre opinion."
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &3048796066098361296
 GameObject:
   m_ObjectHideFlags: 0
@@ -2477,7 +2411,7 @@ GameObject:
   - component: {fileID: 4718345152628728564}
   - component: {fileID: 1152648167691574650}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2510,28 +2444,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 0
   _text:
     _text: "Une kronenbourg pos\xE9e sur une poubelle. Elle a rat\xE9 sa vocation
       de peu."
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &3180168312788193630
 GameObject:
   m_ObjectHideFlags: 0
@@ -2772,27 +2703,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <MiddleRef>k__BackingField:
-    _characterName: Recrue Rodolphe
-    _spriteName: Idle
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 1
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 0}
-  _middle: {fileID: 21300000, guid: fc281687a8d52e14584e40b1ff704d1d, type: 3}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 5
+    _spriteId: 12
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 1
   _text:
     _text: <whisper>Eh ! Eeeeeeh ! Par ici !
     _styles: []
-  _name: Recrue Rodolphe
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &3299902449861569237
 GameObject:
   m_ObjectHideFlags: 0
@@ -3085,28 +3013,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Sally
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 1
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 7
+    _spriteId: 18
+  _speakingCharacterID: 2
   _text:
     _text: "Allez, passes une bonne soir\xE9e et on se croise demain soir <b>sans
       faute !</b>"
     _styles: []
-  _name: 
   _moveNextAutomatically: 0
+  _useCustomName: 1
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &3614826385382091762
 GameObject:
   m_ObjectHideFlags: 0
@@ -3197,27 +3122,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <MiddleRef>k__BackingField:
-    _characterName: Recrue Rodolphe
-    _spriteName: Idle
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 1
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 0}
-  _middle: {fileID: 21300000, guid: fc281687a8d52e14584e40b1ff704d1d, type: 3}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 5
+    _spriteId: 12
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 1
   _text:
     _text: "D\xE9tective ? Accordez moi votre attention s'il vous pla\xEEt !"
     _styles: []
-  _name: Recrue Rodolphe
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &4186305731828997675
 GameObject:
   m_ObjectHideFlags: 0
@@ -3475,7 +3397,7 @@ GameObject:
   - component: {fileID: 7944437400486805714}
   - component: {fileID: 1008817506093086984}
   m_Layer: 0
-  m_Name: Recrue Speaking
+  m_Name: Recrue Rodolphe Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3508,27 +3430,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <MiddleRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 1
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 0}
-  _middle: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 5
+    _spriteId: 12
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 1
   _text:
     _text: "<whisper>Non non non, d\u2019abord on vise !"
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &5221562102677778922
 GameObject:
   m_ObjectHideFlags: 0
@@ -3676,27 +3595,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <MiddleRef>k__BackingField:
-    _characterName: Recrue Rodolphe
-    _spriteName: Idle
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 1
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 0}
-  _middle: {fileID: 21300000, guid: fc281687a8d52e14584e40b1ff704d1d, type: 3}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 5
+    _spriteId: 12
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 1
   _text:
     _text: <whisper>Eh ! Eeeeeeh ! Par ici !
     _styles: []
-  _name: Recrue Rodolphe
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &5371735054360706228
 GameObject:
   m_ObjectHideFlags: 0
@@ -3848,7 +3764,7 @@ GameObject:
   - component: {fileID: 2318274037137315829}
   - component: {fileID: 3968682776976733759}
   m_Layer: 0
-  m_Name: Sally Speaking
+  m_Name: Sniper Sally Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3881,22 +3797,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Sally
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 7
+    _spriteId: 18
+  _speakingCharacterID: 2
   _text:
     _text: "J\u2019ai vraiment besoin de t\u2019expliquer ?<wait=0,25> C\u2019est
       la seule personne qui en poss\xE8de et conna\xEEt les couteaux aussi bien.
@@ -3904,8 +3814,11 @@ MonoBehaviour:
       ? Je pense qu\u2019il cherche \xE0 faire passer un message et \xE0 se jouer
       de toi."
     _styles: []
-  _name: Sally
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &5511022788707771029
 GameObject:
   m_ObjectHideFlags: 0
@@ -3961,7 +3874,7 @@ GameObject:
   - component: {fileID: 3315411082490354134}
   - component: {fileID: 4772424598919899662}
   m_Layer: 0
-  m_Name: Recrue Speaking
+  m_Name: Recrue Rodolphe Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3994,28 +3907,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 5
+    _spriteId: 12
+  _speakingCharacterID: 2
   _text:
     _text: "<fear><big>AAAAAH ! UN COUTEAU !!<fear></big><wait=0,5> \xC0 TERRE, M\u2019SIEUR
       SHOTGUN !"
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &5686973842951545788
 GameObject:
   m_ObjectHideFlags: 0
@@ -4145,7 +4055,7 @@ GameObject:
   - component: {fileID: 7724006063747695551}
   - component: {fileID: 2158811822150287213}
   m_Layer: 0
-  m_Name: Recrue Speaking
+  m_Name: Recrue Rodolphe Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4178,29 +4088,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <MiddleRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 1
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 0}
-  _middle: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 5
+    _spriteId: 12
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 1
   _text:
     _text: 'UN !
 
 '
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &5781121925301813627
 GameObject:
   m_ObjectHideFlags: 0
@@ -4263,7 +4170,7 @@ GameObject:
   - component: {fileID: 6066658794218925296}
   - component: {fileID: 3649862159213123584}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4296,27 +4203,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 5
+    _spriteId: 12
+  _speakingCharacterID: 0
   _text:
     _text: <big><burst>OUVERTE !
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &6022177850353556566
 GameObject:
   m_ObjectHideFlags: 0
@@ -4431,7 +4335,7 @@ GameObject:
   - component: {fileID: 2249978769395253970}
   - component: {fileID: 7461295409301560057}
   m_Layer: 0
-  m_Name: Recrue Speaking
+  m_Name: Recrue Rodolphe Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4464,28 +4368,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 5
+    _spriteId: 12
+  _speakingCharacterID: 2
   _text:
     _text: "Je vais l\u2019encadrer, cette rubalise. <wait=0,5><whisper>Les deux
       morceaux."
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &6198981428856503908
 GameObject:
   m_ObjectHideFlags: 0
@@ -4576,27 +4477,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Sally
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 1
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 1
-  <CharacterDialogProfile>k__BackingField: {fileID: 0}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 7
+    _spriteId: 18
+  _speakingCharacterID: 1
   _text:
     _text: "L\u2019adresse est inscrite dessus"
     _styles: []
-  _name: 
   _moveNextAutomatically: 0
+  _useCustomName: 1
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &6319823219670722091
 GameObject:
   m_ObjectHideFlags: 0
@@ -4745,7 +4643,7 @@ GameObject:
   - component: {fileID: 926916508618630219}
   - component: {fileID: 530800779076009770}
   m_Layer: 0
-  m_Name: Recrue Speaking
+  m_Name: Recrue Rodolphe Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4778,27 +4676,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 5
+    _spriteId: 12
+  _speakingCharacterID: 2
   _text:
     _text: "Cette posture...<wait=0,25> j\u2019en ai des <fear>frissons</fear>."
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &6673995763707260544
 GameObject:
   m_ObjectHideFlags: 0
@@ -4810,7 +4705,7 @@ GameObject:
   - component: {fileID: 8702117573154817000}
   - component: {fileID: 2304037682692715713}
   m_Layer: 0
-  m_Name: Recrue Speaking
+  m_Name: Recrue Rodolphe Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4843,28 +4738,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <MiddleRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 1
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 0}
-  _middle: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 5
+    _spriteId: 12
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 1
   _text:
     _text: " Il les a toutes trouv\xE9es ! Et maintenant<wait=0,25>.<wait=0,25>.<wait=0,25>.
       <huge>FEU !"
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &6849610405972362144
 GameObject:
   m_ObjectHideFlags: 0
@@ -4876,7 +4768,7 @@ GameObject:
   - component: {fileID: 8967291126100844959}
   - component: {fileID: 1352793566772299567}
   m_Layer: 0
-  m_Name: Sally Speaking
+  m_Name: Sniper Sally Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4909,30 +4801,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Sally
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 7
+    _spriteId: 18
+  _speakingCharacterID: 2
   _text:
     _text: "D\u2019accord, retrouves moi demain soir au bar apr\xE8s ton service.
       <wait=0,25>Que je m\u2019assure que tu n\u2019aies pas encore une fois tout
       compris de travers et que tu coin\xE7es la bonne personne. <wait=0,5>Souviens
       toi, <wait=0,25>mon travail d\xE9pend de ton travail !"
     _styles: []
-  _name: Sally
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &6895444570352189179
 GameObject:
   m_ObjectHideFlags: 0
@@ -4944,7 +4833,7 @@ GameObject:
   - component: {fileID: 4943052817622664914}
   - component: {fileID: 8598642661963886790}
   m_Layer: 0
-  m_Name: Sally Speaking
+  m_Name: Sniper Sally Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4977,30 +4866,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Sally
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 7
+    _spriteId: 18
+  _speakingCharacterID: 2
   _text:
     _text: "Eh ! Ok c\u2019est bon, t\u2019as gagn\xE9. Bref. Plus s\xE9rieusement,
       on est d\u2019accord que le coupable est tout trouv\xE9 cette fois-ci non ?
       Alors tu fais ce que t\u2019as \xE0 faire et comme d\u2019habitude, je suis
       tout \xE7a de tr\xE8s pr\xE8s."
     _styles: []
-  _name: Sally
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &7004680683377351102
 GameObject:
   m_ObjectHideFlags: 0
@@ -5045,27 +4931,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <MiddleRef>k__BackingField:
-    _characterName: Recrue Rodolphe
-    _spriteName: Idle
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 1
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 0}
-  _middle: {fileID: 21300000, guid: fc281687a8d52e14584e40b1ff704d1d, type: 3}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 5
+    _spriteId: 12
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 1
   _text:
     _text: <whisper>Eh ! Eeeeeeh ! Par ici !
     _styles: []
-  _name: Recrue Rodolphe
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &7027272914457822120
 GameObject:
   m_ObjectHideFlags: 0
@@ -5123,7 +5006,7 @@ GameObject:
   - component: {fileID: 4512146376081820597}
   - component: {fileID: 540702492784664027}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5156,27 +5039,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 0
   _text:
     _text: "La bi\xE8re, c\u2019est le whisky des gens qui n\u2019ont pas de chagrin."
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &7060340743499010847
 GameObject:
   m_ObjectHideFlags: 0
@@ -5188,7 +5068,7 @@ GameObject:
   - component: {fileID: 3016503706990204912}
   - component: {fileID: 1549076576546169963}
   m_Layer: 0
-  m_Name: Recrue Speaking
+  m_Name: Recrue Rodolphe Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5221,28 +5101,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 5
+    _spriteId: 12
+  _speakingCharacterID: 2
   _text:
     _text: "C\u2019est une pi\xE8ce \xE0 conviction, D\xE9tective ! Je la garde pour
       l\u2019enqu\xEAte."
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &7066746081452528760
 GameObject:
   m_ObjectHideFlags: 0
@@ -5254,7 +5131,7 @@ GameObject:
   - component: {fileID: 977925848838492554}
   - component: {fileID: 2869085239150654980}
   m_Layer: 0
-  m_Name: Sally Speaking
+  m_Name: Sniper Sally Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5287,30 +5164,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Sally
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 7
+    _spriteId: 18
+  _speakingCharacterID: 2
   _text:
     _text: "Shotgun. <wait=0,5>Il n\u2019y a qu\u2019\xE0 peu pr\xE8s une seule personne
       s\u2019y connaissant autant sur le sujet des armes blanches et qui serait suspectible
       d\u2019en avoir. R\xE9fl\xE9chis, il intervient sur le m\xEAme plateau que
       toi et Pr\xE9sentateur Patrice, mais \xE0 un autre cr\xE9neau."
     _styles: []
-  _name: Sally
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &7069690282167774622
 GameObject:
   m_ObjectHideFlags: 0
@@ -5367,7 +5241,7 @@ GameObject:
   - component: {fileID: 8605172842453155383}
   - component: {fileID: 4577368594897731765}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5400,27 +5274,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 5
+    _spriteId: 12
+  _speakingCharacterID: 0
   _text:
     _text: "... \xC0 qui tu parles, petit ?"
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &7142465788183702279
 GameObject:
   m_ObjectHideFlags: 0
@@ -5432,7 +5303,7 @@ GameObject:
   - component: {fileID: 2182008106492774083}
   - component: {fileID: 9085205117773198589}
   m_Layer: 0
-  m_Name: Recrue Speaking
+  m_Name: Recrue Rodolphe Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5465,29 +5336,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <MiddleRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 1
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 0}
-  _middle: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 5
+    _spriteId: 12
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 1
   _text:
     _text: '<big>DEUX !
 
 '
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &7220998632447172276
 GameObject:
   m_ObjectHideFlags: 0
@@ -5558,7 +5426,7 @@ GameObject:
   - component: {fileID: 7353256426749823368}
   - component: {fileID: 5601225773674320596}
   m_Layer: 0
-  m_Name: Recrue Speaking
+  m_Name: Recrue Rodolphe Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5591,27 +5459,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 5
+    _spriteId: 12
+  _speakingCharacterID: 2
   _text:
     _text: "Voulez-vous <big>inaugurer</big> la sc\xE8ne de crime ? "
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &7372835477044387593
 GameObject:
   m_ObjectHideFlags: 0
@@ -5673,7 +5538,7 @@ GameObject:
   - component: {fileID: 7556050487759300180}
   - component: {fileID: 2677410546687862817}
   m_Layer: 0
-  m_Name: Recrue Speaking
+  m_Name: Recrue Rodolphe Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5706,28 +5571,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 5
+    _spriteId: 12
+  _speakingCharacterID: 2
   _text:
     _text: " Je suis votre plus grand fan !<wait=0,5> J\u2019ai d\xE9coup\xE9 tous
       vos articles, j\u2019ai m\xEAme..."
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 1
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &8027393444218961045
 GameObject:
   m_ObjectHideFlags: 0
@@ -5967,7 +5829,7 @@ GameObject:
   - component: {fileID: 7197421179639227870}
   - component: {fileID: 4902874455885051160}
   m_Layer: 0
-  m_Name: Sally Speaking
+  m_Name: Sniper Sally Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6000,30 +5862,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Sally
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 7
+    _spriteId: 18
+  _speakingCharacterID: 2
   _text:
     _text: "Tr\xE8s dr\xF4le. <wait=0,25>Ne crois-tu pas que je pr\xE9f\xE8rerais
       \xEAtre dans les bras de Morph\xE9e et de ma copine plut\xF4t que de croupir
       sous la dalle pour quelques clich\xE9s ? Comme tu le sais, mon gagne-pain d\xE9pend
       du tiens."
     _styles: []
-  _name: Sally
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &8267096615468405710
 GameObject:
   m_ObjectHideFlags: 0
@@ -6035,7 +5894,7 @@ GameObject:
   - component: {fileID: 1109030786125550177}
   - component: {fileID: 7270433489020772749}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6068,22 +5927,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Sally
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 7
+    _spriteId: 18
+  _speakingCharacterID: 0
   _text:
     _text: "Damas ?<wait=0,25> Valentin Damas ?<wait=0,25> Le coutellier sp\xE9cialis\xE9
       dans les armes blanches antiques ? Et pourquoi dont ?<wait=0,25> Je l\u2019ai
@@ -6093,8 +5946,11 @@ MonoBehaviour:
       fondements de notre soci\xE9t\xE9 mais au del\xE0 de \xE7a. <wait=0,25>Un brave
       type."
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &8291147716004090850
 GameObject:
   m_ObjectHideFlags: 0
@@ -6337,7 +6193,7 @@ GameObject:
   - component: {fileID: 4815783290570788094}
   - component: {fileID: 5959749278818887535}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6370,27 +6226,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 5
+    _spriteId: 12
+  _speakingCharacterID: 0
   _text:
     _text: "Et voil\xE0 comment on recycle, petit."
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &8620544864209365807
 GameObject:
   m_ObjectHideFlags: 0
@@ -6447,7 +6300,7 @@ GameObject:
   - component: {fileID: 3557016466759731668}
   - component: {fileID: 1094508867645922889}
   m_Layer: 0
-  m_Name: Recrue Speaking
+  m_Name: Recrue Rodolphe Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6480,27 +6333,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 5
+    _spriteId: 12
+  _speakingCharacterID: 2
   _text:
     _text: "Cette posture...<wait=0,25> j\u2019en ai des <fear>frissons</fear>."
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &8824237903795824749
 GameObject:
   m_ObjectHideFlags: 0
@@ -6512,7 +6362,7 @@ GameObject:
   - component: {fileID: 7576478003448703841}
   - component: {fileID: 8778213252962238438}
   m_Layer: 0
-  m_Name: Recrue Speaking
+  m_Name: Recrue Rodolphe Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6545,28 +6395,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 5
+    _spriteId: 12
+  _speakingCharacterID: 2
   _text:
     _text: "C\u2019est une pi\xE8ce \xE0 conviction, D\xE9tective ! Je la garde pour
       l\u2019enqu\xEAte."
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &8832668331115744740
 GameObject:
   m_ObjectHideFlags: 0
@@ -6578,7 +6425,7 @@ GameObject:
   - component: {fileID: 185524830783512591}
   - component: {fileID: 2784124974854413300}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6611,28 +6458,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Sally
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 1490959984544472221, guid: ef07edf783e1f7a57b48ac56f46fe5f1, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 7
+    _spriteId: 18
+  _speakingCharacterID: 0
   _text:
     _text: "Sally ! <wait=0,5>Toujours un plaisir de te voir... tu devrais pas \xEAtre
       au lit \xE0 cette heure-ci ? Les cernes ne te vont jamais tr\xE8s bien."
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1001 &102165269391022523
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6647,7 +6491,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 561189313954919135, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
       propertyPath: _name
-      value: None
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 561189313954919135, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
       propertyPath: _middle
@@ -6658,8 +6502,12 @@ PrefabInstance:
       value: <fear><huge><b>STOOOOOP !</b></fear></huge>
       objectReference: {fileID: 0}
     - target: {fileID: 561189313954919135, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
+      propertyPath: _speakingCharacterID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 561189313954919135, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
       propertyPath: <LeftRef>k__BackingField._spriteName
-      value: None
+      value: Idle
       objectReference: {fileID: 0}
     - target: {fileID: 561189313954919135, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
       propertyPath: <SpeakingCharacterID>k__BackingField
@@ -6675,7 +6523,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 561189313954919135, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
       propertyPath: <LeftRef>k__BackingField._characterName
-      value: None
+      value: Recrue Rodolphe
       objectReference: {fileID: 0}
     - target: {fileID: 561189313954919135, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
       propertyPath: <MiddleRef>k__BackingField._characterName
@@ -6775,7 +6623,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6231509721064358608, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
       propertyPath: _name
-      value: None
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6231509721064358608, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
       propertyPath: _right
@@ -6791,8 +6639,12 @@ PrefabInstance:
         par les canettes, comme dans les films."
       objectReference: {fileID: 0}
     - target: {fileID: 6231509721064358608, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
+      propertyPath: _speakingCharacterID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231509721064358608, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
       propertyPath: <LeftRef>k__BackingField._spriteName
-      value: None
+      value: Idle
       objectReference: {fileID: 0}
     - target: {fileID: 6231509721064358608, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
       propertyPath: <SpeakingCharacterID>k__BackingField
@@ -6800,7 +6652,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6231509721064358608, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
       propertyPath: <RightRef>k__BackingField._spriteName
-      value: None
+      value: Idle
       objectReference: {fileID: 0}
     - target: {fileID: 6231509721064358608, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
       propertyPath: <MiddleRef>k__BackingField._spriteName
@@ -6812,11 +6664,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6231509721064358608, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
       propertyPath: <LeftRef>k__BackingField._characterName
-      value: None
+      value: Recrue Rodolphe
       objectReference: {fileID: 0}
     - target: {fileID: 6231509721064358608, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
       propertyPath: <RightRef>k__BackingField._characterName
-      value: None
+      value: "D\xE9tective Shotgun"
       objectReference: {fileID: 0}
     - target: {fileID: 6231509721064358608, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
       propertyPath: <MiddleRef>k__BackingField._characterName
@@ -8542,7 +8394,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
     - target: {fileID: 354565322254603046, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _name
-      value: Detective
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 354565322254603046, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _right
@@ -8554,16 +8406,52 @@ PrefabInstance:
         pour ceux qui doutent."
       objectReference: {fileID: 0}
     - target: {fileID: 354565322254603046, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _leftRef._spriteId
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 354565322254603046, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _rightRef._spriteId
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 354565322254603046, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _speakingCharacterID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 354565322254603046, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _leftRef._characterId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 354565322254603046, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _rightRef._characterId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 354565322254603046, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <LeftRef>k__BackingField._spriteId
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 354565322254603046, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <RightRef>k__BackingField._spriteId
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 354565322254603046, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <SpeakingCharacterID>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 354565322254603046, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <LeftRef>k__BackingField._characterId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 354565322254603046, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <RightRef>k__BackingField._characterId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 354565322254603046, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <LeftRef>k__BackingField._characterName
-      value: Detective
+      value: "D\xE9tective Shotgun"
       objectReference: {fileID: 0}
     - target: {fileID: 354565322254603046, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <RightRef>k__BackingField._characterName
-      value: Recrue
+      value: Recrue Rodolphe
       objectReference: {fileID: 0}
     - target: {fileID: 575720088468376826, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _left
@@ -8571,7 +8459,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
     - target: {fileID: 575720088468376826, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _name
-      value: Detective
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 575720088468376826, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _right
@@ -8583,25 +8471,69 @@ PrefabInstance:
         le whisky."
       objectReference: {fileID: 0}
     - target: {fileID: 575720088468376826, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _leftRef._spriteId
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 575720088468376826, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _rightRef._spriteId
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 575720088468376826, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _speakingCharacterID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 575720088468376826, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _leftRef._characterId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 575720088468376826, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _rightRef._characterId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 575720088468376826, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <LeftRef>k__BackingField._spriteId
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 575720088468376826, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <RightRef>k__BackingField._spriteId
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 575720088468376826, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <SpeakingCharacterID>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 575720088468376826, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <LeftRef>k__BackingField._characterId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 575720088468376826, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <RightRef>k__BackingField._characterId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 575720088468376826, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <LeftRef>k__BackingField._characterName
-      value: Detective
+      value: "D\xE9tective Shotgun"
       objectReference: {fileID: 0}
     - target: {fileID: 575720088468376826, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <RightRef>k__BackingField._characterName
-      value: Recrue
+      value: Recrue Rodolphe
       objectReference: {fileID: 0}
     - target: {fileID: 895256436189159154, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: m_Name
-      value: Detective Speaking
+      value: "D\xE9tective Shotgun Speaking"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1047775011544413466, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: m_Name
+      value: Recrue Rodolphe Speaking
       objectReference: {fileID: 0}
     - target: {fileID: 1156043316470077000, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _left
       value: 
       objectReference: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+    - target: {fileID: 1156043316470077000, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _name
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1156043316470077000, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _right
       value: 
@@ -8613,29 +8545,73 @@ PrefabInstance:
         fameuse vis\xE9e ?"
       objectReference: {fileID: 0}
     - target: {fileID: 1156043316470077000, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _leftRef._spriteId
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156043316470077000, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _rightRef._spriteId
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156043316470077000, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _speakingCharacterID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156043316470077000, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _leftRef._characterId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156043316470077000, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _moveNextAutomatically
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156043316470077000, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _rightRef._characterId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156043316470077000, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <LeftRef>k__BackingField._spriteId
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156043316470077000, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <RightRef>k__BackingField._spriteId
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1156043316470077000, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <SpeakingCharacterID>k__BackingField
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1156043316470077000, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <LeftRef>k__BackingField._characterId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156043316470077000, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <RightRef>k__BackingField._characterId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156043316470077000, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <LeftRef>k__BackingField._characterName
-      value: Detective
+      value: "D\xE9tective Shotgun"
       objectReference: {fileID: 0}
     - target: {fileID: 1156043316470077000, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <RightRef>k__BackingField._characterName
-      value: Recrue
+      value: Recrue Rodolphe
       objectReference: {fileID: 0}
     - target: {fileID: 1618169182906117614, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: m_Name
-      value: Detective Speaking
+      value: "D\xE9tective Shotgun Speaking"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600887075525696013, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: m_Name
+      value: Recrue Rodolphe Speaking
       objectReference: {fileID: 0}
     - target: {fileID: 2940887473705208822, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _left
       value: 
       objectReference: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+    - target: {fileID: 2940887473705208822, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _name
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2940887473705208822, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _right
       value: 
@@ -8646,16 +8622,52 @@ PrefabInstance:
         <wait=0,25><whisper>Celui qui tient la souris."
       objectReference: {fileID: 0}
     - target: {fileID: 2940887473705208822, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _leftRef._spriteId
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2940887473705208822, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _rightRef._spriteId
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2940887473705208822, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _speakingCharacterID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2940887473705208822, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _leftRef._characterId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2940887473705208822, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _rightRef._characterId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2940887473705208822, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <LeftRef>k__BackingField._spriteId
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2940887473705208822, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <RightRef>k__BackingField._spriteId
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2940887473705208822, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <SpeakingCharacterID>k__BackingField
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2940887473705208822, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <LeftRef>k__BackingField._characterId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2940887473705208822, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <RightRef>k__BackingField._characterId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2940887473705208822, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <LeftRef>k__BackingField._characterName
-      value: Detective
+      value: "D\xE9tective Shotgun"
       objectReference: {fileID: 0}
     - target: {fileID: 2940887473705208822, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <RightRef>k__BackingField._characterName
-      value: Recrue
+      value: Recrue Rodolphe
       objectReference: {fileID: 0}
     - target: {fileID: 2989814800911385299, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: m_Size.x
@@ -8679,7 +8691,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
     - target: {fileID: 3012717310776298396, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _name
-      value: Recrue
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3012717310776298396, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _right
@@ -8691,25 +8703,73 @@ PrefabInstance:
         d\u2019autre ne voit !"
       objectReference: {fileID: 0}
     - target: {fileID: 3012717310776298396, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _leftRef._spriteId
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012717310776298396, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _rightRef._spriteId
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012717310776298396, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _leftRef._characterId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012717310776298396, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _rightRef._characterId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012717310776298396, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <LeftRef>k__BackingField._spriteId
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012717310776298396, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <RightRef>k__BackingField._spriteId
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012717310776298396, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <SpeakingCharacterID>k__BackingField
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3012717310776298396, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <LeftRef>k__BackingField._characterId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012717310776298396, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <RightRef>k__BackingField._characterId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012717310776298396, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <LeftRef>k__BackingField._characterName
-      value: Detective
+      value: "D\xE9tective Shotgun"
       objectReference: {fileID: 0}
     - target: {fileID: 3012717310776298396, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <RightRef>k__BackingField._characterName
-      value: Recrue
+      value: Recrue Rodolphe
+      objectReference: {fileID: 0}
+    - target: {fileID: 3179697413609304315, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: m_Name
+      value: Recrue Rodolphe Speaking
+      objectReference: {fileID: 0}
+    - target: {fileID: 3216418709541387705, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: m_Name
+      value: Recrue Rodolphe Speaking
+      objectReference: {fileID: 0}
+    - target: {fileID: 4131168140903433754, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: m_Name
+      value: Recrue Rodolphe Speaking
       objectReference: {fileID: 0}
     - target: {fileID: 4180834770840715969, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: m_Name
-      value: Recrue Speaking
+      value: Recrue Rodolphe Speaking
       objectReference: {fileID: 0}
     - target: {fileID: 6557361163770288419, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _left
       value: 
       objectReference: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+    - target: {fileID: 6557361163770288419, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _name
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6557361163770288419, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _right
       value: 
@@ -8720,21 +8780,61 @@ PrefabInstance:
         cette d\xE9gaine<wait=0,25>.<wait=0,25>.<wait=0,25>. "
       objectReference: {fileID: 0}
     - target: {fileID: 6557361163770288419, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _leftRef._spriteId
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557361163770288419, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _rightRef._spriteId
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557361163770288419, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _speakingCharacterID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557361163770288419, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _leftRef._characterId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557361163770288419, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _rightRef._characterId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557361163770288419, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <LeftRef>k__BackingField._spriteId
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557361163770288419, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <RightRef>k__BackingField._spriteId
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557361163770288419, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <SpeakingCharacterID>k__BackingField
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6557361163770288419, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <LeftRef>k__BackingField._characterId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557361163770288419, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <RightRef>k__BackingField._characterId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557361163770288419, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <LeftRef>k__BackingField._characterName
-      value: Detective
+      value: "D\xE9tective Shotgun"
       objectReference: {fileID: 0}
     - target: {fileID: 6557361163770288419, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <RightRef>k__BackingField._characterName
-      value: Recrue
+      value: Recrue Rodolphe
       objectReference: {fileID: 0}
     - target: {fileID: 6859683332108218448, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _left
       value: 
       objectReference: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+    - target: {fileID: 6859683332108218448, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _name
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6859683332108218448, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _right
       value: 
@@ -8744,16 +8844,52 @@ PrefabInstance:
       value: "<bounce><gold>D\xC9TECTIVE SHOTGUN ?!"
       objectReference: {fileID: 0}
     - target: {fileID: 6859683332108218448, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _leftRef._spriteId
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859683332108218448, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _rightRef._spriteId
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859683332108218448, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _speakingCharacterID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859683332108218448, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _leftRef._characterId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859683332108218448, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _rightRef._characterId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859683332108218448, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <LeftRef>k__BackingField._spriteId
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859683332108218448, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <RightRef>k__BackingField._spriteId
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859683332108218448, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <SpeakingCharacterID>k__BackingField
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6859683332108218448, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <LeftRef>k__BackingField._characterId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859683332108218448, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <RightRef>k__BackingField._characterId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859683332108218448, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <LeftRef>k__BackingField._characterName
-      value: Detective
+      value: "D\xE9tective Shotgun"
       objectReference: {fileID: 0}
     - target: {fileID: 6859683332108218448, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <RightRef>k__BackingField._characterName
-      value: Recrue
+      value: Recrue Rodolphe
       objectReference: {fileID: 0}
     - target: {fileID: 6979707265416085668, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: m_Name
@@ -8764,6 +8900,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
     - target: {fileID: 7022439413155090770, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7022439413155090770, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _right
       value: 
       objectReference: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
@@ -8772,20 +8912,56 @@ PrefabInstance:
       value: "A\xCFE !<wait=0,5> H\xE9, elle chatouille, votre chevrotine !"
       objectReference: {fileID: 0}
     - target: {fileID: 7022439413155090770, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _leftRef._spriteId
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7022439413155090770, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _rightRef._spriteId
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7022439413155090770, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _speakingCharacterID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7022439413155090770, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _leftRef._characterId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7022439413155090770, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _rightRef._characterId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7022439413155090770, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <LeftRef>k__BackingField._spriteId
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7022439413155090770, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <RightRef>k__BackingField._spriteId
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7022439413155090770, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <SpeakingCharacterID>k__BackingField
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7022439413155090770, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <LeftRef>k__BackingField._characterId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7022439413155090770, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <RightRef>k__BackingField._characterId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7022439413155090770, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <LeftRef>k__BackingField._characterName
-      value: Detective
+      value: "D\xE9tective Shotgun"
       objectReference: {fileID: 0}
     - target: {fileID: 7022439413155090770, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <RightRef>k__BackingField._characterName
-      value: Recrue
+      value: Recrue Rodolphe
       objectReference: {fileID: 0}
     - target: {fileID: 7304080123318615382, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: m_Name
-      value: Detective Speaking
+      value: "D\xE9tective Shotgun Speaking"
       objectReference: {fileID: 0}
     - target: {fileID: 8570635131466859891, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8833,7 +9009,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
     - target: {fileID: 8953990785156627993, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _name
-      value: Detective
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8953990785156627993, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _right
@@ -8845,16 +9021,52 @@ PrefabInstance:
         toi."
       objectReference: {fileID: 0}
     - target: {fileID: 8953990785156627993, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _leftRef._spriteId
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953990785156627993, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _rightRef._spriteId
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953990785156627993, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _speakingCharacterID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953990785156627993, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _leftRef._characterId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953990785156627993, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _rightRef._characterId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953990785156627993, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <LeftRef>k__BackingField._spriteId
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953990785156627993, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <RightRef>k__BackingField._spriteId
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953990785156627993, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <SpeakingCharacterID>k__BackingField
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8953990785156627993, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <LeftRef>k__BackingField._characterId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953990785156627993, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: <RightRef>k__BackingField._characterId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953990785156627993, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <LeftRef>k__BackingField._characterName
-      value: Detective
+      value: "D\xE9tective Shotgun"
       objectReference: {fileID: 0}
     - target: {fileID: 8953990785156627993, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <RightRef>k__BackingField._characterName
-      value: Recrue
+      value: Recrue Rodolphe
       objectReference: {fileID: 0}
     - target: {fileID: 9084122249304387810, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _interactionCases.Array.size

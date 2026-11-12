@@ -44,27 +44,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Shotgun
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+  _leftRef:
+    _characterId: 5
+    _spriteId: 12
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 4
+    _spriteId: 9
+  _speakingCharacterID: 2
   _text:
     _text: Et j'ai fais mon choix.
     _styles: []
-  _name: Shotgun
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &1047775011544413466
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,27 +106,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Shotgun
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+  _leftRef:
+    _characterId: 5
+    _spriteId: 12
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 4
+    _spriteId: 9
+  _speakingCharacterID: 0
   _text:
     _text: <color=#DDD287FF><i>Oh mon dieu, il est tellement cool !</i></color>
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &1160898109987295140
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,28 +268,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Shotgun
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+  _leftRef:
+    _characterId: 5
+    _spriteId: 12
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 4
+    _spriteId: 9
+  _speakingCharacterID: 2
   _text:
     _text: "Du calme petit. C\u2019est pas le moment, \xE9cartes-toi de l\xE0 et
       laisse moi prendre la main."
     _styles: []
-  _name: Shotgun
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &2523432618653990470
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,27 +422,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Shotgun
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+  _leftRef:
+    _characterId: 5
+    _spriteId: 12
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 4
+    _spriteId: 9
+  _speakingCharacterID: 0
   _text:
     _text: "Oh ? C\u2019est vous ! D\xE9tective Shotgun, le seul, l\u2019unique !!"
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &2674366014244478753
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,28 +530,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Shotgun
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+  _leftRef:
+    _characterId: 5
+    _spriteId: 12
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 4
+    _spriteId: 9
+  _speakingCharacterID: 0
   _text:
     _text: "Comment ne vous ai-je pas reconnu ? Veuillez m\u2019excusez, monsieur
       Shotgun."
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &3216418709541387705
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,27 +593,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Shotgun
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+  _leftRef:
+    _characterId: 5
+    _spriteId: 12
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 4
+    _spriteId: 9
+  _speakingCharacterID: 0
   _text:
     _text: Ah, elle chatouille bien votre chevrotine !
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &3560425012073314866
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,28 +699,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Shotgun
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+  _leftRef:
+    _characterId: 5
+    _spriteId: 12
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 4
+    _spriteId: 9
+  _speakingCharacterID: 0
   _text:
     _text: "Monsieur, ce serait possible d\u2019avoir un autographe de vous ? Je
       suis votre plus grand fan et aspire \xE0 devenir votre-"
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 1
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &4180834770840715969
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,28 +762,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Shotgun
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+  _leftRef:
+    _characterId: 5
+    _spriteId: 12
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 4
+    _spriteId: 9
+  _speakingCharacterID: 2
   _text:
     _text: "D\xE9tective Shogun est dans la place et on va \u201Ctirer\u201D au clair
       toute cette histoire."
     _styles: []
-  _name: Shotgun
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &5568313264035137525
 GameObject:
   m_ObjectHideFlags: 0
@@ -1044,28 +1020,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Shotgun
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 2001044908323639395, guid: 000c33841bb123539859093550a8e46a, type: 3}
+  _leftRef:
+    _characterId: 5
+    _spriteId: 12
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 4
+    _spriteId: 9
+  _speakingCharacterID: 2
   _text:
     _text: "C\u2019est rien petit. La fin du mois fut rude et c\u2019\xE9tait soit
       les cartouches premium soit le whisky."
     _styles: []
-  _name: Shotgun
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &7336358913528301802
 GameObject:
   m_ObjectHideFlags: 0

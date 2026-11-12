@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 7109081855495082436}
   - component: {fileID: 2471321216764569342}
   m_Layer: 0
-  m_Name: DialogFrame
+  m_Name: Recrue Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88,27 +88,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <MiddleRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 1
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 0}
-  _middle: {fileID: -7450526473173801896, guid: b37ed366eb87d6742b11120a9658ffd2, type: 3}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 5
+    _spriteId: 12
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 1
   _text:
     _text: "\u2026 Le Commissaire avait dit que vous feriez \xE7a."
     _styles: []
-  _name: Recrue
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &2263117719953963675
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,7 +166,7 @@ GameObject:
   - component: {fileID: 6309936236552125705}
   - component: {fileID: 1197305992563817007}
   m_Layer: 0
-  m_Name: DialogFrame (1)
+  m_Name: Detective Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -202,27 +199,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: a0991abc4060ea142bfd5ec87ca84109, type: 3}
-  _middle: {fileID: -7450526473173801896, guid: b37ed366eb87d6742b11120a9658ffd2, type: 3}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 5
+    _spriteId: 12
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 0
   _text:
     _text: "J\u2019ai mes m\xE9thodes, et elles sont radicales."
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &4239899937770463585
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,7 +228,7 @@ GameObject:
   - component: {fileID: 8582059177338958484}
   - component: {fileID: 2399164439679725433}
   m_Layer: 0
-  m_Name: DialogFrame (2)
+  m_Name: Shotgun Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -267,28 +261,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: Recrue
-    _spriteName: Idle
-  <RightRef>k__BackingField:
-    _characterName: Shotgun
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: a0991abc4060ea142bfd5ec87ca84109, type: 3}
-  _middle: {fileID: -7450526473173801896, guid: b37ed366eb87d6742b11120a9658ffd2, type: 3}
-  _right: {fileID: 21300000, guid: 9e25dd3b319cc634eab37128aaa6a0e9, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 5
+    _spriteId: 12
+  _rightRef:
+    _characterId: 4
+    _spriteId: 9
+  _speakingCharacterID: 2
   _text:
     _text: "T\u2019aurais d\xFB garder cette punch\u2019 pour une belle chat\xE2in
       clair pas int\xE9ress\xE9e par toi !"
     _styles: []
-  _name: Shotgun
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &4714646815362585924
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,6 +329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ba8adc89f54b814d974909c13324ec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.InteractableManager
+  _priority: 0
   _interactionCases:
   - _condition:
       rid: 1236845357157318732
@@ -369,6 +361,9 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   _aimCases: []
+  _onInteracted:
+    m_PersistentCalls:
+      m_Calls: []
   _onAimed:
     m_PersistentCalls:
       m_Calls: []
