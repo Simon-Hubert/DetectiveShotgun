@@ -141,6 +141,65 @@ MonoBehaviour:
     _text: Tout cet argent qui finirait mieux en whisky tient...
     _styles: []
   _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+--- !u!1 &5885974417330368166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3151797982280418155}
+  - component: {fileID: 5327066329564228447}
+  m_Layer: 0
+  m_Name: Invoke Event with 1 binds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3151797982280418155
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5885974417330368166}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4699064032686050074}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5327066329564228447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5885974417330368166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69bcb5ae2dda1d84585899ae21a338d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.UnityEventSequence
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DShotgun.PlayerInventory, DShotgun
+        m_MethodName: ConsumeItemLoaded
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7680937904036636248
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,11 +249,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3317348736726321732, guid: bafdc99f2659560b6856fd03701bd178, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.73
+      value: 5.48
       objectReference: {fileID: 0}
     - target: {fileID: 3317348736726321732, guid: bafdc99f2659560b6856fd03701bd178, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.25
+      value: -1.61
       objectReference: {fileID: 0}
     - target: {fileID: 3317348736726321732, guid: bafdc99f2659560b6856fd03701bd178, type: 3}
       propertyPath: m_LocalPosition.z
@@ -252,6 +311,9 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4738036892681977063, guid: bafdc99f2659560b6856fd03701bd178, type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 3151797982280418155}
     - targetCorrespondingSourceObject: {fileID: 4738036892681977063, guid: bafdc99f2659560b6856fd03701bd178, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5747791985820583624}
@@ -466,9 +528,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1664171178135218916, guid: ddb971cf586013d22aaa2f956b594905, type: 3}
+      propertyPath: m_Name
+      value: Invoke Event with 2 binds
+      objectReference: {fileID: 0}
     - target: {fileID: 5553764746313125816, guid: ddb971cf586013d22aaa2f956b594905, type: 3}
       propertyPath: m_Name
       value: Whisky
+      objectReference: {fileID: 0}
+    - target: {fileID: 6242558103682884607, guid: ddb971cf586013d22aaa2f956b594905, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6242558103682884607, guid: ddb971cf586013d22aaa2f956b594905, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6242558103682884607, guid: ddb971cf586013d22aaa2f956b594905, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6242558103682884607, guid: ddb971cf586013d22aaa2f956b594905, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 6242558103682884607, guid: ddb971cf586013d22aaa2f956b594905, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: DShotgun.PlayerInventory, DShotgun
+      objectReference: {fileID: 0}
+    - target: {fileID: 6242558103682884607, guid: ddb971cf586013d22aaa2f956b594905, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 05727213ee50da5f09ba41903003817d, type: 2}
+    - target: {fileID: 6242558103682884607, guid: ddb971cf586013d22aaa2f956b594905, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: DShotgun.ItemData, DShotgun
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -514,11 +608,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7093286874740735719, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.06
+      value: 0.71
       objectReference: {fileID: 0}
     - target: {fileID: 7093286874740735719, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.71
+      value: -0.14
       objectReference: {fileID: 0}
     - target: {fileID: 7093286874740735719, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -746,12 +840,24 @@ PrefabInstance:
       value: -0.017415643
       objectReference: {fileID: 0}
     - target: {fileID: 4889823642632725191, guid: 3ed4bc405d7e06fe0a62362b241e2512, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 4889823642632725191, guid: 3ed4bc405d7e06fe0a62362b241e2512, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 4889823642632725191, guid: 3ed4bc405d7e06fe0a62362b241e2512, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 4889823642632725191, guid: 3ed4bc405d7e06fe0a62362b241e2512, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.84
+      value: -5.29
       objectReference: {fileID: 0}
     - target: {fileID: 4889823642632725191, guid: 3ed4bc405d7e06fe0a62362b241e2512, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.95
+      value: -1.43
       objectReference: {fileID: 0}
     - target: {fileID: 4889823642632725191, guid: 3ed4bc405d7e06fe0a62362b241e2512, type: 3}
       propertyPath: m_LocalPosition.z
@@ -783,6 +889,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4889823642632725191, guid: 3ed4bc405d7e06fe0a62362b241e2512, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4889823642632725191, guid: 3ed4bc405d7e06fe0a62362b241e2512, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6385266534893580251, guid: 3ed4bc405d7e06fe0a62362b241e2512, type: 3}
+      propertyPath: _onInteracted.m_PersistentCalls.m_Calls.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8399060724473571687, guid: 3ed4bc405d7e06fe0a62362b241e2512, type: 3}
