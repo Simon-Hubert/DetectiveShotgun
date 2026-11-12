@@ -53,8 +53,6 @@ namespace DShotgun.Dialogs
 
         [Header("Textbox")]
         [SerializeField] private Image _dialogContinueIcon;
-
-        [Space(7)]
         [SerializeField] private Image _leftNameSprite, _rightNameSprite;
         [SerializeField] private Sprite _blankNameSprite;
         [SerializeField] private TextMeshProUGUI _leftNameText, _rightNameText;
@@ -143,8 +141,8 @@ namespace DShotgun.Dialogs
                     _rightNameSprite.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
                     _leftNameSprite.color = new Color(0.4f, 0.4f, 0.4f, 1.0f);
                     
-                    _speakersName = a_dialogData.DialogProfile.NameDisplayedAsTMP ? _rightNameText : null;
-                    
+                    _rightNameText.text = a_dialogData.DialogProfile.NameDisplayedAsTMP ? a_dialogData.Name : "";
+
                     _leftNameSprite.transform.position = _leftNamePos + _nameSpriteOffset;
                     _rightNameSprite.transform.position = _rightNamePos;
                     break;
@@ -156,14 +154,12 @@ namespace DShotgun.Dialogs
                     _leftNameSprite.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
                     _rightNameSprite.color = new Color(0.4f, 0.4f, 0.4f, 1.0f);
 
-                    _speakersName = a_dialogData.DialogProfile.NameDisplayedAsTMP ? _leftNameText : null;
+                    _leftNameText.text = a_dialogData.DialogProfile.NameDisplayedAsTMP ? a_dialogData.Name : "";
                     
                     _rightNameSprite.transform.position = _rightNamePos + _nameSpriteOffset;
                     _leftNameSprite.transform.position = _leftNamePos;
                     break;
             }
-            
-            if (_speakersName != null) _speakersName.text = a_dialogData.Name;
             
             _ = TransitionSpeakerSprite(GetCharaImg(CharaPos.LEFT), a_dialogData.Left, a_dialogData.SpeakingCharacterID == (int)CharaPos.LEFT ? true : false);
             _ = TransitionSpeakerSprite(GetCharaImg(CharaPos.MIDDLE), a_dialogData.Middle, a_dialogData.SpeakingCharacterID == (int)CharaPos.MIDDLE ? true : false);
