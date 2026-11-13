@@ -67,6 +67,7 @@ namespace DShotgun
             controller.OnAimStarted -= AimStarted;
             controller.OnAimStopped -= AimStopped;
             TransitionSequence.OnCamTargetChanged -= SetOrigin;
+            GameManager.OnStateChange -= OnGameStateChanged;
         }
         
         void SetOrigin(Vector2 newOrigin)
