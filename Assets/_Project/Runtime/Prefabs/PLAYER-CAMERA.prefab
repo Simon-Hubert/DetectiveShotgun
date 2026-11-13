@@ -134,6 +134,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8451857126543302926}
     m_Modifications:
+    - target: {fileID: 456847430424719104, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1322998183546254669, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
       propertyPath: _playerInventory
       value: 
@@ -193,6 +197,10 @@ PrefabInstance:
     - target: {fileID: 4027087350679835347, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
       propertyPath: m_Name
       value: MAIN-CAMERA
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660128989877296906, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8500823768316584892, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
       propertyPath: _playerInventory

@@ -27,6 +27,7 @@ namespace DShotgun
         {
             IsLoading = true;
             try {
+                GameManager.SwitchState(GameState.Transition);
                 await OverlaySingleton.instance.FadeToBlackTransitionAsync(2);
                 await SceneManager.LoadSceneAsync(buildIndexTableau, LoadSceneMode.Single);
                 await SceneManager.LoadSceneAsync(buildIndexState, LoadSceneMode.Additive);
@@ -43,6 +44,7 @@ namespace DShotgun
                 TransitionSingleton.Hide();
                 
                 await OverlaySingleton.instance.FadeInTransitionAsync(2);
+                GameManager.SwitchState(GameState.Playing);
             }
             finally
             {

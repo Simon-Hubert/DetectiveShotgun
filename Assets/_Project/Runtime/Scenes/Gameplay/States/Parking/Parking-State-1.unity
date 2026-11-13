@@ -1645,6 +1645,42 @@ PrefabInstance:
       value: "C\u2019est quand m\xEAme dr\xF4lement pratique ces meubles en caoutchouc
         !"
       objectReference: {fileID: 0}
+    - target: {fileID: 3570353144248834571, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
+      propertyPath: _priority
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3593458685341746176, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
+      propertyPath: m_Size.x
+      value: 5.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 3593458685341746176, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
+      propertyPath: m_Size.y
+      value: 9.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3593458685341746176, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d3ec470a528689547977fb5d847f69e6, type: 3}
+    - target: {fileID: 3593458685341746176, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4027476138828066271, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
+      propertyPath: m_Size.x
+      value: 1.369997
+      objectReference: {fileID: 0}
+    - target: {fileID: 4027476138828066271, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
+      propertyPath: m_Size.y
+      value: 0.93132955
+      objectReference: {fileID: 0}
+    - target: {fileID: 4027476138828066271, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.31833363
+      objectReference: {fileID: 0}
+    - target: {fileID: 4027476138828066271, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.043919057
+      objectReference: {fileID: 0}
     - target: {fileID: 4160000710819255246, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1693,6 +1729,26 @@ PrefabInstance:
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1125999896}
+    - target: {fileID: 4706316553649970686, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 21300000, guid: cbc99bc4a271c534a99260c4707095bf, type: 3}
+    - target: {fileID: 5680985264764465903, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
+      propertyPath: m_Size.x
+      value: 3.2133198
+      objectReference: {fileID: 0}
+    - target: {fileID: 5680985264764465903, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
+      propertyPath: m_Size.y
+      value: 6.234997
+      objectReference: {fileID: 0}
+    - target: {fileID: 5680985264764465903, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.34500027
+      objectReference: {fileID: 0}
+    - target: {fileID: 5680985264764465903, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.22749853
+      objectReference: {fileID: 0}
     - target: {fileID: 6417284175181750124, guid: e3a0018479ca9b3b1b2a465e1f39e49c, type: 3}
       propertyPath: m_Name
       value: INTERACTABLES-TAB2
