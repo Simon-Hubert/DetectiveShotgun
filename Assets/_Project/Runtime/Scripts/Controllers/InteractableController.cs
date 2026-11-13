@@ -131,6 +131,8 @@ namespace DShotgun
         private void HandleLeftClickPressed()
         {
             if (_isBusy) return;
+            if (GameManager.CurrentState == GameState.Transition) return;
+            
             
             InteractableManager[] interactables = GetInteractableUnderPointer();
             if (interactables.Length > 0)

@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 6394151633984455527}
   - component: {fileID: 1623278849001042754}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -219,28 +219,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 0
   _text:
     _text: "Commissaire...<wait=0,5> pas la peine de vous mettre dans tout ces \xE9tats
       vous savez..."
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &190390737841715158
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,7 +249,7 @@ GameObject:
   - component: {fileID: 2873787444757303145}
   - component: {fileID: 6738380338789318550}
   m_Layer: 0
-  m_Name: Commissaire Speaking
+  m_Name: Commissaire Thompson Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -285,29 +282,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 2
   _text:
     _text: "SI, SI SHOTGUN !<wait=0,5> C\u2019EST EXACTEMENT COMME AVEC MA FEMME
       ET CETTE LEONIE !<wait=0,5> IL VOUS RESTE UNE SEULE CHANCE ET- <wait=0,25><i>*il
       sanglote*</i>"
     _styles: []
-  _name: Commissaire
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &258332384879831025
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,7 +501,7 @@ GameObject:
   - component: {fileID: 3081951955965400428}
   - component: {fileID: 5191011081743077822}
   m_Layer: 0
-  m_Name: Commissaire Speaking
+  m_Name: Commissaire Thompson Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -540,28 +534,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 2
   _text:
     _text: "NOOOOOOON TOUT MES MAILS ET MES \u201DBITES\u201D ET \u201COK-T\xCATE\u201D
       !!!!"
     _styles: []
-  _name: Commissaire
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &393578587108324963
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,7 +564,7 @@ GameObject:
   - component: {fileID: 3475473003518891693}
   - component: {fileID: 6798216029231628659}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -606,27 +597,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 0
   _text:
     _text: "Oups-<wait=0,5> Je devais m\u2019assurer que rien ne se trouvait dedans-"
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 1
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &394277626006173037
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,7 +626,7 @@ GameObject:
   - component: {fileID: 3428736783136746995}
   - component: {fileID: 6926135415378661893}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -671,29 +659,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 0
   _text:
     _text: 'Il va vraiment me rester trois francs six sous pour finir le mois...
 
 '
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &453481624543429453
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,7 +740,7 @@ GameObject:
   - component: {fileID: 1726621232747626740}
   - component: {fileID: 6189690853292333763}
   m_Layer: 0
-  m_Name: Commissaire Speaking
+  m_Name: Commissaire Thompson Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -788,27 +773,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 2
   _text:
     _text: "D\xE9j\xE0 que je ne fais pas tout ce qui rel\xE8ve de mes fonctions..."
     _styles: []
-  _name: Commissaire
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &506127999714737890
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,7 +903,7 @@ GameObject:
   - component: {fileID: 6880552631430324248}
   - component: {fileID: 2522749660299132390}
   m_Layer: 0
-  m_Name: Commissaire Speaking
+  m_Name: Commissaire Thompson Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -954,29 +936,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 2
   _text:
     _text: "CE N\u2019EST PLUS POSSIBLE SHOTGUN !!<wait=0,5> ECOUTEZ MOI BIEN,<wait=0,25>
       VOUS COINCEZ LE VRAI COUPABLE AVEC DES PREUVES, DE VRAIES PREUVES ET VOUS GARDEZ
       VOTRE BADGE AUQUEL CAS SINON !!"
     _styles: []
-  _name: Commissaire
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &624567082913141593
 GameObject:
   m_ObjectHideFlags: 0
@@ -1032,7 +1011,7 @@ GameObject:
   - component: {fileID: 1131210877141517875}
   - component: {fileID: 9049788474453483899}
   m_Layer: 0
-  m_Name: Commissaire Speaking
+  m_Name: Commissaire Thompson Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1065,27 +1044,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 2
   _text:
     _text: NON !<wait=0,25> SHOTGUN !<wait=0,5> Il est tout neuf !
     _styles: []
-  _name: Commissaire
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &727727817866541963
 GameObject:
   m_ObjectHideFlags: 0
@@ -1097,7 +1073,7 @@ GameObject:
   - component: {fileID: 7116009394728719996}
   - component: {fileID: 6789511412224183879}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1130,29 +1106,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 0
   _text:
     _text: "Oh-<wait=0,25> oui-<wait=0,25> D\u2019accord Commissaire..<wait=0,5>
       je-<wait=0,25> Je n\u2019y manquerai pas..<wait=0,5> Veuillez m\u2019excuser
       mais je vais devoir y aller.."
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &749893169777290744
 GameObject:
   m_ObjectHideFlags: 0
@@ -1359,7 +1332,7 @@ GameObject:
   - component: {fileID: 7672807690977128433}
   - component: {fileID: 1069001575769189347}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1392,27 +1365,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 0
   _text:
     _text: "Oulah, il a l\u2019air vraiment chaffouin cette fois-ci."
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &982369560559441454
 GameObject:
   m_ObjectHideFlags: 0
@@ -1424,7 +1394,7 @@ GameObject:
   - component: {fileID: 6770518694154399995}
   - component: {fileID: 8292986802576773093}
   m_Layer: 0
-  m_Name: Commissaire Speaking
+  m_Name: Commissaire Thompson Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1457,28 +1427,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 2
   _text:
     _text: "Shotgun<wait=0,25>.<wait=0,25>.<wait=0,25>.<wait=1> QU\u2019EST-CE QUE
       JE VAIS BIEN POUVOIR FAIRE DE VOUS BON SANG !"
     _styles: []
-  _name: Commissaire
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &1090888249290377464
 GameObject:
   m_ObjectHideFlags: 0
@@ -1578,7 +1545,7 @@ GameObject:
   - component: {fileID: 4122797712146261665}
   - component: {fileID: 4609295993669028300}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1611,27 +1578,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 0
   _text:
     _text: Sinon..??
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &1935217968482597554
 GameObject:
   m_ObjectHideFlags: 0
@@ -1918,7 +1882,7 @@ GameObject:
   - component: {fileID: 8494348595937089181}
   - component: {fileID: 91459973727478192}
   m_Layer: 0
-  m_Name: Commissaire Speaking
+  m_Name: Commissaire Thompson Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1951,27 +1915,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 2
   _text:
     _text: MA FIERTEEE SHOTGUN, MA FIERTEEEE !
     _styles: []
-  _name: Commissaire
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &2501342364868514921
 GameObject:
   m_ObjectHideFlags: 0
@@ -2087,7 +2048,7 @@ GameObject:
   - component: {fileID: 5210586264755266466}
   - component: {fileID: 3123781123862850979}
   m_Layer: 0
-  m_Name: Commissaire Speaking
+  m_Name: Commissaire Thompson Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2120,27 +2081,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 2
   _text:
     _text: "Coucher avec mes subordonn\xE9es ne fait pas parti de mes fonctions !"
     _styles: []
-  _name: Commissaire
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &2655189238499605601
 GameObject:
   m_ObjectHideFlags: 0
@@ -2474,7 +2432,7 @@ GameObject:
   - component: {fileID: 7164238404872565761}
   - component: {fileID: 7565848469587408507}
   m_Layer: 0
-  m_Name: Commissaire Speaking
+  m_Name: Commissaire Thompson Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2507,22 +2465,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 2
   _text:
     _text: "J\u2019ai accept\xE9 beaucoup de choses lors de vos enqu\xEAtes...<wait=0,5>
       vos m\xE9thodes d\u2019interrogatoires douteuses,<wait=0,25> le poisson rouge
@@ -2530,8 +2482,11 @@ MonoBehaviour:
       r\xE9ception...<wait=0,5> MAIS PRENDRE EN CHASSE PRESENTATEUR PATRICE ET ATTEINDRE
       A SA VIE ???"
     _styles: []
-  _name: Commissaire
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &3909608929888970587
 GameObject:
   m_ObjectHideFlags: 0
@@ -2543,7 +2498,7 @@ GameObject:
   - component: {fileID: 6515268620805172997}
   - component: {fileID: 3812749073793741357}
   m_Layer: 0
-  m_Name: Commissaire Speaking
+  m_Name: Commissaire Thompson Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2576,28 +2531,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 2
   _text:
     _text: "N\u2019y pensez m\xEAme pas Shotgun.<wait=0,5> C\u2019est un cadeau de
       ma femme qui date d\u2019avant nos disputes."
     _styles: []
-  _name: Commissaire
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &4041141056321178071
 GameObject:
   m_ObjectHideFlags: 0
@@ -2609,7 +2561,7 @@ GameObject:
   - component: {fileID: 3521687578016854365}
   - component: {fileID: 1855370911568589586}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2642,28 +2594,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 0
   _text:
     _text: "J\u2019ai rendez-vous avec Sally au bar..<wait=0,5> je dois vous laisser..<wait=0,25>
       euh...<wait=0,25> bonne soir\xE9e..?"
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &4150531964484014038
 GameObject:
   m_ObjectHideFlags: 0
@@ -2910,7 +2859,7 @@ GameObject:
   - component: {fileID: 3341248387981484482}
   - component: {fileID: 8320154803994649993}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2943,28 +2892,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 0
   _text:
     _text: "Vous en faites pas, je vous ai sauv\xE9 de ces sucreries bien trop mauvaises
       pour la sant\xE9 !"
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &4419749232194270384
 GameObject:
   m_ObjectHideFlags: 0
@@ -3124,7 +3070,7 @@ GameObject:
   - component: {fileID: 4458249967106455889}
   - component: {fileID: 978924991631931066}
   m_Layer: 0
-  m_Name: Commissaire Speaking
+  m_Name: Commissaire Thompson Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3157,28 +3103,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 2
   _text:
     _text: "SHOTGUN !<wait=0,5> Je vous vois venir !<wait=0,5> J\u2019y tiens au
       moins autant qu\u2019\xE0 mes enfants !"
     _styles: []
-  _name: Commissaire
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &4765775819076536700
 GameObject:
   m_ObjectHideFlags: 0
@@ -3190,7 +3133,7 @@ GameObject:
   - component: {fileID: 5858993633855004630}
   - component: {fileID: 3942664378165213215}
   m_Layer: 0
-  m_Name: Commissaire Speaking
+  m_Name: Commissaire Thompson Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3223,28 +3166,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 2
   _text:
     _text: "Faites y attention !<wait=0,5> Plus que je ne l\u2019ai fait avec mon
       mariage !"
     _styles: []
-  _name: Commissaire
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &4799378468898449495
 GameObject:
   m_ObjectHideFlags: 0
@@ -3360,7 +3300,7 @@ GameObject:
   - component: {fileID: 4009980887962109077}
   - component: {fileID: 7222252674459247615}
   m_Layer: 0
-  m_Name: Commissaire Speaking
+  m_Name: Commissaire Thompson Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3393,28 +3333,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 2
   _text:
     _text: "Vous ne partirez pas d\u2019ici avant qu\u2019on ait eu une petite discussion
       !"
     _styles: []
-  _name: Commissaire
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &4814868014933908141
 GameObject:
   m_ObjectHideFlags: 0
@@ -3426,7 +3363,7 @@ GameObject:
   - component: {fileID: 7173240234839286652}
   - component: {fileID: 4249404681045495051}
   m_Layer: 0
-  m_Name: Commissaire Speaking
+  m_Name: Commissaire Thompson Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3459,28 +3396,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 2
   _text:
     _text: WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH <wait=0,25><i>*il pleure*</i><wait=0,25>
       SHOTGUNNNN !
     _styles: []
-  _name: Commissaire
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &4828039681637086179
 GameObject:
   m_ObjectHideFlags: 0
@@ -3537,7 +3471,7 @@ GameObject:
   - component: {fileID: 3100419241876291951}
   - component: {fileID: 4343946929092837632}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3570,27 +3504,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 0
   _text:
     _text: "Je ferais mieux d\u2019essayer de calmer le jeu quitte \xE0 lui mentir-"
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 1
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &4934848107807068795
 GameObject:
   m_ObjectHideFlags: 0
@@ -3685,7 +3616,7 @@ GameObject:
   - component: {fileID: 6402441276840246513}
   - component: {fileID: 5439396295062361058}
   m_Layer: 0
-  m_Name: Commissaire Speaking
+  m_Name: Commissaire Thompson Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3718,27 +3649,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 2
   _text:
     _text: "Except\xE9 une fois dans la r\xE9serve..."
     _styles: []
-  _name: Commissaire
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &5346819613628221562
 GameObject:
   m_ObjectHideFlags: 0
@@ -3844,7 +3772,7 @@ GameObject:
   - component: {fileID: 3792282191902502212}
   - component: {fileID: 5895333959026639492}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3877,27 +3805,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 0
   _text:
     _text: Certainement Commissaire Thompson...
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &5654832660584578449
 GameObject:
   m_ObjectHideFlags: 0
@@ -3909,7 +3834,7 @@ GameObject:
   - component: {fileID: 754942316349392569}
   - component: {fileID: 8145942848991698777}
   m_Layer: 0
-  m_Name: Commissaire Speaking
+  m_Name: Commissaire Thompson Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3942,28 +3867,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 2
   _text:
     _text: "Shotgun vous savez bien que j\u2019approuve vos m\xE9thodes car elles
       portent leur fruits mais quelqu\u2019un doit bien payer."
     _styles: []
-  _name: Commissaire
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &5705446983237917864
 GameObject:
   m_ObjectHideFlags: 0
@@ -4071,7 +3993,7 @@ GameObject:
   - component: {fileID: 8863733803841865642}
   - component: {fileID: 8259229310099142675}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4104,28 +4026,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 0
   _text:
     _text: "Oui...<wait=0,5> dites moi tout mon cher Commissaire Thompson, je suis
       tout ou\xEFe !"
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &6340732451103902871
 GameObject:
   m_ObjectHideFlags: 0
@@ -4137,7 +4056,7 @@ GameObject:
   - component: {fileID: 2736695825219389378}
   - component: {fileID: 6436985386363050003}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4170,27 +4089,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 0
   _text:
     _text: "Oh wow c\u2019est une impressionante collec-"
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 1
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &6516577495111150835
 GameObject:
   m_ObjectHideFlags: 0
@@ -4248,7 +4164,7 @@ GameObject:
   - component: {fileID: 355667547057337723}
   - component: {fileID: 7937989022962147707}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4281,28 +4197,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 0
   _text:
     _text: "Je-<wait=0,5> oui...<wait=0,25> enfin...<wait=0,25> <i>*il s\u2018approche
       et tente de le prendre dans ses bras*</i>"
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &6851749558800982980
 GameObject:
   m_ObjectHideFlags: 0
@@ -4454,7 +4367,7 @@ GameObject:
   - component: {fileID: 8760989158868801339}
   - component: {fileID: 8214439394247597235}
   m_Layer: 0
-  m_Name: Commissaire Speaking
+  m_Name: Commissaire Thompson Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4487,28 +4400,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 2
   _text:
     _text: "POURQUOI TOUT LE MONDE M\u2019ABANDONNE  ?<wait=0,25><i>*il sanglote
       fort*</i>"
     _styles: []
-  _name: Commissaire
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &6952306341594999966
 GameObject:
   m_ObjectHideFlags: 0
@@ -4614,7 +4524,7 @@ GameObject:
   - component: {fileID: 2531619198853835034}
   - component: {fileID: 6807964049760484346}
   m_Layer: 0
-  m_Name: Commissaire Speaking
+  m_Name: Commissaire Thompson Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4647,27 +4557,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 2
   _text:
     _text: JE VOUS ENTENDS PENSER A VOIX HAUTE VOUS SAVEZ SHOTGUN !
     _styles: []
-  _name: Commissaire
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &7505358016469594027
 GameObject:
   m_ObjectHideFlags: 0
@@ -4679,7 +4586,7 @@ GameObject:
   - component: {fileID: 4886041510061726122}
   - component: {fileID: 2203200273023128375}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4712,27 +4619,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 0
   _text:
     _text: "C\u2019est pas \xE0 \xE7a que sert l\u2019argent du contribuable ?"
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &7593229012617864975
 GameObject:
   m_ObjectHideFlags: 0
@@ -4744,7 +4648,7 @@ GameObject:
   - component: {fileID: 3198363713672003732}
   - component: {fileID: 8820949708022702107}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4777,28 +4681,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 0
   _text:
     _text: "Je ne fais que regarder...<wait=0,5> Vous savez moi et la technologie
       \xE7a fait quinze."
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &7764370484024854323
 GameObject:
   m_ObjectHideFlags: 0
@@ -4810,7 +4711,7 @@ GameObject:
   - component: {fileID: 3247018605165198452}
   - component: {fileID: 2627242107196596388}
   m_Layer: 0
-  m_Name: Commissaire Speaking
+  m_Name: Commissaire Thompson Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4843,27 +4744,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 2
   _text:
     _text: IL MANQUE VOTRE SIGNATURE, SHOTGUN !
     _styles: []
-  _name: Commissaire
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &7871858650063516924
 GameObject:
   m_ObjectHideFlags: 0
@@ -4924,7 +4822,7 @@ GameObject:
   - component: {fileID: 6359280777326691942}
   - component: {fileID: 8153138356489115524}
   m_Layer: 0
-  m_Name: Commissaire Speaking
+  m_Name: Commissaire Thompson Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4957,29 +4855,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 2
   _text:
     _text: "ARR\xCATEZ, ME- <wait=0,25><i>*il pleure*</i><wait=0,5> NE ME DECEVEZ
       PAS !<wait=0,5> NE ME FAITES PAS VOUS VIRER, JE LE <wait=0,25><i>*il pleure*</i><wait=0,25>
       REGRETTERAIT !"
     _styles: []
-  _name: Commissaire
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &8180274467991724968
 GameObject:
   m_ObjectHideFlags: 0
@@ -5199,7 +5094,7 @@ GameObject:
   - component: {fileID: 7136927126468133916}
   - component: {fileID: 3698877459485572210}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5232,27 +5127,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 0
   _text:
     _text: Oui..<wait=0,25> je-<wait=0,25> il est vrai que-
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 1
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &8593673724702925619
 GameObject:
   m_ObjectHideFlags: 0
@@ -5370,7 +5262,7 @@ GameObject:
   - component: {fileID: 3497962234995303352}
   - component: {fileID: 1439954762944151525}
   m_Layer: 0
-  m_Name: Commissaire Speaking
+  m_Name: Commissaire Thompson Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5403,28 +5295,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 2
   _text:
     _text: "Elle me soup\xE7onne d\u2019adult\xE8re avec L\xE9giste L\xE9onie alors
       qu\u2019il n\u2019en est rien"
     _styles: []
-  _name: Commissaire
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &8964514673378275778
 GameObject:
   m_ObjectHideFlags: 0
@@ -5482,7 +5371,7 @@ GameObject:
   - component: {fileID: 3405154420118715818}
   - component: {fileID: 3713140199533753516}
   m_Layer: 0
-  m_Name: Commissaire Speaking
+  m_Name: Commissaire Thompson Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5515,28 +5404,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Commissaire
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 889feeaec9fcbf747a86be7bdefcf04b, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 13
+    _spriteId: 36
+  _speakingCharacterID: 2
   _text:
     _text: SINON JE VOUS RENVOIE..<wait=0,5> JE VAIS DEVOIR OUI...<wait=0,5> <i>*il
       fond en larmes*<wait=0,5></i> VOUS RENVOYER <wait=0,25><i>*sniff <wait=0,25>sniff*</i>
     _styles: []
-  _name: Commissaire
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &9125896382497760367
 GameObject:
   m_ObjectHideFlags: 0

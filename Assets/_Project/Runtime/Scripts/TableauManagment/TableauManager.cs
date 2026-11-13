@@ -27,21 +27,24 @@ namespace DShotgun
         {
             IsLoading = true;
             try {
+                GameManager.SwitchState(GameState.Transition);
                 await OverlaySingleton.instance.FadeToBlackTransitionAsync(2);
                 await SceneManager.LoadSceneAsync(buildIndexTableau, LoadSceneMode.Single);
                 await SceneManager.LoadSceneAsync(buildIndexState, LoadSceneMode.Additive);
+                TransitionSingleton.Clear();
                 TransitionSingleton.SetImage(data.Background);
                 TransitionSingleton.Show();
                 
                 await OverlaySingleton.instance.FadeInTransitionAsync(2);
 
-                await TransitionSingleton.ShowTextAsync("Hello, I'm your Neighbor");
+                await TransitionSingleton.ShowTextAsync($"{data.Date}\n{data.Heure}\n{data.Lieu}\n{data.Ville}");
                 await Awaitable.WaitForSecondsAsync(2);
                 
                 await OverlaySingleton.instance.FadeToBlackTransitionAsync(2);
                 TransitionSingleton.Hide();
                 
                 await OverlaySingleton.instance.FadeInTransitionAsync(2);
+                GameManager.SwitchState(GameState.Playing);
             }
             finally
             {

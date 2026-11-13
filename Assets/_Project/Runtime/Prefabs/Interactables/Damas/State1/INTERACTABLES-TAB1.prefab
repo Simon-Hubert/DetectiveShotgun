@@ -1,5 +1,70 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &405514782833592030
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6144536204803531899}
+  - component: {fileID: 295915549500975732}
+  m_Layer: 0
+  m_Name: "D\xE9tective Shotgun Speaking"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6144536204803531899
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405514782833592030}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2501749310559106476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &295915549500975732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405514782833592030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 11
+    _spriteId: 30
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 2
+  _text:
+    _text: "VOUS ! N\u2019est-ce pas ? C\u2019est bien pour \xE7a que vous vous int\xE9ressez
+      autant au sujet des couteaux et que vous animez l\u2019\xE9mission de Damas
+      n\u2019est-ce pas ?? J\u2019ai lu clair dans votre jeu ! Haut les mains peau
+      de lapin ! Je vous embarque !!"
+    _styles: []
+  _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &426741978279554739
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,7 +76,7 @@ GameObject:
   - component: {fileID: 3850302717692432284}
   - component: {fileID: 6985786893491885745}
   m_Layer: 0
-  m_Name: Damas Speaking
+  m_Name: Valentin Damas Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,28 +109,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Damas
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 0
   _text:
     _text: "Stylet, XVIIIe si\xE8cle. Il n\u2019y en a qu\u2019un et il vient de
       ma boutique effectivement..."
     _styles: []
-  _name: Damas
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &960956477832504077
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,7 +189,7 @@ GameObject:
   - component: {fileID: 775364128044798978}
   - component: {fileID: 5234635795442141636}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -160,27 +222,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Damas
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 2
   _text:
     _text: Vous enverrez la facture au commissariat !
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &1015375271061082857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2628293090395769937}
+  - component: {fileID: 5095761778608472819}
+  m_Layer: 0
+  m_Name: Interact
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2628293090395769937
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015375271061082857}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 683539301845602201}
+  - {fileID: 2487864545318728434}
+  m_Father: {fileID: 4722214636426588833}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5095761778608472819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015375271061082857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8a3882457b01e438e4a1d24cc811e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.Sequence
 --- !u!1 &1167819717575108257
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,7 +478,7 @@ GameObject:
   - component: {fileID: 8587197594669212852}
   - component: {fileID: 274314496238427260}
   m_Layer: 0
-  m_Name: Patrice Speaking
+  m_Name: "Pr\xE9sentateur Patrice Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -406,27 +511,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Patrice
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 11
+    _spriteId: 30
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 0
   _text:
     _text: MOI SUSPECT ? <b>MOOOOOOOAAA ??</b>
     _styles: []
-  _name: Patrice
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &1454191036082918729
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,6 +573,305 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a4099385ff88d93a50a4d1d04fc9ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.EndOfDialogSequence
+--- !u!1 &1629280454916821136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8697315142249190948}
+  - component: {fileID: 6153082765400155968}
+  m_Layer: 0
+  m_Name: Wait for 0,5 sec
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8697315142249190948
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629280454916821136}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2501749310559106476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6153082765400155968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629280454916821136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1129c48e53f61f24889a822b21214186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.WaitForDuration
+  _duration: 0.5
+--- !u!1 &1726507629067436490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6813858084700509125}
+  - component: {fileID: 1873330154355604093}
+  m_Layer: 0
+  m_Name: Wait for 0,5 sec
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6813858084700509125
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726507629067436490}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2501749310559106476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1873330154355604093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726507629067436490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1129c48e53f61f24889a822b21214186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.WaitForDuration
+  _duration: 0.5
+--- !u!1 &1752745478948109176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3260586146004895901}
+  - component: {fileID: 1186712739276911102}
+  m_Layer: 0
+  m_Name: "D\xE9tective Shotgun Speaking"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3260586146004895901
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752745478948109176}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2501749310559106476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1186712739276911102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752745478948109176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 11
+    _spriteId: 30
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 2
+  _text:
+    _text: CA SUFFIT ! VENEZ PAR ICI ! JE VOUS AI EU !
+    _styles: []
+  _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &1788856081571158065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1677644172319351672}
+  - component: {fileID: 8399684724148943731}
+  - component: {fileID: 446202549201935303}
+  m_Layer: 0
+  m_Name: Trou_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1677644172319351672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788856081571158065}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.156, y: 1.89, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8984144704454390899}
+  - {fileID: 7929875289475987663}
+  m_Father: {fileID: 4927943713874218095}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8399684724148943731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788856081571158065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ba8adc89f54b814d974909c13324ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.InteractableManager
+  _priority: 3
+  _interactionCases:
+  - _condition:
+      rid: 2493796946410995798
+    _action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8596187826886050464}
+          m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
+          m_MethodName: Execute
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - _condition:
+      rid: 2493796946410995799
+    _action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7369594589069562249}
+          m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
+          m_MethodName: Execute
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  _aimCases: []
+  _onInteracted:
+    m_PersistentCalls:
+      m_Calls: []
+  _onAimed:
+    m_PersistentCalls:
+      m_Calls: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 2493796946410995798
+      type: {class: ItemCondition, ns: DShotgun, asm: DShotgun}
+      data:
+        _item: {fileID: 11400000, guid: 6f7e31ba21a6efe409a556c0f8baa30d, type: 2}
+    - rid: 2493796946410995799
+      type: {class: ItemCondition, ns: DShotgun, asm: DShotgun}
+      data:
+        _item: {fileID: 11400000, guid: 5ee2f902689b344479866fc4f7941cb3, type: 2}
+--- !u!61 &446202549201935303
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788856081571158065}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.092656255, y: 0.019654512}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.7917898, y: 0.3429824}
+  m_EdgeRadius: 0
 --- !u!1 &1878739845978965600
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,7 +931,7 @@ GameObject:
   - component: {fileID: 5847882215649837359}
   - component: {fileID: 8499950523187861213}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -563,28 +964,84 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Damas
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 2
   _text:
     _text: "Mhmmm int\xE9ressant. Et on vous aurez pas cambriol\xE9 par hasard r\xE9cemment
       ? Ce qui expliquerait cela."
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &1986866434296566990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1676142078896974282}
+  - component: {fileID: 1729855287397305181}
+  m_Layer: 0
+  m_Name: Invoke Event with 1 binds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1676142078896974282
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986866434296566990}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2501749310559106476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1729855287397305181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986866434296566990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69bcb5ae2dda1d84585899ae21a338d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.UnityEventSequence
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DShotgun.CameraScenePosition, DShotgun
+        m_MethodName: ChangeCamPos
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2015430373486594347
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,7 +1053,7 @@ GameObject:
   - component: {fileID: 5264789678871832933}
   - component: {fileID: 8689620529493581628}
   m_Layer: 0
-  m_Name: Patrice Speaking
+  m_Name: "Pr\xE9sentateur Patrice Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -629,29 +1086,88 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Patrice
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 11
+    _spriteId: 30
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 0
   _text:
     _text: "<b>RETROUVEZ LE VITE !! NOUS SOMMES EN DANGER !! JE NE PEUX PAS MOURIR
       AVANT D\u2019AVOIR CONNU LES COLLECTIONS DE JOHN GALLIANO A LA T\xCATE DE DIOR
       !!</b>"
     _styles: []
-  _name: Patrice
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &2099729963041301711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2881896857259754523}
+  - component: {fileID: 4071544168364583002}
+  m_Layer: 0
+  m_Name: "Pr\xE9sentateur Patrice Speaking"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2881896857259754523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099729963041301711}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2501749310559106476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4071544168364583002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099729963041301711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 11
+    _spriteId: 30
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 1
+  _text:
+    _text: AHH MAIS ! MAIS-MAIS-MAIS !
+    _styles: []
+  _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &2114269322647617384
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,7 +1179,7 @@ GameObject:
   - component: {fileID: 5665674238940537412}
   - component: {fileID: 8031348890224485946}
   m_Layer: 0
-  m_Name: Damas Speaking
+  m_Name: Valentin Damas Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -696,28 +1212,89 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Damas
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 2
   _text:
     _text: "C\u2019est ce que je dis aux touristes am\xE9ricains.. en fait c\u2019est
       du Made In China."
     _styles: []
-  _name: Damas
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &2306814033133060067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4747354967353174770}
+  - component: {fileID: 604737983052870709}
+  m_Layer: 0
+  m_Name: "Pr\xE9sentateur Patrice Speaking"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4747354967353174770
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2306814033133060067}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2501749310559106476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &604737983052870709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2306814033133060067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 11
+    _spriteId: 30
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 1
+  _text:
+    _text: "COMMENT CA MAIS NON ?? VOYONS C\u2019EST DE LA FOLIE ?? JE NE PEUX PAS
+      ME FAIRE ARRETER J\u2019AI UN LAPIN QUI M\u2019ATTEND A LA MAISON ET UNE CASSEROLE
+      SUR LE FEU !!"
+    _styles: []
+  _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &2357247876424676986
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,7 +1306,7 @@ GameObject:
   - component: {fileID: 3938437165165798559}
   - component: {fileID: 3623098723539767491}
   m_Layer: 0
-  m_Name: Damas Speaking
+  m_Name: Valentin Damas Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -762,28 +1339,88 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Damas
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 0
   _text:
     _text: "Ah oui ? Ce bar, je le connais, j\u2019y vais souvent pour boire un coup
       avant de passer sur Antenne 3"
     _styles: []
-  _name: Damas
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &2411353915615913853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5879466449612240860}
+  - component: {fileID: 6510918391508568766}
+  m_Layer: 0
+  m_Name: Valentin Damas Speaking
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5879466449612240860
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2411353915615913853}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2501749310559106476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6510918391508568766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2411353915615913853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 0
+  _text:
+    _text: "Il s\u2019est enfui \xE0 l\u2019aide de ma camionnette, d\xE9p\xEAchez-vous
+      !"
+    _styles: []
+  _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &2702226727335061335
 GameObject:
   m_ObjectHideFlags: 0
@@ -795,7 +1432,7 @@ GameObject:
   - component: {fileID: 3872218299143612474}
   - component: {fileID: 5871442004471983554}
   m_Layer: 0
-  m_Name: Damas Speaking
+  m_Name: Valentin Damas Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -828,28 +1465,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Damas
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 0
   _text:
     _text: "Peut-\xEAtre y trouveriez vous des indices bien utiles en vous y rendant
       ? Sur moi par exemple..."
     _styles: []
-  _name: Damas
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &2794429013784045816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 450675483453348695}
+  - component: {fileID: 8942659531548143973}
+  m_Layer: 0
+  m_Name: Wait for 3 sec
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &450675483453348695
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2794429013784045816}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2501749310559106476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8942659531548143973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2794429013784045816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1129c48e53f61f24889a822b21214186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.WaitForDuration
+  _duration: 3
 --- !u!1 &2824954991977558875
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,7 +1540,7 @@ GameObject:
   - component: {fileID: 1224507729848031075}
   - component: {fileID: 7201953694466543284}
   m_Layer: 0
-  m_Name: Patrice Speaking
+  m_Name: "Pr\xE9sentateur Patrice Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -894,27 +1573,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Patrice
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 11
+    _spriteId: 30
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 0
   _text:
     _text: NOOOON ! Mon doux visage !
     _styles: []
-  _name: Patrice
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &2928592007412470556
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,6 +1635,94 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a4099385ff88d93a50a4d1d04fc9ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.EndOfDialogSequence
+--- !u!1 &2972685736640741951
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7853577974805221450}
+  - component: {fileID: 9058766715965151142}
+  m_Layer: 0
+  m_Name: EndOfDialogSequence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7853577974805221450
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2972685736640741951}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8984144704454390899}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9058766715965151142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2972685736640741951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24a4099385ff88d93a50a4d1d04fc9ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.EndOfDialogSequence
+--- !u!1 &3184240325947977669
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2201756236353818220}
+  - component: {fileID: 309190860046517369}
+  m_Layer: 0
+  m_Name: EndOfDialogSequence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2201756236353818220
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3184240325947977669}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2501749310559106476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &309190860046517369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3184240325947977669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24a4099385ff88d93a50a4d1d04fc9ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.EndOfDialogSequence
 --- !u!1 &3187072550340009124
 GameObject:
   m_ObjectHideFlags: 0
@@ -970,7 +1734,7 @@ GameObject:
   - component: {fileID: 7708174928455989159}
   - component: {fileID: 539543075629266150}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1003,28 +1767,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Patrice
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 11
+    _spriteId: 30
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 2
   _text:
     _text: "Pas le temps pour la drague, on parle d\u2019une affaire tr\xE8s s\xE9rieuse.
       Un meurtre au couteau."
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &3338183409602772332
 GameObject:
   m_ObjectHideFlags: 0
@@ -1036,7 +1797,7 @@ GameObject:
   - component: {fileID: 1030641101838833248}
   - component: {fileID: 3207832711792150778}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1069,28 +1830,182 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Damas
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 2
   _text:
     _text: "Je suis ici pour me renseigner sur l\u2019arme du crime, et vu que vous
       \xEAtes l\u2019expert, on parle d\u2019un stylet assez particulier."
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &3367494508755775537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3395300646916302336}
+  - component: {fileID: 8512392892543014961}
+  m_Layer: 0
+  m_Name: CommentFrame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3395300646916302336
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3367494508755775537}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7929875289475987663}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8512392892543014961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3367494508755775537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1377d340553a30803855780b85012371, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CommentFrame
+  _name: Detective Shotgun
+  _text:
+    _text: "Il faut que j\u2019y fasse attention ! Il y a inscrit l\u2019adresse
+      du bar o\xF9 je dois retrouver Sally tout \xE0 l\u2019heure."
+    _styles: []
+  _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+--- !u!1 &3520974727812030221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7929875289475987663}
+  - component: {fileID: 7369594589069562249}
+  m_Layer: 0
+  m_Name: Interact (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7929875289475987663
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3520974727812030221}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3395300646916302336}
+  m_Father: {fileID: 1677644172319351672}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7369594589069562249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3520974727812030221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8a3882457b01e438e4a1d24cc811e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.Sequence
+--- !u!1 &3561599698739374756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8930871008827984129}
+  - component: {fileID: 4319022581268932471}
+  m_Layer: 0
+  m_Name: "D\xE9tective Shotgun Speaking"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8930871008827984129
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3561599698739374756}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2501749310559106476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4319022581268932471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3561599698739374756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 11
+    _spriteId: 30
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 2
+  _text:
+    _text: Parlez, bon sang !
+    _styles: []
+  _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &3624039216413645521
 GameObject:
   m_ObjectHideFlags: 0
@@ -1146,7 +2061,7 @@ GameObject:
   - component: {fileID: 7243962769099685306}
   - component: {fileID: 2161902852645832187}
   m_Layer: 0
-  m_Name: Damas Speaking
+  m_Name: Valentin Damas Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1179,28 +2094,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Damas
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: Patrice
-    _spriteName: Idle
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 11
+    _spriteId: 30
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 0
   _text:
     _text: "Vous n\u2019\xEAtes donc vraiment pas sensible \xE0 l\u2019art, Shotgun
       ?"
     _styles: []
-  _name: Damas
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &3734000218089606293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1212,7 +2124,7 @@ GameObject:
   - component: {fileID: 4056756189188438490}
   - component: {fileID: 1276299538532448236}
   m_Layer: 0
-  m_Name: Patrice Speaking
+  m_Name: "Pr\xE9sentateur Patrice Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1245,28 +2157,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Damas
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: Patrice
-    _spriteName: Idle
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 1
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 11
+    _spriteId: 30
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 1
   _text:
     _text: "Pourquoi ne dites vous pas des choses aussi int\xE9ressantes quand on
       est \xE0 l\u2019antenne mon mignon ?"
     _styles: []
-  _name: Patrice
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &3758798167514563447
 GameObject:
   m_ObjectHideFlags: 0
@@ -1278,7 +2187,7 @@ GameObject:
   - component: {fileID: 7798283439971099826}
   - component: {fileID: 4819816217480502656}
   m_Layer: 0
-  m_Name: Patrice Speaking
+  m_Name: "Pr\xE9sentateur Patrice Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1311,28 +2220,131 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Patrice
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 11
+    _spriteId: 30
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 0
   _text:
     _text: "AHHH MAIS VOUS \xCATES COMPLETEMENT FOUS ! CA COUPE POUR DE VRAI CA !
       C\u2019EST DANGEREUX !"
     _styles: []
-  _name: Patrice
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &3851716582540375719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7740483703358528137}
+  - component: {fileID: 5610703130604242455}
+  m_Layer: 0
+  m_Name: CommentFrame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7740483703358528137
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3851716582540375719}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3068007573417733049}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5610703130604242455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3851716582540375719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1377d340553a30803855780b85012371, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CommentFrame
+  _name: Detective Shotgun
+  _text:
+    _text: "Il faut que j\u2019y fasse attention ! Il y a inscrit l\u2019adresse
+      du bar o\xF9 je dois retrouver Sally tout \xE0 l\u2019heure."
+    _styles: []
+  _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+--- !u!1 &3863312565996885795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4927943713874218095}
+  - component: {fileID: 1595607099890566364}
+  m_Layer: 0
+  m_Name: TrouDeCouteaux
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4927943713874218095
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3863312565996885795}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 849955257015793420}
+  - {fileID: 1677644172319351672}
+  - {fileID: 4722214636426588833}
+  m_Father: {fileID: 7209769950963568240}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1595607099890566364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3863312565996885795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72e943eb5f67a06478c6222aa53729ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.PendingItem
+  _condition:
+    rid: 2493796947173572698
+  references:
+    version: 2
+    RefIds:
+    - rid: 2493796947173572698
+      type: {class: StateCondition, ns: DShotgun, asm: DShotgun}
+      data:
+        _state: 4
 --- !u!1 &3918553898874818794
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,7 +2356,7 @@ GameObject:
   - component: {fileID: 3615137955423188055}
   - component: {fileID: 3880981540086592244}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1377,28 +2389,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Patrice
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 11
+    _spriteId: 30
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 2
   _text:
     _text: "Vous pouvez compter sur moi Patrice, mais calmez vous s\u2019il vous
       pla\xEEt, \xE7a ne vous rend que plus suspect."
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &3998098495387120496
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,7 +2419,7 @@ GameObject:
   - component: {fileID: 2138305533577430954}
   - component: {fileID: 7008180608422394186}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1443,27 +2452,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Damas
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 0
   _text:
     _text: "En quoi ? C\u2019est \xE7a qui justifie son prix ?"
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &4029067206617477758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3068007573417733049}
+  - component: {fileID: 7652351756824104347}
+  m_Layer: 0
+  m_Name: OnInteract
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3068007573417733049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4029067206617477758}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7740483703358528137}
+  m_Father: {fileID: 4816708952262857744}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7652351756824104347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4029067206617477758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8a3882457b01e438e4a1d24cc811e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.Sequence
 --- !u!1 &4036647075863480438
 GameObject:
   m_ObjectHideFlags: 0
@@ -1475,7 +2526,7 @@ GameObject:
   - component: {fileID: 4199296403374450879}
   - component: {fileID: 7875043284562613763}
   m_Layer: 0
-  m_Name: Damas Speaking
+  m_Name: Valentin Damas Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1508,28 +2559,149 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Damas
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 0
   _text:
     _text: "Non absolument pas, pas de vol \xE0 signal\xE9, en tout cas merci de
       me l\u2019avoir rapport\xE9 ! Vous pouvez le remettre en vitrine."
     _styles: []
-  _name: Damas
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &4104734366699654953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 702563625362097151}
+  - component: {fileID: 1601405013083324790}
+  m_Layer: 0
+  m_Name: Valentin Damas Speaking
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &702563625362097151
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4104734366699654953}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8984144704454390899}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1601405013083324790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4104734366699654953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 0
+  _text:
+    _text: "Ne forcez pas, si \xE7a ne rentre pas, \xE7a ne rentrera juste pas."
+    _styles: []
+  _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &4108628906620933605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 992284139339761005}
+  - component: {fileID: 5063052510196777918}
+  m_Layer: 0
+  m_Name: "Pr\xE9sentateur Patrice Speaking"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &992284139339761005
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4108628906620933605}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2501749310559106476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5063052510196777918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4108628906620933605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 11
+    _spriteId: 30
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 1
+  _text:
+    _text: MAIS STOP ! AHHHHHHHHH
+    _styles: []
+  _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &4122981015887159171
 GameObject:
   m_ObjectHideFlags: 0
@@ -1541,7 +2713,7 @@ GameObject:
   - component: {fileID: 3867919821014886697}
   - component: {fileID: 59453336640709088}
   m_Layer: 0
-  m_Name: Damas Speaking
+  m_Name: Valentin Damas Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1574,30 +2746,135 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Damas
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 0
   _text:
     _text: "Je suppose que vous \xEAtes venus ici car vous me soup\xE7onnez.. n\u2019est-ce
       pas ? Je suis litt\xE9ralement le seul de la ville \xE0 poss\xE9der autant
       de couteau de collection et exprimant une haine visc\xE9rale envers les armes
       \xE0 feu \xE0 chaque fois que je suis \xE0 l\u2019antenne sur Antenne 3 et-"
     _styles: []
-  _name: Damas
   _moveNextAutomatically: 1
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &4142466018678270047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 683539301845602201}
+  - component: {fileID: 4779376085439543871}
+  m_Layer: 0
+  m_Name: Valentin Damas Speaking
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &683539301845602201
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4142466018678270047}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2628293090395769937}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4779376085439543871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4142466018678270047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 0
+  _text:
+    _text: "Faites attention ! Arr\xEAtez d\u2019ag\xEEter ce couteau dont je serais
+      le seul \xE0 conna\xEEtre l\u2019existence que je ne pr\xE9tends pas conna\xEEtre
+      !"
+    _styles: []
+  _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &4201273022900952417
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2677479213314460596}
+  - component: {fileID: 5646760502351332413}
+  m_Layer: 0
+  m_Name: EndOfDialogSequence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2677479213314460596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4201273022900952417}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.6666665, y: 1.6666665, z: 1.6666665}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4352182686539728327}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5646760502351332413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4201273022900952417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24a4099385ff88d93a50a4d1d04fc9ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.EndOfDialogSequence
 --- !u!1 &4202143631251285444
 GameObject:
   m_ObjectHideFlags: 0
@@ -1642,6 +2919,120 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a4099385ff88d93a50a4d1d04fc9ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.EndOfDialogSequence
+--- !u!1 &4274640467766769729
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 680478782635523374}
+  - component: {fileID: 6576853299217869667}
+  m_Layer: 0
+  m_Name: "D\xE9tective Shotgun Speaking"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &680478782635523374
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4274640467766769729}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2501749310559106476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6576853299217869667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4274640467766769729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 11
+    _spriteId: 30
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 2
+  _text:
+    _text: "Pas mal, c\u2019est bien une punchline que pourrais dire D\xE9tective
+      Shotgun."
+    _styles: []
+  _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &4289748583935551454
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4624649859476071666}
+  - component: {fileID: 1022098427799631702}
+  m_Layer: 0
+  m_Name: ChangeSceneSequence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4624649859476071666
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4289748583935551454}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2501749310559106476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1022098427799631702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4289748583935551454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b15965115f7b55a10a0df6a3317da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ChangeSceneSequence
+  _data:
+    Date: 
+    Heure: 
+    Lieu: 
+    Background: {fileID: 0}
+  _tableau: 7
+  _state: 8
 --- !u!1 &4481332469362565517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1653,7 +3044,7 @@ GameObject:
   - component: {fileID: 2694901743628465877}
   - component: {fileID: 3757913844896550523}
   m_Layer: 0
-  m_Name: Patrice Speaking
+  m_Name: "Pr\xE9sentateur Patrice Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1686,27 +3077,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Patrice
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 11
+    _spriteId: 30
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 0
   _text:
     _text: "<b>UN MEURTRE AU COUTEAU ??? COMMENT C\u2019EST POSSIBLE ???</b>"
     _styles: []
-  _name: Patrice
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &4482892754204881485
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 445452476164961600}
+  - component: {fileID: 3739089909130422749}
+  m_Layer: 0
+  m_Name: Deactivate Patrice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &445452476164961600
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4482892754204881485}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2501749310559106476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3739089909130422749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4482892754204881485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06887433ba2fc1247a29057828736437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.ActivateObject
+  _object: {fileID: 2043739278162156109}
+  _active: 0
 --- !u!1 &4606679502060851368
 GameObject:
   m_ObjectHideFlags: 0
@@ -1807,7 +3241,7 @@ GameObject:
   - component: {fileID: 9148116951547261895}
   - component: {fileID: 6867463888340664935}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1840,28 +3274,117 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Damas
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 2
   _text:
     _text: "Pourquoi \xE7a m\u2019int\xE9resserait ? Je recherche le criminel moi
       !"
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &4791926530559581002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8984144704454390899}
+  - component: {fileID: 8596187826886050464}
+  m_Layer: 0
+  m_Name: Interact
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8984144704454390899
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4791926530559581002}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 702563625362097151}
+  - {fileID: 3607066831762718762}
+  - {fileID: 7853577974805221450}
+  m_Father: {fileID: 1677644172319351672}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8596187826886050464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4791926530559581002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8a3882457b01e438e4a1d24cc811e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.Sequence
+--- !u!1 &4870665802161060702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2956466904511138552}
+  - component: {fileID: 5956856630520883595}
+  m_Layer: 0
+  m_Name: Interact (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2956466904511138552
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4870665802161060702}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1725657310743452586}
+  m_Father: {fileID: 4722214636426588833}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5956856630520883595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4870665802161060702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8a3882457b01e438e4a1d24cc811e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.Sequence
 --- !u!1 &4977464041642935933
 GameObject:
   m_ObjectHideFlags: 0
@@ -1873,7 +3396,7 @@ GameObject:
   - component: {fileID: 3819595836459720906}
   - component: {fileID: 4647108091571090924}
   m_Layer: 0
-  m_Name: Patrice Speaking
+  m_Name: "Pr\xE9sentateur Patrice Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1906,29 +3429,85 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Patrice
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 11
+    _spriteId: 30
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 0
   _text:
     _text: "Ahhhh mon cher Shotgun ! Comme allez-vous ? Vous allez attraper un autre
       m\xE9chant que je puisse profiter de votre minois en prime time sur mon plateau
       ?"
     _styles: []
-  _name: Patrice
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &5189058951799043081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2967442909110335327}
+  - component: {fileID: 6484000516579938711}
+  m_Layer: 0
+  m_Name: Invoke Event with 1 binds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2967442909110335327
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5189058951799043081}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3653428793020791366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6484000516579938711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5189058951799043081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69bcb5ae2dda1d84585899ae21a338d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.UnityEventSequence
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DShotgun.CameraScenePosition, DShotgun
+        m_MethodName: ChangeCamPos
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5195267259950869527
 GameObject:
   m_ObjectHideFlags: 0
@@ -1975,6 +3554,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a8a3882457b01e438e4a1d24cc811e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: HierarchySequences::HierarchySequences.Sequence
+--- !u!1 &5345216035422270169
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6020194598607267130}
+  - component: {fileID: 7678463401620787322}
+  m_Layer: 0
+  m_Name: ' Speaking'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6020194598607267130
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5345216035422270169}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2501749310559106476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7678463401620787322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5345216035422270169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: -1
+  _text:
+    _text: Patrice prend la fuite...
+    _styles: []
+  _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &5478680619964727136
 GameObject:
   m_ObjectHideFlags: 0
@@ -1986,7 +3627,7 @@ GameObject:
   - component: {fileID: 1756440745718835633}
   - component: {fileID: 5793119140748395833}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2019,27 +3660,87 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Damas
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 0
   _text:
     _text: "Bah alors ? Comment \xE7a se fait ?"
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &5627338311839908969
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3827605028807485081}
+  - component: {fileID: 1051141845322244871}
+  m_Layer: 0
+  m_Name: "D\xE9tective Shotgun Speaking"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3827605028807485081
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5627338311839908969}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2501749310559106476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1051141845322244871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5627338311839908969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 2
+  _text:
+    _text: "Vol de v\xE9hicule en plus ! Patrice, vous ne faites qu\u2019aggraver
+      votre cas !"
+    _styles: []
+  _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &5635226947882703787
 GameObject:
   m_ObjectHideFlags: 0
@@ -2051,7 +3752,7 @@ GameObject:
   - component: {fileID: 2976021958715630369}
   - component: {fileID: 4724605575481670823}
   m_Layer: 0
-  m_Name: Damas Speaking
+  m_Name: Valentin Damas Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2084,30 +3785,174 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Damas
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 0
   _text:
     _text: "Enchant\xE9 mon cher Shotgun. Il me semble qu\u2019on s\u2019est d\xE9j\xE0
       crois\xE9 plusieurs fois dans les loges ou dans la r\xE9gie de Antenne 3, vu
       que votre \xE9mission est souvent programm\xE9e juste avant la mienne... en
       prime time..."
     _styles: []
-  _name: Damas
-  _moveNextAutomatically: 0
+  _moveNextAutomatically: 1
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &5674380148103543778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 849955257015793420}
+  - component: {fileID: 2664386659902570650}
+  - component: {fileID: 2412652193078520791}
+  m_Layer: 0
+  m_Name: Trou_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &849955257015793420
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5674380148103543778}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.156, y: 0.848, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2501749310559106476}
+  - {fileID: 7853946584083913152}
+  m_Father: {fileID: 4927943713874218095}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2664386659902570650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5674380148103543778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ba8adc89f54b814d974909c13324ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.InteractableManager
+  _priority: 3
+  _interactionCases:
+  - _condition:
+      rid: 2493796946410995798
+    _action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3539114106004908509}
+          m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
+          m_MethodName: Execute
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - _condition:
+      rid: 2493796946410995799
+    _action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 882859337817117156}
+          m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
+          m_MethodName: Execute
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  _aimCases: []
+  _onInteracted:
+    m_PersistentCalls:
+      m_Calls: []
+  _onAimed:
+    m_PersistentCalls:
+      m_Calls: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 2493796946410995798
+      type: {class: ItemCondition, ns: DShotgun, asm: DShotgun}
+      data:
+        _item: {fileID: 11400000, guid: 6f7e31ba21a6efe409a556c0f8baa30d, type: 2}
+    - rid: 2493796946410995799
+      type: {class: ItemCondition, ns: DShotgun, asm: DShotgun}
+      data:
+        _item: {fileID: 11400000, guid: 5ee2f902689b344479866fc4f7941cb3, type: 2}
+--- !u!61 &2412652193078520791
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5674380148103543778}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.092656255, y: 0.019654512}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.7917898, y: 0.3429824}
+  m_EdgeRadius: 0
 --- !u!1 &5746996868784883530
 GameObject:
   m_ObjectHideFlags: 0
@@ -2163,7 +4008,7 @@ GameObject:
   - component: {fileID: 5501333731240548254}
   - component: {fileID: 9006770336739539194}
   m_Layer: 0
-  m_Name: Damas Speaking
+  m_Name: Valentin Damas Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2196,28 +4041,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Damas
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 2
   _text:
     _text: "C\u2019est un vase datant de l\u2019antiquit\xE9 renforc\xE9 en tungsten
       le rendant pare-balle."
     _styles: []
-  _name: Damas
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &6179905091696011484
 GameObject:
   m_ObjectHideFlags: 0
@@ -2268,6 +4110,50 @@ MonoBehaviour:
       !"
     _styles: []
   _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+--- !u!1 &6256142413794967396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2487864545318728434}
+  - component: {fileID: 3267122911287547883}
+  m_Layer: 0
+  m_Name: EndOfDialogSequence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2487864545318728434
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6256142413794967396}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2628293090395769937}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3267122911287547883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6256142413794967396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24a4099385ff88d93a50a4d1d04fc9ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.EndOfDialogSequence
 --- !u!1 &6435918731017475229
 GameObject:
   m_ObjectHideFlags: 0
@@ -2279,7 +4165,7 @@ GameObject:
   - component: {fileID: 2874740797845652503}
   - component: {fileID: 1344407431393826075}
   m_Layer: 0
-  m_Name: Patrice Speaking
+  m_Name: "Pr\xE9sentateur Patrice Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2312,27 +4198,132 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Patrice
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 11
+    _spriteId: 30
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 0
   _text:
     _text: <wait=1>.<wait=1>.<wait=1>.
     _styles: []
-  _name: Patrice
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &6449806818069528194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1178856199166590235}
+  - component: {fileID: 7770736274255845806}
+  m_Layer: 0
+  m_Name: Activate Patrice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1178856199166590235
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6449806818069528194}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2501749310559106476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7770736274255845806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6449806818069528194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06887433ba2fc1247a29057828736437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.ActivateObject
+  _object: {fileID: 2043739278162156109}
+  _active: 1
+--- !u!1 &6491609043177854246
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2958336689570012794}
+  - component: {fileID: 9189901713233510745}
+  m_Layer: 0
+  m_Name: "Pr\xE9sentateur Patrice Speaking"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2958336689570012794
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6491609043177854246}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2501749310559106476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9189901713233510745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6491609043177854246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 11
+    _spriteId: 30
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 1
+  _text:
+    _text: Oh.. OH? OHHHH? OHHHH ?
+    _styles: []
+  _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &6504345276831418948
 GameObject:
   m_ObjectHideFlags: 0
@@ -2344,7 +4335,7 @@ GameObject:
   - component: {fileID: 7746646166817787929}
   - component: {fileID: 6337293281407939321}
   m_Layer: 0
-  m_Name: Patrice Speaking
+  m_Name: "Pr\xE9sentateur Patrice Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2377,28 +4368,87 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Patrice
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 11
+    _spriteId: 30
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 0
   _text:
     _text: "Ne vous en faites pas j\u2019ai d\xE9j\xE0 mon fid\xE8le briquet Cartier
       que mon ex m\u2019avait offert."
     _styles: []
-  _name: Patrice
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &6566869295321284932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7278639023085567248}
+  - component: {fileID: 6990070655627433212}
+  m_Layer: 0
+  m_Name: Valentin Damas Speaking
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7278639023085567248
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6566869295321284932}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2501749310559106476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6990070655627433212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6566869295321284932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 11
+    _spriteId: 30
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 0
+  _text:
+    _text: "Qu\u2019est-ce qu\u2019il y a Patrice ?"
+    _styles: []
+  _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &6683901019400351497
 GameObject:
   m_ObjectHideFlags: 0
@@ -2410,7 +4460,7 @@ GameObject:
   - component: {fileID: 3764508572043024669}
   - component: {fileID: 972736977967218529}
   m_Layer: 0
-  m_Name: Patrice Speaking
+  m_Name: "Pr\xE9sentateur Patrice Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2443,28 +4493,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Patrice
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 11
+    _spriteId: 30
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 0
   _text:
     _text: "Oui, oui, je parle bien de quand je sortais avec Yves Saint Laurent,
       lui-m\xEAme !"
     _styles: []
-  _name: Patrice
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &6736239432046206481
 GameObject:
   m_ObjectHideFlags: 0
@@ -2476,7 +4523,7 @@ GameObject:
   - component: {fileID: 3873178846850935681}
   - component: {fileID: 7246857147505360891}
   m_Layer: 0
-  m_Name: Damas Speaking
+  m_Name: Valentin Damas Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2509,27 +4556,226 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Patrice
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Damas
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
+  _leftRef:
+    _characterId: 11
+    _spriteId: 30
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 2
   _text:
     _text: "S\u2019il vous pla\xEEt, faites attention D\xE9tective Shotgun..."
     _styles: []
-  _name: Damas
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &6784782872540377903
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1839588060305351860}
+  - component: {fileID: 4474629878046293453}
+  m_Layer: 0
+  m_Name: Valentin Damas Speaking
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1839588060305351860
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6784782872540377903}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2501749310559106476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4474629878046293453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6784782872540377903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 11
+    _spriteId: 30
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 0
+  _text:
+    _text: "Vous \xEAtes vraiment le couteau le plus aiguis\xE9 du tiroir haha !"
+    _styles: []
+  _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &6956387839937503651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4633876847042009351}
+  - component: {fileID: 6380893563802505512}
+  m_Layer: 0
+  m_Name: SwitchStateSequence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4633876847042009351
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6956387839937503651}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3653428793020791366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6380893563802505512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6956387839937503651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b41b75576bf7494889215aa46610031, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.SwitchStateSequence
+  _state: 4
+--- !u!1 &7066536787378622272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7853946584083913152}
+  - component: {fileID: 882859337817117156}
+  m_Layer: 0
+  m_Name: Interact (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7853946584083913152
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7066536787378622272}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2375561544993792936}
+  m_Father: {fileID: 849955257015793420}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &882859337817117156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7066536787378622272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8a3882457b01e438e4a1d24cc811e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.Sequence
+--- !u!1 &7089490348910524759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1725657310743452586}
+  - component: {fileID: 1662953867989678479}
+  m_Layer: 0
+  m_Name: CommentFrame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1725657310743452586
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7089490348910524759}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2956466904511138552}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1662953867989678479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7089490348910524759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1377d340553a30803855780b85012371, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CommentFrame
+  _name: Detective Shotgun
+  _text:
+    _text: "Il faut que j\u2019y fasse attention ! Il y a inscrit l\u2019adresse
+      du bar o\xF9 je dois retrouver Sally tout \xE0 l\u2019heure."
+    _styles: []
+  _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
 --- !u!1 &7272356086387580777
 GameObject:
   m_ObjectHideFlags: 0
@@ -2566,6 +4812,8 @@ Transform:
   - {fileID: 518163365851701322}
   - {fileID: 5229947420782216224}
   - {fileID: 1237393724929176038}
+  - {fileID: 4927943713874218095}
+  - {fileID: 4816708952262857744}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7459222845710047086
@@ -2579,7 +4827,7 @@ GameObject:
   - component: {fileID: 6601245229173390878}
   - component: {fileID: 7206402130680745607}
   m_Layer: 0
-  m_Name: Damas Speaking
+  m_Name: Valentin Damas Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2612,27 +4860,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Damas
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 0
   _text:
     _text: "Ah... D\u2019accord... Eh bien faites moi voir cela..."
     _styles: []
-  _name: Damas
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &7508483289657742856
 GameObject:
   m_ObjectHideFlags: 0
@@ -2644,7 +4889,7 @@ GameObject:
   - component: {fileID: 1973260968026701318}
   - component: {fileID: 4319373830003760957}
   m_Layer: 0
-  m_Name: Damas Speaking
+  m_Name: Valentin Damas Speaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2677,28 +4922,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Damas
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 0
   _text:
     _text: "D\xE9tective... Il y en a pour extr\xEAmement cher... Faites attention
       s\u2019il vous pla\xEEt ce sont des pi\xE8ces rares et inestimab-"
     _styles: []
-  _name: Damas
   _moveNextAutomatically: 1
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &7550708131470475225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2710,7 +4952,7 @@ GameObject:
   - component: {fileID: 213773621788664324}
   - component: {fileID: 5902790287536049197}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2743,29 +4985,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Damas
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 2
   _text:
     _text: "Enchant\xE9 ! Je crois oui ? Enfin je sais pas, je m\u2019en fous un
       peu mais, sympa tout ces couteaux ! Attention quand m\xEAme car je crois qu\u2019un
       meurtre a eu lieu cette nuit impliquant un couteau... couteau assez particulier..."
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &7683247599615434179
 GameObject:
   m_ObjectHideFlags: 0
@@ -2777,7 +5016,7 @@ GameObject:
   - component: {fileID: 803399086288284996}
   - component: {fileID: 3951972330139805624}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2810,27 +5049,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Patrice
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 11
+    _spriteId: 30
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 2
   _text:
     _text: "Je ne crois pas vous avoir demand\xE9 d\u2019expliciter Patrice."
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &7702962019275860408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2864656174757845736}
+  - component: {fileID: 6734269049068081850}
+  m_Layer: 0
+  m_Name: Deactivate Patrice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2864656174757845736
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7702962019275860408}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2501749310559106476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6734269049068081850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7702962019275860408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06887433ba2fc1247a29057828736437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.ActivateObject
+  _object: {fileID: 2043739278162156109}
+  _active: 0
 --- !u!1 &7767358931229751717
 GameObject:
   m_ObjectHideFlags: 0
@@ -2842,7 +5124,7 @@ GameObject:
   - component: {fileID: 7497316726113252656}
   - component: {fileID: 3923773280802187640}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2875,28 +5157,93 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Damas
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: Patrice
-    _spriteName: Idle
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 11
+    _spriteId: 30
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 2
   _text:
     _text: "C\u2019est plus fort que moi... Je pense que la destruction, autant que
       le cr\xE9ation, peut \xEAtre aussi porteuse de sens."
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &7889201633933218483
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2501749310559106476}
+  - component: {fileID: 3539114106004908509}
+  m_Layer: 0
+  m_Name: Interact
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2501749310559106476
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7889201633933218483}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1839588060305351860}
+  - {fileID: 680478782635523374}
+  - {fileID: 2958336689570012794}
+  - {fileID: 7278639023085567248}
+  - {fileID: 2881896857259754523}
+  - {fileID: 8930871008827984129}
+  - {fileID: 2283236364916012221}
+  - {fileID: 6144536204803531899}
+  - {fileID: 4747354967353174770}
+  - {fileID: 3260586146004895901}
+  - {fileID: 992284139339761005}
+  - {fileID: 2864656174757845736}
+  - {fileID: 8697315142249190948}
+  - {fileID: 1178856199166590235}
+  - {fileID: 6813858084700509125}
+  - {fileID: 445452476164961600}
+  - {fileID: 6020194598607267130}
+  - {fileID: 5879466449612240860}
+  - {fileID: 3827605028807485081}
+  - {fileID: 2201756236353818220}
+  - {fileID: 1676142078896974282}
+  - {fileID: 1647989533308979994}
+  - {fileID: 450675483453348695}
+  - {fileID: 4624649859476071666}
+  m_Father: {fileID: 849955257015793420}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3539114106004908509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7889201633933218483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8a3882457b01e438e4a1d24cc811e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.Sequence
 --- !u!1 &7911670506341120826
 GameObject:
   m_ObjectHideFlags: 0
@@ -2986,6 +5333,341 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a4099385ff88d93a50a4d1d04fc9ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.EndOfDialogSequence
+--- !u!1 &8064856559190909460
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4722214636426588833}
+  - component: {fileID: 5457179800587000444}
+  - component: {fileID: 362836937101916735}
+  m_Layer: 0
+  m_Name: Presentoire_Zoomed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4722214636426588833
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064856559190909460}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.01, y: 1.15, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2628293090395769937}
+  - {fileID: 2956466904511138552}
+  m_Father: {fileID: 4927943713874218095}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5457179800587000444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064856559190909460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ba8adc89f54b814d974909c13324ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.InteractableManager
+  _priority: 2
+  _interactionCases:
+  - _condition:
+      rid: 2493796946410995798
+    _action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5095761778608472819}
+          m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
+          m_MethodName: Execute
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - _condition:
+      rid: 2493796946410995799
+    _action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5956856630520883595}
+          m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
+          m_MethodName: Execute
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  _aimCases: []
+  _onInteracted:
+    m_PersistentCalls:
+      m_Calls: []
+  _onAimed:
+    m_PersistentCalls:
+      m_Calls: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 2493796946410995798
+      type: {class: ItemCondition, ns: DShotgun, asm: DShotgun}
+      data:
+        _item: {fileID: 11400000, guid: 6f7e31ba21a6efe409a556c0f8baa30d, type: 2}
+    - rid: 2493796946410995799
+      type: {class: ItemCondition, ns: DShotgun, asm: DShotgun}
+      data:
+        _item: {fileID: 11400000, guid: 5ee2f902689b344479866fc4f7941cb3, type: 2}
+--- !u!61 &362836937101916735
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064856559190909460}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.01952684, y: 0.0013720989}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 3.2689912, y: 3.2461967}
+  m_EdgeRadius: 0
+--- !u!1 &8142406130055193315
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2283236364916012221}
+  - component: {fileID: 8681004257796082358}
+  m_Layer: 0
+  m_Name: "Pr\xE9sentateur Patrice Speaking"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2283236364916012221
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8142406130055193315}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2501749310559106476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8681004257796082358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8142406130055193315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 11
+    _spriteId: 30
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 1
+  _text:
+    _text: "SI LE COUTEAU VIENT D\u2019ICI ET QU\u2019IL EST UNIQUE, C\u2019EST QUE
+      LE TUEUR EST FORCEMENT... <wait=1><b>D-DA-DA-DAM-</b>!"
+    _styles: []
+  _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &8228235371964445598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4816708952262857744}
+  - component: {fileID: 5825313707207053364}
+  - component: {fileID: 7965113830157041606}
+  m_Layer: 0
+  m_Name: Any
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4816708952262857744
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8228235371964445598}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3068007573417733049}
+  m_Father: {fileID: 7209769950963568240}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &5825313707207053364
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8228235371964445598}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.016968727, y: 0.0000009536743}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 19.291883, y: 10.909519}
+  m_EdgeRadius: 0
+--- !u!114 &7965113830157041606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8228235371964445598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ba8adc89f54b814d974909c13324ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.InteractableManager
+  _priority: 0
+  _interactionCases:
+  - _condition:
+      rid: 2493796951750606934
+    _action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7652351756824104347}
+          m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
+          m_MethodName: Execute
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  _aimCases: []
+  _onInteracted:
+    m_PersistentCalls:
+      m_Calls: []
+  _onAimed:
+    m_PersistentCalls:
+      m_Calls: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 2493796951750606934
+      type: {class: ItemCondition, ns: DShotgun, asm: DShotgun}
+      data:
+        _item: {fileID: 11400000, guid: 5ee2f902689b344479866fc4f7941cb3, type: 2}
 --- !u!1 &8334497612110507562
 GameObject:
   m_ObjectHideFlags: 0
@@ -3045,7 +5727,7 @@ GameObject:
   - component: {fileID: 2555344198316801261}
   - component: {fileID: 8787197499593311659}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3078,27 +5760,181 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Damas
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 7646492065788740202, guid: 8a76f9568d6a57f4688c36f564682b5d, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 2
   _text:
     _text: Non, absolument pas
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &8906565290930852614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3607066831762718762}
+  - component: {fileID: 878800763555126208}
+  m_Layer: 0
+  m_Name: "D\xE9tective Shotgun Speaking"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3607066831762718762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8906565290930852614}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8984144704454390899}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &878800763555126208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8906565290930852614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  _leftRef:
+    _characterId: 12
+    _spriteId: 33
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 2
+  _text:
+    _text: "C\u2019est vous l\u2019expert apr\xE8s tout !"
+    _styles: []
+  _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &8920231937971333583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2375561544993792936}
+  - component: {fileID: 3223305838290309532}
+  m_Layer: 0
+  m_Name: CommentFrame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2375561544993792936
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8920231937971333583}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7853946584083913152}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3223305838290309532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8920231937971333583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1377d340553a30803855780b85012371, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CommentFrame
+  _name: Detective Shotgun
+  _text:
+    _text: "Il faut que j\u2019y fasse attention ! Il y a inscrit l\u2019adresse
+      du bar o\xF9 je dois retrouver Sally tout \xE0 l\u2019heure."
+    _styles: []
+  _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+--- !u!1 &9202022458863629289
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1647989533308979994}
+  - component: {fileID: 1778451529302579257}
+  m_Layer: 0
+  m_Name: SwitchStateSequence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1647989533308979994
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9202022458863629289}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2501749310559106476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1778451529302579257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9202022458863629289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b41b75576bf7494889215aa46610031, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.SwitchStateSequence
+  _state: 0
 --- !u!1 &9205370550129745532
 GameObject:
   m_ObjectHideFlags: 0
@@ -3173,6 +6009,10 @@ PrefabInstance:
       value: -0.018358707
       objectReference: {fileID: 0}
     - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: _priority
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: 'managedReferences[-2]'
       value: 
       objectReference: {fileID: 0}
@@ -3217,6 +6057,22 @@ PrefabInstance:
       value: DShotgun DShotgun.ItemCondition
       objectReference: {fileID: 0}
     - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: 'managedReferences[2493796923581137031]'
+      value: DShotgun DShotgun.Not
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: 'managedReferences[2493796923581137032]'
+      value: DShotgun DShotgun.Not
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: 'managedReferences[2493796923581137033]'
+      value: DShotgun DShotgun.ItemCondition
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: 'managedReferences[2493796923581137034]'
+      value: DShotgun DShotgun.ItemCondition
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: managedReferences[1236845720742395981]._a
       value: 1236845720742395982
       objectReference: {fileID: 0}
@@ -3226,11 +6082,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: managedReferences[2493796923581137012]._a
-      value: 2493796923581137013
+      value: 2493796923581137031
       objectReference: {fileID: 0}
     - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: managedReferences[2493796923581137012]._b
-      value: 2493796923581137014
+      value: 2493796923581137032
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: managedReferences[2493796923581137031]._a
+      value: 2493796923581137033
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: managedReferences[2493796923581137032]._a
+      value: 2493796923581137034
       objectReference: {fileID: 0}
     - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: _interactionCases.Array.data[0]._condition
@@ -3262,6 +6126,14 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 6f7e31ba21a6efe409a556c0f8baa30d, type: 2}
     - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: managedReferences[2493796923581137016]._item
+      value: 
+      objectReference: {fileID: 11400000, guid: 5ee2f902689b344479866fc4f7941cb3, type: 2}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: managedReferences[2493796923581137033]._item
+      value: 
+      objectReference: {fileID: 11400000, guid: 6f7e31ba21a6efe409a556c0f8baa30d, type: 2}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: managedReferences[2493796923581137034]._item
       value: 
       objectReference: {fileID: 11400000, guid: 5ee2f902689b344479866fc4f7941cb3, type: 2}
     - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
@@ -3569,6 +6441,10 @@ PrefabInstance:
       value: -0.026089251
       objectReference: {fileID: 0}
     - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: _priority
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: _interactionCases.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -3805,6 +6681,10 @@ PrefabInstance:
       value: -0.14807677
       objectReference: {fileID: 0}
     - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: _priority
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: _interactionCases.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -3989,6 +6869,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1827883837321127458, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4056756189188438490}
+    - targetCorrespondingSourceObject: {fileID: 1827883837321127458, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2677479213314460596}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
 --- !u!114 &2287038563124499894 stripped
@@ -4044,6 +6927,10 @@ PrefabInstance:
       propertyPath: _text._text
       value: "C\u2019est qu\u2019il a vraiment la classe Damas quand il parle avec
         passion de ses lames !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: _priority
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: _interactionCases.Array.size
@@ -4145,7 +7032,7 @@ PrefabInstance:
     - target: {fileID: 6799130678459867175, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 4641023088922737326, guid: 40880adba1129504aa6af7aeb4e815a2, type: 3}
+      objectReference: {fileID: 5239542953914984434, guid: b40fb3256820d334eb479244565625e5, type: 3}
     - target: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_Name
       value: Poster
@@ -4190,7 +7077,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4265740501008160572, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
     m_RemovedGameObjects:
     - {fileID: 8241791760417142947, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
     - {fileID: 1909771778384085134, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
@@ -4250,6 +7138,10 @@ PrefabInstance:
     - target: {fileID: 3902130010043455943, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_Offset.y
       value: -0.025287986
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: _priority
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: _interactionCases.Array.size
@@ -4419,6 +7311,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1827883837321127458, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 887033640597936513}
+    - targetCorrespondingSourceObject: {fileID: 1827883837321127458, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2967442909110335327}
+    - targetCorrespondingSourceObject: {fileID: 1827883837321127458, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4633876847042009351}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
 --- !u!114 &1254437548887484983 stripped
@@ -4474,6 +7372,10 @@ PrefabInstance:
       propertyPath: _text._text
       value: "D\u2019accord, c\u2019est donc pas un simple cadenas sur lequel quelqu\u2019un
         peut tirer dessus."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: _priority
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: _interactionCases.Array.size
@@ -4702,6 +7604,10 @@ PrefabInstance:
       value: -0.14807677
       objectReference: {fileID: 0}
     - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: _priority
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: 'managedReferences[-2]'
       value: 
       objectReference: {fileID: 0}
@@ -4738,16 +7644,40 @@ PrefabInstance:
       value: DShotgun DShotgun.ItemCondition
       objectReference: {fileID: 0}
     - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: 'managedReferences[2493796923581137027]'
+      value: DShotgun DShotgun.Not
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: 'managedReferences[2493796923581137028]'
+      value: DShotgun DShotgun.ItemCondition
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: 'managedReferences[2493796923581137029]'
+      value: DShotgun DShotgun.Not
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: 'managedReferences[2493796923581137030]'
+      value: DShotgun DShotgun.ItemCondition
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: managedReferences[1236845720742395981]._a
       value: 1236845720742395982
       objectReference: {fileID: 0}
     - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: managedReferences[2493796923581137017]._a
-      value: 2493796923581137018
+      value: 2493796923581137027
       objectReference: {fileID: 0}
     - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: managedReferences[2493796923581137017]._b
-      value: 2493796923581137019
+      value: 2493796923581137029
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: managedReferences[2493796923581137027]._a
+      value: 2493796923581137028
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: managedReferences[2493796923581137029]._a
+      value: 2493796923581137030
       objectReference: {fileID: 0}
     - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: _interactionCases.Array.data[0]._condition
@@ -4781,6 +7711,14 @@ PrefabInstance:
       propertyPath: managedReferences[2493796923581137021]._item
       value: 
       objectReference: {fileID: 11400000, guid: 5ee2f902689b344479866fc4f7941cb3, type: 2}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: managedReferences[2493796923581137028]._item
+      value: 
+      objectReference: {fileID: 11400000, guid: 5ee2f902689b344479866fc4f7941cb3, type: 2}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: managedReferences[2493796923581137030]._item
+      value: 
+      objectReference: {fileID: 11400000, guid: 6f7e31ba21a6efe409a556c0f8baa30d, type: 2}
     - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: _onInteracted.m_PersistentCalls.m_Calls.Array.size
       value: 0
@@ -5037,6 +7975,11 @@ PrefabInstance:
 --- !u!4 &1237393724929176038 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7903673078810126277, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+  m_PrefabInstance: {fileID: 8972128971059156515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2043739278162156109 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
   m_PrefabInstance: {fileID: 8972128971059156515}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2735532989496949617 stripped

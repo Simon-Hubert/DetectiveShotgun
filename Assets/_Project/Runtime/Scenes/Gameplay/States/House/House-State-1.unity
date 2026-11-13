@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a2fb4507053a07b79e8ea4ad36539d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.ZoomSequence
-  _camera: {fileID: 1257743763}
+  _camera: {fileID: 1895697950}
   _duration: 2.75
   _targetPPU: 175
 --- !u!1 &223006363
@@ -293,27 +293,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 1
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: -1
-  <CharacterDialogProfile>k__BackingField: {fileID: 0}
-  _left: {fileID: 0}
-  _middle: {fileID: 0}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: -1
   _text:
     _text: "Oui, oui L\xE9onie j\u2019arrive.. *bip bip bip*"
     _styles: []
-  _name: Commissaire Thompson
   _moveNextAutomatically: 0
+  _useCustomName: 1
+  _name: Commissaire Thompson
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &306350817 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8432430916201754468, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
@@ -710,71 +707,6 @@ Transform:
   - {fileID: 1224276624}
   m_Father: {fileID: 369212661}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &425370221
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1894819830510844541, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.39199
-      objectReference: {fileID: 0}
-    - target: {fileID: 1894819830510844541, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.44142
-      objectReference: {fileID: 0}
-    - target: {fileID: 1894819830510844541, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1894819830510844541, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1894819830510844541, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1894819830510844541, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1894819830510844541, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1894819830510844541, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1894819830510844541, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1894819830510844541, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8219939717306436932, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
-      propertyPath: m_Name
-      value: PLAYER
-      objectReference: {fileID: 0}
-    - target: {fileID: 8382831752766758780, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
-      propertyPath: _camera
-      value: 
-      objectReference: {fileID: 1257743763}
-    - target: {fileID: 8382831752766758780, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
 --- !u!1 &435074144
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,11 +801,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a8a3882457b01e438e4a1d24cc811e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: HierarchySequences::HierarchySequences.Sequence
---- !u!1 &654750996 stripped
+--- !u!1 &641016091
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 4027087350679835347, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
-  m_PrefabInstance: {fileID: 687592835}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 641016092}
+  - component: {fileID: 641016093}
+  m_Layer: 0
+  m_Name: Commissaire Thompson Speaking
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &641016092
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641016091}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2068244362}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &641016093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641016091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: -1
+  _text:
+    _text: C'EST MOI COMMISSAIRE THOMPSON !!!
+    _styles: []
+  _moveNextAutomatically: 0
+  _useCustomName: 1
+  _name: Commissaire Thompson
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &658515075
 GameObject:
   m_ObjectHideFlags: 0
@@ -978,77 +967,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.ChangeSceneSequence
   _data:
-    Date: 
-    Heure: 
-    Lieu: 
+    Date: 22 Octobre 1987
+    Heure: 23h52
+    Lieu: Parking de la dalle
+    Ville: "La D\xE9fense"
     Background: {fileID: -4086409856038791978, guid: 3e5111b3c7bde2b849588b38bedb6fbc, type: 3}
   _tableau: 3
   _state: 4
---- !u!1001 &687592835
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2264849956926330540, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.94
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264849956926330540, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264849956926330540, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264849956926330540, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264849956926330540, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264849956926330540, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264849956926330540, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264849956926330540, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264849956926330540, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264849956926330540, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4027087350679835347, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
-      propertyPath: m_Name
-      value: MAIN-CAMERA
-      objectReference: {fileID: 0}
-    - target: {fileID: 5989892049605006482, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
-      propertyPath: m_BlockingMask.m_Bits
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8500823768316584892, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
-      propertyPath: _playerInventory
-      value: 
-      objectReference: {fileID: 975937701}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
 --- !u!1 &731407884
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,6 +1023,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a8a3882457b01e438e4a1d24cc811e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: HierarchySequences::HierarchySequences.Sequence
+--- !u!1001 &762506944
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1490254971417045803, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+      propertyPath: m_Name
+      value: PLAYER-CAMERA
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451857126543302926, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451857126543302926, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451857126543302926, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451857126543302926, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451857126543302926, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451857126543302926, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451857126543302926, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451857126543302926, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451857126543302926, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451857126543302926, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
 --- !u!114 &798737433 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9029866788232272295, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
@@ -1153,27 +1135,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 1
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: -1
-  <CharacterDialogProfile>k__BackingField: {fileID: 0}
-  _left: {fileID: 0}
-  _middle: {fileID: 0}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: -1
   _text:
     _text: SHOTGUUUUUUUUUNNNNNNNNN !!!
     _styles: []
-  _name: Commissaire Thompson
   _moveNextAutomatically: 0
+  _useCustomName: 1
+  _name: Commissaire Thompson
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &868074038
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,76 +1291,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: HierarchySequences::HierarchySequences.ParallelSequence
   _duration: 2.75
---- !u!1 &934601345
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 934601346}
-  - component: {fileID: 934601347}
-  m_Layer: 0
-  m_Name: Invoke Event with 1 binds
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &934601346
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 934601345}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2083050790}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &934601347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 934601345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69bcb5ae2dda1d84585899ae21a338d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.UnityEventSequence
-  _event:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 382021773}
-        m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
-        m_MethodName: Execute
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &975937701 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8836601799099958187, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
-  m_PrefabInstance: {fileID: 425370221}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d52afe4aa63f45647a2ed5e8466a7677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DShotgun::DShotgun.PlayerInventory
 --- !u!1 &1035281196
 GameObject:
   m_ObjectHideFlags: 0
@@ -1471,27 +1380,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 1
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: -1
-  <CharacterDialogProfile>k__BackingField: {fileID: 0}
-  _left: {fileID: 0}
-  _middle: {fileID: 0}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: -1
   _text:
     _text: RAPPLIQUE FISSA, ON A BESOIN DE TOI SUR LE TERRAIN !!
     _styles: []
-  _name: Commissaire Thompson
   _moveNextAutomatically: 0
+  _useCustomName: 1
+  _name: Commissaire Thompson
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &1186332523
 GameObject:
   m_ObjectHideFlags: 0
@@ -1642,7 +1548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a2fb4507053a07b79e8ea4ad36539d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.ZoomSequence
-  _camera: {fileID: 1257743763}
+  _camera: {fileID: 1895697950}
   _duration: 1.5
   _targetPPU: 80
 --- !u!1 &1224276623
@@ -1760,39 +1666,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 1
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: -1
-  <CharacterDialogProfile>k__BackingField: {fileID: 0}
-  _left: {fileID: 0}
-  _middle: {fileID: 0}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: -1
   _text:
     _text: "QUEL <b>TAR\xC9</b> UTILISERAIT UN COUTEAU ? <wait=0,25> ET POUR <b>TUER</b>
       QUELQU\u2019UN ?"
     _styles: []
-  _name: Commissaire Thompson
   _moveNextAutomatically: 0
---- !u!114 &1257743763 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6677530776334457868, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
-  m_PrefabInstance: {fileID: 687592835}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 654750996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88f5cead0c0b2a4eb05b5900433f8d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.PixelPerfectCamera
+  _useCustomName: 1
+  _name: Commissaire Thompson
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &1275067103 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1904918300718249547, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
@@ -1842,27 +1734,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 1
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: -1
-  <CharacterDialogProfile>k__BackingField: {fileID: 0}
-  _left: {fileID: 0}
-  _middle: {fileID: 0}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: -1
   _text:
     _text: "ON A UN CADAVRE SUR LES BRAS ET C\u2019EST VRAIMENT PAS JO-JO !!"
     _styles: []
-  _name: Commissaire Thompson
   _moveNextAutomatically: 0
+  _useCustomName: 1
+  _name: Commissaire Thompson
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &1315500682
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,6 +1854,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1467574639 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5978412841767506038, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+  m_PrefabInstance: {fileID: 762506944}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d52afe4aa63f45647a2ed5e8466a7677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.PlayerInventory
 --- !u!1 &1485408570
 GameObject:
   m_ObjectHideFlags: 0
@@ -2054,7 +1954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cfd64fa394478b55b4cd8476bc0c78c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.MoveObjectSequence
-  _object: {fileID: 654750996}
+  _object: {fileID: 0}
   _duration: 2.75
   _targetPos: {x: 0, y: -1.5}
 --- !u!114 &1749029092 stripped
@@ -2112,27 +2012,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 1
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: -1
-  <CharacterDialogProfile>k__BackingField: {fileID: 0}
-  _left: {fileID: 0}
-  _middle: {fileID: 0}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: -1
   _text:
     _text: IL FAUT QUE TU RAPPLIQUES AU PARKING DE LA DALLE, A LA DEFENSE !!
     _styles: []
-  _name: Commissaire Thompson
   _moveNextAutomatically: 0
+  _useCustomName: 1
+  _name: Commissaire Thompson
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &1807095959
 GameObject:
   m_ObjectHideFlags: 0
@@ -2177,27 +2074,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 1
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: -1
-  <CharacterDialogProfile>k__BackingField: {fileID: 0}
-  _left: {fileID: 0}
-  _middle: {fileID: 0}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: -1
   _text:
     _text: "TU M\u2019ENTENDS ???"
     _styles: []
-  _name: Commissaire Thompson
   _moveNextAutomatically: 0
+  _useCustomName: 1
+  _name: Commissaire Thompson
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &1854661495
 GameObject:
   m_ObjectHideFlags: 0
@@ -2242,27 +2136,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 1
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: -1
-  <CharacterDialogProfile>k__BackingField: {fileID: 0}
-  _left: {fileID: 0}
-  _middle: {fileID: 0}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: -1
   _text:
     _text: "UN MEURTRE AU COUTEAU, ON M\u2019A DIT, TU T\u2019RENDS COMPTE ??"
     _styles: []
-  _name: Commissaire Thompson
   _moveNextAutomatically: 0
+  _useCustomName: 1
+  _name: Commissaire Thompson
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &1881774641
 GameObject:
   m_ObjectHideFlags: 0
@@ -2307,9 +2198,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cfd64fa394478b55b4cd8476bc0c78c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.MoveObjectSequence
-  _object: {fileID: 654750996}
+  _object: {fileID: 0}
   _duration: 1.5
   _targetPos: {x: 0, y: 0}
+--- !u!114 &1895697950 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2801935738003048516, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+  m_PrefabInstance: {fileID: 762506944}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88f5cead0c0b2a4eb05b5900433f8d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.PixelPerfectCamera
 --- !u!1 &1895937863
 GameObject:
   m_ObjectHideFlags: 0
@@ -2357,8 +2259,7 @@ MonoBehaviour:
   _name: Detective Shotgun
   _text:
     _text: "La justice n\u2019a donc m\xEAme pas le droit de se siffler quelques
-      bouteilles de scotch tranquillement de temps en temps...<wait=0,5> Ce monde
-      est d\xE9finitivement devenu fou..."
+      bouteilles de whisky tranquillement de temps en temps..."
     _styles: []
   _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
 --- !u!1 &1904947866
@@ -2478,27 +2379,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 1
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: -1
-  <CharacterDialogProfile>k__BackingField: {fileID: 0}
-  _left: {fileID: 0}
-  _middle: {fileID: 0}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: -1
   _text:
     _text: "Ouais \xE7a a coup\xE9, je disais ..."
     _styles: []
-  _name: Commissaire Thompson
   _moveNextAutomatically: 0
+  _useCustomName: 1
+  _name: Commissaire Thompson
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!4 &1934636060
 Transform:
   m_ObjectHideFlags: 0
@@ -2598,6 +2496,7 @@ Transform:
   m_Children:
   - {fileID: 798784208}
   - {fileID: 1807095960}
+  - {fileID: 641016092}
   - {fileID: 1783289441}
   - {fileID: 1300856843}
   - {fileID: 1854661496}
@@ -2648,8 +2547,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 934601346}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2083050791
@@ -2720,6 +2618,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 351913942047388147, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.72
+      objectReference: {fileID: 0}
     - target: {fileID: 1443797836910971329, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.68
@@ -2759,6 +2661,10 @@ PrefabInstance:
     - target: {fileID: 2292563407156235960, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SwitchTo
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018930214797527413, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: _text._text
+      value: "Rien de mieux pour noyer les journ\xE9es de merde."
       objectReference: {fileID: 0}
     - target: {fileID: 3610218969600040459, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       propertyPath: m_fontColor.b
@@ -2835,7 +2741,11 @@ PrefabInstance:
     - target: {fileID: 5327066329564228447, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 975937701}
+      objectReference: {fileID: 0}
+    - target: {fileID: 5666349069394809631, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6857617630851091116, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       propertyPath: m_Size.x
       value: 9.07
@@ -2855,6 +2765,14 @@ PrefabInstance:
     - target: {fileID: 6857617630851091116, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7094749098533478056, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 7370399497104013497, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: _text._text
+      value: "Oh c\u2019est canon !"
       objectReference: {fileID: 0}
     - target: {fileID: 7680937904036636248, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       propertyPath: m_Name
@@ -2883,11 +2801,17 @@ PrefabInstance:
     - target: {fileID: 8943560706215735501, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 975937701}
+      objectReference: {fileID: 1467574639}
+    - target: {fileID: 8943560706215735501, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddItem
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 672507355117521415, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
     - {fileID: 2180303469512643276, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1882110437979061167, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+    - {fileID: 8127914011715616238, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7061268942554603136, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       insertIndex: 0
@@ -2908,8 +2832,7 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 687592835}
-  - {fileID: 425370221}
+  - {fileID: 762506944}
   - {fileID: 1205731647}
   - {fileID: 2083050790}
   - {fileID: 369212661}

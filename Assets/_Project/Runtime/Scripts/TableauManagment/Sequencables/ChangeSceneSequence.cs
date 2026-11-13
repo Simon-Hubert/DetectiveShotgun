@@ -12,6 +12,7 @@ namespace DShotgun
         public string Date;
         public string Heure;
         public string Lieu;
+        public string Ville;
         public Sprite Background;
     }
     

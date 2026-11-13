@@ -1,5 +1,6 @@
 using UnityEngine;
 using FMODUnity;
+using UnityEngine.Events;
 
 namespace DShotgun
 {
@@ -7,6 +8,7 @@ namespace DShotgun
     {
         private InputReader _ir;
         [SerializeField] private ImpactPool _pool;
+        [SerializeField] private UnityEvent _onShoot;
         [SerializeField] private CallSoundOnSurface _soundOnSurface;
         [Space(7)]
         [SerializeField] private StudioEventEmitter _shootEmitter;
@@ -34,15 +36,17 @@ namespace DShotgun
 
         private void Shoot()
         {
-            _shootEmitter.Play();
+            _shootEmitter?.Play();
             
             GameObject go = _pool.GetShotImpact();
             go.transform.position = Camera.main.ScreenToWorldPoint(InputReader.PointerPosition);
             Vector3 vector3 = go.transform.position;
             vector3.z = 0;
             go.transform.position = vector3;
+            
+            _onShoot?.Invoke();
 
-            _soundOnSurface.CallSound(Camera.main.ScreenToWorldPoint(InputReader.PointerPosition));
+            _soundOnSurface?.CallSound(Camera.main.ScreenToWorldPoint(InputReader.PointerPosition));
         }
     }
 }

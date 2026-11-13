@@ -93,27 +93,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Barman Bodolphe
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: -3497540652011493120, guid: 56b74ccd779d364419582e2ba34c798e, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 14
+    _spriteId: 39
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 0
   _text:
     _text: " Encore un et je te mets \xE0 la porte. Pas celle-l\xE0, l\u2019autre."
     _styles: []
-  _name: Barman Bodolphe
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &866830612270007805
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,28 +155,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Barman Bodolphe
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: -3497540652011493120, guid: 56b74ccd779d364419582e2ba34c798e, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 14
+    _spriteId: 39
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 0
   _text:
     _text: "Pas d\u2019incendie dans mon bar. J\u2019ai d\xE9j\xE0 assez de clients
       qui fument."
     _styles: []
-  _name: Barman Bodolphe
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &870517321122300114
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,7 +275,7 @@ GameObject:
   - component: {fileID: 3818064666437938530}
   - component: {fileID: 1925115894617278663}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -314,27 +308,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 0
   _text:
     _text: "Ah, euh, oui, bien s\xFBr.\n\n\n"
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &1257000555199010594
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,7 +432,7 @@ GameObject:
   - component: {fileID: 403098348465018052}
   - component: {fileID: 6736034728708171148}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -474,27 +465,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 0
   _text:
     _text: "C\u2019est vrai que \xE7a bouge pas d\u2019un pouce."
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &2617848574748866744
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,7 +585,7 @@ GameObject:
   - component: {fileID: 3374408114644350925}
   - component: {fileID: 9117495312297975382}
   m_Layer: 0
-  m_Name: Detective Speaking
+  m_Name: "D\xE9tective Shotgun Speaking"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -630,27 +618,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 0
   _text:
     _text: "Du tungsten qu\u2019il disait hein..."
     _styles: []
-  _name: Detective
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &3772250966124399194
 GameObject:
   m_ObjectHideFlags: 0
@@ -827,28 +812,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Barman Bodolphe
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
-  _left: {fileID: -3497540652011493120, guid: 56b74ccd779d364419582e2ba34c798e, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
+  _leftRef:
+    _characterId: 14
+    _spriteId: 39
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 3
+    _spriteId: 7
+  _speakingCharacterID: 0
   _text:
     _text: "C\u2019\xE9tait la conso de M. Damas. Il l\u2019a pas bue, tant mieux
       pour lui."
     _styles: []
-  _name: Barman Bodolphe
   _moveNextAutomatically: 1
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &5348936908578995120
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,29 +875,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: Detective
-    _spriteName: Idle
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 1
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 2
-  <CharacterDialogProfile>k__BackingField: {fileID: 0}
-  _left: {fileID: 21300000, guid: 13aadb8d39a86b83b956ed926a30f4b4, type: 3}
-  _middle: {fileID: 0}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 2
   _text:
     _text: 'TE DECONCENTRE PAS SHOTGUN !!
 
 '
     _styles: []
-  _name: Commissaire ?
   _moveNextAutomatically: 0
+  _useCustomName: 1
+  _name: Commissaire ?
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &6104049970777218660
 GameObject:
   m_ObjectHideFlags: 0
