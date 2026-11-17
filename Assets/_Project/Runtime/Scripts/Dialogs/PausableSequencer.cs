@@ -11,6 +11,7 @@ namespace DShotgun.Dialogs
     {
         [SerializeField] private DialogFrame _whenGetBack;
         [SerializeField] private UnityEvent _OnEnded;
+        [SerializeField] private float _timePerFrame;
         
         private DialogFrame[] _dialogFrames;
 
@@ -50,7 +51,7 @@ namespace DShotgun.Dialogs
                 {
                     _wasCancelled = false;
                     _ = _whenGetBack.ExecuteAsync();
-                    await Awaitable.WaitForSecondsAsync(2f, _cancellationTokenSource.Token);
+                    await Awaitable.WaitForSecondsAsync(_timePerFrame, _cancellationTokenSource.Token);
                     _whenGetBack.OnRequestedSkip();
                 }
                 
@@ -72,7 +73,7 @@ namespace DShotgun.Dialogs
         {
             if (_currentIndex >= _dialogFrames.Length) return;
             _ = _dialogFrames[_currentIndex].ExecuteAsync();
-            await Awaitable.WaitForSecondsAsync(2f, token);
+            await Awaitable.WaitForSecondsAsync(_timePerFrame, token);
             _dialogFrames[_currentIndex].OnRequestedSkip();
             _currentIndex++;
         }

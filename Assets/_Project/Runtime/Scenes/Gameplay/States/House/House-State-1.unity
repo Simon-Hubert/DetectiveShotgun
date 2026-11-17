@@ -2289,7 +2289,7 @@ GameObject:
   - component: {fileID: 1904947867}
   - component: {fileID: 1904947868}
   m_Layer: 0
-  m_Name: Wait for 8 sec
+  m_Name: Wait for 15 sec
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2322,7 +2322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1129c48e53f61f24889a822b21214186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: HierarchySequences::HierarchySequences.WaitForDuration
-  _duration: 8
+  _duration: 15
 --- !u!114 &1906576981 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7644513070283485551, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
@@ -2485,18 +2485,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  _timePerFrame: 3.2
 --- !u!4 &2068244362
 Transform:
   m_ObjectHideFlags: 0
