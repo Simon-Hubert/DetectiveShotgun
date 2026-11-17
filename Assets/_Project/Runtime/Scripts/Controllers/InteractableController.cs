@@ -49,6 +49,8 @@ namespace DShotgun
         public event Action OnAimStarted;
         public event Action OnAimStopped;
 
+        public event Action<InteractableManager> OnInteractableInteracted;
+
         private void Start()
         {
             if (_camera == null) _camera = Camera.main;
@@ -135,14 +137,17 @@ namespace DShotgun
             
             
             InteractableManager[] interactables = GetInteractableUnderPointer();
-            if (interactables.Length > 0)
-            {
+            if (interactables.Length <= 0) {
+                if (ShotgunManager.IsLoaded) {
+                    UnityOnShootItemFailed?.Invoke(ShotgunManager.LoadedItem);
+                }
+                OnInteractableInteracted?.Invoke(null);
+            }
+            else {
                 interactables[0].Interact();
+                OnInteractableInteracted?.Invoke(interactables[0]);
             }
-            else if (ShotgunManager.IsLoaded)
-            {
-                UnityOnShootItemFailed?.Invoke(ShotgunManager.LoadedItem);
-            }
+
             ShotgunManager.UnloadItem();
         }
 
