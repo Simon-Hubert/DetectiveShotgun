@@ -971,7 +971,7 @@ MonoBehaviour:
     Heure: 23h52
     Lieu: Parking de la dalle
     Ville: "La D\xE9fense"
-    Background: {fileID: -4086409856038791978, guid: 3e5111b3c7bde2b849588b38bedb6fbc, type: 3}
+    Background: {fileID: 21300000, guid: 3e5111b3c7bde2b849588b38bedb6fbc, type: 3}
   _tableau: 3
   _state: 4
 --- !u!1 &731407884
@@ -1080,6 +1080,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+--- !u!1 &762506945 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5596344800992167579, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+  m_PrefabInstance: {fileID: 762506944}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &798737433 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9029866788232272295, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
@@ -1910,6 +1915,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: HierarchySequences::HierarchySequences.WaitForDuration
   _duration: 2.5
+--- !u!114 &1594355419 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3844172125284745231, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+  m_PrefabInstance: {fileID: 7418589119839522801}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6e1a5d5bff0ed919060c960b142b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ScreenShaker
 --- !u!1 &1665748003
 GameObject:
   m_ObjectHideFlags: 0
@@ -1954,7 +1970,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cfd64fa394478b55b4cd8476bc0c78c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.MoveObjectSequence
-  _object: {fileID: 0}
+  _object: {fileID: 762506945}
   _duration: 2.75
   _targetPos: {x: 0, y: -1.5}
 --- !u!114 &1749029092 stripped
@@ -2198,7 +2214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cfd64fa394478b55b4cd8476bc0c78c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.MoveObjectSequence
-  _object: {fileID: 0}
+  _object: {fileID: 762506945}
   _duration: 1.5
   _targetPos: {x: 0, y: 0}
 --- !u!114 &1895697950 stripped
@@ -2206,7 +2222,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2801935738003048516, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
   m_PrefabInstance: {fileID: 762506944}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 762506945}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c88f5cead0c0b2a4eb05b5900433f8d1, type: 3}
@@ -2273,7 +2289,7 @@ GameObject:
   - component: {fileID: 1904947867}
   - component: {fileID: 1904947868}
   m_Layer: 0
-  m_Name: Wait for 8 sec
+  m_Name: Wait for 15 sec
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2306,7 +2322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1129c48e53f61f24889a822b21214186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: HierarchySequences::HierarchySequences.WaitForDuration
-  _duration: 8
+  _duration: 15
 --- !u!114 &1906576981 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7644513070283485551, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
@@ -2469,18 +2485,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  _timePerFrame: 3.2
 --- !u!4 &2068244362
 Transform:
   m_ObjectHideFlags: 0
@@ -2678,6 +2683,10 @@ PrefabInstance:
       propertyPath: m_fontColor.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4260259430051720737, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: m_Name
+      value: Invoke Event with 2 binds
+      objectReference: {fileID: 0}
     - target: {fileID: 4663014247823571040, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.29
@@ -2741,6 +2750,14 @@ PrefabInstance:
     - target: {fileID: 5327066329564228447, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 1594355419}
+    - target: {fileID: 5327066329564228447, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Shake
+      objectReference: {fileID: 0}
+    - target: {fileID: 5327066329564228447, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DShotgun.ScreenShaker, DShotgun
       objectReference: {fileID: 0}
     - target: {fileID: 5666349069394809631, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       propertyPath: m_SortingOrder

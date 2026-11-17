@@ -33,7 +33,7 @@ namespace DShotgun
 
 #if PHONE_STOP
         private bool _wasOverDialogFrame = false;
-        private const float _dialogFrameTop = 513;
+        private const float _dialogFrameTop = 450;
 #endif
         
 
@@ -44,15 +44,27 @@ namespace DShotgun
 
         private void FixedUpdate()
         {
+#if!PHONE_STOP
             if(transform.position.x < 0) _ = ReStartAsync();
             if(transform.position.x > 1920) _ = ReStartAsync();
             if(transform.position.y < 0) _ = ReStartAsync();
+#endif
 
 #if PHONE_STOP
             if (!_stopped) {
                 if (!_wasOverDialogFrame && transform.position.y > _dialogFrameTop) _wasOverDialogFrame = true;
                 if (_wasOverDialogFrame) {
-                    if (transform.position.y < _dialogFrameTop && _speed.y < 0) return;
+                    if (transform.position.y < _dialogFrameTop) {
+                        if (_speed.y < 5f) {
+                            _speed.y = -_speed.y * 0.7f;
+                            _angularSpeed = _angularSpeed * 0.7f;
+                            return;
+                        }
+
+                        if (_speed.y < Mathf.Epsilon) {
+                            return;
+                        }
+                    }
                 }
             }
 #endif
@@ -60,6 +72,7 @@ namespace DShotgun
             if (!_simulated) return;
             _accel = Vector2.down * (9.81f * _gravityScale);
             _speed += _accel * Time.fixedDeltaTime;
+            _angularSpeed = _angularSpeed - 0.5f * Time.fixedDeltaTime * _angularSpeed;
             if (_speed.y < 0)
             {
                 _speed.y = Mathf.Clamp(_speed.y, -_maxSpeed, 0f);
