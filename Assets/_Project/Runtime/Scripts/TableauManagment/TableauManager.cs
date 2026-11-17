@@ -15,6 +15,9 @@ namespace DShotgun
 
         public static void LoadTableauWithTransition(int buildIndexTableau, int buildIndexState, TransitionSceneData data)
         {
+            Debug.Log($"Load Tableau With Transition {data.Background?.name}");
+            TransitionSingleton.Clear();
+            TransitionSingleton.SetImage(data.Background);
             _ = SwitchTableauWithTransition(buildIndexTableau, buildIndexState, data);
         }
 
@@ -31,8 +34,6 @@ namespace DShotgun
                 await OverlaySingleton.instance.FadeToBlackTransitionAsync(2);
                 await SceneManager.LoadSceneAsync(buildIndexTableau, LoadSceneMode.Single);
                 await SceneManager.LoadSceneAsync(buildIndexState, LoadSceneMode.Additive);
-                TransitionSingleton.Clear();
-                TransitionSingleton.SetImage(data.Background);
                 TransitionSingleton.Show();
                 
                 await OverlaySingleton.instance.FadeInTransitionAsync(2);
