@@ -1168,6 +1168,52 @@ MonoBehaviour:
   _name: ???
   _useCustomDialogProfile: 0
   _characterDialogProfile: {fileID: 0}
+--- !u!1 &2579343050279519975
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4797864277747932245}
+  - component: {fileID: 959273246034908444}
+  m_Layer: 0
+  m_Name: RaiseFlagSequence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4797864277747932245
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2579343050279519975}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4302838059380834459}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &959273246034908444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2579343050279519975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b896da633a456f64fb9d8b0e0f07ab8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.RaiseFlagSequence
+  _flag:
+    _flagName: Legiste_Dialogue_1
 --- !u!1 &2590339787423103485
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,7 +1278,7 @@ MonoBehaviour:
         m_MethodName: SwitchTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: -4437922891788029898, guid: cbc99bc4a271c534a99260c4707095bf, type: 3}
+          m_ObjectArgument: {fileID: 21300000, guid: cbc99bc4a271c534a99260c4707095bf, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -1988,6 +2034,52 @@ MonoBehaviour:
   _name: 
   _useCustomDialogProfile: 0
   _characterDialogProfile: {fileID: 0}
+--- !u!1 &4147572650592522505
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6612209273405128092}
+  - component: {fileID: 6453165777253792564}
+  m_Layer: 0
+  m_Name: RaiseFlagSequence (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6612209273405128092
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4147572650592522505}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 333163316296359920}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6453165777253792564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4147572650592522505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b896da633a456f64fb9d8b0e0f07ab8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.RaiseFlagSequence
+  _flag:
+    _flagName: Legiste_Dialogue_2
 --- !u!1 &4275766189113856697
 GameObject:
   m_ObjectHideFlags: 0
@@ -2381,7 +2473,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CommentFrame
   _name: Detective Shotgun
   _text:
-    _text: "C\u2019est quand m\xEAme dr\xF4lement pratique ces meubles \xE0 eau !"
+    _text: "C\u2019est quand m\xEAme dr\xF4lement pratique ces meubles en caoutchouc
+      !"
     _styles: []
   _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
 --- !u!1 &4974847924925942602
@@ -3897,6 +3990,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6105834542847844808}
+  - {fileID: 6612209273405128092}
   - {fileID: 5783729836981970641}
   - {fileID: 8848288019647758941}
   - {fileID: 2206518304817124019}
@@ -4663,24 +4757,36 @@ PrefabInstance:
       value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 4433494949971468211, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
+      propertyPath: m_Size.x
+      value: 5.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433494949971468211, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
+      propertyPath: m_Size.y
+      value: 9.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433494949971468211, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -6196251675710892429, guid: d3ec470a528689547977fb5d847f69e6, type: 3}
+      objectReference: {fileID: 21300000, guid: d3ec470a528689547977fb5d847f69e6, type: 3}
     - target: {fileID: 4433494949971468211, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4795944890235906396, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
       propertyPath: m_Size.x
-      value: 1.35
+      value: 3.2133198
       objectReference: {fileID: 0}
     - target: {fileID: 4795944890235906396, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
       propertyPath: m_Size.y
-      value: 5.78
+      value: 6.234997
       objectReference: {fileID: 0}
     - target: {fileID: 4795944890235906396, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
       propertyPath: m_Offset.x
-      value: 0.41
+      value: 0.34500027
+      objectReference: {fileID: 0}
+    - target: {fileID: 4795944890235906396, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.22749853
       objectReference: {fileID: 0}
     - target: {fileID: 7757913927654397825, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
       propertyPath: _priority
@@ -5069,6 +5175,42 @@ PrefabInstance:
       value: DShotgun DShotgun.ItemCondition
       objectReference: {fileID: 0}
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: 'managedReferences[2493797218204516352]'
+      value: DShotgun DShotgun.And
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: 'managedReferences[2493797218204516354]'
+      value: DShotgun DShotgun.Not
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: 'managedReferences[2493797218204516355]'
+      value: DShotgun DShotgun.ItemCondition
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: 'managedReferences[2493797218204516356]'
+      value: DShotgun DShotgun.And
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: 'managedReferences[2493797218204516358]'
+      value: DShotgun DShotgun.ItemCondition
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: 'managedReferences[2493797218204516359]'
+      value: DShotgun DShotgun.Not
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: 'managedReferences[2493797218204516360]'
+      value: DShotgun DShotgun.FlagCondition
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: 'managedReferences[2493797218204516361]'
+      value: DShotgun DShotgun.Not
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: 'managedReferences[2493797218204516362]'
+      value: DShotgun DShotgun.FlagCondition
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: managedReferences[2493796884022034460]._a
       value: 2493796884022034461
       objectReference: {fileID: 0}
@@ -5077,12 +5219,40 @@ PrefabInstance:
       value: 2493796902867566677
       objectReference: {fileID: 0}
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: managedReferences[2493797218204516352]._a
+      value: 2493797218204516359
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: managedReferences[2493797218204516352]._b
+      value: 2493797218204516354
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: managedReferences[2493797218204516354]._a
+      value: 2493797218204516355
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: managedReferences[2493797218204516356]._a
+      value: 2493797218204516361
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: managedReferences[2493797218204516356]._b
+      value: 2493797218204516358
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: managedReferences[2493797218204516359]._a
+      value: 2493797218204516360
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: managedReferences[2493797218204516361]._a
+      value: 2493797218204516362
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: _interactionCases.Array.data[0]._condition
-      value: 2493796902867566676
+      value: 2493797218204516352
       objectReference: {fileID: 0}
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: _interactionCases.Array.data[1]._condition
-      value: 2493796902867566678
+      value: 2493797218204516356
       objectReference: {fileID: 0}
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: managedReferences[2493796902867566677]._item
@@ -5093,12 +5263,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 6f7e31ba21a6efe409a556c0f8baa30d, type: 2}
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: managedReferences[2493797218204516355]._item
+      value: 
+      objectReference: {fileID: 11400000, guid: 6f7e31ba21a6efe409a556c0f8baa30d, type: 2}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: managedReferences[2493797218204516358]._item
+      value: 
+      objectReference: {fileID: 11400000, guid: 6f7e31ba21a6efe409a556c0f8baa30d, type: 2}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: managedReferences[2493796884022034461]._flag._flagName
       value: Temp_GetStylet
       objectReference: {fileID: 0}
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: managedReferences[2493796884022034462]._flag._flagName
       value: Temp_GetStylet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: managedReferences[2493797218204516360]._flag._flagName
+      value: Legiste_Dialogue_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: managedReferences[2493797218204516362]._flag._flagName
+      value: Legiste_Dialogue_2
       objectReference: {fileID: 0}
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: _interactionCases.Array.data[0]._action.m_PersistentCalls.m_Calls.Array.size
@@ -5162,6 +5348,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5310215832001387291, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       insertIndex: 1
       addedObject: {fileID: 333163316296359920}
+    - targetCorrespondingSourceObject: {fileID: 2060822910918891104, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4797864277747932245}
     - targetCorrespondingSourceObject: {fileID: 2060822910918891104, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3505337304891184154}
@@ -5273,23 +5462,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1823741006331371678, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
       propertyPath: m_Size.x
-      value: 1.11
+      value: 1.369997
       objectReference: {fileID: 0}
     - target: {fileID: 1823741006331371678, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
       propertyPath: m_Size.y
-      value: 0.5629986
+      value: 0.93132955
       objectReference: {fileID: 0}
     - target: {fileID: 1823741006331371678, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
       propertyPath: m_Offset.x
-      value: 0.33999997
+      value: 0.31833363
       objectReference: {fileID: 0}
     - target: {fileID: 1823741006331371678, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
       propertyPath: m_Offset.y
-      value: 0.05475229
+      value: 0.043919057
       objectReference: {fileID: 0}
     - target: {fileID: 2244819810223527754, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
       propertyPath: _priority
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2244819810223527754, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
       propertyPath: _interactionCases.Array.size
