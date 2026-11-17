@@ -2655,6 +2655,130 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 269200210384260149, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: _fileName
+      value: SPI_can_anim_02_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 269200210384260149, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: _nbOfElements
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 269200210384260149, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: _spriteFolderPath
+      value: AnimatedProps/Canette_2/
+      objectReference: {fileID: 0}
+    - target: {fileID: 269200210384260149, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: _spriteList.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 269200210384260149, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: '_spriteList.Array.data[0]'
+      value: 
+      objectReference: {fileID: -173194744862997794, guid: 89acfe195e06f36dc8982b90d0dc7f05, type: 3}
+    - target: {fileID: 269200210384260149, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: '_spriteList.Array.data[1]'
+      value: 
+      objectReference: {fileID: 6916930203143354404, guid: eeca352a5013cc32e838876dbef4a73e, type: 3}
+    - target: {fileID: 269200210384260149, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: '_spriteList.Array.data[2]'
+      value: 
+      objectReference: {fileID: -4308642797380847530, guid: 469efe670a6b63935b1e0c1479954ce4, type: 3}
+    - target: {fileID: 269200210384260149, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: '_spriteList.Array.data[3]'
+      value: 
+      objectReference: {fileID: 2025115172292278709, guid: 5c77898ba5f38fdcfa81aac9be36261c, type: 3}
+    - target: {fileID: 269200210384260149, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: '_spriteList.Array.data[4]'
+      value: 
+      objectReference: {fileID: 6528293382408793614, guid: 626be33b03bb388f087431f92634e350, type: 3}
+    - target: {fileID: 269200210384260149, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: '_spriteList.Array.data[5]'
+      value: 
+      objectReference: {fileID: -3183749801002774947, guid: bab7a017f3a5197fc80c54a8c69ad8fd, type: 3}
+    - target: {fileID: 269200210384260149, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: '_spriteList.Array.data[6]'
+      value: 
+      objectReference: {fileID: 21300000, guid: a1b4d96376ec00b3ba4177fcddd83a10, type: 3}
+    - target: {fileID: 1086471997100102163, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 1086471997100102163, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824872168002511253, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_Size.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824872168002511253, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_Size.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824872168002511253, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4106dc0ced7cd3dcea5f047e1c2d20d5, type: 3}
+    - target: {fileID: 1824872168002511253, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2278233717656480496, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2278233717656480496, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2278233717656480496, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2278233717656480496, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4190911680206184084, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4190911680206184084, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4190911680206184084, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4190911680206184084, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4190911680206184084, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4190911680206184084, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388701866633696753, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_Size.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388701866633696753, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_Size.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388701866633696753, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 46802f0f565c99df184b130809c5e538, type: 3}
+    - target: {fileID: 4388701866633696753, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5163736768412431243, guid: f64e95f2609198f8796394ea5127e712, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2695,10 +2819,130 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6453205468227740394, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: _fileName
+      value: SPI_can_anim_01_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453205468227740394, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: _nbOfElements
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453205468227740394, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: _spriteList.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453205468227740394, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: '_spriteList.Array.data[0]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 46802f0f565c99df184b130809c5e538, type: 3}
+    - target: {fileID: 6453205468227740394, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: '_spriteList.Array.data[1]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 1e3ce86f6b0412e738e98c69fb423577, type: 3}
+    - target: {fileID: 6453205468227740394, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: '_spriteList.Array.data[2]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 8bc33a70873ec33f8b9ecde566580ab9, type: 3}
+    - target: {fileID: 6453205468227740394, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: '_spriteList.Array.data[3]'
+      value: 
+      objectReference: {fileID: 21300000, guid: af431d18ac92ce9cb8246db76406e21e, type: 3}
+    - target: {fileID: 6453205468227740394, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: '_spriteList.Array.data[4]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 2a758972b454a824f9448a1f0501316a, type: 3}
+    - target: {fileID: 6453205468227740394, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: '_spriteList.Array.data[5]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 9ef2a6ea0534d7a628e72d57436299ff, type: 3}
+    - target: {fileID: 6453205468227740394, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: '_spriteList.Array.data[6]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 13469c6799736609482fb8403f14cd57, type: 3}
     - target: {fileID: 6478759496601660990, guid: f64e95f2609198f8796394ea5127e712, type: 3}
       propertyPath: m_Name
       value: INTERACTABLES-TAB1
       objectReference: {fileID: 0}
+    - target: {fileID: 6925159584424341579, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6925159584424341579, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6925159584424341579, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6925159584424341579, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410054285891943214, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_Size.x
+      value: 4.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410054285891943214, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_Size.y
+      value: 6.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410054285891943214, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -173194744862997794, guid: 89acfe195e06f36dc8982b90d0dc7f05, type: 3}
+    - target: {fileID: 7410054285891943214, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8951632856909633166, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: _fileName
+      value: SPI_can_anim_03_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8951632856909633166, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: _nbOfElements
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8951632856909633166, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: _spriteFolderPath
+      value: AnimatedProps/Canette_3/
+      objectReference: {fileID: 0}
+    - target: {fileID: 8951632856909633166, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: _spriteList.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8951632856909633166, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: '_spriteList.Array.data[0]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 4106dc0ced7cd3dcea5f047e1c2d20d5, type: 3}
+    - target: {fileID: 8951632856909633166, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: '_spriteList.Array.data[1]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 6470f68afb0b6ecab9471aa3dee9a925, type: 3}
+    - target: {fileID: 8951632856909633166, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: '_spriteList.Array.data[2]'
+      value: 
+      objectReference: {fileID: 21300000, guid: f2951a815e702942daebb4b472ee8727, type: 3}
+    - target: {fileID: 8951632856909633166, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: '_spriteList.Array.data[3]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 0c086877be3cb582ebb425ed08822b39, type: 3}
+    - target: {fileID: 8951632856909633166, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: '_spriteList.Array.data[4]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 3e803030501848fa89e7aa3078dd1442, type: 3}
+    - target: {fileID: 8951632856909633166, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: '_spriteList.Array.data[5]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 5493ec8bdf726060686a77d8b625b73d, type: 3}
+    - target: {fileID: 8951632856909633166, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: '_spriteList.Array.data[6]'
+      value: 
+      objectReference: {fileID: 21300000, guid: a3eb0722f7ed29a45998af7ad5146ee6, type: 3}
+    - target: {fileID: 8951632856909633166, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: '_spriteList.Array.data[7]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 7e869096b88cce80ea7371c1be0cd840, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
