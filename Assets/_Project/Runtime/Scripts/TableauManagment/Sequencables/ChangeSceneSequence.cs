@@ -2,7 +2,6 @@ using System;
 using HierarchySequences;
 using NaughtyAttributes;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace DShotgun
 {
