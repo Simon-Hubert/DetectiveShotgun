@@ -334,15 +334,62 @@ MonoBehaviour:
     _spriteId: 18
   _speakingCharacterID: 2
   _text:
-    _text: "Shotgun, tu pourrais faire un effort, tu n\u2019y es pas all\xE9 de main
-      morte sur la sc\xE8ne de crime, qu\u2019est-ce qu\u2019il me reste \xE0 photographier
-      pour le journal et la t\xE9l\xE9vision ?"
+    _text: Tu sais que tu pourrais juste me parler pour attirer mon attention ?
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
   _name: 
   _useCustomDialogProfile: 0
   _characterDialogProfile: {fileID: 0}
+--- !u!1 &338333096145483047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5448102751908875903}
+  - component: {fileID: 9222440187451136489}
+  m_Layer: 0
+  m_Name: CommentFrame (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5448102751908875903
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338333096145483047}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6644767793565300529}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9222440187451136489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338333096145483047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1377d340553a30803855780b85012371, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CommentFrame
+  _name: Detective Shotgun
+  _text:
+    _text: "\xC7a \xE9claire beaucoup, mais pas grand-chose..."
+    _styles: []
+  _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
 --- !u!1 &350143508783505503
 GameObject:
   m_ObjectHideFlags: 0
@@ -1718,7 +1765,8 @@ MonoBehaviour:
     _spriteId: 0
   _speakingCharacterID: 1
   _text:
-    _text: "C\u2019est ma <fear>DERNI\xC8RE</fear> rubalise ! Thompson va me <whisper>tuer..."
+    _text: "C\u2019est ma <fear>DERNI\xC8RE</fear> rubalise ! <whisper> Thompson
+      va me tuer..."
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -5728,6 +5776,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a4099385ff88d93a50a4d1d04fc9ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.EndOfDialogSequence
+--- !u!1 &8081435386804344423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6583032837539281775}
+  - component: {fileID: 727586270810756433}
+  m_Layer: 0
+  m_Name: Sniper Sally Speaking (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6583032837539281775
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8081435386804344423}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5302891540809660488}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &727586270810756433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8081435386804344423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 7
+    _spriteId: 18
+  _speakingCharacterID: 2
+  _text:
+    _text: "Shotgun, tu pourrais faire un effort, tu n\u2019y es pas all\xE9 de main
+      morte sur la sc\xE8ne de crime, qu\u2019est-ce qu\u2019il me reste \xE0 photographier
+      pour le journal et la t\xE9l\xE9vision ?"
+    _styles: []
+  _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &8104411039066379561
 GameObject:
   m_ObjectHideFlags: 0
@@ -7896,6 +8008,10 @@ PrefabInstance:
       propertyPath: _onInteracted.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4428269379884602388, guid: 16dabd287a2c7e770ba1205bfe872ff7, type: 3}
+      propertyPath: _text._text
+      value: "\xC7a me rappelle mes d\xE9buts \xE0 l\u2019armurerie du commissariat."
+      objectReference: {fileID: 0}
     - target: {fileID: 5213879731775315226, guid: 16dabd287a2c7e770ba1205bfe872ff7, type: 3}
       propertyPath: m_Name
       value: Neon
@@ -7958,7 +8074,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1330662400893407138, guid: 16dabd287a2c7e770ba1205bfe872ff7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5448102751908875903}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16dabd287a2c7e770ba1205bfe872ff7, type: 3}
 --- !u!114 &691175960254293927 stripped
@@ -7975,6 +8094,11 @@ MonoBehaviour:
 --- !u!4 &2981248180858150971 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7430383108782184616, guid: 16dabd287a2c7e770ba1205bfe872ff7, type: 3}
+  m_PrefabInstance: {fileID: 5638932781461551251}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6644767793565300529 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1330662400893407138, guid: 16dabd287a2c7e770ba1205bfe872ff7, type: 3}
   m_PrefabInstance: {fileID: 5638932781461551251}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &6749857047069857675 stripped
@@ -8468,8 +8592,8 @@ PrefabInstance:
       objectReference: {fileID: -3761527422199795436, guid: e1be24b56cc93f44d818eee66c88ced0, type: 3}
     - target: {fileID: 575720088468376826, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _text._text
-      value: "Cartouches \xE9co+. Fin de mois difficile, c\u2019\xE9tait \xE7a ou
-        le whisky."
+      value: "Cartouches de la quincaillerie. <wait=0,5>Fin de mois difficile, <wait=0,25>c\u2019\xE9tait
+        \xE7a ou le whisky 10 ans d\u2019\xE2ge."
       objectReference: {fileID: 0}
     - target: {fileID: 575720088468376826, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _leftRef._spriteId
@@ -8762,6 +8886,11 @@ PrefabInstance:
     - target: {fileID: 4180834770840715969, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: m_Name
       value: Recrue Rodolphe Speaking
+      objectReference: {fileID: 0}
+    - target: {fileID: 5426698295831504770, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _text._text
+      value: "Heureusement qu\u2019il y a encore des jeunes pour s\u2019engager,
+        <wait=0,5>aucune poubelle ne sera br\xFBl\xE9e dans ce parking ce soir."
       objectReference: {fileID: 0}
     - target: {fileID: 6557361163770288419, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _left
@@ -9154,7 +9283,9 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1433157615070708882, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+    - {fileID: 5568313264035137525, guid: d8cb2184bb50166da927dc1040341786, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8570635131466859891, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       insertIndex: 1
@@ -9337,6 +9468,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2744869909411467770, guid: a6878fd5f8efe582195ff9cb82cf0959, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4384931117992184697}
+    - targetCorrespondingSourceObject: {fileID: 2744869909411467770, guid: a6878fd5f8efe582195ff9cb82cf0959, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6583032837539281775}
     - targetCorrespondingSourceObject: {fileID: 2744869909411467770, guid: a6878fd5f8efe582195ff9cb82cf0959, type: 3}
       insertIndex: -1
       addedObject: {fileID: 185524830783512591}

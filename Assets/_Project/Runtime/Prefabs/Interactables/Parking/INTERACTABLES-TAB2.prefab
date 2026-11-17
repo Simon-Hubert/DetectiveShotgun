@@ -187,6 +187,69 @@ MonoBehaviour:
   _name: 
   _useCustomDialogProfile: 0
   _characterDialogProfile: {fileID: 0}
+--- !u!1 &236645270883220662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4488032184941819972}
+  - component: {fileID: 2101189735406715761}
+  m_Layer: 0
+  m_Name: "L\xE9giste L\xE9onie Speaking (1)"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4488032184941819972
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236645270883220662}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4302838059380834459}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2101189735406715761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236645270883220662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 6
+    _spriteId: 15
+  _speakingCharacterID: 2
+  _text:
+    _text: "Mort vers 5h. <wait=0,25>Il a pass\xE9 la nuit l\xE0, D\xE9tective. <wait=0,5>Toute
+      la nuit."
+    _styles: []
+  _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &387247877211392490
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,8 +479,8 @@ MonoBehaviour:
     _spriteId: 15
   _speakingCharacterID: 2
   _text:
-    _text: "Mort vers 5h. <wait=0,25>Il a pass\xE9 la nuit l\xE0, D\xE9tective. <wait=0,5>Toute
-      la nuit."
+    _text: "Mhm, <wait=0,5>on la sent passer celle-ci, <wait=0,5>m\xE9nagez-moi un
+      peu je suis ici depuis un moment d\xE9j\xE0."
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -1132,7 +1195,7 @@ MonoBehaviour:
   _rightRef:
     _characterId: 6
     _spriteId: 15
-  _speakingCharacterID: 0
+  _speakingCharacterID: 2
   _text:
     _text: "Monsieur Shotgun, veuillez ne pas jouer avec les pi\xE8ces \xE0 conviction."
     _styles: []
@@ -5023,7 +5086,7 @@ MonoBehaviour:
   _rightRef:
     _characterId: 6
     _spriteId: 15
-  _speakingCharacterID: 0
+  _speakingCharacterID: 2
   _text:
     _text: "Dois-je vous rappeler ce qu\u2019il s\u2019est pass\xE9 la derni\xE8re
       fois que vous-avez propuls\xE9 le poisson rouge dans le micro-onde sur l\u2019affaire
@@ -6198,6 +6261,10 @@ PrefabInstance:
       value: DShotgun DShotgun.ConditionOnce
       objectReference: {fileID: 0}
     - target: {fileID: 7757913927654397825, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
+      propertyPath: 'managedReferences[2493797218204516369]'
+      value: DShotgun DShotgun.ItemCondition
+      objectReference: {fileID: 0}
+    - target: {fileID: 7757913927654397825, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
       propertyPath: managedReferences[2493796884022034456]._a
       value: 2493796884022034457
       objectReference: {fileID: 0}
@@ -6211,8 +6278,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7757913927654397825, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
       propertyPath: _interactionCases.Array.data[2]._condition
-      value: 2493796884022034463
+      value: 2493797218204516369
       objectReference: {fileID: 0}
+    - target: {fileID: 7757913927654397825, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
+      propertyPath: managedReferences[2493797218204516369]._item
+      value: 
+      objectReference: {fileID: 11400000, guid: 6f7e31ba21a6efe409a556c0f8baa30d, type: 2}
     - target: {fileID: 7757913927654397825, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
       propertyPath: managedReferences[2493796884022034457]._flag._flagName
       value: ShotOnceOnVictim
@@ -6806,6 +6877,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2060822910918891104, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3505337304891184154}
+    - targetCorrespondingSourceObject: {fileID: 2060822910918891104, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4488032184941819972}
     - targetCorrespondingSourceObject: {fileID: 2060822910918891104, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5273754550660129793}
