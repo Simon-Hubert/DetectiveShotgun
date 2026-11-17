@@ -2530,7 +2530,7 @@ GameObject:
   - component: {fileID: 2304247276908524613}
   - component: {fileID: 4295653731708753655}
   m_Layer: 0
-  m_Name: OnInteract (2)
+  m_Name: OnInteract-1+2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5171,7 +5171,7 @@ GameObject:
   - component: {fileID: 333163316296359920}
   - component: {fileID: 5781241330664472943}
   m_Layer: 0
-  m_Name: OnInteract (1)
+  m_Name: OnInteract-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6518,6 +6518,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.19
       objectReference: {fileID: 0}
+    - target: {fileID: 4159804617447253201, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: m_Name
+      value: OnInteract-1
+      objectReference: {fileID: 0}
     - target: {fileID: 4639755695584483968, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -6675,6 +6679,38 @@ PrefabInstance:
       value: DShotgun DShotgun.FlagCondition
       objectReference: {fileID: 0}
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: 'managedReferences[2493797218204516490]'
+      value: DShotgun DShotgun.ConditionOnce
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: 'managedReferences[2493797218204516491]'
+      value: DShotgun DShotgun.And
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: 'managedReferences[2493797218204516492]'
+      value: DShotgun DShotgun.FlagCondition
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: 'managedReferences[2493797218204516494]'
+      value: DShotgun DShotgun.And
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: 'managedReferences[2493797218204516496]'
+      value: DShotgun DShotgun.Not
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: 'managedReferences[2493797218204516497]'
+      value: DShotgun DShotgun.FlagCondition
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: 'managedReferences[2493797218204516498]'
+      value: DShotgun DShotgun.ItemCondition
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: 'managedReferences[2493797218204516499]'
+      value: DShotgun DShotgun.ItemCondition
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: managedReferences[2493796884022034460]._a
       value: 2493796884022034461
       objectReference: {fileID: 0}
@@ -6727,16 +6763,36 @@ PrefabInstance:
       value: 2493797218204516368
       objectReference: {fileID: 0}
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: managedReferences[2493797218204516491]._a
+      value: 2493797218204516492
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: managedReferences[2493797218204516491]._b
+      value: 2493797218204516494
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: managedReferences[2493797218204516494]._a
+      value: 2493797218204516496
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: managedReferences[2493797218204516494]._b
+      value: 2493797218204516498
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: managedReferences[2493797218204516496]._a
+      value: 2493797218204516497
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: _interactionCases.Array.data[0]._condition
-      value: 2493797218204516356
+      value: 2493797218204516491
       objectReference: {fileID: 0}
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: _interactionCases.Array.data[1]._condition
-      value: 2493797218204516352
+      value: 2493797218204516499
       objectReference: {fileID: 0}
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: _interactionCases.Array.data[2]._condition
-      value: 2493797218204516356
+      value: 2493797218204516490
       objectReference: {fileID: 0}
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: managedReferences[2493796902867566677]._item
@@ -6752,6 +6808,14 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 6f7e31ba21a6efe409a556c0f8baa30d, type: 2}
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: managedReferences[2493797218204516358]._item
+      value: 
+      objectReference: {fileID: 11400000, guid: 6f7e31ba21a6efe409a556c0f8baa30d, type: 2}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: managedReferences[2493797218204516498]._item
+      value: 
+      objectReference: {fileID: 11400000, guid: 6f7e31ba21a6efe409a556c0f8baa30d, type: 2}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: managedReferences[2493797218204516499]._item
       value: 
       objectReference: {fileID: 11400000, guid: 6f7e31ba21a6efe409a556c0f8baa30d, type: 2}
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
@@ -6776,6 +6840,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: managedReferences[2493797218204516368]._flag._flagName
+      value: Legiste_Dialogue_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: managedReferences[2493797218204516492]._flag._flagName
+      value: Legiste_Dialogue_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: managedReferences[2493797218204516497]._flag._flagName
       value: Legiste_Dialogue_2
       objectReference: {fileID: 0}
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
@@ -6805,15 +6877,15 @@ PrefabInstance:
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: _interactionCases.Array.data[0]._action.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4295653731708753655}
+      objectReference: {fileID: 5781241330664472943}
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: _interactionCases.Array.data[1]._action.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 356976848072318622}
+      objectReference: {fileID: 4295653731708753655}
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: _interactionCases.Array.data[2]._action.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 5781241330664472943}
+      objectReference: {fileID: 356976848072318622}
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: _interactionCases.Array.data[0]._action.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
