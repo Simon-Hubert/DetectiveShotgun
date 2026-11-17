@@ -223,6 +223,7 @@ GameObject:
   - component: {fileID: 7430383108782184616}
   - component: {fileID: 4868890196102642675}
   - component: {fileID: 3039328104222556731}
+  - component: {fileID: 1882718094300916818}
   m_Layer: 0
   m_Name: Neon
   m_TagString: Untagged
@@ -342,6 +343,19 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &1882718094300916818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5213879731775315226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
 --- !u!1 &5216849567369438901
 GameObject:
   m_ObjectHideFlags: 0

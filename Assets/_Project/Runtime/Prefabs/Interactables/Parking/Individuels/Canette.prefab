@@ -90,7 +90,7 @@ SpriteRenderer:
   m_Size: {x: 0.76, y: 0.96}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!114 &4265740501008160572
 MonoBehaviour:
@@ -318,6 +318,7 @@ GameObject:
   - component: {fileID: 7903673078810126277}
   - component: {fileID: 3902130010043455943}
   - component: {fileID: 5392893016712451248}
+  - component: {fileID: 3729684749308376808}
   m_Layer: 0
   m_Name: Canette
   m_TagString: Untagged
@@ -437,6 +438,19 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &3729684749308376808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6980497821781101678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
 --- !u!1 &7851538413010859787
 GameObject:
   m_ObjectHideFlags: 0

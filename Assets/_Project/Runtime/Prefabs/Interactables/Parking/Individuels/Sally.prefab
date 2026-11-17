@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 9183925863220456688}
   - component: {fileID: 1318710856648906743}
   - component: {fileID: 7876621021834797283}
+  - component: {fileID: 3256772393086915105}
   m_Layer: 0
   m_Name: Sally
   m_TagString: Untagged
@@ -229,6 +230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ba8adc89f54b814d974909c13324ec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.InteractableManager
+  _priority: 0
   _interactionCases: []
   _aimCases: []
   _onInteracted:
@@ -240,6 +242,19 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &3256772393086915105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5114572218372721699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
 --- !u!1 &6832424414277456175
 GameObject:
   m_ObjectHideFlags: 0

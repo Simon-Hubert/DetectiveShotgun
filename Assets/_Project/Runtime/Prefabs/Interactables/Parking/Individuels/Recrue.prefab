@@ -842,6 +842,7 @@ GameObject:
   - component: {fileID: 8570635131466859891}
   - component: {fileID: 2989814800911385299}
   - component: {fileID: 9084122249304387810}
+  - component: {fileID: 7320573862717859064}
   m_Layer: 0
   m_Name: Recrue
   m_TagString: Untagged
@@ -976,6 +977,19 @@ MonoBehaviour:
       data:
         _flag:
           _flagName: HasSpokenToRodolphe
+--- !u!114 &7320573862717859064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6979707265416085668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
 --- !u!1 &7304080123318615382
 GameObject:
   m_ObjectHideFlags: 0

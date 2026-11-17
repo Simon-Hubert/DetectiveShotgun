@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7883044889571468377}
   - component: {fileID: 6002434109267867107}
   - component: {fileID: 8808971550368390278}
+  - component: {fileID: 4560361835583902696}
   m_Layer: 0
   m_Name: Extincteur
   m_TagString: Untagged
@@ -150,6 +151,19 @@ MonoBehaviour:
     - rid: 1236845720742395986
       type: {class: ConditionOnce, ns: DShotgun, asm: DShotgun}
       data: 
+--- !u!114 &4560361835583902696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196150377872740654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
 --- !u!1 &406299713920391886
 GameObject:
   m_ObjectHideFlags: 0

@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 8162382127532259278}
   - component: {fileID: 1163869177483239246}
   - component: {fileID: 9021677503746836299}
+  - component: {fileID: 6830530470548733184}
   m_Layer: 0
   m_Name: Mirroir
   m_TagString: Untagged
@@ -151,6 +152,19 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &6830530470548733184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910733718212898062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
 --- !u!1 &3445722797428035707
 GameObject:
   m_ObjectHideFlags: 0

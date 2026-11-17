@@ -653,6 +653,7 @@ GameObject:
   - component: {fileID: 2687261726305321248}
   - component: {fileID: 7887800230361281108}
   - component: {fileID: 6397651197942851686}
+  - component: {fileID: 5077211968436692944}
   m_Layer: 0
   m_Name: Rubalise
   m_TagString: Untagged
@@ -749,6 +750,19 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &5077211968436692944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6966356134055296283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
 --- !u!1 &7042419048687660161
 GameObject:
   m_ObjectHideFlags: 0
