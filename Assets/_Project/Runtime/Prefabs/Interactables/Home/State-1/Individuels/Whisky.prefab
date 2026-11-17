@@ -320,6 +320,7 @@ GameObject:
   - component: {fileID: 1443625258659536710}
   - component: {fileID: 8186061640538768180}
   - component: {fileID: 1429161104329428896}
+  - component: {fileID: 4577559122793854653}
   m_Layer: 0
   m_Name: Whisky
   m_TagString: Untagged
@@ -447,6 +448,19 @@ MonoBehaviour:
     - rid: 3407072178556633094
       type: {class: ConditionOnce, ns: DShotgun, asm: DShotgun}
       data: 
+--- !u!114 &4577559122793854653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5553764746313125816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
 --- !u!1 &6517775378006339292
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,7 +6,7 @@ namespace DShotgun
 {
     public class ShotImpact : MonoBehaviour
     {
-        private InputReader _ir;
+        private InteractableController _ic;
         [SerializeField] private ImpactPool _pool;
         [SerializeField] private UnityEvent _onShoot;
         [SerializeField] private CallSoundOnSurface _soundOnSurface;
@@ -15,38 +15,43 @@ namespace DShotgun
 
         private void Start()
         {
-            _ir = GetComponent<InputReader>();
-            if (_ir != null)
+            _ic = GetComponent<InteractableController>();
+            if (_ic != null)
             {
-                _ir.OnLeftClickPressed += Shoot;
+                _ic.OnInteractableInteracted += Shoot;
             }
         }
 
         private void OnEnable()
         {
-            if (!_ir) return;
-            _ir.OnLeftClickPressed += Shoot;
+            if (!_ic) return;
+            _ic.OnInteractableInteracted += Shoot;
         }
 
         private void OnDisable()
         {
-            if (!_ir) return;
-            _ir.OnLeftClickPressed -= Shoot;
+            if (!_ic) return;
+            _ic.OnInteractableInteracted -= Shoot;
         }
 
-        private void Shoot()
+        private void Shoot(InteractableManager interactableManager)
         {
-            _shootEmitter?.Play();
-            
             GameObject go = _pool.GetShotImpact();
+            
+            
+            if (interactableManager) {
+                ShotImpactSpriteProvider sisp = interactableManager.GetComponent<ShotImpactSpriteProvider>();
+                if (sisp) {
+                    go.GetComponent<SpriteRenderer>().sprite = sisp.GetSprite();
+                }
+            }
+            
             go.transform.position = Camera.main.ScreenToWorldPoint(InputReader.PointerPosition);
             Vector3 vector3 = go.transform.position;
             vector3.z = 0;
             go.transform.position = vector3;
             
             _onShoot?.Invoke();
-
-            _soundOnSurface?.CallSound(Camera.main.ScreenToWorldPoint(InputReader.PointerPosition));
         }
     }
 }
