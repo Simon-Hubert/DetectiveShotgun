@@ -38,7 +38,6 @@ namespace DShotgun
         {
             GameObject go = _pool.GetShotImpact();
             
-            
             if (interactableManager) {
                 ShotImpactSpriteProvider sisp = interactableManager.GetComponent<ShotImpactSpriteProvider>();
                 if (sisp) {
