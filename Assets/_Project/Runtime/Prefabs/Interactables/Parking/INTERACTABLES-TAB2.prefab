@@ -6588,7 +6588,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: _priority
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: _interactionCases.Array.size
@@ -6772,7 +6772,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: managedReferences[2493797218204516365]._flag._flagName
-      value: Legiste_Dialogue_1
+      value: Legiste_Dialogue_2
       objectReference: {fileID: 0}
     - target: {fileID: 8109909449660838756, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: managedReferences[2493797218204516368]._flag._flagName
@@ -7472,7 +7472,35 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 42856439453225332, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
       propertyPath: _priority
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 42856439453225332, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
+      propertyPath: _onInteracted.m_PersistentCalls.m_Calls.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 42856439453225332, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
+      propertyPath: _onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 42856439453225332, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
+      propertyPath: _onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 462144393574136092}
+    - target: {fileID: 42856439453225332, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
+      propertyPath: _onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 42856439453225332, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
+      propertyPath: _onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Execute
+      objectReference: {fileID: 0}
+    - target: {fileID: 42856439453225332, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
+      propertyPath: _onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: HierarchySequences.Sequence, HierarchySequences
+      objectReference: {fileID: 0}
+    - target: {fileID: 42856439453225332, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
+      propertyPath: _onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1994467089896702246, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
       propertyPath: m_LocalScale.x
@@ -7605,6 +7633,17 @@ PrefabInstance:
       addedObject: {fileID: 252792447453185232}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
+--- !u!114 &462144393574136092 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6280305520806971990, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
+  m_PrefabInstance: {fileID: 5855239683964105546}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8a3882457b01e438e4a1d24cc811e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.Sequence
 --- !u!4 &4034187344338024658 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7403264112128920472, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
@@ -7697,7 +7736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9021677503746836299, guid: 9f2015ec4f3bc5cd5b83f3f15e3c243e, type: 3}
       propertyPath: _priority
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9021677503746836299, guid: 9f2015ec4f3bc5cd5b83f3f15e3c243e, type: 3}
       propertyPath: _aimCases.Array.size
