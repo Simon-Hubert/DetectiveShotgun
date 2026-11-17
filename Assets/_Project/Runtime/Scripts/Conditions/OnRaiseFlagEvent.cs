@@ -14,6 +14,11 @@ namespace DShotgun
             Blackboard.OnFlagRaised += Check;
         }
 
+        private void OnDestroy()
+        {
+            Blackboard.OnFlagRaised -= Check;
+        }
+
         void Check()
         {
             if (_condition.Evaluate(Blackboard.Instance))
