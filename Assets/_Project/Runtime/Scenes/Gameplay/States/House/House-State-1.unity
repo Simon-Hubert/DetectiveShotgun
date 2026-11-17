@@ -1915,6 +1915,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: HierarchySequences::HierarchySequences.WaitForDuration
   _duration: 2.5
+--- !u!114 &1594355419 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3844172125284745231, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+  m_PrefabInstance: {fileID: 7418589119839522801}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6e1a5d5bff0ed919060c960b142b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ScreenShaker
 --- !u!1 &1665748003
 GameObject:
   m_ObjectHideFlags: 0
@@ -2683,6 +2694,10 @@ PrefabInstance:
       propertyPath: m_fontColor.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4260259430051720737, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: m_Name
+      value: Invoke Event with 2 binds
+      objectReference: {fileID: 0}
     - target: {fileID: 4663014247823571040, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.29
@@ -2746,6 +2761,14 @@ PrefabInstance:
     - target: {fileID: 5327066329564228447, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 1594355419}
+    - target: {fileID: 5327066329564228447, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Shake
+      objectReference: {fileID: 0}
+    - target: {fileID: 5327066329564228447, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DShotgun.ScreenShaker, DShotgun
       objectReference: {fileID: 0}
     - target: {fileID: 5666349069394809631, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
       propertyPath: m_SortingOrder
