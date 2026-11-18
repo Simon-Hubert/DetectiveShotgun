@@ -212,9 +212,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5486778619114366756, guid: bd6d27b2d4fef61a88dbf06aafa0ca4d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7921556747408059991}
-    - targetCorrespondingSourceObject: {fileID: 5486778619114366756, guid: bd6d27b2d4fef61a88dbf06aafa0ca4d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5846048716981409621}
     - targetCorrespondingSourceObject: {fileID: 3610671768040147737, guid: bd6d27b2d4fef61a88dbf06aafa0ca4d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 942896764566010485}
@@ -318,20 +315,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &5846048716981409621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5074415155028478293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
-  _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
 --- !u!61 &5177846461289279147 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 5590201114377634010, guid: bd6d27b2d4fef61a88dbf06aafa0ca4d, type: 3}
@@ -526,9 +509,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5486778619114366756, guid: bd6d27b2d4fef61a88dbf06aafa0ca4d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3151321659742794332}
-    - targetCorrespondingSourceObject: {fileID: 5486778619114366756, guid: bd6d27b2d4fef61a88dbf06aafa0ca4d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2951425828391688156}
     - targetCorrespondingSourceObject: {fileID: 3610671768040147737, guid: bd6d27b2d4fef61a88dbf06aafa0ca4d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8969341832904319418}
@@ -642,20 +622,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2951425828391688156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9189749002303072743}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
-  _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
 --- !u!1001 &6419571364332323657
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1542,9 +1508,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5486778619114366756, guid: bd6d27b2d4fef61a88dbf06aafa0ca4d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4817338165550436987}
-    - targetCorrespondingSourceObject: {fileID: 5486778619114366756, guid: bd6d27b2d4fef61a88dbf06aafa0ca4d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3208237032800501450}
     - targetCorrespondingSourceObject: {fileID: 3610671768040147737, guid: bd6d27b2d4fef61a88dbf06aafa0ca4d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2510607442237937829}
@@ -1620,20 +1583,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &3208237032800501450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2712000939597745585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
-  _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
 --- !u!114 &5557933783419486757 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2641287776425109680, guid: bd6d27b2d4fef61a88dbf06aafa0ca4d, type: 3}

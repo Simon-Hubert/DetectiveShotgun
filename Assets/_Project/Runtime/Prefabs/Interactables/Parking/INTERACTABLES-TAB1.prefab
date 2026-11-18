@@ -7382,10 +7382,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1014344543812555775, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
       insertIndex: 1
       addedObject: {fileID: 6713909915694516091}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6966356134055296283, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7388078772819453723}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
 --- !u!4 &1115021581121391172 stripped
 Transform:
@@ -7419,25 +7416,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a8a3882457b01e438e4a1d24cc811e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: HierarchySequences::HierarchySequences.Sequence
---- !u!1 &7045742236529960096 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6966356134055296283, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
-  m_PrefabInstance: {fileID: 102165269391022523}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7388078772819453723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7045742236529960096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
-  _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
 --- !u!114 &7171572199925047331 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7128208848304109976, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
@@ -7561,10 +7539,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5205913069037341415, guid: 70f65bc8ccd375413ba5c4fd712da200, type: 3}
       insertIndex: 2
       addedObject: {fileID: 1841671490235209990}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 196150377872740654, guid: 70f65bc8ccd375413ba5c4fd712da200, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8529007150472427946}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70f65bc8ccd375413ba5c4fd712da200, type: 3}
 --- !u!114 &2063828776030686872 stripped
 MonoBehaviour:
@@ -7577,25 +7552,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14ed97eedb9dfccddb2419ce39cca489, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.SpriteDSAnimator
---- !u!1 &3373188261141727219 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 196150377872740654, guid: 70f65bc8ccd375413ba5c4fd712da200, type: 3}
-  m_PrefabInstance: {fileID: 3204070757272852189}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8529007150472427946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3373188261141727219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
-  _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
 --- !u!4 &4688553903580164740 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7883044889571468377, guid: 70f65bc8ccd375413ba5c4fd712da200, type: 3}
@@ -7614,6 +7570,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5163736768412431243}
     m_Modifications:
+    - target: {fileID: 2347511546097811528, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: dc1b3acf44f647943a7d2d558d5e4cb5, type: 3}
     - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: _priority
       value: 2
@@ -7931,6 +7891,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canette2
       objectReference: {fileID: 0}
+    - target: {fileID: 7802163043512585964, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: f1f740d7628713649818c1459c839c51, type: 2}
     - target: {fileID: 7903673078810126277, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.29
@@ -7996,10 +7960,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6446330029221293394, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7946806359140016686}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1325096137229851264}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
 --- !u!114 &146468753375309146 stripped
 MonoBehaviour:
@@ -8022,25 +7983,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7903673078810126277, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
   m_PrefabInstance: {fileID: 4075353355017034505}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &6363908980629706599 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
-  m_PrefabInstance: {fileID: 4075353355017034505}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1325096137229851264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6363908980629706599}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
-  _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
 --- !u!4 &7060350404790826587 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6446330029221293394, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
@@ -8065,6 +8007,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5163736768412431243}
     m_Modifications:
+    - target: {fileID: 2347511546097811528, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3a38008b7dbe264428d43e0113aefc2f, type: 3}
     - target: {fileID: 5178398468714649533, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: _text._text
       value: "Une kronenbourg pos\xE9e sur une poubelle. Elle a rat\xE9 sa vocation
@@ -8386,6 +8332,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canette3
       objectReference: {fileID: 0}
+    - target: {fileID: 7802163043512585964, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 1ff6c541a4a493b4cb131a699559436e, type: 2}
     - target: {fileID: 7903673078810126277, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.329
@@ -8455,10 +8405,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6446330029221293394, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7613618550839218981}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1717326594050468832}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
 --- !u!114 &2002632979373577283 stripped
 MonoBehaviour:
@@ -8476,25 +8423,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6446330029221293394, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
   m_PrefabInstance: {fileID: 5118449576118239666}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2870999740720369116 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
-  m_PrefabInstance: {fileID: 5118449576118239666}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1717326594050468832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2870999740720369116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
-  _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
 --- !u!4 &3073458322524694135 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7903673078810126277, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
@@ -8658,30 +8586,8 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1330662400893407138, guid: 16dabd287a2c7e770ba1205bfe872ff7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5448102751908875903}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5213879731775315226, guid: 16dabd287a2c7e770ba1205bfe872ff7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5667288388843574349}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16dabd287a2c7e770ba1205bfe872ff7, type: 3}
---- !u!1 &439919553921787273 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5213879731775315226, guid: 16dabd287a2c7e770ba1205bfe872ff7, type: 3}
-  m_PrefabInstance: {fileID: 5638932781461551251}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5667288388843574349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 439919553921787273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
-  _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
 --- !u!114 &691175960254293927 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5176342013178355508, guid: 16dabd287a2c7e770ba1205bfe872ff7, type: 3}
@@ -9041,11 +8947,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7903673078810126277, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.76
+      value: -3.49
       objectReference: {fileID: 0}
     - target: {fileID: 7903673078810126277, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.88
+      value: -1.87
       objectReference: {fileID: 0}
     - target: {fileID: 7903673078810126277, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9111,30 +9017,8 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6446330029221293394, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6614368719763793365}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3500952310384706782}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
---- !u!1 &172022462058510776 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
-  m_PrefabInstance: {fileID: 7114720168751936982}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3500952310384706782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 172022462058510776}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
-  _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
 --- !u!4 &1086471997100102163 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7903673078810126277, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
@@ -9973,30 +9857,8 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6780849652521256020, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       insertIndex: 11
       addedObject: {fileID: 3256324515330333151}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6979707265416085668, guid: d8cb2184bb50166da927dc1040341786, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5270340510347201989}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8cb2184bb50166da927dc1040341786, type: 3}
---- !u!1 &874231933995826633 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6979707265416085668, guid: d8cb2184bb50166da927dc1040341786, type: 3}
-  m_PrefabInstance: {fileID: 7853437212053568877}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5270340510347201989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 874231933995826633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
-  _sprite: {fileID: 0}
-  _impactVfx: {fileID: 0}
 --- !u!4 &1876875929961740318 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8570635131466859891, guid: d8cb2184bb50166da927dc1040341786, type: 3}
@@ -10232,9 +10094,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5114572218372721699, guid: a6878fd5f8efe582195ff9cb82cf0959, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1108393250217295403}
-    - targetCorrespondingSourceObject: {fileID: 5114572218372721699, guid: a6878fd5f8efe582195ff9cb82cf0959, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5957612599376438094}
   m_SourcePrefab: {fileID: 100100000, guid: a6878fd5f8efe582195ff9cb82cf0959, type: 3}
 --- !u!114 &689370381614352930 stripped
 MonoBehaviour:
@@ -10291,20 +10150,6 @@ MonoBehaviour:
       data:
         _flag:
           _flagName: StyletDiscovered
---- !u!114 &5957612599376438094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2988849964206204305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
-  _sprite: {fileID: 0}
-  _impactVfx: {fileID: 0}
 --- !u!114 &3106500419400749772 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4943996697374686078, guid: a6878fd5f8efe582195ff9cb82cf0959, type: 3}

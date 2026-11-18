@@ -7134,10 +7134,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2060822910918891104, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8945178605351954506}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7353327301270232575, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1599416363128399889}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
 --- !u!114 &356976848072318622 stripped
 MonoBehaviour:
@@ -7160,25 +7157,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2060822910918891104, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
   m_PrefabInstance: {fileID: 2823550181556066043}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4693603855110720260 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7353327301270232575, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
-  m_PrefabInstance: {fileID: 2823550181556066043}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1599416363128399889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4693603855110720260}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
-  _sprite: {fileID: 0}
-  _impactVfx: {fileID: 0}
 --- !u!4 &7971070916916055520 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5310215832001387291, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
@@ -8403,10 +8381,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1894676236318038462, guid: 9f2015ec4f3bc5cd5b83f3f15e3c243e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4338466290227389703}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 910733718212898062, guid: 9f2015ec4f3bc5cd5b83f3f15e3c243e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3377945133921984386}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f2015ec4f3bc5cd5b83f3f15e3c243e, type: 3}
 --- !u!4 &1247680531005587768 stripped
 Transform:
@@ -8434,25 +8409,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a8a3882457b01e438e4a1d24cc811e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: HierarchySequences::HierarchySequences.Sequence
---- !u!1 &7833359422570109944 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 910733718212898062, guid: 9f2015ec4f3bc5cd5b83f3f15e3c243e, type: 3}
-  m_PrefabInstance: {fileID: 6923789207073519350}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3377945133921984386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7833359422570109944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
-  _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: d1eb60a719f45884d96949c54029cfe8, type: 3}
 --- !u!114 &7841600978619093022 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 920083505210107624, guid: 9f2015ec4f3bc5cd5b83f3f15e3c243e, type: 3}
