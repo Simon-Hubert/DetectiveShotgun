@@ -72,8 +72,8 @@ namespace DShotgun.Dialogs
             set {
                 _displayState = value ? TextDisplayState.Idle : TextDisplayState.Closed;
                 _displayParent.SetActive(value);
-                
-                
+
+                if (GameManager.CurrentState == GameState.Transition) return;
                 GameManager.SwitchState(value ? GameState.Dialogue : GameState.Playing);
             }
         }

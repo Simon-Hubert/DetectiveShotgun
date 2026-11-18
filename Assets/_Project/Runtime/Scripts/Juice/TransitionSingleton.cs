@@ -7,6 +7,7 @@ namespace DShotgun
     public abstract class AReader : MonoBehaviour
     {
         public abstract Awaitable ComputeTextAsync(string text, CancellationToken cancel);
+        public abstract void Clear();
     }
     
     public class TransitionSingleton : MonoBehaviour
@@ -40,6 +41,11 @@ namespace DShotgun
         {
             instance._gui.SetActive(false);
             instance._image.enabled = false;
+        }
+
+        public static void Clear()
+        {
+            instance._reader.Clear();
         }
 
         public static async Awaitable ShowTextAsync(string txt)

@@ -7,6 +7,7 @@ namespace DShotgun
 {
     public class ImpactPool : MonoBehaviour
     {
+        [SerializeField] private Sprite _defaultShotSprite;
         [SerializeField] private GameObject _shotImpactPrefab;
         [SerializeField] private int _maxImpact;
 
@@ -36,6 +37,7 @@ namespace DShotgun
             for (int i = 0; i < _maxImpact; i++) {
                 GameObject go = Instantiate(_shotImpactPrefab, transform, true);
                 go.SetActive(false);
+                go.GetComponent<SpriteRenderer>().sprite = _defaultShotSprite;
                 go.transform.rotation = Quaternion.Euler(0,0,Random.Range(0f,360f));
                 _inactiveShotImpactPool.Enqueue(go);
             }

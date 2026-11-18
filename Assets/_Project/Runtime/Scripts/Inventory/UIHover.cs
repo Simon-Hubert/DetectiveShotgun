@@ -46,6 +46,7 @@ namespace DShotgun
         {
             _isHovered = true;
             _cg.blocksRaycasts = false;
+            Debug.Log("HOVERED");
         }
 
         private void OnPointerExit()
@@ -53,9 +54,6 @@ namespace DShotgun
             _isHovered = false;
             _cg.blocksRaycasts = true;
         }
-        
-        
-
         
     }
 }

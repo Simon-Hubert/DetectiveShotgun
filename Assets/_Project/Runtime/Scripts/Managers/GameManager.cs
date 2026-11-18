@@ -83,7 +83,6 @@ namespace DShotgun
                     
                     break;
                 case GameState.Transition:
-                    
                     break;
                 default:
                     Debug.LogWarning($"Unhandled game state: {nextState}");

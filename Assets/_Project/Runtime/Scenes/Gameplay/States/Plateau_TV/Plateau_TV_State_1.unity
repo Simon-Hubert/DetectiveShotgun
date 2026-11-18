@@ -1168,28 +1168,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  <LeftRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <MiddleRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <RightRef>k__BackingField:
-    _characterName: None
-    _spriteName: None
-  <UseCustomName>k__BackingField: 0
-  <UseCustomDialogProfile>k__BackingField: 0
-  <SpeakingCharacterID>k__BackingField: 0
-  <CharacterDialogProfile>k__BackingField: {fileID: 0}
-  _left: {fileID: 0}
-  _middle: {fileID: 0}
-  _right: {fileID: 0}
+  _leftRef:
+    _characterId: 0
+    _spriteId: 0
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 0
+    _spriteId: 0
+  _speakingCharacterID: 0
   _text:
     _text: "Jour d'un mois, Lieu d'un endroit, Lieu pr\xE9cis d'un endroit encore
       plus pr\xE9cis"
     _styles: []
-  _name: None
   _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &2046266066
 GameObject:
   m_ObjectHideFlags: 0
@@ -1343,25 +1340,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4172406927304009392, guid: 3386776bfacca144e88948c3ac995a59, type: 3}
-      propertyPath: m_Name
-      value: Patrice Speaking
-      objectReference: {fileID: 0}
     - target: {fileID: 4804759362090105186, guid: 3386776bfacca144e88948c3ac995a59, type: 3}
       propertyPath: m_Name
       value: INTERACTABLES-TAB1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5510309814902664252, guid: 3386776bfacca144e88948c3ac995a59, type: 3}
-      propertyPath: m_Name
-      value: Patrice Speaking
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912174369330898004, guid: 3386776bfacca144e88948c3ac995a59, type: 3}
-      propertyPath: m_Name
-      value: "R\xE9gie Speaking"
-      objectReference: {fileID: 0}
-    - target: {fileID: 8420173582106022997, guid: 3386776bfacca144e88948c3ac995a59, type: 3}
-      propertyPath: m_Name
-      value: Sally Speaking
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

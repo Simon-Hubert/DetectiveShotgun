@@ -2,7 +2,6 @@ using System;
 using HierarchySequences;
 using NaughtyAttributes;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace DShotgun
 {
@@ -12,6 +11,7 @@ namespace DShotgun
         public string Date;
         public string Heure;
         public string Lieu;
+        public string Ville;
         public Sprite Background;
     }
     
