@@ -1,24 +1,24 @@
-using System;
 using UnityEngine;
 using NaughtyAttributes;
 
 namespace DShotgun
 {
+    [RequireComponent(typeof(SpriteRenderer))]
     public class SpriteDSAnimator : MonoBehaviour
     {
         [Header("Resource Management")]
-        [SerializeField] private string _spriteFolderPath;
-        [SerializeField] private string _fileName;
-        [SerializeField] private string _fileSuffix;
+        [Foldout("Resources"), SerializeField] private string _spriteFolderPath;
+        [Foldout("Resources"), SerializeField] private string _fileName;
+        [Foldout("Resources"), SerializeField] private string _fileSuffix;
         [Space(7)]
-        [SerializeField, Min(0)] private int _nbOfElements;
-        [SerializeField, Min(0)] private int _startAtIndex;
+        [Foldout("Resources"), SerializeField, Min(0)] private int _nbOfElements;
+        [Foldout("Resources"), SerializeField, Min(0)] private int _startAtIndex;
         
         [Header("Sprite Rendering")]
         [SerializeField, ReadOnly] private Sprite[] _spriteList;
-        [SerializeField, ReadOnly] private int _index;
+        [Foldout("Resources"), SerializeField, ReadOnly] private int _index;
         [Space(7)]
-        [SerializeField] private SpriteRenderer _spriteRenderer;
+        [Foldout("Resources"), SerializeField] private SpriteRenderer _spriteRenderer;
         
         [Header("Animation")]
         [SerializeField] private bool _loop = false;
@@ -40,6 +40,10 @@ namespace DShotgun
         private void Start() {
             if (_spriteList != null || _spriteList.Length > 0) {
                 _spriteRenderer.sprite = _spriteList[0];
+            }
+
+            if (_spriteRenderer == null) {
+                _spriteRenderer = GetComponent<SpriteRenderer>();
             }
         }
         
