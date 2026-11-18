@@ -2707,6 +2707,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -1.87
       objectReference: {fileID: 0}
+    - target: {fileID: 1736868936822381377, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: dc1b3acf44f647943a7d2d558d5e4cb5, type: 3}
     - target: {fileID: 1824872168002511253, guid: f64e95f2609198f8796394ea5127e712, type: 3}
       propertyPath: m_Size.x
       value: 20
@@ -2739,6 +2743,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3120637432441687902, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 1ff6c541a4a493b4cb131a699559436e, type: 2}
     - target: {fileID: 4190911680206184084, guid: f64e95f2609198f8796394ea5127e712, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.1
@@ -2819,6 +2827,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6109213964514825701, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: f1f740d7628713649818c1459c839c51, type: 2}
     - target: {fileID: 6453205468227740394, guid: f64e95f2609198f8796394ea5127e712, type: 3}
       propertyPath: _fileName
       value: SPI_can_anim_01_0
@@ -2895,6 +2907,18 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7465960570270712314, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_Size.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465960570270712314, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_Size.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465960570270712314, guid: f64e95f2609198f8796394ea5127e712, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3a38008b7dbe264428d43e0113aefc2f, type: 3}
     - target: {fileID: 8951632856909633166, guid: f64e95f2609198f8796394ea5127e712, type: 3}
       propertyPath: _fileName
       value: SPI_can_anim_03_0
