@@ -88,23 +88,38 @@ namespace DShotgun.Dialogs
         
         public CharacterDialogProfile ToStruct { get => new CharacterDialogProfile(this); }
 
-        public SOCharacterDialogProfile CompleteDefaultProfile {
-            set {
-                if (_textBoxBackground == null) _textBoxBackground = value.TextBoxSprite;
-                if (_charaNameSprite == null) _charaNameSprite = value.CharaNameSprite;
-                _nameDisplayedAsTMP = value.NameDisplayedAsTMP;
-                
-                if (_defasultTypingSound == null) _defasultTypingSound = value.DefaultTypingSound;
-                
-                if (!_hasPersonalisedColor) _defaultTextColor = value.DefaultTextColor(value._defaultTextColor);
-                if (_defaultFont == null) _defaultFont = value.DefaultFont;
-                if (!_hasFontStyle) DefaultFontStyle(value._fontStyle);
-                if (!_hasPersonalisedSpacing) DefaultSpacing(value._textSpacing);
+        public SOCharacterDialogProfile GetProfileWithDefault(SOCharacterDialogProfile a_value) {
+            SOCharacterDialogProfile result = this;
 
-                _hasPersonalisedColor = true;
-                _hasFontStyle = true;
-                _hasPersonalisedSpacing = true;
+            if (result._textBoxBackground == null) {
+                result._textBoxBackground = a_value.TextBoxSprite;
             }
+            if (result._charaNameSprite == null) {
+                result._charaNameSprite = a_value.CharaNameSprite;
+                result._nameDisplayedAsTMP = a_value.NameDisplayedAsTMP;
+            }
+            if (result._defasultTypingSound == null) {
+                result._defasultTypingSound = a_value.DefaultTypingSound;
+            }
+
+            if (!result._hasPersonalisedColor) {
+                result.DefaultTextColor(a_value._defaultTextColor);
+            }
+            if (result._defaultFont == null) {
+                result._defaultFont = a_value.DefaultFont;
+            }
+            if (!result._hasFontStyle) {
+                result.DefaultFontStyle(a_value._fontStyle);
+            }
+            if (!result._hasPersonalisedSpacing) {
+                result.DefaultSpacing(a_value._textSpacing);
+            }
+
+            result._hasPersonalisedColor = true;
+            result._hasFontStyle = true;
+            result._hasPersonalisedSpacing = true;
+
+            return result;
         }
     }
 
