@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.RenderGraphModule;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.Rendering.Universal.Internal;
 
 /// <summary>
 /// The full screen blur render pass.
@@ -16,10 +17,12 @@ public sealed class FullScreenBlurRenderPass : ScriptableRenderPass
 	private class PassData
 	{
 		public TextureHandle source;
+		public TextureHandle finalBlit;
 
 		public Material material;
 		public int downsamplePass;
 		public int upsamplePass;
+		public int finalBlitPass;
 
 		public TextureHandle[] pyramid;
 		public float intensity;
@@ -40,8 +43,10 @@ public sealed class FullScreenBlurRenderPass : ScriptableRenderPass
 	private const float BlurSizeScalingReferenceHeight = 1440.0f;
 
 	private static readonly int IntensityId = Shader.PropertyToID("_Intensity");
+	private static readonly int OriginalBlitId = Shader.PropertyToID("_OriginalBlit");
 
 	private readonly TextureHandle[] pyramid = new TextureHandle[MaxPasses];
+	private TextureHandle finalBlit = new TextureHandle();
 	private Material material;
 
 	#endregion
@@ -79,9 +84,11 @@ public sealed class FullScreenBlurRenderPass : ScriptableRenderPass
 			passData.material = material;
 			passData.downsamplePass = 0;
 			passData.upsamplePass = 1;
+			passData.finalBlitPass = 2;
 			passData.pyramid = pyramid;
 			passData.intensity = volume.intensity.value;
 			passData.passes = volume.passes.value;
+			passData.finalBlit = finalBlit;
 
 			builder.SetRenderAttachment(pyramid[0], 0);
 			builder.UseTexture(resourceData.activeColorTexture, AccessFlags.ReadWrite);
@@ -118,6 +125,8 @@ public sealed class FullScreenBlurRenderPass : ScriptableRenderPass
 
 		for (int i = passes; i < MaxPasses; ++i)
 			pyramid[i] = TextureHandle.nullHandle;
+
+		finalBlit = builder.CreateTransientTexture(renderGraph.GetTextureDesc(resourceData.activeColorTexture));
 	}
 
 	/// <summary>
@@ -125,13 +134,14 @@ public sealed class FullScreenBlurRenderPass : ScriptableRenderPass
 	/// </summary>
 	/// <param name="material"></param>
 	/// <param name="intensity"></param>
-	private static void UpdateMaterialParameters(Material material, float intensity)
+	private static void UpdateMaterialParameters(Material material, float intensity, Texture originalBlit)
 	{
 		// An increase of x4 pixels equals to a multiplier of 2.5 to blur intensity.
 		float factor = ((Screen.height / BlurSizeScalingReferenceHeight) / 4.0f) * 2.5f;
 		float blurIntensity = Mathf.Lerp(0.0f, BlurIntensity, Mathf.Sqrt(intensity));
 
 		material.SetFloat(IntensityId, blurIntensity * factor);
+		material.SetTexture(OriginalBlitId, originalBlit);
 	}
 
 	/// <summary>
@@ -142,15 +152,17 @@ public sealed class FullScreenBlurRenderPass : ScriptableRenderPass
 	private static void ExecuteUnsafePass(PassData passData, UnsafeGraphContext context)
 	{
 		Material material = passData.material;
-		UpdateMaterialParameters(material, passData.intensity);
+		UpdateMaterialParameters(material, passData.intensity, passData.source);
 
 		CommandBuffer cmd = CommandBufferHelpers.GetNativeCommandBuffer(context.cmd);
 
 		int passes = passData.passes;
 		int downsamplePass = passData.downsamplePass;
 		int upsamplePass = passData.upsamplePass;
+		int finalBlitPass = passData.finalBlitPass;
 		TextureHandle[] pyramid = passData.pyramid;
-
+		TextureHandle finalBlit = passData.finalBlit;
+		
 		Blitter.BlitTexture(cmd, passData.source, Vector2.one, material, downsamplePass);
 
 		for (int i = 0; i < (passes - 1); ++i)
@@ -159,7 +171,9 @@ public sealed class FullScreenBlurRenderPass : ScriptableRenderPass
 		for (int i = (passes - 1); i > 0; --i)
 			Blitter.BlitCameraTexture(cmd, pyramid[i], pyramid[i - 1], material, upsamplePass);
 
-		Blitter.BlitCameraTexture(cmd, passData.pyramid[0], passData.source, material, upsamplePass);
+		Blitter.BlitCameraTexture(cmd, passData.pyramid[0], finalBlit, material, upsamplePass);
+		
+		Blitter.BlitCameraTexture(cmd, finalBlit, passData.source, material, finalBlitPass);
 	}
 
 	#endregion

@@ -25,7 +25,8 @@ Shader "Hidden/FullScreenBlur"
             #pragma fragment Frag
 
             float _Intensity;
-
+            Texture2D _OriginalBlit;
+            
             float4 Frag(Varyings input) : SV_Target
             {
                 UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(input);
@@ -41,8 +42,8 @@ Shader "Hidden/FullScreenBlur"
                 half4 bottomRight = SAMPLE_TEXTURE2D_X(_BlitTexture, sampler_LinearClamp, uv + float2(offset.x, -offset.y));
                 half4 bottomLeft = SAMPLE_TEXTURE2D_X(_BlitTexture, sampler_LinearClamp, uv + float2(-offset.x, -offset.y));
                 half4 topLeft = SAMPLE_TEXTURE2D_X(_BlitTexture, sampler_LinearClamp, uv + float2(-offset.x, offset.y));
-
-                return half4(1,0,0,0);//(center + topRight + bottomRight + bottomLeft + topLeft) * 0.125h;
+                
+                return (center + topRight + bottomRight + bottomLeft + topLeft) * 0.125h;
             }
 
             ENDHLSL
@@ -66,6 +67,7 @@ Shader "Hidden/FullScreenBlur"
             #pragma fragment Frag
 
             float _Intensity;
+            Texture2D _OriginalBlit;
 
             float4 Frag(Varyings input) : SV_Target
             {
@@ -91,8 +93,50 @@ Shader "Hidden/FullScreenBlur"
                 half4 diagonal = topRight + bottomRight + bottomLeft + topLeft;
 
                 return (cross + (diagonal * 2.0h)) * 0.083333h;
+
             }
 
+            ENDHLSL
+        }
+
+        Pass
+        {
+            Name "FinalBlit"
+
+            ZTest Always
+            ZWrite Off
+            Cull Off
+            Blend Off
+
+            HLSLPROGRAM
+
+            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+            #include "Packages/com.unity.render-pipelines.core/Runtime/Utilities/Blit.hlsl"
+            
+            float _Intensity;
+            Texture2D _OriginalBlit;
+
+            #pragma vertex Vert
+            #pragma fragment Frag
+            
+            float4 Frag(Varyings input) : SV_Target
+            {
+                UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(input);
+                float2 uv = input.texcoord;                
+                
+                half4 blurCol = SAMPLE_TEXTURE2D_X(_BlitTexture, sampler_LinearClamp, uv);
+                half4 col = SAMPLE_TEXTURE2D_X(_OriginalBlit, sampler_LinearClamp, uv);
+                
+                uv = uv*2-1;
+                uv.y *= _ScreenParams.y/_ScreenParams.x;;
+                
+                float mask = length(uv);
+                mask = step(0.5, mask);
+
+                return lerp(col, blurCol, mask);
+
+            }
+            
             ENDHLSL
         }
     }
