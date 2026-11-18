@@ -45,20 +45,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 11
     _spriteId: 30
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 2
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 0
   _text:
-    _text: "VOUS ! N\u2019est-ce pas ? C\u2019est bien pour \xE7a que vous vous int\xE9ressez
-      autant au sujet des couteaux et que vous animez l\u2019\xE9mission de Damas
-      n\u2019est-ce pas ?? J\u2019ai lu clair dans votre jeu ! Haut les mains peau
-      de lapin ! Je vous embarque !!"
+    _text: "<big>VOUS !</big> <wait=0,5>N\u2019est-ce pas ?<wait=0,25> C\u2019est
+      bien pour \xE7a que vous vous int\xE9ressez autant au sujet des couteaux et
+      que vous animez l\u2019\xE9mission de Damas n\u2019est-ce pas ??<wait=0,5>
+      J\u2019ai lu clair dans votre jeu ! <wait=0,25>Haut les mains peau de lapin
+      ! <wait=0,25>Je vous embarque !!"
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -110,18 +111,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 0
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 2
   _text:
-    _text: "Stylet, XVIIIe si\xE8cle. Il n\u2019y en a qu\u2019un et il vient de
-      ma boutique effectivement..."
+    _text: "Stylet, XVIIIe si\xE8cle. <wait=0,5>Il n\u2019y en a qu\u2019un et il
+      vient de ma boutique effectivement..."
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -223,15 +224,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 2
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 0
   _text:
     _text: Vous enverrez la facture au commissariat !
     _styles: []
@@ -271,6 +272,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 683539301845602201}
+  - {fileID: 5591424349302762641}
   - {fileID: 2487864545318728434}
   m_Father: {fileID: 4722214636426588833}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -512,17 +514,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 11
-    _spriteId: 30
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 0
+    _characterId: 11
+    _spriteId: 30
+  _speakingCharacterID: 2
   _text:
-    _text: MOI SUSPECT ? <b>MOOOOOOOAAA ??</b>
+    _text: <big>MOI SUSPECT ? <wait=0,5><huge>MOOOOOOOAAA ??
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -708,17 +710,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 11
     _spriteId: 30
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 2
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 0
   _text:
-    _text: CA SUFFIT ! VENEZ PAR ICI ! JE VOUS AI EU !
+    _text: <big>CA SUFFIT ! <wait=0,5>VENEZ PAR ICI !<wait=0,5> JE VOUS AI EU !
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -965,18 +967,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 2
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 0
   _text:
-    _text: "Mhmmm int\xE9ressant. Et on vous aurez pas cambriol\xE9 par hasard r\xE9cemment
-      ? Ce qui expliquerait cela."
+    _text: "Mhmmm int\xE9ressant. <wait=0,5>Et on vous aurez pas cambriol\xE9 par
+      hasard r\xE9cemment ? <wait=0,5>Ce qui expliquerait cela."
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -1087,19 +1089,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 11
-    _spriteId: 30
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 0
+    _characterId: 11
+    _spriteId: 30
+  _speakingCharacterID: 2
   _text:
-    _text: "<b>RETROUVEZ LE VITE !! NOUS SOMMES EN DANGER !! JE NE PEUX PAS MOURIR
-      AVANT D\u2019AVOIR CONNU LES COLLECTIONS DE JOHN GALLIANO A LA T\xCATE DE DIOR
-      !!</b>"
+    _text: "<big>RETROUVEZ LE VITE !! <wait=0,25>NOUS SOMMES EN DANGER !!<wait=0,25>
+      JE NE PEUX PAS MOURIR AVANT D\u2019AVOIR CONNU LES COLLECTIONS DE JOHN GALLIANO
+      A LA T\xCATE DE DIOR !!"
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -1151,17 +1153,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 11
     _spriteId: 30
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
+    _characterId: 12
+    _spriteId: 33
   _speakingCharacterID: 1
   _text:
-    _text: AHH MAIS ! MAIS-MAIS-MAIS !
+    _text: AHH MAIS ! <wait=0,25><fear>MAIS-MAIS-MAIS !
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -1224,7 +1226,7 @@ MonoBehaviour:
   _speakingCharacterID: 2
   _text:
     _text: "C\u2019est ce que je dis aux touristes am\xE9ricains.. en fait c\u2019est
-      du Made In China."
+      du <i>Made In China</i>."
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -1276,19 +1278,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 11
     _spriteId: 30
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
+    _characterId: 12
+    _spriteId: 33
   _speakingCharacterID: 1
   _text:
-    _text: "COMMENT CA MAIS NON ?? VOYONS C\u2019EST DE LA FOLIE ?? JE NE PEUX PAS
-      ME FAIRE ARRETER J\u2019AI UN LAPIN QUI M\u2019ATTEND A LA MAISON ET UNE CASSEROLE
-      SUR LE FEU !!"
+    _text: "COMMENT CA MAIS NON ??<wait=0,25> VOYONS C\u2019EST DE LA FOLIE ?? <wait=0,25>JE
+      NE PEUX PAS ME FAIRE ARRETER J\u2019AI UN COCKER QUI M\u2019ATTEND A LA MAISON
+      ET UNE CASSEROLE SUR LE FEU !!"
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -1340,18 +1342,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 0
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 2
   _text:
-    _text: "Ah oui ? Ce bar, je le connais, j\u2019y vais souvent pour boire un coup
-      avant de passer sur Antenne 3"
+    _text: "Ah oui ?<wait=0,5> Ce bar, <wait=0,25>je le connais, <wait=0,25>j\u2019y
+      vais souvent pour boire un coup avant de passer sur Antenne 3"
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -1403,18 +1405,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 0
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 2
   _text:
-    _text: "Il s\u2019est enfui \xE0 l\u2019aide de ma camionnette, d\xE9p\xEAchez-vous
-      !"
+    _text: "Il s\u2019est enfui \xE0 l\u2019aide de ma camionnette, <wait=0,5><b>d\xE9p\xEAchez-vous
+      !</b>"
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -1466,18 +1468,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 0
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 2
   _text:
     _text: "Peut-\xEAtre y trouveriez vous des indices bien utiles en vous y rendant
-      ? Sur moi par exemple..."
+      ?<wait=0,5> <b>Sur moi par exemple...</b>"
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -1574,17 +1576,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 11
-    _spriteId: 30
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 0
-    _spriteId: 0
-  _speakingCharacterID: 0
+    _characterId: 11
+    _spriteId: 30
+  _speakingCharacterID: 2
   _text:
-    _text: NOOOON ! Mon doux visage !
+    _text: <big>NOOOON ! </big><wait=0,5>Mon doux visage !
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -1768,18 +1770,80 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 11
-    _spriteId: 30
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
+    _characterId: 11
+    _spriteId: 30
+  _speakingCharacterID: 0
+  _text:
+    _text: "Pas le temps pour la drague,<wait=0,25> on parle d\u2019une affaire tr\xE8s
+      s\xE9rieuse. <wait=0,5>Un meurtre au <b>couteau</b>."
+    _styles: []
+  _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
+--- !u!1 &3336181609944991516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5591424349302762641}
+  - component: {fileID: 9030590799191571565}
+  m_Layer: 0
+  m_Name: "D\xE9tective Shotgun Speaking"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5591424349302762641
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3336181609944991516}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.8540001, y: 0.74, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2628293090395769937}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9030590799191571565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3336181609944991516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  _leftRef:
     _characterId: 3
     _spriteId: 7
-  _speakingCharacterID: 2
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 0
   _text:
-    _text: "Pas le temps pour la drague, on parle d\u2019une affaire tr\xE8s s\xE9rieuse.
-      Un meurtre au couteau."
+    _text: "C\u2019est vous l\u2019expert apr\xE8s tout !"
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -1831,18 +1895,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 2
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 0
   _text:
-    _text: "Je suis ici pour me renseigner sur l\u2019arme du crime, et vu que vous
-      \xEAtes l\u2019expert, on parle d\u2019un stylet assez particulier."
+    _text: "Je suis ici pour me renseigner sur l\u2019arme du crime, <wait=0,25>et
+      vu que vous \xEAtes l\u2019expert, <wait=0,25>on parle d\u2019un stylet assez
+      particulier."
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -1895,8 +1960,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CommentFrame
   _name: Detective Shotgun
   _text:
-    _text: "Il faut que j\u2019y fasse attention ! Il y a inscrit l\u2019adresse
-      du bar o\xF9 je dois retrouver Sally tout \xE0 l\u2019heure."
+    _text: "Il faut que j\u2019y fasse attention ! <wait=0,5>Il y a inscrit l\u2019adresse
+      du bar o\xF9 je dois retrouver <b>Sally</b> tout \xE0 l\u2019heure."
     _styles: []
   _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
 --- !u!1 &3520974727812030221
@@ -1989,15 +2054,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 11
     _spriteId: 30
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 2
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 0
   _text:
     _text: Parlez, bon sang !
     _styles: []
@@ -2095,81 +2160,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 11
     _spriteId: 30
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 0
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 2
   _text:
     _text: "Vous n\u2019\xEAtes donc vraiment pas sensible \xE0 l\u2019art, Shotgun
       ?"
-    _styles: []
-  _moveNextAutomatically: 0
-  _useCustomName: 0
-  _name: 
-  _useCustomDialogProfile: 0
-  _characterDialogProfile: {fileID: 0}
---- !u!1 &3734000218089606293
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4056756189188438490}
-  - component: {fileID: 1276299538532448236}
-  m_Layer: 0
-  m_Name: "Pr\xE9sentateur Patrice Speaking"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4056756189188438490
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3734000218089606293}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.6666665, y: 1.6666665, z: 1.6666665}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4352182686539728327}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1276299538532448236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3734000218089606293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
-  _leftRef:
-    _characterId: 12
-    _spriteId: 33
-  _middleRef:
-    _characterId: 11
-    _spriteId: 30
-  _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 1
-  _text:
-    _text: "Pourquoi ne dites vous pas des choses aussi int\xE9ressantes quand on
-      est \xE0 l\u2019antenne mon mignon ?"
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -2221,18 +2223,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 11
-    _spriteId: 30
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 0
+    _characterId: 11
+    _spriteId: 30
+  _speakingCharacterID: 2
   _text:
-    _text: "AHHH MAIS VOUS \xCATES COMPLETEMENT FOUS ! CA COUPE POUR DE VRAI CA !
-      C\u2019EST DANGEREUX !"
+    _text: "<big>AHHH MAIS VOUS \xCATES COMPLETEMENT FOUS ! <wait=0,5>CA COUPE POUR
+      DE VRAI CA ! <wait=0,25>C\u2019EST DANGEREUX !"
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -2285,8 +2287,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CommentFrame
   _name: Detective Shotgun
   _text:
-    _text: "Il faut que j\u2019y fasse attention ! Il y a inscrit l\u2019adresse
-      du bar o\xF9 je dois retrouver Sally tout \xE0 l\u2019heure."
+    _text: "Il faut que j\u2019y fasse attention !<wait=0,5> Il y a inscrit l\u2019adresse
+      du bar o\xF9 je dois retrouver <b>Sally</b> tout \xE0 l\u2019heure."
     _styles: []
   _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
 --- !u!1 &3863312565996885795
@@ -2390,18 +2392,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 11
-    _spriteId: 30
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 2
+    _characterId: 11
+    _spriteId: 30
+  _speakingCharacterID: 0
   _text:
-    _text: "Vous pouvez compter sur moi Patrice, mais calmez vous s\u2019il vous
-      pla\xEEt, \xE7a ne vous rend que plus suspect."
+    _text: "Vous pouvez compter sur moi Patrice,<wait=0,5> mais calmez vous s\u2019il
+      vous pla\xEEt,<wait=0,25> \xE7a ne vous rend que plus <b>suspect</b>."
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -2463,7 +2465,7 @@ MonoBehaviour:
     _spriteId: 33
   _speakingCharacterID: 0
   _text:
-    _text: "En quoi ? C\u2019est \xE7a qui justifie son prix ?"
+    _text: "En quoi ? <wait=0,5>C\u2019est \xE7a qui justifie son prix ?"
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -2560,24 +2562,69 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 0
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 2
   _text:
-    _text: "Non absolument pas, pas de vol \xE0 signal\xE9, en tout cas merci de
-      me l\u2019avoir rapport\xE9 ! Vous pouvez le remettre en vitrine."
+    _text: "Non absolument pas, <wait=0,25>pas de vol \xE0 signal\xE9, <wait=0,25>en
+      tout cas merci de me l\u2019avoir rapport\xE9 ! <wait=0,5>Vous pouvez le remettre
+      en vitrine."
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
   _name: 
   _useCustomDialogProfile: 0
   _characterDialogProfile: {fileID: 0}
+--- !u!1 &4069743717848056877
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5337245150740848796}
+  - component: {fileID: 2634811999520998494}
+  m_Layer: 0
+  m_Name: EndOfDialogSequence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5337245150740848796
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4069743717848056877}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1546044712681003048}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2634811999520998494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4069743717848056877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24a4099385ff88d93a50a4d1d04fc9ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.EndOfDialogSequence
 --- !u!1 &4104734366699654953
 GameObject:
   m_ObjectHideFlags: 0
@@ -2623,17 +2670,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 0
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 2
   _text:
-    _text: "Ne forcez pas, si \xE7a ne rentre pas, \xE7a ne rentrera juste pas."
+    _text: "Ne forcez pas,<wait=0,25> si \xE7a ne rentre pas, <wait=0,25>\xE7a ne
+      rentrera juste pas."
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -2685,17 +2733,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 11
     _spriteId: 30
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
+    _characterId: 12
+    _spriteId: 33
   _speakingCharacterID: 1
   _text:
-    _text: MAIS STOP ! AHHHHHHHHH
+    _text: MAIS STOP ! <wait=0,25><big>AHHHHHHHHH
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -2747,20 +2795,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 0
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 2
   _text:
-    _text: "Je suppose que vous \xEAtes venus ici car vous me soup\xE7onnez.. n\u2019est-ce
-      pas ? Je suis litt\xE9ralement le seul de la ville \xE0 poss\xE9der autant
-      de couteau de collection et exprimant une haine visc\xE9rale envers les armes
-      \xE0 feu \xE0 chaque fois que je suis \xE0 l\u2019antenne sur Antenne 3 et-"
+    _text: "Je suppose que vous \xEAtes venus ici car vous me soup\xE7onnez..<wait=0,25>
+      n\u2019est-ce pas ?<wait=0,5> Je suis litt\xE9ralement le seul de la ville
+      \xE0 poss\xE9der autant de couteau de collection et exprimant une<b> haine
+      visc\xE9rale</b> envers les armes \xE0 feu \xE0 chaque fois que je suis \xE0
+      l\u2019antenne sur Antenne 3 et-"
     _styles: []
   _moveNextAutomatically: 1
   _useCustomName: 0
@@ -2812,19 +2861,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 0
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 2
   _text:
-    _text: "Faites attention ! Arr\xEAtez d\u2019ag\xEEter ce couteau dont je serais
-      le seul \xE0 conna\xEEtre l\u2019existence que je ne pr\xE9tends pas conna\xEEtre
-      !"
+    _text: "Ne forcez pas,<wait=0,25> si \xE7a ne rentre pas, <wait=0,25>\xE7a ne
+      rentrera juste pas."
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -2964,17 +3012,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 11
     _spriteId: 30
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 2
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 0
   _text:
-    _text: "Pas mal, c\u2019est bien une punchline que pourrais dire D\xE9tective
+    _text: "Pas mal,<wait=0,25> c\u2019est bien une punchline que pourrais dire D\xE9tective
       Shotgun."
     _styles: []
   _moveNextAutomatically: 0
@@ -3030,6 +3078,7 @@ MonoBehaviour:
     Date: 
     Heure: 
     Lieu: 
+    Ville: 
     Background: {fileID: 0}
   _tableau: 7
   _state: 8
@@ -3078,17 +3127,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 11
-    _spriteId: 30
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
+    _characterId: 11
+    _spriteId: 30
   _speakingCharacterID: 0
   _text:
-    _text: "<b>UN MEURTRE AU COUTEAU ??? COMMENT C\u2019EST POSSIBLE ???</b>"
+    _text: "<huge>UN MEURTRE AU COUTEAU ???<wait=0,5> COMMENT C\u2019EST POSSIBLE
+      ???"
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -3275,18 +3325,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 2
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 0
   _text:
-    _text: "Pourquoi \xE7a m\u2019int\xE9resserait ? Je recherche le criminel moi
-      !"
+    _text: "Pourquoi \xE7a m\u2019int\xE9resserait ? <wait=0,5>Je recherche le <b>criminel</b>
+      moi !"
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -3430,19 +3480,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 11
-    _spriteId: 30
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 0
+    _characterId: 11
+    _spriteId: 30
+  _speakingCharacterID: 2
   _text:
-    _text: "Ahhhh mon cher Shotgun ! Comme allez-vous ? Vous allez attraper un autre
-      m\xE9chant que je puisse profiter de votre minois en prime time sur mon plateau
-      ?"
+    _text: "Ahhhh mon cher <b>Shotgun</b> ! <wait=0,5>Comme allez-vous ? <wait=0,5>Vous
+      allez attraper un autre m\xE9chant que je puisse profiter de votre minois en
+      prime time sur mon plateau ?"
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -3671,7 +3721,7 @@ MonoBehaviour:
     _spriteId: 33
   _speakingCharacterID: 0
   _text:
-    _text: "Bah alors ? Comment \xE7a se fait ?"
+    _text: "Bah alors ?<wait=0,5> Comment \xE7a se fait ?"
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -3723,18 +3773,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 2
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 0
   _text:
-    _text: "Vol de v\xE9hicule en plus ! Patrice, vous ne faites qu\u2019aggraver
-      votre cas !"
+    _text: "Vol de v\xE9hicule en plus ! <wait=0,25><b>Patrice</b>, vous ne faites
+      qu\u2019aggraver votre cas !"
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -3786,20 +3836,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 0
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 2
   _text:
-    _text: "Enchant\xE9 mon cher Shotgun. Il me semble qu\u2019on s\u2019est d\xE9j\xE0
-      crois\xE9 plusieurs fois dans les loges ou dans la r\xE9gie de Antenne 3, vu
-      que votre \xE9mission est souvent programm\xE9e juste avant la mienne... en
-      prime time..."
+    _text: "Enchant\xE9 mon cher Shotgun. <wait=0,5>Il me semble qu\u2019on s\u2019est
+      d\xE9j\xE0 crois\xE9 plusieurs fois dans les loges ou dans la r\xE9gie de Antenne
+      3, <wait=0,25>vu que votre \xE9mission est souvent programm\xE9e juste avant
+      la mienne... <wait=0,25>en prime time..."
     _styles: []
   _moveNextAutomatically: 1
   _useCustomName: 0
@@ -3997,6 +4047,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a4099385ff88d93a50a4d1d04fc9ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.EndOfDialogSequence
+--- !u!1 &5908462823315042472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5561399251636214011}
+  - component: {fileID: 8515518161214296827}
+  m_Layer: 0
+  m_Name: DialogFrame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5561399251636214011
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5908462823315042472}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1546044712681003048}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8515518161214296827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5908462823315042472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda3114c086f2c47bc6c89832dc4511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
+  _leftRef:
+    _characterId: 3
+    _spriteId: 7
+  _middleRef:
+    _characterId: 0
+    _spriteId: 0
+  _rightRef:
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 2
+  _text:
+    _text: "Faites attention ! <wait=0,5>Arr\xEAtez d\u2019ag\xEEter ce couteau <b>dont
+      je serais le seul \xE0 conna\xEEtre l\u2019existence et que je ne pr\xE9tends
+      pas conna\xEEtre !</b>"
+    _styles: []
+  _moveNextAutomatically: 0
+  _useCustomName: 0
+  _name: 
+  _useCustomDialogProfile: 0
+  _characterDialogProfile: {fileID: 0}
 --- !u!1 &6099608133303179267
 GameObject:
   m_ObjectHideFlags: 0
@@ -4106,8 +4220,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CommentFrame
   _name: Detective Shotgun
   _text:
-    _text: "Comme on dit ; un cadenas ne prot\xE8ge que de l\u2019Homme honn\xEAte
-      !"
+    _text: "Comme on dit ; <wait=0,25>un cadenas ne prot\xE8ge que de l\u2019Homme
+      honn\xEAte !"
     _styles: []
   _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
 --- !u!1 &6256142413794967396
@@ -4199,15 +4313,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 11
-    _spriteId: 30
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 0
+    _characterId: 11
+    _spriteId: 30
+  _speakingCharacterID: 2
   _text:
     _text: <wait=1>.<wait=1>.<wait=1>.
     _styles: []
@@ -4307,17 +4421,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 11
     _spriteId: 30
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
+    _characterId: 12
+    _spriteId: 33
   _speakingCharacterID: 1
   _text:
-    _text: Oh.. OH? OHHHH? OHHHH ?
+    _text: Oh..<wait=0,25> OH?<wait=0,25> <big>OHHHH? <wait=0,25><huge>OHHHH ?
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -4369,15 +4483,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 11
-    _spriteId: 30
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 0
+    _characterId: 11
+    _spriteId: 30
+  _speakingCharacterID: 2
   _text:
     _text: "Ne vous en faites pas j\u2019ai d\xE9j\xE0 mon fid\xE8le briquet Cartier
       que mon ex m\u2019avait offert."
@@ -4432,15 +4546,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 11
     _spriteId: 30
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 0
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 2
   _text:
     _text: "Qu\u2019est-ce qu\u2019il y a Patrice ?"
     _styles: []
@@ -4494,18 +4608,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 11
-    _spriteId: 30
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 0
+    _characterId: 11
+    _spriteId: 30
+  _speakingCharacterID: 2
   _text:
-    _text: "Oui, oui, je parle bien de quand je sortais avec Yves Saint Laurent,
-      lui-m\xEAme !"
+    _text: "Oui, oui, <wait=0,25>je parle bien de quand je sortais avec <b>Yves Saint
+      Laurent</b>, lui-m\xEAme !"
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -4557,17 +4671,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 11
-    _spriteId: 30
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
-    _characterId: 0
-    _spriteId: 0
-  _rightRef:
     _characterId: 12
     _spriteId: 33
-  _speakingCharacterID: 2
+  _rightRef:
+    _characterId: 11
+    _spriteId: 30
+  _speakingCharacterID: 1
   _text:
-    _text: "S\u2019il vous pla\xEEt, faites attention D\xE9tective Shotgun..."
+    _text: "S\u2019il vous pla\xEEt, <wait=0,25>faites attention D\xE9tective Shotgun..."
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -4619,15 +4733,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 11
     _spriteId: 30
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 0
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 2
   _text:
     _text: "Vous \xEAtes vraiment le couteau le plus aiguis\xE9 du tiroir haha !"
     _styles: []
@@ -4636,6 +4750,52 @@ MonoBehaviour:
   _name: 
   _useCustomDialogProfile: 0
   _characterDialogProfile: {fileID: 0}
+--- !u!1 &6827136416605083081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1546044712681003048}
+  - component: {fileID: 4201150253069139512}
+  m_Layer: 0
+  m_Name: OnInteract (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1546044712681003048
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6827136416605083081}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5561399251636214011}
+  - {fileID: 5337245150740848796}
+  m_Father: {fileID: 4816708952262857744}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4201150253069139512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6827136416605083081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8a3882457b01e438e4a1d24cc811e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.Sequence
 --- !u!1 &6956387839937503651
 GameObject:
   m_ObjectHideFlags: 0
@@ -4772,8 +4932,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CommentFrame
   _name: Detective Shotgun
   _text:
-    _text: "Il faut que j\u2019y fasse attention ! Il y a inscrit l\u2019adresse
-      du bar o\xF9 je dois retrouver Sally tout \xE0 l\u2019heure."
+    _text: "Il faut que j\u2019y fasse attention !<wait=0,5> Il y a inscrit l\u2019adresse
+      du bar o\xF9 je dois retrouver <b>Sally</b> tout \xE0 l\u2019heure."
     _styles: []
   _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
 --- !u!1 &7272356086387580777
@@ -4861,17 +5021,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 0
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 2
   _text:
-    _text: "Ah... D\u2019accord... Eh bien faites moi voir cela..."
+    _text: "Ah... <wait=0,5>D\u2019accord...<wait=0,5> Eh bien<wait=0,25> faites
+      moi voir cela..."
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -4923,18 +5084,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 0
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 2
   _text:
-    _text: "D\xE9tective... Il y en a pour extr\xEAmement cher... Faites attention
-      s\u2019il vous pla\xEEt ce sont des pi\xE8ces rares et inestimab-"
+    _text: "D\xE9tective... <wait=0,25>Il y en a pour extr\xEAmement cher...<wait=0,25>
+      Faites attention s\u2019il vous pla\xEEt ce sont des pi\xE8ces rares et inestimab-"
     _styles: []
   _moveNextAutomatically: 1
   _useCustomName: 0
@@ -4986,19 +5147,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 2
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 0
   _text:
-    _text: "Enchant\xE9 ! Je crois oui ? Enfin je sais pas, je m\u2019en fous un
-      peu mais, sympa tout ces couteaux ! Attention quand m\xEAme car je crois qu\u2019un
-      meurtre a eu lieu cette nuit impliquant un couteau... couteau assez particulier..."
+    _text: "Enchant\xE9 !<wait=0,5> Je crois oui ?<wait=0,25> Enfin je sais pas,
+      je m\u2019en fous un peu mais, sympa tout ces couteaux ! <wait=0,5>Attention
+      quand m\xEAme car je crois qu\u2019un meurtre a eu lieu cette nuit impliquant
+      un couteau... <wait=0,25>couteau assez particulier..."
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -5050,15 +5212,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 11
-    _spriteId: 30
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 2
+    _characterId: 11
+    _spriteId: 30
+  _speakingCharacterID: 0
   _text:
     _text: "Je ne crois pas vous avoir demand\xE9 d\u2019expliciter Patrice."
     _styles: []
@@ -5158,18 +5320,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 11
     _spriteId: 30
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 2
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 0
   _text:
-    _text: "C\u2019est plus fort que moi... Je pense que la destruction, autant que
-      le cr\xE9ation, peut \xEAtre aussi porteuse de sens."
+    _text: "C\u2019est plus fort que moi... <wait=0,5>Je pense que la destruction,
+      <wait=0,25>autant que le cr\xE9ation, <wait=0,25>peut \xEAtre aussi porteuse
+      de sens."
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -5525,18 +5688,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 11
     _spriteId: 30
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
+    _characterId: 12
+    _spriteId: 33
   _speakingCharacterID: 1
   _text:
-    _text: "SI LE COUTEAU VIENT D\u2019ICI ET QU\u2019IL EST UNIQUE, C\u2019EST QUE
-      LE TUEUR EST FORCEMENT... <wait=1><b>D-DA-DA-DAM-</b>!"
+    _text: "SI LE COUTEAU VIENT D\u2019ICI ET QU\u2019IL EST UNIQUE, <wait=0,25>C\u2019EST
+      QUE LE TUEUR EST FORCEMENT... <fear><wait=0.5><b>D-DA-DA-DAM-</b>!"
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -5575,6 +5738,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3068007573417733049}
+  - {fileID: 1546044712681003048}
   m_Father: {fileID: 7209769950963568240}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &5825313707207053364
@@ -5654,6 +5818,23 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - _condition:
+      rid: 2493797240398413912
+    _action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4201150253069139512}
+          m_TargetAssemblyTypeName: HierarchySequences.Sequence, HierarchySequences
+          m_MethodName: Execute
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   _aimCases: []
   _onInteracted:
     m_PersistentCalls:
@@ -5668,6 +5849,10 @@ MonoBehaviour:
       type: {class: ItemCondition, ns: DShotgun, asm: DShotgun}
       data:
         _item: {fileID: 11400000, guid: 5ee2f902689b344479866fc4f7941cb3, type: 2}
+    - rid: 2493797240398413912
+      type: {class: ItemCondition, ns: DShotgun, asm: DShotgun}
+      data:
+        _item: {fileID: 11400000, guid: 6f7e31ba21a6efe409a556c0f8baa30d, type: 2}
 --- !u!1 &8334497612110507562
 GameObject:
   m_ObjectHideFlags: 0
@@ -5761,17 +5946,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 2
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 0
   _text:
-    _text: Non, absolument pas
+    _text: Non, <wait=0,5>absolument pas
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -5823,15 +6008,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.DialogFrame
   _leftRef:
-    _characterId: 12
-    _spriteId: 33
+    _characterId: 3
+    _spriteId: 7
   _middleRef:
     _characterId: 0
     _spriteId: 0
   _rightRef:
-    _characterId: 3
-    _spriteId: 7
-  _speakingCharacterID: 2
+    _characterId: 12
+    _spriteId: 33
+  _speakingCharacterID: 0
   _text:
     _text: "C\u2019est vous l\u2019expert apr\xE8s tout !"
     _styles: []
@@ -5886,8 +6071,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CommentFrame
   _name: Detective Shotgun
   _text:
-    _text: "Il faut que j\u2019y fasse attention ! Il y a inscrit l\u2019adresse
-      du bar o\xF9 je dois retrouver Sally tout \xE0 l\u2019heure."
+    _text: "Il faut que j\u2019y fasse attention !<wait=0,5> Il y a inscrit l\u2019adresse
+      du bar o\xF9 je dois retrouver <b>Sally</b> tout \xE0 l\u2019heure."
     _styles: []
   _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
 --- !u!1 &9202022458863629289
@@ -5981,7 +6166,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CommentFrame
   _name: Detective Shotgun
   _text:
-    _text: "Encore moins \xE0 une mouche de 95 kilos qui vend des flingues !"
+    _text: "Encore moins \xE0 une mouche de <b>95 kilos</b> qui vend des flingues
+      !"
     _styles: []
   _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
 --- !u!1001 &602498073692607001
@@ -6230,8 +6416,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5652754706922477662, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: _text._text
-      value: "Je ne veux pas croire qu\u2019il soit un criminel ! On dirait qu\u2019il
-        ne ferait m\xEAme pas de mal \xE0 une mouche !"
+      value: "Je ne veux pas croire qu\u2019il soit un criminel ! <wait=0,25>On dirait
+        qu\u2019il ne ferait m\xEAme pas de mal \xE0 une mouche !"
       objectReference: {fileID: 0}
     - target: {fileID: 6383161685120494402, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_LocalScale.x
@@ -6287,6 +6473,10 @@ PrefabInstance:
       objectReference: {fileID: -3593096494950662801, guid: 060bdc81261a8584489f0054ff01d863, type: 3}
     - target: {fileID: 6799130678459867175, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6799130678459867175, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
@@ -6498,7 +6688,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5652754706922477662, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: _text._text
-      value: "Oula, \xE7a m\u2019a l\u2019air bien pr\xE9cieux \xE7a."
+      value: "Oula, <wait=0,25>\xE7a m\u2019a l\u2019air bien pr\xE9cieux \xE7a."
       objectReference: {fileID: 0}
     - target: {fileID: 6383161685120494402, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_LocalScale.x
@@ -6552,6 +6742,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 8537198873322406288, guid: 01f9abf371bf2324ca28caf0a1e628a9, type: 3}
+    - target: {fileID: 6799130678459867175, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_Name
       value: Vase
@@ -6738,9 +6932,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5652754706922477662, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: _text._text
-      value: "On savait encore faire des choses avant, maintenant l\u2019art contemporain
-        et le<i> \u201Cstreet-art\u201D </i>c\u2019est de la gnognote compar\xE9
-        \xE0 ces chefs-d\u2019oeuvres hors du temps !"
+      value: "On savait encore faire des choses avant, <wait=0,25>maintenant l\u2019art
+        contemporain et le<i> \u201Cstreet-art\u201D </i>c\u2019est de la gnognote
+        compar\xE9 \xE0 ces chefs-d\u2019oeuvres hors du temps !"
       objectReference: {fileID: 0}
     - target: {fileID: 6383161685120494402, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_LocalScale.x
@@ -6794,6 +6988,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 8667370578687548108, guid: 40d9942e62ec91e4eb018f03045b3449, type: 3}
+    - target: {fileID: 6799130678459867175, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_Name
       value: Sculpture
@@ -6866,9 +7064,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1827883837321127458, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7497316726113252656}
-    - targetCorrespondingSourceObject: {fileID: 1827883837321127458, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4056756189188438490}
     - targetCorrespondingSourceObject: {fileID: 1827883837321127458, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2677479213314460596}
@@ -6986,8 +7181,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5652754706922477662, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: _text._text
-      value: "C\u2019est qu\u2019il a vraiment la classe Damas quand il parle avec
-        passion de ses lames !"
+      value: "C\u2019est qu\u2019il a vraiment la classe <b>Damas</b> quand il parle
+        avec passion de ses lames !"
       objectReference: {fileID: 0}
     - target: {fileID: 6383161685120494402, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_LocalScale.x
@@ -7033,6 +7228,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 5239542953914984434, guid: b40fb3256820d334eb479244565625e5, type: 3}
+    - target: {fileID: 6799130678459867175, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_Name
       value: Poster
@@ -7198,7 +7397,7 @@ PrefabInstance:
     - target: {fileID: 5652754706922477662, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: _text._text
       value: "Hmhmmm moment de v\xE9rit\xE9, est-ce que c\u2019est bien d\u2019ici
-        d\u2019o\xF9 vient le stylet ?"
+        que vient le stylet ?"
       objectReference: {fileID: 0}
     - target: {fileID: 6383161685120494402, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_LocalScale.x
@@ -7252,6 +7451,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -4677256527815922992, guid: 0eded56186331544ebc897fdcf895b19, type: 3}
+    - target: {fileID: 6799130678459867175, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_Name
       value: Presentoir
@@ -7370,8 +7573,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5178398468714649533, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: _text._text
-      value: "D\u2019accord, c\u2019est donc pas un simple cadenas sur lequel quelqu\u2019un
-        peut tirer dessus."
+      value: "D\u2019accord, <wait=0,25>c\u2019est donc pas un simple cadenas sur
+        lequel quelqu\u2019un peut tirer dessus."
       objectReference: {fileID: 0}
     - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: _priority
@@ -7431,7 +7634,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5652754706922477662, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: _text._text
-      value: "C\u2019est ridicule, quelqu\u2019un peut juste tirer dessus non..?"
+      value: "C\u2019est ridicule, <wait=0,25>quelqu\u2019un peut juste tirer dessus
+        non..?"
       objectReference: {fileID: 0}
     - target: {fileID: 6383161685120494402, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_LocalScale.x
@@ -7485,6 +7689,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -6919348689375657533, guid: 589a9b08a3d32e840bd176091f3ed1c2, type: 3}
+    - target: {fileID: 6799130678459867175, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_Name
       value: Cadenas
@@ -7868,6 +8076,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 9163280600616525432, guid: 9bae2f6ec5462c64b888057f48dbd833, type: 3}
+    - target: {fileID: 6799130678459867175, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_Name
       value: Patrice

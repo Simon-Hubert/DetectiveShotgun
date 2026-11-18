@@ -1,5 +1,55 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &165857399401159373
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6179897841139291265}
+  - component: {fileID: 8834512789344581759}
+  m_Layer: 0
+  m_Name: CommentFrame (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6179897841139291265
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165857399401159373}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5707641995343623119}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8834512789344581759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165857399401159373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1377d340553a30803855780b85012371, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CommentFrame
+  _name: "Pense-b\xEAte (Damas)"
+  _text:
+    _text: "<i>Pense-b\xEAte :<wait=0,5> ne pas oublier de changer l\u2019emplacement
+      du double des cl\xE9s pour que Shotgun ne tombe pas dessus...</i>"
+    _styles: []
+  _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
 --- !u!1 &251018597220612734
 GameObject:
   m_ObjectHideFlags: 0
@@ -55,7 +105,7 @@ MonoBehaviour:
     _spriteId: 0
   _speakingCharacterID: 0
   _text:
-    _text: "Hein ? Quoi ? Ou \xE7a ?"
+    _text: "Hein ?<wait=0,25> Quoi ? <wait=0,25>Ou \xE7a ?"
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 0
@@ -179,7 +229,7 @@ MonoBehaviour:
     _spriteId: 0
   _speakingCharacterID: 2
   _text:
-    _text: SHOOOTGUUUNNN !! CA SUFFIT LES CONNERIES !!
+    _text: <big>SHOOOTGUUUNNN !! CA SUFFIT LES CONNERIES !!
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 1
@@ -380,7 +430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CommentFrame
   _name: Detective Shotgun
   _text:
-    _text: "Au moins un oeuf en whisky ? Quoique \xE7a puisse ressembler."
+    _text: Au moins un oeuf en whisky ?
     _styles: []
   _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
 --- !u!1 &1248890497438819759
@@ -562,7 +612,7 @@ MonoBehaviour:
     _spriteId: 0
   _speakingCharacterID: 2
   _text:
-    _text: SHOOOOTGUNNN !! VOUS SAVEZ COMBIEN ON DEPENSE EN PAPIER POUR LA MACHINE
+    _text: <big>SHOOOOTGUNNN !! VOUS SAVEZ COMBIEN ON DEPENSE EN PAPIER POUR LA MACHINE
       A FAX RIEN QUE POUR VOS CONNERIES ??
     _styles: []
   _moveNextAutomatically: 0
@@ -687,8 +737,8 @@ MonoBehaviour:
     _spriteId: 0
   _speakingCharacterID: 0
   _text:
-    _text: "Oui, oui, de toute fa\xE7on vous n\u2019\xEAtes que dans ma t\xEAte alors
-      calmez-vous..."
+    _text: "Oui, oui, <wait=0,25>de toute fa\xE7on vous n\u2019\xEAtes que dans ma
+      t\xEAte alors calmez-vous..."
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 1
@@ -750,7 +800,7 @@ MonoBehaviour:
     _spriteId: 0
   _speakingCharacterID: 2
   _text:
-    _text: 'TE DECONCENTRE PAS SHOTGUN !!
+    _text: '<big>TE DECONCENTRE PAS SHOTGUN !!<big>
 
 '
     _styles: []
@@ -1107,6 +1157,55 @@ MonoBehaviour:
       !"
     _styles: []
   _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+--- !u!1 &3786489200920177163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7436317810812905892}
+  - component: {fileID: 1787283721810945907}
+  m_Layer: 0
+  m_Name: CommentFrame (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7436317810812905892
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3786489200920177163}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5707641995343623119}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1787283721810945907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3786489200920177163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1377d340553a30803855780b85012371, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CommentFrame
+  _name: Detective Shotgun
+  _text:
+    _text: "Il y a vraiment autant de place que \xE7a sur un post-it ?"
+    _styles: []
+  _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
 --- !u!1 &3806056507791288283
 GameObject:
   m_ObjectHideFlags: 0
@@ -1153,7 +1252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CommentFrame
   _name: Detective Shotgun
   _text:
-    _text: "Nan s\xE9rieux ? Je peux l\u2019acheter celui-ci !"
+    _text: "Nan s\xE9rieux ? <wait=0,5>Je peux l\u2019acheter celui-ci !"
     _styles: []
   _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
 --- !u!1 &4058540966762239460
@@ -1211,8 +1310,8 @@ MonoBehaviour:
     _spriteId: 0
   _speakingCharacterID: 0
   _text:
-    _text: Toujours pas... Il est vraiment costaud ! Plus solide que le mariage du
-      Commi-
+    _text: Toujours pas...<wait=0,5> Il est vraiment costaud ! <wait=0,25>Plus solide
+      que le mariage du Commi-
     _styles: []
   _moveNextAutomatically: 1
   _useCustomName: 0
@@ -1274,7 +1373,7 @@ MonoBehaviour:
     _spriteId: 0
   _speakingCharacterID: 2
   _text:
-    _text: JE VOUS AI ENTENDU SHOTGUN !!
+    _text: <big>JE VOUS AI ENTENDU SHOTGUN !!
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 1
@@ -1371,8 +1470,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CommentFrame
   _name: Detective Shotgun
   _text:
-    _text: "Alors qu\u2019est-ce qui cache derri\xE8re cette grande grande case ?
-      Au moins un oeuf en chocolat j\u2019esp\xE8re !"
+    _text: "Alors qu\u2019est-ce qui  se cache derri\xE8re cette grande grande case
+      ?<wait=0,5> Au moins un oeuf en chocolat j\u2019esp\xE8re !"
     _styles: []
   _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
 --- !u!1 &4368858942584850707
@@ -1645,7 +1744,8 @@ MonoBehaviour:
     _spriteId: 0
   _speakingCharacterID: 0
   _text:
-    _text: Wow faut vraiment que je ralentisse sur la boisson moi.. au moins ce soir...
+    _text: Wow <wait=0,25>faut vraiment que je ralentisse sur la boisson moi.. <wait=0,5>au
+      moins avant ce soir...
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 1
@@ -1698,55 +1798,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: HierarchySequences::HierarchySequences.ActivateObject
   _object: {fileID: 3860901228770690969}
   _active: 0
---- !u!1 &5037832591257177780
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3054750094268193353}
-  - component: {fileID: 3225119468993574547}
-  m_Layer: 0
-  m_Name: CommentFrame (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3054750094268193353
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5037832591257177780}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 234941370864121398}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3225119468993574547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5037832591257177780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1377d340553a30803855780b85012371, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CommentFrame
-  _name: Detective Shotgun
-  _text:
-    _text: Vraiment un chic type !
-    _styles: []
-  _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
 --- !u!1 &5127405845102991111
 GameObject:
   m_ObjectHideFlags: 0
@@ -2057,8 +2108,57 @@ MonoBehaviour:
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CommentFrame
   _name: Detective Shotgun
   _text:
-    _text: "J\u2019aurais m\xEAme plus les sous pour acheter les fleurs qui vont
-      dedans \xE0 ce prix !"
+    _text: "J\u2019aurais m\xEAme plus les sous pour acheter le whisky qui va dedans
+      \xE0 ce prix l\xE0 !"
+    _styles: []
+  _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
+--- !u!1 &5929079203601198923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1587977123160291065}
+  - component: {fileID: 2423519761315448169}
+  m_Layer: 0
+  m_Name: CommentFrame (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1587977123160291065
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5929079203601198923}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5707641995343623119}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2423519761315448169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5929079203601198923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1377d340553a30803855780b85012371, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CommentFrame
+  _name: "Pense-b\xEAte (Damas)"
+  _text:
+    _text: "<i>...le vase le plus cher c\u2019est trop \xE9vident !</i>"
     _styles: []
   _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
 --- !u!1 &6027013094666760695
@@ -2317,8 +2417,8 @@ MonoBehaviour:
     _spriteId: 0
   _speakingCharacterID: 2
   _text:
-    _text: SHOOOTGUNNNN !! LE BUDGET CASSE EST PHARAMINEUX CE MOIS-CI ALORS MOLLO
-      MOLLO !
+    _text: <big>SHOOOTGUNNNN !! LE BUDGET CASSE EST PHARAMINEUX CE MOIS-CI ALORS
+      MOLLO MOLLO !
     _styles: []
   _moveNextAutomatically: 0
   _useCustomName: 1
@@ -2420,7 +2520,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CommentFrame
   _name: Detective Shotgun
   _text:
-    _text: "Oups, totalement fait expr\xE8s !"
+    _text: "Oups, <wait=0,25>totalement fait expr\xE8s !"
     _styles: []
   _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
 --- !u!1 &6765912205455020399
@@ -2613,7 +2713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CommentFrame
   _name: Detective Shotgun
   _text:
-    _text: "Oups, c\u2019\xE9tait bien recoll\xE9..."
+    _text: "Oups, <wait=0,25>c\u2019\xE9tait bien recoll\xE9..."
     _styles: []
   _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
 --- !u!1 &7927580352064756689
@@ -2662,7 +2762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.CommentFrame
   _name: Detective Shotgun
   _text:
-    _text: Bang !
+    _text: <huge><burst>Bang !
     _styles: []
   _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
 --- !u!1 &8031574913817520036
@@ -2806,7 +2906,7 @@ MonoBehaviour:
   _name: Detective Shotgun
   _text:
     _text: "C\u2019est ce que j\u2019aurais dit si j\u2019\xE9tais addict au sucre,
-      rah quelle saloperie le sucre..."
+      <wait=0,5>rah quelle saloperie le sucre..."
     _styles: []
   _dialogProfile: {fileID: 11400000, guid: 9452b6d7898d6504db4569b36c47db86, type: 2}
 --- !u!1 &8170759159229782791
@@ -3107,7 +3207,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5652754706922477662, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: _text._text
-      value: "Tiens il en manque encore... c\u2019est pas rassurant..."
+      value: "Tiens il en manque encore... <wait=0,25>c\u2019est pas rassurant..."
       objectReference: {fileID: 0}
     - target: {fileID: 6383161685120494402, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_LocalScale.x
@@ -3161,6 +3261,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -4677256527815922992, guid: 0eded56186331544ebc897fdcf895b19, type: 3}
+    - target: {fileID: 6799130678459867175, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_Name
       value: Presentoir
@@ -3618,7 +3722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5652754706922477662, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: _text._text
-      value: "Ah ! Voil\xE0 ! Je vais enfin d\xE9couvrir ton secret Damas !"
+      value: "Mhmm il y est \xE9crit :"
       objectReference: {fileID: 0}
     - target: {fileID: 6383161685120494402, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_LocalScale.x
@@ -3672,6 +3776,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 4403883872039640280, guid: ce1088eccef6d2c4faa51a08a1ceb75a, type: 3}
+    - target: {fileID: 6799130678459867175, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_Name
       value: PenseBete
@@ -3744,11 +3852,25 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1827883837321127458, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2716069634054203455}
+    - targetCorrespondingSourceObject: {fileID: 6446330029221293394, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6179897841139291265}
+    - targetCorrespondingSourceObject: {fileID: 6446330029221293394, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1587977123160291065}
+    - targetCorrespondingSourceObject: {fileID: 6446330029221293394, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7436317810812905892}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
 --- !u!4 &1089197711348070591 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1827883837321127458, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+  m_PrefabInstance: {fileID: 1603397081104768669}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5707641995343623119 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6446330029221293394, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
   m_PrefabInstance: {fileID: 1603397081104768669}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &8930380690637093208 stripped
@@ -3896,6 +4018,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 8537198873322406288, guid: 01f9abf371bf2324ca28caf0a1e628a9, type: 3}
+    - target: {fileID: 6799130678459867175, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_Name
       value: Vase
@@ -4144,6 +4270,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 7129064027106857401, guid: 8a8eb98d9f10e0a4a9044331c8bfe0fd, type: 3}
+    - target: {fileID: 6799130678459867175, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_Name
       value: "Vase \xE0 fleurs"
@@ -4438,6 +4568,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -6919348689375657533, guid: 589a9b08a3d32e840bd176091f3ed1c2, type: 3}
+    - target: {fileID: 6799130678459867175, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_Name
       value: Cadenas
@@ -4691,6 +4825,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 5239542953914984434, guid: b40fb3256820d334eb479244565625e5, type: 3}
+    - target: {fileID: 6799130678459867175, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_Name
       value: Poster
@@ -4768,9 +4906,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6446330029221293394, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1249320148555819735}
-    - targetCorrespondingSourceObject: {fileID: 6446330029221293394, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3054750094268193353}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
 --- !u!4 &234941370864121398 stripped
@@ -4941,6 +5076,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 8667370578687548108, guid: 40d9942e62ec91e4eb018f03045b3449, type: 3}
+    - target: {fileID: 6799130678459867175, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_Name
       value: Porte
@@ -5190,6 +5329,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 8667370578687548108, guid: 40d9942e62ec91e4eb018f03045b3449, type: 3}
+    - target: {fileID: 6799130678459867175, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_Name
       value: Sculpture
@@ -5360,7 +5503,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5652754706922477662, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: _text._text
-      value: "Ah ! Voil\xE0 ! Je vais enfin d\xE9couvrir ton secret Damas !"
+      value: "Ah ! <wait=0,25>Voil\xE0 ! <wait=0,25>Je vais enfin d\xE9couvrir ton
+        secret Damas !"
       objectReference: {fileID: 0}
     - target: {fileID: 6383161685120494402, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_LocalScale.x
@@ -5414,6 +5558,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -6012147068321475539, guid: 8b0d030aabc066e469be1207666cfd44, type: 3}
+    - target: {fileID: 6799130678459867175, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_Name
       value: "Double de cl\xE9s"
@@ -5675,6 +5823,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1865502422318110325, guid: 517e08c95c5f4cb48a3072f1bfaa752b, type: 3}
+    - target: {fileID: 6799130678459867175, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_Name
       value: Vase Chinois
@@ -5921,6 +6073,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 2871913422912580291, guid: a9d9d93a8b3977e4a820188bc6a2efc8, type: 3}
+    - target: {fileID: 6799130678459867175, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6980497821781101678, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_Name
       value: Vase Bleu
