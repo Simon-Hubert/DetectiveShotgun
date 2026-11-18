@@ -1300,6 +1300,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 650842850319818142, guid: 1df774cc71495d54f9461a31b2484d56, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fe67cd13c54bdef41b097405e21679c9, type: 3}
     - target: {fileID: 1975005347465265256, guid: 1df774cc71495d54f9461a31b2484d56, type: 3}
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1364,7 +1368,8 @@ PrefabInstance:
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1125999896}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5033496873224901434, guid: 1df774cc71495d54f9461a31b2484d56, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
