@@ -115,6 +115,7 @@ Shader "Hidden/FullScreenBlur"
             
             float _Intensity;
             Texture2D _OriginalBlit;
+            float4 _MousePosition;
 
             #pragma vertex Vert
             #pragma fragment Frag
@@ -127,11 +128,18 @@ Shader "Hidden/FullScreenBlur"
                 half4 blurCol = SAMPLE_TEXTURE2D_X(_BlitTexture, sampler_LinearClamp, uv);
                 half4 col = SAMPLE_TEXTURE2D_X(_OriginalBlit, sampler_LinearClamp, uv);
                 
-                uv = uv*2-1;
-                uv.y *= _ScreenParams.y/_ScreenParams.x;;
+                half2 mouse = _MousePosition.xy / _ScreenParams.xy;
+                mouse = mouse * 2 - 1;
+                //mouse = half2(mouse.x, -mouse.y);
                 
-                float mask = length(uv);
-                mask = step(0.5, mask);
+                uv = uv * 2 - 1;
+                uv.y *= _ScreenParams.y/_ScreenParams.x;
+                
+                half2 center = uv;
+                center -= mouse/1.45f;
+                
+                float mask = length(center);
+                mask = smoothstep(0.40,0.60,mask);
 
                 return lerp(col, blurCol, mask);
 

@@ -4,16 +4,44 @@ using SMath;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
 namespace DShotgun
 {
+    
+    [Serializable]
+    public class BlurController
+    {
+        [SerializeField] private VolumeProfile _volumeProfile;
+        [SerializeField] private int _targetBlurPasses;
+        [SerializeField] private float _targetBlurIntensity;
+
+        private FullScreenBlurVolumeComponent _blur;
+
+        public void ActivateBlur()
+        {
+            if(_blur == null) _volumeProfile.TryGet(out _blur);
+            _blur.intensity.SetValue(new FloatParameter(_blur.intensity.value, true));
+            
+        }
+        
+        public void DeactivateBlur()
+        {
+            if(_blur == null) _volumeProfile.TryGet(out _blur);
+            Debug.Log($"BLURRRED : {_blur}");
+            _blur.intensity.SetValue(new FloatParameter(_blur.intensity.value, false));
+        }
+    }
+    
+    
     [RequireComponent(typeof(InteractableController))]
     public class AimController : MonoBehaviour
     {
 
         [SerializeField] private PixelPerfectCamera _camera;
         [SerializeField] private float _zoomDuration = 0.75f;
+        [SerializeField] private BlurController _blurController = new BlurController();
 
         private const int defaultPPU = 100;
         private const int zoomedPPU = 150;
@@ -33,6 +61,7 @@ namespace DShotgun
         private void Start()
         {
             _origin = _camera.transform.position;
+            _blurController.DeactivateBlur();
         }
 
         private void Update()

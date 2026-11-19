@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.RenderGraphModule;
 using UnityEngine.Rendering.Universal;
@@ -44,6 +45,7 @@ public sealed class FullScreenBlurRenderPass : ScriptableRenderPass
 
 	private static readonly int IntensityId = Shader.PropertyToID("_Intensity");
 	private static readonly int OriginalBlitId = Shader.PropertyToID("_OriginalBlit");
+	private static readonly int MousePositionId = Shader.PropertyToID("_MousePosition");
 
 	private readonly TextureHandle[] pyramid = new TextureHandle[MaxPasses];
 	private TextureHandle finalBlit = new TextureHandle();
@@ -139,7 +141,9 @@ public sealed class FullScreenBlurRenderPass : ScriptableRenderPass
 		// An increase of x4 pixels equals to a multiplier of 2.5 to blur intensity.
 		float factor = ((Screen.height / BlurSizeScalingReferenceHeight) / 4.0f) * 2.5f;
 		float blurIntensity = Mathf.Lerp(0.0f, BlurIntensity, Mathf.Sqrt(intensity));
-
+		
+		
+		material.SetVector(MousePositionId, Mouse.current.position.ReadValue());
 		material.SetFloat(IntensityId, blurIntensity * factor);
 		material.SetTexture(OriginalBlitId, originalBlit);
 	}
