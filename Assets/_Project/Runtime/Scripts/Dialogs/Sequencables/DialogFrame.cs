@@ -118,6 +118,7 @@ namespace DShotgun.Dialogs
             };
 
             DialogsManager.instance.CaptureDialogsInfo(dialogData);
+            LogSink.AddEntry(new LogEntryData(ResolveName(database), text));
         }
 
         public void OnRequestedSkip() {
