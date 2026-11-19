@@ -24,6 +24,8 @@ namespace DShotgun
         private static readonly int IMPACT_EVENT = Shader.PropertyToID("OnImpact");
         private static readonly int POSITION_ATTRIBUTE = Shader.PropertyToID("position");
         private static readonly int DIRECTION_ATTRIBUTE = Shader.PropertyToID("direction");
+        private static readonly int COLOR_ATTRIBUTE = Shader.PropertyToID("color");
+
         private readonly Dictionary<VisualEffectAsset, VisualEffect> _impactVfxByAsset = new Dictionary<VisualEffectAsset, VisualEffect>();
 
         private void Start()
@@ -51,6 +53,9 @@ namespace DShotgun
         {
             GameObject go = _pool.GetShotImpact();
             VisualEffectAsset impactVfx = null;
+            Color color = Color.white;
+
+            Vector3 worldImpact = Camera.main.ScreenToWorldPoint(InputReader.PointerPosition);
 
             if (interactableManager) {
                 ShotImpactSpriteProvider provider = interactableManager.GetComponent<ShotImpactSpriteProvider>();
@@ -58,18 +63,48 @@ namespace DShotgun
                     go.GetComponent<SpriteRenderer>().sprite = provider.GetSprite();
                     impactVfx = provider.GetImpactVfx();
                 }
+
+                SpriteRenderer spriteRenderer = interactableManager.GetComponentInChildren<SpriteRenderer>();
+                if (spriteRenderer != null)
+                {
+                    worldImpact.z = spriteRenderer.transform.position.z;
+                    color = ReadPixel(spriteRenderer, worldImpact);
+                }
             }
             
-            go.transform.position = Camera.main.ScreenToWorldPoint(InputReader.PointerPosition);
+            go.transform.position = worldImpact;
             Vector3 vector3 = go.transform.position;
             vector3.z = 0;
             go.transform.position = vector3;
 
-            PlayImpactVfx(vector3, impactVfx);
+            PlayImpactVfx(vector3, impactVfx, color);
             _onShoot?.Invoke();
         }
 
-        private void PlayImpactVfx(Vector3 impact, VisualEffectAsset asset)
+        private static Color ReadPixel(SpriteRenderer spriteRenderer, Vector3 worldImpact)
+        {
+            Sprite sprite = spriteRenderer.sprite;
+            if (sprite == null || sprite.texture == null) return Color.white;
+
+            Texture2D texture = sprite.texture;
+            if (!texture.isReadable) return Color.white;
+
+            Vector3 localImpact = spriteRenderer.transform.InverseTransformPoint(worldImpact);
+            Rect textureRect = sprite.textureRect;
+
+            float normalizedX = (localImpact.x * sprite.pixelsPerUnit + sprite.pivot.x) / sprite.rect.width;
+            float normalizedY = (localImpact.y * sprite.pixelsPerUnit + sprite.pivot.y) / sprite.rect.height;
+
+            if (spriteRenderer.flipX) normalizedX = 1f - normalizedX;
+            if (spriteRenderer.flipY) normalizedY = 1f - normalizedY;
+
+            int pixelX = Mathf.Clamp(Mathf.FloorToInt(textureRect.x + normalizedX * textureRect.width), 0, texture.width - 1);
+            int pixelY = Mathf.Clamp(Mathf.FloorToInt(textureRect.y + normalizedY * textureRect.height), 0, texture.height - 1);
+
+            return texture.GetPixel(pixelX, pixelY);
+        }
+
+        private void PlayImpactVfx(Vector3 impact, VisualEffectAsset asset, Color color)
         {
             VisualEffect vfx = GetImpactVfx(asset);
             if (vfx == null) return;
@@ -82,6 +117,7 @@ namespace DShotgun
             VFXEventAttribute attributes = vfx.CreateVFXEventAttribute();
             attributes.SetVector3(POSITION_ATTRIBUTE, impact);
             attributes.SetVector3(DIRECTION_ATTRIBUTE, ejection);
+            attributes.SetVector3(COLOR_ATTRIBUTE, new Vector3(color.r, color.g, color.b));
             vfx.SendEvent(IMPACT_EVENT, attributes);
         }
 
