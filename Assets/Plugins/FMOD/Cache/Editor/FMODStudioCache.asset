@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8941155955152261723
+--- !u!114 &-8819078048035242526
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Gun/SFO_GunCock_OS
+  m_Name: event:/UI/Writing/UI_Typewriter_Click_OS
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/Gun/SFO_GunCock_OS
+  Path: event:/UI/Writing/UI_Typewriter_Click_OS
   Guid:
-    Data1: -1932164789
-    Data2: 1292415102
-    Data3: 1149769118
-    Data4: 421194731
+    Data1: -1935911069
+    Data2: 1274463028
+    Data3: -514664260
+    Data4: 884305160
   Banks:
   - {fileID: 5249210330089907727}
   IsStream: 0
@@ -27,7 +27,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-7790368596469329112
+--- !u!114 &-7871773543039450346
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,9 +37,198 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Shoot/SFX_ShootSurface_OS
+  m_Name: event:/SFX/Interjections/SFX_Interjection_Cadavre_OS
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/Shoot/SFX_ShootSurface_OS
+  Path: event:/SFX/Interjections/SFX_Interjection_Cadavre_OS
+  Guid:
+    Data1: -558405570
+    Data2: 1125531716
+    Data3: 179066026
+    Data4: -895412225
+  Banks:
+  - {fileID: 5249210330089907727}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6939364983592448740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Interjections/SFX_Interjection_Barman_OS
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Interjections/SFX_Interjection_Barman_OS
+  Guid:
+    Data1: 771583426
+    Data2: 1168594604
+    Data3: 498351508
+    Data4: -1922411082
+  Banks:
+  - {fileID: 5249210330089907727}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6070134462366808308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Props/SFX_Phone_Ring_LP
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Props/SFX_Phone_Ring_LP
+  Guid:
+    Data1: -497046917
+    Data2: 1112459819
+    Data3: -1256289859
+    Data4: 1622851328
+  Banks:
+  - {fileID: 5249210330089907727}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6001446545419303249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/UI_Switch_Scene_OS
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/UI/UI_Switch_Scene_OS
+  Guid:
+    Data1: 1415994325
+    Data2: 1313904540
+    Data3: -2108285256
+    Data4: 139395176
+  Banks:
+  - {fileID: 5249210330089907727}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4046012719270254422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Interjections/SFX_Interjection_TVHost_OS
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Interjections/SFX_Interjection_TVHost_OS
+  Guid:
+    Data1: -59764275
+    Data2: 1078671433
+    Data3: -913037419
+    Data4: 1516089379
+  Banks:
+  - {fileID: 5249210330089907727}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3859534019215469485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/MUS_Crime_Scene_LP
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Music/MUS_Crime_Scene_LP
+  Guid:
+    Data1: 338420931
+    Data2: 1218568330
+    Data3: -199066728
+    Data4: 845489691
+  Banks:
+  - {fileID: 5249210330089907727}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 20571
+--- !u!114 &-2635527659419412794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Shotgun/UI_Shotgun_Shoot_OS
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/UI/Shotgun/UI_Shotgun_Shoot_OS
+  Guid:
+    Data1: 865811774
+    Data2: 1305412798
+    Data3: -2096187225
+    Data4: 1374600754
+  Banks:
+  - {fileID: 5249210330089907727}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-2542875013316503772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ShootImpact/SFX_ShootSurface_OS
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/ShootImpact/SFX_ShootSurface_OS
   Guid:
     Data1: 576698053
     Data2: 1327816549
@@ -51,11 +240,11 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 2553800634493426445}
+  - {fileID: 7161581514380247210}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-5925734016282999026
+--- !u!114 &-1589852017124538263
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -65,14 +254,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Shoot/Props/SFX_ShootWindow_OS
+  m_Name: event:/UI/Shotgun/UI_Shotgun_Load_Close_OS
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/Shoot/Props/SFX_ShootWindow_OS
+  Path: event:/UI/Shotgun/UI_Shotgun_Load_Close_OS
   Guid:
-    Data1: 1066728881
-    Data2: 1165725057
-    Data3: 692809911
-    Data4: -2074116530
+    Data1: 1546730068
+    Data2: 1200768185
+    Data3: -690589544
+    Data4: -1092753568
   Banks:
   - {fileID: 5249210330089907727}
   IsStream: 0
@@ -82,7 +271,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-4658130371613106673
+--- !u!114 &-959010658280482090
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,14 +281,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Shoot/Props/SFX_ShootHuman_OS
+  m_Name: event:/UI/Writing/UI_Typewriter_End_OS
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/Shoot/Props/SFX_ShootHuman_OS
+  Path: event:/UI/Writing/UI_Typewriter_End_OS
   Guid:
-    Data1: 375722591
-    Data2: 1168719625
-    Data3: -2078305609
-    Data4: -1653022154
+    Data1: 830314276
+    Data2: 1314767737
+    Data3: 1068063638
+    Data4: -113693446
   Banks:
   - {fileID: 5249210330089907727}
   IsStream: 0
@@ -109,7 +298,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-4368464071842474560
+--- !u!114 &-717214691120199708
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,14 +308,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Gun/SFO_GunLoad_OS
+  m_Name: event:/SFX/Interjections/SFX_Interjection_Sally_OS
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/Gun/SFO_GunLoad_OS
+  Path: event:/SFX/Interjections/SFX_Interjection_Sally_OS
   Guid:
-    Data1: -1425933658
-    Data2: 1196096620
-    Data3: -1970752332
-    Data4: -525239647
+    Data1: -888910645
+    Data2: 1276133193
+    Data3: 422063016
+    Data4: -1394371798
   Banks:
   - {fileID: 5249210330089907727}
   IsStream: 0
@@ -136,7 +325,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-3973347466857754651
+--- !u!114 &-517910984918114215
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,75 +335,73 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Gun/SFO_GunShoot_OS
+  m_Name: event:/SFX/Props/SFX_Car_Alarm_LP
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/Gun/SFO_GunShoot_OS
+  Path: event:/SFX/Props/SFX_Car_Alarm_LP
   Guid:
-    Data1: 802799782
-    Data2: 1246776622
-    Data3: -639797326
-    Data4: 971370201
-  Banks:
-  - {fileID: 5249210330089907727}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-2073324857190910245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Test-PlaceHolder/Machines, Mechanism, Mechanical Transition, Building
-    Up, Movement SND113052
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/Test-PlaceHolder/Machines, Mechanism, Mechanical Transition, Building
-    Up, Movement SND113052
-  Guid:
-    Data1: 647341796
-    Data2: 1180494535
-    Data3: 2052517774
-    Data4: -1792990670
-  Banks:
-  - {fileID: 5249210330089907727}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3018
---- !u!114 &-621717254564427164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Props/SceneHouse/SFX_PhoneRing_LP
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/Props/SceneHouse/SFX_PhoneRing_LP
-  Guid:
-    Data1: 642961838
-    Data2: 1283964946
-    Data3: 1626885025
-    Data4: 1834261482
+    Data1: -1129384345
+    Data2: 1281590748
+    Data3: -613820796
+    Data4: 179787684
   Banks:
   - {fileID: 5249210330089907727}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-513374574103590270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Interjections/SFX_Interjection_Damas_OS
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Interjections/SFX_Interjection_Damas_OS
+  Guid:
+    Data1: 2125298533
+    Data2: 1326617509
+    Data3: 1623721146
+    Data4: 24618451
+  Banks:
+  - {fileID: 5249210330089907727}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-333111111204149863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Shotgun/UI_Shotgun_Aim_OS
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/UI/Shotgun/UI_Shotgun_Aim_OS
+  Guid:
+    Data1: 488338925
+    Data2: 1176762762
+    Data3: -2022351736
+    Data4: 1165494882
+  Banks:
+  - {fileID: 5249210330089907727}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -235,39 +422,71 @@ MonoBehaviour:
   - {fileID: 423755967197646914}
   - {fileID: 5249210330089907727}
   EditorEvents:
-  - {fileID: -8941155955152261723}
-  - {fileID: -4658130371613106673}
-  - {fileID: -3973347466857754651}
-  - {fileID: -4368464071842474560}
-  - {fileID: -621717254564427164}
-  - {fileID: -5925734016282999026}
-  - {fileID: -7790368596469329112}
-  - {fileID: -2073324857190910245}
+  - {fileID: -959010658280482090}
+  - {fileID: 3502361505339145353}
+  - {fileID: -2635527659419412794}
+  - {fileID: -7871773543039450346}
+  - {fileID: -1589852017124538263}
+  - {fileID: -8819078048035242526}
+  - {fileID: -513374574103590270}
+  - {fileID: -517910984918114215}
+  - {fileID: -6070134462366808308}
+  - {fileID: 4424446575291687364}
+  - {fileID: 6526121589849775858}
+  - {fileID: -6939364983592448740}
+  - {fileID: -3859534019215469485}
+  - {fileID: -2542875013316503772}
+  - {fileID: 2847679376995307989}
+  - {fileID: -717214691120199708}
+  - {fileID: -4046012719270254422}
+  - {fileID: -6001446545419303249}
+  - {fileID: -333111111204149863}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5249210330089907727}
   StringsBanks:
   - {fileID: 423755967197646914}
   cacheVersion: 131861
-  cacheTime: 639299322515052205
+  cacheTime: 639307006080587511
   SerializableEventsDict:
-  - key: event:/Gun/SFO_GunCock_OS
+  - key: event:/UI/Writing/UI_Typewriter_End_OS
     index: 0
-  - key: event:/Shoot/Props/SFX_ShootHuman_OS
+  - key: event:/UI/Shotgun/UI_Shotgun_Load_Open_OS
     index: 1
-  - key: event:/Gun/SFO_GunShoot_OS
+  - key: event:/UI/Shotgun/UI_Shotgun_Shoot_OS
     index: 2
-  - key: event:/Gun/SFO_GunLoad_OS
+  - key: event:/SFX/Interjections/SFX_Interjection_Cadavre_OS
     index: 3
-  - key: event:/Props/SceneHouse/SFX_PhoneRing_LP
+  - key: event:/UI/Shotgun/UI_Shotgun_Load_Close_OS
     index: 4
-  - key: event:/Shoot/Props/SFX_ShootWindow_OS
+  - key: event:/UI/Writing/UI_Typewriter_Click_OS
     index: 5
-  - key: event:/Shoot/SFX_ShootSurface_OS
+  - key: event:/SFX/Interjections/SFX_Interjection_Damas_OS
     index: 6
-  - key: event:/Test-PlaceHolder/Machines, Mechanism, Mechanical Transition, Building
-      Up, Movement SND113052
+  - key: event:/SFX/Props/SFX_Car_Alarm_LP
     index: 7
+  - key: event:/SFX/Props/SFX_Phone_Ring_LP
+    index: 8
+  - key: event:/SFX/Interjections/SFX_Interjection_Legiste_OS
+    index: 9
+  - key: event:/SFX/Interjections/SFX_Interjection_Flic_OS
+    index: 10
+  - key: event:/SFX/Interjections/SFX_Interjection_Barman_OS
+    index: 11
+  - key: event:/Music/MUS_Crime_Scene_LP
+    index: 12
+  - key: event:/SFX/ShootImpact/SFX_ShootSurface_OS
+    index: 13
+  - key: event:/SFX/Interjections/SFX_Interjection_PoliceChief_OS
+    index: 14
+  - key: event:/SFX/Interjections/SFX_Interjection_Sally_OS
+    index: 15
+  - key: event:/SFX/Interjections/SFX_Interjection_TVHost_OS
+    index: 16
+  - key: event:/UI/UI_Switch_Scene_OS
+    index: 17
+  - key: event:/UI/Shotgun/UI_Shotgun_Aim_OS
+    index: 18
 --- !u!114 &423755967197646914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,12 +502,12 @@ MonoBehaviour:
   Path: FMODDetectiveShotgun/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639299322515052205
+  lastModified: 639307006080587511
   FileSizes:
   - Name: Desktop
-    Value: 1290
+    Value: 1848
   Exists: 1
---- !u!114 &2553800634493426445
+--- !u!114 &2847679376995307989
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -297,21 +516,78 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SFX_ShootSurface_OS/Surface
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: Surface
-  StudioPath: 
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 3056652889
-    data2: 144711378
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Interjections/SFX_Interjection_PoliceChief_OS
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Interjections/SFX_Interjection_PoliceChief_OS
+  Guid:
+    Data1: 1818618055
+    Data2: 1169903029
+    Data3: -861776204
+    Data4: 576005722
+  Banks:
+  - {fileID: 5249210330089907727}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3502361505339145353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Shotgun/UI_Shotgun_Load_Open_OS
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/UI/Shotgun/UI_Shotgun_Load_Open_OS
+  Guid:
+    Data1: -1065326805
+    Data2: 1301845543
+    Data3: 186208412
+    Data4: -2145252586
+  Banks:
+  - {fileID: 5249210330089907727}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4424446575291687364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Interjections/SFX_Interjection_Legiste_OS
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Interjections/SFX_Interjection_Legiste_OS
+  Guid:
+    Data1: 834805948
+    Data2: 1253830832
+    Data3: -1262824319
+    Data4: -1579199937
+  Banks:
+  - {fileID: 5249210330089907727}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &5249210330089907727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -327,8 +603,59 @@ MonoBehaviour:
   Path: FMODDetectiveShotgun/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639299322515051809
+  lastModified: 639307006080567477
   FileSizes:
   - Name: Desktop
-    Value: 148192
+    Value: 554304
+  Exists: 1
+--- !u!114 &6526121589849775858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Interjections/SFX_Interjection_Flic_OS
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Interjections/SFX_Interjection_Flic_OS
+  Guid:
+    Data1: -1735652672
+    Data2: 1113082197
+    Data3: -243179103
+    Data4: -1112745069
+  Banks:
+  - {fileID: 5249210330089907727}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7161581514380247210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SFX_ShootSurface_OS/Surface
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: Surface
+  StudioPath: 
+  Min: 0
+  Max: 6
+  Default: 0
+  ID:
+    data1: 3056652889
+    data2: 144711378
+  Type: 1
+  IsGlobal: 0
+  Labels: []
   Exists: 1
