@@ -55,7 +55,7 @@ namespace DShotgun
             if (interactableManager) {
                 ShotImpactSpriteProvider provider = interactableManager.GetComponent<ShotImpactSpriteProvider>();
                 if (provider) {
-                    if (provider.GetSprite() != null) go.GetComponent<SpriteRenderer>().sprite = provider.GetSprite();
+                    go.GetComponent<SpriteRenderer>().sprite = provider.GetSprite();
                     impactVfx = provider.GetImpactVfx();
                 }
             }
