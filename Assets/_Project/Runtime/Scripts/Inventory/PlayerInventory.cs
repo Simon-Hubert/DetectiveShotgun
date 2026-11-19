@@ -36,6 +36,7 @@ namespace DShotgun
         private ItemSlot[] _inventory;
         
         public ItemSlot[] Inventory => _inventory;
+        public bool IsInitialized { get; private set; }
         
         public event Action<int, ItemData> OnSlotChanged;
         public event Action OnInventoryFull;
@@ -56,6 +57,7 @@ namespace DShotgun
                 
                 OnSlotChanged?.Invoke(i, _startingItems[i]);
             }
+            IsInitialized = true;
             Debug.Log($"[Storage] {name} initialized with {capacity} slots.");
         }
         private void Start()
@@ -65,6 +67,16 @@ namespace DShotgun
 
         public bool IsValidIndex(int index) => _inventory != null && index >= 0 && index < _inventory.Length;
         
+        // Premier slot libre, celui que prendra le prochain objet (-1 si l'inventaire est plein)
+        public int FirstFreeSlot()
+        {
+            for (int i = 0; i < _inventory.Length; i++)
+            {
+                if (string.IsNullOrEmpty(_inventory[i]?.Name)) return i;
+            }
+            return -1;
+        }
+
         public void AddItem(ItemData item)
         {
 
