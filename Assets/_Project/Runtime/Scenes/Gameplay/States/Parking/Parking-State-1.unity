@@ -1021,6 +1021,17 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &954199116 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1591516744743592465, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+  m_PrefabInstance: {fileID: 3985363364643086023}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf96037a27213bd1289b17230d1b255f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.JournalSingleton
 --- !u!1 &967109378
 GameObject:
   m_ObjectHideFlags: 0
@@ -2810,6 +2821,46 @@ PrefabInstance:
     - target: {fileID: 1490254971417045803, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
       propertyPath: m_Name
       value: PLAYER-CAMERA
+      objectReference: {fileID: 0}
+    - target: {fileID: 2989477957750459464, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2989477957750459464, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2989477957750459464, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 954199116}
+    - target: {fileID: 2989477957750459464, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2989477957750459464, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleVisible
+      objectReference: {fileID: 0}
+    - target: {fileID: 2989477957750459464, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DShotgun.LogUI, DShotgun
+      objectReference: {fileID: 0}
+    - target: {fileID: 2989477957750459464, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6272483975258973734, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185685581953460022, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185685581953460022, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8451857126543302926, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
       propertyPath: m_LocalPosition.x
