@@ -22,15 +22,26 @@ namespace DShotgun
         public void ActivateBlur()
         {
             if(_blur == null) _volumeProfile.TryGet(out _blur);
-            _blur.intensity.SetValue(new FloatParameter(_blur.intensity.value, true));
-            
+            _blur.active = true;
         }
         
         public void DeactivateBlur()
         {
             if(_blur == null) _volumeProfile.TryGet(out _blur);
-            Debug.Log($"BLURRRED : {_blur}");
-            _blur.intensity.SetValue(new FloatParameter(_blur.intensity.value, false));
+            _blur.active = false;
+        }
+
+        public void SetBlurPercent(float p)
+        {
+            _blur.intensity.SetValue(new FloatParameter(Mathf.Lerp(0,_targetBlurIntensity, p)));
+            int passes = 1;
+            float section = 1f / _targetBlurPasses;
+            for (int i = 1; i <= _targetBlurPasses; i++) {
+                if (i * section <= p) {
+                    passes = i;
+                }
+            }
+            _blur.passes.SetValue(new IntParameter(passes));
         }
     }
     
@@ -140,11 +151,13 @@ namespace DShotgun
         {
             try {
                 float t = 0;
+                _blurController.ActivateBlur();
                 float duration = (1-Mathf.InverseLerp(defaultPPU, zoomedPPU, currentPPU))*_zoomDuration;
                 while (t < duration) {
                     await Awaitable.EndOfFrameAsync(token);
                     t += Time.deltaTime;
                     float p = t / duration;
+                    _blurController.SetBlurPercent(p);
                     _currentPPU = Mathf.FloorToInt(Mathf.Lerp(currentPPU, zoomedPPU, p));
                     _camera.assetsPPU = _currentPPU;
                 }
@@ -165,6 +178,7 @@ namespace DShotgun
                     await Awaitable.EndOfFrameAsync(token);
                     t += Time.deltaTime;
                     float p = t / duration;
+                    _blurController.SetBlurPercent(1-p);
                     _currentPPU = Mathf.FloorToInt(Mathf.Lerp(currentPPU, defaultPPU, p));
                     _camera.assetsPPU = _currentPPU;
                 }
@@ -177,6 +191,7 @@ namespace DShotgun
             finally {
                 IsControllingCamera = false;
                 _camera.transform.position = new Vector3(_origin.x, _origin.y, -10);
+                _blurController.DeactivateBlur();
             }
         }
     }

@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7b026637b174005848100892f3c56f, type: 3}
   m_Name: FullScreenBlurVolumeComponent
   m_EditorClassIdentifier: DShotgun::FullScreenBlurVolumeComponent
-  active: 1
+  active: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.118
+    m_Value: 0.568
   passes:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 4
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
