@@ -1,3 +1,4 @@
+using System;
 using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -35,13 +36,19 @@ public class FollowMouse : MonoBehaviour
     }
     [Space(10)]
     [SerializeField, ReadOnly] private Vector2 _vfxSpawnPos;
-
-    [SerializeField] private Transform _test;
     public Vector2 GetVFXSpawnPos { get => _vfxSpawnPos; }
     
     [SerializeField, ReadOnly] private float _vfxAngle;
     public float GetVFXAngle { get => _vfxAngle; }
-    
+    [Space(7)]
+    [SerializeField] private bool _showTest;
+    [SerializeField] private Transform _test;
+
+    private void Start()
+    {
+        _test.gameObject.SetActive(_showTest);
+    }
+
     void Update()
     {
         Vector2 mousePos = Mouse.current.position.ReadValue();
@@ -76,8 +83,11 @@ public class FollowMouse : MonoBehaviour
         _vfxSpawnPos = (Vector2)_vfxMinSpawnPos.position + 
                        new Vector2(GetSpawnPosThreshold.x * (_invertWidth ? (_widthThreshold - j) : j), 
                            GetSpawnPosThreshold.y * (_invertHeight ? i : (_widthThreshold - i)));
-        _test.position = _vfxSpawnPos;
-        _test.rotation = Quaternion.Euler(0, 0, _vfxAngle);
+
+        if (_test) {
+            _test.position = _vfxSpawnPos;
+            _test.rotation = Quaternion.Euler(0, 0, _vfxAngle);
+        }
         
         // Debug.Log($"angle: {angle} | middle angle: {_rotationThreshold[Mathf.FloorToInt(_rotationThreshold.Length / 2)]}");
         //Debug.Log($"Sprite List Position (x: {j} | y: {i} | Index: {spriteIndex:D3})");
