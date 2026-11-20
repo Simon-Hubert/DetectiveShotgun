@@ -9,7 +9,7 @@ namespace DShotgun
         [SerializeField] private TextMeshProUGUI _text;
 
 
-        public void Init(LogEntryData data)
+        public void Init(DialogEntryData data)
         {
             _character.text = data.CharacterName;
             _text.text = data.Text;
