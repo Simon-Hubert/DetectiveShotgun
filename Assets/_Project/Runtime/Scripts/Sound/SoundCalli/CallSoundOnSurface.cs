@@ -3,7 +3,7 @@ using FMODUnity;
 using NaughtyAttributes;
 using UnityEngine;
 
-namespace DShotgun
+namespace DShotgun.Sound
 {
     public class CallSoundOnSurface : MonoBehaviour
     {

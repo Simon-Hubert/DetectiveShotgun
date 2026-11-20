@@ -12,7 +12,6 @@ namespace DShotgun
         private InteractableController _ic;
         [SerializeField] private ImpactPool _pool;
         [SerializeField] private UnityEvent _onShoot;
-        [SerializeField] private CallSoundOnSurface _soundOnSurface;
         [Space(7)]
         [SerializeField] private StudioEventEmitter _shootEmitter;
         [Space(7)]
