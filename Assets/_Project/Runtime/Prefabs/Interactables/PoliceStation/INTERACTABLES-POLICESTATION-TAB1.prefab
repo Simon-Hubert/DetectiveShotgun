@@ -579,6 +579,7 @@ GameObject:
   - component: {fileID: 5545254123843568952}
   - component: {fileID: 4166889742481220023}
   - component: {fileID: 3444082820774861143}
+  - component: {fileID: 7326404243978257527}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Untagged
@@ -725,6 +726,21 @@ MonoBehaviour:
       data:
         _flag:
           _flagName: CupGiven
+--- !u!114 &7326404243978257527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079439914630418936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: 2b4ec60e844077148b990d57d3e87b49, type: 3}
 --- !u!1 &1155793251588120844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1672,6 +1688,7 @@ GameObject:
   - component: {fileID: 4192085681338930405}
   - component: {fileID: 2478243125294744044}
   - component: {fileID: 3386620487671437861}
+  - component: {fileID: 7343466044906441704}
   m_Layer: 0
   m_Name: Cup
   m_TagString: Untagged
@@ -1814,6 +1831,21 @@ MonoBehaviour:
       data:
         _flag:
           _flagName: RecruitChoking
+--- !u!114 &7343466044906441704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2409001096991520371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: d1eb60a719f45884d96949c54029cfe8, type: 3}
 --- !u!1 &2625989689757617274
 GameObject:
   m_ObjectHideFlags: 0
@@ -1825,6 +1857,7 @@ GameObject:
   - component: {fileID: 7518080763823485381}
   - component: {fileID: 7432874213915622325}
   - component: {fileID: 2899326225714826828}
+  - component: {fileID: 7794313726802896047}
   m_Layer: 0
   m_Name: FishTV
   m_TagString: Untagged
@@ -1967,6 +2000,22 @@ MonoBehaviour:
       data:
         _flag:
           _flagName: TVDestroyed
+--- !u!114 &7794313726802896047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2625989689757617274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: d1eb60a719f45884d96949c54029cfe8, type: 3}
+  - {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
 --- !u!1 &2700710824258017755
 GameObject:
   m_ObjectHideFlags: 0
@@ -2826,6 +2875,7 @@ GameObject:
   - component: {fileID: 5110582819394345356}
   - component: {fileID: 3116879064620847473}
   - component: {fileID: 7756831107959521930}
+  - component: {fileID: 8298918075615334269}
   m_Layer: 0
   m_Name: Corpse
   m_TagString: Untagged
@@ -2974,6 +3024,21 @@ MonoBehaviour:
       type: {class: ItemCondition, ns: DShotgun, asm: DShotgun}
       data:
         _item: {fileID: 11400000, guid: 454895221df405e8088dc7b4bb1b2bee, type: 2}
+--- !u!114 &8298918075615334269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3709327758353802084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: 2b4ec60e844077148b990d57d3e87b49, type: 3}
 --- !u!1 &3770234914078861306
 GameObject:
   m_ObjectHideFlags: 0
@@ -4044,6 +4109,7 @@ GameObject:
   - component: {fileID: 2191663399926686786}
   - component: {fileID: 7051840787778989208}
   - component: {fileID: 6690550825487797162}
+  - component: {fileID: 8276371715599489080}
   m_Layer: 0
   m_Name: WaterFountain
   m_TagString: Untagged
@@ -4191,6 +4257,22 @@ MonoBehaviour:
       type: {class: ItemCondition, ns: DShotgun, asm: DShotgun}
       data:
         _item: {fileID: 11400000, guid: b8a679bf7ec54f3e69b2de55ab3c7819, type: 2}
+--- !u!114 &8276371715599489080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5383798630552480316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
+  - {fileID: 8926484042661614526, guid: d1eb60a719f45884d96949c54029cfe8, type: 3}
 --- !u!1 &5422650175969190318
 GameObject:
   m_ObjectHideFlags: 0
@@ -5851,6 +5933,7 @@ GameObject:
   - component: {fileID: 1048979354114986144}
   - component: {fileID: 2541245987151853553}
   - component: {fileID: 2643053127553986037}
+  - component: {fileID: 7136499256175910633}
   m_Layer: 0
   m_Name: Recruit
   m_TagString: Untagged
@@ -6039,6 +6122,21 @@ MonoBehaviour:
       data:
         _flag:
           _flagName: RecruitChoking
+--- !u!114 &7136499256175910633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7696480899347173395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: 2b4ec60e844077148b990d57d3e87b49, type: 3}
 --- !u!1 &7763822581086472136
 GameObject:
   m_ObjectHideFlags: 0
@@ -6113,6 +6211,7 @@ GameObject:
   - component: {fileID: 2451235131878169691}
   - component: {fileID: 7424481756423533274}
   - component: {fileID: 2501214654024971760}
+  - component: {fileID: 2859052485168742959}
   m_Layer: 0
   m_Name: Chairs
   m_TagString: Untagged
@@ -6272,6 +6371,23 @@ PolygonCollider2D:
       - {x: 1.4687293, y: -1.7831559}
       - {x: 2.1227918, y: -1.0845308}
   m_UseDelaunayMesh: 1
+--- !u!114 &2859052485168742959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7814152423455587581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
+  - {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
+  - {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
 --- !u!1 &8048391628099686627
 GameObject:
   m_ObjectHideFlags: 0
