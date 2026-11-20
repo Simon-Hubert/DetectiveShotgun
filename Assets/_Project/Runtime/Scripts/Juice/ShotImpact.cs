@@ -25,6 +25,9 @@ namespace DShotgun
         private static readonly int POSITION_ATTRIBUTE = Shader.PropertyToID("position");
         private static readonly int DIRECTION_ATTRIBUTE = Shader.PropertyToID("direction");
         private static readonly int COLOR_ATTRIBUTE = Shader.PropertyToID("color");
+        
+        private const int SEARCH_RADIUS = 12;
+
 
         private readonly Dictionary<VisualEffectAsset, VisualEffect> _impactVfxByAsset = new Dictionary<VisualEffectAsset, VisualEffect>();
 
@@ -80,28 +83,39 @@ namespace DShotgun
             PlayImpactVfx(vector3, impactVfx, color);
             _onShoot?.Invoke();
         }
-
+        
         private static Color ReadPixel(SpriteRenderer spriteRenderer, Vector3 worldImpact)
         {
             Sprite sprite = spriteRenderer.sprite;
             if (sprite == null || sprite.texture == null) return Color.white;
 
             Texture2D texture = sprite.texture;
-            if (!texture.isReadable) return Color.white;
-
             Vector3 localImpact = spriteRenderer.transform.InverseTransformPoint(worldImpact);
+            if (spriteRenderer.flipX) localImpact.x = -localImpact.x;
+            if (spriteRenderer.flipY) localImpact.y = -localImpact.y;
+
+            Vector2 inSprite = (Vector2)localImpact * sprite.pixelsPerUnit + sprite.pivot;
             Rect textureRect = sprite.textureRect;
+            int centerX = Mathf.FloorToInt(textureRect.x - sprite.textureRectOffset.x + inSprite.x);
+            int centerY = Mathf.FloorToInt(textureRect.y - sprite.textureRectOffset.y + inSprite.y);
 
-            float normalizedX = (localImpact.x * sprite.pixelsPerUnit + sprite.pivot.x) / sprite.rect.width;
-            float normalizedY = (localImpact.y * sprite.pixelsPerUnit + sprite.pivot.y) / sprite.rect.height;
-
-            if (spriteRenderer.flipX) normalizedX = 1f - normalizedX;
-            if (spriteRenderer.flipY) normalizedY = 1f - normalizedY;
-
-            int pixelX = Mathf.Clamp(Mathf.FloorToInt(textureRect.x + normalizedX * textureRect.width), 0, texture.width - 1);
-            int pixelY = Mathf.Clamp(Mathf.FloorToInt(textureRect.y + normalizedY * textureRect.height), 0, texture.height - 1);
-
-            return texture.GetPixel(pixelX, pixelY);
+            for (int radius = 0; radius <= SEARCH_RADIUS; radius++)
+            {
+                for (int dy = -radius; dy <= radius; dy++)
+                {
+                    for (int dx = -radius; dx <= radius; dx++)
+                    {
+                        if (Mathf.Max(Mathf.Abs(dx), Mathf.Abs(dy)) != radius) continue;
+                        int x = centerX + dx;
+                        int y = centerY + dy;
+                        if (x < textureRect.xMin || x >= textureRect.xMax || y < textureRect.yMin || y >= textureRect.yMax) continue;
+                        Color pixel = texture.GetPixel(x, y);
+                        if (pixel.a < 0.5f) continue;
+                        return pixel.linear;
+                    }
+                }
+            }
+            return Color.white;
         }
 
         private void PlayImpactVfx(Vector3 impact, VisualEffectAsset asset, Color color)
