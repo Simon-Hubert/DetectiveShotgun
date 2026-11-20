@@ -43,6 +43,112 @@ Transform:
   - {fileID: 7190954163383233333}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8308459586071318891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1443736604924931325}
+  - component: {fileID: 7100763635005852884}
+  m_Layer: 0
+  m_Name: "Pick Up Double de cl\xE9s"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1443736604924931325
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8308459586071318891}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.2987013, y: 1.2987013, z: 1.2987013}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8307591664450279781}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7100763635005852884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8308459586071318891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6cc5e53c31ba304caa4e25e53e0803f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.PickUpItemSequence
+  _useGameObjectSprite: 0
+  _item: {fileID: 11400000, guid: 062016dab51205643b301429c0fd0e90, type: 2}
+  _jumpHeight: 2.5
+  _gravity: 30
+  _spinTurns: 6
+  _spin:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.4
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _size:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.6
+      value: 0.15
+      inSlope: 0.6
+      outSlope: 0.6
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 3
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1007535553988217723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -108,13 +214,22 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4740995683657477300, guid: 047580e473e07e0438176d447f93d1b0, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 9129080831519052318, guid: 047580e473e07e0438176d447f93d1b0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1443736604924931325}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 047580e473e07e0438176d447f93d1b0, type: 3}
 --- !u!4 &556459510646020226 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 739589543937364985, guid: 047580e473e07e0438176d447f93d1b0, type: 3}
+  m_PrefabInstance: {fileID: 1007535553988217723}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8307591664450279781 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9129080831519052318, guid: 047580e473e07e0438176d447f93d1b0, type: 3}
   m_PrefabInstance: {fileID: 1007535553988217723}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1036155740003362819
