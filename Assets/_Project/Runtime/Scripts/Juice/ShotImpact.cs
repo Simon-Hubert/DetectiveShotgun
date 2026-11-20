@@ -55,7 +55,7 @@ namespace DShotgun
         private void Shoot(InteractableManager interactableManager)
         {
             GameObject go = _pool.GetShotImpact();
-            VisualEffectAsset impactVfx = null;
+            List<VisualEffectAsset> impactVfxs = null;
             Color color = Color.white;
 
             Vector3 worldImpact = Camera.main.ScreenToWorldPoint(InputReader.PointerPosition);
@@ -64,7 +64,7 @@ namespace DShotgun
                 ShotImpactSpriteProvider provider = interactableManager.GetComponent<ShotImpactSpriteProvider>();
                 if (provider) {
                     go.GetComponent<SpriteRenderer>().sprite = provider.GetSprite();
-                    impactVfx = provider.GetImpactVfx();
+                    impactVfxs = provider.GetImpactVfxs();
                 }
 
                 SpriteRenderer spriteRenderer = interactableManager.GetComponentInChildren<SpriteRenderer>();
@@ -80,7 +80,10 @@ namespace DShotgun
             vector3.z = 0;
             go.transform.position = vector3;
 
-            PlayImpactVfx(vector3, impactVfx, color);
+            foreach (VisualEffectAsset impactVfx in impactVfxs)
+            {
+                PlayImpactVfx(vector3, impactVfx, color);
+            }
             _onShoot?.Invoke();
         }
         
