@@ -39,7 +39,8 @@ MonoBehaviour:
     probeVolumeBlendStatesCS: {fileID: 0}
   m_RendererFeatures:
   - {fileID: -8205565801160203066}
-  m_RendererFeatureMap: 
+  - {fileID: 7747998862475999510}
+  m_RendererFeatureMap: 1639032eea6b866b
   m_UseNativeRenderPass: 0
   m_LayerMask:
     serializedVersion: 2
@@ -70,3 +71,17 @@ MonoBehaviour:
   m_PostProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   m_DefaultMaterialType: 0
   m_DefaultCustomMaterial: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+--- !u!114 &7747998862475999510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f19039787404b3dbb59e8b57f206bf, type: 3}
+  m_Name: FullScreenBlurRendererFeature
+  m_EditorClassIdentifier: DShotgun::FullScreenBlurRendererFeature
+  m_Active: 1
+  shader: {fileID: 4800000, guid: 58df0ecab294ece2b924d6c5a98ce4fa, type: 3}
