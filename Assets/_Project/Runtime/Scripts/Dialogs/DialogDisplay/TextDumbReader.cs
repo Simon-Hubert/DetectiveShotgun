@@ -3,6 +3,7 @@ using TMPro;
 using System;
 using System.Text;
 using System.Threading;
+using DShotgun.Sound;
 
 namespace DShotgun.Dialogs
 {
@@ -20,6 +21,8 @@ namespace DShotgun.Dialogs
             
         private TextMeshProUGUI _textBox;
         private CancellationTokenSource _internInstructionTokenSource = new CancellationTokenSource();
+        private DSoundEmitter _soundEmitter;
+        public DSoundEmitter SetSoundEmitter { set => _soundEmitter = value; }
 
         private TextInstruction _instruction = new TextInstruction();
         public bool HasAutoPassed { get => _instruction.pass; }
@@ -44,6 +47,10 @@ namespace DShotgun.Dialogs
                 _textBox.wordSpacing = spacing.word;
                 _textBox.lineSpacing = spacing.line;
                 _textBox.lineSpacing = spacing.paragraph;
+                
+                if (_soundEmitter) {
+                    _soundEmitter.CreateInstance(profileStruct.typingSound.GetLastValue);
+                }
                 #endregion
                 
                 // Text Reading Loop
@@ -62,6 +69,10 @@ namespace DShotgun.Dialogs
 
                         a.Append(a_text[i]);
                         _textBox.text = a.ToString();
+
+                        if (_soundEmitter) {
+                            _soundEmitter.PlayRepeat();
+                        }
                     }
 
                     if (_instruction.wait > 0.0f) {

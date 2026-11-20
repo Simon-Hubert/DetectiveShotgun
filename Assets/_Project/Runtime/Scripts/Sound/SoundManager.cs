@@ -119,6 +119,15 @@ namespace DShotgun.Sound
             else 
                 return true;
         }
+
+        public static EventInstance CreateSoundInstance(EventReference a_ref) {
+            if (a_ref.IsNull) {
+                Debug.LogWarning($"SoundManager : tried to CreateInstance but given EventReference is null");
+                return default;
+            }
+            
+            return RuntimeManager.CreateInstance(a_ref);
+        }
         
         #region CallSoundMethods
 

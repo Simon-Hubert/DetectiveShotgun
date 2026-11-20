@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 using System.Collections.Generic;
-using JetBrains.Annotations;
+using FMODUnity;
 using NaughtyAttributes;
 
 namespace DShotgun.Dialogs
@@ -34,14 +34,12 @@ namespace DShotgun.Dialogs
         public float TypingSpeed { get => _typingSpeed; }
         public float TimeBetweenChar { get => _typingSpeed > 0.0f ? 1.0f / _typingSpeed : 0.0f; }
         
-        [FormerlySerializedAs("defasultTypingSound")]
-        [FormerlySerializedAs("_typingSound")]
         [Header("Sound")]
         [Tooltip("Sound played at each new char")]
-        [SerializeField] private AudioClip _defasultTypingSound;
-        public AudioClip DefaultTypingSound { get => _defasultTypingSound; }
+        [SerializeField] private EventReference _defaultTypingSound;
+        public EventReference DefaultTypingSound { get => _defaultTypingSound; }
         [Tooltip("Pitch of the Sound played")]
-        [SerializeField, Range(-3.0f, 3.0f)] private float _soundPitch = 1.0f;
+        [SerializeField, Range(0.0f, 3.0f)] private float _soundPitch = 1.0f;
         public float SoundPitch { get => _soundPitch; }
 
         [FormerlySerializedAs("_hasDefaultColor")]
@@ -98,8 +96,8 @@ namespace DShotgun.Dialogs
                 result._charaNameSprite = a_value.CharaNameSprite;
                 result._nameDisplayedAsTMP = a_value.NameDisplayedAsTMP;
             }
-            if (result._defasultTypingSound == null) {
-                result._defasultTypingSound = a_value.DefaultTypingSound;
+            if (result._defaultTypingSound.IsNull) {
+                result._defaultTypingSound = a_value.DefaultTypingSound;
             }
 
             if (!result._hasPersonalisedColor) {
@@ -132,7 +130,7 @@ namespace DShotgun.Dialogs
         public ProfileValues<WritingProfile> typingProfile;
         public ProfileValues<float> typingSpeed;
         public float typingDelay { get => typingSpeed.GetLastValue > 0.0f ? 1.0f / typingSpeed.GetLastValue : 0.0f; }
-        public ProfileValues<AudioClip> typingSound;
+        public ProfileValues<EventReference> typingSound;
         public ProfileValues<float> soundPitch;
 
         public void ResetAll() {
@@ -147,7 +145,7 @@ namespace DShotgun.Dialogs
             
             typingProfile = new ProfileValues<WritingProfile>(_defaultProfile.TypingProfile);
             typingSpeed = new ProfileValues<float>(_defaultProfile.TypingSpeed);
-            typingSound = new ProfileValues<AudioClip>(_defaultProfile.DefaultTypingSound);
+            typingSound = new ProfileValues<EventReference>(_defaultProfile.DefaultTypingSound);
             soundPitch = new ProfileValues<float>(_defaultProfile.SoundPitch);
         }
     }

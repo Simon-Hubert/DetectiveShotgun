@@ -1,23 +1,22 @@
-using System;
 using DShotgun.Sound;
 using UnityEngine;
 using FMODUnity;
 using FMOD.Studio;
 using NaughtyAttributes;
+using UnityEngine.Serialization;
 
 public class DSoundEmitter : MonoBehaviour
 {
-    [SerializeField] private EventReference _soundEvent;
+    [SerializeField] public EventReference soundEvent;
     public EventInstance soundInstance { get; protected set; }
 
-    /// <summary>
-    /// The sound will play, but the instance will stay alive until it is stopped
-    /// </summary>
-    public virtual void PlayAndPersist() {
-        if (soundInstance.isValid()) Stop();
-        
-        soundInstance = SoundManager.PlaySound(_soundEvent);
+    public void CreateInstance() {
+        SoundManager.CreateSoundInstance(soundEvent);
     }
+    public void CreateInstance(EventReference a_ref) {
+        SoundManager.CreateSoundInstance(soundEvent);
+    }
+    
     /// <summary>
     /// The sound will play, and the instance will destroy itself once it is stopped or if the sound event is finished
     /// </summary>
@@ -25,7 +24,23 @@ public class DSoundEmitter : MonoBehaviour
     public virtual void Play() {
         if (soundInstance.isValid()) Stop();
         
-        soundInstance = SoundManager.PlayOneShot(_soundEvent);
+        soundInstance = SoundManager.PlayOneShot(soundEvent);
+    }
+    /// <summary>
+    /// The sound will play, but the instance will stay alive until it is stopped
+    /// </summary>
+    public virtual void PlayAndPersist() {
+        if (soundInstance.isValid()) Stop();
+        
+        soundInstance = SoundManager.PlaySound(soundEvent);
+    }
+    /// <summary>
+    /// The sound will play, but the instance will stay alive until it is stopped. The instance will be used to play sound again when this is called and the instance already exist.
+    /// </summary>
+    public virtual void PlayRepeat()
+    {
+        if (soundInstance.isValid()) soundInstance.start();
+        else soundInstance = SoundManager.PlaySound(soundEvent);
     }
 
     [Button]
