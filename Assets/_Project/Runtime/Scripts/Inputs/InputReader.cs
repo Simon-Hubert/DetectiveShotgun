@@ -57,7 +57,7 @@ public class InputReader : MonoBehaviour
 
     private void OnScrollPerformed(InputAction.CallbackContext obj)
     {
-        float y = obj.ReadValue<float>();
+        float y = obj.ReadValue<Vector2>().y;
         if(Mathf.Approximately(y, 0f)) return;
         OnScrolled?.Invoke(y > 0f ? 1 : -1);
     }
