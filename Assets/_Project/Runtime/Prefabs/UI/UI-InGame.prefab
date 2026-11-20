@@ -326,6 +326,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: MENUS
       objectReference: {fileID: 0}
+    - target: {fileID: 7313386076793253828, guid: c3fc6d62a27b78940a0371a791d7ffb4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313386076793253828, guid: c3fc6d62a27b78940a0371a791d7ffb4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313386076793253828, guid: c3fc6d62a27b78940a0371a791d7ffb4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8434865798155994227}
+    - target: {fileID: 7313386076793253828, guid: c3fc6d62a27b78940a0371a791d7ffb4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313386076793253828, guid: c3fc6d62a27b78940a0371a791d7ffb4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleVisible
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313386076793253828, guid: c3fc6d62a27b78940a0371a791d7ffb4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DShotgun.LogUI, DShotgun
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313386076793253828, guid: c3fc6d62a27b78940a0371a791d7ffb4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7594397033803182430, guid: c3fc6d62a27b78940a0371a791d7ffb4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -478,6 +506,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7139752141490743275, guid: f4f240b9a73c6238da07d03605d96cfe, type: 3}
   m_PrefabInstance: {fileID: 4771537410676375658}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8434865798155994227 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3979297775580103705, guid: f4f240b9a73c6238da07d03605d96cfe, type: 3}
+  m_PrefabInstance: {fileID: 4771537410676375658}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf96037a27213bd1289b17230d1b255f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.JournalSingleton
 --- !u!1001 &9032397620957618950
 PrefabInstance:
   m_ObjectHideFlags: 0
