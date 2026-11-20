@@ -54,25 +54,25 @@ namespace DShotgun
 
         private void Shoot(InteractableManager interactableManager)
         {
+            if(interactableManager == null) return;
             GameObject go = _pool.GetShotImpact();
-            VisualEffectAsset impactVfx = null;
+            List<VisualEffectAsset> impactVfxs = null;
             Color color = Color.white;
 
             Vector3 worldImpact = Camera.main.ScreenToWorldPoint(InputReader.PointerPosition);
+            
+            ShotImpactSpriteProvider provider = interactableManager.GetComponent<ShotImpactSpriteProvider>();
+            if (provider) 
+            {
+                go.GetComponent<SpriteRenderer>().sprite = provider.GetSprite();
+                impactVfxs = provider.GetImpactVfxs();
+            }
 
-            if (interactableManager) {
-                ShotImpactSpriteProvider provider = interactableManager.GetComponent<ShotImpactSpriteProvider>();
-                if (provider) {
-                    go.GetComponent<SpriteRenderer>().sprite = provider.GetSprite();
-                    impactVfx = provider.GetImpactVfx();
-                }
-
-                SpriteRenderer spriteRenderer = interactableManager.GetComponentInChildren<SpriteRenderer>();
-                if (spriteRenderer != null)
-                {
-                    worldImpact.z = spriteRenderer.transform.position.z;
-                    color = ReadPixel(spriteRenderer, worldImpact);
-                }
+            SpriteRenderer spriteRenderer = interactableManager.GetComponentInChildren<SpriteRenderer>();
+            if (spriteRenderer != null)
+            {
+                worldImpact.z = spriteRenderer.transform.position.z;
+                color = ReadPixel(spriteRenderer, worldImpact);
             }
             
             go.transform.position = worldImpact;
@@ -80,7 +80,10 @@ namespace DShotgun
             vector3.z = 0;
             go.transform.position = vector3;
 
-            PlayImpactVfx(vector3, impactVfx, color);
+            foreach (VisualEffectAsset impactVfx in impactVfxs)
+            {
+                PlayImpactVfx(vector3, impactVfx, color);
+            }
             _onShoot?.Invoke();
         }
         
@@ -90,6 +93,11 @@ namespace DShotgun
             if (sprite == null || sprite.texture == null) return Color.white;
 
             Texture2D texture = sprite.texture;
+            if (!texture.isReadable)
+            {
+                Debug.Log($"[SHOTIMPACT] Texture {texture.name} is not readable.");
+                return Color.white;
+            }
             Vector3 localImpact = spriteRenderer.transform.InverseTransformPoint(worldImpact);
             if (spriteRenderer.flipX) localImpact.x = -localImpact.x;
             if (spriteRenderer.flipY) localImpact.y = -localImpact.y;

@@ -1,5 +1,111 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6796418143197462868
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4761648953128780453}
+  - component: {fileID: 5695497234035807386}
+  m_Layer: 0
+  m_Name: "Pick Up Fl\xE9chette"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4761648953128780453
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6796418143197462868}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.6666662, y: 1.6666662, z: 1.6666665}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2055202371214504923}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5695497234035807386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6796418143197462868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6cc5e53c31ba304caa4e25e53e0803f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.PickUpItemSequence
+  _useGameObjectSprite: 0
+  _item: {fileID: 11400000, guid: 8b40d40b4d7240a48afe747ef77da5a6, type: 2}
+  _jumpHeight: 2.5
+  _gravity: 30
+  _spinTurns: 6
+  _spin:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.4
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _size:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.6
+      value: 0.15
+      inSlope: 0.6
+      outSlope: 0.6
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 3
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &8991724577674947215
 GameObject:
   m_ObjectHideFlags: 0
@@ -56,6 +162,14 @@ PrefabInstance:
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 1103805392661517608}
+    - target: {fileID: 1884073844623764545, guid: e600d0dcdd46ef345bdad5fb1260fefa, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884073844623764545, guid: e600d0dcdd46ef345bdad5fb1260fefa, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
     - target: {fileID: 4920305064072674668, guid: e600d0dcdd46ef345bdad5fb1260fefa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.97
@@ -180,6 +294,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3361790983790006879}
     m_Modifications:
+    - target: {fileID: 414582538760515002, guid: 697953607d146904e95be1b1b00b7459, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 414582538760515002, guid: 697953607d146904e95be1b1b00b7459, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d1eb60a719f45884d96949c54029cfe8, type: 3}
     - target: {fileID: 6259389762507331388, guid: 697953607d146904e95be1b1b00b7459, type: 3}
       propertyPath: m_Name
       value: DirtyMartini_Plein
@@ -286,6 +408,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7299841992992595494, guid: 21b4753645d024d47b688a4d1a779964, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7299841992992595494, guid: 21b4753645d024d47b688a4d1a779964, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d1eb60a719f45884d96949c54029cfe8, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -348,6 +478,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7295309159550697937, guid: 6754e84c14d751544b82002b0c312ed6, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7295309159550697937, guid: 6754e84c14d751544b82002b0c312ed6, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 2b4ec60e844077148b990d57d3e87b49, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -366,6 +504,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3361790983790006879}
     m_Modifications:
+    - target: {fileID: 1692479896997297343, guid: aec39c7958df4e945af4182e1f6d9c41, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1692479896997297343, guid: aec39c7958df4e945af4182e1f6d9c41, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
     - target: {fileID: 4927448388440573497, guid: aec39c7958df4e945af4182e1f6d9c41, type: 3}
       propertyPath: m_Name
       value: Any
@@ -472,6 +618,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8555418000216291314, guid: 49e354eca746d3d46a2c5278c863c56b, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8555418000216291314, guid: 49e354eca746d3d46a2c5278c863c56b, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -495,6 +649,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3361790983790006879}
     m_Modifications:
+    - target: {fileID: 2768604752608789916, guid: 6d8121cb1d14cd642b65d42aafb0917e, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2768604752608789916, guid: 6d8121cb1d14cd642b65d42aafb0917e, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d1eb60a719f45884d96949c54029cfe8, type: 3}
     - target: {fileID: 8462609043161464602, guid: 6d8121cb1d14cd642b65d42aafb0917e, type: 3}
       propertyPath: m_Name
       value: DirtyMartini_Sally
@@ -557,6 +719,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3361790983790006879}
     m_Modifications:
+    - target: {fileID: 3950993615008800566, guid: d6d15c9196a308c4d904b2b3615f0880, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3950993615008800566, guid: d6d15c9196a308c4d904b2b3615f0880, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 2b4ec60e844077148b990d57d3e87b49, type: 3}
     - target: {fileID: 7334545812325574064, guid: d6d15c9196a308c4d904b2b3615f0880, type: 3}
       propertyPath: m_Name
       value: Sally
@@ -685,6 +855,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3361790983790006879}
     m_Modifications:
+    - target: {fileID: 3790488110337184726, guid: b7c1e6f7b3bcdef43bea45f950f195a4, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3790488110337184726, guid: b7c1e6f7b3bcdef43bea45f950f195a4, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d1eb60a719f45884d96949c54029cfe8, type: 3}
+    - target: {fileID: 3790488110337184726, guid: b7c1e6f7b3bcdef43bea45f950f195a4, type: 3}
+      propertyPath: '_impactVfxs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
     - target: {fileID: 7460126567409936720, guid: b7c1e6f7b3bcdef43bea45f950f195a4, type: 3}
       propertyPath: m_Name
       value: CitronPresse
@@ -791,11 +973,32 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flechette
       objectReference: {fileID: 0}
+    - target: {fileID: 7976797878802093366, guid: 8cec5e35c8750364097fe1c353b07b8d, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976797878802093366, guid: 8cec5e35c8750364097fe1c353b07b8d, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
+    - target: {fileID: 7976797878802093366, guid: 8cec5e35c8750364097fe1c353b07b8d, type: 3}
+      propertyPath: '_impactVfxs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1473689643698650822, guid: 8cec5e35c8750364097fe1c353b07b8d, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4912359872539198972, guid: 8cec5e35c8750364097fe1c353b07b8d, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 4761648953128780453}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cec5e35c8750364097fe1c353b07b8d, type: 3}
+--- !u!4 &2055202371214504923 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4912359872539198972, guid: 8cec5e35c8750364097fe1c353b07b8d, type: 3}
+  m_PrefabInstance: {fileID: 6388847467597854247}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7527491669876830780 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3521457732931191835, guid: 8cec5e35c8750364097fe1c353b07b8d, type: 3}
@@ -853,6 +1056,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: ArdoiseScore
       objectReference: {fileID: 0}
+    - target: {fileID: 8038041613940647298, guid: a0ddc32f8f852484f8206c31fd778ef7, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8038041613940647298, guid: a0ddc32f8f852484f8206c31fd778ef7, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
+    - target: {fileID: 8038041613940647298, guid: a0ddc32f8f852484f8206c31fd778ef7, type: 3}
+      propertyPath: '_impactVfxs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -125,8 +125,6 @@ MonoBehaviour:
       slotIndex: 0
     - context: {fileID: 114350483966678873}
       slotIndex: 0
-    - context: {fileID: 114350483966679008}
-      slotIndex: 0
     - context: {fileID: 114350483966679143}
       slotIndex: 0
   eventName: OnImpact
@@ -509,7 +507,7 @@ MonoBehaviour:
   enableRayTracing: 0
   decimationFactor: 1
   raytracedScaleMode: 0
-  needsOwnSort: 0
+  needsOwnSort: 1
   needsOwnAabbBuffer: 0
   shaderGraph: {fileID: 0}
   materialSettings:
@@ -2163,7 +2161,7 @@ MonoBehaviour:
   enableRayTracing: 0
   decimationFactor: 1
   raytracedScaleMode: 0
-  needsOwnSort: 0
+  needsOwnSort: 1
   needsOwnAabbBuffer: 0
   shaderGraph: {fileID: 0}
   materialSettings:
@@ -3698,7 +3696,7 @@ MonoBehaviour:
   - {fileID: 114350483966678755}
   - {fileID: 114350483966678757}
   dataType: 0
-  capacity: 48
+  capacity: 54
   stripCapacity: 1
   particlePerStripCount: 128
   needsComputeBounds: 1
@@ -3802,7 +3800,7 @@ MonoBehaviour:
   enableRayTracing: 0
   decimationFactor: 1
   raytracedScaleMode: 0
-  needsOwnSort: 0
+  needsOwnSort: 1
   needsOwnAabbBuffer: 0
   shaderGraph: {fileID: 0}
   materialSettings:
@@ -7826,7 +7824,7 @@ MonoBehaviour:
   - {fileID: 114350483966678890}
   - {fileID: 114350483966678892}
   dataType: 0
-  capacity: 64
+  capacity: 32
   stripCapacity: 1
   particlePerStripCount: 128
   needsComputeBounds: 1
@@ -7930,7 +7928,7 @@ MonoBehaviour:
   enableRayTracing: 0
   decimationFactor: 1
   raytracedScaleMode: 0
-  needsOwnSort: 0
+  needsOwnSort: 1
   needsOwnAabbBuffer: 0
   shaderGraph: {fileID: 0}
   materialSettings:
@@ -7964,7 +7962,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"obj":{"fileID":2800000,"guid":"8adbbe5a6d60e91438c6f47f6c5b0a92","type":3}}'
+      m_SerializableObject: '{"obj":{"fileID":2800000,"guid":"41f786a8ac637a94fb85d1f10ec77aa3","type":3}}'
     m_Space: -1
   m_Property:
     name: mainTexture
@@ -9410,7 +9408,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 6
+      m_SerializableObject: 8
     m_Space: -1
   m_Property:
     name: MinSpeed
@@ -9444,7 +9442,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 11
+      m_SerializableObject: 14
     m_Space: -1
   m_Property:
     name: MaxSpeed
@@ -9978,7 +9976,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0.8
+      m_SerializableObject: 0.3
     m_Space: -1
   m_Property:
     name: A
@@ -10012,7 +10010,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 1.3
+      m_SerializableObject: 0.6
     m_Space: -1
   m_Property:
     name: B
@@ -11717,9 +11715,7 @@ MonoBehaviour:
   m_Label: 
   m_Data: {fileID: 114350483966679009}
   m_InputFlowSlot:
-  - link:
-    - context: {fileID: 114350483966678615}
-      slotIndex: 0
+  - link: []
   - link: []
   m_OutputFlowSlot:
   - link:
@@ -12058,7 +12054,7 @@ MonoBehaviour:
   enableRayTracing: 0
   decimationFactor: 1
   raytracedScaleMode: 0
-  needsOwnSort: 0
+  needsOwnSort: 1
   needsOwnAabbBuffer: 0
   shaderGraph: {fileID: 0}
   materialSettings:
@@ -16178,7 +16174,7 @@ MonoBehaviour:
   enableRayTracing: 0
   decimationFactor: 1
   raytracedScaleMode: 0
-  needsOwnSort: 0
+  needsOwnSort: 1
   needsOwnAabbBuffer: 0
   shaderGraph: {fileID: 0}
   materialSettings:
