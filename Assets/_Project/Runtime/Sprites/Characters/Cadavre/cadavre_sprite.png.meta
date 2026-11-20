@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d3ec470a528689547977fb5d847f69e6
+guid: 0f7abdc381a95a147a00a5f9811215c0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6196251675710892429
-    second: cadavre_debout_1_0
+      213: 7132275706792236900
+    second: cadavre_sprite_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cadavre_debout_1_0
+      name: cadavre_sprite_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 22
-        width: 385
-        height: 795
+        x: 40
+        y: 12
+        width: 487
+        height: 923
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 376555a1eed720aa0800000000000000
-      internalID: -6196251675710892429
+      spriteID: 467df7787feeaf260800000000000000
+      internalID: 7132275706792236900
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cadavre_debout_1_0: -6196251675710892429
+      cadavre_sprite_0: 7132275706792236900
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
