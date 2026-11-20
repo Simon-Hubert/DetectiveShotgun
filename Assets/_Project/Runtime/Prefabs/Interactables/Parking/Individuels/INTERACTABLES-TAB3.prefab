@@ -60,6 +60,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3086846321660041346, guid: bd6d27b2d4fef61a88dbf06aafa0ca4d, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086846321660041346, guid: bd6d27b2d4fef61a88dbf06aafa0ca4d, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
     - target: {fileID: 4682384907877346168, guid: bd6d27b2d4fef61a88dbf06aafa0ca4d, type: 3}
       propertyPath: _text._text
       value: "Mais aucun pilier n\u2019est porteur ici ?"
@@ -357,6 +365,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3086846321660041346, guid: bd6d27b2d4fef61a88dbf06aafa0ca4d, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086846321660041346, guid: bd6d27b2d4fef61a88dbf06aafa0ca4d, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
     - target: {fileID: 4682384907877346168, guid: bd6d27b2d4fef61a88dbf06aafa0ca4d, type: 3}
       propertyPath: _text._text
       value: "Ah ouais ouais, c\u2019est pas porteur du tout."
@@ -915,7 +931,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
   _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
 --- !u!114 &4919594362014338738 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2113049303628729851, guid: 3426a62755bb2c4798d95d113436090c, type: 3}
@@ -1351,7 +1368,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
   _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
 --- !u!4 &6539662205001192873 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4521904176308944445, guid: c8767f96f25ab15788061dc0f892a7d0, type: 3}
@@ -1384,6 +1402,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.82
       objectReference: {fileID: 0}
+    - target: {fileID: 3086846321660041346, guid: bd6d27b2d4fef61a88dbf06aafa0ca4d, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086846321660041346, guid: bd6d27b2d4fef61a88dbf06aafa0ca4d, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
     - target: {fileID: 5486778619114366756, guid: bd6d27b2d4fef61a88dbf06aafa0ca4d, type: 3}
       propertyPath: m_Name
       value: Pilier

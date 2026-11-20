@@ -2646,7 +2646,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
   _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
 --- !u!1 &3512486533067180439
 GameObject:
   m_ObjectHideFlags: 0
@@ -7151,7 +7152,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
   _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
+  - {fileID: 8926484042661614526, guid: d1eb60a719f45884d96949c54029cfe8, type: 3}
 --- !u!114 &5826040508518238582 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5934664300677642109, guid: 7f32276dd9ec006bf869502fc49a3dd9, type: 3}
@@ -7548,7 +7551,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
   _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: 2b4ec60e844077148b990d57d3e87b49, type: 3}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: 2b4ec60e844077148b990d57d3e87b49, type: 3}
 --- !u!4 &2402585391794212029 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3247030628795815694, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
@@ -7649,6 +7653,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5335737705027560918, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: _impactVfx
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 2b4ec60e844077148b990d57d3e87b49, type: 3}
+    - target: {fileID: 5335737705027560918, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335737705027560918, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
       value: 
       objectReference: {fileID: 8926484042661614526, guid: 2b4ec60e844077148b990d57d3e87b49, type: 3}
     - target: {fileID: 6616001945095013126, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
@@ -8290,7 +8302,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
   _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
 --- !u!114 &5777243873425648208 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9117438817875453713, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
@@ -8633,7 +8646,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
   _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
 --- !u!114 &2080449667855337264 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2801558698750868880, guid: 58a5a073a5aa4b412b24b055389c9eec, type: 3}
@@ -8864,7 +8878,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
   _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
 --- !u!4 &4034187344338024658 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7403264112128920472, guid: 7d5d2d0ebc4646ecdbffb72b3286b446, type: 3}
@@ -8943,6 +8958,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 6830530470548733184, guid: 9f2015ec4f3bc5cd5b83f3f15e3c243e, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830530470548733184, guid: 9f2015ec4f3bc5cd5b83f3f15e3c243e, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d1eb60a719f45884d96949c54029cfe8, type: 3}
     - target: {fileID: 8162382127532259278, guid: 9f2015ec4f3bc5cd5b83f3f15e3c243e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.79
