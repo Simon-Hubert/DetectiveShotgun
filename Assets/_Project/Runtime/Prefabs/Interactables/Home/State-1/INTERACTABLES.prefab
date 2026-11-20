@@ -46,6 +46,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: DShotgun::DShotgun.RaiseFlagSequence
   _flag:
     _flagName: TVOn
+--- !u!1 &1051535175043329670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3528381357574344752}
+  - component: {fileID: 4223864371493411471}
+  m_Layer: 0
+  m_Name: Activate Visuals
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3528381357574344752
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051535175043329670}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7061268942554603136}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4223864371493411471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051535175043329670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06887433ba2fc1247a29057828736437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HierarchySequences::HierarchySequences.ActivateObject
+  _object: {fileID: 1931004383660988302}
+  _active: 1
 --- !u!1 &1351507554330667505
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,9 +293,9 @@ MonoBehaviour:
   _event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DShotgun.PlayerInventory, DShotgun
-        m_MethodName: ConsumeItemLoaded
+      - m_Target: {fileID: 3844172125284745231}
+        m_TargetAssemblyTypeName: DShotgun.ScreenShaker, DShotgun
+        m_MethodName: Shake
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -298,6 +344,112 @@ Transform:
   - {fileID: 4519121504722390132}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8744742637414315267
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6127400132324864276}
+  - component: {fileID: 2166552620204767245}
+  m_Layer: 0
+  m_Name: Pick Up Whisky
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6127400132324864276
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8744742637414315267}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2835997059357191355}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2166552620204767245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8744742637414315267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6cc5e53c31ba304caa4e25e53e0803f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.PickUpItemSequence
+  _useGameObjectSprite: 0
+  _item: {fileID: 11400000, guid: 05727213ee50da5f09ba41903003817d, type: 2}
+  _jumpHeight: 2.5
+  _gravity: 30
+  _spinTurns: 6
+  _spin:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.4
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _size:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.6
+      value: 0.15
+      inSlope: 0.6
+      outSlope: 0.6
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 3
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &69399680035862525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -367,6 +519,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Verre
       objectReference: {fileID: 0}
+    - target: {fileID: 7708220314185691348, guid: bafdc99f2659560b6856fd03701bd178, type: 3}
+      propertyPath: _impactVfx
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d1eb60a719f45884d96949c54029cfe8, type: 3}
+    - target: {fileID: 7708220314185691348, guid: bafdc99f2659560b6856fd03701bd178, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708220314185691348, guid: bafdc99f2659560b6856fd03701bd178, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d1eb60a719f45884d96949c54029cfe8, type: 3}
     - target: {fileID: 7947742531192711778, guid: bafdc99f2659560b6856fd03701bd178, type: 3}
       propertyPath: _text._text
       value: "J\u2019ai bien fait de claquer ma prime dans ce verre en diamant !"
@@ -398,6 +562,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3317348736726321732, guid: bafdc99f2659560b6856fd03701bd178, type: 3}
   m_PrefabInstance: {fileID: 69399680035862525}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3844172125284745231 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3868504712007284722, guid: bafdc99f2659560b6856fd03701bd178, type: 3}
+  m_PrefabInstance: {fileID: 69399680035862525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6e1a5d5bff0ed919060c960b142b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ScreenShaker
 --- !u!4 &4699064032686050074 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4738036892681977063, guid: bafdc99f2659560b6856fd03701bd178, type: 3}
@@ -474,8 +649,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3620315820354850619, guid: 009dd742395411300b334255d916b42a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5021680498955294305}
   m_SourcePrefab: {fileID: 100100000, guid: 009dd742395411300b334255d916b42a, type: 3}
+--- !u!1 &3521038714754471164 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3620315820354850619, guid: 009dd742395411300b334255d916b42a, type: 3}
+  m_PrefabInstance: {fileID: 207389887117974471}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5021680498955294305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3521038714754471164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
 --- !u!4 &7784097192176134858 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7991188007684862221, guid: 009dd742395411300b334255d916b42a, type: 3}
@@ -536,8 +734,32 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1351431863959154699, guid: 8d929fc47c33dd6b2b5937039ed51013, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 812205462673059929}
   m_SourcePrefab: {fileID: 100100000, guid: 8d929fc47c33dd6b2b5937039ed51013, type: 3}
+--- !u!1 &668281714374772975 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1351431863959154699, guid: 8d929fc47c33dd6b2b5937039ed51013, type: 3}
+  m_PrefabInstance: {fileID: 1983684672292354276}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &812205462673059929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668281714374772975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
+  - {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
 --- !u!4 &5571960413329937109 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6256875141638040113, guid: 8d929fc47c33dd6b2b5937039ed51013, type: 3}
@@ -551,6 +773,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5306945967338398399}
     m_Modifications:
+    - target: {fileID: 241656848499022407, guid: ddb971cf586013d22aaa2f956b594905, type: 3}
+      propertyPath: _text._text
+      value: "Rien de mieux pour noyer les journ\xE9es de merde."
+      objectReference: {fileID: 0}
     - target: {fileID: 1443625258659536710, guid: ddb971cf586013d22aaa2f956b594905, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.08
@@ -593,15 +819,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1664171178135218916, guid: ddb971cf586013d22aaa2f956b594905, type: 3}
       propertyPath: m_Name
-      value: Invoke Event with 2 binds
+      value: Invoke Event with 1 binds
       objectReference: {fileID: 0}
+    - target: {fileID: 4577559122793854653, guid: ddb971cf586013d22aaa2f956b594905, type: 3}
+      propertyPath: _impactVfx
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d1eb60a719f45884d96949c54029cfe8, type: 3}
+    - target: {fileID: 4577559122793854653, guid: ddb971cf586013d22aaa2f956b594905, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577559122793854653, guid: ddb971cf586013d22aaa2f956b594905, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d1eb60a719f45884d96949c54029cfe8, type: 3}
     - target: {fileID: 5553764746313125816, guid: ddb971cf586013d22aaa2f956b594905, type: 3}
       propertyPath: m_Name
       value: Whisky
       objectReference: {fileID: 0}
     - target: {fileID: 6242558103682884607, guid: ddb971cf586013d22aaa2f956b594905, type: 3}
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6242558103682884607, guid: ddb971cf586013d22aaa2f956b594905, type: 3}
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -628,10 +866,20 @@ PrefabInstance:
       value: DShotgun.ItemData, DShotgun
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3504211650824349853, guid: ddb971cf586013d22aaa2f956b594905, type: 3}
+    - {fileID: 6517775378006339292, guid: ddb971cf586013d22aaa2f956b594905, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1001084283729346441, guid: ddb971cf586013d22aaa2f956b594905, type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 6127400132324864276}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddb971cf586013d22aaa2f956b594905, type: 3}
+--- !u!4 &2835997059357191355 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1001084283729346441, guid: ddb971cf586013d22aaa2f956b594905, type: 3}
+  m_PrefabInstance: {fileID: 3080440801732350770}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4519121504722390132 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1443625258659536710, guid: ddb971cf586013d22aaa2f956b594905, type: 3}
@@ -645,6 +893,46 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5306945967338398399}
     m_Modifications:
+    - target: {fileID: 310074050930475095, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 310074050930475095, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 310074050930475095, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2476680492123576221, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 2476680492123576221, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 2476680492123576221, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 2476680492123576221, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2476680492123576221, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 2476680492123576221, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3214382606564051410, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4032191186021286382, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
       propertyPath: _text._text
       value: "Faudrait que je revoie mon budget t\xE9l\xE9vision."
@@ -709,6 +997,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7601143047949243632, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
+      propertyPath: m_Size.x
+      value: 9.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 7601143047949243632, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
+      propertyPath: m_Size.y
+      value: 6.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 7601143047949243632, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d6d55dd73f1879a1781f49e0cead5488, type: 3}
+    - target: {fileID: 7601143047949243632, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8913685100112190864, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
       propertyPath: m_Name
       value: Television
@@ -717,18 +1021,50 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6316618445468401884, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 3528381357574344752}
+    - targetCorrespondingSourceObject: {fileID: 6316618445468401884, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8357049585461117993}
     - targetCorrespondingSourceObject: {fileID: 2154302479557551701, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5413258979775766933}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8913685100112190864, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1810730486738289427}
   m_SourcePrefab: {fileID: 100100000, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
+--- !u!1 &1931004383660988302 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3214382606564051410, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
+  m_PrefabInstance: {fileID: 3915749801700105820}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3148604388040341513 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2154302479557551701, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
   m_PrefabInstance: {fileID: 3915749801700105820}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5612695618956100556 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8913685100112190864, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
+  m_PrefabInstance: {fileID: 3915749801700105820}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1810730486738289427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5612695618956100556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: d1eb60a719f45884d96949c54029cfe8, type: 3}
+  - {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
 --- !u!4 &6064065450998276283 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7093286874740735719, guid: 82a32ea302437b3598a87f8213e9d7e7, type: 3}
@@ -791,6 +1127,10 @@ PrefabInstance:
       propertyPath: _onAimed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 141119769089723971}
+    - target: {fileID: 6633280959737675276, guid: bc32c1ab5465ffb429f53c68eaa308aa, type: 3}
+      propertyPath: _text._text
+      value: "Oh c\u2019est canon !"
+      objectReference: {fileID: 0}
     - target: {fileID: 6976408510611001170, guid: bc32c1ab5465ffb429f53c68eaa308aa, type: 3}
       propertyPath: m_Name
       value: Antenne
@@ -798,7 +1138,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6976408510611001170, guid: bc32c1ab5465ffb429f53c68eaa308aa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 147496858466261906}
   m_SourcePrefab: {fileID: 100100000, guid: bc32c1ab5465ffb429f53c68eaa308aa, type: 3}
 --- !u!114 &141119769089723971 stripped
 MonoBehaviour:
@@ -816,6 +1159,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1834286153519753398, guid: bc32c1ab5465ffb429f53c68eaa308aa, type: 3}
   m_PrefabInstance: {fileID: 4199270929980491445}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6527932726419884519 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6976408510611001170, guid: bc32c1ab5465ffb429f53c68eaa308aa, type: 3}
+  m_PrefabInstance: {fileID: 4199270929980491445}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &147496858466261906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6527932726419884519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
+  - {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
+  - {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
 --- !u!1001 &4650882804296378487
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -825,12 +1190,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 5306945967338398399}
     m_Modifications:
     - target: {fileID: 17200228706095127, guid: c6900bbd2c81d8f86bf58a6da641b38a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 17200228706095127, guid: c6900bbd2c81d8f86bf58a6da641b38a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 17200228706095127, guid: c6900bbd2c81d8f86bf58a6da641b38a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 17200228706095127, guid: c6900bbd2c81d8f86bf58a6da641b38a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.94
+      value: 5.99
       objectReference: {fileID: 0}
     - target: {fileID: 17200228706095127, guid: c6900bbd2c81d8f86bf58a6da641b38a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.53
+      value: 4.01
       objectReference: {fileID: 0}
     - target: {fileID: 17200228706095127, guid: c6900bbd2c81d8f86bf58a6da641b38a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -881,6 +1258,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: d7e22a340255e894abfda56e6cefa767, type: 3}
     - target: {fileID: 1020535013703842664, guid: c6900bbd2c81d8f86bf58a6da641b38a, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1020535013703842664, guid: c6900bbd2c81d8f86bf58a6da641b38a, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
@@ -926,7 +1307,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3923959068781836117, guid: c6900bbd2c81d8f86bf58a6da641b38a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8513235902946993155}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4460452267309027047, guid: c6900bbd2c81d8f86bf58a6da641b38a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 882470486137424627}
   m_SourcePrefab: {fileID: 100100000, guid: c6900bbd2c81d8f86bf58a6da641b38a, type: 3}
 --- !u!4 &4663014247823571040 stripped
 Transform:
@@ -949,6 +1333,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d2895122bcfbdf6aa81ac559e2c0e2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.SpriteSwitcher
+--- !u!1 &9038149340987958928 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4460452267309027047, guid: c6900bbd2c81d8f86bf58a6da641b38a, type: 3}
+  m_PrefabInstance: {fileID: 4650882804296378487}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &882470486137424627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9038149340987958928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
 --- !u!1001 &5133570791796101940
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -973,6 +1377,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.017415643
       objectReference: {fileID: 0}
+    - target: {fileID: 2687390967103720860, guid: 3ed4bc405d7e06fe0a62362b241e2512, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.89
+      objectReference: {fileID: 0}
     - target: {fileID: 2968862142072138179, guid: 3ed4bc405d7e06fe0a62362b241e2512, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -980,6 +1388,10 @@ PrefabInstance:
     - target: {fileID: 2968862142072138179, guid: 3ed4bc405d7e06fe0a62362b241e2512, type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618669043129121872, guid: 3ed4bc405d7e06fe0a62362b241e2512, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3620386728353497304, guid: 3ed4bc405d7e06fe0a62362b241e2512, type: 3}
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.size
@@ -1106,6 +1518,10 @@ PrefabInstance:
       value: 0.88
       objectReference: {fileID: 0}
     - target: {fileID: 4889823642632725191, guid: 3ed4bc405d7e06fe0a62362b241e2512, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 4889823642632725191, guid: 3ed4bc405d7e06fe0a62362b241e2512, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
@@ -1166,10 +1582,33 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 8815137496695545745, guid: 3ed4bc405d7e06fe0a62362b241e2512, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8399060724473571687, guid: 3ed4bc405d7e06fe0a62362b241e2512, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7825715248445187068}
   m_SourcePrefab: {fileID: 100100000, guid: 3ed4bc405d7e06fe0a62362b241e2512, type: 3}
 --- !u!4 &351913942047388147 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4889823642632725191, guid: 3ed4bc405d7e06fe0a62362b241e2512, type: 3}
   m_PrefabInstance: {fileID: 5133570791796101940}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3724879678758812243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8399060724473571687, guid: 3ed4bc405d7e06fe0a62362b241e2512, type: 3}
+  m_PrefabInstance: {fileID: 5133570791796101940}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7825715248445187068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3724879678758812243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}

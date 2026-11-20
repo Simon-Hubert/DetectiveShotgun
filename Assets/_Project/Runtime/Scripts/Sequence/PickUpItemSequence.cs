@@ -1,6 +1,7 @@
 using System;
 using HierarchySequences;
 using UnityEngine;
+using UnityEngine.Rendering.UI;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
@@ -11,6 +12,7 @@ namespace DShotgun
     /// </summary>
     public class PickUpItemSequence : ASequencable
     {
+        [SerializeField] private bool _useGameObjectSprite = false;
         [SerializeField] private ItemData _item;
 
         [Header("Trajectoire (parabole)")]
@@ -66,9 +68,12 @@ namespace DShotgun
             Image flying = new GameObject(source.name + " (ramassage)", typeof(RectTransform), typeof(Image)).GetComponent<Image>();
             flying.rectTransform.SetParent(pocket.parent, false);
             flying.rectTransform.pivot = pocket.pivot;
-            flying.sprite = _item.Sprite;
-            SpriteRenderer visual = source.GetComponentInChildren<SpriteRenderer>();
-            if (visual != null && visual.sprite != null) flying.sprite = visual.sprite;
+            
+            if(_useGameObjectSprite)
+                flying.sprite = source.GetComponentInChildren<SpriteRenderer>().sprite;
+            else
+                flying.sprite = _item.Sprite;
+            
             flying.color = pocketImage.color;
             flying.preserveAspect = pocketImage.preserveAspect;
             flying.raycastTarget = false;

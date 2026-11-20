@@ -122,7 +122,7 @@ namespace DShotgun
 
         private void HandleScrolled(int obj)
         {
-            throw new System.NotImplementedException();
+            
         }
 
         private void HandleRightClickPressed()
