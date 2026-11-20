@@ -1813,17 +1813,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1467574639 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5978412841767506038, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
-  m_PrefabInstance: {fileID: 762506944}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d52afe4aa63f45647a2ed5e8466a7677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DShotgun::DShotgun.PlayerInventory
 --- !u!1 &1485408570
 GameObject:
   m_ObjectHideFlags: 0
@@ -2599,10 +2588,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: INTERACTABLES
       objectReference: {fileID: 0}
-    - target: {fileID: 8943560706215735501, guid: e4eddc8dbc01308aabeeb27841b5ff6d, type: 3}
-      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 1467574639}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

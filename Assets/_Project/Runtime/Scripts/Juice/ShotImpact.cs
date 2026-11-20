@@ -54,25 +54,25 @@ namespace DShotgun
 
         private void Shoot(InteractableManager interactableManager)
         {
+            if(interactableManager == null) return;
             GameObject go = _pool.GetShotImpact();
             List<VisualEffectAsset> impactVfxs = null;
             Color color = Color.white;
 
             Vector3 worldImpact = Camera.main.ScreenToWorldPoint(InputReader.PointerPosition);
+            
+            ShotImpactSpriteProvider provider = interactableManager.GetComponent<ShotImpactSpriteProvider>();
+            if (provider) 
+            {
+                go.GetComponent<SpriteRenderer>().sprite = provider.GetSprite();
+                impactVfxs = provider.GetImpactVfxs();
+            }
 
-            if (interactableManager) {
-                ShotImpactSpriteProvider provider = interactableManager.GetComponent<ShotImpactSpriteProvider>();
-                if (provider) {
-                    go.GetComponent<SpriteRenderer>().sprite = provider.GetSprite();
-                    impactVfxs = provider.GetImpactVfxs();
-                }
-
-                SpriteRenderer spriteRenderer = interactableManager.GetComponentInChildren<SpriteRenderer>();
-                if (spriteRenderer != null)
-                {
-                    worldImpact.z = spriteRenderer.transform.position.z;
-                    color = ReadPixel(spriteRenderer, worldImpact);
-                }
+            SpriteRenderer spriteRenderer = interactableManager.GetComponentInChildren<SpriteRenderer>();
+            if (spriteRenderer != null)
+            {
+                worldImpact.z = spriteRenderer.transform.position.z;
+                color = ReadPixel(spriteRenderer, worldImpact);
             }
             
             go.transform.position = worldImpact;
