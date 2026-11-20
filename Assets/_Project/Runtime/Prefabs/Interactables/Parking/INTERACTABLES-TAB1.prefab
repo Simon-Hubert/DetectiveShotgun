@@ -9347,19 +9347,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2989814800911385299, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: m_Size.x
-      value: 1.12
+      value: 1.3697392
       objectReference: {fileID: 0}
     - target: {fileID: 2989814800911385299, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: m_Size.y
-      value: 3.77
+      value: 4.8597703
       objectReference: {fileID: 0}
     - target: {fileID: 2989814800911385299, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: m_Offset.x
-      value: 0.15
+      value: 0.27486962
       objectReference: {fileID: 0}
     - target: {fileID: 2989814800911385299, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: m_Offset.y
-      value: -1.03
+      value: -1.1737893
       objectReference: {fileID: 0}
     - target: {fileID: 3012717310776298396, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _left
@@ -9644,6 +9644,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "D\xE9tective Shotgun Speaking"
       objectReference: {fileID: 0}
+    - target: {fileID: 7320573862717859064, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _impactVfx
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 2b4ec60e844077148b990d57d3e87b49, type: 3}
     - target: {fileID: 8570635131466859891, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.88
@@ -9889,6 +9893,10 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: -0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 3256772393086915105, guid: a6878fd5f8efe582195ff9cb82cf0959, type: 3}
+      propertyPath: _impactVfx
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 2b4ec60e844077148b990d57d3e87b49, type: 3}
     - target: {fileID: 5114572218372721699, guid: a6878fd5f8efe582195ff9cb82cf0959, type: 3}
       propertyPath: m_Name
       value: Sally
