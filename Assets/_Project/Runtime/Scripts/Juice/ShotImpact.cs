@@ -90,6 +90,11 @@ namespace DShotgun
             if (sprite == null || sprite.texture == null) return Color.white;
 
             Texture2D texture = sprite.texture;
+            if (!texture.isReadable)
+            {
+                Debug.Log($"[SHOTIMPACT] Texture {texture.name} is not readable.");
+                return Color.white;
+            }
             Vector3 localImpact = spriteRenderer.transform.InverseTransformPoint(worldImpact);
             if (spriteRenderer.flipX) localImpact.x = -localImpact.x;
             if (spriteRenderer.flipY) localImpact.y = -localImpact.y;
