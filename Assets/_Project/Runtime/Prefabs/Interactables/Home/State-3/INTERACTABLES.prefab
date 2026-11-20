@@ -298,7 +298,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
   _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: d1eb60a719f45884d96949c54029cfe8, type: 3}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
+  - {fileID: 8926484042661614526, guid: d1eb60a719f45884d96949c54029cfe8, type: 3}
 --- !u!4 &2166521289437633841 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1693602340958151692, guid: 59e0565126bebd4ad99dcaa3668397d8, type: 3}
@@ -451,7 +453,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
   _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
 --- !u!114 &8150485907404856947 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7172024785469737367, guid: b8f0b5926289f37529fae9fd046516d7, type: 3}
@@ -569,7 +572,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
   _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
 --- !u!4 &7014319263782733539 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8438616099443908742, guid: b4753a6cc522df481b2b53cef11ae8fc, type: 3}
@@ -673,7 +677,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
   _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
 --- !u!1001 &6239067555345626459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -776,7 +781,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
   _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: d1eb60a719f45884d96949c54029cfe8, type: 3}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: d1eb60a719f45884d96949c54029cfe8, type: 3}
 --- !u!114 &6316128277052075276 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 86408241889106007, guid: 99ad789f423431083bc7ec9e562f7e38, type: 3}
@@ -879,7 +885,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
   _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
 --- !u!4 &6265501959571121866 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 795923912783631588, guid: 33eadf78e1b6199c49d0c2f8b20e5ef3, type: 3}
@@ -983,7 +990,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
   _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
+  - {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
 --- !u!4 &5489812659449352925 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3234154848860536796, guid: 7b81ce8a0632578dcaadb13537eb5bd5, type: 3}
@@ -1097,4 +1106,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
   _sprite: {fileID: 0}
-  _impactVfx: {fileID: 8926484042661614526, guid: d1eb60a719f45884d96949c54029cfe8, type: 3}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: d1eb60a719f45884d96949c54029cfe8, type: 3}
