@@ -16,7 +16,6 @@ namespace DShotgun
         {
             _sr = GetComponent<SpriteRenderer>();
             if (!_sr) return;
-            _timePerFrame = 1f / _frameRate;
             _ = Animate();
         }
 
@@ -26,6 +25,7 @@ namespace DShotgun
             { 
                 while (true)
                 {
+                    _timePerFrame = 1f / _frameRate;
                     _sr.sprite = _sprites[_currentFrame];
                     _currentFrame++;
                     _currentFrame %= _sprites.Length;
