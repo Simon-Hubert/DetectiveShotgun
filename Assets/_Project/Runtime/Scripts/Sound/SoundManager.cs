@@ -74,6 +74,7 @@ namespace DShotgun.Sound
             _musicMixer = RuntimeManager.GetBus("bus:/Music");
 
             _busInit = true;
+            UpdateVolume();
         }
 
         private void UpdateVolume() {

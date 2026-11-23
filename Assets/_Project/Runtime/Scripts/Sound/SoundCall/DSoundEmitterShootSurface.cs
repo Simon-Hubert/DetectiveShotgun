@@ -6,7 +6,7 @@ public class DSoundEmitterShootSurface : DSoundEmitter
 {
     [SerializeField] private ShootSurfaces _surface;
     
-    public override void Play() {
+    public override void SoundPlay() {
         soundInstance = SoundManager.PlayShootSurface(_surface);
     }
 

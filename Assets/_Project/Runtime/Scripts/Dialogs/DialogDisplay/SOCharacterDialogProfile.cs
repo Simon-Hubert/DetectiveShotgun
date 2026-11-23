@@ -41,6 +41,8 @@ namespace DShotgun.Dialogs
         [Tooltip("Pitch of the Sound played")]
         [SerializeField, Range(0.0f, 3.0f)] private float _soundPitch = 1.0f;
         public float SoundPitch { get => _soundPitch; }
+        [SerializeField] private EventReference _endTypingSound;
+        public EventReference EndTypingSound { get => _endTypingSound; }
 
         [FormerlySerializedAs("_hasDefaultColor")]
         [Header("Color")]
@@ -98,6 +100,9 @@ namespace DShotgun.Dialogs
             }
             if (result._defaultTypingSound.IsNull) {
                 result._defaultTypingSound = a_value.DefaultTypingSound;
+            }
+            if (result._endTypingSound.IsNull) {
+                result._endTypingSound = a_value.EndTypingSound;
             }
 
             if (!result._hasPersonalisedColor) {
