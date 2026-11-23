@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{79e47c09-65c0-4172-bffe-cc9ba7d07d32}">
+		<property name="assetPath">
+			<value>Music/music_crime.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>20.571437499999998</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{05e30194-3ced-4ceb-9241-0320a49496bd}</destination>
+		</relationship>
+	</object>
+</objects>

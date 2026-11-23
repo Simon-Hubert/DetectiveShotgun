@@ -203,6 +203,7 @@ GameObject:
   - component: {fileID: 5310215832001387291}
   - component: {fileID: 2283520467330403560}
   - component: {fileID: 8109909449660838756}
+  - component: {fileID: 5335737705027560918}
   m_Layer: 0
   m_Name: MedecinLegiste
   m_TagString: Untagged
@@ -286,6 +287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ba8adc89f54b814d974909c13324ec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.InteractableManager
+  _priority: 0
   _interactionCases: []
   _aimCases: []
   _onInteracted:
@@ -297,3 +299,16 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &5335737705027560918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7353327301270232575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}

@@ -7,6 +7,19 @@ namespace DShotgun.RichText
     /// </summary>
     public static class RichTextParser
     {
+        private readonly struct OpenEntry
+        {
+            public readonly Token Token;
+            public readonly RichTextTag Tag;
+            public readonly string Value;   // valeur déjà validée, rejouée si la balise doit être rouverte
+
+            public OpenEntry(Token token, RichTextTag tag, string value) {
+                Token = token;
+                Tag = tag;
+                Value = value;
+            }
+        }
+
         /// <summary>
         /// Parse une séquence de <see cref="Token"/> et produit une séquence d'instructions pour l'émetteur.
         /// </summary>
@@ -16,37 +29,45 @@ namespace DShotgun.RichText
         /// <returns> Renvoie la queue d'instructions pour l'émetteur</returns>
         public static Queue<Instruction> Parse(Queue<Token> tokens, RichTextTagRegistry tags, List<Diagnostic> diagnostics) {
             Queue<Instruction> instructions = new();
-            Stack<Token> openTags = new();   // la dernière ouverte doit être la première fermée
+            Stack<OpenEntry> openTags = new();   // la dernière ouverte est la première fermée
             Dictionary<string, int> ignoredOpenings = new();   // balises refusées à l'ouverture : leur fermeture est ignorée sans soucis
+            bool dialogueEnded = false;   // un <pass> a été lu : le texte qui suit n'est jamais affiché
+            bool warnedAfterEnd = false;
 
-            while (tokens.Count > 0) 
+            while (tokens.Count > 0)
             {
                 Token token = tokens.Dequeue();
-                switch (token.Type) 
+                switch (token.Type)
                 {
                     case TokenType.Text:
+                        if (dialogueEnded && !warnedAfterEnd && !string.IsNullOrWhiteSpace(token.Text))
+                        {
+                            diagnostics.Add(Diagnostic.Warning(token.Position, "Ce texte ne sera pas affiché : <pass> passe automatiquement au dialogue suivant."));
+                            warnedAfterEnd = true;
+                        }
                         instructions.Enqueue(Instruction.TextInstruction(token.Text));
                         break;
                     case TokenType.OpenTag:
-                        OpenTag(token, tags, openTags, ignoredOpenings, instructions, diagnostics);
+                        RichTextTag opened = OpenTag(token, tags, openTags, ignoredOpenings, instructions, diagnostics);
+                        if (opened != null && opened.EndsDialogue) dialogueEnded = true;
                         break;
                     case TokenType.CloseTag:
-                        CloseTag(token, tags, openTags, ignoredOpenings, instructions, diagnostics);
+                        CloseTag(token, openTags, ignoredOpenings, instructions, diagnostics);
                         break;
                 }
             }
 
+            // Une balise encadrante non fermée reste active jusqu'à la fin : on la ferme sans erreur
             while (openTags.Count > 0) {
-                Token unclosed = openTags.Pop();
-                diagnostics.Add(Diagnostic.Error(unclosed.Position, $"« {unclosed.Text} » n'est jamais fermée : fermée automatiquement en fin de texte."));
-                instructions.Enqueue(Instruction.Pop(GetTag(tags, unclosed)));
+                instructions.Enqueue(Instruction.Pop(openTags.Pop().Tag));
             }
 
             return instructions;
         }
 
-        private static void OpenTag(Token token, RichTextTagRegistry tags, Stack<Token> openTags,
-            Dictionary<string, int> ignoredOpenings, Queue<Instruction> instructions, List<Diagnostic> diagnostics) 
+        // Renvoie la balise ouverte, ou null si elle a été refusée
+        private static RichTextTag OpenTag(Token token, RichTextTagRegistry tags, Stack<OpenEntry> openTags,
+            Dictionary<string, int> ignoredOpenings, Queue<Instruction> instructions, List<Diagnostic> diagnostics)
         {
             RichTextTag tag = GetTag(tags, token);
             string value = token.Value;
@@ -55,9 +76,9 @@ namespace DShotgun.RichText
             {
                 diagnostics.Add(Diagnostic.Error(token.Position, $"« {token.Text} » demande une valeur : <{tag.Name}=…>. Balise ignorée."));
                 Ignore(ignoredOpenings, token.TagName);
-                return;
+                return null;
             }
-            if (tag.ValueRule == TagValueRule.None && value != null) 
+            if (tag.ValueRule == TagValueRule.None && value != null)
             {
                 diagnostics.Add(Diagnostic.Warning(token.Position, $"« {token.Text} » ne prend pas de valeur : « {value} » est ignorée."));
                 value = null;
@@ -66,16 +87,27 @@ namespace DShotgun.RichText
             {
                 diagnostics.Add(Diagnostic.Error(token.Position, error + " Balise ignorée."));
                 Ignore(ignoredOpenings, token.TagName);
-                return;
+                return null;
             }
-            
-            openTags.Push(token);
+            if (!tag.IsRuntimeSupported)
+            {
+                diagnostics.Add(Diagnostic.Warning(token.Position, $"« {token.Text} » n'est pas encore gérée par le jeu : elle est sans effet."));
+            }
+
             instructions.Enqueue(Instruction.Push(tag, value));
+            if (tag.Closing == TagClosing.None)
+            {
+                instructions.Enqueue(Instruction.Pop(tag));   // balise autonome : rien à fermer
+                return tag;
+            }
+
+            openTags.Push(new OpenEntry(token, tag, value));
+            return tag;
         }
 
-        private static void CloseTag(Token token, RichTextTagRegistry tags, Stack<Token> openTags,
-            Dictionary<string, int> ignoredOpenings, Queue<Instruction> instructions, List<Diagnostic> diagnostics) {
-            if (!IsOpen(openTags, token.TagName)) 
+        private static void CloseTag(Token token, Stack<OpenEntry> openTags, Dictionary<string, int> ignoredOpenings,
+            Queue<Instruction> instructions, List<Diagnostic> diagnostics) {
+            if (!IsOpen(openTags, token.TagName))
             {
                 if (ignoredOpenings.TryGetValue(token.TagName, out int count) && count > 0)
                 {
@@ -85,40 +117,41 @@ namespace DShotgun.RichText
                 diagnostics.Add(Diagnostic.Error(token.Position, $"« {token.Text} » ferme une balise qui n'est pas ouverte : ignorée."));
                 return;
             }
-
-            Token top = openTags.Peek();
-            if (top.TagName != token.TagName) 
+            
+            Stack<OpenEntry> toReopen = new();
+            while (true)
             {
-                diagnostics.Add(Diagnostic.Error(token.Position,
-                    $"« {token.Text} » ferme dans le désordre : « {top.Text} » est encore ouverte. Réparé."));
+                OpenEntry closed = openTags.Pop();
+                instructions.Enqueue(Instruction.Pop(closed.Tag));
+                if (closed.Token.TagName == token.TagName) break;
+                toReopen.Push(closed);
             }
 
-            // Ferme les balises intermédiaires puis celle demandée
-            while (true) 
+            while (toReopen.Count > 0)
             {
-                Token closed = openTags.Pop();
-                instructions.Enqueue(Instruction.Pop(GetTag(tags, closed)));
-                if (closed.TagName == token.TagName) break;
+                OpenEntry reopened = toReopen.Pop();
+                instructions.Enqueue(Instruction.Push(reopened.Tag, reopened.Value));
+                openTags.Push(reopened);
             }
         }
 
-        private static void Ignore(Dictionary<string, int> ignoredOpenings, string tagName) 
+        private static void Ignore(Dictionary<string, int> ignoredOpenings, string tagName)
         {
             ignoredOpenings.TryGetValue(tagName, out int count);
             ignoredOpenings[tagName] = count + 1;
         }
 
-        private static bool IsOpen(Stack<Token> openTags, string tagName) 
+        private static bool IsOpen(Stack<OpenEntry> openTags, string tagName)
         {
-            foreach (Token open in openTags) 
+            foreach (OpenEntry open in openTags)
             {
-                if (open.TagName == tagName) return true;
+                if (open.Token.TagName == tagName) return true;
             }
             return false;
         }
 
         // Le lexer ne produit que des balises connues : la recherche réussit toujours ici.
-        private static RichTextTag GetTag(RichTextTagRegistry tags, Token token) 
+        private static RichTextTag GetTag(RichTextTagRegistry tags, Token token)
         {
             tags.TryGet(token.TagName, out RichTextTag tag);
             return tag;

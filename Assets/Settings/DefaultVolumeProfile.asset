@@ -509,6 +509,7 @@ MonoBehaviour:
   - {fileID: -8186968272690591729}
   - {fileID: -3978695733392391637}
   - {fileID: -1083910812058648046}
+  - {fileID: 8476428302332806113}
 --- !u!114 &156332030701414761
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -749,6 +750,25 @@ MonoBehaviour:
   saturation:
     m_OverrideState: 1
     m_Value: 0
+--- !u!114 &8476428302332806113
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7b026637b174005848100892f3c56f, type: 3}
+  m_Name: FullScreenBlurVolumeComponent
+  m_EditorClassIdentifier: DShotgun::FullScreenBlurVolumeComponent
+  active: 1
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0
+  passes:
+    m_OverrideState: 1
+    m_Value: 2
 --- !u!114 &8549655192814258499
 MonoBehaviour:
   m_ObjectHideFlags: 3

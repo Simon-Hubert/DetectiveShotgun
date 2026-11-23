@@ -1,10 +1,9 @@
-using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using DShotgun.Dialogs;
-using DShotgun;
-using JetBrains.Annotations;
 using UnityEditor;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 
 namespace DShotgun.Editor
@@ -12,132 +11,109 @@ namespace DShotgun.Editor
     [CustomEditor(typeof(DialogFrame))]
     public class DialogFrameCustomInspector : UnityEditor.Editor
     {
-        private int _leftSelectedName = 0;
-        private int _middleSelectedName = 0;
-        private int _rightSelectedName = 0;
+        private static readonly string[] REFS = { "_leftRef", "_middleRef", "_rightRef" };
 
-        private int _leftSelectedSprite = 0;
-        private int _middleSelectedSprite = 0;
-        private int _rightSelectedSprite = 0;
-
-        private IReadOnlyList<NamedSprite> _leftSprites;
-        private IReadOnlyList<NamedSprite> _middleSprites;
-        private IReadOnlyList<NamedSprite> _rightSprites;
-        
-        private DialogFrame _dialogFrame;
-        private CharactersDatabase _charactersDatabase;
+        private CharactersDatabase _database;
         private string[] _names;
 
         public bool _showAdditionalSettings = false;
-        
+
         public override void OnInspectorGUI() {
-            
             serializedObject.Update();
-            
-            _charactersDatabase ??= Resources.Load<CharactersDatabase>("Characters");
-            _dialogFrame = target as DialogFrame;
-            _names = _charactersDatabase.Characters.Select(e => e.Name).Prepend("None").ToArray();
-            
-            GetCharacterNames();
-            if (_dialogFrame) {
-                //Read Current state by name
-                _leftSelectedSprite = GetSprite(out _leftSprites, _leftSelectedName, _dialogFrame.LeftRef);
-                _middleSelectedSprite = GetSprite(out _middleSprites, _middleSelectedName, _dialogFrame.MiddleRef);
-                _rightSelectedSprite = GetSprite(out _rightSprites, _rightSelectedName, _dialogFrame.RightRef);
 
-                GUILayout.BeginHorizontal();
-                //Change via Editor
-                CharacterPopup(ref _leftSelectedName, ref _leftSelectedSprite, _leftSprites, out DialogFrame.SpriteRef leftFrame, out Sprite leftSprite,0);
-                CharacterPopup(ref _middleSelectedName, ref _middleSelectedSprite, _middleSprites, out DialogFrame.SpriteRef middleFrame, out Sprite middleSprite,1);
-                CharacterPopup(ref _rightSelectedName, ref _rightSelectedSprite, _rightSprites, out DialogFrame.SpriteRef rightFrame, out Sprite rightSprite,2);
-                
-                GUILayout.EndHorizontal();
-
-                // Set New State by name
-                serializedObject.FindProperty("_left").objectReferenceValue = leftSprite;
-                _dialogFrame.LeftRef = leftFrame;
-                _dialogFrame.Left = leftSprite;
-                serializedObject.FindProperty("_middle").objectReferenceValue = middleSprite;
-                _dialogFrame.MiddleRef = middleFrame;
-                _dialogFrame.Middle = middleSprite;
-                serializedObject.FindProperty("_right").objectReferenceValue = rightSprite;
-                _dialogFrame.RightRef = rightFrame;
-                _dialogFrame.Right= rightSprite;
-                GUILayout.Space(10);
-
-                _dialogFrame.MoveNextAutomatically = GUILayout.Toggle(
-                    _dialogFrame.MoveNextAutomatically, "Move to next Frame immediately after");
-
-                _showAdditionalSettings = EditorGUILayout.Foldout(_showAdditionalSettings, "Show Additional Settings");
-                if (_showAdditionalSettings) {
-                    bool noOneSpeaking = GUILayout.Toggle(_dialogFrame.SpeakingCharacterID == -1, "Don't Show Speaker");
-                    _dialogFrame.UseCustomName = GUILayout.Toggle(_dialogFrame.UseCustomName, "Use Custom Name");
-                    if (_dialogFrame.UseCustomName) {
-                        _dialogFrame.Name = GUILayout.TextField(_dialogFrame.Name);
-                    }
-                
-                    _dialogFrame.UseCustomDialogProfile = GUILayout.Toggle(_dialogFrame.UseCustomDialogProfile, "Use Custom Dialog Profile");
-                    if (_dialogFrame.UseCustomDialogProfile) {
-                        _dialogFrame.CharacterDialogProfile = (SOCharacterDialogProfile)EditorGUILayout.ObjectField(_dialogFrame.CharacterDialogProfile, typeof(SOCharacterDialogProfile));
-                    }
-                
-                    if (noOneSpeaking) {
-                        _dialogFrame.SpeakingCharacterID = -1;
-                        if (!_dialogFrame.UseCustomName) {
-                            _dialogFrame.Name = "";
-                        }
-                    }
-                }
-                
-                GUILayout.Space(10);
-                EditorGUILayout.PropertyField(serializedObject.FindProperty("_text"));
-                
+            _database = CharactersDatabase.Load();
+            if (_database == null) {
+                EditorGUILayout.HelpBox($"Il faut un asset « {CharactersDatabase.RESOURCE_PATH} » (CharactersDatabase) dans un dossier Resources.", MessageType.Error);
+                return;
             }
+            _names = _database.Characters.Select(e => e.Name).Prepend("None").ToArray();
+
+            GUILayout.BeginHorizontal();
+            for (int i = 0; i < REFS.Length; i++) CharacterPopup(i);
+            GUILayout.EndHorizontal();
+            GUILayout.Space(10);
+
+            SerializedProperty moveNext = serializedObject.FindProperty("_moveNextAutomatically");
+            moveNext.boolValue = GUILayout.Toggle(moveNext.boolValue, "Move to next Frame immediately after");
+
+            _showAdditionalSettings = EditorGUILayout.Foldout(_showAdditionalSettings, "Show Additional Settings");
+            if (_showAdditionalSettings) DrawAdditionalSettings();
+
+            GUILayout.Space(10);
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("_text"));
             serializedObject.ApplyModifiedProperties();
         }
-        
-        private void GetCharacterNames() {
-            for (int i = 0; i < _names.Length; i++) {
-                if (_dialogFrame.LeftRef._characterName == _names[i]) _leftSelectedName = i;
-                if (_dialogFrame.MiddleRef._characterName == _names[i]) _middleSelectedName = i;
-                if (_dialogFrame.RightRef._characterName == _names[i]) _rightSelectedName = i;
+
+        private void DrawAdditionalSettings() {
+            SerializedProperty speaker = serializedObject.FindProperty("_speakingCharacterID");
+            if (GUILayout.Toggle(speaker.intValue == -1, "Don't Show Speaker")) speaker.intValue = -1;
+
+            SerializedProperty useCustomName = serializedObject.FindProperty("_useCustomName");
+            useCustomName.boolValue = GUILayout.Toggle(useCustomName.boolValue, "Use Custom Name");
+            if (useCustomName.boolValue) {
+                SerializedProperty customName = serializedObject.FindProperty("_name");
+                customName.stringValue = GUILayout.TextField(customName.stringValue);
             }
-        }
-        
-        private int GetSprite(out IReadOnlyList<NamedSprite> sprites, int characterNameID, DialogFrame.SpriteRef refTuple) {
-            if (characterNameID == 0) {
-                sprites = null;
-                return 0;
+
+            SerializedProperty useCustomProfile = serializedObject.FindProperty("_useCustomDialogProfile");
+            useCustomProfile.boolValue = GUILayout.Toggle(useCustomProfile.boolValue, "Use Custom Dialog Profile");
+            if (useCustomProfile.boolValue) {
+                SerializedProperty profile = serializedObject.FindProperty("_characterDialogProfile");
+                profile.objectReferenceValue = EditorGUILayout.ObjectField(profile.objectReferenceValue, typeof(SOCharacterDialogProfile), false);
             }
-            sprites = _charactersDatabase.GetCharacter(_names[characterNameID]).SpriteList;
-            for (int i = 0; i < sprites.Count; i++) {
-                if (sprites[i].Name == refTuple._spriteName) return i;
-            }
-            return 0;
         }
 
-        private void CharacterPopup(ref int selectedName, ref int selectedSprite, IReadOnlyList<NamedSprite> sprites, out DialogFrame.SpriteRef frame, out Sprite sprite, int characterID) {
+        private void CharacterPopup(int position) {
+            SerializedProperty slot = serializedObject.FindProperty(REFS[position]);
+            SerializedProperty id = slot.FindPropertyRelative("_characterId");
+            SerializedProperty spriteId = slot.FindPropertyRelative("_spriteId");
+
             GUILayout.BeginVertical();
-            selectedName = EditorGUILayout.Popup(selectedName, _names);
-            selectedSprite = sprites == null ? 0 : EditorGUILayout.Popup(selectedSprite, sprites.Select(e => e.Name).ToArray());
-            
-            frame = new DialogFrame.SpriteRef();
-            frame._characterName = _names[selectedName];
-            if (sprites == null) {
-                frame._spriteName = "None";
-                sprite = null;
-            }
-            else {
-                frame._spriteName = sprites[selectedSprite].Name;
-                sprite = sprites[selectedSprite].Sprite;
+            int selected = _database.TryGetCharacter(id.intValue, out CharacterData current) ? IndexOf(current.Id) + 1 : 0;   // 0 = None
+            int newSelected = EditorGUILayout.Popup(selected, _names);
+            if (newSelected != selected) {
+                selected = newSelected;
+                id.intValue = selected == 0 ? 0 : _database.Characters[selected - 1].Id;
+                spriteId.intValue = 0;
             }
 
-            if (GUILayout.Toggle(characterID == _dialogFrame.SpeakingCharacterID, "Speaking")) {
-                _dialogFrame.SpeakingCharacterID = characterID;
-                if(!_dialogFrame.UseCustomDialogProfile) _dialogFrame.CharacterDialogProfile = _charactersDatabase.GetCharacter(_names[selectedName]).DialogProfile;
-                if(!_dialogFrame.UseCustomName) _dialogFrame.Name = _names[selectedName];
+            if (selected > 0) {
+                IReadOnlyList<NamedSprite> sprites = _database.Characters[selected - 1].SpriteList;
+                int selectedSprite = 0;
+                for (int i = 0; i < sprites.Count; i++) {
+                    if (sprites[i].Id == spriteId.intValue) selectedSprite = i;
+                }
+
+                selectedSprite = EditorGUILayout.Popup(selectedSprite, sprites.Select(e => e.Name).ToArray());
+                if (sprites.Count > 0) spriteId.intValue = sprites[selectedSprite].Id;
             }
+
+            SerializedProperty speaker = serializedObject.FindProperty("_speakingCharacterID");
+            if (GUILayout.Toggle(position == speaker.intValue, "Speaking")) speaker.intValue = position;
             GUILayout.EndVertical();
+        }
+
+        // Réécrit les prefabs et scènes qui contiennent des DialogFrame au format actuel (retire les anciens champs)
+        [MenuItem("Tools/Dialogues/Réécrire les DialogFrame au format actuel")]
+        private static void ReserializeDialogFrames() {
+            if (!EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo()) return;
+
+            string guid = AssetDatabase.FindAssets("DialogFrame t:MonoScript")
+                .First(g => AssetDatabase.LoadAssetAtPath<MonoScript>(AssetDatabase.GUIDToAssetPath(g)).GetClass() == typeof(DialogFrame));
+            List<string> paths = AssetDatabase.FindAssets("t:Prefab t:Scene", new[] { "Assets/_Project" })
+                .Select(AssetDatabase.GUIDToAssetPath)
+                .Where(path => File.ReadAllText(path).Contains(guid))
+                .ToList();
+
+            AssetDatabase.ForceReserializeAssets(paths);
+            Debug.Log($"{paths.Count} prefabs et scènes réécrits :\n{string.Join("\n", paths)}");
+        }
+
+        private int IndexOf(int id) {
+            for (int i = 0; i < _database.Characters.Count; i++) {
+                if (_database.Characters[i].Id == id) return i;
+            }
+            return -1;
         }
     }
 }

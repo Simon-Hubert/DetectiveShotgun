@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using SMath;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.Rendering.Universal;
 
@@ -16,7 +17,7 @@ namespace DShotgun
     {
         [Header("References")]
         [SerializeField] private Camera _camera;
-        [SerializeField] private PixelPerfectCamera _pixelPerfectCamera;
+        //[SerializeField] private PixelPerfectCamera _pixelPerfectCamera;
         [SerializeField] private InputReader _inputs;
 
         [Header("Aim Params")]
@@ -33,9 +34,11 @@ namespace DShotgun
         [SerializeField, Min(0.01f)] private float _frequency = 2f;
         [SerializeField, Min(0f)] private float _damping = 1f;
         [SerializeField] private float _response = 0f;
+        
+        [Header("Unity Events")]
+        [SerializeField] private UnityEvent<ItemSlot> UnityOnShootItemFailed;
 
         private bool _isAiming;
-        private bool _isPointerOverUI;
         private bool _isBusy;
         private InteractableManager[] _aimed = Array.Empty<InteractableManager>();
         private Vector3 _defaultPosition;
@@ -43,10 +46,15 @@ namespace DShotgun
         private float _zoomProgress;
         private SecondOrderDynamics<Vector2> _moveDynamics;
 
+        public event Action OnAimStarted;
+        public event Action OnAimStopped;
+
+        public event Action<InteractableManager> OnInteractableInteracted;
+
         private void Start()
         {
             if (_camera == null) _camera = Camera.main;
-            if (_pixelPerfectCamera == null) _pixelPerfectCamera = _camera.GetComponent<PixelPerfectCamera>();
+            //if (_pixelPerfectCamera == null) _pixelPerfectCamera = _camera.GetComponent<PixelPerfectCamera>();
 
             _defaultPosition = _camera.transform.position;
             CreateDynamics();
@@ -75,8 +83,16 @@ namespace DShotgun
 
         private void Update()
         {
-            _isPointerOverUI = EventSystem.current != null && EventSystem.current.IsPointerOverGameObject();
-            if (!_toggleAimOnRightClick) _isAiming = _inputs.IsRightHeld;
+            if (!_toggleAimOnRightClick)
+            {
+                if (_isAiming != _inputs.IsRightHeld)
+                {
+                    if (_inputs.IsRightHeld) OnAimStarted?.Invoke();
+                    else OnAimStopped?.Invoke();
+                    
+                    _isAiming = _inputs.IsRightHeld;
+                }
+            }
 
             InteractableManager[] targets = _isAiming ? GetInteractableUnderPointer() : Array.Empty<InteractableManager>();
             
@@ -94,19 +110,19 @@ namespace DShotgun
         {
             float deltaTime = Time.deltaTime;
             if (deltaTime <= 0f) return;
-
+            
             _zoomProgress = Mathf.MoveTowards(_zoomProgress, _isAiming ? 1f : 0f, deltaTime / _zoomDuration);
             float zoom = _zoomCurve.Evaluate(_zoomProgress);
-            _pixelPerfectCamera.assetsPPU = Mathf.Max(1, Mathf.RoundToInt(Mathf.LerpUnclamped(_defaultPpu, _aimPpu, zoom)));
+            //_pixelPerfectCamera.assetsPPU = Mathf.Max(1, Mathf.RoundToInt(Mathf.LerpUnclamped(_defaultPpu, _aimPpu, zoom)));
 
             Vector2 targetPosition = (Vector2)_defaultPosition + (_isAiming ? GetCursorOffset() : Vector2.zero);
             Vector2 position = _moveDynamics.Update(deltaTime, targetPosition);
-            _camera.transform.position = new Vector3(position.x, position.y, _defaultPosition.z);
+            //_camera.transform.position = new Vector3(position.x, position.y, _defaultPosition.z);
         }
 
         private void HandleScrolled(int obj)
         {
-            throw new System.NotImplementedException();
+            
         }
 
         private void HandleRightClickPressed()
@@ -117,18 +133,27 @@ namespace DShotgun
         private void HandleLeftClickPressed()
         {
             if (_isBusy) return;
-
-            foreach (InteractableManager interactable in GetInteractableUnderPointer())
-            {
-                if (interactable.Interact()) break;
+            if (GameManager.CurrentState == GameState.Transition) return;
+            
+            
+            InteractableManager[] interactables = GetInteractableUnderPointer();
+            if (interactables.Length <= 0) {
+                if (ShotgunManager.IsLoaded) {
+                    UnityOnShootItemFailed?.Invoke(ShotgunManager.LoadedItem);
+                }
+                OnInteractableInteracted?.Invoke(null);
             }
+            else {
+                interactables[0].Interact();
+                OnInteractableInteracted?.Invoke(interactables[0]);
+            }
+
+            ShotgunManager.UnloadItem();
         }
 
         private InteractableManager[] GetInteractableUnderPointer()
         {
-            if (_isPointerOverUI) return Array.Empty<InteractableManager>();
-
-            Vector2 worldPoint = _camera.ScreenToWorldPoint(_inputs.PointerPosition);
+            Vector2 worldPoint = _camera.ScreenToWorldPoint(InputReader.PointerPosition);
             return Physics2D.OverlapPointAll(worldPoint)
                 .Select(hit => hit.GetComponent<InteractableManager>())
                 .Where(interactable => interactable != null)
@@ -143,7 +168,7 @@ namespace DShotgun
 
         private Vector2 GetCursorOffset()
         {
-            Vector2 viewport = _camera.ScreenToViewportPoint(_inputs.PointerPosition);
+            Vector2 viewport = _camera.ScreenToViewportPoint(InputReader.PointerPosition);
             Vector2 centered = new Vector2(Mathf.Clamp(viewport.x * 2f - 1f, -1f, 1f), Mathf.Clamp(viewport.y * 2f - 1f, -1f, 1f));
             return Vector2.Scale(centered, _aimMaxOffset);
         }

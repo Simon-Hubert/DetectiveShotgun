@@ -15,12 +15,49 @@ namespace DShotgun.Editor
         private const float TAB_WIDTH = 64f;
         private const float STYLE_BUTTON_WIDTH = 26f;
         private const float COLOR_BUTTON_WIDTH = 60f;
+        private const float TAGS_BUTTON_WIDTH = 78f;
         private const int MIN_TEXT_LINES = 4;
         private const int MAX_DIAGNOSTICS = 4;
         private const float SPACING = 2f;
         private const float HELPBOX_ICON_WIDTH = 40f;
         private const float INSPECTOR_MARGIN = 40f;   // largeur estimée tant que la vraie n'est pas connue
         private static readonly float LINE_HEIGHT = EditorGUIUtility.singleLineHeight;
+
+        // Menu Balises (sous-menus avec « / »). Sans fermeture : insérée à la fin de la sélection ; sinon entoure la sélection.
+        // Les valeurs sont des exemples que le GD modifie ensuite dans le texte. G, I et Couleur ont leurs propres boutons.
+        private static readonly (string label, string open, string close)[] TAG_MENU =
+        {
+            ("Dialogue/Pause  <wait=0.5>", "<wait=0.5>", null),
+            ("Dialogue/Passer au suivant  <pass>", "<pass>", null),
+            ("Dialogue/Vitesse d'écriture  <speed=20>", "<speed=20>", "</speed>"),
+            ("Dialogue/Hauteur du son  <pitch=1.2>", "<pitch=1.2>", "</pitch>"),
+            ("Dialogue/Son d'écriture  <sound=nom>", "<sound=nom>", "</sound>"),
+            ("Dialogue/Mode d'écriture  <readmod=word>", "<readmod=word>", "</readmod>"),
+            ("Dialogue/Sans rythme de ponctuation  <nrpunct>", "<nrpunct>", "</nrpunct>"),
+            ("Dialogue/Émotion du personnage  <charemo=nom>", "<charemo=nom>", null),
+            ("Dialogue/Animation du personnage  <charanim=nom>", "<charanim=nom>", null),
+            ("Effets/Impacts de balle  <burst>", "<burst>", "</burst>"),
+            ("Effets/Doré  <gold>", "<gold>", "</gold>"),
+            ("Effets/Rebond  <bounce>", "<bounce>", "</bounce>"),
+            ("Effets/Murmure  <whisper>", "<whisper>", "</whisper>"),
+            ("Effets/Peur  <fear>", "<fear>", "</fear>"),
+            ("Effets/Grand  <big>", "<big>", "</big>"),
+            ("Effets/Énorme  <huge>", "<huge>", "</huge>"),
+            ("Effets/Tremblement d'écran  <shake>", "<shake>", null),
+            ("Texte/Souligné  <u>", "<u>", "</u>"),
+            ("Texte/Barré  <s>", "<s>", "</s>"),
+            ("Texte/Indice  <sub>", "<sub>", "</sub>"),
+            ("Texte/Exposant  <sup>", "<sup>", "</sup>"),
+            ("Texte/Majuscules  <uppercase>", "<uppercase>", "</uppercase>"),
+            ("Texte/Minuscules  <lowercase>", "<lowercase>", "</lowercase>"),
+            ("Texte/Petites capitales  <smallcaps>", "<smallcaps>", "</smallcaps>"),
+            ("Texte/Taille  <size=150%>", "<size=150%>", "</size>"),
+            ("Texte/Surlignage  <mark=#FFFF0080>", "<mark=#FFFF0080>", "</mark>"),
+            ("Texte/Espacement des lettres  <cspace=2px>", "<cspace=2px>", "</cspace>"),
+            ("Texte/Police  <font=nom>", "<font=nom>", "</font>"),
+            ("Texte/Épaisseur  <font-weight=700>", "<font-weight=700>", "</font-weight>"),
+            ("Texte/Retour à la ligne  <br>", "<br>", null),
+        };
 
         // TextEditor interne d'EditorGUI.TextArea : GetStateObject ne le renvoie pas.
         private static readonly FieldInfo ACTIVE_EDITOR_FIELD =
@@ -147,7 +184,7 @@ namespace DShotgun.Editor
 
             using (new EditorGUI.DisabledScope(state.IsPreview))
             {
-                float x = rect.xMax - (STYLE_BUTTON_WIDTH * 2f + COLOR_BUTTON_WIDTH);
+                float x = rect.xMax - (STYLE_BUTTON_WIDTH * 2f + COLOR_BUTTON_WIDTH + TAGS_BUTTON_WIDTH);
 
                 if (GUI.Button(new Rect(x, rect.y, STYLE_BUTTON_WIDTH, rect.height), new GUIContent("G", "Gras : <b>…</b>"), _boldButtonStyle))
                     WrapSelection(text, state, controlName, "<b>", "</b>");
@@ -160,6 +197,11 @@ namespace DShotgun.Editor
                 Rect colorButtonRect = new Rect(x, rect.y, COLOR_BUTTON_WIDTH, rect.height);
                 if (GUI.Button(colorButtonRect, new GUIContent("Couleur", "<color=#RRGGBBAA>…</color>"), EditorStyles.toolbarButton))
                     OpenColorWindow(colorButtonRect, property, state);
+                x += COLOR_BUTTON_WIDTH;
+
+                Rect tagsButtonRect = new Rect(x, rect.y, TAGS_BUTTON_WIDTH, rect.height);
+                if (GUI.Button(tagsButtonRect, new GUIContent("Balises", "Balises du dialogue, effets et style de texte"), EditorStyles.toolbarDropDown))
+                    OpenTagMenu(tagsButtonRect, property, state);
             }
         }
 
@@ -226,20 +268,48 @@ namespace DShotgun.Editor
 
             ColorPaletteWindow.Open(buttonRect, FindPalette(), Color.white, color =>
             {
-                if (targets == null || targets.Length == 0 || targets[0] == null) return;
-
-                using SerializedObject serializedObject = new SerializedObject(targets);
-                serializedObject.Update();
-                SerializedProperty text = serializedObject.FindProperty(textPath);
-                if (text == null) return;
-
                 string open = $"<color=#{ColorUtility.ToHtmlStringRGBA(color)}>";
-                text.stringValue = RichTextTagInserter.Wrap(text.stringValue, start, end, open, "</color>", out int newStart, out int newEnd);
-                serializedObject.ApplyModifiedProperties();
-
-                SelectAfterEdit(state, newStart, newEnd);
-                UnityEditorInternal.InternalEditorUtility.RepaintAllViews();
+                ApplyWrapLater(targets, textPath, state, start, end, open, "</color>");
             });
+        }
+
+        private static void OpenTagMenu(Rect buttonRect, SerializedProperty property, FieldState state)
+        {
+            Object[] targets = property.serializedObject.targetObjects;
+            string textPath = property.propertyPath + "._text";
+            string currentText = property.FindPropertyRelative("_text").stringValue;
+            int start = state.HasSelection ? state.SelectionStart : currentText.Length;
+            int end = state.HasSelection ? state.SelectionEnd : currentText.Length;
+
+            GenericMenu menu = new GenericMenu();
+            foreach ((string label, string open, string close) in TAG_MENU)
+            {
+                menu.AddItem(new GUIContent(label), false, () => ApplyWrapLater(targets, textPath, state, start, end, open, close));
+            }
+            menu.DropDown(buttonRect);
+        }
+
+        // Le choix arrive plus tard, quand `property` n'est plus valide : on repasse par un SerializedObject neuf
+        private static void ApplyWrapLater(Object[] targets, string textPath, FieldState state, int start, int end, string open, string close)
+        {
+            if (targets == null || targets.Length == 0 || targets[0] == null) return;
+
+            using SerializedObject serializedObject = new SerializedObject(targets);
+            serializedObject.Update();
+            SerializedProperty text = serializedObject.FindProperty(textPath);
+            if (text == null) return;
+
+            if (close == null)
+            {
+                start = end;   // balise sans fermeture : rien à entourer
+                close = string.Empty;
+            }
+
+            text.stringValue = RichTextTagInserter.Wrap(text.stringValue, start, end, open, close, out int newStart, out int newEnd);
+            serializedObject.ApplyModifiedProperties();
+
+            SelectAfterEdit(state, newStart, newEnd);
+            UnityEditorInternal.InternalEditorUtility.RepaintAllViews();
         }
 
         private static void DrawPreview(Rect rect, CompileResult compiled)
