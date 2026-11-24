@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 7084391592726537179}
   - component: {fileID: 4990509542026056062}
   - component: {fileID: 7505860775108982328}
+  - component: {fileID: 3042212571376177532}
+  - component: {fileID: 4099024376709704138}
   m_Layer: 5
   m_Name: SpriteFront
   m_TagString: Untagged
@@ -89,6 +91,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ce24bc4d1b38d5619ee3e59a2644218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.UIHover
+  OnHoverStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3042212571376177532}
+        m_TargetAssemblyTypeName: DShotgun.Sound.DSoundEmitter, DShotgun.Sound
+        m_MethodName: SoundPlay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnHoverEnd:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!225 &7505860775108982328
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -101,6 +121,44 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &3042212571376177532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176386864669212345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 349838ade9826b44fbb84b53b52fb7fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Sound::DShotgun.Sound.DSoundEmitter
+  soundEvent:
+    Guid:
+      Data1: -1065326805
+      Data2: 1301845543
+      Data3: 186208412
+      Data4: -2145252586
+    Path: event:/UI/Shotgun/UI_Shotgun_Load_Open_OS
+--- !u!114 &4099024376709704138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176386864669212345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 349838ade9826b44fbb84b53b52fb7fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Sound::DShotgun.Sound.DSoundEmitter
+  soundEvent:
+    Guid:
+      Data1: 1546730068
+      Data2: 1200768185
+      Data3: -690589544
+      Data4: -1092753568
+    Path: event:/UI/Shotgun/UI_Shotgun_Load_Close_OS
 --- !u!1 &1896615025708516315
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,6 +540,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 351710817778562659}
+  - component: {fileID: 8066616916483402213}
+  - component: {fileID: 5905076288719997621}
   m_Layer: 5
   m_Name: INVENTORY
   m_TagString: Untagged
@@ -511,6 +571,63 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8066616916483402213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4405287106092836480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41b7f2e8a9b39f343bfec034747254b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.UIInventory
+  _inventorySlots:
+  - {fileID: 7996406109690756706}
+  - {fileID: 8380678042741695322}
+  - {fileID: 2797410251542410288}
+  - {fileID: 5353672861203389745}
+  - {fileID: 550357733840990228}
+  _playerInventory: {fileID: 0}
+  _pouf: {fileID: 0}
+  OnLoadItem:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5905076288719997621}
+        m_TargetAssemblyTypeName: DShotgun.Sound.DSoundEmitter, DShotgun.Sound
+        m_MethodName: SoundPlay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnUnloadItem:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &5905076288719997621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4405287106092836480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 349838ade9826b44fbb84b53b52fb7fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Sound::DShotgun.Sound.DSoundEmitter
+  soundEvent:
+    Guid:
+      Data1: 1546730068
+      Data2: 1200768185
+      Data3: -690589544
+      Data4: -1092753568
+    Path: event:/UI/Shotgun/UI_Shotgun_Load_Close_OS
 --- !u!1 &5460431131425022017
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,5 +1113,5 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -564, y: -70}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

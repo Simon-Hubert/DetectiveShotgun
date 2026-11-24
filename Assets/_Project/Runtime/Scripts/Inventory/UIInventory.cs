@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace DShotgun
 {
@@ -7,7 +9,10 @@ namespace DShotgun
         [SerializeField] private UIItem[] _inventorySlots = new UIItem[5];
         [SerializeField] private PlayerInventory _playerInventory;
         [SerializeField, Tooltip("Animator du nuage de fumée (trigger Pouf) : déplacé sur la poche et rejoué quand un objet y arrive")] private Animator _pouf;
-
+        [Header("Events")]
+        [SerializeField] private UnityEvent OnLoadItem;
+        [SerializeField] private UnityEvent OnUnloadItem;
+            
         private static readonly int POUF_TRIGGER = Animator.StringToHash("Pouf");
         private int _loadedSlot;
 
@@ -40,6 +45,7 @@ namespace DShotgun
         {
             ShotgunManager.LoadItem(_playerInventory.Inventory[id]);
             _loadedSlot = id;
+            OnLoadItem?.Invoke();
         }
 
         private void UpdateSlot(int i, ItemData itemSlot)
@@ -67,7 +73,10 @@ namespace DShotgun
 
         private void UnloadItem()
         {
-            if (_inventorySlots[_loadedSlot] != null) _inventorySlots[_loadedSlot].ResetPosition();
+            if (_inventorySlots[_loadedSlot] != null) {
+                _inventorySlots[_loadedSlot].ResetPosition();
+                OnUnloadItem?.Invoke();
+            }
         }
     }
 }

@@ -3,6 +3,7 @@ using TMPro;
 using System;
 using System.Text;
 using System.Threading;
+using DShotgun.Sound;
 
 namespace DShotgun.Dialogs
 {
@@ -62,6 +63,9 @@ namespace DShotgun.Dialogs
 
                         a.Append(a_text[i]);
                         _textBox.text = a.ToString();
+
+                        if (!profileStruct.typingSound.GetLastValue.IsNull)
+                            SoundManager.PlayOneShot(profileStruct.typingSound.GetLastValue);
                     }
 
                     if (_instruction.wait > 0.0f) {
@@ -73,6 +77,9 @@ namespace DShotgun.Dialogs
                         profileStruct.typingSpeed.AddValue(0);
                     }
                 }
+
+                if (!profileStruct.DefaultProfile.EndTypingSound.IsNull)
+                    SoundManager.PlayOneShot(profileStruct.DefaultProfile.EndTypingSound);
             }
             catch (Exception e) {
                 Debug.LogWarning($"'DumbReader' : TextTreatment Async was cancelled - {e}");

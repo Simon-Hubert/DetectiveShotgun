@@ -133,6 +133,8 @@ GameObject:
   - component: {fileID: 8836601799099958187}
   - component: {fileID: 8382831752766758780}
   - component: {fileID: 7990210057746630820}
+  - component: {fileID: 1778225445206842616}
+  - component: {fileID: 1721646133835234669}
   m_Layer: 0
   m_Name: PLAYER
   m_TagString: Untagged
@@ -246,9 +248,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _soundOnSurface: {fileID: 0}
+      - m_Target: {fileID: 1778225445206842616}
+        m_TargetAssemblyTypeName: DShotgun.Sound.DSoundEmitter, DShotgun.Sound
+        m_MethodName: SoundPlay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _shootEmitter: {fileID: 0}
-  _woodImpactVfx: {fileID: 4791061443249376261}
+  _defaultImpactVfx: {fileID: 4791061443249376261}
   _shooterDistance: 6
 --- !u!114 &8836601799099958187
 MonoBehaviour:
@@ -282,6 +295,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: DShotgun::DShotgun.AimController
   _camera: {fileID: 0}
   _zoomDuration: 0.25
+  _blurController:
+    _volumeProfile: {fileID: 11400000, guid: 3c29a1eeb83e849d4a5a772ab60a78c7, type: 2}
+    _targetBlurPasses: 4
+    _targetBlurIntensity: 0.6
+  OnAimStarted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1721646133835234669}
+        m_TargetAssemblyTypeName: DShotgun.Sound.DSoundEmitter, DShotgun.Sound
+        m_MethodName: SoundPlay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnAimEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &7990210057746630820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,3 +332,41 @@ MonoBehaviour:
   _defaultShotSprite: {fileID: -3162720615555671294, guid: 1724398b162671e9693a17dc2fbaee12, type: 3}
   _shotImpactPrefab: {fileID: 5856876785614950826, guid: b04655bc7fa66ef71bf0e490ad41f545, type: 3}
   _maxImpact: 20
+--- !u!114 &1778225445206842616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8219939717306436932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 349838ade9826b44fbb84b53b52fb7fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Sound::DShotgun.Sound.DSoundEmitter
+  soundEvent:
+    Guid:
+      Data1: 865811774
+      Data2: 1305412798
+      Data3: -2096187225
+      Data4: 1374600754
+    Path: event:/UI/Shotgun/UI_Shotgun_Shoot_OS
+--- !u!114 &1721646133835234669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8219939717306436932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 349838ade9826b44fbb84b53b52fb7fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Sound::DShotgun.Sound.DSoundEmitter
+  soundEvent:
+    Guid:
+      Data1: 488338925
+      Data2: 1176762762
+      Data3: -2022351736
+      Data4: 1165494882
+    Path: event:/UI/Shotgun/UI_Shotgun_Aim_OS

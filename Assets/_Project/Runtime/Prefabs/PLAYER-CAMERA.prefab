@@ -192,10 +192,6 @@ PrefabInstance:
       propertyPath: _camera
       value: 
       objectReference: {fileID: 1555611677350899607}
-    - target: {fileID: 6608258961006754970, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
-      propertyPath: _pixelPerfectCamera
-      value: 
-      objectReference: {fileID: 2801935738003048516}
     - target: {fileID: 8219939717306436932, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
       propertyPath: m_Name
       value: PLAYER
@@ -204,22 +200,6 @@ PrefabInstance:
       propertyPath: _camera
       value: 
       objectReference: {fileID: 2801935738003048516}
-    - target: {fileID: 8382831752766758780, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
-      propertyPath: _blurController._volumeProfile
-      value: 
-      objectReference: {fileID: 11400000, guid: 3c29a1eeb83e849d4a5a772ab60a78c7, type: 2}
-    - target: {fileID: 8382831752766758780, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
-      propertyPath: _blurController._targetBlurPasses
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8382831752766758780, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
-      propertyPath: _blurController._targetBlurIntensity
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8836601799099958187, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
-      propertyPath: _startingItems.Array.size
-      value: 5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -305,10 +285,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3505634821680852337, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
-      propertyPath: _intensity
-      value: 0.2
-      objectReference: {fileID: 0}
     - target: {fileID: 4027087350679835347, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
       propertyPath: m_Name
       value: MAIN-CAMERA
@@ -327,10 +303,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2264849956926330540, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1142759590668666549}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4027087350679835347, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4796830892543947430}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
 --- !u!20 &1555611677350899607 stripped
 Camera:
@@ -342,7 +315,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6677530776334457868, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
   m_PrefabInstance: {fileID: 8811613083949831240}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5596344800992167579}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c88f5cead0c0b2a4eb05b5900433f8d1, type: 3}
@@ -353,34 +326,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3505634821680852337, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
   m_PrefabInstance: {fileID: 8811613083949831240}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5596344800992167579}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c6e1a5d5bff0ed919060c960b142b76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.ScreenShaker
---- !u!1 &5596344800992167579 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4027087350679835347, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
-  m_PrefabInstance: {fileID: 8811613083949831240}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4796830892543947430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5596344800992167579}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.Volume
-  m_IsGlobal: 1
-  priority: 0
-  blendDistance: 0
-  weight: 1
-  sharedProfile: {fileID: 11400000, guid: 3c29a1eeb83e849d4a5a772ab60a78c7, type: 2}
 --- !u!4 &7288933475777020644 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2264849956926330540, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}

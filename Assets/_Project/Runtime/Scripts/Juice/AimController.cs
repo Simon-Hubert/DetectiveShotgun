@@ -3,6 +3,7 @@ using System.Threading;
 using SMath;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
@@ -53,6 +54,10 @@ namespace DShotgun
         [SerializeField] private PixelPerfectCamera _camera;
         [SerializeField] private float _zoomDuration = 0.75f;
         [SerializeField] private BlurController _blurController = new BlurController();
+
+        [Header("Events")]
+        [SerializeField] private UnityEvent OnAimStarted;
+        [SerializeField] private UnityEvent OnAimEnded;
 
         private const int defaultPPU = 100;
         private const int zoomedPPU = 150;
@@ -129,6 +134,7 @@ namespace DShotgun
             _cancel = new CancellationTokenSource();
             _ = AimStopped(currentPPU,
                 CancellationTokenSource.CreateLinkedTokenSource(_cancel.Token, destroyCancellationToken).Token);
+            OnAimEnded?.Invoke();
         }
         
         private void OnGameStateChanged(GameState newGameState)
@@ -145,6 +151,7 @@ namespace DShotgun
             IsControllingCamera = true;
             _ = AimStarted(currentPPU,
                 CancellationTokenSource.CreateLinkedTokenSource(_cancel.Token, destroyCancellationToken).Token);
+            OnAimStarted?.Invoke();
         }
 
         private async Awaitable AimStarted(int currentPPU, CancellationToken token)

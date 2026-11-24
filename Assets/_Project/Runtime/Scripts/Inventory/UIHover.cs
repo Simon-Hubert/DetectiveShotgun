@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -13,6 +14,8 @@ namespace DShotgun
         private CanvasGroup _cg;
 
         private bool _isHovered = false;
+        [SerializeField] private UnityEvent OnHoverStart;
+        [SerializeField] private UnityEvent OnHoverEnd;
 
         private void Start()
         {
@@ -46,13 +49,15 @@ namespace DShotgun
         {
             _isHovered = true;
             _cg.blocksRaycasts = false;
-            Debug.Log("HOVERED");
+            OnHoverStart?.Invoke();
+            //Debug.Log("HOVERED");
         }
 
         private void OnPointerExit()
         {
             _isHovered = false;
             _cg.blocksRaycasts = true;
+            OnHoverEnd?.Invoke();
         }
         
     }
