@@ -14,5 +14,7 @@ namespace DShotgun
             LogSink.LogJournal(_journalEntry);
             _hasExecutedOnce = true;
         }
+
+        protected override float Hue => Animator.StringToHash("LogJournalSequence");
     }
 }
