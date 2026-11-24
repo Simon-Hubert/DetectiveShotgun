@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using FMODUnity;
@@ -60,6 +61,14 @@ namespace DShotgun
 
             Vector3 worldImpact = Camera.main.ScreenToWorldPoint(InputReader.PointerPosition);
             
+            go.transform.position = worldImpact;
+            Vector3 vector3 = go.transform.position;
+            vector3.z = 0;
+            go.transform.position = vector3;
+
+
+            #region Obsolete still here for retrocompatibility
+
             ShotImpactSpriteProvider provider = interactableManager.GetComponent<ShotImpactSpriteProvider>();
             if (provider) 
             {
@@ -74,15 +83,19 @@ namespace DShotgun
                 color = ReadPixel(spriteRenderer, worldImpact);
             }
             
-            go.transform.position = worldImpact;
-            Vector3 vector3 = go.transform.position;
-            vector3.z = 0;
-            go.transform.position = vector3;
-
             foreach (VisualEffectAsset impactVfx in impactVfxs)
             {
                 PlayImpactVfx(vector3, impactVfx, color);
             }
+
+            #endregion
+
+            //ICI
+            IOverrider[] overrides = go.GetComponents<IOverrider>();
+            foreach (IOverrider overrider in overrides) {
+                overrider.Override(go);
+            }
+            
             _onShoot?.Invoke();
         }
         
@@ -125,6 +138,7 @@ namespace DShotgun
             return Color.white;
         }
 
+        [Obsolete]
         private void PlayImpactVfx(Vector3 impact, VisualEffectAsset asset, Color color)
         {
             VisualEffect vfx = GetImpactVfx(asset);
@@ -142,7 +156,9 @@ namespace DShotgun
             vfx.SendEvent(IMPACT_EVENT, attributes);
         }
 
+        
         //mise en cache
+        [Obsolete]
         private VisualEffect GetImpactVfx(VisualEffectAsset asset)
         {
             if (asset == null) return _defaultImpactVfx;
@@ -160,6 +176,7 @@ namespace DShotgun
             return vfx;
         }
 
+        [Obsolete]
         private VisualEffect CreateImpactVfx(VisualEffectAsset asset)
         {
             Transform parent = transform;

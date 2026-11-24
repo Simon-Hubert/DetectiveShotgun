@@ -1,9 +1,11 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
 
 namespace DShotgun
 {
+    [Obsolete("Use AShotImpactOverride<T> instead")]
     public class ShotImpactSpriteProvider : MonoBehaviour
     {
         [SerializeField] private Sprite _sprite;
