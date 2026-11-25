@@ -31,7 +31,10 @@ Material:
     m_Floats:
     - _Background: 1
     - _Distortion: 0.04
-    - _Vignette: 0.2
+    - _RefreshSpeed: 0.5
+    - _RefreshStrength: 0.02
+    - _RefreshWidth: 0.04
+    - _Vignette: 0.3
     - _Zoom: 1.04
     m_Colors: []
   m_BuildTextureStacks: []

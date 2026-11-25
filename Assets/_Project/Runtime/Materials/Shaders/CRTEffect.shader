@@ -6,7 +6,10 @@ Shader "CustomRenderTexture/CRTEffect"
         _Distortion ("Distortion", Range(0, 1)) = 0.06
         _Zoom ("Zoom", Range(1, 1.5)) = 1.04
         _Vignette ("Vignette", Range(0, 1)) = 0.2
-        _Background ("Background", Int) = 0
+        
+        _RefreshSpeed ("Refresh Speed", Float) = 0.5
+        _RefreshStrength ("Refresh Strength", Range(0, 0.1)) = 0.02
+        _RefreshWidth ("Refresh Width", Range(0.001, 0.2)) = 0.04
     }
 
     SubShader
@@ -37,7 +40,9 @@ Shader "CustomRenderTexture/CRTEffect"
                 float _Distortion;
                 float _Zoom;
                 float _Vignette;
-                int _Background;
+                float _RefreshSpeed;
+                float _RefreshStrength;
+                float _RefreshWidth;
             CBUFFER_END
 
             struct Attributes
@@ -75,8 +80,28 @@ Shader "CustomRenderTexture/CRTEffect"
                 if (uv.x < 0.0 || uv.x > 1.0 || uv.y < 0.0 || uv.y > 1.0)
                     return half4(0, 0, 0, 0);
 
-                half4 col = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, uv);
-                if (_Background <= 0 && col[3] == 0)
+                // Position verticale du balayage : de haut en bas
+                float refreshPos = frac(_Time.y * _RefreshSpeed);
+
+                // Distance entre le balayage et le pixel actuel
+                float distanceToRefresh = abs(input.uv.y - refreshPos);
+
+                // Intensité de la déformation autour du balayage
+                float refreshEffect = 1.0 - smoothstep(
+                    0.0,
+                    _RefreshWidth,
+                    distanceToRefresh
+                );
+
+                // Déformation horizontale
+                float2 distortedUV = uv;
+
+                distortedUV.x += sin(input.uv.y * 150.0)
+                    * _RefreshStrength
+                    * refreshEffect;
+                
+                half4 col = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, distortedUV);
+                if (col[3] == 0)
                     return half4(0, 0, 0, 0);
 
                 // Vignette - edge darkening
