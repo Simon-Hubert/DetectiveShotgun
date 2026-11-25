@@ -21,6 +21,9 @@ namespace DShotgun
 
         public int Priority => _priority;
 
+        private bool _canBeAimed = true;
+        private bool _canBeShot = true;
+
         /// <summary>
         /// Traite une interaction du joueur avec cet objet.
         /// Parcourt les cas dans l'ordre de la liste (l'ordre fait la priorité) et s'arrête au premier
@@ -29,6 +32,7 @@ namespace DShotgun
         /// <returns>true si un cas a été validé, false si aucun ne l'est.</returns>
         virtual public bool Interact()
         {
+            if (!_canBeShot) return false;
             try
             {
                 foreach (InteractionCase interactionCase in _interactionCases)
@@ -46,8 +50,9 @@ namespace DShotgun
         /// <summary>
         /// Traite le fait que le joueur vise cet objet.
         /// </summary>
-        virtual public bool  Aim()
+        virtual public bool Aim()
         {
+            if (!_canBeAimed) return false;
             bool result = false;
             foreach (InteractionCase aimCase in _aimCases)
             {
@@ -60,6 +65,38 @@ namespace DShotgun
 
             _onAimed?.Invoke();
             return result;
+        }
+        
+        /// <summary>
+        /// Empeche les intéractions de Aim
+        /// </summary>
+        public void DisableAim()
+        {
+            _canBeAimed = false;
+        }
+        
+        /// <summary>
+        /// Rends possible les intéractions de Aim
+        /// </summary>
+        public void EnableAim()
+        {
+            _canBeAimed = true;
+        }
+        
+        /// <summary>
+        /// Empeche les intéractions de Shoot
+        /// </summary>
+        public void DisableShoot()
+        {
+            _canBeShot = false;
+        }
+        
+        /// <summary>
+        /// Rends possible les intéractions de Shoot
+        /// </summary>
+        public void EnableShoot()
+        {
+            _canBeShot = true;
         }
     }
 }

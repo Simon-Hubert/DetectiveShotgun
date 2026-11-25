@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ANOCO_Mirror
+  m_Controller: {fileID: 9100000, guid: fcbf29602fdc6d348a0a580bf5840bb6, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: b1a95ba070e8adb49a7c87c51fcb01df, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6d1d015116a8ed64db320b7ad79a601a, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a54bd2819ca61b84aa41b82064ebfc2c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 59aea4fb9c7a0c44b8a2af5e71fdb238, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 2637ab19d68e0e34087bcd49788d5735, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7d2e83365b16edd4fbe459294be8c719, type: 2}

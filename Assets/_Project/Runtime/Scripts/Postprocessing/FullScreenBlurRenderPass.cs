@@ -1,0 +1,184 @@
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.RenderGraphModule;
+using UnityEngine.Rendering.Universal;
+using UnityEngine.Rendering.Universal.Internal;
+
+/// <summary>
+/// The full screen blur render pass.
+/// </summary>
+public sealed class FullScreenBlurRenderPass : ScriptableRenderPass
+{
+	#region Definitions
+
+	/// <summary>
+	/// Holds the data needed by the execution of the render pass.
+	/// </summary>
+	private class PassData
+	{
+		public TextureHandle source;
+		public TextureHandle finalBlit;
+
+		public Material material;
+		public int downsamplePass;
+		public int upsamplePass;
+		public int finalBlitPass;
+
+		public TextureHandle[] pyramid;
+		public float intensity;
+		public int passes;
+	}
+
+	#endregion
+
+	#region Public Attributes
+
+	public const int MaxPasses = 8;
+
+	#endregion
+
+	#region Private Attributes
+
+	private const float BlurIntensity = 2.0f;
+	private const float BlurSizeScalingReferenceHeight = 1440.0f;
+
+	private static readonly int IntensityId = Shader.PropertyToID("_Intensity");
+	private static readonly int OriginalBlitId = Shader.PropertyToID("_OriginalBlit");
+	private static readonly int MousePositionId = Shader.PropertyToID("_MousePosition");
+
+	private readonly TextureHandle[] pyramid = new TextureHandle[MaxPasses];
+	private TextureHandle finalBlit = new TextureHandle();
+	private Material material;
+
+	#endregion
+
+	#region Initialization Methods
+
+	public FullScreenBlurRenderPass(Material material) : base()
+	{
+		profilingSampler = new ProfilingSampler("Full Screen Blur");
+		renderPassEvent = RenderPassEvent.AfterRenderingPostProcessing;
+		requiresIntermediateTexture = false;
+
+		this.material = material;
+	}
+
+	#endregion
+
+	#region Scriptable Render Pass Methods
+
+	/// <summary>
+	/// <inheritdoc/>
+	/// </summary>
+	/// <param name="renderGraph"></param>
+	/// <param name="frameData"></param>
+	public override void RecordRenderGraph(RenderGraph renderGraph, ContextContainer frameData)
+	{
+		FullScreenBlurVolumeComponent volume = VolumeManager.instance.stack.GetComponent<FullScreenBlurVolumeComponent>();
+		UniversalResourceData resourceData = frameData.Get<UniversalResourceData>();
+
+		using (IUnsafeRenderGraphBuilder builder = renderGraph.AddUnsafePass("Full Screen Blur", out PassData passData, profilingSampler))
+		{
+			CreateRenderGraphTextures(renderGraph, resourceData, builder, volume.passes.value);
+
+			passData.source = resourceData.activeColorTexture;
+			passData.material = material;
+			passData.downsamplePass = 0;
+			passData.upsamplePass = 1;
+			passData.finalBlitPass = 2;
+			passData.pyramid = pyramid;
+			passData.intensity = volume.intensity.value;
+			passData.passes = volume.passes.value;
+			passData.finalBlit = finalBlit;
+
+			builder.SetRenderAttachment(pyramid[0], 0);
+			builder.UseTexture(resourceData.activeColorTexture, AccessFlags.ReadWrite);
+			builder.SetRenderFunc((PassData data, UnsafeGraphContext context) => ExecuteUnsafePass(data, context));
+		}
+	}
+
+	#endregion
+
+	#region Methods
+
+	/// <summary>
+	/// Creates and returns all the necessary render graph texture handles.
+	/// </summary>
+	/// <param name="renderGraph"></param>
+	/// <param name="resourceData"></param>
+	/// <param name="builder"></param>
+	/// <param name="passes"></param>
+	private void CreateRenderGraphTextures(RenderGraph renderGraph, UniversalResourceData resourceData, IUnsafeRenderGraphBuilder builder, int passes)
+	{
+		TextureDesc descriptor = renderGraph.GetTextureDesc(resourceData.activeColorTexture);
+		descriptor.name = "_FullScreenBlur";
+		descriptor.clearBuffer = false;
+		descriptor.depthBufferBits = 0;
+		descriptor.msaaSamples = MSAASamples.None;
+
+		for (int i = 0; i < passes; ++i)
+		{
+			descriptor.width = Mathf.RoundToInt((float)descriptor.width / 2.0f);
+			descriptor.height = Mathf.RoundToInt((float)descriptor.height / 2.0f);
+
+			pyramid[i] = builder.CreateTransientTexture(descriptor);
+		}
+
+		for (int i = passes; i < MaxPasses; ++i)
+			pyramid[i] = TextureHandle.nullHandle;
+
+		finalBlit = builder.CreateTransientTexture(renderGraph.GetTextureDesc(resourceData.activeColorTexture));
+	}
+
+	/// <summary>
+	/// Updates the material parameters according to the volume settings.
+	/// </summary>
+	/// <param name="material"></param>
+	/// <param name="intensity"></param>
+	private static void UpdateMaterialParameters(Material material, float intensity, Texture originalBlit)
+	{
+		// An increase of x4 pixels equals to a multiplier of 2.5 to blur intensity.
+		float factor = ((Screen.height / BlurSizeScalingReferenceHeight) / 4.0f) * 2.5f;
+		float blurIntensity = Mathf.Lerp(0.0f, BlurIntensity, Mathf.Sqrt(intensity));
+		
+		
+		material.SetVector(MousePositionId, Mouse.current.position.ReadValue());
+		material.SetFloat(IntensityId, blurIntensity * factor);
+		material.SetTexture(OriginalBlitId, originalBlit);
+	}
+
+	/// <summary>
+	/// Executes the pass with the information from the pass data.
+	/// </summary>
+	/// <param name="passData"></param>
+	/// <param name="context"></param>
+	private static void ExecuteUnsafePass(PassData passData, UnsafeGraphContext context)
+	{
+		Material material = passData.material;
+		UpdateMaterialParameters(material, passData.intensity, passData.source);
+
+		CommandBuffer cmd = CommandBufferHelpers.GetNativeCommandBuffer(context.cmd);
+
+		int passes = passData.passes;
+		int downsamplePass = passData.downsamplePass;
+		int upsamplePass = passData.upsamplePass;
+		int finalBlitPass = passData.finalBlitPass;
+		TextureHandle[] pyramid = passData.pyramid;
+		TextureHandle finalBlit = passData.finalBlit;
+		
+		Blitter.BlitTexture(cmd, passData.source, Vector2.one, material, downsamplePass);
+
+		for (int i = 0; i < (passes - 1); ++i)
+			Blitter.BlitCameraTexture(cmd, pyramid[i], pyramid[i + 1], material, downsamplePass);
+
+		for (int i = (passes - 1); i > 0; --i)
+			Blitter.BlitCameraTexture(cmd, pyramid[i], pyramid[i - 1], material, upsamplePass);
+
+		Blitter.BlitCameraTexture(cmd, passData.pyramid[0], finalBlit, material, upsamplePass);
+		
+		Blitter.BlitCameraTexture(cmd, finalBlit, passData.source, material, finalBlitPass);
+	}
+
+	#endregion
+}

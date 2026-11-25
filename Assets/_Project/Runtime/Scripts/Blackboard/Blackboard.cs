@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,6 +17,8 @@ namespace DShotgun
         public Dictionary<string, bool> Flags => _flags;
         
         public static Blackboard Instance { get; private set; }
+        
+        public static event Action OnFlagRaised;
 
         private void Awake()
         {
@@ -46,6 +49,7 @@ namespace DShotgun
         public void RaiseFlag(string flagName)
         {
             _flags[flagName] = true;
+            OnFlagRaised?.Invoke();
         }
     }
 }

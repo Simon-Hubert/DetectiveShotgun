@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
+using NaughtyAttributes;
 
 namespace DShotgun
 {
@@ -26,6 +27,17 @@ namespace DShotgun
 
             Debug.Log($"{name} : move to camera {a_index} at {_tableauCamPosList[a_index].position}, gameObject");
             _interactableCtrl.SetDefaultCamPos = _tableauCamPosList[a_index].position;
+        }
+
+        [Button]
+        public void AddTableauPosAtCamera()
+        {
+            if (_tableauCamPosList == null) _tableauCamPosList = new List<Transform>();
+            
+            Transform pos = Instantiate(new GameObject($"Cam-Pos-{_tableauCamPosList.Count + 1}"), transform).transform;
+
+            pos.position = Camera.main.transform.position;
+            _tableauCamPosList.Add(pos);
         }
     }
 }

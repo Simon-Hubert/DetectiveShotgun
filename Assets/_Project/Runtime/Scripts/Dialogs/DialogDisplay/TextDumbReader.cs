@@ -1,9 +1,9 @@
 using UnityEngine;
 using TMPro;
 using System;
-using System.Collections.Generic;
 using System.Text;
 using System.Threading;
+using DShotgun.Sound;
 
 namespace DShotgun.Dialogs
 {
@@ -20,20 +20,36 @@ namespace DShotgun.Dialogs
         #endregion
             
         private TextMeshProUGUI _textBox;
+        private CancellationTokenSource _internInstructionTokenSource = new CancellationTokenSource();
 
-        private TextInstruction _instruction;
+        private TextInstruction _instruction = new TextInstruction();
         public bool HasAutoPassed { get => _instruction.pass; }
             
         public async Awaitable ComputeTextAsync(string a_text, SOCharacterDialogProfile a_profile, CancellationToken a_cancel) {
             CharacterDialogProfile profileStruct = a_profile.ToStruct;
+            _instruction.Reset();
 
             try {
+                #region Init profile & TMP
                 float delay = Time.deltaTime;
                 _textBox.text = "";
                 StringBuilder a = new StringBuilder(_textBox.text);
-
+                
+                _textBox.color = profileStruct.DefaultProfile.DefaultTextColor(_textBox.color);
+                _textBox.font = profileStruct.DefaultProfile.DefaultFont;
+                _textBox.fontStyle = profileStruct.DefaultProfile.DefaultFontStyle(_textBox.fontStyle);
+                
+                TextSpacing spacing = new TextSpacing();
+                spacing = profileStruct.DefaultProfile.DefaultSpacing(spacing);
+                _textBox.characterSpacing = spacing.character;
+                _textBox.wordSpacing = spacing.word;
+                _textBox.lineSpacing = spacing.line;
+                _textBox.lineSpacing = spacing.paragraph;
+                #endregion
+                
+                // Text Reading Loop
                 for (int i = 0; i < a_text.Length; i++) {
-                    _instruction = new TextInstruction();
+                    _instruction.ResetLoop();
                     
                     if (a_text[i] == '<') a.Append(TagsTreatment(a_text, ref profileStruct, ref i));
                     else if (string.IsNullOrWhiteSpace(a_text[i].ToString())) a.Append(a_text[i]);
@@ -47,11 +63,23 @@ namespace DShotgun.Dialogs
 
                         a.Append(a_text[i]);
                         _textBox.text = a.ToString();
+
+                        if (!profileStruct.typingSound.GetLastValue.IsNull)
+                            SoundManager.PlayOneShot(profileStruct.typingSound.GetLastValue);
                     }
 
-                    if (_instruction.wait > 0.0f) await Awaitable.WaitForSecondsAsync(_instruction.wait, a_cancel);
+                    if (_instruction.wait > 0.0f) {
+                        await Awaitable.WaitForSecondsAsync(_instruction.wait, _instruction.internCancelTokenSource.Token);
+                    }
                     if (_instruction.pass) break;
+                    if (_instruction.instantDisplay && profileStruct.typingSpeed.GetLastValue != 0) {
+                        profileStruct.typingSpeed.ResetValues();
+                        profileStruct.typingSpeed.AddValue(0);
+                    }
                 }
+
+                if (!profileStruct.DefaultProfile.EndTypingSound.IsNull)
+                    SoundManager.PlayOneShot(profileStruct.DefaultProfile.EndTypingSound);
             }
             catch (Exception e) {
                 Debug.LogWarning($"'DumbReader' : TextTreatment Async was cancelled - {e}");
@@ -116,12 +144,33 @@ namespace DShotgun.Dialogs
         public TextDumbReader(TextMeshProUGUI a_textBox) {
             _textBox = a_textBox;
         }
+
+        public void InstantDisplayAll() {
+            _instruction.instantDisplay = true;
+            _instruction.internCancelTokenSource.Cancel();
+        }
     }
 
     [Serializable]
     public struct TextInstruction
     {
+        // Loop Reset values
         public bool pass;
         public float wait;
+        
+        // Complete Reset values
+        public bool instantDisplay;
+        public CancellationTokenSource internCancelTokenSource;
+
+        public void ResetLoop() {
+            pass = false;
+            wait = 0;
+        }
+        public void Reset() {
+            ResetLoop();
+            
+            instantDisplay = false;
+            internCancelTokenSource = new CancellationTokenSource();
+        }
     }
 }

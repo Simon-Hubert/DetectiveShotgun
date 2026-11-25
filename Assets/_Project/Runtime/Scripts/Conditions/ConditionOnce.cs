@@ -14,5 +14,9 @@ namespace DShotgun
             _result = false;
             return true;
         }
+
+        public void Subscribe(Action onChanged) { }
+
+        public void Unsubscribe(Action onChanged) { }
     }
 }
