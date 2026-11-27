@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 61af19d02b9e3c443ab44f6ba3a036ef
+guid: 6779bf33974157044aea29d1adcc37f2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5460315795794246538
-    second: SPI_corpse_0
+      213: -542880901036889496
+    second: miniature_recrue_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPI_corpse_0
+      name: miniature_recrue_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 13
-        width: 449
-        height: 902
+        x: 91
+        y: 0
+        width: 289
+        height: 447
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a8b35c94940f6cb40800000000000000
-      internalID: 5460315795794246538
+      spriteID: 86a2a5262bc4778f0800000000000000
+      internalID: -542880901036889496
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SPI_corpse_0: 5460315795794246538
+      miniature_recrue_0: -542880901036889496
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
