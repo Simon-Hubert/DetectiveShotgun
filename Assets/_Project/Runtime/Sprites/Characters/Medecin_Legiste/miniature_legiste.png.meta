@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 21f5178e0e327bbefa92c313b9138a46
+guid: 6d3b10213c8de1b4281e65da21a693ad
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4902103515562096559
-    second: medecin_legiste_accroupi_sprite_final_0
+      213: -3159787566693421048
+    second: miniature_legiste_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: medecin_legiste_accroupi_sprite_final_0
+      name: miniature_legiste_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 14
-        width: 439
-        height: 566
+        x: 122
+        y: 0
+        width: 217
+        height: 380
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1584ab633da38fbb0800000000000000
-      internalID: -4902103515562096559
+      spriteID: 800fa8903fd2624d0800000000000000
+      internalID: -3159787566693421048
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      medecin_legiste_accroupi_sprite_final_0: -4902103515562096559
+      miniature_legiste_0: -3159787566693421048
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
