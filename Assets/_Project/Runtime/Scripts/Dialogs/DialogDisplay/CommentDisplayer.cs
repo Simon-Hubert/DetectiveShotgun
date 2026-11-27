@@ -9,9 +9,9 @@ namespace DShotgun.Dialogs
     public class CommentDisplayer : ATextDisplayer
     {
         [Header("data")]
-        [SerializeField] private float _defaultTimeToHide = 3.0f;
+        [SerializeField] protected float _defaultTimeToHide = 3.0f;
         [Space(7)]
-        [SerializeField, ReadOnly] private int _currentGroupID = 0;
+        [SerializeField, ReadOnly] protected int _currentGroupID = 0;
         public int GroupID
         {
             get => _currentGroupID;
@@ -20,8 +20,8 @@ namespace DShotgun.Dialogs
                 _listOfTextID.Clear();
             }
         }
-        [SerializeField, ReadOnly] private List<CommentData> _listOfTextID = new List<CommentData>();
-        [SerializeField, ReadOnly] private int _index = 0;
+        [SerializeField, ReadOnly] protected List<CommentData> _listOfTextID = new List<CommentData>();
+        [SerializeField, ReadOnly] protected int _index = 0;
         
         private void Awake() {
             base.Awake();
@@ -34,7 +34,7 @@ namespace DShotgun.Dialogs
                 
                 for (_index = 0; _index < _listOfTextID.Count; _index++) {
                     a_dialogData = _listOfTextID[_index].dialogData;
-                    _speakersName.text = "Détective Shotgun";
+                    if (_speakersName) _speakersName.text = "Détective Shotgun";
                 
                     _displayState = TextDisplayState.Writing;
                     await _dumbReader.ComputeTextAsync(a_dialogData.Text, GetProfile(a_dialogData), a_cancel);
@@ -67,7 +67,7 @@ namespace DShotgun.Dialogs
             _listOfTextID.Add(new CommentData(a_dialogData, a_id));
         }
 
-        private struct CommentData {
+        protected struct CommentData {
             public int id { get; private set; }
             public CharacterDialogData dialogData { get; private set; }
 

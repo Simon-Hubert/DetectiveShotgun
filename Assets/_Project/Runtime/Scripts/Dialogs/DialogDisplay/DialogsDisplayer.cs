@@ -11,10 +11,10 @@ namespace DShotgun.Dialogs
     public class DialogsDisplayer : ATextDisplayer
     {
         [Header("Characters Images")]
-        [SerializeField] private Image _leftCharaRdr;
-        [SerializeField] private Image _middleCharaRdr;
-        [SerializeField] private Image _rightCharaRdr;
-        private Image GetCharaImg(CharaPos a_posing) {
+        [SerializeField] protected Image _leftCharaRdr;
+        [SerializeField] protected Image _middleCharaRdr;
+        [SerializeField] protected Image _rightCharaRdr;
+        protected Image GetCharaImg(CharaPos a_posing) {
             //Debug.Log($"Change Speaker Sprite {a_posing.ToString()}");
             switch (a_posing) {
                 case CharaPos.LEFT:
@@ -27,8 +27,8 @@ namespace DShotgun.Dialogs
                     return null;
             }
         }
-        private EventTrigger _leftCharaTrigr, _middleCharaTrigr, _rightCharaTrigr;
-        private EventTrigger GetCharaTrigr(CharaPos a_posing) {
+        protected EventTrigger _leftCharaTrigr, _middleCharaTrigr, _rightCharaTrigr;
+        protected EventTrigger GetCharaTrigr(CharaPos a_posing) {
             switch (a_posing) {
                 case CharaPos.LEFT:
                     return _leftCharaTrigr;
@@ -40,8 +40,8 @@ namespace DShotgun.Dialogs
                     return null;
             }
         }
-        private Vector3 _leftCharaPos, _middleCharaPos, _rightCharaPos;
-        private Vector3 GetCharaPos(CharaPos a_posing) {
+        protected Vector3 _leftCharaPos, _middleCharaPos, _rightCharaPos;
+        protected Vector3 GetCharaPos(CharaPos a_posing) {
             switch (a_posing) {
                 case CharaPos.LEFT:
                     return _leftCharaPos;
@@ -55,16 +55,16 @@ namespace DShotgun.Dialogs
         }
 
         [Header("Textbox")]
-        [SerializeField] private Image _dialogContinueIcon;
-        [SerializeField] private Image _leftNameSprite, _rightNameSprite;
-        [SerializeField] private Sprite _blankNameSprite;
-        [SerializeField] private TextMeshProUGUI _leftNameText, _rightNameText;
-        private Vector2 _leftNamePos, _rightNamePos;
-        [SerializeField] private Vector2 _nameSpriteOffset = new Vector2(0, -20.0f);
+        [SerializeField] protected Image _dialogContinueIcon;
+        [SerializeField] protected Image _leftNameSprite, _rightNameSprite;
+        [SerializeField] protected Sprite _blankNameSprite;
+        [SerializeField] protected TextMeshProUGUI _leftNameText, _rightNameText;
+        protected Vector2 _leftNamePos, _rightNamePos;
+        [SerializeField] protected Vector2 _nameSpriteOffset = new Vector2(0, -20.0f);
 
-        private bool _skipShotCharacter = false;
+        protected bool _skipShotCharacter = false;
 
-        private void Start() {
+        protected void Start() {
             _leftNamePos = _leftNameSprite.transform.position;
             _rightNamePos = _rightNameSprite.transform.position;
 
@@ -131,11 +131,11 @@ namespace DShotgun.Dialogs
             _skipShotCharacter = true;
         }
 
-        private void ContinueButtonState(bool a_show) {
+        protected void ContinueButtonState(bool a_show) {
             _dialogContinueIcon.enabled = a_show;
         }
         
-        public void DisplaySpeaker(CharacterDialogData a_dialogData) {
+        protected void DisplaySpeaker(CharacterDialogData a_dialogData) {
             SOCharacterDialogProfile profile = GetProfile(a_dialogData);
             
             _rightNameText.text = "";
@@ -176,11 +176,11 @@ namespace DShotgun.Dialogs
             _ = TransitionSpeakerSprite(CharaPos.RIGHT, a_dialogData.Right, a_dialogData.SpeakingCharacterID == (int)CharaPos.RIGHT ? true : false);
         }
 
-        private async Awaitable TransitionSpeakerSprite(CharaPos a_pos, Sprite a_sprite, bool a_isSpeaker) {
+        protected async Awaitable TransitionSpeakerSprite(CharaPos a_pos, Sprite a_sprite, bool a_isSpeaker) {
             try {
                 Image img = GetCharaImg(a_pos);
-                GetCharaTrigr(a_pos).enabled = a_isSpeaker; 
-                //Debug.Log($"Transition Sprite '{img.name}' - trigger is {a_isSpeaker}");
+                GetCharaTrigr(a_pos).enabled = a_isSpeaker;
+                
                 
                 if (a_sprite == null) {
                     img.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
