@@ -15,6 +15,8 @@ namespace DShotgun
             _hasExecutedOnce = true;
         }
 
+#if UNITY_EDITOR
         protected override float Hue => Animator.StringToHash("LogJournalSequence");
+#endif
     }
 }

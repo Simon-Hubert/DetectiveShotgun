@@ -2272,47 +2272,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5596344800992167579, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3985363364643086025}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
---- !u!1 &3985363364643086024 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5596344800992167579, guid: 903ae57aa75fd4e8dbdfb131ef1ea8aa, type: 3}
-  m_PrefabInstance: {fileID: 3985363364643086023}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3985363364643086025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3985363364643086024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 338420931
-      Data2: 1218568330
-      Data3: -199066728
-      Data4: 845489691
-    Path: event:/Music/MUS_Crime_Scene_LP
-  Event: 
-  EventPlayTrigger: 1
-  EventStopTrigger: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &4688224764354385326
 PrefabInstance:
   m_ObjectHideFlags: 0
