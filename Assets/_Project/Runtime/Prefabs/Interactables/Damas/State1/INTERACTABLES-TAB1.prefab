@@ -48,6 +48,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7209769950963568240}
     m_Modifications:
+    - target: {fileID: 1567834586207255764, guid: a7de4b9117d40d4418e581faf245ca06, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1567834586207255764, guid: a7de4b9117d40d4418e581faf245ca06, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 2b4ec60e844077148b990d57d3e87b49, type: 3}
+    - target: {fileID: 1567834586207255764, guid: a7de4b9117d40d4418e581faf245ca06, type: 3}
+      propertyPath: '_impactVfxs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
     - target: {fileID: 5106840582180128338, guid: a7de4b9117d40d4418e581faf245ca06, type: 3}
       propertyPath: m_Name
       value: Poster
@@ -157,13 +169,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7206256690080488437, guid: 2f2c07d1b0a06af4d82cf4c1557c092d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2944355076285113525}
   m_SourcePrefab: {fileID: 100100000, guid: 2f2c07d1b0a06af4d82cf4c1557c092d, type: 3}
 --- !u!4 &4816708952262857744 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6118482570459708539, guid: 2f2c07d1b0a06af4d82cf4c1557c092d, type: 3}
   m_PrefabInstance: {fileID: 1599151971023530091}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8228235371964445598 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7206256690080488437, guid: 2f2c07d1b0a06af4d82cf4c1557c092d, type: 3}
+  m_PrefabInstance: {fileID: 1599151971023530091}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2944355076285113525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8228235371964445598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
+  - {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
 --- !u!1001 &2212100485275274541
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -172,6 +208,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7209769950963568240}
     m_Modifications:
+    - target: {fileID: 597721585394161696, guid: 5e3c6944e1ef7c74f996aa0bd04dbbe5, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 597721585394161696, guid: 5e3c6944e1ef7c74f996aa0bd04dbbe5, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
     - target: {fileID: 6207777588412975373, guid: 5e3c6944e1ef7c74f996aa0bd04dbbe5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.48
@@ -293,13 +337,82 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8043859766074086839, guid: 450f5aea5fc7cdf44bef3e0f4cc90df7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8224357753044662275}
+    - targetCorrespondingSourceObject: {fileID: 4165194515881326180, guid: 450f5aea5fc7cdf44bef3e0f4cc90df7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8339601810022141894}
+    - targetCorrespondingSourceObject: {fileID: 5688843712945704001, guid: 450f5aea5fc7cdf44bef3e0f4cc90df7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6529029207116159688}
   m_SourcePrefab: {fileID: 100100000, guid: 450f5aea5fc7cdf44bef3e0f4cc90df7, type: 3}
+--- !u!1 &1788856081571158065 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4165194515881326180, guid: 450f5aea5fc7cdf44bef3e0f4cc90df7, type: 3}
+  m_PrefabInstance: {fileID: 2386614752389000789}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8339601810022141894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788856081571158065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
 --- !u!4 &4927943713874218095 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7313115488162013754, guid: 450f5aea5fc7cdf44bef3e0f4cc90df7, type: 3}
   m_PrefabInstance: {fileID: 2386614752389000789}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5674380148103543778 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8043859766074086839, guid: 450f5aea5fc7cdf44bef3e0f4cc90df7, type: 3}
+  m_PrefabInstance: {fileID: 2386614752389000789}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8224357753044662275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5674380148103543778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
+--- !u!1 &8064856559190909460 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5688843712945704001, guid: 450f5aea5fc7cdf44bef3e0f4cc90df7, type: 3}
+  m_PrefabInstance: {fileID: 2386614752389000789}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6529029207116159688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064856559190909460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
 --- !u!1001 &3096472232652685732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -352,6 +465,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8333347670413668547, guid: 5040b469e7970144a8fee58ae072b784, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8333347670413668547, guid: 5040b469e7970144a8fee58ae072b784, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
+    - target: {fileID: 8333347670413668547, guid: 5040b469e7970144a8fee58ae072b784, type: 3}
+      propertyPath: '_impactVfxs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -414,6 +539,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8447078892061074203, guid: 5180a0ddecf349f438abeb7e45e2a78e, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8447078892061074203, guid: 5180a0ddecf349f438abeb7e45e2a78e, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d1eb60a719f45884d96949c54029cfe8, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -476,6 +609,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Presentoir
       objectReference: {fileID: 0}
+    - target: {fileID: 8700689164441867832, guid: 6012049ba5ceb7343aebd6905568dbb5, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700689164441867832, guid: 6012049ba5ceb7343aebd6905568dbb5, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
+    - target: {fileID: 8700689164441867832, guid: 6012049ba5ceb7343aebd6905568dbb5, type: 3}
+      propertyPath: '_impactVfxs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -538,6 +683,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Damas
       objectReference: {fileID: 0}
+    - target: {fileID: 5266342231436068852, guid: 4a5141b1ee16c8841ade5a03caec52f3, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5266342231436068852, guid: 4a5141b1ee16c8841ade5a03caec52f3, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 2b4ec60e844077148b990d57d3e87b49, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -556,6 +709,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7209769950963568240}
     m_Modifications:
+    - target: {fileID: 3822752818597309602, guid: a748ad3787ac774419623aed0c1117fb, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3822752818597309602, guid: a748ad3787ac774419623aed0c1117fb, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 2b4ec60e844077148b990d57d3e87b49, type: 3}
     - target: {fileID: 7354395935491528228, guid: a748ad3787ac774419623aed0c1117fb, type: 3}
       propertyPath: m_Name
       value: Patrice

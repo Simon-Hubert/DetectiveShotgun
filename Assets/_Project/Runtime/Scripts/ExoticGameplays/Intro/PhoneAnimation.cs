@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace DShotgun
 {
@@ -7,6 +8,7 @@ namespace DShotgun
     {
         [SerializeField] private float _horizontalScale = 2.5f;
         [SerializeField] private float _frequency = 50f;
+        
         private bool _ringing = false;
 
         private Vector3 _origin;

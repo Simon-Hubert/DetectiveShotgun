@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 using System.Collections.Generic;
-using JetBrains.Annotations;
+using FMODUnity;
 using NaughtyAttributes;
 
 namespace DShotgun.Dialogs
@@ -34,15 +34,15 @@ namespace DShotgun.Dialogs
         public float TypingSpeed { get => _typingSpeed; }
         public float TimeBetweenChar { get => _typingSpeed > 0.0f ? 1.0f / _typingSpeed : 0.0f; }
         
-        [FormerlySerializedAs("defasultTypingSound")]
-        [FormerlySerializedAs("_typingSound")]
         [Header("Sound")]
         [Tooltip("Sound played at each new char")]
-        [SerializeField] private AudioClip _defasultTypingSound;
-        public AudioClip DefaultTypingSound { get => _defasultTypingSound; }
+        [SerializeField] private EventReference _defaultTypingSound;
+        public EventReference DefaultTypingSound { get => _defaultTypingSound; }
         [Tooltip("Pitch of the Sound played")]
-        [SerializeField, Range(-3.0f, 3.0f)] private float _soundPitch = 1.0f;
+        [SerializeField, Range(0.0f, 3.0f)] private float _soundPitch = 1.0f;
         public float SoundPitch { get => _soundPitch; }
+        [SerializeField] private EventReference _endTypingSound;
+        public EventReference EndTypingSound { get => _endTypingSound; }
 
         [FormerlySerializedAs("_hasDefaultColor")]
         [Header("Color")]
@@ -88,23 +88,41 @@ namespace DShotgun.Dialogs
         
         public CharacterDialogProfile ToStruct { get => new CharacterDialogProfile(this); }
 
-        public SOCharacterDialogProfile CompleteDefaultProfile {
-            set {
-                if (_textBoxBackground == null) _textBoxBackground = value.TextBoxSprite;
-                if (_charaNameSprite == null) _charaNameSprite = value.CharaNameSprite;
-                _nameDisplayedAsTMP = value.NameDisplayedAsTMP;
-                
-                if (_defasultTypingSound == null) _defasultTypingSound = value.DefaultTypingSound;
-                
-                if (!_hasPersonalisedColor) _defaultTextColor = value.DefaultTextColor(value._defaultTextColor);
-                if (_defaultFont == null) _defaultFont = value.DefaultFont;
-                if (!_hasFontStyle) DefaultFontStyle(value._fontStyle);
-                if (!_hasPersonalisedSpacing) DefaultSpacing(value._textSpacing);
+        public SOCharacterDialogProfile GetProfileWithDefault(SOCharacterDialogProfile a_value) {
+            SOCharacterDialogProfile result = this;
 
-                _hasPersonalisedColor = true;
-                _hasFontStyle = true;
-                _hasPersonalisedSpacing = true;
+            if (result._textBoxBackground == null) {
+                result._textBoxBackground = a_value.TextBoxSprite;
             }
+            if (result._charaNameSprite == null) {
+                result._charaNameSprite = a_value.CharaNameSprite;
+                result._nameDisplayedAsTMP = a_value.NameDisplayedAsTMP;
+            }
+            if (result._defaultTypingSound.IsNull) {
+                result._defaultTypingSound = a_value.DefaultTypingSound;
+            }
+            if (result._endTypingSound.IsNull) {
+                result._endTypingSound = a_value.EndTypingSound;
+            }
+
+            if (!result._hasPersonalisedColor) {
+                result.DefaultTextColor(a_value._defaultTextColor);
+            }
+            if (result._defaultFont == null) {
+                result._defaultFont = a_value.DefaultFont;
+            }
+            if (!result._hasFontStyle) {
+                result.DefaultFontStyle(a_value._fontStyle);
+            }
+            if (!result._hasPersonalisedSpacing) {
+                result.DefaultSpacing(a_value._textSpacing);
+            }
+
+            result._hasPersonalisedColor = true;
+            result._hasFontStyle = true;
+            result._hasPersonalisedSpacing = true;
+
+            return result;
         }
     }
 
@@ -117,7 +135,7 @@ namespace DShotgun.Dialogs
         public ProfileValues<WritingProfile> typingProfile;
         public ProfileValues<float> typingSpeed;
         public float typingDelay { get => typingSpeed.GetLastValue > 0.0f ? 1.0f / typingSpeed.GetLastValue : 0.0f; }
-        public ProfileValues<AudioClip> typingSound;
+        public ProfileValues<EventReference> typingSound;
         public ProfileValues<float> soundPitch;
 
         public void ResetAll() {
@@ -132,7 +150,7 @@ namespace DShotgun.Dialogs
             
             typingProfile = new ProfileValues<WritingProfile>(_defaultProfile.TypingProfile);
             typingSpeed = new ProfileValues<float>(_defaultProfile.TypingSpeed);
-            typingSound = new ProfileValues<AudioClip>(_defaultProfile.DefaultTypingSound);
+            typingSound = new ProfileValues<EventReference>(_defaultProfile.DefaultTypingSound);
             soundPitch = new ProfileValues<float>(_defaultProfile.SoundPitch);
         }
     }

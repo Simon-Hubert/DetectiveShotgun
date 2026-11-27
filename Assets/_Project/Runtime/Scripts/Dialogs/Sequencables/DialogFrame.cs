@@ -118,6 +118,9 @@ namespace DShotgun.Dialogs
             };
 
             DialogsManager.instance.CaptureDialogsInfo(dialogData);
+
+            string plainText = RichTextCompiler.Compile(_text.Text, RichTextTarget.Plain).Output;
+            LogSink.LogDialog(new DialogEntryData(ResolveName(database), plainText));
         }
 
         public void OnRequestedSkip() {

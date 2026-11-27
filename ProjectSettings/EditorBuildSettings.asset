@@ -15,11 +15,20 @@ EditorBuildSettings:
     path: Assets/_Project/Runtime/Scenes/Gameplay/States/House/House-State-1.unity
     guid: 210951924e833a1e9bae3e2078dc56ec
   - enabled: 1
+    path: Assets/_Project/Runtime/Scenes/Gameplay/States/House/House-State-2.unity
+    guid: d3660fa2d0974e02b9b5fac8a5993363
+  - enabled: 1
+    path: Assets/_Project/Runtime/Scenes/Gameplay/States/House/House-State-3.unity
+    guid: bb8deb1d8a5f0e72f96e2058caec863e
+  - enabled: 1
     path: Assets/_Project/Runtime/Scenes/Gameplay/Places/Parking.unity
     guid: 21e29c04973b303af8c7e7ee916e7600
   - enabled: 1
     path: Assets/_Project/Runtime/Scenes/Gameplay/States/Parking/Parking-State-1.unity
     guid: 548f2c67dfe291485a2f4b69300efac9
+  - enabled: 1
+    path: Assets/_Project/Runtime/Scenes/Gameplay/DontDestroySimulator.unity
+    guid: 556049ac6e64366b380d391c6a8de13a
   - enabled: 1
     path: Assets/_Project/Runtime/Scenes/Gameplay/Places/Damas.unity
     guid: 7e67cf26fbc80b2428b190575a5e05e3
@@ -32,12 +41,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Project/Runtime/Scenes/Gameplay/States/PoliceStation/PoliceStation-State-1.unity
     guid: 691ff71876620b64193c20b264f12a40
-  - enabled: 1
-    path: Assets/_Project/Runtime/Scenes/Gameplay/States/House/House-State-2.unity
-    guid: d3660fa2d0974e02b9b5fac8a5993363
-  - enabled: 1
-    path: Assets/_Project/Runtime/Scenes/Gameplay/States/House/House-State-3.unity
-    guid: bb8deb1d8a5f0e72f96e2058caec863e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

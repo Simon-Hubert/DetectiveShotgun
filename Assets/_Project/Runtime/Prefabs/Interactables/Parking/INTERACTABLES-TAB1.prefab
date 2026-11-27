@@ -4114,6 +4114,125 @@ MonoBehaviour:
   _name: 
   _useCustomDialogProfile: 0
   _characterDialogProfile: {fileID: 0}
+--- !u!1 &5648216824624195050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8756802251571942957}
+  - component: {fileID: 5227715505289743363}
+  - component: {fileID: 2674703706111977065}
+  - component: {fileID: 6234462209172599903}
+  m_Layer: 0
+  m_Name: Any
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8756802251571942957
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5648216824624195050}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5163736768412431243}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &5227715505289743363
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5648216824624195050}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.035929203, y: -0.047905922}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 19.180351, y: 10.820742}
+  m_EdgeRadius: 0
+--- !u!114 &2674703706111977065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5648216824624195050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ba8adc89f54b814d974909c13324ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.InteractableManager
+  _priority: 0
+  _interactionCases: []
+  _aimCases: []
+  _onInteracted:
+    m_PersistentCalls:
+      m_Calls: []
+  _onAimed:
+    m_PersistentCalls:
+      m_Calls: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &6234462209172599903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5648216824624195050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f8d5d11b1ad2f2b6aad3a8d7db578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.ShotImpactSpriteProvider
+  _sprite: {fileID: 0}
+  _impactVfxs:
+  - {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
 --- !u!1 &5683058931563008241
 GameObject:
   m_ObjectHideFlags: 0
@@ -4865,6 +4984,7 @@ Transform:
   - {fileID: 4688553903580164740}
   - {fileID: 1876875929961740318}
   - {fileID: 1221531629017892162}
+  - {fileID: 8756802251571942957}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6647713710241414555
@@ -6985,6 +7105,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: None Speaking
       objectReference: {fileID: 0}
+    - target: {fileID: 5077211968436692944, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5077211968436692944, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 2b4ec60e844077148b990d57d3e87b49, type: 3}
+    - target: {fileID: 5077211968436692944, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
+      propertyPath: '_impactVfxs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
     - target: {fileID: 5650718254642836793, guid: 9bb982c173e007664ad3853ebecf17d1, type: 3}
       propertyPath: _left
       value: 
@@ -7331,6 +7463,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Extincteur
       objectReference: {fileID: 0}
+    - target: {fileID: 4560361835583902696, guid: 70f65bc8ccd375413ba5c4fd712da200, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560361835583902696, guid: 70f65bc8ccd375413ba5c4fd712da200, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
     - target: {fileID: 7345116426752068659, guid: 70f65bc8ccd375413ba5c4fd712da200, type: 3}
       propertyPath: m_Name
       value: Invoke Event with 2 binds
@@ -7404,6 +7544,10 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8808971550368390278, guid: 70f65bc8ccd375413ba5c4fd712da200, type: 3}
+      propertyPath: _priority
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8808971550368390278, guid: 70f65bc8ccd375413ba5c4fd712da200, type: 3}
       propertyPath: _onInteracted.m_PersistentCalls.m_Calls.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -7447,6 +7591,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5163736768412431243}
     m_Modifications:
+    - target: {fileID: 2347511546097811528, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: dc1b3acf44f647943a7d2d558d5e4cb5, type: 3}
+    - target: {fileID: 3729684749308376808, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3729684749308376808, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
+    - target: {fileID: 3729684749308376808, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: '_impactVfxs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: _priority
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: _aimCases.Array.size
       value: 3
@@ -7760,6 +7924,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canette2
       objectReference: {fileID: 0}
+    - target: {fileID: 7802163043512585964, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: f1f740d7628713649818c1459c839c51, type: 2}
     - target: {fileID: 7903673078810126277, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.29
@@ -7872,10 +8040,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5163736768412431243}
     m_Modifications:
+    - target: {fileID: 2347511546097811528, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3a38008b7dbe264428d43e0113aefc2f, type: 3}
+    - target: {fileID: 3729684749308376808, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3729684749308376808, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
+    - target: {fileID: 3729684749308376808, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: '_impactVfxs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
     - target: {fileID: 5178398468714649533, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: _text._text
       value: "Une kronenbourg pos\xE9e sur une poubelle. Elle a rat\xE9 sa vocation
         de peu."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: _priority
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: _aimCases.Array.size
@@ -8189,6 +8377,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canette3
       objectReference: {fileID: 0}
+    - target: {fileID: 7802163043512585964, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 1ff6c541a4a493b4cb131a699559436e, type: 2}
     - target: {fileID: 7903673078810126277, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.329
@@ -8311,6 +8503,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1850840013491278791, guid: 16dabd287a2c7e770ba1205bfe872ff7, type: 3}
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882718094300916818, guid: 16dabd287a2c7e770ba1205bfe872ff7, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882718094300916818, guid: 16dabd287a2c7e770ba1205bfe872ff7, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
+    - target: {fileID: 1882718094300916818, guid: 16dabd287a2c7e770ba1205bfe872ff7, type: 3}
+      propertyPath: '_impactVfxs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d1eb60a719f45884d96949c54029cfe8, type: 3}
+    - target: {fileID: 3039328104222556731, guid: 16dabd287a2c7e770ba1205bfe872ff7, type: 3}
+      propertyPath: _priority
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3039328104222556731, guid: 16dabd287a2c7e770ba1205bfe872ff7, type: 3}
@@ -8477,6 +8685,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5163736768412431243}
     m_Modifications:
+    - target: {fileID: 3729684749308376808, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3729684749308376808, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
+    - target: {fileID: 3729684749308376808, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: '_impactVfxs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: cdb350d23bcbe364ba92ea4a7e5f9eb3, type: 3}
+    - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
+      propertyPath: _priority
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5392893016712451248, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: _aimCases.Array.size
       value: 3
@@ -8792,11 +9016,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7903673078810126277, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.76
+      value: -3.49
       objectReference: {fileID: 0}
     - target: {fileID: 7903673078810126277, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.88
+      value: -1.87
       objectReference: {fileID: 0}
     - target: {fileID: 7903673078810126277, guid: 76bf06daade33279d9f6568f24cdf41b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9192,19 +9416,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2989814800911385299, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: m_Size.x
-      value: 1.12
+      value: 1.3697392
       objectReference: {fileID: 0}
     - target: {fileID: 2989814800911385299, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: m_Size.y
-      value: 3.77
+      value: 4.8597703
       objectReference: {fileID: 0}
     - target: {fileID: 2989814800911385299, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: m_Offset.x
-      value: 0.15
+      value: 0.27486962
       objectReference: {fileID: 0}
     - target: {fileID: 2989814800911385299, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: m_Offset.y
-      value: -1.03
+      value: -1.1737893
       objectReference: {fileID: 0}
     - target: {fileID: 3012717310776298396, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _left
@@ -9489,6 +9713,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: "D\xE9tective Shotgun Speaking"
       objectReference: {fileID: 0}
+    - target: {fileID: 7320573862717859064, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _impactVfx
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 2b4ec60e844077148b990d57d3e87b49, type: 3}
+    - target: {fileID: 7320573862717859064, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320573862717859064, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 2b4ec60e844077148b990d57d3e87b49, type: 3}
     - target: {fileID: 8570635131466859891, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.88
@@ -9593,6 +9829,10 @@ PrefabInstance:
     - target: {fileID: 8953990785156627993, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: <RightRef>k__BackingField._characterName
       value: Recrue Rodolphe
+      objectReference: {fileID: 0}
+    - target: {fileID: 9084122249304387810, guid: d8cb2184bb50166da927dc1040341786, type: 3}
+      propertyPath: _priority
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9084122249304387810, guid: d8cb2184bb50166da927dc1040341786, type: 3}
       propertyPath: _interactionCases.Array.size
@@ -9730,6 +9970,18 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: -0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 3256772393086915105, guid: a6878fd5f8efe582195ff9cb82cf0959, type: 3}
+      propertyPath: _impactVfx
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 2b4ec60e844077148b990d57d3e87b49, type: 3}
+    - target: {fileID: 3256772393086915105, guid: a6878fd5f8efe582195ff9cb82cf0959, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256772393086915105, guid: a6878fd5f8efe582195ff9cb82cf0959, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 2b4ec60e844077148b990d57d3e87b49, type: 3}
     - target: {fileID: 5114572218372721699, guid: a6878fd5f8efe582195ff9cb82cf0959, type: 3}
       propertyPath: m_Name
       value: Sally
@@ -9737,6 +9989,10 @@ PrefabInstance:
     - target: {fileID: 5114572218372721699, guid: a6878fd5f8efe582195ff9cb82cf0959, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7876621021834797283, guid: a6878fd5f8efe582195ff9cb82cf0959, type: 3}
+      propertyPath: _priority
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7876621021834797283, guid: a6878fd5f8efe582195ff9cb82cf0959, type: 3}
       propertyPath: _aimCases.Array.size

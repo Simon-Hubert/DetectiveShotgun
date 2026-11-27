@@ -192,10 +192,6 @@ PrefabInstance:
       propertyPath: _camera
       value: 
       objectReference: {fileID: 1555611677350899607}
-    - target: {fileID: 6608258961006754970, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
-      propertyPath: _pixelPerfectCamera
-      value: 
-      objectReference: {fileID: 2801935738003048516}
     - target: {fileID: 8219939717306436932, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
       propertyPath: m_Name
       value: PLAYER
@@ -204,10 +200,6 @@ PrefabInstance:
       propertyPath: _camera
       value: 
       objectReference: {fileID: 2801935738003048516}
-    - target: {fileID: 8836601799099958187, guid: 431f79f4ea0a0b84e9a0692a9b381cc3, type: 3}
-      propertyPath: _startingItems.Array.size
-      value: 5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -292,10 +284,6 @@ PrefabInstance:
     - target: {fileID: 2264849956926330540, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3505634821680852337, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
-      propertyPath: _intensity
-      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 4027087350679835347, guid: 70a720b48d158981ea93a20c9cd3969f, type: 3}
       propertyPath: m_Name

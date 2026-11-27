@@ -11,23 +11,11 @@ namespace DShotgun.Dialogs
     public class DialogsDisplayer : ATextDisplayer
     {
         [Header("Characters Images")]
-        [SerializeField] private Button _leftCharaRdr;
-        [SerializeField] private Button _middleCharaRdr;
-        [SerializeField] private Button _rightCharaRdr;
+        [SerializeField] private Image _leftCharaRdr;
+        [SerializeField] private Image _middleCharaRdr;
+        [SerializeField] private Image _rightCharaRdr;
         private Image GetCharaImg(CharaPos a_posing) {
-            Debug.Log($"Change Speaker Sprite {a_posing.ToString()}");
-            switch (a_posing) {
-                case CharaPos.LEFT:
-                    return _leftCharaRdr.image;
-                case CharaPos.MIDDLE:
-                    return _middleCharaRdr.image;
-                case CharaPos.RIGHT:
-                    return _rightCharaRdr.image;
-                default :
-                    return null;
-            }
-        }
-        private Button GetCharaBtn(CharaPos a_posing) {
+            //Debug.Log($"Change Speaker Sprite {a_posing.ToString()}");
             switch (a_posing) {
                 case CharaPos.LEFT:
                     return _leftCharaRdr;
@@ -39,11 +27,26 @@ namespace DShotgun.Dialogs
                     return null;
             }
         }
+        private EventTrigger _leftCharaTrigr, _middleCharaTrigr, _rightCharaTrigr;
+        private EventTrigger GetCharaTrigr(CharaPos a_posing) {
+            switch (a_posing) {
+                case CharaPos.LEFT:
+                    return _leftCharaTrigr;
+                case CharaPos.MIDDLE:
+                    return _middleCharaTrigr;
+                case CharaPos.RIGHT:
+                    return _rightCharaTrigr;
+                default :
+                    return null;
+            }
+        }
         private Vector3 _leftCharaPos, _middleCharaPos, _rightCharaPos;
         private Vector3 GetCharaPos(CharaPos a_posing) {
             switch (a_posing) {
                 case CharaPos.LEFT:
                     return _leftCharaPos;
+                case CharaPos.MIDDLE:
+                    return _middleCharaPos;
                 case CharaPos.RIGHT:
                     return _rightCharaPos;
                 default :
@@ -64,10 +67,13 @@ namespace DShotgun.Dialogs
         private void Start() {
             _leftNamePos = _leftNameSprite.transform.position;
             _rightNamePos = _rightNameSprite.transform.position;
+
+            _leftCharaTrigr = _leftCharaRdr ? _leftCharaRdr.GetComponent<EventTrigger>() : null;
+            _middleCharaTrigr = _middleCharaRdr ? _middleCharaRdr.GetComponent<EventTrigger>() : null;
+            _rightCharaTrigr = _rightCharaRdr ? _rightCharaRdr.GetComponent<EventTrigger>() : null;
         }
 
-        public override bool ShowCanvas
-        {
+        public override bool ShowCanvas {
             get => _displayParent.activeSelf;
             set {
                 _displayState = value ? TextDisplayState.Idle : TextDisplayState.Closed;
@@ -137,21 +143,21 @@ namespace DShotgun.Dialogs
             
             switch ((CharaPos)a_dialogData.SpeakingCharacterID) { 
                 case CharaPos.RIGHT :
-                    _rightNameSprite.sprite =profile.CharaNameSprite;
-                    _leftNameSprite.sprite = a_dialogData.Left != null ? _blankNameSprite : null;
+                    _rightNameSprite.sprite = profile.CharaNameSprite;
+                    _leftNameSprite.sprite = _blankNameSprite;
                     
                     _rightNameSprite.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
                     _leftNameSprite.color = new Color(0.4f, 0.4f, 0.4f, 1.0f);
                     
-                    _rightNameText.text =profile.NameDisplayedAsTMP ? a_dialogData.Name : "";
+                    _rightNameText.text = profile.NameDisplayedAsTMP ? a_dialogData.Name : "";
 
                     _leftNameSprite.transform.position = _leftNamePos + _nameSpriteOffset;
                     _rightNameSprite.transform.position = _rightNamePos;
                     break;
                 
                 default :
-                    _leftNameSprite.sprite =profile.CharaNameSprite;
-                    _rightNameSprite.sprite = a_dialogData.Right != null ? _blankNameSprite : null;
+                    _leftNameSprite.sprite = profile.CharaNameSprite;
+                    _rightNameSprite.sprite = _blankNameSprite;
 
                     _leftNameSprite.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
                     _rightNameSprite.color = new Color(0.4f, 0.4f, 0.4f, 1.0f);
@@ -163,30 +169,34 @@ namespace DShotgun.Dialogs
                     break;
             }
             
-            _ = TransitionSpeakerSprite(GetCharaImg(CharaPos.LEFT), a_dialogData.Left, a_dialogData.SpeakingCharacterID == (int)CharaPos.LEFT ? true : false);
-            _ = TransitionSpeakerSprite(GetCharaImg(CharaPos.MIDDLE), a_dialogData.Middle, a_dialogData.SpeakingCharacterID == (int)CharaPos.MIDDLE ? true : false);
-            _ = TransitionSpeakerSprite(GetCharaImg(CharaPos.RIGHT), a_dialogData.Right, a_dialogData.SpeakingCharacterID == (int)CharaPos.RIGHT ? true : false);
+            _textBox.sprite = profile.TextBoxSprite;
+            
+            _ = TransitionSpeakerSprite(CharaPos.LEFT, a_dialogData.Left, a_dialogData.SpeakingCharacterID == (int)CharaPos.LEFT ? true : false);
+            _ = TransitionSpeakerSprite(CharaPos.MIDDLE, a_dialogData.Middle, a_dialogData.SpeakingCharacterID == (int)CharaPos.MIDDLE ? true : false);
+            _ = TransitionSpeakerSprite(CharaPos.RIGHT, a_dialogData.Right, a_dialogData.SpeakingCharacterID == (int)CharaPos.RIGHT ? true : false);
         }
 
-        private async Awaitable TransitionSpeakerSprite(Image a_img, Sprite a_sprite, bool a_isSpeaker) {
+        private async Awaitable TransitionSpeakerSprite(CharaPos a_pos, Sprite a_sprite, bool a_isSpeaker) {
             try {
-                Debug.Log($"'{name}' : Change Speaker Sprite '{a_img.name}' - Sprite '{a_sprite != null}' - Is speaker '{a_isSpeaker}'");
+                Image img = GetCharaImg(a_pos);
+                GetCharaTrigr(a_pos).enabled = a_isSpeaker; 
+                //Debug.Log($"Transition Sprite '{img.name}' - trigger is {a_isSpeaker}");
                 
                 if (a_sprite == null) {
-                    a_img.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
-                    a_img.sprite = a_sprite;
+                    img.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    img.sprite = a_sprite;
                 }
                 else if (a_isSpeaker) {
-                    a_img.color = Color.white;
-                    a_img.sprite = a_sprite;
+                    img.color = Color.white;
+                    img.sprite = a_sprite;
                 }
                 else {
-                    a_img.color = new Color(0.4f, 0.4f, 0.4f, 1.0f);
-                    a_img.sprite = a_sprite;
+                    img.color = new Color(0.4f, 0.4f, 0.4f, 1.0f);
+                    img.sprite = a_sprite;
                 }
             }
             catch (OperationCanceledException) {
-                Debug.LogWarning($"'{name}' : Change Speaker Sprite '{a_img.name}' Async was cancelled", gameObject);
+                Debug.LogWarning($"'{name}' : Change Speaker Sprite '{a_pos.ToString()}' Async was cancelled", gameObject);
             }
         }
     }

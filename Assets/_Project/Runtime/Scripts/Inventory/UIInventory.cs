@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace DShotgun
 {
@@ -7,8 +8,16 @@ namespace DShotgun
     {
         [SerializeField] private UIItem[] _inventorySlots = new UIItem[5];
         [SerializeField] private PlayerInventory _playerInventory;
-        
+        [SerializeField, Tooltip("Animator du nuage de fumée (trigger Pouf) : déplacé sur la poche et rejoué quand un objet y arrive")] private Animator _pouf;
+        [Header("Events")]
+        [SerializeField] private UnityEvent OnLoadItem;
+        [SerializeField] private UnityEvent OnUnloadItem;
+            
+        private static readonly int POUF_TRIGGER = Animator.StringToHash("Pouf");
         private int _loadedSlot;
+
+        // Icône du slot : PickUpItemSequence y fait tomber l'objet ramassé
+        public RectTransform GetSlot(int index) => (RectTransform)_inventorySlots[index].transform;
 
         private void OnEnable()
         {
@@ -36,6 +45,7 @@ namespace DShotgun
         {
             ShotgunManager.LoadItem(_playerInventory.Inventory[id]);
             _loadedSlot = id;
+            OnLoadItem?.Invoke();
         }
 
         private void UpdateSlot(int i, ItemData itemSlot)
@@ -43,17 +53,30 @@ namespace DShotgun
             if (itemSlot == null)
             {
                 _inventorySlots[i].ChangeSprite(null);
+                return;
             }
-            else
-            {
-                _inventorySlots[i].ChangeSprite(itemSlot.Sprite);
-            }
-            
+
+            _inventorySlots[i].ChangeSprite(itemSlot.Sprite);
+
+            // Objets de départ : pas de POUF au chargement de la scène
+            if (_playerInventory.IsInitialized) PlayPouf(i);
         }
-        
+
+        private void PlayPouf(int slot)
+        {
+            if (_pouf == null) return;
+
+            RectTransform pocket = GetSlot(slot);
+            _pouf.transform.position = pocket.TransformPoint(pocket.rect.center);
+            _pouf.SetTrigger(POUF_TRIGGER);
+        }
+
         private void UnloadItem()
         {
-            if (_inventorySlots[_loadedSlot] != null) _inventorySlots[_loadedSlot].ResetPosition();
+            if (_inventorySlots[_loadedSlot] != null) {
+                _inventorySlots[_loadedSlot].ResetPosition();
+                OnUnloadItem?.Invoke();
+            }
         }
     }
 }

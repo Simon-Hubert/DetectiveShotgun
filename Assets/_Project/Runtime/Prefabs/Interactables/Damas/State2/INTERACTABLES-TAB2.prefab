@@ -37,6 +37,112 @@ Transform:
   - {fileID: 7357549684720656949}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7180916958572723107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6272829914026544157}
+  - component: {fileID: 3992894183277214327}
+  m_Layer: 0
+  m_Name: "Pick Up Lettre \xE9crite potentiellement par Damas mais pas sure"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6272829914026544157
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7180916958572723107}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.4416624, y: -0, z: -0, w: 0.89718133}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.125, y: 3.125, z: 3.125}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7022682364168688503}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3992894183277214327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7180916958572723107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6cc5e53c31ba304caa4e25e53e0803f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun::DShotgun.PickUpItemSequence
+  _useGameObjectSprite: 0
+  _item: {fileID: 11400000, guid: 747c2bc4bbf6f194fb33b368069ae94a, type: 2}
+  _jumpHeight: 2.5
+  _gravity: 30
+  _spinTurns: 6
+  _spin:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.4
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _size:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.6
+      value: 0.15
+      inSlope: 0.6
+      outSlope: 0.6
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 3
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &5750539061107774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45,6 +151,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1042273163661521865}
     m_Modifications:
+    - target: {fileID: 33712243402179235, guid: b702df16c2ad8c94286b01216b58a8d9, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 33712243402179235, guid: b702df16c2ad8c94286b01216b58a8d9, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 2b4ec60e844077148b990d57d3e87b49, type: 3}
+    - target: {fileID: 33712243402179235, guid: b702df16c2ad8c94286b01216b58a8d9, type: 3}
+      propertyPath: '_impactVfxs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
     - target: {fileID: 6010880910281455653, guid: b702df16c2ad8c94286b01216b58a8d9, type: 3}
       propertyPath: m_Name
       value: Journaux
@@ -107,6 +225,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1042273163661521865}
     m_Modifications:
+    - target: {fileID: 3211581582601152199, guid: de95d50409d57ed4e9d17b6e8290b77e, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3211581582601152199, guid: de95d50409d57ed4e9d17b6e8290b77e, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 2b4ec60e844077148b990d57d3e87b49, type: 3}
+    - target: {fileID: 3211581582601152199, guid: de95d50409d57ed4e9d17b6e8290b77e, type: 3}
+      propertyPath: '_impactVfxs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
     - target: {fileID: 8285541540476811242, guid: de95d50409d57ed4e9d17b6e8290b77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.67
@@ -213,6 +343,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -4.11
       objectReference: {fileID: 0}
+    - target: {fileID: 4872024345265589816, guid: 665e9e4085282804fb7be5350f83c1f8, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4872024345265589816, guid: 665e9e4085282804fb7be5350f83c1f8, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 2b4ec60e844077148b990d57d3e87b49, type: 3}
+    - target: {fileID: 4872024345265589816, guid: 665e9e4085282804fb7be5350f83c1f8, type: 3}
+      propertyPath: '_impactVfxs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -231,6 +373,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1042273163661521865}
     m_Modifications:
+    - target: {fileID: 2657778818443371232, guid: 67a2cc7de67b628428034cb70b4af948, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2657778818443371232, guid: 67a2cc7de67b628428034cb70b4af948, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
+    - target: {fileID: 2657778818443371232, guid: 67a2cc7de67b628428034cb70b4af948, type: 3}
+      propertyPath: '_impactVfxs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 9d13b2f4db0b96042bb3dfb756d9e25f, type: 3}
     - target: {fileID: 8646742565029075046, guid: 67a2cc7de67b628428034cb70b4af948, type: 3}
       propertyPath: m_Name
       value: Any
@@ -337,6 +491,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Peinture1
       objectReference: {fileID: 0}
+    - target: {fileID: 6440783674813882613, guid: 5d7c5996b8787b7438441c67d7cbe358, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440783674813882613, guid: 5d7c5996b8787b7438441c67d7cbe358, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 2b4ec60e844077148b990d57d3e87b49, type: 3}
+    - target: {fileID: 6440783674813882613, guid: 5d7c5996b8787b7438441c67d7cbe358, type: 3}
+      propertyPath: '_impactVfxs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -355,6 +521,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1042273163661521865}
     m_Modifications:
+    - target: {fileID: 2511548842978826773, guid: 3617b5b840729aa4aa07f63a031d67f9, type: 3}
+      propertyPath: _impactVfxs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2511548842978826773, guid: 3617b5b840729aa4aa07f63a031d67f9, type: 3}
+      propertyPath: '_impactVfxs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 2b4ec60e844077148b990d57d3e87b49, type: 3}
+    - target: {fileID: 2511548842978826773, guid: 3617b5b840729aa4aa07f63a031d67f9, type: 3}
+      propertyPath: '_impactVfxs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: d9363315dddf1a248a6d2e2459ca0e16, type: 3}
     - target: {fileID: 8198773511013720211, guid: 3617b5b840729aa4aa07f63a031d67f9, type: 3}
       propertyPath: m_Name
       value: Lettre
@@ -400,12 +578,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7167735169583666270, guid: 3617b5b840729aa4aa07f63a031d67f9, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 596061141529545439, guid: 3617b5b840729aa4aa07f63a031d67f9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6272829914026544157}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3617b5b840729aa4aa07f63a031d67f9, type: 3}
 --- !u!4 &1551237215962747536 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8986700042768730936, guid: 3617b5b840729aa4aa07f63a031d67f9, type: 3}
+  m_PrefabInstance: {fileID: 7579617633396627880}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7022682364168688503 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 596061141529545439, guid: 3617b5b840729aa4aa07f63a031d67f9, type: 3}
   m_PrefabInstance: {fileID: 7579617633396627880}
   m_PrefabAsset: {fileID: 0}
