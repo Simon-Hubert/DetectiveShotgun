@@ -15,23 +15,23 @@ namespace DShotgun
 
         [SerializeField, MinMaxSlider(0.02f, 10f)]
         private Vector2 _scaleRange;
-        [SerializeField] private AnimationCurve _scaleCurve;
+        private AnimationCurve _scaleCurve;
 
         [SerializeField] private float _maxheight = 4f;
         [SerializeField] private AnimationCurve _heightCurve;
 
-        public void Init(Vector2 from, Vector2 to, float duration)
-        {
+        public void Init(Vector2 from, Vector2 to) {
             _from = from;
             _to = to;
-            _duration = duration;
+            CoursePoursuiteData data = Resources.Load<CoursePoursuiteData>("CoursePoursuiteData");
+            _duration = data.BackToFrontDuration;
+            _scaleCurve = data.BackToFrontCurve;
             transform.position = _from;
             _isInit = true;
-            Destroy(gameObject, duration);
+            Destroy(gameObject, _duration);
         }
 
-        private void Update()
-        {
+        private void Update() {
             if (!_isInit) return;
             float p = _current / _duration;
             transform.position = Vector2.Lerp(_from, _to, p) + new Vector2(0, _maxheight*_heightCurve.Evaluate(p));
@@ -41,8 +41,7 @@ namespace DShotgun
             _current += Time.deltaTime;
         }
 
-        public void WasShot()
-        {
+        public void WasShot() {
             Destroy(gameObject);
         }
     }
