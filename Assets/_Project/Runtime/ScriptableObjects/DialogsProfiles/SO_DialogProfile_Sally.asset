@@ -14,11 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: DShotgun.Dialogs::DShotgun.Dialogs.SOCharacterDialogProfile
   _textBoxBackground: {fileID: 21300000, guid: 103b3e13b25be8246b21821f9e9aff33, type: 3}
   _nameDisplayedAsTMP: 0
-  _charaNameSprite: {fileID: 21300000, guid: db0036052497429479a44933360c46a4, type: 3}
+  _charaNameSprite: {fileID: 1342884010529924588, guid: db0036052497429479a44933360c46a4, type: 3}
   _typingProfile: 0
   _typingSpeed: 40
-  _defasultTypingSound: {fileID: 0}
+  _defaultTypingSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   _soundPitch: 1
+  _endTypingSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   _hasPersonalisedColor: 1
   _defaultTextColor: {r: 0, g: 0, b: 0, a: 1}
   _defaultFont: {fileID: 11400000, guid: 9f191b66b8d12564ab7e2fc3c09e3dc2, type: 2}
