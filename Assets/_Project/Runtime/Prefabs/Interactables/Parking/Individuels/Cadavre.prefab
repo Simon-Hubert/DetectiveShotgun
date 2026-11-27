@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3247030628795815694}
   - component: {fileID: 4795944890235906396}
   - component: {fileID: 7757913927654397825}
+  - component: {fileID: 7050617370649695052}
   m_Layer: 0
   m_Name: Cadavre
   m_TagString: Untagged
@@ -70,7 +71,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.24, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -80,7 +81,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.82, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &7757913927654397825
 MonoBehaviour:
@@ -94,17 +95,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ba8adc89f54b814d974909c13324ec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DShotgun::DShotgun.InteractableManager
+  _priority: 0
   _interactionCases: []
   _aimCases: []
   _onInteracted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7050617370649695052}
+        m_TargetAssemblyTypeName: DSoundEmitter, DShotgun.Sound
+        m_MethodName: SoundPlay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _onAimed:
     m_PersistentCalls:
       m_Calls: []
   references:
     version: 2
     RefIds: []
+--- !u!114 &7050617370649695052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329275777314009021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 349838ade9826b44fbb84b53b52fb7fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DShotgun.Sound::DSoundEmitter
+  soundEvent:
+    Guid:
+      Data1: -558405570
+      Data2: 1125531716
+      Data3: 179066026
+      Data4: -895412225
+    Path: event:/SFX/Interjections/SFX_Interjection_Cadavre_OS
 --- !u!1 &1814397787729757660
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,13 +208,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3303955058617590949}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.56, y: 0.56, z: 0.56}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 3247030628795815694}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!212 &4433494949971468211
 SpriteRenderer:
   serializedVersion: 2
@@ -231,7 +264,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 2633962258975872332, guid: 7a98daeae56781241a31d527dc05a666, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4128a9c88b68be349b4135eca02cb185, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

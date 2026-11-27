@@ -89,10 +89,6 @@ PrefabInstance:
       value: 14.85
       objectReference: {fileID: 0}
     - target: {fileID: 5590201114377634010, guid: bd6d27b2d4fef61a88dbf06aafa0ca4d, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.44935572
-      objectReference: {fileID: 0}
-    - target: {fileID: 5590201114377634010, guid: bd6d27b2d4fef61a88dbf06aafa0ca4d, type: 3}
       propertyPath: m_Offset.y
       value: -0.099999905
       objectReference: {fileID: 0}
@@ -646,32 +642,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8384091030426164406}
     m_Modifications:
-    - target: {fileID: 1549713034382378793, guid: 3426a62755bb2c4798d95d113436090c, type: 3}
-      propertyPath: m_Size.x
-      value: 7.9648995
-      objectReference: {fileID: 0}
-    - target: {fileID: 1549713034382378793, guid: 3426a62755bb2c4798d95d113436090c, type: 3}
-      propertyPath: m_Size.y
-      value: 4.590533
-      objectReference: {fileID: 0}
-    - target: {fileID: 1549713034382378793, guid: 3426a62755bb2c4798d95d113436090c, type: 3}
-      propertyPath: m_Offset.x
-      value: -1.7324498
-      objectReference: {fileID: 0}
-    - target: {fileID: 1549713034382378793, guid: 3426a62755bb2c4798d95d113436090c, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.16526628
-      objectReference: {fileID: 0}
     - target: {fileID: 1703211487249757830, guid: 3426a62755bb2c4798d95d113436090c, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -7277799071156067385, guid: 30a80c9243ba1904d932a945c05b5868, type: 3}
     - target: {fileID: 1703211487249757830, guid: 3426a62755bb2c4798d95d113436090c, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1918434533408432127, guid: 3426a62755bb2c4798d95d113436090c, type: 3}
-      propertyPath: _interactionCases.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1918434533408432127, guid: 3426a62755bb2c4798d95d113436090c, type: 3}
@@ -737,10 +713,6 @@ PrefabInstance:
     - target: {fileID: 1918434533408432127, guid: 3426a62755bb2c4798d95d113436090c, type: 3}
       propertyPath: _onAimed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: HierarchySequences.Sequence, HierarchySequences
-      objectReference: {fileID: 0}
-    - target: {fileID: 1918434533408432127, guid: 3426a62755bb2c4798d95d113436090c, type: 3}
-      propertyPath: _interactionCases.Array.data[0]._action.m_PersistentCalls.m_Calls.Array.size
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1918434533408432127, guid: 3426a62755bb2c4798d95d113436090c, type: 3}
       propertyPath: _onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -1260,22 +1232,6 @@ PrefabInstance:
     - target: {fileID: 4521904176308944445, guid: c8767f96f25ab15788061dc0f892a7d0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4743988740770966351, guid: c8767f96f25ab15788061dc0f892a7d0, type: 3}
-      propertyPath: m_Size.x
-      value: 11.39
-      objectReference: {fileID: 0}
-    - target: {fileID: 4743988740770966351, guid: c8767f96f25ab15788061dc0f892a7d0, type: 3}
-      propertyPath: m_Size.y
-      value: 4.311474
-      objectReference: {fileID: 0}
-    - target: {fileID: 4743988740770966351, guid: c8767f96f25ab15788061dc0f892a7d0, type: 3}
-      propertyPath: m_Offset.x
-      value: 2.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 4743988740770966351, guid: c8767f96f25ab15788061dc0f892a7d0, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.11038256
       objectReference: {fileID: 0}
     - target: {fileID: 7138331018908775294, guid: c8767f96f25ab15788061dc0f892a7d0, type: 3}
       propertyPath: m_LocalScale.x

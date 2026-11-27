@@ -1945,7 +1945,7 @@ MonoBehaviour:
         m_MethodName: SwitchTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 21300000, guid: cbc99bc4a271c534a99260c4707095bf, type: 3}
+          m_ObjectArgument: {fileID: 21300000, guid: 4128a9c88b68be349b4135eca02cb185, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -7264,24 +7264,12 @@ PrefabInstance:
       value: 9.7
       objectReference: {fileID: 0}
     - target: {fileID: 4433494949971468211, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: d3ec470a528689547977fb5d847f69e6, type: 3}
-    - target: {fileID: 4433494949971468211, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4795944890235906396, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
-      propertyPath: m_Size.x
-      value: 2.4611816
-      objectReference: {fileID: 0}
-    - target: {fileID: 4795944890235906396, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
       propertyPath: m_Size.y
       value: 6.234997
-      objectReference: {fileID: 0}
-    - target: {fileID: 4795944890235906396, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.20547867
       objectReference: {fileID: 0}
     - target: {fileID: 4795944890235906396, guid: 91c21600c7b1a17ceb35b185cc5203f2, type: 3}
       propertyPath: m_Offset.y
@@ -7589,29 +7577,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 4223408006257285356}
     m_Modifications:
     - target: {fileID: 2283520467330403560, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
-      propertyPath: m_Size.x
-      value: 1.74
-      objectReference: {fileID: 0}
-    - target: {fileID: 2283520467330403560, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: m_Size.y
       value: 3.53
-      objectReference: {fileID: 0}
-    - target: {fileID: 2283520467330403560, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 2283520467330403560, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.19
       objectReference: {fileID: 0}
     - target: {fileID: 4159804617447253201, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: m_Name
       value: OnInteract-1
       objectReference: {fileID: 0}
-    - target: {fileID: 4639755695584483968, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 21f5178e0e327bbefa92c313b9138a46, type: 3}
     - target: {fileID: 5310215832001387291, guid: 65715d9ed2bc1652ba027a1c63c604b3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.59
@@ -8157,20 +8129,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1823741006331371678, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
-      propertyPath: m_Size.x
-      value: 0.9678383
-      objectReference: {fileID: 0}
-    - target: {fileID: 1823741006331371678, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
       propertyPath: m_Size.y
       value: 0.7003025
-      objectReference: {fileID: 0}
-    - target: {fileID: 1823741006331371678, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.11725426
-      objectReference: {fileID: 0}
-    - target: {fileID: 1823741006331371678, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.07159449
       objectReference: {fileID: 0}
     - target: {fileID: 2244819810223527754, guid: b30f3197a0bcfb334999434b09fca131, type: 3}
       propertyPath: _priority
@@ -8906,18 +8866,6 @@ PrefabInstance:
     - target: {fileID: 910733718212898062, guid: 9f2015ec4f3bc5cd5b83f3f15e3c243e, type: 3}
       propertyPath: m_Name
       value: Mirroir
-      objectReference: {fileID: 0}
-    - target: {fileID: 1163869177483239246, guid: 9f2015ec4f3bc5cd5b83f3f15e3c243e, type: 3}
-      propertyPath: m_Size.x
-      value: 1.61
-      objectReference: {fileID: 0}
-    - target: {fileID: 1163869177483239246, guid: 9f2015ec4f3bc5cd5b83f3f15e3c243e, type: 3}
-      propertyPath: m_Size.y
-      value: 5.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 1163869177483239246, guid: 9f2015ec4f3bc5cd5b83f3f15e3c243e, type: 3}
-      propertyPath: m_Offset.y
-      value: -1.31
       objectReference: {fileID: 0}
     - target: {fileID: 3369361498400164536, guid: 9f2015ec4f3bc5cd5b83f3f15e3c243e, type: 3}
       propertyPath: m_LocalScale.x
